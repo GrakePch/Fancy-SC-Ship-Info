@@ -1,0 +1,27 @@
+.Accel-plot-container {
+    display: flex;
+    width: 100%;
+    gap: .25rem;
+    align-items: center;
+    font-variant-numeric: tabular-nums;
+}
+
+/* .Accel-plot-container>div:last-child {
+    flex-grow: 1;
+} */
+
+.Accel-plot {
+    height: 8rem;
+}
+
+.accel-flex-data {
+    display: flex;
+    font-size: .75rem;
+    padding: 0 0rem;
+    gap: 1ch;
+    justify-content: center;
+}
+
+.accel-flex-data>p:nth-child(3) {
+    color: #ee4444;
+}

@@ -1,0 +1,44 @@
+.flex-data {
+    display: flex;
+    padding: 0 .5rem;
+}
+
+.flex-data>p:last-child {
+    flex-grow: 1;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+.Speed-Meter {
+    background-color: var(--color-bg);
+    height: 4px;
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    /* border-radius: 4px; */
+    overflow: hidden;
+}
+
+.Speed-Max {
+    height: 100%;
+    width: 0;
+    background-color: #ee4444;
+    opacity: .6;
+}
+
+.Speed-SCM {
+    height: 100%;
+    width: 0;
+    background-color: var(--color-primary-text);
+}
+
+.PYR-plot {
+    display: flex;
+    height: 6rem;
+    gap: .25rem;
+    align-items: center;
+}
+
+.PYR-plot>div:last-child {
+    flex-grow: 1;
+}
