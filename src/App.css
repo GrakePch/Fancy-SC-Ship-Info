@@ -30,10 +30,11 @@
   top: 50%;
   left: 0;
   transform: translate(-20%, -50%);
-  fill: var(--color-text);
-  opacity: .1;
+  fill: var(--color-bg);
+  opacity: .4;
   z-index: 1;
   height: 150%;
+  aspect-ratio: 1 / 1;
 }
 
 .ship-img-iso {
@@ -65,6 +66,21 @@
 
 .ship-name {
   font-weight: 600;
+}
+
+.ship-name-wrapper {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+.ship-name-wrapper>button {
+  opacity: 0;
+  color: var(--color-primary-text);
+}
+
+.ship-name-wrapper:hover>button {
+  opacity: .5;
 }
 
 .career-and-role {

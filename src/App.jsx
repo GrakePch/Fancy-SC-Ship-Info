@@ -3,36 +3,17 @@ import shipIndex from "./data/index-min.json";
 import shipList from "./data/ship-list-min.json";
 import manufacturers_small from "./assets/manufacturers_small";
 import "./App.css";
+import statusToHue from "./assets/statusToHue";
+import ManufacturerToHue from "./assets/ManufacturerToHue";
 
 import c1_spirit from "./assets/ships_iso/fleetpics_c1-spirit__iso_l_118945803210a65527330473655e4762.png";
 import CardList from "./components/CardList/CardList";
 import FlightCharacteristics from "./components/FlightCharacteristics/FlightCharacteristics";
 import FlightAccelerations from "./components/FlightAccelerations/FlightAccelerations";
+import ShipSelector from "./components/ShipSelector/ShipSelector";
 
-var statusToHue = {
-  Concept: 200,
-  InProd: 55,
-  Released: 105,
-  OnHold: 35,
-  PU: 55,
-};
-
-var ManufacturerToHue = {
-  "Drake Interplanetary": 0,
-  Esperia: 0,
-  "Argo Astronautics": 20,
-  "Consolidated Outland": 20,
-  Aopoa: 90,
-  "Anvil Aerospace": 125,
-  "Banu Suli": 160,
-  "Aegis Dynamics": 195,
-  "Crusader Industries": 210,
-  "Roberts Space Industries": 210,
-  "Origin Jumpworks": 210,
-  "Kruger Intergalactic": 210,
-  "Musashi Industrial and Starflight Concern": 210,
-  "Gatac Manufacture": 290,
-};
+import Icon from "@mdi/react";
+import { mdiAutorenew } from "@mdi/js";
 
 function App() {
   let [shipId, setShipId] = useState(null);
@@ -50,9 +31,14 @@ function App() {
   let [accelUwdMax, setAccelUwdMax] = useState(0);
   let [accelDwdMax, setAccelDwdMax] = useState(0);
 
+  let [isShipSelectorOn, setIsShipSelectorOn] = useState(false);
+
   useEffect(() => {
     let sp = new URLSearchParams(window.location.search);
     setShipId(sp.get("s"));
+
+    for (let i = 0; i < shipIndex.length; ++i)
+      shipIndex[i].NameShort = shipIndex[i].Name.split(" ").slice(1).join(" ");
   }, []);
 
   useEffect(() => {
@@ -122,12 +108,18 @@ function App() {
       setAccelStrMax(_sMax);
       setAccelUwdMax(_uMax);
       setAccelDwdMax(_dMax);
-      console.log(_fMax, _bMax, _sMax, _uMax, _dMax);
+      // console.log(_fMax, _bMax, _sMax, _uMax, _dMax);
     }
   }, [shipId, shipIdx]);
 
   return (
     <>
+      <ShipSelector
+        on={isShipSelectorOn}
+        setState={setIsShipSelectorOn}
+        shipIndex={shipIndex}
+        setShipId={setShipId}
+      />
       {shipIdx && (
         <div className="title-card">
           <div className="manufacturer-bg">
@@ -138,7 +130,15 @@ function App() {
             <div>{manufacturers_small[shipIdx.Manufacturer]}</div>
             <h2>{shipIdx.Manufacturer}</h2>
           </div>
-          <h1 className="ship-name">{shipIdx.Name}</h1>
+          <div className="ship-name-wrapper">
+            <h1 className="ship-name">{shipIdx.NameShort}</h1>
+            <button
+              className="circleIconBtn"
+              onClick={() => setIsShipSelectorOn(true)}
+            >
+              <Icon path={mdiAutorenew} size={1} />
+            </button>
+          </div>
           <div className="career-and-role font-slim">
             <h4>{shipIdx.Career}</h4>
             <h4>{shipIdx.Role}</h4>

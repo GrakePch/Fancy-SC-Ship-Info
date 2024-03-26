@@ -1,0 +1,37 @@
+.Ship-select-card {
+    position: relative;
+    padding: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    line-height: 100%;
+    height: 3rem;
+    cursor: pointer;
+    user-select: none;
+    transition: filter .2s;
+}
+
+.Ship-select-card:hover {
+    filter: brightness(1.1);
+}
+
+.Ship-select-card:active {
+    filter: brightness(1.2);
+}
+
+
+.Ship-select-card-icon-bg {
+    position: absolute;
+    fill: var(--color-bg);
+    opacity: .5;
+    height: 120%;
+    aspect-ratio: 1 / 1;
+    right: 0;
+    top: 50%;
+    transform: translate(10%, -50%);
+}
+
+.Ship-select-card p {
+    display: flex;
+    gap: .5ch;
+    align-items: end;
+}
