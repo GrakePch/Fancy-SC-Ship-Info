@@ -39,6 +39,10 @@
   border-radius: 16px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .font-mono {
   font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
 }
@@ -99,17 +103,17 @@ button:focus-visible {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .circleIconBtn:hover {
-  background-color: #00000020;
+  background-color: #ffffff10;
   opacity: 1 !important;
 }
 
 .circleIconBtn:active {
-  background-color: #00000040;
+  background-color: #ffffff20;
 }
 
 @media (prefers-color-scheme: light) {

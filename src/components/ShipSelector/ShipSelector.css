@@ -10,7 +10,6 @@
     left: 0;
     z-index: 1000;
     padding: 2rem;
-    box-sizing: border-box;
 
     --transition-duration: .15s;
     visibility: hidden;

@@ -13,7 +13,7 @@ import FlightAccelerations from "./components/FlightAccelerations/FlightAccelera
 import ShipSelector from "./components/ShipSelector/ShipSelector";
 
 import Icon from "@mdi/react";
-import { mdiAutorenew } from "@mdi/js";
+import { mdiSync } from "@mdi/js";
 
 function App() {
   let [shipId, setShipId] = useState(null);
@@ -75,6 +75,7 @@ function App() {
       let _uMax = 0;
       let _dMax = 0;
 
+      setShipObj(null);
       for (let i = 0; i < shipList.length; i++) {
         if (
           shipList[i].ClassName.localeCompare(shipId, undefined, {
@@ -136,7 +137,7 @@ function App() {
               className="circleIconBtn"
               onClick={() => setIsShipSelectorOn(true)}
             >
-              <Icon path={mdiAutorenew} size={1} />
+              <Icon path={mdiSync} size={1} />
             </button>
           </div>
           <div className="career-and-role font-slim">
