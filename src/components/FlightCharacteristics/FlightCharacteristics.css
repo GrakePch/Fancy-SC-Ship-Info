@@ -12,19 +12,22 @@
     position: relative;
     /* background-color: var(--color-bg); */
     height: 100%;
-    width: 5px;
+    width: 4px;
     transform: scaleY(-1);
+    margin-left: .5rem;
     /* margin-top: 6px;
     margin-bottom: 8px; */
     /* border-radius: 4px; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .Speed-Axis {
     position: absolute;
     bottom: 0;
-    left: calc(50% - 1px);
+    /* left: calc(50% - 1px); */
+    left: 0;
     width: 1px;
+    height: 100%;
     background-color: var(--color-primary-dim);
     z-index: 99;
 }
@@ -33,15 +36,36 @@
     position: relative;
     height: 0%;
     width: 100%;
-    background-color: #ee4444;
-    opacity: .6;
+    background-color: #ee444499;
     z-index: 100;
+    transform: translateX(4px)
 }
 
 .Speed-SCM {
+    position: relative;
     height: 0%;
     width: 100%;
     background-color: var(--color-primary-text);
+}
+
+.Speed-Meter p {
+    position: absolute;
+    right: 6px;
+    font-size: .6rem;
+    transform: scaleY(-1);
+    line-height: 100%;
+}
+
+.Speed-Max p {
+    right: 10px;
+}
+
+.Speed-Meter p:first-of-type {
+    bottom: 0;
+}
+
+.Speed-Meter p:last-of-type {
+    top: 0;
 }
 
 .PYR-plot {

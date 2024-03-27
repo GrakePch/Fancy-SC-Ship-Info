@@ -183,7 +183,7 @@ function App() {
             <h1 className="ship-name">
               {lang == "zh"
                 ? dictShipZhName[shipIdx.Name]?.split(" ").slice(1).join(" ") ||
-                  shipIdx.NameShort
+                shipIdx.NameShort
                 : shipIdx.NameShort}
             </h1>
             {/* <h1 className="ship-name">{shipIdx.NameShort}</h1> */}
@@ -203,12 +203,10 @@ function App() {
             </h4>
             <h4
               style={{
-                color: `hsl(${
-                  statusToHue[shipIdx.ProgressTracker.Status]
-                }, 100%, 50%)`,
-                backgroundColor: `hsl(${
-                  statusToHue[shipIdx.ProgressTracker.Status]
-                }, 100%, 9%)`,
+                color: `hsl(${statusToHue[shipIdx.ProgressTracker.Status]
+                  }, 100%, 50%)`,
+                backgroundColor: `hsl(${statusToHue[shipIdx.ProgressTracker.Status]
+                  }, 100%, 9%)`,
               }}
             >
               {shipIdx.ProgressTracker.Status}{" "}
@@ -235,15 +233,15 @@ function App() {
         <>
           <div className="grid3">
             <CardList
+              title="Basic"
               infoObj={{
                 Size: shipObj.Size,
                 Mass: [(shipObj.Mass / 1000).toFixed(3), "t"],
-                Length: [shipObj.Dimensions.Length, "m"],
-                Width: [shipObj.Dimensions.Width, "m"],
-                Height: [shipObj.Dimensions.Height, "m"],
+                Dimensions: [shipObj.Dimensions.Length + " / " + shipObj.Dimensions.Width + " / " + shipObj.Dimensions.Height, "m"],
               }}
             />
             <CardList
+              title="Payloads"
               infoObj={{
                 Crew: shipObj.Crew,
                 WeaponCrew: shipObj.WeaponCrew,
@@ -258,6 +256,7 @@ function App() {
               }}
             />
             <CardList
+              title="ComponentSizes"
               infoObj={{
                 PilotWeapons: (
                   <HardpointSizes
@@ -321,6 +320,7 @@ function App() {
             {shipObj.IsSpaceship && (
               <>
                 <CardList
+                  title="FuelTanks"
                   infoObj={{
                     FuelCapacity: shipObj.FuelManagement.FuelCapacity,
                     QuantumFuelCapacity:
@@ -353,62 +353,9 @@ function App() {
                 />
               </>
             )}
-            {/* <CardList
-              infoObj={{
-                AccelMain: [
-                  shipObj.FlightCharacteristics.AccelerationG.Main.toFixed(1),
-                  `\u00A0(${(
-                    shipObj.FlightCharacteristics.AccelerationG.Main *
-                    shipObj.FlightCharacteristics.Capacitors
-                      .Y_AccelMultiplicator
-                  ).toFixed(1)}) G`,
-                ],
-                AccelRetro: [
-                  shipObj.FlightCharacteristics.AccelerationG.Retro.toFixed(1),
-                  `\u00A0(${(
-                    shipObj.FlightCharacteristics.AccelerationG.Retro *
-                    shipObj.FlightCharacteristics.Capacitors
-                      .Y_AccelMultiplicator
-                  ).toFixed(1)}) G`,
-                ],
-                AccelManeuvering: [
-                  shipObj.FlightCharacteristics.AccelerationG.Maneuvering.toFixed(
-                    1
-                  ),
-                  `\u00A0(${(
-                    shipObj.FlightCharacteristics.AccelerationG.Maneuvering *
-                    shipObj.FlightCharacteristics.Capacitors
-                      .X_AngAccelMultiplier
-                  ).toFixed(1)}) G`,
-                ],
-                AccelStrafe: [
-                  shipObj.FlightCharacteristics.AccelerationG.Strafe.toFixed(1),
-                  `\u00A0(${(
-                    shipObj.FlightCharacteristics.AccelerationG.Strafe *
-                    shipObj.FlightCharacteristics.Capacitors
-                      .X_AccelMultiplicator
-                  ).toFixed(1)}) G`,
-                ],
-                AccelUp: [
-                  shipObj.FlightCharacteristics.AccelerationG.Up.toFixed(1),
-                  `\u00A0(${(
-                    shipObj.FlightCharacteristics.AccelerationG.Up *
-                    shipObj.FlightCharacteristics.Capacitors
-                      .Z_AccelMultiplicator
-                  ).toFixed(1)}) G`,
-                ],
-                AccelDown: [
-                  shipObj.FlightCharacteristics.AccelerationG.Down.toFixed(1),
-                  `\u00A0(${(
-                    shipObj.FlightCharacteristics.AccelerationG.Down *
-                    shipObj.FlightCharacteristics.Capacitors
-                      .Z_AccelMultiplicator
-                  ).toFixed(1)}) G`,
-                ],
-              }}
-            /> */}
 
             <CardList
+              title="Structure&Armor"
               infoObj={{
                 TotalHealthStruct:
                   Object.values(
@@ -464,6 +411,7 @@ function App() {
               }}
             />
             <CardList
+              title="Combats"
               infoObj={{
                 TotalShieldHP: shipObj.Weapons.TotalShieldHP,
                 TotalWeaponsDmg: [shipObj.Weapons.TotalWeaponsDmg, "/s"],
@@ -473,6 +421,7 @@ function App() {
               }}
             />
             <CardList
+              title="Emissions"
               infoObj={{
                 IdleEMEmission:
                   shipObj.Emissions.Electromagnetic.IdleEMEmission,
@@ -487,6 +436,7 @@ function App() {
             />
 
             <CardList
+              title="Insurance"
               infoObj={{
                 StandardClaimTime: [
                   Math.floor(shipObj.Insurance.StandardClaimTime) + " m",
@@ -507,6 +457,23 @@ function App() {
                 ...shipObj.Buy,
               }}
             />
+            {shipObj.IsSpaceship && (
+              <>
+                <CardList
+                  title="FuelTanks"
+                  infoObj={{
+                    FuelCapacity: shipObj.FuelManagement.FuelCapacity,
+                    QuantumFuelCapacity:
+                      shipObj.FuelManagement.QuantumFuelCapacity,
+                    FuelIntakeRate: shipObj.FuelManagement.FuelIntakeRate,
+                    IntakeToMainFuelRatio:
+                      shipObj.FuelManagement.IntakeToMainFuelRatio,
+                    TimeForIntakesToFillTank:
+                      shipObj.FuelManagement.TimeForIntakesToFillTank,
+                  }}
+                />
+              </>
+            )}
           </div>
         </>
       )}

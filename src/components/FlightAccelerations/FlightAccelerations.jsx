@@ -14,8 +14,9 @@ function FlightAccelerations({
   let accelObj = FlightCharObj.AccelerationG;
   let capctObj = FlightCharObj.Capacitors;
   return (
-    <div className="card-list font-slim">
-      <div className="Accel-plot-container">
+    <div className="card-list">
+      <h2><I18n text="Accelerations" /></h2>
+      <div className="Accel-plot-container font-slim">
         <div>
           <div className="accel-flex-data">
             <p>

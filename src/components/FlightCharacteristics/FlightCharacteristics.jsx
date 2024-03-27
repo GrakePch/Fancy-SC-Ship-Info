@@ -15,12 +15,13 @@ function FlightCharacteristics({
   rollMax,
 }) {
   return (
-    <div className="card-list font-slim">
-      <div className="PYR-plot">
+    <div className="card-list">
+    <h2><I18n text="Maneuverability" /></h2>
+      <div className="PYR-plot font-slim">
         <div className="Speed-Meter">
           <div
             className="Speed-Axis"
-            style={{ height: 100 - (max / speedMax) * 100 + "%" }}
+            // style={{ height: 100 - (max / speedMax) * 100 + "%" }}
           ></div>
           <div
             className="Speed-Max"
@@ -29,8 +30,11 @@ function FlightCharacteristics({
             <div
               className="Speed-SCM"
               style={{ height: (scm / max) * 100 + "%" }}
-            ></div>
+            ><p>{scm}</p></div>
+            <p>{max}</p>
           </div>
+          <p>{speedMax - max > 200 && speedMax}</p>
+          <p></p>
         </div>
         <div className="Flight-char-info">
           <p>

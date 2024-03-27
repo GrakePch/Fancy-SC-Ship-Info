@@ -45,8 +45,21 @@
     "Ground":"地面",
     "Ground Combat":"地面战斗",
 
+    "Basic": "基本",
+    "Payloads": "载荷",
+    "ComponentSizes": "组件尺寸",
+    "FuelTanks": "燃料箱",
+    "Maneuverability": "机动性",
+    "Accelerations": "加速度",
+    "Structure&Armor": "结构与装甲",
+    "Combats": "战斗",
+    "Emissions": "辐射信号",
+    "Insurance": "保险",
+
+
     "Size": "尺寸等级",
     "Mass": "质量",
+    "Dimensions": "长 / 宽 / 高",
     "Length": "长",
     "Width": "宽",
     "Height": "高",
@@ -89,7 +102,7 @@
     "SignalReducIR": "红外信号减免",
     "SignalReducCS": "横截面信号减免",
 
-    "TotalShieldHP": "护盾总血量",
+    "TotalShieldHP": "护盾总量",
     "TotalWeaponsDmg": "武器每秒总伤",
     "TotalTurretDmg": "炮塔每秒总伤",
     "TotalMissilesDmg": "导弹总伤",
