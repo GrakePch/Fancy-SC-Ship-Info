@@ -14,7 +14,6 @@ function HardpointSizes({ components }) {
       for (let i = 0; i < components.length; ++i) {
         temp[components[i].Size] += 1;
       }
-      console.log(temp);
       setNumsOfSizes(temp);
     }
   }, [components]);
@@ -23,10 +22,9 @@ function HardpointSizes({ components }) {
       {numsOfSizes.map(
         (i, size) =>
           i > 0 && (
-            <>
+            <span key={size}>
               {i}×
               <span
-                key={size}
                 style={{
                   display: "inline-block",
                   width: "1.5rem",
@@ -36,7 +34,7 @@ function HardpointSizes({ components }) {
               >
                 {icons["s" + size] || size}
               </span>
-            </>
+            </span>
           )
       )}
     </>
