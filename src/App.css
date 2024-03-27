@@ -54,7 +54,7 @@
 }
 
 .manufacturer>div {
-  height: 1.5rem;
+  height: 1.5em;
   aspect-ratio: 1 / 1;
   fill: var(--color-primary-sat);
 }
@@ -121,4 +121,32 @@
 .prices {
   font-weight: 500;
   font-variant-numeric: tabular-nums;
+}
+
+@media screen and (max-width: 719px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .title-card {
+    padding: 1rem;
+    padding-top: 12rem;
+    font-size: 12px;
+  }
+
+  .title-card h1 {
+    font-size: 2.4em;
+  }
+
+  .title-card .manufacturer {
+    font-size: 10px;
+  }
+
+  .title-card>.ship-img-iso {
+    height: 10rem;
+    /* width: calc(100% - 2rem); */
+    /* max-width: 16rem; */
+    top: 1rem;
+    right: 1rem;
+  }
 }

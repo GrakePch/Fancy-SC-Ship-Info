@@ -166,3 +166,32 @@
     overflow-y: auto;
     z-index: 1000;
 }
+
+@media screen and (max-width: 719px) {
+    .background-exit {
+        padding: 1rem;
+    }
+
+    .filter-by-manufacturer {
+        padding: 0 1rem;
+    }
+
+    .ship-select-card-list-wrapper {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    .filter-btn-and-tooltip>button {
+        width: 2.9rem;
+    }
+
+    .filter-btn-and-tooltip>button>svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .Ship-selector-container>.title-bar {
+        font-size: 12px;
+    }
+    .Ship-selector-container>.title-bar>h2 {
+        margin-left: .5rem;
+    }
+}

@@ -84,6 +84,22 @@ h1 {
   gap: 1rem;
 }
 
+@media screen and (min-width: 720px) and (max-width: 1079px) {
+  .grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .grid3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
 button {
   display: block;
   border: none;
