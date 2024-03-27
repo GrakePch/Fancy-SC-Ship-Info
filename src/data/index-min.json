@@ -1146,8 +1146,8 @@
         }
     },
     {
-        "ClassName": "ANVL_Hornet_F7C",
-        "Name": "Anvil F7C Hornet",
+        "ClassName": "ANVL_Hornet_F7A_Mk2",
+        "Name": "Anvil F7A Hornet Mk II",
         "Manufacturer": "Anvil Aerospace",
         "Career": "Combat",
         "Role": "Medium Fighter",
@@ -1168,7 +1168,40 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 110.0
+            "Buy": null
+        },
+        "PU": {
+            "Patch": "3.22.1",
+            "Date": "2024-03-15",
+            "HasPerf": true,
+            "IsPTUOnly": false,
+            "Buy": null
+        }
+    },
+    {
+        "ClassName": "ANVL_Hornet_F7C",
+        "Name": "Anvil F7C Hornet",
+        "Manufacturer": "Anvil Aerospace",
+        "Career": "Combat",
+        "Role": "Medium Fighter",
+        "Size": 2,
+        "Cargo": 2,
+        "Type": "Ship",
+        "CommLink": {
+            "HasCommLink": false,
+            "Date": null,
+            "Url": null
+        },
+        "ProgressTracker": {
+            "Status": "Released",
+            "IsOnPT": false,
+            "ID": null
+        },
+        "Store": {
+            "Url": null,
+            "IsPromotionOnly": false,
+            "IsLimitedSale": false,
+            "Buy": 125.0
         },
         "PU": {
             "Patch": "0.8.0",
@@ -1232,7 +1265,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 140.0
+            "Buy": 150.0
         },
         "PU": {
             "Patch": "1.0.0",
@@ -1264,13 +1297,46 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 125.0
+            "Buy": 140.0
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
             "Buy": 1654100.0
+        }
+    },
+    {
+        "ClassName": "ANVL_Hornet_F7C_Mk2",
+        "Name": "Anvil F7C Hornet Mk II",
+        "Manufacturer": "Anvil Aerospace",
+        "Career": "Combat",
+        "Role": "Medium Fighter",
+        "Size": 2,
+        "Cargo": 2,
+        "Type": "Ship",
+        "CommLink": {
+            "HasCommLink": false,
+            "Date": null,
+            "Url": null
+        },
+        "ProgressTracker": {
+            "Status": "Released",
+            "IsOnPT": false,
+            "ID": null
+        },
+        "Store": {
+            "Url": null,
+            "IsPromotionOnly": false,
+            "IsLimitedSale": false,
+            "Buy": 175
+        },
+        "PU": {
+            "Patch": "3.22.1",
+            "Date": "2024-03-15",
+            "HasPerf": true,
+            "IsPTUOnly": false,
+            "Buy": null
         }
     },
     {
@@ -2083,8 +2149,8 @@
         }
     },
     {
-        "ClassName": "CNOU_Pioneer",
-        "Name": "C.O. Pioneer",
+        "ClassName": "CNOU_Pionneer",
+        "Name": "C.O. Pionneer",
         "Manufacturer": "Consolidated Outland",
         "Career": "Industrial",
         "Role": "Heavy Construction",
@@ -5492,7 +5558,7 @@
     },
     {
         "ClassName": "RSI_Zeus_CL",
-        "Name": "RSI Zeus MKII CL",
+        "Name": "RSI Zeus Mk II CL",
         "Manufacturer": "Roberts Space Industries",
         "Career": "Transporter",
         "Role": "Medium Freight",
@@ -5523,7 +5589,7 @@
     },
     {
         "ClassName": "RSI_Zeus_ES",
-        "Name": "RSI Zeus MKII ES",
+        "Name": "RSI Zeus Mk II ES",
         "Manufacturer": "Roberts Space Industries",
         "Career": "Explorer",
         "Role": "Explorer",
@@ -5554,7 +5620,7 @@
     },
     {
         "ClassName": "RSI_Zeus_MR",
-        "Name": "RSI Zeus MKII MR",
+        "Name": "RSI Zeus Mk II MR",
         "Manufacturer": "Roberts Space Industries",
         "Career": "Combat",
         "Role": "Bounty Hunter",

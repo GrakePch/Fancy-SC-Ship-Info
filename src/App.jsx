@@ -399,10 +399,17 @@ function App() {
 
             <CardList
               infoObj={{
-                StandardClaimTime: [shipObj.Insurance.StandardClaimTime, "min"],
+                StandardClaimTime: [
+                  Math.floor(shipObj.Insurance.StandardClaimTime) + " m",
+                  ((shipObj.Insurance.StandardClaimTime % 1) * 60)
+                    .toFixed(0)
+                    .padStart(2, "0") + " s",
+                ],
                 ExpeditedClaimTime: [
-                  shipObj.Insurance.ExpeditedClaimTime,
-                  "min",
+                  Math.floor(shipObj.Insurance.ExpeditedClaimTime) + " m",
+                  ((shipObj.Insurance.ExpeditedClaimTime % 1) * 60)
+                    .toFixed(0)
+                    .padStart(2, "0") + " s",
                 ],
                 ExpeditedCost: [
                   shipObj.Insurance.ExpeditedCost.toFixed(0),
