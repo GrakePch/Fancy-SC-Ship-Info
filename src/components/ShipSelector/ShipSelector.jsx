@@ -136,14 +136,16 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
                     : item.Manufacturer == filterForManu
                 )
                 .sort((a, b) =>
-                  (
-                    dictShipZhName[a.Name]?.split(" ").slice(1).join(" ") ||
-                    a.NameShort
-                  )?.localeCompare(
-                    dictShipZhName[b.Name]?.split(" ").slice(1).join(" ") ||
-                      b.NameShort,
-                    "zh"
-                  )
+                  lang == "zh"
+                    ? (
+                        dictShipZhName[a.Name]?.split(" ").slice(1).join(" ") ||
+                        a.NameShort
+                      )?.localeCompare(
+                        dictShipZhName[b.Name]?.split(" ").slice(1).join(" ") ||
+                          b.NameShort,
+                        "zh"
+                      )
+                    : a.NameShort?.localeCompare(b.NameShort)
                 )
                 .map((item, idx) => (
                   <div
