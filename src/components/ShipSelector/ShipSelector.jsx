@@ -54,7 +54,15 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
           >
             <Icon path={mdiTranslate} size={1} />
           </button>
-          <button className="circleIconBtn" onClick={() => setState(false)}>
+          <button
+            className="circleIconBtn"
+            onClick={() =>
+              window.open(
+                "https://github.com/GrakePch/Fancy-SC-Ship-Info/blob/main/README.md",
+                "_blank"
+              )
+            }
+          >
             <Icon path={mdiInformationOutline} size={1} />
           </button>
           <button className="circleIconBtn" onClick={() => setState(false)}>
@@ -167,7 +175,7 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
                       manufacturer={item.Manufacturer}
                       isReleased={item.PU.HasPerf}
                       isShip={item.Type == "Ship"}
-                      imgSrc={`https://ships.42kit.com/${item.NameShort?.normalize(
+                      imgSrc={`https://ships.42kit.com/resized/${item.NameShort?.normalize(
                         "NFD"
                       )
                         .replace(/[\u0300-\u036f]/g, "")
