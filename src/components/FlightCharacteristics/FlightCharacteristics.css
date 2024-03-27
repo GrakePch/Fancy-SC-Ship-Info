@@ -1,6 +1,5 @@
 .flex-data {
     display: flex;
-    padding: 0 .5rem;
 }
 
 .flex-data>p:last-child {
@@ -10,35 +9,60 @@
 }
 
 .Speed-Meter {
-    background-color: var(--color-bg);
-    height: 4px;
-    width: 100%;
-    margin-top: 6px;
-    margin-bottom: 8px;
+    position: relative;
+    /* background-color: var(--color-bg); */
+    height: 100%;
+    width: 5px;
+    transform: scaleY(-1);
+    /* margin-top: 6px;
+    margin-bottom: 8px; */
     /* border-radius: 4px; */
     overflow: hidden;
 }
 
+.Speed-Axis {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 1px);
+    width: 1px;
+    background-color: var(--color-primary-dim);
+    z-index: 99;
+}
+
 .Speed-Max {
-    height: 100%;
-    width: 0;
+    position: relative;
+    height: 0%;
+    width: 100%;
     background-color: #ee4444;
     opacity: .6;
+    z-index: 100;
 }
 
 .Speed-SCM {
-    height: 100%;
-    width: 0;
+    height: 0%;
+    width: 100%;
     background-color: var(--color-primary-text);
 }
 
 .PYR-plot {
     display: flex;
-    height: 6rem;
-    gap: .25rem;
+    height: 10rem;
+    padding: .5rem;
+    gap: 1rem;
     align-items: center;
 }
 
-.PYR-plot>div:last-child {
+/* .PYR-plot>div:last-child {
     flex-grow: 1;
+} */
+
+.Flight-char-info {
+    font-size: .875rem;
+    flex-grow: 1;
+}
+
+.PYR-plot-self {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
 }

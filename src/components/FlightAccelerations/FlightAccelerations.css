@@ -1,8 +1,10 @@
 .Accel-plot-container {
     display: flex;
     width: 100%;
+    padding: 0 .5rem;
     gap: .25rem;
     align-items: center;
+    justify-content: space-between;
     font-variant-numeric: tabular-nums;
 }
 

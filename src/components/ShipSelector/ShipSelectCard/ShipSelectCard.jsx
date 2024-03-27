@@ -2,10 +2,16 @@ import Icon from "@mdi/react";
 import ManufacturerToHue from "../../../assets/ManufacturerToHue";
 import manufacturers_small from "../../../assets/manufacturers_small";
 import "./ShipSelectCard.css";
-import { mdiCheckCircleOutline } from "@mdi/js";
+import { mdiCheckCircle } from "@mdi/js";
 
 /* eslint-disable react/prop-types */
-function ShipSelectCard({ shipName, manufacturer, isReleased }) {
+function ShipSelectCard({
+  shipName,
+  manufacturer,
+  isReleased,
+  imgSrc,
+  isShip,
+}) {
   return (
     <div
       className="Ship-select-card"
@@ -23,10 +29,24 @@ function ShipSelectCard({ shipName, manufacturer, isReleased }) {
       <div className="Ship-select-card-icon-bg">
         {manufacturers_small[manufacturer]}
       </div>
-      <p>
-        {shipName}
-        {isReleased && <Icon path={mdiCheckCircleOutline} size={0.6667} />}
-      </p>
+      <div className="Ship-select-card-text">
+        <p>
+          {shipName}
+          {isReleased && (
+            <>
+              {" "}
+              <Icon path={mdiCheckCircle} size={0.6667} />
+            </>
+          )}
+        </p>
+      </div>
+      <div
+        className="Ship-select-card-img"
+        style={{
+          backgroundImage: `url(${imgSrc})`,
+          width: isShip ? "33%" : "25%",
+        }}
+      ></div>
     </div>
   );
 }

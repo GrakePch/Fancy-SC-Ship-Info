@@ -1,8 +1,13 @@
-# React + Vite
+# Fancy Ship Info
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A website to show SC's ship data with fancy UI!
 
-Currently, two official plugins are available:
+### Data sources
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Thanks to the following data sources!  
+Ship data: [SC Ships Performances Viewer](https://www.spviewer.eu/performance)  
+Ship images: [Starjump](https://hangar.link/fleet/canvas)
+
+
+### Special Thanks
+Special thanks to XK_14 and CxJuice for the technical support!

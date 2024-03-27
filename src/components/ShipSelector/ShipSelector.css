@@ -59,14 +59,15 @@
 
 .Ship-selector-container>.title-bar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 1rem;
     padding: 1rem;
 }
 
 .Ship-selector-container>.title-bar>h2 {
     font-weight: 500;
     margin-left: 1rem;
+    flex-grow: 1;
 }
 
 .Ship-selector-container>.title-bar>button {
@@ -126,6 +127,8 @@
     top: 110%;
     left: 50%;
     transform: translateX(-50%);
+    width: max-content;
+    max-width: 7rem;
     padding: .5rem;
     font-size: 1rem;
     font-weight: 600;

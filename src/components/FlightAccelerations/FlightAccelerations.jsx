@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import I18n from "../I18n";
 import AccelerationPlot from "./AccelerationPlot/AccelerationPlot";
 import "./FlightAccelerations.css";
 
@@ -17,7 +18,9 @@ function FlightAccelerations({
       <div className="Accel-plot-container">
         <div>
           <div className="accel-flex-data">
-            <p>F</p>
+            <p>
+              <I18n text={"F"} />
+            </p>
             <p>{accelObj.Main.toFixed(1)}</p>
             <p>
               ({(accelObj.Main * capctObj.Y_AccelMultiplicator).toFixed(1)})
@@ -37,7 +40,9 @@ function FlightAccelerations({
             />
           </div>
           <div className="accel-flex-data">
-            <p>B</p>
+            <p>
+              <I18n text={"B"} />
+            </p>
             <p>{accelObj.Retro.toFixed(1)}</p>
             <p>
               ({(accelObj.Retro * capctObj.Y_AccelMultiplicator).toFixed(1)})
@@ -50,7 +55,9 @@ function FlightAccelerations({
           className="accel-flex-data"
           style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
         >
-          <p>Strafe</p>
+          <p>
+            <I18n text={"Strafe"} />
+          </p>
           <p>{accelObj.Strafe.toFixed(1)}</p>
           <p>
             ({(accelObj.Strafe * capctObj.X_AccelMultiplicator).toFixed(1)})
@@ -60,7 +67,9 @@ function FlightAccelerations({
 
         <div>
           <div className="accel-flex-data">
-            <p>U</p>
+            <p>
+              <I18n text={"U"} />
+            </p>
             <p>{accelObj.Up.toFixed(1)}</p>
             <p>({(accelObj.Up * capctObj.Z_AccelMultiplicator).toFixed(1)})</p>
             <p>G</p>
@@ -79,7 +88,9 @@ function FlightAccelerations({
             />
           </div>
           <div className="accel-flex-data">
-            <p>D</p>
+            <p>
+              <I18n text={"D"} />
+            </p>
             <p>{accelObj.Down.toFixed(1)}</p>
             <p>
               ({(accelObj.Down * capctObj.Z_AccelMultiplicator).toFixed(1)})
@@ -92,7 +103,9 @@ function FlightAccelerations({
           className="accel-flex-data"
           style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
         >
-          <p>AccelTri</p>
+          <p>
+            <I18n text={"AccelTri"} />
+          </p>
           <p>
             {(
               (accelObj.Up ** 2 + accelObj.Strafe ** 2 + accelObj.Main ** 2) **
@@ -116,7 +129,9 @@ function FlightAccelerations({
           className="accel-flex-data"
           style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
         >
-          <p>AccManeuv</p>
+          <p>
+            <I18n text={"AccManeuv"} />
+          </p>
           <p>{accelObj.Maneuvering.toFixed(1)}</p>
           <p>
             ({(accelObj.Maneuvering * capctObj.X_AngAccelMultiplier).toFixed(1)}

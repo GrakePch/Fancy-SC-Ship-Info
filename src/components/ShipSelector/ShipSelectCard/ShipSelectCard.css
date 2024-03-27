@@ -1,5 +1,8 @@
 .Ship-select-card {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 1ch;
     padding: 1rem;
     border-radius: 1rem;
     overflow: hidden;
@@ -25,13 +28,29 @@
     opacity: .5;
     height: 120%;
     aspect-ratio: 1 / 1;
-    right: 0;
+    left: 0;
     top: 50%;
-    transform: translate(10%, -50%);
+    transform: translate(-10%, -50%);
 }
 
-.Ship-select-card p {
-    display: flex;
-    gap: .5ch;
-    align-items: end;
+.Ship-select-card-text {
+    position: relative;
+    z-index: 1100;
+}
+
+.Ship-select-card-text p>svg {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.Ship-select-card-img {
+    width: 50%;
+    height: 100%;
+    flex-shrink: 0;
+    right: .75rem;
+    top: .75rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    filter: drop-shadow(0 .25rem .5rem #00000080)
 }

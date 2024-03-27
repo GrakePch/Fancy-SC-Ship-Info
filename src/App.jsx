@@ -1,41 +1,50 @@
 import { useEffect, useState } from "react";
 import shipIndex from "./data/index-min.json";
 import shipList from "./data/ship-list-min.json";
+import ship_pics_and_zh_name from "./assets/ship_pics_and_zh_name.json";
 import manufacturers_small from "./assets/manufacturers_small";
 import "./App.css";
 import statusToHue from "./assets/statusToHue";
 import ManufacturerToHue from "./assets/ManufacturerToHue";
 
-import c1_spirit from "./assets/ships_iso/fleetpics_c1-spirit__iso_l_118945803210a65527330473655e4762.png";
 import CardList from "./components/CardList/CardList";
 import FlightCharacteristics from "./components/FlightCharacteristics/FlightCharacteristics";
 import FlightAccelerations from "./components/FlightAccelerations/FlightAccelerations";
 import ShipSelector from "./components/ShipSelector/ShipSelector";
+import I18n from "./components/I18n";
+
+import LangContext from "./contexts/LangContext";
 
 import Icon from "@mdi/react";
 import { mdiSync } from "@mdi/js";
 
 function App() {
-  let [shipId, setShipId] = useState(null);
-  let [shipIdx, setShipIdx] = useState(null);
-  let [shipObj, setShipObj] = useState(null);
+  const [lang, setLang] = useState("en");
 
-  let [speedMax, setSpeedMax] = useState(0);
-  let [pitchMax, setPitchMax] = useState(0);
-  let [yawMax, setYawMax] = useState(0);
-  let [rollMax, setRollMax] = useState(0);
+  const [shipId, setShipId] = useState(null);
+  const [shipIdx, setShipIdx] = useState(null);
+  const [shipObj, setShipObj] = useState(null);
 
-  let [accelFwdMax, setAccelFwdMax] = useState(0);
-  let [accelBwdMax, setAccelBwdMax] = useState(0);
-  let [accelStrMax, setAccelStrMax] = useState(0);
-  let [accelUwdMax, setAccelUwdMax] = useState(0);
-  let [accelDwdMax, setAccelDwdMax] = useState(0);
+  const [speedMax, setSpeedMax] = useState(0);
+  const [pitchMax, setPitchMax] = useState(0);
+  const [yawMax, setYawMax] = useState(0);
+  const [rollMax, setRollMax] = useState(0);
 
-  let [isShipSelectorOn, setIsShipSelectorOn] = useState(false);
+  const [accelFwdMax, setAccelFwdMax] = useState(0);
+  const [accelBwdMax, setAccelBwdMax] = useState(0);
+  const [accelStrMax, setAccelStrMax] = useState(0);
+  const [accelUwdMax, setAccelUwdMax] = useState(0);
+  const [accelDwdMax, setAccelDwdMax] = useState(0);
+
+  const [isShipSelectorOn, setIsShipSelectorOn] = useState(false);
+
+  const [dictShipZhName, setDictShipZhName] = useState({});
+  const [dictShipImgIso, setDictShipImgIso] = useState({});
 
   useEffect(() => {
     let sp = new URLSearchParams(window.location.search);
     setShipId(sp.get("s"));
+    setLang(sp.get("lang"));
 
     for (let i = 0; i < shipIndex.length; ++i)
       shipIndex[i].NameShort = shipIndex[i].Name.split(" ").slice(1).join(" ");
@@ -113,26 +122,55 @@ function App() {
     }
   }, [shipId, shipIdx]);
 
+  useEffect(() => {
+    if (shipIdx) {
+      let dShipZhName = {};
+      let dShipImgIso = {};
+      for (let i = 0; i < ship_pics_and_zh_name.ships.length; ++i) {
+        let firstKey = Object.keys(ship_pics_and_zh_name.ships[i])[0];
+        dShipZhName[firstKey] = ship_pics_and_zh_name.ships[i][firstKey];
+        if (ship_pics_and_zh_name.ships[i].vehicleLink)
+          dShipImgIso[firstKey] = ship_pics_and_zh_name.ships[i].vehicleLink;
+      }
+      setDictShipZhName(dShipZhName);
+      setDictShipImgIso(dShipImgIso);
+    }
+  }, [shipIdx]);
+
   return (
-    <>
+    <LangContext.Provider value={[lang, setLang]}>
       <ShipSelector
         on={isShipSelectorOn}
         setState={setIsShipSelectorOn}
         shipIndex={shipIndex}
         setShipId={setShipId}
+        dictShipZhName={dictShipZhName}
       />
       {shipIdx && (
         <div className="title-card">
           <div className="manufacturer-bg">
             {manufacturers_small[shipIdx.Manufacturer]}
           </div>
-          {/* <img src={c1_spirit} alt="ship_image" className="ship-img-iso" /> */}
+          <img
+            src={dictShipImgIso[shipIdx.Name]}
+            alt="ship_image"
+            className="ship-img-iso"
+          />
+          {/* <img src={`https://ships.42kit.com/${shipIdx.NameShort.toLowerCase().trimEnd().replaceAll(" ", "-")}%20iso.png`} alt="ship_image" className="ship-img-iso" /> */}
           <div className="manufacturer">
             <div>{manufacturers_small[shipIdx.Manufacturer]}</div>
-            <h2>{shipIdx.Manufacturer}</h2>
+            <h2>
+              <I18n text={shipIdx.Manufacturer} />
+            </h2>
           </div>
           <div className="ship-name-wrapper">
-            <h1 className="ship-name">{shipIdx.NameShort}</h1>
+            <h1 className="ship-name">
+              {lang == "zh"
+                ? dictShipZhName[shipIdx.Name]?.split(" ").slice(1).join(" ") ||
+                  shipIdx.NameShort
+                : shipIdx.NameShort}
+            </h1>
+            {/* <h1 className="ship-name">{shipIdx.NameShort}</h1> */}
             <button
               className="circleIconBtn"
               onClick={() => setIsShipSelectorOn(true)}
@@ -141,8 +179,12 @@ function App() {
             </button>
           </div>
           <div className="career-and-role font-slim">
-            <h4>{shipIdx.Career}</h4>
-            <h4>{shipIdx.Role}</h4>
+            <h4>
+              <I18n text={shipIdx.Career} />
+            </h4>
+            <h4>
+              <I18n text={shipIdx.Role} />
+            </h4>
             <h4
               style={{
                 color: `hsl(${
@@ -179,7 +221,7 @@ function App() {
             <CardList
               infoObj={{
                 Size: shipObj.Size,
-                Mass: [shipObj.Mass / 1000, "t"],
+                Mass: [(shipObj.Mass / 1000).toFixed(3), "t"],
                 Length: [shipObj.Dimensions.Length, "m"],
                 Width: [shipObj.Dimensions.Width, "m"],
                 Height: [shipObj.Dimensions.Height, "m"],
@@ -306,28 +348,28 @@ function App() {
                 VitalHealthStruct: Object.values(
                   shipObj.Hull.StructureHealthPoints.VitalParts
                 ).reduce((a, b) => a + b, 0),
-                DamageMultiPhy: [
-                  shipObj.Armor.DamageMultipliers.Physical * 100,
+                DamageReducPhy: [
+                  100 - shipObj.Armor.DamageMultipliers.Physical * 100,
                   "%",
                 ],
-                DamageMultiEne: [
-                  shipObj.Armor.DamageMultipliers.Energy * 100,
+                DamageReducEne: [
+                  100 - shipObj.Armor.DamageMultipliers.Energy * 100,
                   "%",
                 ],
-                DamageMultiDis: [
-                  shipObj.Armor.DamageMultipliers.Distortion * 100,
+                DamageReducDis: [
+                  100 - shipObj.Armor.DamageMultipliers.Distortion * 100,
                   "%",
                 ],
-                SignalMultiEM: [
-                  shipObj.Armor.SignalMultipliers.Electromagnetic * 100,
+                SignalReducEM: [
+                  100 - shipObj.Armor.SignalMultipliers.Electromagnetic * 100,
                   "%",
                 ],
-                SignalMultiIR: [
-                  shipObj.Armor.SignalMultipliers.Infrared * 100,
+                SignalReducIR: [
+                  100 - shipObj.Armor.SignalMultipliers.Infrared * 100,
                   "%",
                 ],
-                SignalMultiCS: [
-                  shipObj.Armor.SignalMultipliers.CrossSection * 100,
+                SignalReducCS: [
+                  100 - shipObj.Armor.SignalMultipliers.CrossSection * 100,
                   "%",
                 ],
               }}
@@ -372,7 +414,7 @@ function App() {
           </div>
         </>
       )}
-    </>
+    </LangContext.Provider>
   );
 }
 
