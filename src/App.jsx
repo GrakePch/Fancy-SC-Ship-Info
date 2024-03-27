@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import shipIndex from "./data/index-min.json";
 import shipList from "./data/ship-list-min.json";
+import shipHardpoints from "./data/ship-hardpoints-min.json";
 import ship_pics_and_zh_name from "./assets/ship_pics_and_zh_name.json";
 import manufacturers_small from "./assets/manufacturers_small";
 import "./App.css";
@@ -17,13 +18,16 @@ import LangContext from "./contexts/LangContext";
 
 import Icon from "@mdi/react";
 import { mdiSync } from "@mdi/js";
+import HardpointSizes from "./components/HardpointSizes/HardpointSizes";
 
 function App() {
   const [lang, setLang] = useState("en");
 
   const [shipId, setShipId] = useState(null);
+
   const [shipIdx, setShipIdx] = useState(null);
   const [shipObj, setShipObj] = useState(null);
+  const [shipHardpts, setShipHardpts] = useState(null);
 
   const [speedMax, setSpeedMax] = useState(0);
   const [pitchMax, setPitchMax] = useState(0);
@@ -119,6 +123,18 @@ function App() {
       setAccelUwdMax(_uMax);
       setAccelDwdMax(_dMax);
       // console.log(_fMax, _bMax, _sMax, _uMax, _dMax);
+
+      /* Set Ship Hardpoints */
+      setShipHardpts(null);
+      for (let i = 0; i < shipHardpoints.length; ++i) {
+        if (
+          shipHardpoints[i].ClassName.localeCompare(shipId, undefined, {
+            sensitivity: "base",
+          }) === 0
+        ) {
+          setShipHardpts(shipHardpoints[i]);
+        }
+      }
     }
   }, [shipId, shipIdx]);
 
@@ -229,6 +245,9 @@ function App() {
             />
             <CardList
               infoObj={{
+                Crew: shipObj.Crew,
+                WeaponCrew: shipObj.WeaponCrew,
+                OperationsCrew: shipObj.OperationsCrew,
                 CargoGrid: [shipObj.Cargo.CargoGrid, "SCU"],
                 CargoContainers: [shipObj.Cargo.CargoContainers, "SCU"],
                 ExternalStorage: [shipObj.Cargo.ExternalStorage, "SCU"],
@@ -240,9 +259,62 @@ function App() {
             />
             <CardList
               infoObj={{
-                Crew: shipObj.Crew,
-                WeaponCrew: shipObj.WeaponCrew,
-                OperationsCrew: shipObj.OperationsCrew,
+                PilotWeapons: (
+                  <HardpointSizes
+                    components={
+                      shipHardpts.Hardpoints.Weapons.PilotWeapons.InstalledItems
+                    }
+                  />
+                ),
+                Turrets: (
+                  <HardpointSizes
+                    components={[
+                      ...(shipHardpts.Hardpoints.Weapons.MannedTurrets
+                        .InstalledItems || []),
+                      ...(shipHardpts.Hardpoints.Weapons.RemoteTurrets
+                        .InstalledItems || []),
+                    ]}
+                  />
+                ),
+                MissileRacks: (
+                  <HardpointSizes
+                    components={
+                      shipHardpts.Hardpoints.Weapons.MissileRacks.InstalledItems
+                    }
+                  />
+                ),
+                Shields: (
+                  <HardpointSizes
+                    components={
+                      shipHardpts.Hardpoints.Components.Systems.Shields
+                        .InstalledItems
+                    }
+                  />
+                ),
+                PowerPlants: (
+                  <HardpointSizes
+                    components={
+                      shipHardpts.Hardpoints.Components.Propulsion.PowerPlants
+                        .InstalledItems
+                    }
+                  />
+                ),
+                Coolers: (
+                  <HardpointSizes
+                    components={
+                      shipHardpts.Hardpoints.Components.Systems.Coolers
+                        .InstalledItems
+                    }
+                  />
+                ),
+                QuantumDrives: (
+                  <HardpointSizes
+                    components={
+                      shipHardpts.Hardpoints.Components.Propulsion.QuantumDrives
+                        .InstalledItems
+                    }
+                  />
+                ),
               }}
             />
 
@@ -349,27 +421,44 @@ function App() {
                   shipObj.Hull.StructureHealthPoints.VitalParts
                 ).reduce((a, b) => a + b, 0),
                 DamageReducPhy: [
-                  100 - shipObj.Armor.DamageMultipliers.Physical * 100,
+                  (
+                    100 -
+                    shipObj.Armor.DamageMultipliers.Physical * 100
+                  ).toFixed(0),
                   "%",
                 ],
                 DamageReducEne: [
-                  100 - shipObj.Armor.DamageMultipliers.Energy * 100,
+                  (100 - shipObj.Armor.DamageMultipliers.Energy * 100).toFixed(
+                    0
+                  ),
                   "%",
                 ],
                 DamageReducDis: [
-                  100 - shipObj.Armor.DamageMultipliers.Distortion * 100,
+                  (
+                    100 -
+                    shipObj.Armor.DamageMultipliers.Distortion * 100
+                  ).toFixed(0),
                   "%",
                 ],
                 SignalReducEM: [
-                  100 - shipObj.Armor.SignalMultipliers.Electromagnetic * 100,
+                  (
+                    100 -
+                    shipObj.Armor.SignalMultipliers.Electromagnetic * 100
+                  ).toFixed(0),
                   "%",
                 ],
                 SignalReducIR: [
-                  100 - shipObj.Armor.SignalMultipliers.Infrared * 100,
+                  (
+                    100 -
+                    shipObj.Armor.SignalMultipliers.Infrared * 100
+                  ).toFixed(0),
                   "%",
                 ],
                 SignalReducCS: [
-                  100 - shipObj.Armor.SignalMultipliers.CrossSection * 100,
+                  (
+                    100 -
+                    shipObj.Armor.SignalMultipliers.CrossSection * 100
+                  ).toFixed(0),
                   "%",
                 ],
               }}

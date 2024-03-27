@@ -109,5 +109,13 @@
     
     "New Deal, Lorville":"斯坦顿 罗威尔",
     "Astro Armada, Area 18":"斯坦顿 18区",
-    "Crusader Showroom, Orison":"斯坦顿 奥里森"
+    "Crusader Showroom, Orison":"斯坦顿 奥里森",
+
+    "PilotWeapons":"主驾武器",
+    "Turrets":"炮塔",
+    "MissileRacks":"导弹架",
+    "Shields":"护盾",
+    "PowerPlants":"电源",
+    "Coolers":"冷却器",
+    "QuantumDrives":"量子引擎"
 }
