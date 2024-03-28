@@ -48,6 +48,8 @@ function App() {
   const [listTurretGuns, setListTurretGuns] = useState([]);
   const [totalDecoyAmmo, setTotalDecoyAmmo] = useState(0);
   const [totalNoiseAmmo, setTotalNoiseAmmo] = useState(0);
+  const [totalDecoyItemNum, setTotalDecoyItemNum] = useState(0);
+  const [totalNoiseItemNum, setTotalNoiseItemNum] = useState(0);
 
   useEffect(() => {
     let sp = new URLSearchParams(window.location.search);
@@ -180,8 +182,8 @@ function App() {
     }
     setListTurretGuns(temp);
 
-    let tempDecoy = 0;
-    let tempNoise = 0;
+    let tempDecoyItemNum = 0;
+    let tempNoiseItemNum = 0;
     if (shipHardpts.Hardpoints.Components.Systems.Countermeasures) {
       let CMs =
         shipHardpts.Hardpoints.Components.Systems.Countermeasures
@@ -190,25 +192,29 @@ function App() {
         /* Special case for origin jumpworks: both decoy and noise are called "noise" */
         if (CMs[i].Name == "Origin Jumpworks Noise Launcher") {
           if (CMs[i].Ammunition > 10) {
-            tempDecoy += CMs[i].Ammunition;
+            setTotalDecoyAmmo(CMs[i].Ammunition);
+            tempDecoyItemNum++;
           } else {
-            tempNoise += CMs[i].Ammunition;
+            setTotalNoiseAmmo(CMs[i].Ammunition);
+            tempNoiseItemNum++;
           }
           continue;
         }
         /* General */
         if (CMs[i].Name.includes("Decoy") || CMs[i].Name.includes("Flare")) {
-          tempDecoy += CMs[i].Ammunition;
+          setTotalDecoyAmmo(CMs[i].Ammunition);
+          tempDecoyItemNum++;
         } else if (
           CMs[i].Name.includes("Noise") ||
           CMs[i].Name.includes("Chaff")
         ) {
-          tempNoise += CMs[i].Ammunition;
+          setTotalNoiseAmmo(CMs[i].Ammunition);
+          tempNoiseItemNum++;
         }
       }
     }
-    setTotalDecoyAmmo(tempDecoy);
-    setTotalNoiseAmmo(tempNoise);
+    setTotalDecoyItemNum(tempDecoyItemNum);
+    setTotalNoiseItemNum(tempNoiseItemNum);
   }, [shipHardpts]);
 
   return (
@@ -460,8 +466,12 @@ function App() {
                 TotalMissilesDmg: shipObj.Weapons.TotalMissilesDmg,
                 TotalEMPDmg: "?",
                 TotalShieldHP: shipObj.Weapons.TotalShieldHP,
-                TotalDecoyAmmo: totalDecoyAmmo,
-                TotalNoiseAmmo: totalNoiseAmmo,
+                TotalDecoyAmmo:
+                  (totalDecoyItemNum > 1 && totalDecoyItemNum + "×") +
+                  totalDecoyAmmo,
+                TotalNoiseAmmo:
+                  (totalNoiseItemNum > 1 && totalNoiseItemNum + "×") +
+                  totalNoiseAmmo,
               }}
               iconOverrides={[
                 "Weapons",
