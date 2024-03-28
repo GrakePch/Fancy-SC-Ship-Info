@@ -46,6 +46,8 @@ function App() {
   const [dictShipImgIso, setDictShipImgIso] = useState({});
 
   const [listTurretGuns, setListTurretGuns] = useState([]);
+  const [totalDecoyAmmo, setTotalDecoyAmmo] = useState(0);
+  const [totalNoiseAmmo, setTotalNoiseAmmo] = useState(0);
 
   useEffect(() => {
     let sp = new URLSearchParams(window.location.search);
@@ -177,6 +179,36 @@ function App() {
       }
     }
     setListTurretGuns(temp);
+
+    let tempDecoy = 0;
+    let tempNoise = 0;
+    if (shipHardpts.Hardpoints.Components.Systems.Countermeasures) {
+      let CMs =
+        shipHardpts.Hardpoints.Components.Systems.Countermeasures
+          .InstalledItems;
+      for (let i = 0; i < CMs?.length; ++i) {
+        /* Special case for origin jumpworks: both decoy and noise are called "noise" */
+        if (CMs[i].Name == "Origin Jumpworks Noise Launcher") {
+          if (CMs[i].Ammunition > 10) {
+            tempDecoy += CMs[i].Ammunition;
+          } else {
+            tempNoise += CMs[i].Ammunition;
+          }
+          continue;
+        }
+        /* General */
+        if (CMs[i].Name.includes("Decoy") || CMs[i].Name.includes("Flare")) {
+          tempDecoy += CMs[i].Ammunition;
+        } else if (
+          CMs[i].Name.includes("Noise") ||
+          CMs[i].Name.includes("Chaff")
+        ) {
+          tempNoise += CMs[i].Ammunition;
+        }
+      }
+    }
+    setTotalDecoyAmmo(tempDecoy);
+    setTotalNoiseAmmo(tempNoise);
   }, [shipHardpts]);
 
   return (
@@ -359,7 +391,7 @@ function App() {
               iconOverrides={[
                 "Weapons",
                 "Turrets",
-                null,
+                "Missiles",
                 "ShieldType" +
                   shipHardpts.Hardpoints.Components.Systems.Shields.FaceType,
                 null,
@@ -415,6 +447,7 @@ function App() {
                       "s",
                     ],
                   }}
+                  iconOverrides={[null, "Afterburner", null, null, null]}
                 />
               </>
             )}
@@ -427,15 +460,19 @@ function App() {
                 TotalMissilesDmg: shipObj.Weapons.TotalMissilesDmg,
                 TotalEMPDmg: "?",
                 TotalShieldHP: shipObj.Weapons.TotalShieldHP,
-                DecoyAmmo:
-                  shipHardpts.Hardpoints.Components.Systems.Countermeasures?.InstalledItems?.at(
-                    0
-                  ).Ammunition,
-                NoiseAmmo:
-                  shipHardpts.Hardpoints.Components.Systems.Countermeasures?.InstalledItems?.at(
-                    1
-                  ).Ammunition,
+                TotalDecoyAmmo: totalDecoyAmmo,
+                TotalNoiseAmmo: totalNoiseAmmo,
               }}
+              iconOverrides={[
+                "Weapons",
+                "Turrets",
+                "Missiles",
+                "EMP",
+                "ShieldType" +
+                  shipHardpts.Hardpoints.Components.Systems.Shields.FaceType,
+                "Decoy",
+                "Noise",
+              ]}
             />
             <CardList
               title="Emissions"
@@ -634,6 +671,57 @@ function App() {
                   "aUEC",
                 ],
                 ...shipObj.Buy,
+              }}
+            />
+            <CardList
+              title="SelfDestruct"
+              infoObj={{
+                Countdown: [
+                  shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
+                    .InstalledItems[0].Countdown,
+                  "s",
+                ],
+                ExplosionDamage:
+                  shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
+                    .InstalledItems[0].Damage,
+                ExplosionRadius: [
+                  shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
+                    .InstalledItems[0].MinRadius +
+                    " ~ " +
+                    shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
+                      .InstalledItems[0].MaxRadius,
+                  "m",
+                ],
+              }}
+            />
+            <CardList
+              title="Shields"
+              infoObj={{
+                TotalShieldPool:
+                  shipHardpts.Hardpoints.Components.Systems.Shields
+                    .TotalShieldPool,
+                SingleFaceShieldPool:
+                  shipHardpts.Hardpoints.Components.Systems.Shields
+                    .TotalShieldPool /
+                  (shipHardpts.Hardpoints.Components.Systems.Shields.FaceType ==
+                  "Bubble"
+                    ? 1
+                    : shipHardpts.Hardpoints.Components.Systems.Shields
+                        .FaceType == "FrontBack"
+                    ? 2
+                    : 4),
+                TotalRegenSpeed: [
+                  shipHardpts.Hardpoints.Components.Systems.Shields
+                    .TotalRegenSpeed,
+                  "/s",
+                ],
+                RegenDelay: null,
+                PhysicalAbsorptionRateMax: [
+                  shipHardpts.Hardpoints.Components.Systems.Shields.InstalledItems?.at(
+                    0
+                  )?.PhysicalAbsorption?.Maximum * 100,
+                  "%",
+                ],
               }}
             />
           </div>

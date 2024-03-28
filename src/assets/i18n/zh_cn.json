@@ -103,11 +103,13 @@
     "SignalReducIR": "红外信号减免",
     "SignalReducCS": "截面信号减免",
 
-    "TotalShieldHP": "护盾总量",
-    "TotalWeaponsDmg": "机炮每秒总伤",
-    "TotalTurretDmg": "炮塔每秒总伤",
+    "TotalShieldHP":    "护盾总量",
+    "TotalWeaponsDmg":  "机炮每秒总伤",
+    "TotalTurretDmg":   "炮塔每秒总伤",
     "TotalMissilesDmg": "导弹总伤",
-    "TotalEMPDmg": "电磁脉冲总伤",
+    "TotalEMPDmg":      "电磁脉冲总伤",
+    "TotalDecoyAmmo":   "热诱弹备弹量",
+    "TotalNoiseAmmo":   "噪声场备弹量",
 
     "IdleEMEmission": "待机电磁信号",
     "ActiveEMEmission": "活跃电磁信号",
@@ -143,5 +145,10 @@
 
     "FuelBurnRate": "燃料消耗速率",
 
-    "FlightTime": "飞行续航"
+    "FlightTime": "飞行续航",
+    
+    "SelfDestruct": "自毁程序",
+    "Countdown": "倒计时",
+    "ExplosionDamage": "爆炸伤害",
+    "ExplosionRadius": "爆炸半径"
 }

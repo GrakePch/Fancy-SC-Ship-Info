@@ -62,6 +62,8 @@
     "TotalTurretDmg":   "Total Turret DMG",
     "TotalMissilesDmg": "Total Missiles DMG",
     "TotalEMPDmg":      "Total EMP DMG",
+    "TotalDecoyAmmo":   "Total Decoy Ammo",
+    "TotalNoiseAmmo":   "Total Noise Ammo",
 
     "IdleEMEmission": "EM Emission Idle",
     "ActiveEMEmission": "EM Emission Active",
@@ -97,5 +99,10 @@
     
     "FuelBurnRate": "Fuel Burn Rate",
     
-    "FlightTime": "Flight Time"
+    "FlightTime": "Flight Time",
+
+    "SelfDestruct": "Self Destruct",
+    "Countdown": "Countdown",
+    "ExplosionDamage": "Explosion Damage",
+    "ExplosionRadius": "Explosion Radius"
 }
