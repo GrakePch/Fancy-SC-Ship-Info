@@ -1,10 +1,17 @@
 import { useContext } from "react";
 import zh_cn from "../assets/i18n/zh_cn.json";
+import en_us from "../assets/i18n/en_us.json";
 import LangContext from "../contexts/LangContext";
 
 function I18n({ text }) {
   const lang = useContext(LangContext)[0];
-  return lang == "zh" && zh_cn[text] ? zh_cn[text] : text;
+  if (lang == "zh" && zh_cn[text]) {
+    return zh_cn[text];
+  }
+  if (en_us[text]) {
+    return en_us[text];
+  }
+  return text;
 }
 
 export default I18n;

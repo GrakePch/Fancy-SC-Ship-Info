@@ -41,7 +41,7 @@
 .card-list-item:not(:last-child) {
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: var(--color-primary-dim);
+    border-bottom-color: var(--color-primary-dimmer);
 }
 
 .card-list-item>p:last-child {

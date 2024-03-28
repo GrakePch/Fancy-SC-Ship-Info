@@ -26,6 +26,7 @@
   --color-primary-text: hsl(var(--hue), 100%, 90%);
   --color-primary-sat: hsl(var(--hue), 70%, 64%);
   --color-primary-dim: hsl(var(--hue), 30%, 50%);
+  --color-primary-dimmer: hsl(var(--hue), 30%, 33%);
 }
 
 ::-webkit-scrollbar {

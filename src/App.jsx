@@ -183,7 +183,7 @@ function App() {
             <h1 className="ship-name">
               {lang == "zh"
                 ? dictShipZhName[shipIdx.Name]?.split(" ").slice(1).join(" ") ||
-                shipIdx.NameShort
+                  shipIdx.NameShort
                 : shipIdx.NameShort}
             </h1>
             {/* <h1 className="ship-name">{shipIdx.NameShort}</h1> */}
@@ -203,10 +203,12 @@ function App() {
             </h4>
             <h4
               style={{
-                color: `hsl(${statusToHue[shipIdx.ProgressTracker.Status]
-                  }, 100%, 50%)`,
-                backgroundColor: `hsl(${statusToHue[shipIdx.ProgressTracker.Status]
-                  }, 100%, 9%)`,
+                color: `hsl(${
+                  statusToHue[shipIdx.ProgressTracker.Status]
+                }, 100%, 50%)`,
+                backgroundColor: `hsl(${
+                  statusToHue[shipIdx.ProgressTracker.Status]
+                }, 100%, 9%)`,
               }}
             >
               {shipIdx.ProgressTracker.Status}{" "}
@@ -237,7 +239,16 @@ function App() {
               infoObj={{
                 Size: shipObj.Size,
                 Mass: [(shipObj.Mass / 1000).toFixed(3), "t"],
-                Dimensions: [shipObj.Dimensions.Length + " / " + shipObj.Dimensions.Width + " / " + shipObj.Dimensions.Height, "m"],
+                Dimensions: [
+                  shipObj.Dimensions.Length +
+                    " / " +
+                    shipObj.Dimensions.Width +
+                    " / " +
+                    shipObj.Dimensions.Height,
+                  "m",
+                ],
+                FuelCapacity: shipObj.FuelManagement.FuelCapacity,
+                QuantumFuelCapacity: shipObj.FuelManagement.QuantumFuelCapacity,
               }}
             />
             <CardList
@@ -355,7 +366,7 @@ function App() {
             )}
 
             <CardList
-              title="Structure&Armor"
+              title="Combats"
               infoObj={{
                 TotalHealthStruct:
                   Object.values(
@@ -367,6 +378,30 @@ function App() {
                 VitalHealthStruct: Object.values(
                   shipObj.Hull.StructureHealthPoints.VitalParts
                 ).reduce((a, b) => a + b, 0),
+                TotalShieldHP: shipObj.Weapons.TotalShieldHP,
+                TotalWeaponsDmg: [shipObj.Weapons.TotalWeaponsDmg, "/s"],
+                TotalTurretDmg: ["?", "/s"],
+                TotalMissilesDmg: shipObj.Weapons.TotalMissilesDmg,
+                TotalEMPDmg: "?",
+              }}
+            />
+            <CardList
+              title="Emissions"
+              infoObj={{
+                IdleEMEmission:
+                  shipObj.Emissions.Electromagnetic.IdleEMEmission,
+                ActiveEMEmission:
+                  shipObj.Emissions.Electromagnetic.ActiveEMEmission,
+                QTEMEmission: shipObj.Emissions.Electromagnetic.QTEMEmission,
+                StartIREmission: shipObj.Emissions.Infrared.StartIREmission,
+                FrontCSEmission: shipObj.Emissions.CrossSection.Front,
+                SideCSEmission: shipObj.Emissions.CrossSection.Side,
+                TopCSEmission: shipObj.Emissions.CrossSection.Top,
+              }}
+            />
+            <CardList
+              title="ArmorAttributes"
+              infoObj={{
                 DamageReducPhy: [
                   (
                     100 -
@@ -408,30 +443,6 @@ function App() {
                   ).toFixed(0),
                   "%",
                 ],
-              }}
-            />
-            <CardList
-              title="Combats"
-              infoObj={{
-                TotalShieldHP: shipObj.Weapons.TotalShieldHP,
-                TotalWeaponsDmg: [shipObj.Weapons.TotalWeaponsDmg, "/s"],
-                TotalTurretDmg: ["?", "/s"],
-                TotalMissilesDmg: shipObj.Weapons.TotalMissilesDmg,
-                TotalEMPDmg: "?",
-              }}
-            />
-            <CardList
-              title="Emissions"
-              infoObj={{
-                IdleEMEmission:
-                  shipObj.Emissions.Electromagnetic.IdleEMEmission,
-                ActiveEMEmission:
-                  shipObj.Emissions.Electromagnetic.ActiveEMEmission,
-                QTEMEmission: shipObj.Emissions.Electromagnetic.QTEMEmission,
-                StartIREmission: shipObj.Emissions.Infrared.StartIREmission,
-                FrontCSEmission: shipObj.Emissions.CrossSection.Front,
-                SideCSEmission: shipObj.Emissions.CrossSection.Side,
-                TopCSEmission: shipObj.Emissions.CrossSection.Top,
               }}
             />
 
