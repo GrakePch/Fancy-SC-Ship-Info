@@ -247,8 +247,8 @@ function App() {
                     shipObj.Dimensions.Height,
                   "m",
                 ],
-                FuelCapacity: shipObj.FuelManagement.FuelCapacity,
-                QuantumFuelCapacity: shipObj.FuelManagement.QuantumFuelCapacity,
+                FuelCapacity: shipObj?.FuelManagement?.FuelCapacity,
+                QuantumFuelCapacity: shipObj?.FuelManagement?.QuantumFuelCapacity,
               }}
             />
             <CardList
@@ -269,7 +269,7 @@ function App() {
             <CardList
               title="ComponentSizes"
               infoObj={{
-                PilotWeapons: (
+                PilotWeaponsHardpoints: (
                   <HardpointSizes
                     components={
                       shipHardpts.Hardpoints.Weapons.PilotWeapons.InstalledItems

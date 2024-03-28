@@ -37,6 +37,16 @@ function HardpointSizes({ components }) {
             </span>
           )
       )}
+      {numsOfSizes.reduce((a, b) => a + b, 0) == 0 && (
+        <span
+          style={{
+            marginRight: ".25rem",
+            opacity: 0.5,
+          }}
+        >
+          {"∅"}
+        </span>
+      )}
     </>
   );
 }
