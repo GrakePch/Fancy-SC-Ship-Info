@@ -683,27 +683,30 @@ function App() {
                 ...shipObj.Buy,
               }}
             />
-            <CardList
-              title="SelfDestruct"
-              infoObj={{
-                Countdown: [
-                  shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
-                    .InstalledItems[0].Countdown,
-                  "s",
-                ],
-                ExplosionDamage:
-                  shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
-                    .InstalledItems[0].Damage,
-                ExplosionRadius: [
-                  shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
-                    .InstalledItems[0].MinRadius +
-                    " ~ " +
+            {shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
+              .InstalledItems && (
+              <CardList
+                title="SelfDestruct"
+                infoObj={{
+                  Countdown: [
                     shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
-                      .InstalledItems[0].MaxRadius,
-                  "m",
-                ],
-              }}
-            />
+                      .InstalledItems[0].Countdown,
+                    "s",
+                  ],
+                  ExplosionDamage:
+                    shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
+                      .InstalledItems[0].Damage,
+                  ExplosionRadius: [
+                    shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
+                      .InstalledItems[0].MinRadius +
+                      " ~ " +
+                      shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
+                        .InstalledItems[0].MaxRadius,
+                    "m",
+                  ],
+                }}
+              />
+            )}
             <CardList
               title="Shields"
               infoObj={{
