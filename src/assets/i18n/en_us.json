@@ -79,8 +79,9 @@
     "Astro Armada, Area 18":"",
     "Crusader Showroom, Orison":"",
 
-    "PilotWeaponsHardpoints":"Pilot Weap. Slots",
+    "PilotWeaponHardpoints":"Pilot Wpn. Slots",
     "Turrets":"Turrets",
+    "TurretWeaponHardpoints":"Turret Wpn. Slots",
     "MissileRacks":"Missile Racks",
     "Shields":"Shields",
     "PowerPlants":"Power Plants",

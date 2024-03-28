@@ -8,6 +8,7 @@
 }
 
 .card-list h2 {
+    font-size: 1.25rem;
     font-weight: 500;
     margin-left: .5rem;
     text-transform: uppercase;

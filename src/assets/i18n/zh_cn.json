@@ -101,7 +101,7 @@
     "DamageReducDis": "畸变伤害减免",
     "SignalReducEM": "电磁信号减免",
     "SignalReducIR": "红外信号减免",
-    "SignalReducCS": "横截面信号减免",
+    "SignalReducCS": "截面信号减免",
 
     "TotalShieldHP": "护盾总量",
     "TotalWeaponsDmg": "武器每秒总伤",
@@ -113,9 +113,9 @@
     "ActiveEMEmission": "活跃电磁信号",
     "QTEMEmission": "量子航行电磁信号",
     "StartIREmission": "启动时红外信号",
-    "FrontCSEmission": "正面横截面信号",
-    "SideCSEmission": "侧面横截面信号",
-    "TopCSEmission": "顶部横截面信号",
+    "FrontCSEmission": "正面截面信号",
+    "SideCSEmission": "侧面截面信号",
+    "TopCSEmission": "顶部截面信号",
 
     "StandardClaimTime": "保险时长",
     "ExpeditedClaimTime": "加急后保险时长",
@@ -125,8 +125,9 @@
     "Astro Armada, Area 18":"斯坦顿 18区",
     "Crusader Showroom, Orison":"斯坦顿 奥里森",
 
-    "PilotWeaponsHardpoints":"主驾武器挂点",
+    "PilotWeaponHardpoints":"主驾武器挂点",
     "Turrets":"炮塔",
+    "TurretWeaponHardpoints":"炮塔武器挂点",
     "MissileRacks":"导弹架",
     "Shields":"护盾",
     "PowerPlants":"电源",

@@ -45,6 +45,8 @@ function App() {
   const [dictShipZhName, setDictShipZhName] = useState({});
   const [dictShipImgIso, setDictShipImgIso] = useState({});
 
+  const [listTurretGuns, setListTurretGuns] = useState([]);
+
   useEffect(() => {
     let sp = new URLSearchParams(window.location.search);
     setShipId(sp.get("s"));
@@ -153,6 +155,30 @@ function App() {
     }
   }, [shipIdx]);
 
+  useEffect(() => {
+    if (!shipHardpts) return;
+    let temp = [];
+    if (shipHardpts.Hardpoints.Weapons.MannedTurrets) {
+      let mannedTurrets =
+        shipHardpts.Hardpoints.Weapons.MannedTurrets.InstalledItems;
+      for (let i = 0; i < mannedTurrets?.length; ++i) {
+        for (let j = 0; j < mannedTurrets[i].SubWeapons?.length; ++j) {
+          temp.push(mannedTurrets[i].SubWeapons[j]);
+        }
+      }
+    }
+    if (shipHardpts.Hardpoints.Weapons.RemoteTurrets) {
+      let remoteTurrets =
+        shipHardpts.Hardpoints.Weapons.RemoteTurrets.InstalledItems;
+      for (let i = 0; i < remoteTurrets?.length; ++i) {
+        for (let j = 0; j < remoteTurrets[i].SubWeapons?.length; ++j) {
+          temp.push(remoteTurrets[i].SubWeapons[j]);
+        }
+      }
+    }
+    setListTurretGuns(temp);
+  }, [shipHardpts]);
+
   return (
     <LangContext.Provider value={[lang, setLang]}>
       <ShipSelector
@@ -248,7 +274,8 @@ function App() {
                   "m",
                 ],
                 FuelCapacity: shipObj?.FuelManagement?.FuelCapacity,
-                QuantumFuelCapacity: shipObj?.FuelManagement?.QuantumFuelCapacity,
+                QuantumFuelCapacity:
+                  shipObj?.FuelManagement?.QuantumFuelCapacity,
               }}
             />
             <CardList
@@ -269,23 +296,14 @@ function App() {
             <CardList
               title="ComponentSizes"
               infoObj={{
-                PilotWeaponsHardpoints: (
+                PilotWeaponHardpoints: (
                   <HardpointSizes
                     components={
                       shipHardpts.Hardpoints.Weapons.PilotWeapons.InstalledItems
                     }
                   />
                 ),
-                Turrets: (
-                  <HardpointSizes
-                    components={[
-                      ...(shipHardpts.Hardpoints.Weapons.MannedTurrets
-                        .InstalledItems || []),
-                      ...(shipHardpts.Hardpoints.Weapons.RemoteTurrets
-                        .InstalledItems || []),
-                    ]}
-                  />
-                ),
+                TurretWeaponHardpoints: <HardpointSizes components={listTurretGuns} />,
                 MissileRacks: (
                   <HardpointSizes
                     components={
@@ -326,6 +344,16 @@ function App() {
                   />
                 ),
               }}
+              iconOverrides={[
+                "Weapons",
+                "Turrets",
+                null,
+                "ShieldType" +
+                  shipHardpts.Hardpoints.Components.Systems.Shields.FaceType,
+                null,
+                null,
+                null,
+              ]}
             />
 
             {shipObj.IsSpaceship && (

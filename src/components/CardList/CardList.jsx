@@ -3,14 +3,23 @@ import "./CardList.css";
 import icons from "../../assets/icons";
 import I18n from "../I18n";
 
-function CardList({ title, infoObj }) {
+function CardList({ title, infoObj, iconOverrides }) {
   return (
     infoObj && (
       <div className="card-list">
-        <h2><I18n text={title} /></h2>
-        {Object.keys(infoObj).map((item) => (
+        <h2>
+          <I18n text={title} />
+        </h2>
+        {Object.keys(infoObj).map((item, idx) => (
           <div className="card-list-item font-slim" key={item}>
-            <div>{icons[item] && icons[item]}</div>
+            {iconOverrides && iconOverrides[idx] ? (
+              <div>
+                {icons[iconOverrides[idx]] && icons[iconOverrides[idx]]}
+              </div>
+            ) : (
+              <div>{icons[item] && icons[item]}</div>
+            )}
+
             <p>
               <I18n text={item} />
             </p>
