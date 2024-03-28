@@ -86,5 +86,16 @@
     "Shields":"Shields",
     "PowerPlants":"Power Plants",
     "Coolers":"Coolers",
-    "QuantumDrives":"Quantum Drives"
+    "QuantumDrives":"Quantum Drives",
+    
+    "Afterburner": "Afterburner",
+    "BoostCapacitor": "Afterburner Capacity",
+    "BoostIdleCost": "Afterburner Burn Rate",
+    "BoostRegenRate": "Regeneration Rate",
+    "BoostRegenDelay": "Delay Before Regen.",
+    "BoostRegenTime": "Time To Fully Regen.",
+    
+    "FuelBurnRate": "Fuel Burn Rate",
+    
+    "FlightTime": "Flight Time"
 }

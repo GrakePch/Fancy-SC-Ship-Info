@@ -273,6 +273,16 @@ function App() {
                     shipObj.Dimensions.Height,
                   "m",
                 ],
+                TotalHealthStruct:
+                  Object.values(
+                    shipObj.Hull.StructureHealthPoints.Parts
+                  ).reduce((a, b) => a + b, 0) +
+                  Object.values(
+                    shipObj.Hull.StructureHealthPoints.VitalParts
+                  ).reduce((a, b) => a + b, 0),
+                VitalHealthStruct: Object.values(
+                  shipObj.Hull.StructureHealthPoints.VitalParts
+                ).reduce((a, b) => a + b, 0),
                 FuelCapacity: shipObj?.FuelManagement?.FuelCapacity,
                 QuantumFuelCapacity:
                   shipObj?.FuelManagement?.QuantumFuelCapacity,
@@ -303,7 +313,9 @@ function App() {
                     }
                   />
                 ),
-                TurretWeaponHardpoints: <HardpointSizes components={listTurretGuns} />,
+                TurretWeaponHardpoints: (
+                  <HardpointSizes components={listTurretGuns} />
+                ),
                 MissileRacks: (
                   <HardpointSizes
                     components={
@@ -358,19 +370,6 @@ function App() {
 
             {shipObj.IsSpaceship && (
               <>
-                <CardList
-                  title="FuelTanks"
-                  infoObj={{
-                    FuelCapacity: shipObj.FuelManagement.FuelCapacity,
-                    QuantumFuelCapacity:
-                      shipObj.FuelManagement.QuantumFuelCapacity,
-                    FuelIntakeRate: shipObj.FuelManagement.FuelIntakeRate,
-                    IntakeToMainFuelRatio:
-                      shipObj.FuelManagement.IntakeToMainFuelRatio,
-                    TimeForIntakesToFillTank:
-                      shipObj.FuelManagement.TimeForIntakesToFillTank,
-                  }}
-                />
                 <FlightCharacteristics
                   scm={shipObj.FlightCharacteristics.ScmSpeed}
                   max={shipObj.FlightCharacteristics.MaxSpeed}
@@ -390,27 +389,52 @@ function App() {
                   UwdMax={accelUwdMax}
                   DwdMax={accelDwdMax}
                 />
+                <CardList
+                  title="Afterburner"
+                  infoObj={{
+                    BoostCapacitor:
+                      shipObj.FlightCharacteristics.Capacitors
+                        .ThrusterCapacitorSize,
+                    BoostIdleCost: [
+                      shipObj.FlightCharacteristics.Capacitors
+                        .CapacitorIdleCost,
+                      "/s",
+                    ],
+                    BoostRegenRate: [
+                      shipObj.FlightCharacteristics.Capacitors
+                        .CapacitorRegenPerSec,
+                      "/s",
+                    ],
+                    BoostRegenDelay: [
+                      shipObj.FlightCharacteristics.Capacitors
+                        .CapacitorRegenDelay,
+                      "s",
+                    ],
+                    BoostRegenTime: [
+                      shipObj.FlightCharacteristics.Capacitors.RegenerationTime,
+                      "s",
+                    ],
+                  }}
+                />
               </>
             )}
 
             <CardList
               title="Combats"
               infoObj={{
-                TotalHealthStruct:
-                  Object.values(
-                    shipObj.Hull.StructureHealthPoints.Parts
-                  ).reduce((a, b) => a + b, 0) +
-                  Object.values(
-                    shipObj.Hull.StructureHealthPoints.VitalParts
-                  ).reduce((a, b) => a + b, 0),
-                VitalHealthStruct: Object.values(
-                  shipObj.Hull.StructureHealthPoints.VitalParts
-                ).reduce((a, b) => a + b, 0),
-                TotalShieldHP: shipObj.Weapons.TotalShieldHP,
                 TotalWeaponsDmg: [shipObj.Weapons.TotalWeaponsDmg, "/s"],
                 TotalTurretDmg: ["?", "/s"],
                 TotalMissilesDmg: shipObj.Weapons.TotalMissilesDmg,
                 TotalEMPDmg: "?",
+                TotalShieldHP: shipObj.Weapons.TotalShieldHP,
+                DecoyAmmo:
+                  shipHardpts.Hardpoints.Components.Systems.Countermeasures?.InstalledItems?.at(
+                    0
+                  ).Ammunition,
+                NoiseAmmo:
+                  shipHardpts.Hardpoints.Components.Systems.Countermeasures?.InstalledItems?.at(
+                    1
+                  ).Ammunition,
               }}
             />
             <CardList
@@ -474,6 +498,122 @@ function App() {
               }}
             />
 
+            {shipObj.IsSpaceship && (
+              <>
+                <CardList
+                  title="FuelTanks"
+                  infoObj={{
+                    FuelCapacity: shipObj.FuelManagement.FuelCapacity,
+                    QuantumFuelCapacity:
+                      shipObj.FuelManagement.QuantumFuelCapacity,
+                    FuelIntakeRate: shipObj.FuelManagement.FuelIntakeRate,
+                    IntakeToMainFuelRatio:
+                      shipObj.FuelManagement.IntakeToMainFuelRatio,
+                    TimeForIntakesToFillTank:
+                      shipObj.FuelManagement.TimeForIntakesToFillTank,
+                  }}
+                />
+                <CardList
+                  title="FuelBurnRate"
+                  infoObj={{
+                    FuelBurnRateMain: [
+                      shipObj.FuelManagement.FuelUsagePerSecond.Main,
+                      "/s",
+                    ],
+                    FuelBurnRateMainAssisted:
+                      shipObj.FuelManagement.FuelUsagePerSecond.MainAssisted !=
+                      null ? (
+                        [
+                          shipObj.FuelManagement.FuelUsagePerSecond.MainAssisted.toFixed(
+                            2
+                          ),
+                          "/s",
+                        ]
+                      ) : (
+                        <span
+                          style={{
+                            opacity: 0.5,
+                          }}
+                        >
+                          ∅
+                        </span>
+                      ),
+                    FuelBurnRateRetro: [
+                      shipObj.FuelManagement.FuelUsagePerSecond.Retro,
+                      "/s",
+                    ],
+                    FuelBurnRateManeuv: [
+                      shipObj.FuelManagement.FuelUsagePerSecond.Maneuvering,
+                      "/s",
+                    ],
+                    FuelBurnRateVtol: [
+                      shipObj.FuelManagement.FuelUsagePerSecond.Vtol,
+                      "/s",
+                    ],
+                  }}
+                />
+                <CardList
+                  title="FlightTime"
+                  infoObj={{
+                    FlightTimeMain: [
+                      (
+                        shipObj.FuelManagement.FuelCapacity /
+                        shipObj.FuelManagement.FuelUsagePerSecond.Main /
+                        60
+                      ).toFixed(0),
+                      "min",
+                    ],
+                    FlightTimeMainAssisted:
+                      shipObj.FuelManagement.FuelUsagePerSecond.MainAssisted !=
+                      null ? (
+                        [
+                          (
+                            shipObj.FuelManagement.FuelCapacity /
+                            shipObj.FuelManagement.FuelUsagePerSecond
+                              .MainAssisted /
+                            60
+                          ).toFixed(0),
+                          "min",
+                        ]
+                      ) : (
+                        <span
+                          style={{
+                            opacity: 0.5,
+                          }}
+                        >
+                          ∅
+                        </span>
+                      ),
+                    FlightTimeRetro: [
+                      (
+                        shipObj.FuelManagement.FuelCapacity /
+                        shipObj.FuelManagement.FuelUsagePerSecond.Retro /
+                        60
+                      ).toFixed(0),
+                      "min",
+                    ],
+                    FlightTimeManeuv: [
+                      (
+                        shipObj.FuelManagement.FuelCapacity /
+                        shipObj.FuelManagement.FuelUsagePerSecond.Maneuvering /
+                        60
+                      ).toFixed(0),
+                      "min",
+                    ],
+                    FlightTimeVtol: [
+                      (
+                        shipObj.FuelManagement.FuelCapacity /
+                        shipObj.FuelManagement.FuelUsagePerSecond.Vtol /
+                        60
+                      ).toFixed(0),
+                      shipObj.FuelManagement.FuelUsagePerSecond.Vtol
+                        ? "min"
+                        : "",
+                    ],
+                  }}
+                />
+              </>
+            )}
             <CardList
               title="Insurance"
               infoObj={{
@@ -496,23 +636,6 @@ function App() {
                 ...shipObj.Buy,
               }}
             />
-            {shipObj.IsSpaceship && (
-              <>
-                <CardList
-                  title="FuelTanks"
-                  infoObj={{
-                    FuelCapacity: shipObj.FuelManagement.FuelCapacity,
-                    QuantumFuelCapacity:
-                      shipObj.FuelManagement.QuantumFuelCapacity,
-                    FuelIntakeRate: shipObj.FuelManagement.FuelIntakeRate,
-                    IntakeToMainFuelRatio:
-                      shipObj.FuelManagement.IntakeToMainFuelRatio,
-                    TimeForIntakesToFillTank:
-                      shipObj.FuelManagement.TimeForIntakesToFillTank,
-                  }}
-                />
-              </>
-            )}
           </div>
         </>
       )}

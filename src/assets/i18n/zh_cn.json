@@ -94,8 +94,8 @@
     "AccelTri": "三轴加速度",
     "AccManeuv": "机动加速度",
 
-    "TotalHealthStruct": "总结构血量",
-    "VitalHealthStruct": "关键结构血量",
+    "TotalHealthStruct": "结构总强度",
+    "VitalHealthStruct": "关键结构强度",
     "DamageReducPhy": "物理伤害减免",
     "DamageReducEne": "能量伤害减免",
     "DamageReducDis": "畸变伤害减免",
@@ -104,7 +104,7 @@
     "SignalReducCS": "截面信号减免",
 
     "TotalShieldHP": "护盾总量",
-    "TotalWeaponsDmg": "武器每秒总伤",
+    "TotalWeaponsDmg": "机炮每秒总伤",
     "TotalTurretDmg": "炮塔每秒总伤",
     "TotalMissilesDmg": "导弹总伤",
     "TotalEMPDmg": "电磁脉冲总伤",
@@ -125,12 +125,23 @@
     "Astro Armada, Area 18":"斯坦顿 18区",
     "Crusader Showroom, Orison":"斯坦顿 奥里森",
 
-    "PilotWeaponHardpoints":"主驾武器挂点",
+    "PilotWeaponHardpoints":"主驾机炮挂点",
     "Turrets":"炮塔",
     "TurretWeaponHardpoints":"炮塔武器挂点",
     "MissileRacks":"导弹架",
     "Shields":"护盾",
     "PowerPlants":"电源",
     "Coolers":"冷却器",
-    "QuantumDrives":"量子引擎"
+    "QuantumDrives":"量子引擎",
+
+    "Afterburner": "加力",
+    "BoostCapacitor": "加力容量",
+    "BoostIdleCost": "消耗速率",
+    "BoostRegenRate": "恢复速率",
+    "BoostRegenDelay": "恢复前延迟",
+    "BoostRegenTime": "完全恢复时长",
+
+    "FuelBurnRate": "燃料消耗速率",
+
+    "FlightTime": "飞行续航"
 }
