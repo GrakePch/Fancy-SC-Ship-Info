@@ -44,6 +44,10 @@
   box-sizing: border-box;
 }
 
+.font-geom {
+  font-family: "Outfit", Inter, "Noto Sans SC", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
 .font-mono {
   font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
 }

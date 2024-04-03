@@ -19,6 +19,7 @@ import LangContext from "./contexts/LangContext";
 import Icon from "@mdi/react";
 import { mdiSync } from "@mdi/js";
 import HardpointSizes from "./components/HardpointSizes/HardpointSizes";
+import Components from "./components/Components/Components";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -226,6 +227,11 @@ function App() {
         setShipId={setShipId}
         dictShipZhName={dictShipZhName}
       />
+      {shipIdx == null && (
+        <button onClick={() => setIsShipSelectorOn(true)} className="font-geom">
+          <h2>Select a vehicle</h2>
+        </button>
+      )}
       {shipIdx && (
         <div className="title-card">
           <div className="manufacturer-bg">
@@ -341,69 +347,182 @@ function App() {
                 ],
               }}
             />
+            {shipHardpts && (
+              <CardList
+                title="ComponentSizes"
+                infoObj={{
+                  PilotWeaponHardpoints: (
+                    <HardpointSizes
+                      components={
+                        shipHardpts.Hardpoints.Weapons.PilotWeapons
+                          .InstalledItems
+                      }
+                    />
+                  ),
+                  TurretWeaponHardpoints: (
+                    <HardpointSizes components={listTurretGuns} />
+                  ),
+                  MissileRacks: (
+                    <HardpointSizes
+                      components={
+                        shipHardpts.Hardpoints.Weapons.MissileRacks
+                          .InstalledItems
+                      }
+                    />
+                  ),
+                  Shields: (
+                    <HardpointSizes
+                      components={
+                        shipHardpts.Hardpoints.Components.Systems.Shields
+                          .InstalledItems
+                      }
+                    />
+                  ),
+                  PowerPlants: (
+                    <HardpointSizes
+                      components={
+                        shipHardpts.Hardpoints.Components.Propulsion.PowerPlants
+                          .InstalledItems
+                      }
+                    />
+                  ),
+                  Coolers: (
+                    <HardpointSizes
+                      components={
+                        shipHardpts.Hardpoints.Components.Systems.Coolers
+                          .InstalledItems
+                      }
+                    />
+                  ),
+                  QuantumDrives: (
+                    <HardpointSizes
+                      components={
+                        shipHardpts.Hardpoints.Components.Propulsion
+                          .QuantumDrives.InstalledItems
+                      }
+                    />
+                  ),
+                }}
+                iconOverrides={[
+                  "Weapons",
+                  "Turrets",
+                  "Missiles",
+                  "ShieldType" +
+                    shipHardpts.Hardpoints.Components.Systems.Shields.FaceType,
+                  null,
+                  null,
+                  null,
+                ]}
+              />
+            )}
+            <div style={{ gridColumn: "1/3" }}>
+              <Components
+                title="CompTitle-PilotWeapons"
+                icon="Weapons"
+                type="Weapons"
+                defaultCompGroupObj={
+                  shipHardpts?.Hardpoints?.Weapons?.PilotWeapons
+                }
+              />
+            </div>
             <CardList
-              title="ComponentSizes"
+              title="Combats"
               infoObj={{
-                PilotWeaponHardpoints: (
-                  <HardpointSizes
-                    components={
-                      shipHardpts.Hardpoints.Weapons.PilotWeapons.InstalledItems
-                    }
-                  />
-                ),
-                TurretWeaponHardpoints: (
-                  <HardpointSizes components={listTurretGuns} />
-                ),
-                MissileRacks: (
-                  <HardpointSizes
-                    components={
-                      shipHardpts.Hardpoints.Weapons.MissileRacks.InstalledItems
-                    }
-                  />
-                ),
-                Shields: (
-                  <HardpointSizes
-                    components={
-                      shipHardpts.Hardpoints.Components.Systems.Shields
-                        .InstalledItems
-                    }
-                  />
-                ),
-                PowerPlants: (
-                  <HardpointSizes
-                    components={
-                      shipHardpts.Hardpoints.Components.Propulsion.PowerPlants
-                        .InstalledItems
-                    }
-                  />
-                ),
-                Coolers: (
-                  <HardpointSizes
-                    components={
-                      shipHardpts.Hardpoints.Components.Systems.Coolers
-                        .InstalledItems
-                    }
-                  />
-                ),
-                QuantumDrives: (
-                  <HardpointSizes
-                    components={
-                      shipHardpts.Hardpoints.Components.Propulsion.QuantumDrives
-                        .InstalledItems
-                    }
-                  />
-                ),
+                TotalWeaponsDmg: [shipObj.Weapons.TotalWeaponsDmg, "/s"],
+                TotalTurretDmg: ["?", "/s"],
+                TotalMissilesDmg: shipObj.Weapons.TotalMissilesDmg,
+                TotalEMPDmg: "?",
+                TotalShieldHP: shipObj.Weapons.TotalShieldHP,
+                TotalDecoyAmmo:
+                  totalDecoyItemNum && totalDecoyItemNum + "×" + totalDecoyAmmo,
+                TotalNoiseAmmo:
+                  totalNoiseItemNum && totalNoiseItemNum + "×" + totalNoiseAmmo,
               }}
               iconOverrides={[
                 "Weapons",
                 "Turrets",
                 "Missiles",
+                "EMP",
                 "ShieldType" +
                   shipHardpts.Hardpoints.Components.Systems.Shields.FaceType,
-                null,
-                null,
-                null,
+                "Decoy",
+                "Noise",
               ]}
+            />
+            <div style={{ gridColumn: "1/-1" }}>
+              <div className="component-configs">
+                <Components
+                  title="CompTitle-TurretWeapons"
+                  icon="Turrets"
+                  type="Weapons"
+                  defaultCompGroupObj={{
+                    InstalledItems: listTurretGuns,
+                  }}
+                />
+              </div>
+            </div>
+            <div style={{ gridColumn: "1/-1" }}>
+              <Components
+                title="MissileRacks"
+                icon="Missiles"
+                type="MissileRacks"
+                defaultCompGroupObj={
+                  shipHardpts?.Hardpoints?.Weapons?.MissileRacks
+                }
+              />
+            </div>
+            <div className="component-groups" style={{ gridColumn: "1/3" }}>
+              <Components
+                title="PowerPlants"
+                icon="PowerPlants"
+                defaultCompGroupObj={
+                  shipHardpts?.Hardpoints?.Components?.Propulsion?.PowerPlants
+                }
+              />
+              <Components
+                title="Coolers"
+                icon="Coolers"
+                defaultCompGroupObj={
+                  shipHardpts?.Hardpoints?.Components?.Systems?.Coolers
+                }
+              />
+              <Components
+                title="Shields"
+                icon="Shields"
+                defaultCompGroupObj={
+                  shipHardpts?.Hardpoints?.Components?.Systems?.Shields
+                }
+              />
+            </div>
+            <CardList
+              title="Shields"
+              infoObj={{
+                TotalShieldPool:
+                  shipHardpts.Hardpoints.Components.Systems.Shields
+                    .TotalShieldPool,
+                SingleFaceShieldPool:
+                  shipHardpts.Hardpoints.Components.Systems.Shields
+                    .TotalShieldPool /
+                  (shipHardpts.Hardpoints.Components.Systems.Shields.FaceType ==
+                  "Bubble"
+                    ? 1
+                    : shipHardpts.Hardpoints.Components.Systems.Shields
+                        .FaceType == "FrontBack"
+                    ? 2
+                    : 4),
+                TotalRegenSpeed: [
+                  shipHardpts.Hardpoints.Components.Systems.Shields
+                    .TotalRegenSpeed,
+                  "/s",
+                ],
+                RegenDelay: null,
+                PhysicalAbsorptionRateMax: [
+                  shipHardpts.Hardpoints.Components.Systems.Shields.InstalledItems?.at(
+                    0
+                  )?.PhysicalAbsorption?.Maximum * 100,
+                  "%",
+                ],
+              }}
             />
 
             {shipObj.IsSpaceship && (
@@ -427,63 +546,18 @@ function App() {
                   UwdMax={accelUwdMax}
                   DwdMax={accelDwdMax}
                 />
-                <CardList
-                  title="Afterburner"
-                  infoObj={{
-                    BoostCapacitor:
-                      shipObj.FlightCharacteristics.Capacitors
-                        .ThrusterCapacitorSize,
-                    BoostIdleCost: [
-                      shipObj.FlightCharacteristics.Capacitors
-                        .CapacitorIdleCost,
-                      "/s",
-                    ],
-                    BoostRegenRate: [
-                      shipObj.FlightCharacteristics.Capacitors
-                        .CapacitorRegenPerSec,
-                      "/s",
-                    ],
-                    BoostRegenDelay: [
-                      shipObj.FlightCharacteristics.Capacitors
-                        .CapacitorRegenDelay,
-                      "s",
-                    ],
-                    BoostRegenTime: [
-                      shipObj.FlightCharacteristics.Capacitors.RegenerationTime,
-                      "s",
-                    ],
-                  }}
-                  iconOverrides={[null, "Afterburner", null, null, null]}
-                />
               </>
             )}
 
-            <CardList
-              title="Combats"
-              infoObj={{
-                TotalWeaponsDmg: [shipObj.Weapons.TotalWeaponsDmg, "/s"],
-                TotalTurretDmg: ["?", "/s"],
-                TotalMissilesDmg: shipObj.Weapons.TotalMissilesDmg,
-                TotalEMPDmg: "?",
-                TotalShieldHP: shipObj.Weapons.TotalShieldHP,
-                TotalDecoyAmmo:
-                  (totalDecoyItemNum > 1 && totalDecoyItemNum + "×") +
-                  totalDecoyAmmo,
-                TotalNoiseAmmo:
-                  (totalNoiseItemNum > 1 && totalNoiseItemNum + "×") +
-                  totalNoiseAmmo,
-              }}
-              iconOverrides={[
-                "Weapons",
-                "Turrets",
-                "Missiles",
-                "EMP",
-                "ShieldType" +
-                  shipHardpts.Hardpoints.Components.Systems.Shields.FaceType,
-                "Decoy",
-                "Noise",
-              ]}
+            <Components
+              title="CompTitle-QuantumDrives"
+              icon="QuantumDrives"
+              col="1"
+              defaultCompGroupObj={
+                shipHardpts?.Hardpoints?.Components?.Propulsion?.QuantumDrives
+              }
             />
+
             <CardList
               title="Emissions"
               infoObj={{
@@ -659,6 +733,34 @@ function App() {
                     ],
                   }}
                 />
+                <CardList
+                  title="Afterburner"
+                  infoObj={{
+                    BoostCapacitor:
+                      shipObj.FlightCharacteristics.Capacitors
+                        .ThrusterCapacitorSize,
+                    BoostIdleCost: [
+                      shipObj.FlightCharacteristics.Capacitors
+                        .CapacitorIdleCost,
+                      "/s",
+                    ],
+                    BoostRegenRate: [
+                      shipObj.FlightCharacteristics.Capacitors
+                        .CapacitorRegenPerSec,
+                      "/s",
+                    ],
+                    BoostRegenDelay: [
+                      shipObj.FlightCharacteristics.Capacitors
+                        .CapacitorRegenDelay,
+                      "s",
+                    ],
+                    BoostRegenTime: [
+                      shipObj.FlightCharacteristics.Capacitors.RegenerationTime,
+                      "s",
+                    ],
+                  }}
+                  iconOverrides={[null, "Afterburner", null, null, null]}
+                />
               </>
             )}
             <CardList
@@ -707,36 +809,6 @@ function App() {
                 }}
               />
             )}
-            <CardList
-              title="Shields"
-              infoObj={{
-                TotalShieldPool:
-                  shipHardpts.Hardpoints.Components.Systems.Shields
-                    .TotalShieldPool,
-                SingleFaceShieldPool:
-                  shipHardpts.Hardpoints.Components.Systems.Shields
-                    .TotalShieldPool /
-                  (shipHardpts.Hardpoints.Components.Systems.Shields.FaceType ==
-                  "Bubble"
-                    ? 1
-                    : shipHardpts.Hardpoints.Components.Systems.Shields
-                        .FaceType == "FrontBack"
-                    ? 2
-                    : 4),
-                TotalRegenSpeed: [
-                  shipHardpts.Hardpoints.Components.Systems.Shields
-                    .TotalRegenSpeed,
-                  "/s",
-                ],
-                RegenDelay: null,
-                PhysicalAbsorptionRateMax: [
-                  shipHardpts.Hardpoints.Components.Systems.Shields.InstalledItems?.at(
-                    0
-                  )?.PhysicalAbsorption?.Maximum * 100,
-                  "%",
-                ],
-              }}
-            />
           </div>
         </>
       )}

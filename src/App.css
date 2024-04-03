@@ -41,6 +41,7 @@
   position: absolute;
   top: 2rem;
   right: 2rem;
+  max-height: 10rem;
   height: calc(100% - 4rem);
   filter: drop-shadow(0 1.5rem 1rem #00000080)
 }
@@ -123,13 +124,28 @@
   font-variant-numeric: tabular-nums;
 }
 
+.component-configs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  grid-column: 1/-1;
+}
+
+.component-groups {
+  display: flex;
+  gap: .5rem;
+}
+
 @media screen and (max-width: 719px) {
   #root {
     padding: 1rem;
   }
 
   .title-card {
-    padding: 1rem;
+    /* padding: 1rem; */
     padding-top: 12rem;
     font-size: 12px;
   }

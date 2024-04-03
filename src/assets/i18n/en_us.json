@@ -1,4 +1,13 @@
 {
+    "CompTitle-PilotWeapons": "Pilot Weapons",
+    "CompTitle-TurretWeapons": "Turret Weapons",
+    "CompTitle-QuantumDrives": "Qua. Drive",
+    
+    "Short-Energy": "ENRGY",
+    "Short-Physical": "PHYSC",
+    "Short-Distortion": "DSTRT",
+    "Short-Mixed": "MIXED",
+    
     "Basic": "Basic",
     "Payloads": "Payloads",
     "ComponentSizes": "Component Sizes",
