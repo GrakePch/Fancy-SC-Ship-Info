@@ -18,7 +18,7 @@ import LangContext from "./contexts/LangContext";
 
 import Icon from "@mdi/react";
 import { mdiSync } from "@mdi/js";
-import HardpointSizes from "./components/HardpointSizes/HardpointSizes";
+import bg_line from "./assets/lines.png";
 import Components from "./components/Components/Components";
 import ComponentGroup from "./components/ComponentGroup/ComponentGroup";
 
@@ -420,6 +420,16 @@ function App() {
                 .InstalledItems
             }
           />
+          <div
+            style={{
+              borderRadius: "1rem",
+              backgroundImage: `url(${bg_line})`,
+              backgroundSize: "1.5rem",
+              backgroundPosition: "center",
+              gridColumn: "span 2",
+              opacity: 0.15,
+            }}
+          ></div>
         </div>
       )}
       {shipObj && (
@@ -511,7 +521,64 @@ function App() {
                 "Noise",
               ]}
             />
-            <CardList title="Quantum Travel" infoObj={{}} />
+            <CardList
+              title="QuantumTravel"
+              infoObj={{
+                QTRangeMax: [
+                  (
+                    shipObj?.FuelManagement?.QuantumFuelCapacity /
+                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                      0
+                    )?.FuelRate /
+                    1e9
+                  ).toFixed(3),
+                  "Gm",
+                ],
+                QTFuelConsumptionRate: [
+                  (
+                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                      0
+                    )?.FuelRate * 1e9
+                  ).toFixed(2),
+                  "/Gm",
+                ],
+                QTSpeedCruise: [
+                  (
+                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                      0
+                    )?.CruiseSpeed / 1000
+                  ).toFixed(0),
+                  "km/s",
+                ],
+                QTSpeedStage2: [
+                  (
+                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                      0
+                    )?.Stage2Speed / 1000
+                  ).toFixed(0),
+                  "km/s",
+                ],
+                QTSpeedStage1: [
+                  (
+                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                      0
+                    )?.Stage1Speed / 1000
+                  ).toFixed(0),
+                  "km/s",
+                ],
+                TravelTimeFromCruToMic: [
+                  "~" +
+                    (
+                      57469469000 /
+                      shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                        0
+                      )?.CruiseSpeed /
+                      60
+                    ).toFixed(0),
+                  "min",
+                ],
+              }}
+            />
             <CardList
               title="Shields"
               infoObj={{
@@ -569,6 +636,31 @@ function App() {
                   DwdMax={accelDwdMax}
                 />
               </>
+            )}
+
+            {shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
+              .InstalledItems && (
+              <CardList
+                title="SelfDestruct"
+                infoObj={{
+                  Countdown: [
+                    shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
+                      .InstalledItems[0].Countdown,
+                    "s",
+                  ],
+                  ExplosionDamage:
+                    shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
+                      .InstalledItems[0].Damage,
+                  ExplosionRadius: [
+                    shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
+                      .InstalledItems[0].MinRadius +
+                      " ~ " +
+                      shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
+                        .InstalledItems[0].MaxRadius,
+                    "m",
+                  ],
+                }}
+              />
             )}
 
             <CardList
@@ -775,30 +867,6 @@ function App() {
                   iconOverrides={[null, "Afterburner", null, null, null]}
                 />
               </>
-            )}
-            {shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
-              .InstalledItems && (
-              <CardList
-                title="SelfDestruct"
-                infoObj={{
-                  Countdown: [
-                    shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
-                      .InstalledItems[0].Countdown,
-                    "s",
-                  ],
-                  ExplosionDamage:
-                    shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
-                      .InstalledItems[0].Damage,
-                  ExplosionRadius: [
-                    shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
-                      .InstalledItems[0].MinRadius +
-                      " ~ " +
-                      shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
-                        .InstalledItems[0].MaxRadius,
-                    "m",
-                  ],
-                }}
-              />
             )}
           </div>
         </>

@@ -23,6 +23,7 @@
     "Emissions": "Emissions",
     "ArmorAttributes": "Armor Attributes",
     "Insurance": "Insurance",
+    "QuantumTravel": "Quantum Travel",
 
 
     "Size": "Size",
@@ -47,6 +48,13 @@
     "IntakeToMainFuelRatio": "",
     "TimeForIntakesToFillTank": "Time To Refill",
 
+    "QTFuelConsumptionRate": "Fuel Consump. Rate",
+    "QTRangeMax": "Max Range",
+    "QTSpeedStage1": "Stage 1 Speed",
+    "QTSpeedStage2": "Stage 2 Speed",
+    "QTSpeedCruise": "Cruise Speed",
+    "TravelTimeFromCruToMic": "Time of CRU → MIC",
+
     "ScmSpeed": "SCM Speed",
     "MaxSpeed": "Max Speed",
     "Pitch": "Pitch",
@@ -70,13 +78,15 @@
     "SignalReducIR":        "IR Emission Reduction",
     "SignalReducCS":        "CS Emission Reduction",
 
-    "TotalShieldHP":    "Total Shield HP",
     "TotalWeaponsDmg":  "Total Weapons DMG",
     "TotalTurretDmg":   "Total Turret DMG",
     "TotalMissilesDmg": "Total Missiles DMG",
     "TotalEMPDmg":      "Total EMP DMG",
     "TotalDecoyAmmo":   "Total Decoy Ammo",
     "TotalNoiseAmmo":   "Total Noise Ammo",
+
+    "TotalShieldHP": "Total Shield HP",
+    "SingleFaceShieldHP": "Single Face Shield HP",
 
     "IdleEMEmission": "EM Emission Idle",
     "ActiveEMEmission": "EM Emission Active",

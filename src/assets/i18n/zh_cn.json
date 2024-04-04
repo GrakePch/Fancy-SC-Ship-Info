@@ -69,6 +69,7 @@
     "Emissions": "辐射信号",
     "ArmorAttributes": "装甲属性",
     "Insurance": "保险",
+    "QuantumTravel": "量子航行",
 
 
     "Size": "尺寸等级",
@@ -92,6 +93,13 @@
     "FuelIntakeRate": "氢燃料摄入速率",
     "IntakeToMainFuelRatio": "",
     "TimeForIntakesToFillTank": "加满所需时长",
+    
+    "QTFuelConsumptionRate": "燃料消耗速率",
+    "QTRangeMax": "最大航程",
+    "QTSpeedStage1": "阶段1速度",
+    "QTSpeedStage2": "阶段2速度",
+    "QTSpeedCruise": "巡航速度",
+    "TravelTimeFromCruToMic": "十字军到微科 耗时",
 
     "ScmSpeed": "作战机动速度",
     "MaxSpeed": "最大速度",
@@ -116,13 +124,15 @@
     "SignalReducIR": "红外信号减免",
     "SignalReducCS": "截面信号减免",
 
-    "TotalShieldHP":    "护盾总量",
     "TotalWeaponsDmg":  "机炮每秒总伤",
     "TotalTurretDmg":   "炮塔每秒总伤",
     "TotalMissilesDmg": "导弹总伤",
     "TotalEMPDmg":      "电磁脉冲总伤",
     "TotalDecoyAmmo":   "热诱弹备弹量",
     "TotalNoiseAmmo":   "噪声场备弹量",
+    
+    "TotalShieldHP":    "护盾总量",
+    "SingleFaceShieldHP": "单面护盾量",
 
     "IdleEMEmission": "待机电磁信号",
     "ActiveEMEmission": "活跃电磁信号",

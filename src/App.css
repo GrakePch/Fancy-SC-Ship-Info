@@ -148,7 +148,17 @@
   align-items: center;
 }
 
+@media screen and (min-width: 720px) and (max-width: 1079px) {
+  .component-sizes-wrapper {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
 @media screen and (max-width: 719px) {
+  .component-sizes-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
   #root {
     padding: 1rem;
   }
