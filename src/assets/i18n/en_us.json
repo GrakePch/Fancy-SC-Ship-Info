@@ -1,7 +1,11 @@
 {
-    "CompTitle-PilotWeapons": "Pilot Weapons",
-    "CompTitle-TurretWeapons": "Turret Weapons",
+    "CompTitle-PilotWeapons": "Pilot Wpn.",
+    "CompTitle-TurretWeapons": "Turret Wpn.",
+    "CompTitle-MissileRacks": "Msl. Racks",
     "CompTitle-QuantumDrives": "Qua. Drive",
+    "CompTitle-PowerPlants": "Power Plt.",
+    "CompTitle-Coolers": "Coolers",
+    "CompTitle-Shields": "Shields",
     
     "Short-Energy": "ENRGY",
     "Short-Physical": "PHYSC",

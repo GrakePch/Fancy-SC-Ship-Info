@@ -48,6 +48,10 @@
     "CompTitle-PilotWeapons": "主驾机炮",
     "CompTitle-TurretWeapons": "炮塔武器",
     "CompTitle-QuantumDrives": "量子引擎",
+    "CompTitle-MissileRacks": "导弹架",
+    "CompTitle-PowerPlants": "电源",
+    "CompTitle-Coolers": "冷却器",
+    "CompTitle-Shields": "护盾",
 
     "Short-Energy": "能量",
     "Short-Physical": "实弹",

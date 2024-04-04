@@ -27,6 +27,9 @@
   --color-primary-sat: hsl(var(--hue), 70%, 64%);
   --color-primary-dim: hsl(var(--hue), 30%, 50%);
   --color-primary-dimmer: hsl(var(--hue), 30%, 33%);
+
+  --font-geom: "Outfit", Inter, "Noto Sans SC", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-slim: 'Barlow', "Noto Sans SC", Arial, Helvetica, sans-serif;
 }
 
 ::-webkit-scrollbar {

@@ -1,0 +1,27 @@
+.btn-component-group {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    align-items: center;
+    background-color: #ffffff10;
+    border-radius: 1rem;
+    padding: .5rem;
+    font-family: var(--font-geom);
+    grid-column: span 2;
+    color: var(--color-text);
+}
+
+.btn-component-group>p:first-child {
+    font-size: .875rem;
+}
+
+.btn-component-group>svg {
+    fill: var(--color-text);
+    width: 2rem;
+    height: 2rem;
+}
+
+.hardpoint-sizes {
+    font-family: var(--font-slim);
+    font-variant-numeric: tabular-nums;
+}

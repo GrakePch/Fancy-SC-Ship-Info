@@ -20,6 +20,7 @@ import Icon from "@mdi/react";
 import { mdiSync } from "@mdi/js";
 import HardpointSizes from "./components/HardpointSizes/HardpointSizes";
 import Components from "./components/Components/Components";
+import ComponentGroup from "./components/ComponentGroup/ComponentGroup";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -301,6 +302,126 @@ function App() {
           </h3>
         </div>
       )}
+      {false && (
+        <>
+          <div className="comp-weapon-and-missiles-wrapper">
+            <Components
+              title="CompTitle-PilotWeapons"
+              icon="Weapons"
+              type="Weapons"
+              defaultCompGroupObj={
+                shipHardpts?.Hardpoints?.Weapons?.PilotWeapons
+              }
+            />
+            <Components
+              title="CompTitle-MissileRacks"
+              icon="Missiles"
+              type="MissileRacks"
+              defaultCompGroupObj={
+                shipHardpts?.Hardpoints?.Weapons?.MissileRacks
+              }
+            />
+          </div>
+          {listTurretGuns?.length > 0 && (
+            <div className="comp-turret-wrapper">
+              <Components
+                title="CompTitle-TurretWeapons"
+                icon="Turrets"
+                type="Weapons"
+                defaultCompGroupObj={{
+                  InstalledItems: listTurretGuns,
+                }}
+              />
+            </div>
+          )}
+          <div className="comp-qd-pwr-clr-shld-wrapper">
+            <Components
+              title="CompTitle-QuantumDrives"
+              icon="QuantumDrives"
+              col="1"
+              defaultCompGroupObj={
+                shipHardpts?.Hardpoints?.Components?.Propulsion?.QuantumDrives
+              }
+            />
+            <Components
+              title="CompTitle-PowerPlants"
+              icon="PowerPlants"
+              defaultCompGroupObj={
+                shipHardpts?.Hardpoints?.Components?.Propulsion?.PowerPlants
+              }
+            />
+            <Components
+              title="CompTitle-Coolers"
+              icon="Coolers"
+              defaultCompGroupObj={
+                shipHardpts?.Hardpoints?.Components?.Systems?.Coolers
+              }
+            />
+            <Components
+              title="CompTitle-Shields"
+              icon="Shields"
+              defaultCompGroupObj={
+                shipHardpts?.Hardpoints?.Components?.Systems?.Shields
+              }
+            />
+          </div>
+        </>
+      )}
+      {shipIdx && shipHardpts && (
+        <div className="component-sizes-wrapper">
+          <ComponentGroup
+            title="PilotWeaponHardpoints"
+            icon="Weapons"
+            defList={shipHardpts.Hardpoints.Weapons.PilotWeapons.InstalledItems}
+            isSpan2
+          />
+          <ComponentGroup
+            title="TurretWeaponHardpoints"
+            icon="Turrets"
+            defList={listTurretGuns}
+            isSpan2
+          />
+
+          <ComponentGroup
+            title="MissileRacks"
+            icon="Missiles"
+            defList={shipHardpts.Hardpoints.Weapons.MissileRacks.InstalledItems}
+          />
+          <ComponentGroup
+            title="Shields"
+            icon={
+              "ShieldType" +
+              shipHardpts.Hardpoints.Components.Systems.Shields.FaceType
+            }
+            defList={
+              shipHardpts.Hardpoints.Components.Systems.Shields.InstalledItems
+            }
+          />
+          <ComponentGroup
+            title="PowerPlants"
+            icon="PowerPlants"
+            defList={
+              shipHardpts.Hardpoints.Components.Propulsion.PowerPlants
+                .InstalledItems
+            }
+          />
+          <ComponentGroup
+            title="Coolers"
+            icon="Coolers"
+            defList={
+              shipHardpts.Hardpoints.Components.Systems.Coolers.InstalledItems
+            }
+          />
+          <ComponentGroup
+            title="QuantumDrives"
+            icon="QuantumDrives"
+            defList={
+              shipHardpts.Hardpoints.Components.Propulsion.QuantumDrives
+                .InstalledItems
+            }
+          />
+        </div>
+      )}
       {shipObj && (
         <>
           <div className="grid3">
@@ -347,84 +468,28 @@ function App() {
                 ],
               }}
             />
-            {shipHardpts && (
-              <CardList
-                title="ComponentSizes"
-                infoObj={{
-                  PilotWeaponHardpoints: (
-                    <HardpointSizes
-                      components={
-                        shipHardpts.Hardpoints.Weapons.PilotWeapons
-                          .InstalledItems
-                      }
-                    />
-                  ),
-                  TurretWeaponHardpoints: (
-                    <HardpointSizes components={listTurretGuns} />
-                  ),
-                  MissileRacks: (
-                    <HardpointSizes
-                      components={
-                        shipHardpts.Hardpoints.Weapons.MissileRacks
-                          .InstalledItems
-                      }
-                    />
-                  ),
-                  Shields: (
-                    <HardpointSizes
-                      components={
-                        shipHardpts.Hardpoints.Components.Systems.Shields
-                          .InstalledItems
-                      }
-                    />
-                  ),
-                  PowerPlants: (
-                    <HardpointSizes
-                      components={
-                        shipHardpts.Hardpoints.Components.Propulsion.PowerPlants
-                          .InstalledItems
-                      }
-                    />
-                  ),
-                  Coolers: (
-                    <HardpointSizes
-                      components={
-                        shipHardpts.Hardpoints.Components.Systems.Coolers
-                          .InstalledItems
-                      }
-                    />
-                  ),
-                  QuantumDrives: (
-                    <HardpointSizes
-                      components={
-                        shipHardpts.Hardpoints.Components.Propulsion
-                          .QuantumDrives.InstalledItems
-                      }
-                    />
-                  ),
-                }}
-                iconOverrides={[
-                  "Weapons",
-                  "Turrets",
-                  "Missiles",
-                  "ShieldType" +
-                    shipHardpts.Hardpoints.Components.Systems.Shields.FaceType,
-                  null,
-                  null,
-                  null,
-                ]}
-              />
-            )}
-            <div style={{ gridColumn: "1/3" }}>
-              <Components
-                title="CompTitle-PilotWeapons"
-                icon="Weapons"
-                type="Weapons"
-                defaultCompGroupObj={
-                  shipHardpts?.Hardpoints?.Weapons?.PilotWeapons
-                }
-              />
-            </div>
+            <CardList
+              title="Insurance"
+              infoObj={{
+                StandardClaimTime: [
+                  Math.floor(shipObj.Insurance.StandardClaimTime) + " m",
+                  ((shipObj.Insurance.StandardClaimTime % 1) * 60)
+                    .toFixed(0)
+                    .padStart(2, "0") + " s",
+                ],
+                ExpeditedClaimTime: [
+                  Math.floor(shipObj.Insurance.ExpeditedClaimTime) + " m",
+                  ((shipObj.Insurance.ExpeditedClaimTime % 1) * 60)
+                    .toFixed(0)
+                    .padStart(2, "0") + " s",
+                ],
+                ExpeditedCost: [
+                  shipObj.Insurance.ExpeditedCost.toFixed(0),
+                  "aUEC",
+                ],
+                ...shipObj.Buy,
+              }}
+            />
             <CardList
               title="Combats"
               infoObj={{
@@ -432,7 +497,6 @@ function App() {
                 TotalTurretDmg: ["?", "/s"],
                 TotalMissilesDmg: shipObj.Weapons.TotalMissilesDmg,
                 TotalEMPDmg: "?",
-                TotalShieldHP: shipObj.Weapons.TotalShieldHP,
                 TotalDecoyAmmo:
                   totalDecoyItemNum && totalDecoyItemNum + "×" + totalDecoyAmmo,
                 TotalNoiseAmmo:
@@ -443,64 +507,18 @@ function App() {
                 "Turrets",
                 "Missiles",
                 "EMP",
-                "ShieldType" +
-                  shipHardpts.Hardpoints.Components.Systems.Shields.FaceType,
                 "Decoy",
                 "Noise",
               ]}
             />
-            <div style={{ gridColumn: "1/-1" }}>
-              <div className="component-configs">
-                <Components
-                  title="CompTitle-TurretWeapons"
-                  icon="Turrets"
-                  type="Weapons"
-                  defaultCompGroupObj={{
-                    InstalledItems: listTurretGuns,
-                  }}
-                />
-              </div>
-            </div>
-            <div style={{ gridColumn: "1/-1" }}>
-              <Components
-                title="MissileRacks"
-                icon="Missiles"
-                type="MissileRacks"
-                defaultCompGroupObj={
-                  shipHardpts?.Hardpoints?.Weapons?.MissileRacks
-                }
-              />
-            </div>
-            <div className="component-groups" style={{ gridColumn: "1/3" }}>
-              <Components
-                title="PowerPlants"
-                icon="PowerPlants"
-                defaultCompGroupObj={
-                  shipHardpts?.Hardpoints?.Components?.Propulsion?.PowerPlants
-                }
-              />
-              <Components
-                title="Coolers"
-                icon="Coolers"
-                defaultCompGroupObj={
-                  shipHardpts?.Hardpoints?.Components?.Systems?.Coolers
-                }
-              />
-              <Components
-                title="Shields"
-                icon="Shields"
-                defaultCompGroupObj={
-                  shipHardpts?.Hardpoints?.Components?.Systems?.Shields
-                }
-              />
-            </div>
+            <CardList title="Quantum Travel" infoObj={{}} />
             <CardList
               title="Shields"
               infoObj={{
-                TotalShieldPool:
+                TotalShieldHP:
                   shipHardpts.Hardpoints.Components.Systems.Shields
                     .TotalShieldPool,
-                SingleFaceShieldPool:
+                SingleFaceShieldHP:
                   shipHardpts.Hardpoints.Components.Systems.Shields
                     .TotalShieldPool /
                   (shipHardpts.Hardpoints.Components.Systems.Shields.FaceType ==
@@ -523,6 +541,10 @@ function App() {
                   "%",
                 ],
               }}
+              iconOverrides={[
+                "ShieldType" +
+                  shipHardpts.Hardpoints.Components.Systems.Shields.FaceType,
+              ]}
             />
 
             {shipObj.IsSpaceship && (
@@ -548,15 +570,6 @@ function App() {
                 />
               </>
             )}
-
-            <Components
-              title="CompTitle-QuantumDrives"
-              icon="QuantumDrives"
-              col="1"
-              defaultCompGroupObj={
-                shipHardpts?.Hardpoints?.Components?.Propulsion?.QuantumDrives
-              }
-            />
 
             <CardList
               title="Emissions"
@@ -763,28 +776,6 @@ function App() {
                 />
               </>
             )}
-            <CardList
-              title="Insurance"
-              infoObj={{
-                StandardClaimTime: [
-                  Math.floor(shipObj.Insurance.StandardClaimTime) + " m",
-                  ((shipObj.Insurance.StandardClaimTime % 1) * 60)
-                    .toFixed(0)
-                    .padStart(2, "0") + " s",
-                ],
-                ExpeditedClaimTime: [
-                  Math.floor(shipObj.Insurance.ExpeditedClaimTime) + " m",
-                  ((shipObj.Insurance.ExpeditedClaimTime % 1) * 60)
-                    .toFixed(0)
-                    .padStart(2, "0") + " s",
-                ],
-                ExpeditedCost: [
-                  shipObj.Insurance.ExpeditedCost.toFixed(0),
-                  "aUEC",
-                ],
-                ...shipObj.Buy,
-              }}
-            />
             {shipHardpts.Hardpoints.Components.Avionics.SelfDestruct
               .InstalledItems && (
               <CardList
