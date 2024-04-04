@@ -413,7 +413,7 @@ function App() {
             }
           />
           <ComponentGroup
-            title="QuantumDrives"
+            title="CompTitle-QuantumDrives"
             icon="QuantumDrives"
             defList={
               shipHardpts.Hardpoints.Components.Propulsion.QuantumDrives
