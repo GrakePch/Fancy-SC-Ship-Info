@@ -21,6 +21,12 @@ const classToColor = {
   Competition: "#a83434",
 };
 
+const dmgTypeToColor = {
+  Physical: "#c1af3e",
+  Energy: "#a83434",
+  Distortion: "#439193",
+};
+
 const sizeToColor = [
   "#6e7881",
   "#258f00",
@@ -42,6 +48,12 @@ function Component({ compObj, icon, type }) {
   let isGimbalMount =
     compObj.Gimballed && compObj.SubWeapons && compObj.SubWeapons.length == 1;
   let obj = isGimbalMount ? compObj.SubWeapons[0] : compObj;
+  let bulletDmgType =
+    type == "Weapons" && obj.AlphaDmg && Object.keys(obj.AlphaDmg)
+      ? Object.keys(obj.AlphaDmg)?.length == 1
+        ? Object.keys(obj.AlphaDmg)?.at(0)
+        : "Mixed"
+      : "";
   return (
     <div
       className="single-component-slot font-slim"
@@ -62,7 +74,14 @@ function Component({ compObj, icon, type }) {
         <div className="comp-icon" style={{ fill: "#a0a0a0" }}>
           {icons[isGimbalMount ? "WeaponsGimballed" : icon]}
         </div>
-        <p style={{ color: classToColor[obj.Class] }}>
+        <p
+          style={{
+            color:
+              type == "Weapons" && obj.AlphaDmg && Object.keys(obj.AlphaDmg)
+                ? dmgTypeToColor[bulletDmgType]
+                : classToColor[obj.Class],
+          }}
+        >
           {obj.Class
             ? I18n({ text: classToShort[obj.Class] }) +
               " - " +
@@ -71,10 +90,7 @@ function Component({ compObj, icon, type }) {
             ? obj?.Missiles?.length + " × s" + obj?.Missiles?.at(0)?.Size
             : type == "Weapons" && obj.AlphaDmg && Object.keys(obj.AlphaDmg)
             ? I18n({
-                text:
-                  Object.keys(obj.AlphaDmg)?.length == 1
-                    ? "Short-" + Object.keys(obj.AlphaDmg)?.at(0)
-                    : "Short-Mixed",
+                text: "Short-" + bulletDmgType,
               })
             : "-"}
         </p>
