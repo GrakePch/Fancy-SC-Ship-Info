@@ -529,7 +529,33 @@ function App() {
             <CardList
               title="Basic"
               infoObj={{
-                Size: shipObj.Size,
+                Size:
+                  (shipObj.IsSpaceship
+                    ? I18n({
+                        text: [
+                          "",
+                          "Snub",
+                          "Small",
+                          "Medium",
+                          "Large",
+                          "Capital",
+                          "Capital",
+                          "Capital",
+                        ].at(shipObj.Size),
+                        langOver: lang,
+                      })
+                    : I18n({
+                        text: [
+                          "",
+                          "Small",
+                          "Medium",
+                          "Medium",
+                          "Large",
+                          "Large",
+                          "Large",
+                        ].at(shipObj.Size),
+                        langOver: lang,
+                      })) + ` (${shipObj.Size})`,
                 Mass: [(shipObj.Mass / 1000).toFixed(3), "t"],
                 Dimensions: [
                   shipObj.Dimensions.Length +
@@ -657,6 +683,7 @@ function App() {
                 ShieldType: I18n({
                   text: shipHardpts.Hardpoints.Components.Systems.Shields
                     .FaceType,
+                  langOver: lang,
                 }),
                 TotalShieldHP:
                   shipHardpts.Hardpoints.Components.Systems.Shields
@@ -831,7 +858,13 @@ function App() {
                         </span>
                       ),
                   }}
-                  iconOverrides={["AccelMain", "AccelMainAssisted", "AccelRetro", "AccelManeuvering", "AccelUp"]}
+                  iconOverrides={[
+                    "AccelMain",
+                    "AccelMainAssisted",
+                    "AccelRetro",
+                    "AccelManeuvering",
+                    "AccelUp",
+                  ]}
                 />
                 <CardList
                   title="FlightTime"
@@ -884,7 +917,11 @@ function App() {
                       "min",
                     ],
                   }}
-                  iconOverrides={["AccelMain", "AccelMainAssisted", "AccelManeuvering"]}
+                  iconOverrides={[
+                    "AccelMain",
+                    "AccelMainAssisted",
+                    "AccelManeuvering",
+                  ]}
                 />
                 {false && (
                   <CardList
