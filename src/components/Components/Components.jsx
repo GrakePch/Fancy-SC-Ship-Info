@@ -86,9 +86,9 @@ function Component({ compObj, icon, type }) {
 function Components({ title, icon, type, defaultCompGroupObj, col = 2 }) {
   return (
     <div className="components-group">
-      <h4>
+      {/* <h4>
         <I18n text={title} />
-      </h4>
+      </h4> */}
       {defaultCompGroupObj && (
         <div className={`components-wrapper col-${1}`}>
           {defaultCompGroupObj.InstalledItems &&

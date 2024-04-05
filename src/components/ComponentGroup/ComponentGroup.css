@@ -3,12 +3,34 @@
     flex-direction: column;
     gap: .25rem;
     align-items: center;
+    height: calc(.875rem * 1.5 + 2rem + 1.5rem + .25rem * 2 + .5rem * 2);
     background-color: #ffffff10;
     border-radius: 1rem;
     padding: .5rem;
     font-family: var(--font-geom);
     grid-column: span 2;
     color: var(--color-text);
+    transition: background-color .15s;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn-component-group>* {
+    flex-shrink: 0;
+}
+
+.btn-component-group:hover {
+    background-color: #ffffff20;
+}
+
+.btn-component-group:active {
+    background-color: #ffffff30;
+}
+
+.btn-component-group.isActive {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+    font-weight: 600;
 }
 
 .btn-component-group>p:first-child {
@@ -19,6 +41,10 @@
     fill: var(--color-text);
     width: 2rem;
     height: 2rem;
+}
+
+.btn-component-group.isActive>svg {
+    fill: var(--color-bg);
 }
 
 .hardpoint-sizes {
