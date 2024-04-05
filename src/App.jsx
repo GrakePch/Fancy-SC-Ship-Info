@@ -48,7 +48,13 @@ function App() {
   const [dictShipZhName, setDictShipZhName] = useState({});
   const [dictShipImgIso, setDictShipImgIso] = useState({});
 
+  const [listPilotWeapons, setListPilotWeapons] = useState([]);
   const [listTurretGuns, setListTurretGuns] = useState([]);
+  const [listMissileRacks, setListMissileRacks] = useState([]);
+  const [listShields, setListShields] = useState([]);
+  const [listPowerPlants, setListPowerPlants] = useState([]);
+  const [listCoolers, setListCoolers] = useState([]);
+  const [listQuantumDrives, setListQuantumDrives] = useState([]);
   const [totalDecoyAmmo, setTotalDecoyAmmo] = useState(0);
   const [totalNoiseAmmo, setTotalNoiseAmmo] = useState(0);
   const [totalDecoyItemNum, setTotalDecoyItemNum] = useState(0);
@@ -165,25 +171,67 @@ function App() {
   useEffect(() => {
     if (!shipHardpts) return;
     let temp = [];
-    if (shipHardpts.Hardpoints.Weapons.MannedTurrets) {
-      let mannedTurrets =
-        shipHardpts.Hardpoints.Weapons.MannedTurrets.InstalledItems;
-      for (let i = 0; i < mannedTurrets?.length; ++i) {
-        for (let j = 0; j < mannedTurrets[i].SubWeapons?.length; ++j) {
-          temp.push(mannedTurrets[i].SubWeapons[j]);
-        }
+
+    shipHardpts.Hardpoints.Weapons.PilotWeapons?.InstalledItems?.forEach(
+      (item) => {
+        temp.push(item);
       }
-    }
-    if (shipHardpts.Hardpoints.Weapons.RemoteTurrets) {
-      let remoteTurrets =
-        shipHardpts.Hardpoints.Weapons.RemoteTurrets.InstalledItems;
-      for (let i = 0; i < remoteTurrets?.length; ++i) {
-        for (let j = 0; j < remoteTurrets[i].SubWeapons?.length; ++j) {
-          temp.push(remoteTurrets[i].SubWeapons[j]);
-        }
+    );
+    setListPilotWeapons(temp);
+
+    temp = [];
+
+    shipHardpts.Hardpoints.Weapons.MannedTurrets?.InstalledItems?.forEach(
+      (item) => {
+        item?.SubWeapons?.forEach((subItem) => temp.push(subItem));
       }
-    }
+    );
+    shipHardpts.Hardpoints.Weapons.RemoteTurrets?.InstalledItems?.forEach(
+      (item) => {
+        item?.SubWeapons?.forEach((subItem) => temp.push(subItem));
+      }
+    );
     setListTurretGuns(temp);
+
+    temp = [];
+    shipHardpts.Hardpoints.Weapons.MissileRacks?.InstalledItems?.forEach(
+      (item) => {
+        temp.push(item);
+      }
+    );
+    setListMissileRacks(temp);
+
+    temp = [];
+    shipHardpts.Hardpoints.Components.Systems?.Shields?.InstalledItems?.forEach(
+      (item) => {
+        temp.push(item);
+      }
+    );
+    setListShields(temp);
+
+    temp = [];
+    shipHardpts.Hardpoints.Components.Propulsion?.PowerPlants?.InstalledItems?.forEach(
+      (item) => {
+        temp.push(item);
+      }
+    );
+    setListPowerPlants(temp);
+
+    temp = [];
+    shipHardpts.Hardpoints.Components.Systems?.Coolers?.InstalledItems?.forEach(
+      (item) => {
+        temp.push(item);
+      }
+    );
+    setListCoolers(temp);
+
+    temp = [];
+    shipHardpts.Hardpoints.Components.Propulsion?.QuantumDrives?.InstalledItems?.forEach(
+      (item) => {
+        temp.push(item);
+      }
+    );
+    setListQuantumDrives(temp);
 
     let tempDecoyItemNum = 0;
     let tempNoiseItemNum = 0;
@@ -309,9 +357,7 @@ function App() {
             <ComponentGroup
               title="PilotWeaponHardpoints"
               icon="Weapons"
-              defList={
-                shipHardpts.Hardpoints.Weapons.PilotWeapons.InstalledItems
-              }
+              defList={listPilotWeapons}
               isSpan2
               isActive={showingComponentDetail === "Weapons"}
               funcOnClick={() => {
@@ -335,9 +381,7 @@ function App() {
             <ComponentGroup
               title="MissileRacks"
               icon="Missiles"
-              defList={
-                shipHardpts.Hardpoints.Weapons.MissileRacks.InstalledItems
-              }
+              defList={listMissileRacks}
               isActive={showingComponentDetail === "Missiles"}
               funcOnClick={() => {
                 setShowingComponentDetail((s) =>
@@ -348,12 +392,12 @@ function App() {
             <ComponentGroup
               title="Shields"
               icon={
-                "ShieldType" +
                 shipHardpts.Hardpoints.Components.Systems.Shields.FaceType
+                  ? "ShieldType" +
+                    shipHardpts.Hardpoints.Components.Systems.Shields.FaceType
+                  : "Shields"
               }
-              defList={
-                shipHardpts.Hardpoints.Components.Systems.Shields.InstalledItems
-              }
+              defList={listShields}
               isActive={showingComponentDetail === "Shields"}
               funcOnClick={() => {
                 setShowingComponentDetail((s) =>
@@ -364,10 +408,7 @@ function App() {
             <ComponentGroup
               title="PowerPlants"
               icon="PowerPlants"
-              defList={
-                shipHardpts.Hardpoints.Components.Propulsion.PowerPlants
-                  .InstalledItems
-              }
+              defList={listPowerPlants}
               isActive={showingComponentDetail === "PowerPlants"}
               funcOnClick={() => {
                 setShowingComponentDetail((s) =>
@@ -378,9 +419,7 @@ function App() {
             <ComponentGroup
               title="Coolers"
               icon="Coolers"
-              defList={
-                shipHardpts.Hardpoints.Components.Systems.Coolers.InstalledItems
-              }
+              defList={listCoolers}
               isActive={showingComponentDetail === "Coolers"}
               funcOnClick={() => {
                 setShowingComponentDetail((s) =>
@@ -391,10 +430,7 @@ function App() {
             <ComponentGroup
               title="CompTitle-QuantumDrives"
               icon="QuantumDrives"
-              defList={
-                shipHardpts.Hardpoints.Components.Propulsion.QuantumDrives
-                  .InstalledItems
-              }
+              defList={listQuantumDrives}
               isActive={showingComponentDetail === "QuantumDrives"}
               funcOnClick={() => {
                 setShowingComponentDetail((s) =>
