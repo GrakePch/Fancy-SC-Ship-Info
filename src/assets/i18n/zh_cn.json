@@ -69,6 +69,7 @@
     "Emissions": "辐射信号",
     "ArmorAttributes": "装甲属性",
     "Insurance": "保险",
+    "InsuranceAndDeals": "保险与购买",
     "QuantumTravel": "量子航行",
 
 
@@ -135,8 +136,15 @@
     "TotalDecoyAmmo":   "热诱弹备弹量",
     "TotalNoiseAmmo":   "噪声场备弹量",
     
-    "TotalShieldHP":    "护盾总量",
-    "SingleFaceShieldHP": "单面护盾量",
+    "ShieldType":                 "护盾类型",
+    "Bubble":                     "气泡盾",
+    "FrontBack":                  "前后盾",
+    "Quadrant":                   "四向盾",
+    "TotalShieldHP":              "护盾总量",
+    "SingleFaceShieldHP":         "单面护盾量",
+    "TotalRegenSpeed":            "恢复速率",
+    "RegenDelay":                 "恢复前延迟",
+    "PhysicalAbsorptionRateMax":  "物理伤害最大吸收率",
 
     "IdleEMEmission": "待机电磁信号",
     "ActiveEMEmission": "活跃电磁信号",
@@ -150,6 +158,8 @@
     "ExpeditedClaimTime": "加急后保险时长",
     "ExpeditedCost": "保险加急费用",
     
+    "PurchasableAt": "可购买于……",
+    "NotPurchasable": "无法于宇宙中购买",
     "New Deal, Lorville":"斯坦顿 罗威尔",
     "Astro Armada, Area 18":"斯坦顿 18区",
     "Crusader Showroom, Orison":"斯坦顿 奥里森",
@@ -170,9 +180,17 @@
     "BoostRegenDelay": "恢复前延迟",
     "BoostRegenTime": "完全恢复时长",
 
-    "FuelBurnRate": "燃料消耗速率",
+    "FuelBurnRate":             "氢燃料消耗速率",
+    "FuelBurnRateMain":         "主推",
+    "FuelBurnRateMainAssisted": "带辅助主推",
+    "FuelBurnRateRetro":        "反推",
+    "FuelBurnRateManeuv":       "机动推进器",
+    "FuelBurnRateVtol":         "垂直起降推进器",
 
-    "FlightTime": "飞行续航",
+    "FlightTime":                               "持续飞行时长",
+    "FlightTimeMainWithVtol":                   "大气内巡航",
+    "FlightTimeMainAssistedWithVtol":           "大气内带辅助巡航",
+    "FlightTimeMainAssistedWithManeuvWithVtol": "最大机动",
     
     "SelfDestruct": "自毁程序",
     "Countdown": "倒计时",

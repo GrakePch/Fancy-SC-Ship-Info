@@ -504,7 +504,7 @@
         }
     },
     {
-        "ClassName": "AEGS_Retaliator",
+        "ClassName": "AEGS_Retaliator_Base",
         "Name": "Aegis Retaliator Base",
         "Manufacturer": "Aegis Dynamics",
         "Career": "Combat",

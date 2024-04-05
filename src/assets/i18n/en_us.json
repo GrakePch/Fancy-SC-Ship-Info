@@ -23,6 +23,7 @@
     "Emissions": "Emissions",
     "ArmorAttributes": "Armor Attributes",
     "Insurance": "Insurance",
+    "InsuranceAndDeals": "Insurance & Deals",
     "QuantumTravel": "Quantum Travel",
 
 
@@ -89,8 +90,12 @@
     "TotalDecoyAmmo":   "Total Decoy Ammo",
     "TotalNoiseAmmo":   "Total Noise Ammo",
 
-    "TotalShieldHP": "Total Shield HP",
-    "SingleFaceShieldHP": "Single Face Shield HP",
+    "ShieldType":                 "Shield Type",
+    "TotalShieldHP":              "Total Shield HP",
+    "SingleFaceShieldHP":         "Single Face Shield HP",
+    "TotalRegenSpeed":            "Regeneration Speed",
+    "RegenDelay":                 "Time Before Regeneration",
+    "PhysicalAbsorptionRateMax":  "Physical Absorption Max Rate",
 
     "IdleEMEmission": "EM Emission Idle",
     "ActiveEMEmission": "EM Emission Active",
@@ -103,7 +108,8 @@
     "StandardClaimTime": "Claim Time",
     "ExpeditedClaimTime": "Claim Time Expedited",
     "ExpeditedCost": "Expediting Cost",
-    
+
+    "PurchasableAt": "Purchasable at...",
     "New Deal, Lorville":"",
     "Astro Armada, Area 18":"",
     "Crusader Showroom, Orison":"",
@@ -124,9 +130,17 @@
     "BoostRegenDelay": "Delay Before Regen.",
     "BoostRegenTime": "Time To Fully Regen.",
     
-    "FuelBurnRate": "Fuel Burn Rate",
+    "FuelBurnRate":             "Hydrogen Fuel Usage",
+    "FuelBurnRateMain":         "Main Thrusters",
+    "FuelBurnRateMainAssisted": "Assisted Main Thr.",
+    "FuelBurnRateRetro":        "Retro Thrusters",
+    "FuelBurnRateManeuv":       "Maneuvering Thr.",
+    "FuelBurnRateVtol":         "Vtol Thrusters",
     
-    "FlightTime": "Flight Time",
+    "FlightTime":                               "Flight Time",
+    "FlightTimeMainWithVtol":                   "Cruise In Atmosphere",
+    "FlightTimeMainAssistedWithVtol":           "Assisted Cruise In Atm.",
+    "FlightTimeMainAssistedWithManeuvWithVtol": "Max Maneuvering",
 
     "SelfDestruct": "Self Destruct",
     "Countdown": "Countdown",

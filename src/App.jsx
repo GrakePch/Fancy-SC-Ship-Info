@@ -570,7 +570,7 @@ function App() {
               }}
             />
             <CardList
-              title="Insurance"
+              title="InsuranceAndDeals"
               infoObj={{
                 StandardClaimTime: [
                   Math.floor(shipObj.Insurance.StandardClaimTime) + " m",
@@ -588,7 +588,19 @@ function App() {
                   shipObj.Insurance.ExpeditedCost.toFixed(0),
                   "aUEC",
                 ],
-                ...shipObj.Buy,
+                ...(() => {
+                  return shipObj.Buy
+                    ? { PurchasableAt: "" }
+                    : { NotPurchasable: "" };
+                })(),
+                ...(() => {
+                  if (!shipObj.Buy) return null;
+                  let temp = {};
+                  Object.keys(shipObj.Buy).forEach((k) => {
+                    temp[k] = [shipObj.Buy[k], ""];
+                  });
+                  return temp;
+                })(),
               }}
             />
             <CardList
@@ -642,6 +654,10 @@ function App() {
             <CardList
               title="Shields"
               infoObj={{
+                ShieldType: I18n({
+                  text: shipHardpts.Hardpoints.Components.Systems.Shields
+                    .FaceType,
+                }),
                 TotalShieldHP:
                   shipHardpts.Hardpoints.Components.Systems.Shields
                     .TotalShieldPool,
@@ -660,7 +676,7 @@ function App() {
                     .TotalRegenSpeed,
                   "/s",
                 ],
-                RegenDelay: null,
+                RegenDelay: "?",
                 PhysicalAbsorptionRateMax: [
                   shipHardpts.Hardpoints.Components.Systems.Shields.InstalledItems?.at(
                     0
@@ -669,8 +685,18 @@ function App() {
                 ],
               }}
               iconOverrides={[
+                "Shields",
                 "ShieldType" +
                   shipHardpts.Hardpoints.Components.Systems.Shields.FaceType,
+                shipHardpts.Hardpoints.Components.Systems.Shields.FaceType ===
+                "Bubble"
+                  ? "ShieldTypeBubble"
+                  : "ShieldType" +
+                    shipHardpts.Hardpoints.Components.Systems.Shields.FaceType +
+                    "FrontOnly",
+                null,
+                "TimeDelay",
+                "DamageReducPhy",
               ]}
             />
 
@@ -720,7 +746,178 @@ function App() {
                     "m",
                   ],
                 }}
+                iconOverrides={["TimeDelay"]}
               />
+            )}
+
+            {shipObj.IsSpaceship && (
+              <>
+                <CardList
+                  title="FuelTanks"
+                  infoObj={{
+                    FuelCapacity: shipObj.FuelManagement.FuelCapacity,
+                    QuantumFuelCapacity:
+                      shipObj.FuelManagement.QuantumFuelCapacity,
+                    FuelIntakeRate: [
+                      shipObj.FuelManagement.FuelIntakeRate,
+                      "/s",
+                    ],
+                    // IntakeToMainFuelRatio:
+                    //   shipObj.FuelManagement.IntakeToMainFuelRatio,
+                    TimeForIntakesToFillTank:
+                      shipObj.FuelManagement.FuelIntakeRate > 0 ? (
+                        [
+                          (
+                            shipObj.FuelManagement.TimeForIntakesToFillTank /
+                            3600
+                          ).toFixed(1),
+                          "hr",
+                        ]
+                      ) : (
+                        <span
+                          style={{
+                            opacity: 0.5,
+                          }}
+                        >
+                          ∅
+                        </span>
+                      ),
+                  }}
+                  iconOverrides={[null, null, null, "TimeDelay"]}
+                />
+                <CardList
+                  title="FuelBurnRate"
+                  infoObj={{
+                    FuelBurnRateMain: [
+                      shipObj.FuelManagement.FuelUsagePerSecond.Main,
+                      "/s",
+                    ],
+                    FuelBurnRateMainAssisted:
+                      shipObj.FuelManagement.FuelUsagePerSecond.MainAssisted !=
+                      null ? (
+                        [
+                          shipObj.FuelManagement.FuelUsagePerSecond.MainAssisted.toFixed(
+                            2
+                          ),
+                          "/s",
+                        ]
+                      ) : (
+                        <span
+                          style={{
+                            opacity: 0.5,
+                          }}
+                        >
+                          ∅
+                        </span>
+                      ),
+                    FuelBurnRateRetro: [
+                      shipObj.FuelManagement.FuelUsagePerSecond.Retro,
+                      "/s",
+                    ],
+                    FuelBurnRateManeuv: [
+                      shipObj.FuelManagement.FuelUsagePerSecond.Maneuvering,
+                      "/s",
+                    ],
+                    FuelBurnRateVtol:
+                      shipObj.FuelManagement.FuelUsagePerSecond.Vtol > 0 ? (
+                        [shipObj.FuelManagement.FuelUsagePerSecond.Vtol, "/s"]
+                      ) : (
+                        <span
+                          style={{
+                            opacity: 0.5,
+                          }}
+                        >
+                          ∅
+                        </span>
+                      ),
+                  }}
+                  iconOverrides={["AccelMain", "AccelMainAssisted", "AccelRetro", "AccelManeuvering", "AccelUp"]}
+                />
+                <CardList
+                  title="FlightTime"
+                  infoObj={{
+                    FlightTimeMainWithVtol: [
+                      (
+                        shipObj.FuelManagement.FuelCapacity /
+                        (shipObj.FuelManagement.FuelUsagePerSecond.Main +
+                          shipObj.FuelManagement.FuelUsagePerSecond.Vtol -
+                          shipObj.FuelManagement.FuelIntakeRate) /
+                        60
+                      ).toFixed(0),
+                      "min",
+                    ],
+                    FlightTimeMainAssistedWithVtol:
+                      shipObj.FuelManagement.FuelUsagePerSecond.MainAssisted !=
+                      null ? (
+                        [
+                          (
+                            shipObj.FuelManagement.FuelCapacity /
+                            (shipObj.FuelManagement.FuelUsagePerSecond
+                              .MainAssisted +
+                              shipObj.FuelManagement.FuelUsagePerSecond.Vtol -
+                              shipObj.FuelManagement.FuelIntakeRate) /
+                            60
+                          ).toFixed(0),
+                          "min",
+                        ]
+                      ) : (
+                        <span
+                          style={{
+                            opacity: 0.5,
+                          }}
+                        >
+                          ∅
+                        </span>
+                      ),
+                    FlightTimeMainAssistedWithManeuvWithVtol: [
+                      (
+                        shipObj.FuelManagement.FuelCapacity /
+                        ((shipObj.FuelManagement.FuelUsagePerSecond
+                          .MainAssisted ||
+                          shipObj.FuelManagement.FuelUsagePerSecond.Main) +
+                          shipObj.FuelManagement.FuelUsagePerSecond
+                            .Maneuvering +
+                          shipObj.FuelManagement.FuelUsagePerSecond.Vtol -
+                          shipObj.FuelManagement.FuelIntakeRate) /
+                        60
+                      ).toFixed(0),
+                      "min",
+                    ],
+                  }}
+                  iconOverrides={["AccelMain", "AccelMainAssisted", "AccelManeuvering"]}
+                />
+                {false && (
+                  <CardList
+                    title="Afterburner"
+                    infoObj={{
+                      BoostCapacitor:
+                        shipObj.FlightCharacteristics.Capacitors
+                          .ThrusterCapacitorSize,
+                      BoostIdleCost: [
+                        shipObj.FlightCharacteristics.Capacitors
+                          .CapacitorIdleCost,
+                        "/s",
+                      ],
+                      BoostRegenRate: [
+                        shipObj.FlightCharacteristics.Capacitors
+                          .CapacitorRegenPerSec,
+                        "/s",
+                      ],
+                      BoostRegenDelay: [
+                        shipObj.FlightCharacteristics.Capacitors
+                          .CapacitorRegenDelay,
+                        "s",
+                      ],
+                      BoostRegenTime: [
+                        shipObj.FlightCharacteristics.Capacitors
+                          .RegenerationTime,
+                        "s",
+                      ],
+                    }}
+                    iconOverrides={[null, "Afterburner", null, null, null]}
+                  />
+                )}
+              </>
             )}
 
             <CardList
@@ -783,154 +980,6 @@ function App() {
                 ],
               }}
             />
-
-            {shipObj.IsSpaceship && (
-              <>
-                <CardList
-                  title="FuelTanks"
-                  infoObj={{
-                    FuelCapacity: shipObj.FuelManagement.FuelCapacity,
-                    QuantumFuelCapacity:
-                      shipObj.FuelManagement.QuantumFuelCapacity,
-                    FuelIntakeRate: shipObj.FuelManagement.FuelIntakeRate,
-                    IntakeToMainFuelRatio:
-                      shipObj.FuelManagement.IntakeToMainFuelRatio,
-                    TimeForIntakesToFillTank:
-                      shipObj.FuelManagement.TimeForIntakesToFillTank,
-                  }}
-                />
-                <CardList
-                  title="FuelBurnRate"
-                  infoObj={{
-                    FuelBurnRateMain: [
-                      shipObj.FuelManagement.FuelUsagePerSecond.Main,
-                      "/s",
-                    ],
-                    FuelBurnRateMainAssisted:
-                      shipObj.FuelManagement.FuelUsagePerSecond.MainAssisted !=
-                      null ? (
-                        [
-                          shipObj.FuelManagement.FuelUsagePerSecond.MainAssisted.toFixed(
-                            2
-                          ),
-                          "/s",
-                        ]
-                      ) : (
-                        <span
-                          style={{
-                            opacity: 0.5,
-                          }}
-                        >
-                          ∅
-                        </span>
-                      ),
-                    FuelBurnRateRetro: [
-                      shipObj.FuelManagement.FuelUsagePerSecond.Retro,
-                      "/s",
-                    ],
-                    FuelBurnRateManeuv: [
-                      shipObj.FuelManagement.FuelUsagePerSecond.Maneuvering,
-                      "/s",
-                    ],
-                    FuelBurnRateVtol: [
-                      shipObj.FuelManagement.FuelUsagePerSecond.Vtol,
-                      "/s",
-                    ],
-                  }}
-                />
-                <CardList
-                  title="FlightTime"
-                  infoObj={{
-                    FlightTimeMain: [
-                      (
-                        shipObj.FuelManagement.FuelCapacity /
-                        shipObj.FuelManagement.FuelUsagePerSecond.Main /
-                        60
-                      ).toFixed(0),
-                      "min",
-                    ],
-                    FlightTimeMainAssisted:
-                      shipObj.FuelManagement.FuelUsagePerSecond.MainAssisted !=
-                      null ? (
-                        [
-                          (
-                            shipObj.FuelManagement.FuelCapacity /
-                            shipObj.FuelManagement.FuelUsagePerSecond
-                              .MainAssisted /
-                            60
-                          ).toFixed(0),
-                          "min",
-                        ]
-                      ) : (
-                        <span
-                          style={{
-                            opacity: 0.5,
-                          }}
-                        >
-                          ∅
-                        </span>
-                      ),
-                    FlightTimeRetro: [
-                      (
-                        shipObj.FuelManagement.FuelCapacity /
-                        shipObj.FuelManagement.FuelUsagePerSecond.Retro /
-                        60
-                      ).toFixed(0),
-                      "min",
-                    ],
-                    FlightTimeManeuv: [
-                      (
-                        shipObj.FuelManagement.FuelCapacity /
-                        shipObj.FuelManagement.FuelUsagePerSecond.Maneuvering /
-                        60
-                      ).toFixed(0),
-                      "min",
-                    ],
-                    FlightTimeVtol: [
-                      (
-                        shipObj.FuelManagement.FuelCapacity /
-                        shipObj.FuelManagement.FuelUsagePerSecond.Vtol /
-                        60
-                      ).toFixed(0),
-                      shipObj.FuelManagement.FuelUsagePerSecond.Vtol
-                        ? "min"
-                        : "",
-                    ],
-                  }}
-                />
-                {false && (
-                  <CardList
-                    title="Afterburner"
-                    infoObj={{
-                      BoostCapacitor:
-                        shipObj.FlightCharacteristics.Capacitors
-                          .ThrusterCapacitorSize,
-                      BoostIdleCost: [
-                        shipObj.FlightCharacteristics.Capacitors
-                          .CapacitorIdleCost,
-                        "/s",
-                      ],
-                      BoostRegenRate: [
-                        shipObj.FlightCharacteristics.Capacitors
-                          .CapacitorRegenPerSec,
-                        "/s",
-                      ],
-                      BoostRegenDelay: [
-                        shipObj.FlightCharacteristics.Capacitors
-                          .CapacitorRegenDelay,
-                        "s",
-                      ],
-                      BoostRegenTime: [
-                        shipObj.FlightCharacteristics.Capacitors
-                          .RegenerationTime,
-                        "s",
-                      ],
-                    }}
-                    iconOverrides={[null, "Afterburner", null, null, null]}
-                  />
-                )}
-              </>
-            )}
           </div>
         </>
       )}
