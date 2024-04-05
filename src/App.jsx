@@ -21,6 +21,7 @@ import { mdiSync } from "@mdi/js";
 import bg_line from "./assets/lines.png";
 import Components from "./components/Components/Components";
 import ComponentGroup from "./components/ComponentGroup/ComponentGroup";
+import QuantumTravel from "./components/QuantumTravel/QuantumTravel";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -611,64 +612,33 @@ function App() {
                 "Noise",
               ]}
             />
-            <CardList
-              title="QuantumTravel"
-              infoObj={{
-                QTRangeMax: [
-                  (
-                    shipObj?.FuelManagement?.QuantumFuelCapacity /
+            {shipObj.IsSpaceship && (
+              <>
+                <QuantumTravel
+                  QFuelCapacity={shipObj?.FuelManagement?.QuantumFuelCapacity}
+                  FuelConsumpRate={
                     shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
                       0
-                    )?.FuelRate /
-                    1e9
-                  ).toFixed(3),
-                  "Gm",
-                ],
-                QTFuelConsumptionRate: [
-                  (
+                    )?.FuelRate
+                  }
+                  QTSpeedCruise={
                     shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
                       0
-                    )?.FuelRate * 1e9
-                  ).toFixed(2),
-                  "/Gm",
-                ],
-                QTSpeedCruise: [
-                  (
+                    )?.CruiseSpeed
+                  }
+                  QTSpeedStage1={
                     shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
                       0
-                    )?.CruiseSpeed / 1000
-                  ).toFixed(0),
-                  "km/s",
-                ],
-                QTSpeedStage2: [
-                  (
+                    )?.Stage1Speed
+                  }
+                  QTSpeedStage2={
                     shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
                       0
-                    )?.Stage2Speed / 1000
-                  ).toFixed(0),
-                  "km/s",
-                ],
-                QTSpeedStage1: [
-                  (
-                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
-                      0
-                    )?.Stage1Speed / 1000
-                  ).toFixed(0),
-                  "km/s",
-                ],
-                TravelTimeFromCruToMic: [
-                  "~" +
-                    (
-                      57469469000 /
-                      shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
-                        0
-                      )?.CruiseSpeed /
-                      60
-                    ).toFixed(0),
-                  "min",
-                ],
-              }}
-            />
+                    )?.Stage2Speed
+                  }
+                />
+              </>
+            )}
             <CardList
               title="Shields"
               infoObj={{

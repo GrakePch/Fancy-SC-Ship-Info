@@ -1,0 +1,101 @@
+.quantumTravel-main-wrapper {
+    width: 100%;
+    padding: 0 .5rem;
+}
+
+.KeyValue {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: .875rem;
+    line-height: 200%;
+}
+
+.KeyValue:not(:first-child):before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-primary-dimmer);
+}
+
+.quantumRangeMeter {
+    width: 100%;
+    height: 4px;
+    display: flex;
+}
+
+.mainMeter_wrapper {
+    width: calc(100% - 1rem);
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.mainMeter {
+    max-width: 100%;
+    height: 100%;
+    background-color: var(--color-primary-text);
+}
+
+.moreMeter {
+    margin-top: -.65rem;
+    margin-left: 1.5px;
+    line-height: 100%;
+    font-weight: 800;
+}
+
+.rulers_wrapper {
+    width: calc(100% - 1rem);
+    font-size: .625rem;
+    line-height: 100%;
+    margin-bottom: .5rem;
+}
+
+.rulers_wrapper>div {
+    position: relative;
+    height: 1px;
+    margin-top: .5rem;
+    background-color: var(--color-primary-dim);
+}
+
+.rulers_wrapper>div::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -.3rem;
+    left: 0;
+    width: 1px;
+    height: .6rem;
+    background-color: inherit;
+}
+
+.rulers_wrapper>div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -.3rem;
+    right: 0;
+    width: 1px;
+    height: .6rem;
+    background-color: inherit;
+}
+
+.rulers_wrapper>div+p {
+    margin-top: 3px;
+    margin-left: 2px;
+    color: var(--color-primary-dim);
+}
+
+.JPS2M_JPS2T {
+    width: 100%;
+}
+
+.cannot-reach {
+    background-color: #ee444499 !important;
+}
+
+.cannot-reach+p {
+    color: #ee444499 !important;
+}

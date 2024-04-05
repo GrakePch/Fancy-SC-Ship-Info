@@ -101,6 +101,10 @@
     "QTSpeedCruise": "巡航速度",
     "TravelTimeFromCruToMic": "十字军到微科 耗时",
 
+    "QTRangeCRU2HUR": "十 ↔ 赫：",
+    "QTRangeCRU2MIC": "十 ↔ 微：",
+    "QTRangeJPS2M2JPS2T": "斯坦顿-马格努斯 跳点 ↔ 斯坦顿-泰拉 跳点： ",
+
     "ScmSpeed": "作战机动速度",
     "MaxSpeed": "最大速度",
     "Pitch": "俯仰",

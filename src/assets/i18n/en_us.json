@@ -55,6 +55,10 @@
     "QTSpeedCruise": "Cruise Speed",
     "TravelTimeFromCruToMic": "Time of CRU → MIC",
 
+    "QTRangeCRU2HUR": "CRU ↔ HUR: ",
+    "QTRangeCRU2MIC": "CRU ↔ MIC: ",
+    "QTRangeJPS2M2JPS2T": "JP Stanton-Magnus ↔ JP Stanton-Terra: ",
+
     "ScmSpeed": "SCM Speed",
     "MaxSpeed": "Max Speed",
     "Pitch": "Pitch",
