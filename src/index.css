@@ -92,6 +92,10 @@ h1 {
   gap: 1rem;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 @media screen and (min-width: 720px) and (max-width: 1079px) {
   .grid3 {
     display: grid;

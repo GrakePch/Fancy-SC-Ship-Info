@@ -1,6 +1,16 @@
 import "./ShipSelector.css";
 import Icon from "@mdi/react";
-import { mdiClose, mdiInformationOutline, mdiTranslate } from "@mdi/js";
+import {
+  mdiAirplane,
+  mdiAirplaneOff,
+  mdiCar,
+  mdiCarOff,
+  mdiClose,
+  mdiInformationOutline,
+  mdiMotorbike,
+  mdiMotorbikeOff,
+  mdiTranslate,
+} from "@mdi/js";
 import ShipSelectCard from "./ShipSelectCard/ShipSelectCard";
 import { useContext, useEffect, useState } from "react";
 import manufacturers_small from "../../assets/manufacturers_small";
@@ -12,6 +22,12 @@ import LangContext from "../../contexts/LangContext";
 function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
   const [manufacturerList, setManufacturerList] = useState([]);
   const [filterForManu, setFilterForManu] = useState(null);
+  const [filterForShipVeh, setFilterForShipVeh] = useState([
+    true,
+    true,
+    true,
+  ]); /* 0: Ship, 1: Ground Vehicle, 2: Gravlev */
+  const [filterForReleased, setFilterForReleased] = useState(false);
   const [lang, setLang] = useContext(LangContext);
 
   useEffect(() => {
@@ -42,6 +58,55 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
       <div className="Ship-selector-container">
         <div className="title-bar">
           <h2>Select a vehicle</h2>
+          <button
+            className="circleIconBtn"
+            onClick={() => {
+              setFilterForShipVeh((p) => [!p[0], p[1], p[2]]);
+            }}
+            type="button"
+            style={{ opacity: !filterForShipVeh[0] && 0.5 }}
+          >
+            <Icon
+              path={!filterForShipVeh[0] ? mdiAirplaneOff : mdiAirplane}
+              size={1}
+            />
+          </button>
+          <button
+            className="circleIconBtn"
+            onClick={() => {
+              setFilterForShipVeh((p) => [p[0], !p[1], p[2]]);
+            }}
+            type="button"
+            style={{ opacity: !filterForShipVeh[1] && 0.5 }}
+          >
+            <Icon path={!filterForShipVeh[1] ? mdiCarOff : mdiCar} size={1} />
+          </button>
+          <button
+            className="circleIconBtn"
+            onClick={() => {
+              setFilterForShipVeh((p) => [p[0], p[1], !p[2]]);
+            }}
+            type="button"
+            style={{ opacity: !filterForShipVeh[2] && 0.5 }}
+          >
+            <Icon
+              path={!filterForShipVeh[2] ? mdiMotorbikeOff : mdiMotorbike}
+              size={2}
+            />
+          </button>
+          <div>
+            <input
+              className="btnFilterForReleased"
+              onChange={() => {
+                setFilterForReleased((p) => !p);
+              }}
+              type="checkbox"
+              id="filterForReleased"
+              checked={filterForReleased}
+            />
+            <label htmlFor="filterForReleased">Released Only</label>
+          </div>
+          <div className="flex-grow" />
           <button
             className="circleIconBtn"
             onClick={() => {
@@ -130,10 +195,18 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
           <div className="ship-select-card-list-wrapper">
             <div className="ship-select-card-list grid3">
               {shipIndex
-                .filter((item) =>
-                  filterForManu == null
-                    ? true
-                    : item.Manufacturer == filterForManu
+                .filter(
+                  (item) =>
+                    (filterForManu == null
+                      ? true
+                      : item.Manufacturer == filterForManu) &&
+                    (filterForReleased
+                      ? item.ProgressTracker.Status == "Released" ||
+                        item.ProgressTracker.Status == "PU"
+                      : true) &&
+                    ((item.Type == "Ship" && filterForShipVeh[0]) ||
+                      (item.Type == "Vehicle" && filterForShipVeh[1]) ||
+                      (item.Type == "Gravlev" && filterForShipVeh[2]))
                 )
                 .sort((a, b) =>
                   lang == "zh"
