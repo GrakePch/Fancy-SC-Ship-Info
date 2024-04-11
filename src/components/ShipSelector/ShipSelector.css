@@ -61,7 +61,9 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    height: 4rem;
+    padding: .5rem 1rem;
+    flex-shrink: 0;
 }
 
 .Ship-selector-container>.title-bar>h2 {
@@ -69,7 +71,79 @@
     margin-left: 1rem;
 }
 
+.Ship-selector-container>.contents>.Ship-selector-filter {
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.Ship-selector-container>.contents>.Ship-selector-filter {
+    display: none;
+}
+
+.Ship-selector-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    background-color: #2d2d2d;
+    padding: .25rem;
+    border-radius: 100rem;
+}
+
+.Ship-selector-filter>button.circleIconBtn {
+    position: relative;
+    fill: var(--color-text);
+    color: var(--color-text);
+}
+
+.Ship-selector-filter>button.circleIconBtn>svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+}
+
+.Ship-selector-filter>button.circleIconBtn.off {
+    fill: rgb(127, 127, 127);
+    color: rgb(127, 127, 127);
+}
+
+.Ship-selector-filter>button.circleIconBtn::before, .Ship-selector-filter>button.circleIconBtn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: calc(2rem / 16);
+    height: 0;
+    transform-origin: 0 0;
+    transition: height .2s, background-color .2s;
+}
+
+.Ship-selector-filter>button.circleIconBtn::before {
+    background-color: #2d2d2d;
+    transform: translate(calc(-9.5rem / 16), calc(-9rem / 16)) rotate(-45deg);
+}
+
+.Ship-selector-filter>button.circleIconBtn::after {
+    background-color: var(--color-text);
+    transform: translate(calc(-11rem / 16), calc(-8rem / 16)) rotate(-45deg);
+}
+
+.Ship-selector-filter>button.circleIconBtn.off::before, .Ship-selector-filter>button.circleIconBtn.off::after {
+    height: calc(19rem * 1.414 / 16);
+}
+
+.Ship-selector-filter>button.circleIconBtn.off::after {
+    background-color: rgb(127, 127, 127);
+}
+
+.Ship-selector-filter label {
+    margin-right: .5rem;
+    user-select: none;
+}
+
 .Ship-selector-container>.title-bar>button.circleIconBtn {
+    fill: var(--color-text);
     width: 2rem;
     height: 2rem;
 }
@@ -187,10 +261,20 @@
         width: 1.5rem;
         height: 1.5rem;
     }
+
     .Ship-selector-container>.title-bar {
         font-size: 12px;
     }
+
     .Ship-selector-container>.title-bar>h2 {
         margin-left: .5rem;
+    }
+
+    .Ship-selector-container>.title-bar>.Ship-selector-filter {
+        display: none;
+    }
+
+    .Ship-selector-container>.contents>.Ship-selector-filter {
+        display: flex;
     }
 }

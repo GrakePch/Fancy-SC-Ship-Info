@@ -1,4 +1,7 @@
 {
+    "ShipSelectorTitle": "Select a vehicle",
+    "ShipFilterReleasedOnly": "Released Only",
+
     "CompTitle-PilotWeapons": "Pilot Wpn.",
     "CompTitle-TurretWeapons": "Turret Wpn.",
     "CompTitle-MissileRacks": "Msl. Racks",

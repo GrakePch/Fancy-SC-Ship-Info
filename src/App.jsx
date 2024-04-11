@@ -280,7 +280,9 @@ function App() {
       />
       {shipIdx == null && (
         <button onClick={() => setIsShipSelectorOn(true)} className="font-geom">
-          <h2>Select a vehicle</h2>
+          <h2>
+            <I18n text="ShipSelectorTitle" />
+          </h2>
         </button>
       )}
       {shipIdx && (

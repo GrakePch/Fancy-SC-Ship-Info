@@ -1,22 +1,13 @@
 import "./ShipSelector.css";
 import Icon from "@mdi/react";
-import {
-  mdiAirplane,
-  mdiAirplaneOff,
-  mdiCar,
-  mdiCarOff,
-  mdiClose,
-  mdiInformationOutline,
-  mdiMotorbike,
-  mdiMotorbikeOff,
-  mdiTranslate,
-} from "@mdi/js";
+import { mdiClose, mdiGithub, mdiTranslate, mdiVanUtility } from "@mdi/js";
 import ShipSelectCard from "./ShipSelectCard/ShipSelectCard";
 import { useContext, useEffect, useState } from "react";
 import manufacturers_small from "../../assets/manufacturers_small";
 import ManufacturerToHue from "../../assets/ManufacturerToHue";
 import I18n from "../I18n";
 import LangContext from "../../contexts/LangContext";
+import icons from "../../assets/icons";
 
 /* eslint-disable react/prop-types */
 function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
@@ -57,54 +48,51 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
     >
       <div className="Ship-selector-container">
         <div className="title-bar">
-          <h2>Select a vehicle</h2>
-          <button
-            className="circleIconBtn"
-            onClick={() => {
-              setFilterForShipVeh((p) => [!p[0], p[1], p[2]]);
-            }}
-            type="button"
-            style={{ opacity: !filterForShipVeh[0] && 0.5 }}
-          >
-            <Icon
-              path={!filterForShipVeh[0] ? mdiAirplaneOff : mdiAirplane}
-              size={1}
-            />
-          </button>
-          <button
-            className="circleIconBtn"
-            onClick={() => {
-              setFilterForShipVeh((p) => [p[0], !p[1], p[2]]);
-            }}
-            type="button"
-            style={{ opacity: !filterForShipVeh[1] && 0.5 }}
-          >
-            <Icon path={!filterForShipVeh[1] ? mdiCarOff : mdiCar} size={1} />
-          </button>
-          <button
-            className="circleIconBtn"
-            onClick={() => {
-              setFilterForShipVeh((p) => [p[0], p[1], !p[2]]);
-            }}
-            type="button"
-            style={{ opacity: !filterForShipVeh[2] && 0.5 }}
-          >
-            <Icon
-              path={!filterForShipVeh[2] ? mdiMotorbikeOff : mdiMotorbike}
-              size={2}
-            />
-          </button>
-          <div>
-            <input
-              className="btnFilterForReleased"
-              onChange={() => {
-                setFilterForReleased((p) => !p);
+          <h2>
+            <I18n text="ShipSelectorTitle" />
+          </h2>
+          <div className="Ship-selector-filter">
+            <button
+              className={`circleIconBtn ${!filterForShipVeh[0] && "off"}`}
+              onClick={() => {
+                setFilterForShipVeh((p) => [!p[0], p[1], p[2]]);
               }}
-              type="checkbox"
-              id="filterForReleased"
-              checked={filterForReleased}
-            />
-            <label htmlFor="filterForReleased">Released Only</label>
+              type="button"
+            >
+              {icons["ship_top"]}
+            </button>
+            <button
+              className={`circleIconBtn ${!filterForShipVeh[1] && "off"}`}
+              onClick={() => {
+                setFilterForShipVeh((p) => [p[0], !p[1], p[2]]);
+              }}
+              type="button"
+            >
+              <Icon path={mdiVanUtility} size={1} />
+            </button>
+            <button
+              className={`circleIconBtn ${!filterForShipVeh[2] && "off"}`}
+              onClick={() => {
+                setFilterForShipVeh((p) => [p[0], p[1], !p[2]]);
+              }}
+              type="button"
+            >
+              {icons["gravlev"]}
+            </button>
+            <div>
+              <input
+                className="btnFilterForReleased"
+                onChange={() => {
+                  setFilterForReleased((p) => !p);
+                }}
+                type="checkbox"
+                id="filterForReleased"
+                checked={filterForReleased}
+              />
+              <label htmlFor="filterForReleased">
+                <I18n text="ShipFilterReleasedOnly" />
+              </label>
+            </div>
           </div>
           <div className="flex-grow" />
           <button
@@ -128,13 +116,56 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
               )
             }
           >
-            <Icon path={mdiInformationOutline} size={1} />
+            <Icon path={mdiGithub} size={1} />
           </button>
           <button className="circleIconBtn" onClick={() => setState(false)}>
             <Icon path={mdiClose} size={1} />
           </button>
         </div>
         <div className="contents">
+          <div className="Ship-selector-filter">
+            <button
+              className={`circleIconBtn ${!filterForShipVeh[0] && "off"}`}
+              onClick={() => {
+                setFilterForShipVeh((p) => [!p[0], p[1], p[2]]);
+              }}
+              type="button"
+            >
+              {icons["ship_top"]}
+            </button>
+            <button
+              className={`circleIconBtn ${!filterForShipVeh[1] && "off"}`}
+              onClick={() => {
+                setFilterForShipVeh((p) => [p[0], !p[1], p[2]]);
+              }}
+              type="button"
+            >
+              <Icon path={mdiVanUtility} size={1} />
+            </button>
+            <button
+              className={`circleIconBtn ${!filterForShipVeh[2] && "off"}`}
+              onClick={() => {
+                setFilterForShipVeh((p) => [p[0], p[1], !p[2]]);
+              }}
+              type="button"
+            >
+              {icons["gravlev"]}
+            </button>
+            <div>
+              <input
+                className="btnFilterForReleased"
+                onChange={() => {
+                  setFilterForReleased((p) => !p);
+                }}
+                type="checkbox"
+                id="filterForReleased"
+                checked={filterForReleased}
+              />
+              <label htmlFor="filterForReleased">
+                <I18n text="ShipFilterReleasedOnly" />
+              </label>
+            </div>
+          </div>
           <div className="filter-by-manufacturer">
             {manufacturerList.map((manu) => (
               <div className="filter-btn-and-tooltip" key={manu}>
