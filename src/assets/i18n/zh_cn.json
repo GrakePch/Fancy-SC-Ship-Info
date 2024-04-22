@@ -109,8 +109,11 @@
     "QTRangeMax": "最大航程",
     "QTSpeedStage1": "阶段1速度",
     "QTSpeedStage2": "阶段2速度",
-    "QTSpeedCruise": "巡航速度",
+    "QTSpeedCruise": "最大速度",
     "TravelTimeFromCruToMic": "十字军到微科 耗时",
+    "LowFuel": "燃料不足",
+    "StandardSpoolTime": "预热时长",
+    "StandardCooldownTimeMax": "冷却最大时长",
 
     "QTRangeCRU2HUR": "十 ↔ 赫：",
     "QTRangeCRU2MIC": "十 ↔ 微：",

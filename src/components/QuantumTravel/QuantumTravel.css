@@ -1,6 +1,19 @@
 .quantumTravel-main-wrapper {
     width: 100%;
     padding: 0 .5rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.componentQDrive {
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    display: flex;
+    gap: 1ch;
+    padding: 0 1ch;
+    border-radius: 1ch;
+    font-size: .6rem;
+    background-color: var(--color-primary-dimmer);
 }
 
 .KeyValue {
@@ -9,17 +22,17 @@
     justify-content: space-between;
     position: relative;
     font-size: .875rem;
-    line-height: 200%;
+    line-height: 175%;
 }
 
-.KeyValue:not(:first-child):before {
+/* .KeyValue:not(:first-child):before {
     content: "";
     display: block;
     position: absolute;
     height: 1px;
     width: 100%;
     background-color: var(--color-primary-dimmer);
-}
+} */
 
 .quantumRangeMeter {
     width: 100%;
@@ -50,42 +63,49 @@
     width: calc(100% - 1rem);
     font-size: .625rem;
     line-height: 100%;
-    margin-bottom: .5rem;
+    /* margin-bottom: .5rem; */
 }
 
-.rulers_wrapper>div {
+.rulers_wrapper>.ruler {
     position: relative;
     height: 1px;
-    margin-top: .5rem;
-    background-color: var(--color-primary-dim);
+    margin-top: .4rem;
+    background-color: var(--color-primary-sat);
 }
 
-.rulers_wrapper>div::before {
+.rulers_wrapper>.ruler::before {
     content: "";
     display: block;
     position: absolute;
-    top: -.3rem;
+    top: -.2rem;
     left: 0;
     width: 1px;
-    height: .6rem;
+    height: .2rem;
     background-color: inherit;
 }
 
-.rulers_wrapper>div::after {
+.rulers_wrapper>.ruler::after {
     content: "";
     display: block;
     position: absolute;
-    top: -.3rem;
+    top: -.2rem;
     right: 0;
     width: 1px;
-    height: .6rem;
+    height: .2rem;
     background-color: inherit;
 }
 
-.rulers_wrapper>div+p {
-    margin-top: 3px;
-    margin-left: 2px;
-    color: var(--color-primary-dim);
+.rulers_wrapper>.ruler+div {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% + 1rem);
+}
+
+.rulers_wrapper>.ruler+div>p {
+    font-weight: 500;
+    margin-top: 1px;
+    /* margin-left: 2px; */
+    color: var(--color-primary-sat);
 }
 
 .JPS2M_JPS2T {
@@ -96,6 +116,15 @@
     background-color: #ee444499 !important;
 }
 
-.cannot-reach+p {
+.cannot-reach+div>p {
     color: #ee444499 !important;
+}
+
+.quantumTravel-main-wrapper hr {
+    border: none;
+    height: 1px;
+    width: calc(100% + 1rem);
+    transform: translateX(-.5rem);
+    background-color: var(--color-primary-dimmer);
+    margin: .3rem 0 .2rem 0;
 }

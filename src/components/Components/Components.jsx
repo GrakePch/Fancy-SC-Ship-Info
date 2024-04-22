@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
 import Icon from "@mdi/react";
 import icons from "../../assets/icons";
-import I18n from "../I18n";
 import "./Components.css";
 import { mdiLock } from "@mdi/js";
+import { useContext } from "react";
+import LangContext from "../../contexts/LangContext";
+import I18nPure from "../I18nPure";
 
 const classToShort = {
   Military: "MLT",
@@ -44,6 +46,7 @@ const sizeToColor = [
 ];
 
 function Component({ compObj, icon, type }) {
+  const lang = useContext(LangContext)[0];
   /* Get the object of the first(only) subweapon if it is gimbal mount */
   let isGimbalMount =
     compObj.Gimballed && compObj.SubWeapons && compObj.SubWeapons.length == 1;
@@ -83,15 +86,13 @@ function Component({ compObj, icon, type }) {
           }}
         >
           {obj.Class
-            ? I18n({ text: classToShort[obj.Class] }) +
+            ? I18nPure(classToShort[obj.Class], lang) +
               " - " +
               String.fromCharCode(64 + obj.Grade)
             : type == "MissileRacks"
             ? obj?.Missiles?.length + " × s" + obj?.Missiles?.at(0)?.Size
             : type == "Weapons" && obj.AlphaDmg && Object.keys(obj.AlphaDmg)
-            ? I18n({
-                text: "Short-" + bulletDmgType,
-              })
+            ? I18nPure("Short-" + bulletDmgType, lang)
             : "-"}
         </p>
       </div>

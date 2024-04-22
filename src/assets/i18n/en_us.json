@@ -56,8 +56,11 @@
     "QTRangeMax": "Max Range",
     "QTSpeedStage1": "Stage 1 Speed",
     "QTSpeedStage2": "Stage 2 Speed",
-    "QTSpeedCruise": "Cruise Speed",
+    "QTSpeedCruise": "Max Speed",
     "TravelTimeFromCruToMic": "Time of CRU → MIC",
+    "LowFuel": "Low Fuel",
+    "StandardSpoolTime": "Spool Time",
+    "StandardCooldownTimeMax": "Cooldown Max Time",
 
     "QTRangeCRU2HUR": "CRU ↔ HUR: ",
     "QTRangeCRU2MIC": "CRU ↔ MIC: ",

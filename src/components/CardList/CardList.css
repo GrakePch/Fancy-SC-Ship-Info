@@ -1,4 +1,5 @@
 .card-list {
+    position: relative;
     background-color: var(--color-primary-bg);
     border-radius: 2rem;
     display: flex;

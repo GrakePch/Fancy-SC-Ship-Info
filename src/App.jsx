@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import shipIndex from "./data/index-min.json";
 import shipList from "./data/ship-list-min.json";
 import shipHardpoints from "./data/ship-hardpoints-min.json";
+import shipItems from "./data/ship-items-min.json";
 import ship_pics_and_zh_name from "./assets/ship_pics_and_zh_name.json";
 import manufacturers_small from "./assets/manufacturers_small";
 import "./App.css";
@@ -22,6 +23,7 @@ import bg_line from "./assets/lines.png";
 import Components from "./components/Components/Components";
 import ComponentGroup from "./components/ComponentGroup/ComponentGroup";
 import QuantumTravel from "./components/QuantumTravel/QuantumTravel";
+import I18nPure from "./components/I18nPure";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -60,6 +62,8 @@ function App() {
   const [totalNoiseAmmo, setTotalNoiseAmmo] = useState(0);
   const [totalDecoyItemNum, setTotalDecoyItemNum] = useState(0);
   const [totalNoiseItemNum, setTotalNoiseItemNum] = useState(0);
+
+  const [shipComponentQDrive, setShipComponentQDrive] = useState(null);
 
   useEffect(() => {
     let sp = new URLSearchParams(window.location.search);
@@ -237,6 +241,16 @@ function App() {
       }
     );
     setListQuantumDrives(temp);
+    if (temp && temp.length > 0) {
+      for (let i = 0; i < shipItems.length; ++i) {
+        if (
+          shipItems[i].type === "QuantumDrive" &&
+          shipItems[i].stdItem.Name === temp[0].Name
+        ) {
+          setShipComponentQDrive(shipItems[i]);
+        }
+      }
+    }
 
     let tempDecoyItemNum = 0;
     let tempNoiseItemNum = 0;
@@ -549,8 +563,8 @@ function App() {
               infoObj={{
                 Size:
                   (shipObj.IsSpaceship
-                    ? I18n({
-                        text: [
+                    ? I18nPure(
+                        [
                           "",
                           "Snub",
                           "Small",
@@ -560,10 +574,10 @@ function App() {
                           "Capital",
                           "Capital",
                         ].at(shipObj.Size),
-                        langOver: lang,
-                      })
-                    : I18n({
-                        text: [
+                        lang
+                      )
+                    : I18nPure(
+                        [
                           "",
                           "Small",
                           "Medium",
@@ -572,8 +586,8 @@ function App() {
                           "Large",
                           "Large",
                         ].at(shipObj.Size),
-                        langOver: lang,
-                      })) + ` (${shipObj.Size})`,
+                        lang
+                      )) + ` (${shipObj.Size})`,
                 Mass: [(shipObj.Mass / 1000).toFixed(3), "t"],
                 Dimensions: [
                   shipObj.Dimensions.Length +
@@ -671,11 +685,10 @@ function App() {
             <CardList
               title="Shields"
               infoObj={{
-                ShieldType: I18n({
-                  text: shipHardpts.Hardpoints.Components.Systems.Shields
-                    .FaceType,
-                  langOver: lang,
-                }),
+                ShieldType: I18nPure(
+                  shipHardpts.Hardpoints.Components.Systems.Shields.FaceType,
+                  lang
+                ),
                 TotalShieldHP:
                   shipHardpts.Hardpoints.Components.Systems.Shields
                     .TotalShieldPool,
@@ -721,6 +734,26 @@ function App() {
             {shipObj.IsSpaceship && (
               <>
                 <QuantumTravel
+                  QDriveName={
+                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                      0
+                    )?.Name
+                  }
+                  QDriveSize={
+                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                      0
+                    )?.Size
+                  }
+                  QDriveClass={
+                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                      0
+                    )?.Class
+                  }
+                  QDriveGrade={
+                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                      0
+                    )?.Grade
+                  }
                   QFuelCapacity={shipObj?.FuelManagement?.QuantumFuelCapacity}
                   FuelConsumpRate={
                     shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
@@ -741,6 +774,34 @@ function App() {
                     shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
                       0
                     )?.Stage2Speed
+                  }
+                  SpoolTime={
+                    shipComponentQDrive?.stdItem?.QuantumDrive?.StandardJump
+                      ?.SpoolUpTime
+                  }
+                  CoolDown={
+                    shipComponentQDrive?.stdItem?.QuantumDrive?.StandardJump
+                      ?.Cooldown
+                  }
+                  SplineSpeed={
+                    shipComponentQDrive?.stdItem?.QuantumDrive?.SplineJump
+                      ?.Speed
+                  }
+                  SplineAccelRateStage1={
+                    shipComponentQDrive?.stdItem?.QuantumDrive?.SplineJump
+                      ?.Stage1AccelerationRate
+                  }
+                  SplineAccelRateStage2={
+                    shipComponentQDrive?.stdItem?.QuantumDrive?.SplineJump
+                      ?.Stage2AccelerationRate
+                  }
+                  SplineSpoolTime={
+                    shipComponentQDrive?.stdItem?.QuantumDrive?.SplineJump
+                      ?.SpoolUpTime
+                  }
+                  SplineCoolDown={
+                    shipComponentQDrive?.stdItem?.QuantumDrive?.SplineJump
+                      ?.Cooldown
                   }
                 />
               </>
@@ -771,7 +832,11 @@ function App() {
                       .AngularVelocityMultiplier
                   }
                   spoolTime={
-                    shipObj.FlightCharacteristics.MasterModes.BaseSpoolTime
+                    shipObj.FlightCharacteristics.MasterModes.BaseSpoolTime +
+                    (shipComponentQDrive
+                      ? shipComponentQDrive.stdItem.QuantumDrive.StandardJump
+                          .SpoolUpTime
+                      : 0)
                   }
                 />
                 <FlightAccelerations
