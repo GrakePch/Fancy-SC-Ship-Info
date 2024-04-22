@@ -29,10 +29,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* background-color: hsl(var(--hue), 100%, 50%); */
-    /* opacity: .4; */
     background-color: var(--color-primary-text);
-    opacity: .6;
+}
+
+.py-rect.boost {
+    background-color: var(--color-primary-dim);
 }
 
 .roll-pie-tl, .roll-pie-tr, .roll-pie-bl, .roll-pie-br {
@@ -45,6 +46,7 @@
     outline-width: 1px;
     outline-style: solid;
     outline-color: var(--color-primary-dim);
+    opacity: .7;
 }
 
 .roll-pie-tr {

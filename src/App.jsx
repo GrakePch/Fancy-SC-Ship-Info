@@ -115,15 +115,17 @@ function App() {
         }
         let flight = shipList[i].FlightCharacteristics;
         if (flight) {
-          _speedMax = Math.max(_speedMax, flight.MaxSpeed);
-          _pitchMax = Math.max(_pitchMax, flight.Pitch);
-          _yawMax = Math.max(_yawMax, flight.Yaw);
-          _rollMax = Math.max(_rollMax, flight.Roll);
-
           let accel = flight.AccelerationG;
-          let capct = flight.Capacitors;
+          // let capct = flight.Capacitors;
           const boostObj = flight.Boost;
           const accelMult = boostObj.AccelerationMultiplier;
+          const angVelMult = boostObj.AngularVelocityMultiplier;
+
+          _speedMax = Math.max(_speedMax, flight.MaxSpeed);
+          _pitchMax = Math.max(_pitchMax, flight.Pitch * angVelMult.Pitch);
+          _yawMax = Math.max(_yawMax, flight.Yaw * angVelMult.Yaw);
+          _rollMax = Math.max(_rollMax, flight.Roll * angVelMult.Roll);
+
           _fMax = Math.max(_fMax, accel.Main * accelMult.PositiveAxis.Y);
           _bMax = Math.max(_bMax, accel.Retro * accelMult.NegativeAxis.Y);
           _sMax = Math.max(_sMax, accel.Strafe * accelMult.PositiveAxis.X);
@@ -748,6 +750,14 @@ function App() {
                 <FlightCharacteristics
                   scm={shipObj.FlightCharacteristics.ScmSpeed}
                   max={shipObj.FlightCharacteristics.MaxSpeed}
+                  maxFwd={
+                    shipObj.FlightCharacteristics.MasterModes.ScmMode
+                      .BoostSpeedForward
+                  }
+                  maxBwd={
+                    shipObj.FlightCharacteristics.MasterModes.ScmMode
+                      .BoostSpeedBackward
+                  }
                   pitch={shipObj.FlightCharacteristics.Pitch}
                   yaw={shipObj.FlightCharacteristics.Yaw}
                   roll={shipObj.FlightCharacteristics.Roll}
@@ -755,6 +765,10 @@ function App() {
                   pitchMax={pitchMax}
                   yawMax={yawMax}
                   rollMax={rollMax}
+                  angVelMult={
+                    shipObj.FlightCharacteristics.Boost
+                      .AngularVelocityMultiplier
+                  }
                 />
                 <FlightAccelerations
                   shipImgIso={dictShipImgIso[shipIdx.Name]}
@@ -887,27 +901,43 @@ function App() {
                   title="FlightTime"
                   infoObj={{
                     FlightTimeMainWithVtol: [
-                      (
-                        shipObj.FuelManagement.FuelCapacity /
+                      shipObj.FuelManagement.FuelCapacity /
                         (shipObj.FuelManagement.FuelUsagePerSecond.Main +
                           shipObj.FuelManagement.FuelUsagePerSecond.Vtol -
                           shipObj.FuelManagement.FuelIntakeRate) /
-                        60
-                      ).toFixed(0),
+                        60 <=
+                      9999
+                        ? (
+                            shipObj.FuelManagement.FuelCapacity /
+                            (shipObj.FuelManagement.FuelUsagePerSecond.Main +
+                              shipObj.FuelManagement.FuelUsagePerSecond.Vtol -
+                              shipObj.FuelManagement.FuelIntakeRate) /
+                            60
+                          ).toFixed(0)
+                        : "9999+",
                       "min",
                     ],
                     FlightTimeMainAssistedWithVtol:
                       shipObj.FuelManagement.FuelUsagePerSecond.MainAssisted !=
                       null ? (
                         [
-                          (
-                            shipObj.FuelManagement.FuelCapacity /
+                          shipObj.FuelManagement.FuelCapacity /
                             (shipObj.FuelManagement.FuelUsagePerSecond
                               .MainAssisted +
                               shipObj.FuelManagement.FuelUsagePerSecond.Vtol -
                               shipObj.FuelManagement.FuelIntakeRate) /
-                            60
-                          ).toFixed(0),
+                            60 <=
+                          9999
+                            ? (
+                                shipObj.FuelManagement.FuelCapacity /
+                                (shipObj.FuelManagement.FuelUsagePerSecond
+                                  .MainAssisted +
+                                  shipObj.FuelManagement.FuelUsagePerSecond
+                                    .Vtol -
+                                  shipObj.FuelManagement.FuelIntakeRate) /
+                                60
+                              ).toFixed(0)
+                            : "9999+",
                           "min",
                         ]
                       ) : (
@@ -920,8 +950,7 @@ function App() {
                         </span>
                       ),
                     FlightTimeMainAssistedWithManeuvWithVtol: [
-                      (
-                        shipObj.FuelManagement.FuelCapacity /
+                      shipObj.FuelManagement.FuelCapacity /
                         ((shipObj.FuelManagement.FuelUsagePerSecond
                           .MainAssisted ||
                           shipObj.FuelManagement.FuelUsagePerSecond.Main) +
@@ -929,8 +958,20 @@ function App() {
                             .Maneuvering +
                           shipObj.FuelManagement.FuelUsagePerSecond.Vtol -
                           shipObj.FuelManagement.FuelIntakeRate) /
-                        60
-                      ).toFixed(0),
+                        60 <=
+                      9999
+                        ? (
+                            shipObj.FuelManagement.FuelCapacity /
+                            ((shipObj.FuelManagement.FuelUsagePerSecond
+                              .MainAssisted ||
+                              shipObj.FuelManagement.FuelUsagePerSecond.Main) +
+                              shipObj.FuelManagement.FuelUsagePerSecond
+                                .Maneuvering +
+                              shipObj.FuelManagement.FuelUsagePerSecond.Vtol -
+                              shipObj.FuelManagement.FuelIntakeRate) /
+                            60
+                          ).toFixed(0)
+                        : "9999+",
                       "min",
                     ],
                   }}

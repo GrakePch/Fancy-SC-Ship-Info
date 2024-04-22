@@ -10,15 +10,15 @@
 
 .Speed-Meter {
     position: relative;
-    /* background-color: var(--color-bg); */
     height: 100%;
     width: 4px;
     transform: scaleY(-1);
-    margin-left: .5rem;
-    /* margin-top: 6px;
-    margin-bottom: 8px; */
-    /* border-radius: 4px; */
-    /* overflow: hidden; */
+    margin-left: 4ch;
+    margin-right: 24px;
+    font-size: .6rem;
+    font-weight: 500;
+    line-height: 100%;
+    font-variant-numeric: tabular-nums;
 }
 
 .Speed-Axis {
@@ -32,13 +32,28 @@
     z-index: 99;
 }
 
+.Speed-Axis::before, .Speed-Axis::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 4.5ch;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    background-color: inherit;
+}
+
+.Speed-Axis::after {
+    top: 0;
+}
+
 .Speed-Max {
     position: relative;
     height: 0%;
     width: 100%;
     background-color: #ee444499;
     z-index: 100;
-    transform: translateX(4px)
+    transform: translateX(4px);
 }
 
 .Speed-SCM {
@@ -48,24 +63,45 @@
     background-color: var(--color-primary-text);
 }
 
+.Speed-Max.Fwd {
+    position: absolute;
+    top: 0;
+    left: 7px;
+    background-color: #ee444460;
+}
+
+.Speed-Max.Bwd {
+    position: absolute;
+    transform: None;
+    background-color: #ee4444a0;
+}
+
 .Speed-Meter p {
     position: absolute;
     right: 6px;
-    font-size: .6rem;
     transform: scaleY(-1);
-    line-height: 100%;
 }
 
-.Speed-Max p {
-    right: 10px;
+.Speed-Meter>p {
+    bottom: 2px;
+    color: var(--color-primary-dim);
 }
 
-.Speed-Meter p:first-of-type {
+.Speed-Max>p {
     bottom: 0;
+    right: 10px;
+    color: #ee444499;
 }
 
-.Speed-Meter p:last-of-type {
-    top: 0;
+.Speed-SCM>p {
+    bottom: 0;
+    right: 10px;
+    color: var(--color-primary-text);
+}
+
+.Speed-Max.Fwd p {
+    left: 6px;
+    color: #ee444499;
 }
 
 .PYR-plot {
@@ -81,12 +117,37 @@
 } */
 
 .Flight-char-info {
-    font-size: .875rem;
+    font-size: .75em;
+    font-weight: 600;
     flex-grow: 1;
 }
 
+.Flight-char-info .flex-data>p:first-child {
+    font-weight: 400;
+}
+
+.Flight-char-info hr {
+    background-color: var(--color-primary-dimmer);
+    border: None;
+    height: 1px;
+}
+
+.Flight-char-info .red {
+    color: #ee4444d0;
+}
+
 .PYR-plot-self {
-    height: 100%;
+    width: 5.5rem;
     aspect-ratio: 1 / 1;
     flex-shrink: 0;
+    font-size: .66em;
+    font-weight: 600;
+}
+
+.PYR-plot-self p>span {
+    color: var(--color-primary-sat);
+}
+
+.PYR-plot-self>*:last-child {
+    margin-top: .5rem;
 }

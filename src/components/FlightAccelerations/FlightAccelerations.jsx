@@ -26,7 +26,7 @@ function FlightAccelerations({
     BwdMax,
     StrMax,
     UwdMax,
-    BwdMax
+    DwdMax
   );
   return (
     <div className="card-list">
