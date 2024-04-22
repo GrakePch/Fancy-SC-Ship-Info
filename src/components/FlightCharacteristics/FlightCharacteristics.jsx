@@ -16,7 +16,7 @@ function FlightCharacteristics({
 }) {
   return (
     <div className="card-list">
-    <h2><I18n text="Maneuverability" /></h2>
+    <h2><I18n text="Speeds" /></h2>
       <div className="PYR-plot font-slim">
         <div className="Speed-Meter">
           <div

@@ -122,11 +122,13 @@ function App() {
 
           let accel = flight.AccelerationG;
           let capct = flight.Capacitors;
-          _fMax = Math.max(_fMax, accel.Main * capct.Y_AccelMultiplicator);
-          _bMax = Math.max(_bMax, accel.Retro * capct.Y_AccelMultiplicator);
-          _sMax = Math.max(_sMax, accel.Strafe * capct.X_AccelMultiplicator);
-          _uMax = Math.max(_uMax, accel.Up * capct.Z_AccelMultiplicator);
-          _dMax = Math.max(_dMax, accel.Down * capct.Z_AccelMultiplicator);
+          const boostObj = flight.Boost;
+          const accelMult = boostObj.AccelerationMultiplier;
+          _fMax = Math.max(_fMax, accel.Main * accelMult.PositiveAxis.Y);
+          _bMax = Math.max(_bMax, accel.Retro * accelMult.NegativeAxis.Y);
+          _sMax = Math.max(_sMax, accel.Strafe * accelMult.PositiveAxis.X);
+          _uMax = Math.max(_uMax, accel.Up * accelMult.PositiveAxis.Z);
+          _dMax = Math.max(_dMax, accel.Down * accelMult.NegativeAxis.Z);
         }
       }
       setPitchMax(Math.max(_pitchMax, 90));
@@ -352,6 +354,18 @@ function App() {
             {shipIdx.Store.Buy} USD
             {shipIdx.Store.isLimitedSale && " LIMITED SALE"}
           </h3>
+          <p className="version-and-sources font-slim">
+            Game Version: 3.23.0 EPTU
+            <br />
+            Data Source:{" "}
+            <a href="https://www.spviewer.eu/" target="_blank">
+              SC Ships Performances Viewer
+            </a>
+            &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Image Source:{" "}
+            <a href="https://hangar.link/fleet/canvas" target="_blank">
+              STARJUMP
+            </a>
+          </p>
         </div>
       )}
       {shipIdx && shipHardpts && (
@@ -743,6 +757,7 @@ function App() {
                   rollMax={rollMax}
                 />
                 <FlightAccelerations
+                  shipImgIso={dictShipImgIso[shipIdx.Name]}
                   FlightCharObj={shipObj.FlightCharacteristics}
                   FwdMax={accelFwdMax}
                   BwdMax={accelBwdMax}

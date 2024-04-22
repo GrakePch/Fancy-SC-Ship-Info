@@ -1,19 +1,139 @@
 .Accel-plot-container {
     display: flex;
     width: 100%;
-    padding: 0 .5rem;
-    gap: .25rem;
+    padding: 0 0 0 .5rem;
+    gap: 1rem;
     align-items: center;
     justify-content: space-between;
     font-variant-numeric: tabular-nums;
 }
 
-/* .Accel-plot-container>div:last-child {
+.Accel-data {
     flex-grow: 1;
-} */
+    font-weight: 600;
+}
+
+.Accel-data > hr {
+    background-color: var(--color-primary-dimmer);
+    border: none;
+    height: 1px;
+}
 
 .Accel-plot {
     height: 8rem;
+    aspect-ratio: 1.732 / 2;
+    position: relative;
+    margin: 1rem;
+    font-weight: 600;
+}
+
+.Accel-plot>.ShipImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0);
+    opacity: .3;
+}
+
+.Accel-plot>.Axis {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 6px);
+    width: 1px;
+    height: calc(50% - 6px);
+    background-color: var(--color-primary-dim);
+    transform-origin: 50% -6px;
+}
+
+.Accel-plot>.Axis>p {
+    display: block;
+    position: absolute;
+    bottom: -1.25em;
+    left: -1em;
+    width: 2em;
+    transform-origin: center;
+    text-align: center;
+    font-size: .75em;
+    line-height: 100%;
+    color: var(--color-primary-dim);
+}
+
+.Accel-Bar-Boost {
+    position: absolute;
+    width: 7px;
+    height: 50%;
+    left: -3px;
+    background-color: var(--color-primary-bg);
+    border: var(--color-primary-text) 1px solid;
+}
+
+.Accel-Bar {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: var(--color-primary-text);
+}
+
+.Axis.D, .Axis.B, .Axis.R {
+    filter: brightness(.66);
+}
+
+/* .Axis.D>.Accel-Bar-Boost, .Axis.B>.Accel-Bar-Boost, .Axis.R>.Accel-Bar-Boost {
+    width: 5px;
+    left: -2px;
+} */
+
+.Axis.U {
+    transform: scale(-1);
+}
+
+.Axis.U>p {
+    content: "U";
+    transform: scale(-1);
+}
+
+.Axis.D {
+    transform: None;
+}
+
+.Axis.D>p {
+}
+
+.Axis.F {
+    transform: scale(-1) rotate(-120deg);
+}
+
+.Axis.F>p {
+    transform: rotate(120deg) scale(-1);
+}
+
+.Axis.B {
+    transform: rotate(-120deg);
+}
+
+.Axis.B>p {
+    transform: rotate(120deg);
+}
+
+.Axis.R {
+    transform: scale(-1) rotate(-60deg);
+}
+
+.Axis.R>p {
+    transform: rotate(60deg) scale(-1);
+}
+
+.Axis.L {
+    transform: rotate(-60deg);
+}
+
+.Axis.L>p {
+    transform: rotate(60deg);
 }
 
 .accel-flex-data {
@@ -21,9 +141,17 @@
     font-size: .75rem;
     padding: 0 0rem;
     gap: 1ch;
-    justify-content: center;
+    justify-content: left;
+}
+
+.accel-flex-data.dim {
+    filter: brightness(.7);
+}
+
+.accel-flex-data>p:first-child {
+    flex-grow: 1;
 }
 
 .accel-flex-data>p:nth-child(3) {
-    color: #ee4444;
+    color: var(--color-primary-sat);
 }

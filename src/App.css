@@ -124,6 +124,18 @@
   font-variant-numeric: tabular-nums;
 }
 
+.version-and-sources {
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  color: var(--color-primary-dimmer);
+  font-size: .75em;
+  text-align: center;
+  line-height: 100%;
+}
+
 .component-sizes-wrapper {}
 
 .component-sizes-btn-wrapper {
