@@ -95,6 +95,10 @@ h1 {
   flex-grow: 1;
 }
 
+.pos-relative {
+  position: relative;
+}
+
 @media screen and (min-width: 720px) and (max-width: 1079px) {
   .grid3 {
     display: grid;

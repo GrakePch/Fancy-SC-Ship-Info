@@ -116,6 +116,7 @@
     "QTRangeCRU2MIC": "十 ↔ 微：",
     "QTRangeJPS2M2JPS2T": "斯坦顿-马格努斯 跳点 ↔ 斯坦顿-泰拉 跳点： ",
 
+    "SpoolTime":      "模式切换预热时间",
     "NavMaxSpeed":    "导航模式最大速度",
     "AllDirections":  "全向",
     "ScmMaxSpeeds":   "作战机动最大速度",
@@ -151,6 +152,7 @@
     "SignalReducIR": "红外信号减免",
     "SignalReducCS": "截面信号减免",
 
+    "PilotWeaponsBurstDPS": "主驾武器爆发每秒伤害",
     "TotalWeaponsDmg":  "机炮每秒总伤",
     "TotalTurretDmg":   "炮塔每秒总伤",
     "TotalMissilesDmg": "导弹总伤",

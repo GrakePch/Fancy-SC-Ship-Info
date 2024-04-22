@@ -650,7 +650,7 @@ function App() {
             <CardList
               title="Combats"
               infoObj={{
-                TotalWeaponsDmg: [shipObj.Weapons.TotalWeaponsDmg, "/s"],
+                PilotWeaponsBurstDPS: [shipObj.Weapons.PilotBurstDPS, "/s"],
                 TotalTurretDmg: ["?", "/s"],
                 TotalMissilesDmg: shipObj.Weapons.TotalMissilesDmg,
                 TotalEMPDmg: "?",
@@ -668,33 +668,6 @@ function App() {
                 "Noise",
               ]}
             />
-            {shipObj.IsSpaceship && (
-              <>
-                <QuantumTravel
-                  QFuelCapacity={shipObj?.FuelManagement?.QuantumFuelCapacity}
-                  FuelConsumpRate={
-                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
-                      0
-                    )?.FuelRate
-                  }
-                  QTSpeedCruise={
-                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
-                      0
-                    )?.CruiseSpeed
-                  }
-                  QTSpeedStage1={
-                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
-                      0
-                    )?.Stage1Speed
-                  }
-                  QTSpeedStage2={
-                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
-                      0
-                    )?.Stage2Speed
-                  }
-                />
-              </>
-            )}
             <CardList
               title="Shields"
               infoObj={{
@@ -747,6 +720,34 @@ function App() {
 
             {shipObj.IsSpaceship && (
               <>
+                <QuantumTravel
+                  QFuelCapacity={shipObj?.FuelManagement?.QuantumFuelCapacity}
+                  FuelConsumpRate={
+                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                      0
+                    )?.FuelRate
+                  }
+                  QTSpeedCruise={
+                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                      0
+                    )?.CruiseSpeed
+                  }
+                  QTSpeedStage1={
+                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                      0
+                    )?.Stage1Speed
+                  }
+                  QTSpeedStage2={
+                    shipHardpts.Hardpoints.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                      0
+                    )?.Stage2Speed
+                  }
+                />
+              </>
+            )}
+
+            {shipObj.IsSpaceship && (
+              <>
                 <FlightCharacteristics
                   scm={shipObj.FlightCharacteristics.ScmSpeed}
                   max={shipObj.FlightCharacteristics.MaxSpeed}
@@ -768,6 +769,9 @@ function App() {
                   angVelMult={
                     shipObj.FlightCharacteristics.Boost
                       .AngularVelocityMultiplier
+                  }
+                  spoolTime={
+                    shipObj.FlightCharacteristics.MasterModes.BaseSpoolTime
                   }
                 />
                 <FlightAccelerations

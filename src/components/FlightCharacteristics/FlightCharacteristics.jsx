@@ -16,12 +16,19 @@ function FlightCharacteristics({
   yawMax,
   rollMax,
   angVelMult,
+  spoolTime,
 }) {
   return (
-    <div className="card-list">
+    <div className="card-list pos-relative">
       <h2>
         <I18n text="Speeds" />
       </h2>
+      <div className="Toggle-Spool-Time font-slim">
+        <p>{spoolTime} s</p>
+        <p>
+          <I18n text="SpoolTime" />
+        </p>
+      </div>
       <div className="PYR-plot font-slim">
         <div className="Speed-Meter">
           <div

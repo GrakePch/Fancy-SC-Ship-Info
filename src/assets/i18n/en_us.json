@@ -63,6 +63,7 @@
     "QTRangeCRU2MIC": "CRU ↔ MIC: ",
     "QTRangeJPS2M2JPS2T": "JP Stanton-Magnus ↔ JP Stanton-Terra: ",
 
+    "SpoolTime":      "Mode Toggling Spool Time",
     "NavMaxSpeed":    "NAV Max Speed",
     "AllDirections":  "All",
     "ScmMaxSpeeds":   "SCM Max Speeds",
@@ -90,6 +91,7 @@
     "SignalReducIR":        "IR Emission Reduction",
     "SignalReducCS":        "CS Emission Reduction",
 
+    "PilotWeaponsBurstDPS": "Pilot Wpn. Burst DPS",
     "TotalWeaponsDmg":  "Total Weapons DMG",
     "TotalTurretDmg":   "Total Turret DMG",
     "TotalMissilesDmg": "Total Missiles DMG",
@@ -102,7 +104,7 @@
     "SingleFaceShieldHP":         "Single Face Shield HP",
     "TotalRegenSpeed":            "Regeneration Speed",
     "RegenDelay":                 "Time Before Regeneration",
-    "PhysicalAbsorptionRateMax":  "Physical Absorption Max Rate",
+    "PhysicalAbsorptionRateMax":  "Physc. Absorption Max Rate",
 
     "IdleEMEmission": "EM Emission Idle",
     "ActiveEMEmission": "EM Emission Active",

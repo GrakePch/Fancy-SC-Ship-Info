@@ -8,6 +8,27 @@
     font-variant-numeric: tabular-nums;
 }
 
+.Toggle-Spool-Time {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    gap: 1px;
+    position: absolute;
+    top: .8rem;
+    right: 1.5rem;
+    font-size: .625rem;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-primary-dim);
+}
+
+.Toggle-Spool-Time>p:first-child {
+    font-size: .75rem;
+    color: var(--color-primary-text);
+}
+
 .Speed-Meter {
     position: relative;
     height: 100%;
