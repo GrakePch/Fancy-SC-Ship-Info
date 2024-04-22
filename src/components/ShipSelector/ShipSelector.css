@@ -84,7 +84,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: .5rem;
+    gap: .25rem;
     background-color: #2d2d2d;
     padding: .25rem;
     border-radius: 100rem;
@@ -107,6 +107,10 @@
     color: rgb(127, 127, 127);
 }
 
+.Ship-selector-filter>button.circleIconBtn.rotate90>svg {
+    transform: rotate(90deg) scale(.9);
+}
+
 .Ship-selector-filter>button.circleIconBtn::before, .Ship-selector-filter>button.circleIconBtn::after {
     content: "";
     display: block;
@@ -117,6 +121,7 @@
     height: 0;
     transform-origin: 0 0;
     transition: height .2s, background-color .2s;
+    z-index: 1;
 }
 
 .Ship-selector-filter>button.circleIconBtn::before {

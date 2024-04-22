@@ -53,7 +53,7 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
           </h2>
           <div className="Ship-selector-filter">
             <button
-              className={`circleIconBtn ${!filterForShipVeh[0] && "off"}`}
+              className={`circleIconBtn ${!filterForShipVeh[0] && "off"} rotate90`}
               onClick={() => {
                 setFilterForShipVeh((p) => [!p[0], p[1], p[2]]);
               }}
@@ -125,7 +125,7 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
         <div className="contents">
           <div className="Ship-selector-filter">
             <button
-              className={`circleIconBtn ${!filterForShipVeh[0] && "off"}`}
+              className={`circleIconBtn ${!filterForShipVeh[0] && "off"} rotate90`}
               onClick={() => {
                 setFilterForShipVeh((p) => [!p[0], p[1], p[2]]);
               }}
