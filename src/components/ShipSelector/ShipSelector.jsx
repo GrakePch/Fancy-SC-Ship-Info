@@ -1,16 +1,25 @@
-import "./ShipSelector.css";
-import Icon from "@mdi/react";
-import { mdiClose, mdiGithub, mdiTranslate, mdiVanUtility } from "@mdi/js";
-import ShipSelectCard from "./ShipSelectCard/ShipSelectCard";
 import { useContext, useEffect, useState } from "react";
-import manufacturers_small from "../../assets/manufacturers_small";
+
+import { mdiClose, mdiGithub, mdiTranslate, mdiVanUtility } from "@mdi/js";
+import Icon from "@mdi/react";
+
 import ManufacturerToHue from "../../assets/ManufacturerToHue";
-import I18n from "../I18n";
-import LangContext from "../../contexts/LangContext";
 import icons from "../../assets/icons";
+import manufacturers_small from "../../assets/manufacturers_small";
+import LangContext from "../../contexts/LangContext";
+import I18n from "../I18n";
+import ShipSelectCard from "./ShipSelectCard/ShipSelectCard";
+import "./ShipSelector.css";
 
 /* eslint-disable react/prop-types */
-function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
+function ShipSelector({
+  on,
+  setState,
+  shipIndex,
+  setShipId,
+  dictShipZhName,
+  setSearchParams,
+}) {
   const [manufacturerList, setManufacturerList] = useState([]);
   const [filterForManu, setFilterForManu] = useState(null);
   const [filterForShipVeh, setFilterForShipVeh] = useState([
@@ -27,7 +36,7 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
       (e) => {
         if (e.key === "Escape") setState(false);
       },
-      false
+      false,
     );
   });
 
@@ -53,7 +62,9 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
           </h2>
           <div className="Ship-selector-filter">
             <button
-              className={`circleIconBtn ${!filterForShipVeh[0] && "off"} rotate90`}
+              className={`circleIconBtn ${
+                !filterForShipVeh[0] && "off"
+              } rotate90`}
               onClick={() => {
                 setFilterForShipVeh((p) => [!p[0], p[1], p[2]]);
               }}
@@ -99,10 +110,7 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
             className="circleIconBtn"
             onClick={() => {
               let newValue = lang == "zh" ? "en" : "zh";
-              setLang(newValue);
-              let sp = new URLSearchParams(window.location.search);
-              sp.set("lang", newValue);
-              window.history.pushState(null, "", "?" + sp.toString());
+              setSearchParams((prev) => ({ s: prev.get("s"), lang: newValue }));
             }}
           >
             <Icon path={mdiTranslate} size={1} />
@@ -112,7 +120,7 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
             onClick={() =>
               window.open(
                 "https://github.com/GrakePch/Fancy-SC-Ship-Info/blob/main/README.md",
-                "_blank"
+                "_blank",
               )
             }
           >
@@ -125,7 +133,9 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
         <div className="contents">
           <div className="Ship-selector-filter">
             <button
-              className={`circleIconBtn ${!filterForShipVeh[0] && "off"} rotate90`}
+              className={`circleIconBtn ${
+                !filterForShipVeh[0] && "off"
+              } rotate90`}
               onClick={() => {
                 setFilterForShipVeh((p) => [!p[0], p[1], p[2]]);
               }}
@@ -203,7 +213,7 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
                   }
                   onClick={() =>
                     setFilterForManu((current) =>
-                      current != null && current == manu ? null : manu
+                      current != null && current == manu ? null : manu,
                     )
                   }
                 >
@@ -237,7 +247,7 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
                       : true) &&
                     ((item.Type == "Ship" && filterForShipVeh[0]) ||
                       (item.Type == "Vehicle" && filterForShipVeh[1]) ||
-                      (item.Type == "Gravlev" && filterForShipVeh[2]))
+                      (item.Type == "Gravlev" && filterForShipVeh[2])),
                 )
                 .sort((a, b) =>
                   lang == "zh"
@@ -247,25 +257,16 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
                       )?.localeCompare(
                         dictShipZhName[b.Name]?.split(" ").slice(1).join(" ") ||
                           b.NameShort,
-                        "zh"
+                        "zh",
                       )
-                    : a.NameShort?.localeCompare(b.NameShort)
+                    : a.NameShort?.localeCompare(b.NameShort),
                 )
                 .map((item, idx) => (
                   <div
                     key={item.ClassName + idx}
                     onClick={() => {
                       setState(false);
-                      setShipId(item.ClassName);
-                      let sp = new URLSearchParams(window.location.search);
-                      sp.set("s", item.ClassName);
-                      // window.location.search = sp.toString();
-                      window.history.pushState(null, "", "?" + sp.toString());
-                      // window.history.pushState(
-                      //   null,
-                      //   "",
-                      //   `?s=${item.ClassName}`
-                      // );
+                      setSearchParams({ s: item.ClassName, lang: lang });
                     }}
                   >
                     <ShipSelectCard
@@ -282,7 +283,7 @@ function ShipSelector({ on, setState, shipIndex, setShipId, dictShipZhName }) {
                       isReleased={item.PU.HasPerf}
                       isShip={item.Type == "Ship"}
                       imgSrc={`https://ships.42kit.com/resized/${item.NameShort?.normalize(
-                        "NFD"
+                        "NFD",
                       )
                         .replace(/[\u0300-\u036f]/g, "")
                         .replace("'", "-")
