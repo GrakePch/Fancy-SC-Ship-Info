@@ -290,101 +290,112 @@ function MainInfo() {
 
   return (
     <LangContext.Provider value={[lang, setLang]}>
-      <ShipSelector
-        on={isShipSelectorOn}
-        setState={setIsShipSelectorOn}
-        shipIndex={shipIndex}
-        setShipId={setShipId}
-        dictShipZhName={dictShipZhName}
-        setSearchParams={setSearchParams}
-      />
       {shipIdx == null && (
-        <button onClick={() => setIsShipSelectorOn(true)} className="font-geom">
-          <h2>
-            <I18n text="ShipSelectorTitle" />
-          </h2>
-        </button>
+        <ShipSelector
+          setState={setIsShipSelectorOn}
+          shipIndex={shipIndex}
+          dictShipZhName={dictShipZhName}
+          setSearchParams={setSearchParams}
+        />
       )}
       {shipIdx && (
-        <div className="title-card">
-          <div className="manufacturer-bg">
-            {manufacturers_small[shipIdx.Manufacturer]}
-          </div>
-          <img
-            src={dictShipImgIso[shipIdx.Name]}
-            alt="ship_image"
-            className="ship-img-iso"
-          />
-          {/* <img src={`https://ships.42kit.com/${shipIdx.NameShort.toLowerCase().trimEnd().replaceAll(" ", "-")}%20iso.png`} alt="ship_image" className="ship-img-iso" /> */}
-          <div className="manufacturer">
-            <div>{manufacturers_small[shipIdx.Manufacturer]}</div>
-            <h2>
-              <I18n text={shipIdx.Manufacturer} />
-            </h2>
-          </div>
-          <div className="ship-name-wrapper">
-            <h1 className="ship-name">
-              {lang == "zh"
-                ? dictShipZhName[shipIdx.Name]?.split(" ").slice(1).join(" ") ||
-                  shipIdx.NameShort
-                : shipIdx.NameShort}
-            </h1>
-            {/* <h1 className="ship-name">{shipIdx.NameShort}</h1> */}
-            <button
-              className="circleIconBtn"
-              onClick={() => setIsShipSelectorOn(true)}
-            >
-              <Icon path={mdiSync} size={1} />
-            </button>
-          </div>
-          <div className="career-and-role font-slim">
-            <h4>
-              <I18n text={shipIdx.Career} />
-            </h4>
-            <h4>
-              <I18n text={shipIdx.Role} />
-            </h4>
-            <h4
-              style={{
-                color: `hsl(${
-                  statusToHue[shipIdx.ProgressTracker.Status]
-                }, 100%, 50%)`,
-                backgroundColor: `hsl(${
-                  statusToHue[shipIdx.ProgressTracker.Status]
-                }, 100%, 9%)`,
-              }}
-            >
-              {shipIdx.ProgressTracker.Status}{" "}
-              {shipIdx.ProgressTracker.Patch && (
-                <span>{shipIdx.ProgressTracker.Patch}</span>
-              )}
-            </h4>
-          </div>
-          <h3
-            className="prices font-slim"
-            style={{ opacity: shipIdx.PU.Buy ? 1 : 0.5 }}
+        <>
+          <div
+            className={`background-exit ${isShipSelectorOn ? "on" : ""}`}
+            onClick={(e) => {
+              if (e.target === e.currentTarget) setIsShipSelectorOn(false);
+            }}
           >
-            {shipIdx.PU.Buy
-              ? shipIdx.PU.Buy + " aUEC"
-              : "Not Purchasable with aUEC"}
-          </h3>
-          <h3 className="prices font-slim">
-            {shipIdx.Store.Buy} USD
-            {shipIdx.Store.isLimitedSale && " LIMITED SALE"}
-          </h3>
-          <p className="version-and-sources font-slim">
-            Game Version: 3.23.0 EPTU
-            <br />
-            Data Source:{" "}
-            <a href="https://www.spviewer.eu/" target="_blank">
-              SC Ships Performances Viewer
-            </a>
-            &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Image Source:{" "}
-            <a href="https://hangar.link/fleet/canvas" target="_blank">
-              STARJUMP
-            </a>
-          </p>
-        </div>
+            <ShipSelector
+              setState={setIsShipSelectorOn}
+              shipIndex={shipIndex}
+              dictShipZhName={dictShipZhName}
+              setSearchParams={setSearchParams}
+              isFloatingCard
+            />
+          </div>
+          <div className="title-card">
+            <div className="manufacturer-bg">
+              {manufacturers_small[shipIdx.Manufacturer]}
+            </div>
+            <img
+              src={dictShipImgIso[shipIdx.Name]}
+              alt="ship_image"
+              className="ship-img-iso"
+            />
+            {/* <img src={`https://ships.42kit.com/${shipIdx.NameShort.toLowerCase().trimEnd().replaceAll(" ", "-")}%20iso.png`} alt="ship_image" className="ship-img-iso" /> */}
+            <div className="manufacturer">
+              <div>{manufacturers_small[shipIdx.Manufacturer]}</div>
+              <h2>
+                <I18n text={shipIdx.Manufacturer} />
+              </h2>
+            </div>
+            <div className="ship-name-wrapper">
+              <h1 className="ship-name">
+                {lang == "zh"
+                  ? dictShipZhName[shipIdx.Name]
+                      ?.split(" ")
+                      .slice(1)
+                      .join(" ") || shipIdx.NameShort
+                  : shipIdx.NameShort}
+              </h1>
+              {/* <h1 className="ship-name">{shipIdx.NameShort}</h1> */}
+              <button
+                className="circleIconBtn"
+                onClick={() => setIsShipSelectorOn(true)}
+              >
+                <Icon path={mdiSync} size={1} />
+              </button>
+            </div>
+            <div className="career-and-role font-slim">
+              <h4>
+                <I18n text={shipIdx.Career} />
+              </h4>
+              <h4>
+                <I18n text={shipIdx.Role} />
+              </h4>
+              <h4
+                style={{
+                  color: `hsl(${
+                    statusToHue[shipIdx.ProgressTracker.Status]
+                  }, 100%, 50%)`,
+                  backgroundColor: `hsl(${
+                    statusToHue[shipIdx.ProgressTracker.Status]
+                  }, 100%, 9%)`,
+                }}
+              >
+                {shipIdx.ProgressTracker.Status}{" "}
+                {shipIdx.ProgressTracker.Patch && (
+                  <span>{shipIdx.ProgressTracker.Patch}</span>
+                )}
+              </h4>
+            </div>
+            <h3
+              className="prices font-slim"
+              style={{ opacity: shipIdx.PU.Buy ? 1 : 0.5 }}
+            >
+              {shipIdx.PU.Buy
+                ? shipIdx.PU.Buy + " aUEC"
+                : "Not Purchasable with aUEC"}
+            </h3>
+            <h3 className="prices font-slim">
+              {shipIdx.Store.Buy} USD
+              {shipIdx.Store.isLimitedSale && " LIMITED SALE"}
+            </h3>
+            <p className="version-and-sources font-slim">
+              Game Version: 3.23.0 EPTU
+              <br />
+              Data Source:{" "}
+              <a href="https://www.spviewer.eu/" target="_blank">
+                SC Ships Performances Viewer
+              </a>
+              &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Image Source:{" "}
+              <a href="https://hangar.link/fleet/canvas" target="_blank">
+                STARJUMP
+              </a>
+            </p>
+          </div>
+        </>
       )}
       {shipIdx && shipHardpts && (
         <div className="component-sizes-wrapper">
