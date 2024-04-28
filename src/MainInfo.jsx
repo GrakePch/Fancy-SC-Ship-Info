@@ -67,7 +67,7 @@ function MainInfo() {
   const [shipComponentQDrive, setShipComponentQDrive] = useState(null);
 
   useEffect(() => {
-    if (!searchParams) return;
+    // if (!searchParams) return;
     setShipId(searchParams.get("s"));
     setLang(searchParams.get("lang"));
 
@@ -76,6 +76,20 @@ function MainInfo() {
   }, [searchParams, setLang]);
 
   useEffect(() => {
+    let tempShipIdx = null;
+    let tempShipObj = null;
+    let tempShipHardpts = null;
+
+    let _speedMax = 0;
+    let _pitchMax = 0;
+    let _yawMax = 0;
+    let _rollMax = 0;
+    let _fMax = 0;
+    let _bMax = 0;
+    let _sMax = 0;
+    let _uMax = 0;
+    let _dMax = 0;
+
     if (shipId) {
       for (let i = 0; i < shipIndex.length; i++) {
         if (
@@ -83,7 +97,7 @@ function MainInfo() {
             sensitivity: "base",
           }) === 0
         ) {
-          setShipIdx(shipIndex[i]);
+          tempShipIdx = shipIndex[i];
           break;
         }
       }
@@ -99,24 +113,13 @@ function MainInfo() {
           `${ManufacturerToHue[shipIdx.Manufacturer]}`,
         );
 
-      let _speedMax = 0;
-      let _pitchMax = 0;
-      let _yawMax = 0;
-      let _rollMax = 0;
-      let _fMax = 0;
-      let _bMax = 0;
-      let _sMax = 0;
-      let _uMax = 0;
-      let _dMax = 0;
-
-      setShipObj(null);
       for (let i = 0; i < shipList.length; i++) {
         if (
           shipList[i].ClassName.localeCompare(shipId, undefined, {
             sensitivity: "base",
           }) === 0
         ) {
-          setShipObj(shipList[i]);
+          tempShipObj = shipList[i];
         }
         let flight = shipList[i].FlightCharacteristics;
         if (flight) {
@@ -138,29 +141,33 @@ function MainInfo() {
           _dMax = Math.max(_dMax, accel.Down * accelMult.NegativeAxis.Z);
         }
       }
-      setPitchMax(Math.max(_pitchMax, 90));
-      setYawMax(Math.max(_yawMax, 90));
-      setRollMax(_rollMax);
-      setSpeedMax(_speedMax);
-      setAccelFwdMax(_fMax);
-      setAccelBwdMax(_bMax);
-      setAccelStrMax(_sMax);
-      setAccelUwdMax(_uMax);
-      setAccelDwdMax(_dMax);
-      // console.log(_fMax, _bMax, _sMax, _uMax, _dMax);
 
       /* Set Ship Hardpoints */
-      setShipHardpts(null);
       for (let i = 0; i < shipHardpoints.length; ++i) {
         if (
           shipHardpoints[i].ClassName.localeCompare(shipId, undefined, {
             sensitivity: "base",
           }) === 0
         ) {
-          setShipHardpts(shipHardpoints[i]);
+          tempShipHardpts = shipHardpoints[i];
         }
       }
     }
+
+    setShipIdx(tempShipIdx);
+    setShipObj(tempShipObj);
+    setShipHardpts(tempShipHardpts);
+
+    setPitchMax(Math.max(_pitchMax, 90));
+    setYawMax(Math.max(_yawMax, 90));
+    setRollMax(_rollMax);
+    setSpeedMax(_speedMax);
+    setAccelFwdMax(_fMax);
+    setAccelBwdMax(_bMax);
+    setAccelStrMax(_sMax);
+    setAccelUwdMax(_uMax);
+    setAccelDwdMax(_dMax);
+    // console.log(_fMax, _bMax, _sMax, _uMax, _dMax);
   }, [shipId, shipIdx]);
 
   useEffect(() => {
@@ -242,16 +249,20 @@ function MainInfo() {
       },
     );
     setListQuantumDrives(temp);
+
+    let QDriveTemp = null;
     if (temp && temp.length > 0) {
       for (let i = 0; i < shipItems.length; ++i) {
         if (
           shipItems[i].type === "QuantumDrive" &&
           shipItems[i].stdItem.Name === temp[0].Name
         ) {
-          setShipComponentQDrive(shipItems[i]);
+          QDriveTemp = shipItems[i];
+          break;
         }
       }
     }
+    setShipComponentQDrive(QDriveTemp);
 
     let tempDecoyItemNum = 0;
     let tempNoiseItemNum = 0;

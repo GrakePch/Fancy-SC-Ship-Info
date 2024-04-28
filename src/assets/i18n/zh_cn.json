@@ -1,4 +1,8 @@
 {
+    "nav-ship-index": "载具索引",
+    "nav-component-index": "组件索引",
+    "nav-about": "关于",
+
     "ShipSelectorTitle": "选择载具",
     "ShipFilterReleasedOnly": "仅显示已发布",
     

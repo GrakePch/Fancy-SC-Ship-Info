@@ -1,6 +1,12 @@
 import { useContext, useEffect, useState } from "react";
 
-import { mdiClose, mdiGithub, mdiTranslate, mdiVanUtility } from "@mdi/js";
+import {
+  mdiClose,
+  mdiFullscreen,
+  mdiGithub,
+  mdiTranslate,
+  mdiVanUtility,
+} from "@mdi/js";
 import Icon from "@mdi/react";
 
 import ManufacturerToHue from "../../assets/ManufacturerToHue";
@@ -27,7 +33,7 @@ function ShipSelector({
     true,
   ]); /* 0: Ship, 1: Ground Vehicle, 2: Gravlev */
   const [filterForReleased, setFilterForReleased] = useState(false);
-  const [lang, setLang] = useContext(LangContext);
+  const lang = useContext(LangContext)[0];
 
   useEffect(() => {
     window.addEventListener(
@@ -54,15 +60,17 @@ function ShipSelector({
       <div
         className="title-bar"
         style={
-          isFloatingCard ? {} : {
-            position: "fixed",
-            top: 0,
-            width: "100%",
-            maxWidth: "calc(1280px - 4rem)",
-            height: "6rem",
-            paddingTop: "2rem",
-            paddingRight: "2rem",
-          }
+          isFloatingCard
+            ? {}
+            : {
+                position: "fixed",
+                top: 0,
+                width: "100%",
+                maxWidth: "calc(1280px - 4rem)",
+                height: "6rem",
+                paddingTop: "2rem",
+                paddingRight: "2rem",
+              }
         }
       >
         <h2>
@@ -114,30 +122,18 @@ function ShipSelector({
           </div>
         </div>
         <div className="flex-grow" />
-        <button
-          className="circleIconBtn"
-          onClick={() => {
-            let newValue = lang == "zh" ? "en" : "zh";
-            setSearchParams((prev) => ({ s: prev.get("s"), lang: newValue }));
-          }}
-        >
-          <Icon path={mdiTranslate} size={1} />
-        </button>
-        <button
-          className="circleIconBtn"
-          onClick={() =>
-            window.open(
-              "https://github.com/GrakePch/Fancy-SC-Ship-Info/blob/main/README.md",
-              "_blank",
-            )
-          }
-        >
-          <Icon path={mdiGithub} size={1} />
-        </button>
         {isFloatingCard && (
-          <button className="circleIconBtn" onClick={() => setState(false)}>
-            <Icon path={mdiClose} size={1} />
-          </button>
+          <>
+            <button
+              className="circleIconBtn"
+              onClick={() => setSearchParams({ s: null, lang: lang })}
+            >
+              <Icon path={mdiFullscreen} size={1} />
+            </button>
+            <button className="circleIconBtn" onClick={() => setState(false)}>
+              <Icon path={mdiClose} size={1} />
+            </button>
+          </>
         )}
       </div>
       <div className="contents" style={{ marginTop: isFloatingCard || "4rem" }}>

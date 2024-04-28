@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import MainInfo from "./MainInfo";
+import Docker from "./components/Docker/Docker";
 import LangContext from "./contexts/LangContext";
 
 function App() {
@@ -10,7 +11,18 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/Fancy-SC-Ship-Info",
-      element: <MainInfo />,
+      element: (
+        <>
+          <Docker />
+          <Outlet />
+        </>
+      ),
+      children: [
+        {
+          path: "/Fancy-SC-Ship-Info",
+          element: <MainInfo />,
+        },
+      ],
     },
   ]);
 

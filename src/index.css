@@ -20,6 +20,9 @@
 
   --hue: 204;
   --color-bg: #1f1f1f;
+  --color-bg-light: hsl(0deg, 0%, 20%);
+  --color-bg-lighter: hsl(0deg, 0%, 25%);
+  --color-bg-light-a: hsla(0deg, 0%, 20%, 80%);
   --color-text: #e3e3e3;
   /* --color-primary-bg: hsl(var(--hue), 50%, 16%); */
   --color-primary-bg: hsl(var(--hue), 20%, 19%);

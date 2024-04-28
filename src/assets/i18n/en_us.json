@@ -1,4 +1,8 @@
 {
+    "nav-ship-index": "Ship Index",
+    "nav-component-index": "Component Index",
+    "nav-about": "About",
+
     "ShipSelectorTitle": "Select a vehicle",
     "ShipFilterReleasedOnly": "Released Only",
 
