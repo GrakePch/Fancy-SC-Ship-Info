@@ -11,7 +11,7 @@ import "./Docker.css";
 
 function Docker() {
   const lang = useContext(LangContext)[0];
-  const [searchParams, setSearchParams] = useSearchParams();
+  const setSearchParams = useSearchParams()[1];
 
   return (
     <div className="Docker-container">

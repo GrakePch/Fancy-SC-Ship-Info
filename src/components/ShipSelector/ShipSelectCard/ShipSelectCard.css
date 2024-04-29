@@ -10,11 +10,17 @@
     height: 5rem;
     cursor: pointer;
     user-select: none;
-    transition: filter .2s;
+    transition: filter .2s, box-shadow .2s;
+    box-shadow:
+        var(--acrylic-edge),
+        var(--shadow-1);
 }
 
 .Ship-select-card:hover {
     filter: brightness(1.1);
+    box-shadow:
+        var(--acrylic-edge),
+        var(--shadow-2);
 }
 
 .Ship-select-card:active {

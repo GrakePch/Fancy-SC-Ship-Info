@@ -46,7 +46,6 @@ function MainInfo() {
   const [accelUwdMax, setAccelUwdMax] = useState(0);
   const [accelDwdMax, setAccelDwdMax] = useState(0);
 
-  const [isShipSelectorOn, setIsShipSelectorOn] = useState(false);
   const [showingComponentDetail, setShowingComponentDetail] = useState(null);
 
   const [dictShipZhName, setDictShipZhName] = useState({});
@@ -171,19 +170,17 @@ function MainInfo() {
   }, [shipId, shipIdx]);
 
   useEffect(() => {
-    if (shipIdx) {
-      let dShipZhName = {};
-      let dShipImgIso = {};
-      for (let i = 0; i < ship_pics_and_zh_name.ships.length; ++i) {
-        let firstKey = Object.keys(ship_pics_and_zh_name.ships[i])[0];
-        dShipZhName[firstKey] = ship_pics_and_zh_name.ships[i][firstKey];
-        if (ship_pics_and_zh_name.ships[i].vehicleLink)
-          dShipImgIso[firstKey] = ship_pics_and_zh_name.ships[i].vehicleLink;
-      }
-      setDictShipZhName(dShipZhName);
-      setDictShipImgIso(dShipImgIso);
+    let dShipZhName = {};
+    let dShipImgIso = {};
+    for (let i = 0; i < ship_pics_and_zh_name.ships.length; ++i) {
+      let firstKey = Object.keys(ship_pics_and_zh_name.ships[i])[0];
+      dShipZhName[firstKey] = ship_pics_and_zh_name.ships[i][firstKey];
+      if (ship_pics_and_zh_name.ships[i].vehicleLink)
+        dShipImgIso[firstKey] = ship_pics_and_zh_name.ships[i].vehicleLink;
     }
-  }, [shipIdx]);
+    setDictShipZhName(dShipZhName);
+    setDictShipImgIso(dShipImgIso);
+  }, []);
 
   useEffect(() => {
     if (!shipHardpts) return;
@@ -303,7 +300,6 @@ function MainInfo() {
     <LangContext.Provider value={[lang, setLang]}>
       {shipIdx == null && (
         <ShipSelector
-          setState={setIsShipSelectorOn}
           shipIndex={shipIndex}
           dictShipZhName={dictShipZhName}
           setSearchParams={setSearchParams}
@@ -311,20 +307,6 @@ function MainInfo() {
       )}
       {shipIdx && (
         <>
-          <div
-            className={`background-exit ${isShipSelectorOn ? "on" : ""}`}
-            onClick={(e) => {
-              if (e.target === e.currentTarget) setIsShipSelectorOn(false);
-            }}
-          >
-            <ShipSelector
-              setState={setIsShipSelectorOn}
-              shipIndex={shipIndex}
-              dictShipZhName={dictShipZhName}
-              setSearchParams={setSearchParams}
-              isFloatingCard
-            />
-          </div>
           <div className="title-card">
             <div className="manufacturer-bg">
               {manufacturers_small[shipIdx.Manufacturer]}
@@ -353,7 +335,7 @@ function MainInfo() {
               {/* <h1 className="ship-name">{shipIdx.NameShort}</h1> */}
               <button
                 className="circleIconBtn"
-                onClick={() => setIsShipSelectorOn(true)}
+                onClick={() => setSearchParams({ s: null, lang: lang })}
               >
                 <Icon path={mdiSync} size={1} />
               </button>

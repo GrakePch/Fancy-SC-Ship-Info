@@ -20,9 +20,11 @@
 
   --hue: 204;
   --color-bg: #1f1f1f;
+  --color-bg-a: #1f1f1f40;
   --color-bg-light: hsl(0deg, 0%, 20%);
-  --color-bg-lighter: hsl(0deg, 0%, 25%);
   --color-bg-light-a: hsla(0deg, 0%, 20%, 80%);
+  --color-bg-lighter: hsl(0deg, 0%, 25%);
+  --color-bg-lighter-a: hsla(0deg, 0%, 25%, 80%);
   --color-text: #e3e3e3;
   /* --color-primary-bg: hsl(var(--hue), 50%, 16%); */
   --color-primary-bg: hsl(var(--hue), 20%, 19%);
@@ -33,6 +35,13 @@
 
   --font-geom: "Outfit", Inter, "Noto Sans SC", system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-slim: 'Barlow', "Noto Sans SC", Arial, Helvetica, sans-serif;
+
+  --curve-emphasized: linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
+
+  --acrylic-edge: inset 0 0 .2rem 0 #ffffff20;
+  --shadow-1: 0 0.50rem 0.75rem 0 #00000020;
+  --shadow-2: 0 0.75rem 1.00rem 0 #00000040;
+  --shadow-3: 0 1.00rem 2.00rem 0 #00000040;
 }
 
 ::-webkit-scrollbar {
