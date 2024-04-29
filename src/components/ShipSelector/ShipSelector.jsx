@@ -98,7 +98,7 @@ function ShipSelector({ shipIndex, dictShipZhName, setSearchParams }) {
               />
             </button>
           </div>
-          {/* <div className={`Ship-selector-filter ${filterDrawerOn || "off"}`}>
+          <div className={`Ship-selector-filter ${filterDrawerOn || "off"}`}>
             <div className="filter-first-row">
               <button
                 className={`circleIconBtn ${
@@ -206,7 +206,7 @@ function ShipSelector({ shipIndex, dictShipZhName, setSearchParams }) {
                 </div>
               ))}
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
       <div className={`contents ${filterDrawerOn && "filter-drawer-on"}`}>
