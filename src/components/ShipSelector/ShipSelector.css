@@ -18,7 +18,7 @@
 
 .Ship-selector-container .title-bar-bg-blur {
     position: absolute;
-    height: 5rem;
+    height: 100%;
     width: 100%;
     background-color: var(--color-bg-a);
     mask-image: linear-gradient(#000 40%, transparent);
