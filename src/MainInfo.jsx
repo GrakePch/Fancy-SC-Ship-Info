@@ -24,6 +24,7 @@ import shipIndex from "./data/index-min.json";
 import shipHardpoints from "./data/ship-hardpoints-min.json";
 import shipItems from "./data/ship-items-min.json";
 import shipList from "./data/ship-list-min.json";
+import SimpleInfo from "./SimpleInfo";
 
 function MainInfo() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -305,6 +306,17 @@ function MainInfo() {
           setSearchParams={setSearchParams}
         />
       )}
+      {
+        searchParams.get("simple") == 1 
+        ? <SimpleInfo 
+            shipIdx={shipIdx} 
+            shipObj={shipObj} 
+            shipHardpts={shipHardpts}
+            dictShipZhName={dictShipZhName}
+            dictShipImgIso={dictShipImgIso}
+          /> 
+        : <>
+      
       {shipIdx && (
         <>
           <div className="title-card">
@@ -1153,6 +1165,9 @@ function MainInfo() {
           </div>
         </>
       )}
+
+      </>
+    }
     </LangContext.Provider>
   );
 }

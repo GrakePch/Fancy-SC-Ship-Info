@@ -1,0 +1,16 @@
+.SimpleInfo-container {
+    position: relative;
+    background-color: var(--color-primary-bg);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+
+.SimpleInfo-container>* {
+    position: relative;
+    z-index: 2;
+}
+
+.SimpleInfo-container>.manufacturer-bg, .SimpleInfo-container>.ship-img-iso {
+    position: absolute;
+}
