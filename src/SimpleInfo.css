@@ -14,3 +14,7 @@
 .SimpleInfo-container>.manufacturer-bg, .SimpleInfo-container>.ship-img-iso {
     position: absolute;
 }
+
+.sml {
+    font-size: .8rem;
+}
