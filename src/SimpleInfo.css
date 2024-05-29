@@ -3,6 +3,7 @@
     background-color: var(--color-primary-bg);
     border-radius: 2rem;
     padding: 2rem;
+    overflow: hidden;
 }
 
 
@@ -15,6 +16,29 @@
     position: absolute;
 }
 
+.SimpleInfo-container>.prices {
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+.SimpleInfo-container>.basic-info {
+    font-weight: 400;
+    font-variant-numeric: tabular-nums;
+}
+
 .sml {
     font-size: .8rem;
+}
+
+.SimpleGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.SimpleComponent {
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--color-text);
+    background-color: var(--color-bg-light);
 }
