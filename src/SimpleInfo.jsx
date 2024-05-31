@@ -11,6 +11,7 @@ import I18n from "./components/I18n";
 import SimpleComponent from "./components/SimpleComponent/SimpleComponent";
 import SimpleWeaponGroup from "./components/SimpleWeaponGroup/SimpleWeaponGroup";
 import LangContext from "./contexts/LangContext";
+import statusEnToZh from "./assets/statusEnToZh";
 
 const SimpleInfo = ({
   shipIdx,
@@ -31,7 +32,7 @@ const SimpleInfo = ({
           src={dictShipImgIso[shipIdx.Name]}
           alt="ship_image"
           className="ship-img-iso"
-          style={{maxHeight: "14rem"}}
+          style={{ maxHeight: "14rem" }}
         />
         <div className="manufacturer">
           <div>{manufacturers_small[shipIdx.Manufacturer]}</div>
@@ -64,7 +65,7 @@ const SimpleInfo = ({
               }, 100%, 9%)`,
             }}
           >
-            {shipIdx.ProgressTracker.Status}{" "}
+            {statusEnToZh[shipIdx.ProgressTracker.Status]}{" "}
             {shipIdx.ProgressTracker.Patch && (
               <span>{shipIdx.ProgressTracker.Patch}</span>
             )}
@@ -83,59 +84,70 @@ const SimpleInfo = ({
           {shipIdx.Store.isLimitedSale && " LIMITED SALE"}
         </h3>
         <h3 className="basic-info font-slim">
-          尺寸 &nbsp;&nbsp;&nbsp; <span className="sml">长</span>{" "}
-          {shipObj.Dimensions.Length} × <span className="sml">宽</span>{" "}
-          {shipObj.Dimensions.Width} × <span className="sml">高</span>{" "}
-          {shipObj.Dimensions.Height} m
+          尺寸 &nbsp;&nbsp;&nbsp;{" "}
+          {shipObj ? (
+            <>
+              <span className="sml">长</span> {shipObj.Dimensions.Length} ×{" "}
+              <span className="sml">宽</span> {shipObj.Dimensions.Width} ×{" "}
+              <span className="sml">高</span> {shipObj.Dimensions.Height} m
+            </>
+          ) : (
+            "未知"
+          )}
         </h3>
         <h3 className="basic-info font-slim">
-          质量 &nbsp;&nbsp;&nbsp; {(shipObj.Mass / 1000).toFixed(3)} t
+          质量 &nbsp;&nbsp;&nbsp;{" "}
+          {shipObj ? <>{(shipObj.Mass / 1000).toFixed(3)} t</> : "未知"}
         </h3>
       </div>
-      <div className="SimpleInfo-contents">
-        <div className="SimpleGrid">
-          <SimpleComponent
-            type="电源"
-            icon="PowerPlants"
-            itemObj={shipHardpts.Hardpoints.Components.Propulsion.PowerPlants}
-          />
-          <SimpleComponent
-            type="护盾"
-            icon={
-              shipHardpts.Hardpoints.Components.Systems.Shields.FaceType
-                ? "ShieldType" +
-                  shipHardpts.Hardpoints.Components.Systems.Shields.FaceType
-                : "Shields"
-            }
-            itemObj={shipHardpts.Hardpoints.Components.Systems.Shields}
-          />
-          <SimpleComponent
-            type="冷却器"
-            icon="Coolers"
-            itemObj={shipHardpts.Hardpoints.Components.Systems.Coolers}
-          />
-          <SimpleComponent
-            type="量子引擎"
-            icon="QuantumDrives"
-            itemObj={shipHardpts.Hardpoints.Components.Propulsion.QuantumDrives}
-          />
-          <SimpleComponent
-            type="雷达"
-            icon="Radars"
-            itemObj={shipHardpts.Hardpoints.Components.Avionics.Radars}
-          />
-        </div>
-        <div className="SimpleInfo-weapons">
-          {Object.keys(shipHardpts.Hardpoints.Weapons).map((key) => (
-            <SimpleWeaponGroup
-              groupName={key}
-              key={key}
-              icon={key}
-              weaponGroupObj={shipHardpts.Hardpoints.Weapons[key]}
+      {shipHardpts && (
+        <div className="SimpleInfo-contents">
+          <div className="SimpleGrid">
+            <SimpleComponent
+              type="电源"
+              icon="PowerPlants"
+              itemObj={shipHardpts.Hardpoints.Components.Propulsion.PowerPlants}
             />
-          ))}
+            <SimpleComponent
+              type="护盾"
+              icon={
+                shipHardpts.Hardpoints.Components.Systems.Shields.FaceType
+                  ? "ShieldType" +
+                    shipHardpts.Hardpoints.Components.Systems.Shields.FaceType
+                  : "Shields"
+              }
+              itemObj={shipHardpts.Hardpoints.Components.Systems.Shields}
+            />
+            <SimpleComponent
+              type="冷却器"
+              icon="Coolers"
+              itemObj={shipHardpts.Hardpoints.Components.Systems.Coolers}
+            />
+            <SimpleComponent
+              type="量子引擎"
+              icon="QuantumDrives"
+              itemObj={
+                shipHardpts.Hardpoints.Components.Propulsion.QuantumDrives
+              }
+            />
+            <SimpleComponent
+              type="雷达"
+              icon="Radars"
+              itemObj={shipHardpts.Hardpoints.Components.Avionics.Radars}
+            />
+          </div>
+          <div className="SimpleInfo-weapons">
+            {Object.keys(shipHardpts.Hardpoints.Weapons).map((key) => (
+              <SimpleWeaponGroup
+                groupName={key}
+                key={key}
+                icon={key}
+                weaponGroupObj={shipHardpts.Hardpoints.Weapons[key]}
+              />
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 };
