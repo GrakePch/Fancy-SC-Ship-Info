@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useContext } from "react";
 
 import "./SimpleInfo.css";
@@ -8,6 +9,7 @@ import ship_pics_and_zh_name from "./assets/ship_pics_and_zh_name.json";
 import statusToHue from "./assets/statusToHue";
 import I18n from "./components/I18n";
 import SimpleComponent from "./components/SimpleComponent/SimpleComponent";
+import SimpleWeaponGroup from "./components/SimpleWeaponGroup/SimpleWeaponGroup";
 import LangContext from "./contexts/LangContext";
 
 const SimpleInfo = ({
@@ -29,6 +31,7 @@ const SimpleInfo = ({
           src={dictShipImgIso[shipIdx.Name]}
           alt="ship_image"
           className="ship-img-iso"
+          style={{maxHeight: "14rem"}}
         />
         <div className="manufacturer">
           <div>{manufacturers_small[shipIdx.Manufacturer]}</div>
@@ -89,12 +92,49 @@ const SimpleInfo = ({
           质量 &nbsp;&nbsp;&nbsp; {(shipObj.Mass / 1000).toFixed(3)} t
         </h3>
       </div>
-      <div className="SimpleGrid">
-        <SimpleComponent type="电源" itemObj={shipHardpts.Hardpoints.Components.Propulsion.PowerPlants} />
-        <SimpleComponent type="量子引擎" itemObj={shipHardpts.Hardpoints.Components.Propulsion.QuantumDrives} />
-        <SimpleComponent type="Coolers" itemObj={shipHardpts.Hardpoints.Components.Systems.Coolers} />
-        <SimpleComponent type="Shields" itemObj={shipHardpts.Hardpoints.Components.Systems.Shields} />
-        <SimpleComponent type="Radar" itemObj={shipHardpts.Hardpoints.Components.Avionics.Radars} />
+      <div className="SimpleInfo-contents">
+        <div className="SimpleGrid">
+          <SimpleComponent
+            type="电源"
+            icon="PowerPlants"
+            itemObj={shipHardpts.Hardpoints.Components.Propulsion.PowerPlants}
+          />
+          <SimpleComponent
+            type="护盾"
+            icon={
+              shipHardpts.Hardpoints.Components.Systems.Shields.FaceType
+                ? "ShieldType" +
+                  shipHardpts.Hardpoints.Components.Systems.Shields.FaceType
+                : "Shields"
+            }
+            itemObj={shipHardpts.Hardpoints.Components.Systems.Shields}
+          />
+          <SimpleComponent
+            type="冷却器"
+            icon="Coolers"
+            itemObj={shipHardpts.Hardpoints.Components.Systems.Coolers}
+          />
+          <SimpleComponent
+            type="量子引擎"
+            icon="QuantumDrives"
+            itemObj={shipHardpts.Hardpoints.Components.Propulsion.QuantumDrives}
+          />
+          <SimpleComponent
+            type="雷达"
+            icon="Radars"
+            itemObj={shipHardpts.Hardpoints.Components.Avionics.Radars}
+          />
+        </div>
+        <div className="SimpleInfo-weapons">
+          {Object.keys(shipHardpts.Hardpoints.Weapons).map((key) => (
+            <SimpleWeaponGroup
+              groupName={key}
+              key={key}
+              icon={key}
+              weaponGroupObj={shipHardpts.Hardpoints.Weapons[key]}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

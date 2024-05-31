@@ -18,7 +18,13 @@ function Docker() {
       <span className="Docker-tooltip">
         <button
           className="Docker-btns"
-          onClick={() => setSearchParams({ s: null, lang: lang })}
+          onClick={() =>
+            setSearchParams((prev) => ({
+              s: null,
+              lang: lang,
+              simple: prev.get("simple"),
+            }))
+          }
         >
           {icons.nav_ships_info}
         </button>
@@ -40,7 +46,11 @@ function Docker() {
           className="Docker-btns"
           onClick={() => {
             let newValue = lang == "zh" ? "en" : "zh";
-            setSearchParams((prev) => ({ s: prev.get("s"), lang: newValue }));
+            setSearchParams((prev) => ({
+              s: prev.get("s"),
+              lang: newValue,
+              simple: prev.get("simple"),
+            }));
           }}
         >
           {lang == "zh" ? "EN" : "中"}

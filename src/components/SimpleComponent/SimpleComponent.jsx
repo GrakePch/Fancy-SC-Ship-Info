@@ -1,7 +1,49 @@
-const SimpleComponent = ({type, itemObj}) => {
-    const number=itemObj.ItemsQuantity;
-    const obj=itemObj.InstalledItems[0];
-    return <div className="SimpleComponent">{type} {number}xS{obj.Size} {obj.Name} {obj.Class}-{obj.Grade}</div>
-}
+/* eslint-disable react/prop-types */
+import { useContext } from "react";
+
+import icons from "../../assets/icons";
+import LangContext from "../../contexts/LangContext";
+import HardpointSizes from "../HardpointSizes/HardpointSizes";
+import I18nPure from "../I18nPure";
+
+const classToShort = {
+  Military: "MLT",
+  Stealth: "STL",
+  Civilian: "CVL",
+  Industrial: "IND",
+  Competition: "CPT",
+};
+
+const classToColor = {
+  Military: "#367d39",
+  Stealth: "#439193",
+  Civilian: "#c1af3e",
+  Industrial: "#a86834",
+  Competition: "#a83434",
+};
+
+const SimpleComponent = ({ type, itemObj, icon }) => {
+  const lang = useContext(LangContext)[0];
+  const obj = itemObj.InstalledItems[0];
+  return (
+    <div className="SimpleComponent">
+      <div className="icon">{icons[icon]}</div>
+      <div className="SimpleComponent-contents">
+        <div className="SimpleComponent-type-sizes font-slim">
+          <p>{type}</p>
+          <HardpointSizes components={itemObj.InstalledItems} />
+        </div>
+        <div className="SimpleComponent-name-grade">
+          <p>{obj.Name}</p>
+          <p className="font-slim" style={{ color: classToColor[obj.Class] }}>
+            {I18nPure(classToShort[obj.Class], lang) +
+              " - " +
+              String.fromCharCode(64 + obj.Grade)}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default SimpleComponent;

@@ -216,7 +216,11 @@ function ShipSelector({ shipIndex, dictShipZhName, setSearchParams }) {
               <div
                 key={item.ClassName + idx}
                 onClick={() => {
-                  setSearchParams({ s: item.ClassName, lang: lang });
+                  setSearchParams((prev) => ({
+                    s: item.ClassName,
+                    lang: lang,
+                    simple: prev.get("simple"),
+                  }));
                 }}
               >
                 <ShipSelectCard
