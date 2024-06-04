@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import { useEffect, useState } from "react";
+
 import SimpleWeapon from "../SimpleWeapon/SimpleWeapon";
 
 const engNameToZh = {
@@ -15,7 +17,19 @@ const engNameToZh = {
 };
 
 const SimpleWeaponGroup = ({ groupName, icon, weaponGroupObj }) => {
+  const [dictWeaponNameToObj, setDictWeaponNameToObj] = useState({});
+  useEffect(() => {
+    const _dictWeaponNameToObj = {};
+    weaponGroupObj.InstalledItems?.forEach((item) => {
+      _dictWeaponNameToObj[item.Name] = item;
+    });
+
+    setDictWeaponNameToObj(_dictWeaponNameToObj);
+    // console.log(_dictWeaponNameToObj);
+  }, [weaponGroupObj]);
+
   if (Object.keys(weaponGroupObj).length == 0) return null;
+
   return (
     <div className="SimpleWeaponGroup-container">
       <h3>{engNameToZh[groupName]}</h3>

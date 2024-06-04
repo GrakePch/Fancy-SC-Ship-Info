@@ -1,17 +1,21 @@
 /* eslint-disable react/prop-types */
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import "./SimpleInfo.css";
 import ManufacturerToHue from "./assets/ManufacturerToHue";
 import bg_line from "./assets/lines.png";
 import manufacturers_small from "./assets/manufacturers_small";
 import ship_pics_and_zh_name from "./assets/ship_pics_and_zh_name.json";
+import statusEnToZh from "./assets/statusEnToZh";
 import statusToHue from "./assets/statusToHue";
+import FlightAccelerations from "./components/FlightAccelerations/FlightAccelerations";
+import FlightCharacteristics from "./components/FlightCharacteristics/FlightCharacteristics";
 import I18n from "./components/I18n";
 import SimpleComponent from "./components/SimpleComponent/SimpleComponent";
+import SimpleFuelTank from "./components/SimpleFuelTank/SimpleFuelTank";
 import SimpleWeaponGroup from "./components/SimpleWeaponGroup/SimpleWeaponGroup";
 import LangContext from "./contexts/LangContext";
-import statusEnToZh from "./assets/statusEnToZh";
+import shipItems from "./data/ship-items-min.json";
 
 const SimpleInfo = ({
   shipIdx,
@@ -19,8 +23,46 @@ const SimpleInfo = ({
   shipHardpts,
   dictShipZhName,
   dictShipImgIso,
+  computedMax,
 }) => {
   const lang = useContext(LangContext)[0];
+
+  const speedMax = computedMax.speedMax;
+  const pitchMax = computedMax.pitchMax;
+  const yawMax = computedMax.yawMax;
+  const rollMax = computedMax.setRollMax;
+
+  const accelFwdMax = computedMax.accelFwdMax;
+  const accelBwdMax = computedMax.accelBwdMax;
+  const accelStrMax = computedMax.accelStrMax;
+  const accelUwdMax = computedMax.accelUwdMax;
+  const accelDwdMax = computedMax.accelDwdMax;
+
+  const [shipComponentQDrive, setShipComponentQDrive] = useState(null);
+
+  useEffect(() => {
+    if (!shipHardpts) return;
+    let temp = [];
+    shipHardpts.Hardpoints.Components.Propulsion?.QuantumDrives?.InstalledItems?.forEach(
+      (item) => {
+        temp.push(item);
+      },
+    );
+    let QDriveTemp = null;
+    if (temp && temp.length > 0) {
+      for (let i = 0; i < shipItems.length; ++i) {
+        if (
+          shipItems[i].type === "QuantumDrive" &&
+          shipItems[i].stdItem.Name === temp[0].Name
+        ) {
+          QDriveTemp = shipItems[i];
+          break;
+        }
+      }
+    }
+    setShipComponentQDrive(QDriveTemp);
+  }, [shipHardpts]);
+
   if (!shipIdx) return null;
   return (
     <>
@@ -135,6 +177,52 @@ const SimpleInfo = ({
               icon="Radars"
               itemObj={shipHardpts.Hardpoints.Components.Avionics.Radars}
             />
+            <SimpleFuelTank
+              fuelH={shipObj?.FuelManagement?.FuelCapacity}
+              fuelQT={shipObj?.FuelManagement?.QuantumFuelCapacity}
+            />
+            <div style={{ gridColumn: "1/3" }}>
+              <FlightCharacteristics
+                scm={shipObj.FlightCharacteristics.ScmSpeed}
+                max={shipObj.FlightCharacteristics.MaxSpeed}
+                maxFwd={
+                  shipObj.FlightCharacteristics.MasterModes.ScmMode
+                    .BoostSpeedForward
+                }
+                maxBwd={
+                  shipObj.FlightCharacteristics.MasterModes.ScmMode
+                    .BoostSpeedBackward
+                }
+                pitch={shipObj.FlightCharacteristics.Pitch}
+                yaw={shipObj.FlightCharacteristics.Yaw}
+                roll={shipObj.FlightCharacteristics.Roll}
+                speedMax={speedMax}
+                pitchMax={pitchMax}
+                yawMax={yawMax}
+                rollMax={rollMax}
+                angVelMult={
+                  shipObj.FlightCharacteristics.Boost.AngularVelocityMultiplier
+                }
+                spoolTime={
+                  shipObj.FlightCharacteristics.MasterModes.BaseSpoolTime +
+                  (shipComponentQDrive
+                    ? shipComponentQDrive.stdItem.QuantumDrive.StandardJump
+                        .SpoolUpTime
+                    : 0)
+                }
+              />
+            </div>
+            <div style={{ gridColumn: "1/3" }}>
+              <FlightAccelerations
+                shipImgIso={dictShipImgIso[shipIdx.Name]}
+                FlightCharObj={shipObj.FlightCharacteristics}
+                FwdMax={accelFwdMax}
+                BwdMax={accelBwdMax}
+                StrMax={accelStrMax}
+                UwdMax={accelUwdMax}
+                DwdMax={accelDwdMax}
+              />
+            </div>
           </div>
           <div className="SimpleInfo-weapons">
             {Object.keys(shipHardpts.Hardpoints.Weapons).map((key) => (

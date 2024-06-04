@@ -77,7 +77,34 @@
 .SimpleComponent-name-grade {
     display: flex;
     justify-content: space-between;
+}
+
+.SimpleComponent-name-grade>p:first-child {
     opacity: .75;
+}
+
+.SimpleComponent-name-grade>p:last-child {
+    font-weight: 500;
+}
+
+.SimpleFuelTank-type-capacity {
+    display: flex;
+    justify-content: space-between;
+}
+
+.SimpleFuelTank-type-capacity>p:first-child {
+    font-weight: 600;
+}
+
+.SimpleFuelTank-type-capacity>p:last-child {
+    opacity: .75;
+    font-family: var(--font-slim);
+}
+
+.SimpleInfo-contents .card-list {
+    border-radius: 1rem;
+    background-color: var(--color-bg-light);
+    color: var(--color-text);
 }
 
 .SimpleInfo-weapons {

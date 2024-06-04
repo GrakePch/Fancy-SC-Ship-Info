@@ -24,7 +24,7 @@ const classToColor = {
 
 const SimpleComponent = ({ type, itemObj, icon }) => {
   const lang = useContext(LangContext)[0];
-  const obj = itemObj.InstalledItems[0];
+  const obj = itemObj.InstalledItems?.at(0);
   return (
     <div className="SimpleComponent">
       <div className="icon">{icons[icon]}</div>
@@ -34,11 +34,11 @@ const SimpleComponent = ({ type, itemObj, icon }) => {
           <HardpointSizes components={itemObj.InstalledItems} />
         </div>
         <div className="SimpleComponent-name-grade">
-          <p>{obj.Name}</p>
-          <p className="font-slim" style={{ color: classToColor[obj.Class] }}>
-            {I18nPure(classToShort[obj.Class], lang) +
+          <p>{obj ? obj.Name: "无"}</p>
+          <p className="font-slim" style={{ color: classToColor[obj?.Class] }}>
+            {obj && I18nPure(classToShort[obj?.Class], lang) +
               " - " +
-              String.fromCharCode(64 + obj.Grade)}
+              String.fromCharCode(64 + obj?.Grade)}
           </p>
         </div>
       </div>

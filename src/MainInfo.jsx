@@ -314,6 +314,17 @@ function MainInfo() {
             shipHardpts={shipHardpts}
             dictShipZhName={dictShipZhName}
             dictShipImgIso={dictShipImgIso}
+            computedMax={{
+              speedMax: speedMax,
+              pitchMax: pitchMax,
+              yawMax: yawMax,
+              rollMax: rollMax,
+              accelFwdMax: accelFwdMax,
+              accelBwdMax: accelBwdMax,
+              accelStrMax: accelStrMax,
+              accelUwdMax: accelUwdMax,
+              accelDwdMax: accelDwdMax,
+            }}
           /> 
         : <>
       
