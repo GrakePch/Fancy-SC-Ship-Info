@@ -178,51 +178,56 @@ const SimpleInfo = ({
               itemObj={shipHardpts.Hardpoints.Components.Avionics.Radars}
             />
             <SimpleFuelTank
-              fuelH={shipObj?.FuelManagement?.FuelCapacity}
-              fuelQT={shipObj?.FuelManagement?.QuantumFuelCapacity}
+              fuelH={shipObj?.FuelManagement?.FuelCapacity || 0}
+              fuelQT={shipObj?.FuelManagement?.QuantumFuelCapacity || 0}
             />
-            <div style={{ gridColumn: "1/3" }}>
-              <FlightCharacteristics
-                scm={shipObj.FlightCharacteristics.ScmSpeed}
-                max={shipObj.FlightCharacteristics.MaxSpeed}
-                maxFwd={
-                  shipObj.FlightCharacteristics.MasterModes.ScmMode
-                    .BoostSpeedForward
-                }
-                maxBwd={
-                  shipObj.FlightCharacteristics.MasterModes.ScmMode
-                    .BoostSpeedBackward
-                }
-                pitch={shipObj.FlightCharacteristics.Pitch}
-                yaw={shipObj.FlightCharacteristics.Yaw}
-                roll={shipObj.FlightCharacteristics.Roll}
-                speedMax={speedMax}
-                pitchMax={pitchMax}
-                yawMax={yawMax}
-                rollMax={rollMax}
-                angVelMult={
-                  shipObj.FlightCharacteristics.Boost.AngularVelocityMultiplier
-                }
-                spoolTime={
-                  shipObj.FlightCharacteristics.MasterModes.BaseSpoolTime +
-                  (shipComponentQDrive
-                    ? shipComponentQDrive.stdItem.QuantumDrive.StandardJump
-                        .SpoolUpTime
-                    : 0)
-                }
-              />
-            </div>
-            <div style={{ gridColumn: "1/3" }}>
-              <FlightAccelerations
-                shipImgIso={dictShipImgIso[shipIdx.Name]}
-                FlightCharObj={shipObj.FlightCharacteristics}
-                FwdMax={accelFwdMax}
-                BwdMax={accelBwdMax}
-                StrMax={accelStrMax}
-                UwdMax={accelUwdMax}
-                DwdMax={accelDwdMax}
-              />
-            </div>
+            {shipIdx.Type == "Ship" && (
+              <>
+                <div style={{ gridColumn: "1/3" }}>
+                  <FlightCharacteristics
+                    scm={shipObj.FlightCharacteristics.ScmSpeed}
+                    max={shipObj.FlightCharacteristics.MaxSpeed}
+                    maxFwd={
+                      shipObj.FlightCharacteristics.MasterModes.ScmMode
+                        .BoostSpeedForward
+                    }
+                    maxBwd={
+                      shipObj.FlightCharacteristics.MasterModes.ScmMode
+                        .BoostSpeedBackward
+                    }
+                    pitch={shipObj.FlightCharacteristics.Pitch}
+                    yaw={shipObj.FlightCharacteristics.Yaw}
+                    roll={shipObj.FlightCharacteristics.Roll}
+                    speedMax={speedMax}
+                    pitchMax={pitchMax}
+                    yawMax={yawMax}
+                    rollMax={rollMax}
+                    angVelMult={
+                      shipObj.FlightCharacteristics.Boost
+                        .AngularVelocityMultiplier
+                    }
+                    spoolTime={
+                      shipObj.FlightCharacteristics.MasterModes.BaseSpoolTime +
+                      (shipComponentQDrive
+                        ? shipComponentQDrive.stdItem.QuantumDrive.StandardJump
+                            .SpoolUpTime
+                        : 0)
+                    }
+                  />
+                </div>
+                <div style={{ gridColumn: "1/3" }}>
+                  <FlightAccelerations
+                    shipImgIso={dictShipImgIso[shipIdx.Name]}
+                    FlightCharObj={shipObj.FlightCharacteristics}
+                    FwdMax={accelFwdMax}
+                    BwdMax={accelBwdMax}
+                    StrMax={accelStrMax}
+                    UwdMax={accelUwdMax}
+                    DwdMax={accelDwdMax}
+                  />
+                </div>{" "}
+              </>
+            )}
           </div>
           <div className="SimpleInfo-weapons">
             {Object.keys(shipHardpts.Hardpoints.Weapons).map((key) => (
