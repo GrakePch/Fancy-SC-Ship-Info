@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from "react";
 
 import "./SimpleInfo.css";
 import ManufacturerToHue from "./assets/ManufacturerToHue";
+import component_zh_name from "./assets/component_zh_name.json";
 import bg_line from "./assets/lines.png";
 import manufacturers_small from "./assets/manufacturers_small";
 import ship_pics_and_zh_name from "./assets/ship_pics_and_zh_name.json";
@@ -96,7 +97,7 @@ const SimpleInfo = ({
             <I18n text={shipIdx.Career} />
           </h4>
           <h4>
-            <I18n text={shipIdx.Role} />
+            {component_zh_name[shipIdx.Role?.toLowerCase()] || shipIdx.Role}
           </h4>
           <h4
             style={{
@@ -151,7 +152,8 @@ const SimpleInfo = ({
         </h3>
         <div className="SimpleInfo-title-bottom-banner">
           <div className="small-texts">
-            游戏版本：3.23 &nbsp;&nbsp;|&nbsp;&nbsp; 主要数据来源：Ships Performances Viewer
+            游戏版本：3.23 &nbsp;&nbsp;|&nbsp;&nbsp; 主要数据来源：Ships
+            Performances Viewer
           </div>
           <div className="small-logo"></div>
           <div className="small-texts">

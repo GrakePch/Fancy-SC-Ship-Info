@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
 
+import component_zh_name from "../../assets/component_zh_name.json";
 import icons from "../../assets/icons";
 import LangContext from "../../contexts/LangContext";
 import HardpointSizes from "../HardpointSizes/HardpointSizes";
@@ -31,14 +32,21 @@ const SimpleComponent = ({ type, itemObj, icon }) => {
       <div className="SimpleComponent-contents">
         <div className="SimpleComponent-type-sizes font-slim">
           <p>{type}</p>
-          <HardpointSizes components={itemObj.InstalledItems} />
+          <div>
+            <HardpointSizes components={itemObj.InstalledItems} />
+          </div>
         </div>
         <div className="SimpleComponent-name-grade">
-          <p>{obj ? obj.Name: "无"}</p>
+          <p>
+            {obj
+              ? component_zh_name[obj.Name?.toLowerCase()] || obj.Name
+              : "无"}
+          </p>
           <p className="font-slim" style={{ color: classToColor[obj?.Class] }}>
-            {obj && I18nPure(classToShort[obj?.Class], lang) +
-              " - " +
-              String.fromCharCode(64 + obj?.Grade)}
+            {obj &&
+              I18nPure(classToShort[obj?.Class], lang) +
+                " - " +
+                String.fromCharCode(64 + obj?.Grade)}
           </p>
         </div>
       </div>

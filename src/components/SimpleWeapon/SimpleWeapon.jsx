@@ -1,3 +1,4 @@
+import component_zh_name from "../../assets/component_zh_name.json";
 import icons from "../../assets/icons";
 
 /* eslint-disable react/prop-types */
@@ -13,7 +14,17 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
           opacity: item.Missiles || item.SubWeapons ? 0.5 : 1,
         }}
       >
-        <p>{item.Name}</p>
+        <p>
+          {component_zh_name[item.Name] ||
+            component_zh_name[item.Name?.toLowerCase()] ||
+            component_zh_name[
+              item.Name?.slice(0, item.Name?.lastIndexOf(" "))
+            ] ||
+            component_zh_name[
+              item.Name?.slice(0, item.Name?.lastIndexOf(" ")).toLowerCase()
+            ] ||
+            item.Name}
+        </p>
         <span className="font-slim" style={{ fontWeight: 600 }}>
           <span
             style={{
