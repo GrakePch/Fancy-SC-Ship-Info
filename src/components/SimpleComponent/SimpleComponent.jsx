@@ -39,7 +39,9 @@ const SimpleComponent = ({ type, itemObj, icon }) => {
         <div className="SimpleComponent-name-grade">
           <p>
             {obj
-              ? component_zh_name[obj.Name?.toLowerCase()] || obj.Name
+              ? component_zh_name[obj.Name] ||
+                component_zh_name[obj.Name?.toLowerCase()] ||
+                obj.Name
               : "无"}
           </p>
           <p className="font-slim" style={{ color: classToColor[obj?.Class] }}>
