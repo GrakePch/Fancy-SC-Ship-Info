@@ -33,8 +33,6 @@ const SimpleWeaponGroup = ({ groupName, icon, weaponGroupObj }) => {
   //   setDictWeaponNameToObj(_dictWeaponNameToObj);
   //   // console.log(_dictWeaponNameToObj);
   // }, [weaponGroupObj]);
-  console.log(groupName);
-  console.log(weaponGroupObj);
 
   if (
     weaponGroupObj == null ||
