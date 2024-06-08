@@ -453,7 +453,7 @@ function MainInfo() {
             </h3>
             <h3 className="prices font-slim">
               {shipIdx.Store.Buy} USD
-              {shipIdx.Store.isLimitedSale && " LIMITED SALE"}
+              {shipIdx.Store.IsLimitedSale && " LIMITED SALE"}
             </h3>
             <p className="version-and-sources font-slim">
               Game Version: 3.23.0 LIVE

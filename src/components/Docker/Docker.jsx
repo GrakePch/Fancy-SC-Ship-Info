@@ -11,7 +11,9 @@ import "./Docker.css";
 
 function Docker() {
   const lang = useContext(LangContext)[0];
-  const setSearchParams = useSearchParams()[1];
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  if (searchParams.get("hide") == 1) return null;
 
   return (
     <div className="Docker-container">

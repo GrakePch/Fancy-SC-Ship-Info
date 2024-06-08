@@ -11,6 +11,7 @@ import statusToHue from "./assets/statusToHue";
 import FlightAccelerations from "./components/FlightAccelerations/FlightAccelerations";
 import FlightCharacteristics from "./components/FlightCharacteristics/FlightCharacteristics";
 import I18n from "./components/I18n";
+import I18nPure from "./components/I18nPure";
 import SimpleComponent from "./components/SimpleComponent/SimpleComponent";
 import SimpleFuelTank from "./components/SimpleFuelTank/SimpleFuelTank";
 import SimpleWeaponGroup from "./components/SimpleWeaponGroup/SimpleWeaponGroup";
@@ -120,10 +121,17 @@ const SimpleInfo = ({
           {shipIdx.PU.Buy
             ? shipIdx.PU.Buy + " aUEC"
             : "Not Purchasable with aUEC"}
+          <span>
+            {shipObj.Buy &&
+              " 购买于 " +
+                Object.keys(shipObj.Buy)
+                  .map((loc) => I18nPure(loc, lang))
+                  .join(" / ")}
+          </span>
         </h3>
         <h3 className="prices font-slim">
           {shipIdx.Store.Buy} USD
-          {shipIdx.Store.isLimitedSale && " LIMITED SALE"}
+          <span>{shipIdx.Store.IsLimitedSale && " 限时购买"}</span>
         </h3>
         <h3 className="basic-info font-slim">
           尺寸 &nbsp;&nbsp;&nbsp;{" "}
@@ -141,6 +149,16 @@ const SimpleInfo = ({
           质量 &nbsp;&nbsp;&nbsp;{" "}
           {shipObj ? <>{(shipObj.Mass / 1000).toFixed(3)} t</> : "未知"}
         </h3>
+        <div className="SimpleInfo-title-bottom-banner">
+          <div className="small-texts">
+            游戏版本：3.23 &nbsp;&nbsp;|&nbsp;&nbsp; 主要数据来源：Ships Performances Viewer
+          </div>
+          <div className="small-logo"></div>
+          <div className="small-texts">
+            GrakePCH 设计 &nbsp;&nbsp;|&nbsp;&nbsp; CxJuice 与 XK_14
+            提供技术支持
+          </div>
+        </div>
       </div>
       {shipHardpts && (
         <div className="SimpleInfo-contents">
