@@ -10,32 +10,46 @@ const engNameToZh = {
   MissileRacks: "导弹",
   BombRacks: "航弹",
   InterdictionHardpoints: "拦截模块",
+  EMP: "EMP",
+  QED: "量子拦截",
   MiningHardpoints: "采矿",
+  PilotMiningHardpoints: "主驾采矿",
+  CrewMiningHardpoints: "乘员采矿",
   SalvageHardpoints: "打捞",
-  UtilityHardpoints: "其他模块",
-  UtilityTurrets: "其他炮塔",
+  PilotSalvageHardpoints: "主驾打捞",
+  CrewSalvageHardpoints: "乘员打捞",
+  UtilityHardpoints: "牵引光束",
+  UtilityTurrets: "牵引光束炮塔",
 };
 
 const SimpleWeaponGroup = ({ groupName, icon, weaponGroupObj }) => {
-  const [dictWeaponNameToObj, setDictWeaponNameToObj] = useState({});
-  useEffect(() => {
-    const _dictWeaponNameToObj = {};
-    weaponGroupObj.InstalledItems?.forEach((item) => {
-      _dictWeaponNameToObj[item.Name] = item;
-    });
+  // const [dictWeaponNameToObj, setDictWeaponNameToObj] = useState({});
+  // useEffect(() => {
+  //   const _dictWeaponNameToObj = {};
+  //   weaponGroupObj?.InstalledItems?.forEach((item) => {
+  //     _dictWeaponNameToObj[item.Name] = item;
+  //   });
 
-    setDictWeaponNameToObj(_dictWeaponNameToObj);
-    // console.log(_dictWeaponNameToObj);
-  }, [weaponGroupObj]);
+  //   setDictWeaponNameToObj(_dictWeaponNameToObj);
+  //   // console.log(_dictWeaponNameToObj);
+  // }, [weaponGroupObj]);
+  console.log(groupName);
+  console.log(weaponGroupObj);
 
-  if (Object.keys(weaponGroupObj).length == 0) return null;
+  if (
+    weaponGroupObj == null ||
+    Object.keys(weaponGroupObj).length == 0 ||
+    weaponGroupObj?.InstalledItems?.at(0) == null
+  )
+    return null;
 
   return (
     <div className="SimpleWeaponGroup-container">
-      <h3>{engNameToZh[groupName]}</h3>
-      {weaponGroupObj.InstalledItems?.map((item, idx) => (
-        <SimpleWeapon item={item} key={item.Name + idx} />
-      ))}
+      <h3>{engNameToZh[groupName] || groupName}</h3>
+      {weaponGroupObj.InstalledItems?.map(
+        (item, idx) =>
+          item && <SimpleWeapon item={item} key={item.Name + idx} />,
+      )}
     </div>
   );
 };

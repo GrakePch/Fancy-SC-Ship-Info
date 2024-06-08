@@ -121,9 +121,9 @@ const SimpleInfo = ({
         >
           {shipIdx.PU.Buy
             ? shipIdx.PU.Buy + " aUEC"
-            : "Not Purchasable with aUEC"}
+            : "无法通过 aUEC 购买"}
           <span>
-            {shipObj.Buy &&
+            {shipObj?.Buy &&
               " 购买于 " +
                 Object.keys(shipObj.Buy)
                   .map((loc) => I18nPure(loc, lang))
@@ -250,14 +250,71 @@ const SimpleInfo = ({
             )}
           </div>
           <div className="SimpleInfo-weapons">
-            {Object.keys(shipHardpts.Hardpoints.Weapons).map((key) => (
-              <SimpleWeaponGroup
-                groupName={key}
-                key={key}
-                icon={key}
-                weaponGroupObj={shipHardpts.Hardpoints.Weapons[key]}
-              />
-            ))}
+            <SimpleWeaponGroup
+              groupName="PilotWeapons"
+              icon="PilotWeapons"
+              weaponGroupObj={shipHardpts.Hardpoints.Weapons.PilotWeapons}
+            />
+            <SimpleWeaponGroup
+              groupName="MannedTurrets"
+              icon="MannedTurrets"
+              weaponGroupObj={shipHardpts.Hardpoints.Weapons.MannedTurrets}
+            />
+            <SimpleWeaponGroup
+              groupName="RemoteTurrets"
+              icon="RemoteTurrets"
+              weaponGroupObj={shipHardpts.Hardpoints.Weapons.RemoteTurrets}
+            />
+            <SimpleWeaponGroup
+              groupName="MissileRacks"
+              icon="MissileRacks"
+              weaponGroupObj={shipHardpts.Hardpoints.Weapons.MissileRacks}
+            />
+            <SimpleWeaponGroup
+              groupName="BombRacks"
+              icon="BombRacks"
+              weaponGroupObj={shipHardpts.Hardpoints.Weapons.BombRacks}
+            />
+            <SimpleWeaponGroup
+              groupName="EMP"
+              icon="EMP"
+              weaponGroupObj={shipHardpts.Hardpoints.Weapons.InterdictionHardpoints?.EMP}
+            />
+            <SimpleWeaponGroup
+              groupName="QED"
+              icon="QED"
+              weaponGroupObj={shipHardpts.Hardpoints.Weapons.InterdictionHardpoints?.QED}
+            />
+            <SimpleWeaponGroup
+              groupName="PilotMiningHardpoints"
+              icon="PilotMiningHardpoints"
+              weaponGroupObj={shipHardpts.Hardpoints.Weapons.MiningHardpoints?.PilotControlled}
+            />
+            <SimpleWeaponGroup
+              groupName="CrewMiningHardpoints"
+              icon="CrewMiningHardpoints"
+              weaponGroupObj={shipHardpts.Hardpoints.Weapons.MiningHardpoints?.CrewControlled}
+            />
+            <SimpleWeaponGroup
+              groupName="PilotSalvageHardpoints"
+              icon="PilotSalvageHardpoints"
+              weaponGroupObj={shipHardpts.Hardpoints.Weapons.SalvageHardpoints?.PilotControlled}
+            />
+            <SimpleWeaponGroup
+              groupName="CrewSalvageHardpoints"
+              icon="CrewSalvageHardpoints"
+              weaponGroupObj={shipHardpts.Hardpoints.Weapons.SalvageHardpoints?.CrewControlled}
+            />
+            <SimpleWeaponGroup
+              groupName="UtilityHardpoints"
+              icon="UtilityHardpoints"
+              weaponGroupObj={shipHardpts.Hardpoints.Weapons.UtilityHardpoints}
+            />
+            <SimpleWeaponGroup
+              groupName="UtilityTurrets"
+              icon="UtilityTurrets"
+              weaponGroupObj={shipHardpts.Hardpoints.Weapons.UtilityTurrets}
+            />
           </div>
         </div>
       )}
