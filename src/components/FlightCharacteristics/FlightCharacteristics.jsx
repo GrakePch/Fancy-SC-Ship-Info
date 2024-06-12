@@ -63,7 +63,7 @@ function FlightCharacteristics({
             </div>
             <p>{maxFwd}</p>
           </div>
-          <p>{speedMax - max > 200 && speedMax}</p>
+          {/* <p>{speedMax - max > 200 && speedMax}</p> */}
         </div>
         <div className="Flight-char-info">
           <p>
