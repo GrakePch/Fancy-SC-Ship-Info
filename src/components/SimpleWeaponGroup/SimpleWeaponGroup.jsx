@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 
+import icons from "../../assets/icons";
 import SimpleWeapon from "../SimpleWeapon/SimpleWeapon";
 
 const engNameToZh = {
@@ -48,7 +49,10 @@ const SimpleWeaponGroup = ({ groupName, icon, weaponGroupObj }) => {
 
   return (
     <div className="SimpleWeaponGroup-container">
-      <h3>{engNameToZh[groupName] || groupName}</h3>
+      <div className="SimpleWeaponGroup-title">
+        {icons[icon]}
+        <h3>{engNameToZh[groupName] || groupName}</h3>
+      </div>
       {Object.keys(rootCounting).map((item, idx) => {
         let itemObj = JSON.parse(item);
         return (

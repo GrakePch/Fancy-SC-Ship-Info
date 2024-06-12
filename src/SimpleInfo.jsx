@@ -252,12 +252,12 @@ const SimpleInfo = ({
           <div className="SimpleInfo-weapons">
             <SimpleWeaponGroup
               groupName="PilotWeapons"
-              icon="PilotWeapons"
+              icon="Weapons"
               weaponGroupObj={shipHardpts.Hardpoints.Weapons.PilotWeapons}
             />
             <SimpleWeaponGroup
               groupName="MannedTurrets"
-              icon="MannedTurrets"
+              icon="WeaponCrew"
               weaponGroupObj={shipHardpts.Hardpoints.Weapons.MannedTurrets}
             />
             <SimpleWeaponGroup
@@ -267,12 +267,12 @@ const SimpleInfo = ({
             />
             <SimpleWeaponGroup
               groupName="MissileRacks"
-              icon="MissileRacks"
+              icon="Missiles"
               weaponGroupObj={shipHardpts.Hardpoints.Weapons.MissileRacks}
             />
             <SimpleWeaponGroup
               groupName="BombRacks"
-              icon="BombRacks"
+              icon="Bombs"
               weaponGroupObj={shipHardpts.Hardpoints.Weapons.BombRacks}
             />
             <SimpleWeaponGroup
@@ -287,34 +287,36 @@ const SimpleInfo = ({
             />
             <SimpleWeaponGroup
               groupName="PilotMiningHardpoints"
-              icon="PilotMiningHardpoints"
+              icon="CargoContainers"
               weaponGroupObj={shipHardpts.Hardpoints.Weapons.MiningHardpoints?.PilotControlled}
             />
             <SimpleWeaponGroup
               groupName="CrewMiningHardpoints"
-              icon="CrewMiningHardpoints"
+              icon="CargoContainers"
               weaponGroupObj={shipHardpts.Hardpoints.Weapons.MiningHardpoints?.CrewControlled}
             />
             <SimpleWeaponGroup
               groupName="PilotSalvageHardpoints"
-              icon="PilotSalvageHardpoints"
+              icon="Recycle"
               weaponGroupObj={shipHardpts.Hardpoints.Weapons.SalvageHardpoints?.PilotControlled}
             />
             <SimpleWeaponGroup
               groupName="CrewSalvageHardpoints"
-              icon="CrewSalvageHardpoints"
+              icon="Recycle"
               weaponGroupObj={shipHardpts.Hardpoints.Weapons.SalvageHardpoints?.CrewControlled}
             />
             <SimpleWeaponGroup
               groupName="UtilityHardpoints"
-              icon="UtilityHardpoints"
+              icon="Beams"
               weaponGroupObj={shipHardpts.Hardpoints.Weapons.UtilityHardpoints}
             />
             <SimpleWeaponGroup
               groupName="UtilityTurrets"
-              icon="UtilityTurrets"
+              icon="Beams"
               weaponGroupObj={shipHardpts.Hardpoints.Weapons.UtilityTurrets}
             />
+            <div className="placeholder" style={{
+                backgroundImage: `url(${bg_line})`,}}></div>
           </div>
         </div>
       )}

@@ -57,8 +57,16 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
             item.Name}
         </p>
         <div className="SimpleWeapon-tail-icons">
-          {gimballed ? icons.gimballed : <Icon path={mdiCircleSmall} />}
-          <Icon path={item.Uneditable ? mdiLock : mdiCircleSmall} />
+          {gimballed ? (
+            icons.gimballed
+          ) : (
+            <Icon path={mdiCircleSmall} color="#80808080" />
+          )}
+          {item.Uneditable ? (
+            <Icon path={mdiLock} />
+          ) : (
+            <Icon path={mdiCircleSmall} color="#80808080" />
+          )}
           <span className="font-slim" style={{ fontWeight: 600 }}>
             <span
               style={{
@@ -70,7 +78,7 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
             >
               {icons["s" + item.Size] || item.Size}
             </span>
-            {num && "×" + num}
+            {(num < 10 ? "\u2007" : "") + "×" + num}
           </span>
         </div>
       </div>

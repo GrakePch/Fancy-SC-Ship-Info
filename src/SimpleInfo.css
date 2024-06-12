@@ -169,10 +169,34 @@
 .SimpleInfo-weapons {
     color: var(--color-text);
     fill: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
 }
 
-.SimpleWeaponGroup-container {
-    margin-bottom: .5rem;
+.SimpleInfo-weapons>* {
+    flex-shrink: 0;
+}
+
+.SimpleInfo-weapons>.placeholder {
+    flex-grow: 1;
+    width: 100%;
+    background-size: 2rem;
+    background-position: center;
+    opacity: .15;
+    border-radius: 1rem;
+}
+
+.SimpleWeaponGroup-title {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.SimpleWeaponGroup-title>svg {
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .SimpleWeapon-container {
@@ -185,9 +209,9 @@
     justify-content: space-between;
 }
 
-.SimpleWeapon-container>p {
-    /* opacity: .75; */
-}
+/* .SimpleWeapon-container>p {
+    opacity: .75;
+} */
 
 .SimpleWeapon-tail-icons {
     display: flex;
