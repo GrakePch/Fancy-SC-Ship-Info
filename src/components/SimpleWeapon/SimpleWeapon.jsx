@@ -1,18 +1,22 @@
+import { mdiCircleSmall, mdiLock } from "@mdi/js";
+import Icon from "@mdi/react";
+
 import component_zh_name from "../../assets/component_zh_name.json";
 import icons from "../../assets/icons";
 
 /* eslint-disable react/prop-types */
 const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
+  if (item.Name == null) return;
   const isGimbalMount = item.Name.includes("Gimbal");
   if (isGimbalMount) {
     if (item.SubWeapons)
-      return <SimpleWeapon item={item.SubWeapons.at(0)} num={1} gimballed />;
+      return <SimpleWeapon item={item.SubWeapons.at(0)} num={num} gimballed />;
     else if (item.MiningLaser)
-      return <SimpleWeapon item={item.MiningLaser.at(0)} num={1} gimballed />;
+      return <SimpleWeapon item={item.MiningLaser.at(0)} num={num} gimballed />;
     else if (item.SalvageHead)
-      return <SimpleWeapon item={item.SalvageHead.at(0)} num={1} gimballed />;
+      return <SimpleWeapon item={item.SalvageHead.at(0)} num={num} gimballed />;
     else if (item.Utility)
-      return <SimpleWeapon item={item.Utility.at(0)} num={1} gimballed />;
+      return <SimpleWeapon item={item.Utility.at(0)} num={num} gimballed />;
   }
   return (
     <div>
@@ -52,19 +56,23 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
             ] ||
             item.Name}
         </p>
-        <span className="font-slim" style={{ fontWeight: 600 }}>
-          <span
-            style={{
-              display: "inline-block",
-              width: "1.5rem",
-              height: "1.5rem",
-              verticalAlign: "top",
-            }}
-          >
-            {icons["s" + item.Size] || item.Size}
+        <div className="SimpleWeapon-tail-icons">
+          {gimballed ? icons.gimballed : <Icon path={mdiCircleSmall} />}
+          <Icon path={item.Uneditable ? mdiLock : mdiCircleSmall} />
+          <span className="font-slim" style={{ fontWeight: 600 }}>
+            <span
+              style={{
+                display: "inline-block",
+                width: "1.5rem",
+                height: "1.5rem",
+                verticalAlign: "top",
+              }}
+            >
+              {icons["s" + item.Size] || item.Size}
+            </span>
+            {num && "×" + num}
           </span>
-          {num && "×" + num}
-        </span>
+        </div>
       </div>
       {item.Missiles && item.Missiles.length > 0 ? (
         <div className="SimpleWeapon-subWeapon-container">

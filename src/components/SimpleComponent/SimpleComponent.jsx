@@ -46,7 +46,7 @@ const SimpleComponent = ({ type, itemObj, icon }) => {
           </p>
           <p className="font-slim" style={{ color: classToColor[obj?.Class] }}>
             {obj &&
-              I18nPure(classToShort[obj?.Class], lang) +
+              I18nPure(classToShort[obj?.Class] || "?", lang) +
                 " - " +
                 String.fromCharCode(64 + obj?.Grade)}
           </p>

@@ -44,6 +44,10 @@
   --shadow-3: 0 1.00rem 2.00rem 0 #00000040;
 }
 
+body.queryHide::-webkit-scrollbar {
+  width: 0 !important;
+}
+
 ::-webkit-scrollbar {
   background: var(--color-bg);
   width: 16px;

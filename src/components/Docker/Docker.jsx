@@ -13,7 +13,12 @@ function Docker() {
   const lang = useContext(LangContext)[0];
   const [searchParams, setSearchParams] = useSearchParams();
 
-  if (searchParams.get("hide") == 1) return null;
+  if (searchParams.get("hide") == 1) {
+    document.body.classList.add("queryHide");
+    return null;
+  } else {
+    document.body.classList.remove("queryHide");
+  }
 
   return (
     <div className="Docker-container">

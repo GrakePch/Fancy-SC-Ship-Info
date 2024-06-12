@@ -23,16 +23,21 @@ const engNameToZh = {
 };
 
 const SimpleWeaponGroup = ({ groupName, icon, weaponGroupObj }) => {
-  // const [dictWeaponNameToObj, setDictWeaponNameToObj] = useState({});
-  // useEffect(() => {
-  //   const _dictWeaponNameToObj = {};
-  //   weaponGroupObj?.InstalledItems?.forEach((item) => {
-  //     _dictWeaponNameToObj[item.Name] = item;
-  //   });
+  const [rootCounting, setRootCounting] = useState({});
+  useEffect(() => {
+    const _rootCounting = {};
+    weaponGroupObj?.InstalledItems?.forEach((item) => {
+      if (item == null) return;
+      if (!_rootCounting[JSON.stringify(item)]) {
+        _rootCounting[JSON.stringify(item)] = 1;
+      } else {
+        _rootCounting[JSON.stringify(item)]++;
+      }
+    });
 
-  //   setDictWeaponNameToObj(_dictWeaponNameToObj);
-  //   // console.log(_dictWeaponNameToObj);
-  // }, [weaponGroupObj]);
+    setRootCounting(_rootCounting);
+    // console.log(_rootCounting);
+  }, [weaponGroupObj]);
 
   if (
     weaponGroupObj == null ||
@@ -44,10 +49,18 @@ const SimpleWeaponGroup = ({ groupName, icon, weaponGroupObj }) => {
   return (
     <div className="SimpleWeaponGroup-container">
       <h3>{engNameToZh[groupName] || groupName}</h3>
-      {weaponGroupObj.InstalledItems?.map(
-        (item, idx) =>
-          item && <SimpleWeapon item={item} key={item.Name + idx} />,
-      )}
+      {Object.keys(rootCounting).map((item, idx) => {
+        let itemObj = JSON.parse(item);
+        return (
+          item && (
+            <SimpleWeapon
+              item={itemObj}
+              key={itemObj.Name + idx}
+              num={rootCounting[item]}
+            />
+          )
+        );
+      })}
     </div>
   );
 };
