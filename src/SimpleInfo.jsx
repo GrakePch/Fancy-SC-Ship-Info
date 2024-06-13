@@ -5,6 +5,7 @@ import "./SimpleInfo.css";
 import ManufacturerToHue from "./assets/ManufacturerToHue";
 import component_zh_name from "./assets/component_zh_name.json";
 import bg_line from "./assets/lines.png";
+import cross from "./assets/cross.png";
 import manufacturers_small from "./assets/manufacturers_small";
 import ship_pics_and_zh_name from "./assets/ship_pics_and_zh_name.json";
 import statusEnToZh from "./assets/statusEnToZh";
@@ -119,9 +120,7 @@ const SimpleInfo = ({
           className="prices font-slim"
           style={{ opacity: shipIdx.PU.Buy ? 1 : 0.5 }}
         >
-          {shipIdx.PU.Buy
-            ? shipIdx.PU.Buy + " aUEC"
-            : "无法通过 aUEC 购买"}
+          {shipIdx.PU.Buy ? shipIdx.PU.Buy + " aUEC" : "无法通过 aUEC 购买"}
           <span>
             {shipObj?.Buy &&
               " 购买于 " +
@@ -162,7 +161,7 @@ const SimpleInfo = ({
           </div>
         </div>
       </div>
-      {shipHardpts && (
+      {shipHardpts ? (
         <div className="SimpleInfo-contents">
           <div className="SimpleGrid">
             <SimpleComponent
@@ -278,32 +277,45 @@ const SimpleInfo = ({
             <SimpleWeaponGroup
               groupName="EMP"
               icon="EMP"
-              weaponGroupObj={shipHardpts.Hardpoints.Weapons.InterdictionHardpoints?.EMP}
+              weaponGroupObj={
+                shipHardpts.Hardpoints.Weapons.InterdictionHardpoints?.EMP
+              }
             />
             <SimpleWeaponGroup
               groupName="QED"
               icon="QED"
-              weaponGroupObj={shipHardpts.Hardpoints.Weapons.InterdictionHardpoints?.QED}
+              weaponGroupObj={
+                shipHardpts.Hardpoints.Weapons.InterdictionHardpoints?.QED
+              }
             />
             <SimpleWeaponGroup
               groupName="PilotMiningHardpoints"
               icon="CargoContainers"
-              weaponGroupObj={shipHardpts.Hardpoints.Weapons.MiningHardpoints?.PilotControlled}
+              weaponGroupObj={
+                shipHardpts.Hardpoints.Weapons.MiningHardpoints?.PilotControlled
+              }
             />
             <SimpleWeaponGroup
               groupName="CrewMiningHardpoints"
               icon="CargoContainers"
-              weaponGroupObj={shipHardpts.Hardpoints.Weapons.MiningHardpoints?.CrewControlled}
+              weaponGroupObj={
+                shipHardpts.Hardpoints.Weapons.MiningHardpoints?.CrewControlled
+              }
             />
             <SimpleWeaponGroup
               groupName="PilotSalvageHardpoints"
               icon="Recycle"
-              weaponGroupObj={shipHardpts.Hardpoints.Weapons.SalvageHardpoints?.PilotControlled}
+              weaponGroupObj={
+                shipHardpts.Hardpoints.Weapons.SalvageHardpoints
+                  ?.PilotControlled
+              }
             />
             <SimpleWeaponGroup
               groupName="CrewSalvageHardpoints"
               icon="Recycle"
-              weaponGroupObj={shipHardpts.Hardpoints.Weapons.SalvageHardpoints?.CrewControlled}
+              weaponGroupObj={
+                shipHardpts.Hardpoints.Weapons.SalvageHardpoints?.CrewControlled
+              }
             />
             <SimpleWeaponGroup
               groupName="UtilityHardpoints"
@@ -315,9 +327,18 @@ const SimpleInfo = ({
               icon="Beams"
               weaponGroupObj={shipHardpts.Hardpoints.Weapons.UtilityTurrets}
             />
-            <div className="placeholder" style={{
-                backgroundImage: `url(${bg_line})`,}}></div>
+            <div
+              className="placeholder"
+              style={{
+                backgroundImage: `url(${bg_line})`,
+              }}
+            ></div>
           </div>
+        </div>
+      ) : (
+        <div className="SimpleInfo-nodata">
+          <img className="bg" src={cross} width="100%" height="100%"/>
+          <p>暂无数据</p>
         </div>
       )}
     </>
