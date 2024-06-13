@@ -181,7 +181,7 @@
 
 .SimpleInfo-weapons>.legend {
     display: flex;
-    gap: 1rem;
+    gap: 1ch;
     position: absolute;
     top: 0;
     right: 0;

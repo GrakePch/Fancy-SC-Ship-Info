@@ -289,6 +289,7 @@ const SimpleInfo = ({
                 shipHardpts.Hardpoints.Weapons.UtilityTurrets,
               )) && (
               <div className="legend">
+                <div>图例</div>
                 <div>
                   {icons.gimballed}
                   <p>有万向节</p>
