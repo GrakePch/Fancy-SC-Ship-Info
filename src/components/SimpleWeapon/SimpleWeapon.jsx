@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import { mdiCircleSmall, mdiLock } from "@mdi/js";
 import Icon from "@mdi/react";
 
@@ -18,6 +20,31 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
     else if (item.Utility)
       return <SimpleWeapon item={item.Utility.at(0)} num={num} gimballed />;
   }
+
+  const [rootCounting, setRootCounting] = useState({});
+  useEffect(() => {
+    const _rootCounting = {};
+    const subList =
+      item.SubWeapons ||
+      item.Missiles ||
+      item.Bombs ||
+      item.MiningLaser ||
+      item.SalvageHead ||
+      item.Utility;
+
+    subList?.forEach((item) => {
+      if (item == null) return;
+      if (!_rootCounting[JSON.stringify(item)]) {
+        _rootCounting[JSON.stringify(item)] = 1;
+      } else {
+        _rootCounting[JSON.stringify(item)]++;
+      }
+    });
+
+    setRootCounting(_rootCounting);
+    // console.log(_rootCounting);
+  }, [item]);
+
   return (
     <div>
       <div
@@ -82,41 +109,18 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
           </span>
         </div>
       </div>
-      {item.Missiles && item.Missiles.length > 0 ? (
-        <div className="SimpleWeapon-subWeapon-container">
-          <SimpleWeapon item={item.Missiles[0]} num={item.Missiles.length} />
-        </div>
-      ) : item.Bombs && item.Bombs.length > 0 ? (
-        <div className="SimpleWeapon-subWeapon-container">
-          <SimpleWeapon item={item.Bombs[0]} num={item.Bombs.length} />
-        </div>
-      ) : (
-        <div className="SimpleWeapon-subWeapon-container">
-          {item.Missiles
-            ? item.Missiles.map((item, idx) => (
-                <SimpleWeapon item={item} key={item.Name + idx} />
-              ))
-            : item.Bombs
-              ? item.Bombs.map((item, idx) => (
-                  <SimpleWeapon item={item} key={item.Name + idx} />
-                ))
-              : item.MiningLaser
-                ? item.MiningLaser.map((item, idx) => (
-                    <SimpleWeapon item={item} key={item.Name + idx} />
-                  ))
-                : item.SalvageHead
-                  ? item.SalvageHead.map((item, idx) => (
-                      <SimpleWeapon item={item} key={item.Name + idx} />
-                    ))
-                  : item.Utility
-                    ? item.Utility.map((item, idx) => (
-                        <SimpleWeapon item={item} key={item.Name + idx} />
-                      ))
-                    : item.SubWeapons?.map((subItem, idx) => (
-                        <SimpleWeapon item={subItem} key={subItem.Name + idx} />
-                      ))}
-        </div>
-      )}
+      <div className="SimpleWeapon-subWeapon-container">
+        {Object.keys(rootCounting).map((subItem) => {
+          let subItemObj = JSON.parse(subItem);
+          return (
+            <SimpleWeapon
+              item={subItemObj}
+              key={subItemObj.Name}
+              num={rootCounting[subItem]}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
