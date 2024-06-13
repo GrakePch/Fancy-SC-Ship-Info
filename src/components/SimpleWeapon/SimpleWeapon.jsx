@@ -5,10 +5,33 @@ import Icon from "@mdi/react";
 
 import component_zh_name from "../../assets/component_zh_name.json";
 import icons from "../../assets/icons";
+import I18nPure from "../I18nPure";
+
+const dmgTypeToColor = {
+  Physical: "#c1a03e",
+  Energy: "#a83434",
+  Distortion: "#439193",
+};
+
+const signalToColor = {
+  Electromagnetic: "#435f93",
+  Infrared: "#a83434",
+  CrossSection: "#c1a03e",
+};
 
 /* eslint-disable react/prop-types */
 const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
   if (item.Name == null) return;
+
+  let bulletDmgType =
+    item.AlphaDmg && Object.keys(item.AlphaDmg)
+      ? Object.keys(item.AlphaDmg)?.length == 1
+        ? Object.keys(item.AlphaDmg)?.at(0)
+        : "Mixed"
+      : "";
+
+  let trackingSignal = item.TrackingSignal;
+
   const isGimbalMount = item.Name.includes("Gimbal");
   if (isGimbalMount) {
     if (item.SubWeapons)
@@ -84,6 +107,16 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
             item.Name}
         </p>
         <div className="SimpleWeapon-tail-icons">
+          {trackingSignal && (
+            <p style={{ color: signalToColor[trackingSignal] }}>
+              {I18nPure("Short-" + trackingSignal, "zh")}
+            </p>
+          )}
+          {bulletDmgType && (
+            <p style={{ color: dmgTypeToColor[bulletDmgType] }}>
+              {I18nPure("Short-" + bulletDmgType, "zh")}
+            </p>
+          )}
           {gimballed ? (
             icons.gimballed
           ) : (

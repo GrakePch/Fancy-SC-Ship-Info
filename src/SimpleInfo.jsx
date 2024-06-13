@@ -1,13 +1,15 @@
 /* eslint-disable react/prop-types */
 import { useContext, useEffect, useState } from "react";
 
+import { mdiLock } from "@mdi/js";
+import Icon from "@mdi/react";
+
 import "./SimpleInfo.css";
-import ManufacturerToHue from "./assets/ManufacturerToHue";
 import component_zh_name from "./assets/component_zh_name.json";
-import bg_line from "./assets/lines.png";
 import cross from "./assets/cross.png";
+import icons from "./assets/icons";
+import bg_line from "./assets/lines.png";
 import manufacturers_small from "./assets/manufacturers_small";
-import ship_pics_and_zh_name from "./assets/ship_pics_and_zh_name.json";
 import statusEnToZh from "./assets/statusEnToZh";
 import statusToHue from "./assets/statusToHue";
 import FlightAccelerations from "./components/FlightAccelerations/FlightAccelerations";
@@ -19,6 +21,11 @@ import SimpleFuelTank from "./components/SimpleFuelTank/SimpleFuelTank";
 import SimpleWeaponGroup from "./components/SimpleWeaponGroup/SimpleWeaponGroup";
 import LangContext from "./contexts/LangContext";
 import shipItems from "./data/ship-items-min.json";
+
+const checkObjNotEmpty = (obj) => {
+  if (obj == null) return false;
+  return Object.keys(obj).length !== 0;
+};
 
 const SimpleInfo = ({
   shipIdx,
@@ -249,6 +256,49 @@ const SimpleInfo = ({
             )}
           </div>
           <div className="SimpleInfo-weapons">
+            {(checkObjNotEmpty(shipHardpts.Hardpoints.Weapons.PilotWeapons) ||
+              checkObjNotEmpty(shipHardpts.Hardpoints.Weapons.MannedTurrets) ||
+              checkObjNotEmpty(shipHardpts.Hardpoints.Weapons.RemoteTurrets) ||
+              checkObjNotEmpty(shipHardpts.Hardpoints.Weapons.MissileRacks) ||
+              checkObjNotEmpty(shipHardpts.Hardpoints.Weapons.BombRacks) ||
+              checkObjNotEmpty(
+                shipHardpts.Hardpoints.Weapons.InterdictionHardpoints?.EMP,
+              ) ||
+              checkObjNotEmpty(
+                shipHardpts.Hardpoints.Weapons.InterdictionHardpoints?.QED,
+              ) ||
+              checkObjNotEmpty(
+                shipHardpts.Hardpoints.Weapons.MiningHardpoints
+                  ?.PilotControlled,
+              ) ||
+              checkObjNotEmpty(
+                shipHardpts.Hardpoints.Weapons.MiningHardpoints?.CrewControlled,
+              ) ||
+              checkObjNotEmpty(
+                shipHardpts.Hardpoints.Weapons.SalvageHardpoints
+                  ?.PilotControlled,
+              ) ||
+              checkObjNotEmpty(
+                shipHardpts.Hardpoints.Weapons.SalvageHardpoints
+                  ?.CrewControlled,
+              ) ||
+              checkObjNotEmpty(
+                shipHardpts.Hardpoints.Weapons.UtilityHardpoints,
+              ) ||
+              checkObjNotEmpty(
+                shipHardpts.Hardpoints.Weapons.UtilityTurrets,
+              )) && (
+              <div className="legend">
+                <div>
+                  {icons.gimballed}
+                  <p>有万向节</p>
+                </div>
+                <div>
+                  <Icon path={mdiLock} size="1rem" />
+                  <p>不可更改</p>
+                </div>
+              </div>
+            )}
             <SimpleWeaponGroup
               groupName="PilotWeapons"
               icon="Weapons"
@@ -337,7 +387,7 @@ const SimpleInfo = ({
         </div>
       ) : (
         <div className="SimpleInfo-nodata">
-          <img className="bg" src={cross} width="100%" height="100%"/>
+          <img className="bg" src={cross} width="100%" height="100%" />
           <p>暂无数据</p>
         </div>
       )}

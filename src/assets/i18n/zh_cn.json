@@ -237,5 +237,9 @@
     "STL": "隐形",
     "CVL": "民用",
     "IND": "工业",
-    "CPT": "竞速"
+    "CPT": "竞速",
+
+    "Short-Electromagnetic": "电磁",
+    "Short-Infrared": "红外",
+    "Short-CrossSection": "截面"
 }
