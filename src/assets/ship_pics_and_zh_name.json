@@ -232,7 +232,7 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fhawk__iso_xs_0bdd1530e3b500cd5e3ebeb821b70de8.png?alt=media"
     },
     {
-      "Anvil F7C Hornet": "铁砧 F7C 大黄蜂",
+      "Anvil F7C Hornet Mk I": "铁砧 F7C 大黄蜂",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Ff7c-hornet__iso_xs_ff87c825907290f183bdeda53e9f80a0.png?alt=media"
     },
     {
@@ -756,15 +756,15 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fursa-rover__iso_xs_082409f17aaeaab4df821660f4dd368b.png?alt=media"
     },
     {
-      "RSI Zeus MKII CL": "RSI 宙斯 MKII CL",
+      "RSI Zeus Mk II CL": "RSI 宙斯 MKII CL",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fzeus-mkii-cl__iso_xs_be678ec9d26bf22469f29ef2db0c3744.png?alt=media"
     },
     {
-      "RSI Zeus MKII ES": "RSI 宙斯 MKII ES",
+      "RSI Zeus Mk II ES": "RSI 宙斯 MKII ES",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fzeus-mkii-es__iso_xs_ca1ce9777aa1d56826c1e5f2f1961638.png?alt=media"
     },
     {
-      "RSI Zeus MKII MR": "RSI 宙斯 MKII MR",
+      "RSI Zeus Mk II MR": "RSI 宙斯 MKII MR",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fzeus-mkii-mr__iso_xs_592f100e46d83358738602fb2f4617ba.png?alt=media"
     },
     {
@@ -838,6 +838,42 @@
     {
       "Aopoa San'tok.yāi": "奥波亚 桑托起亚",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fsan-tok-yai__iso_xs_f42f3b0c5ab77101946ad6e30ec0747b.png?alt=media"
+    },
+    {
+      "Aegis Sabre Firebird": "",
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fsabre-firebird__iso_s_8105e86cda70e2f44d23dc1cb1cb26d4.png?alt=media"
+    },
+    {
+      "Anvil F7A Hornet Mk II": "",
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Ff7a-mkii__iso_s_96b3f65bc3dec260fe65a1ef047a6356.png?alt=media"
+    },
+    {
+      "Anvil F7C Hornet Mk II": "",
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Ff7c-mkii__iso_s_0b3c7a03b90fd74adceb1ee6f04b232e.png?alt=media"
+    },
+    {
+      "Argo MPUV Tractor": "",
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fmpuv-tractor__iso_s_d7c70fc2f31e08c5d6af88688169041d.png?alt=media"
+    },
+    {
+      "Drake Dragonfly Yellowjacket": "",
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fdragonfly-yellowjacket__iso_s_5182b75749e816d74626e9c4423b7500.png?alt=media"
+    },
+    {
+      "Mirai Pulse": "",
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fpulse__iso_s_c121b2302520c7f57d76661e34dc9a78.png?alt=media"
+    },
+    {
+      "Mirai Pulse LX": "",
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fpulse-lx__iso_s_123a7fa514085e6cb1ad71f697097252.png?alt=media"
+    },
+    {
+      "RSI Polaris (Fleet Week)": "",
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fpolaris__iso_s_94515f6278727284aa26f6dfc706be97.png?alt=media"
+    },
+    {
+      "RSI Ursa Medivac": "",
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fursa-medivac__iso_s_f79f7990742b38beff962e362a3907f1.png?alt=media"
     }
   ]
 }

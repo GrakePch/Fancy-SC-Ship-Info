@@ -74,7 +74,7 @@ const SimpleInfo = ({
         </div>
         <img
           src={dictShipImgIso[shipIdx.Name]}
-          alt="ship_image"
+          alt=""
           className="ship-img-iso"
           style={{ maxHeight: "14rem" }}
         />
