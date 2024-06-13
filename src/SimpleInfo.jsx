@@ -40,7 +40,7 @@ const SimpleInfo = ({
   const speedMax = computedMax.speedMax;
   const pitchMax = computedMax.pitchMax;
   const yawMax = computedMax.yawMax;
-  const rollMax = computedMax.setRollMax;
+  const rollMax = computedMax.rollMax;
 
   const accelFwdMax = computedMax.accelFwdMax;
   const accelBwdMax = computedMax.accelBwdMax;
