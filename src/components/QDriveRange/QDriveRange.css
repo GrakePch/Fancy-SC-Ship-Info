@@ -1,0 +1,47 @@
+.QDriveRange-container {
+    padding: .5rem 1rem;
+    background-color: var(--color-bg-light);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+}
+
+.QDriveRange-container>* {
+    flex-shrink: 0;
+}
+
+.QDriveRange-container>svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.QDriveRange-container .class-grade {
+    font-family: var(--font-slim);
+    width: 4rem;
+    text-align: right;
+    background-color: var(--color-bg-light);
+    padding: 0 .3125rem 0 .25rem;
+    border-radius: 1rem;
+}
+
+.QDriveRange-container .name {
+    flex-grow: 1;
+}
+
+.QDriveRange-container .value {
+    font-family: var(--font-slim);
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+    width: 6rem;
+    text-align: right;
+}
+
+.POIDistance {
+    color: var(--color-text);
+}
+
+.POIDistance>p:first-of-type {
+    flex-grow: 1;
+}

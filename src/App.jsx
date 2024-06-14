@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import MainInfo from "./MainInfo";
+import QT from "./QT";
 import Docker from "./components/Docker/Docker";
 import LangContext from "./contexts/LangContext";
 
@@ -21,6 +22,10 @@ function App() {
         {
           path: "/Fancy-SC-Ship-Info",
           element: <MainInfo />,
+        },
+        {
+          path: "/Fancy-SC-Ship-Info/QT",
+          element: <QT />,
         },
       ],
     },

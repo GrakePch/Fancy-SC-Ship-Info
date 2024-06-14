@@ -122,6 +122,12 @@
     "QTRangeCRU2HUR": "十 ↔ 赫：",
     "QTRangeCRU2MIC": "十 ↔ 微：",
     "QTRangeJPS2M2JPS2T": "斯坦顿-马格努斯 跳点 ↔ 斯坦顿-泰拉 跳点： ",
+    
+    "Long-QTRangeCRU2HUR": "十字军 ↔ 赫斯顿",
+    "Long-QTRangeCRU2MIC": "十字军 ↔ 微科",
+    "Long-QTRangeJPS2M2JPS2T": "斯坦顿-马格努斯 跳点 ↔ 斯坦顿-泰拉 跳点",
+
+    "TimeFromCru2Hur": "十 → 赫耗时",
 
     "SpoolTime":      "模式切换预热时间",
     "NavMaxSpeed":    "导航模式最大速度",
