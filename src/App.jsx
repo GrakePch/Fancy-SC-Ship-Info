@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Outlet, RouterProvider, createHashRouter } from "react-router-dom";
 
 import MainInfo from "./MainInfo";
 import QT from "./QT";
@@ -9,9 +9,9 @@ import LangContext from "./contexts/LangContext";
 function App() {
   const [lang, setLang] = useState("en");
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
-      path: "/Fancy-SC-Ship-Info",
+      path: "/",
       element: (
         <>
           <Docker />
@@ -20,11 +20,11 @@ function App() {
       ),
       children: [
         {
-          path: "/Fancy-SC-Ship-Info",
+          path: "/",
           element: <MainInfo />,
         },
         {
-          path: "/Fancy-SC-Ship-Info/QT",
+          path: "/QT",
           element: <QT />,
         },
       ],
