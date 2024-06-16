@@ -8,27 +8,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 60
+            "Buy": 60.0
         },
         "PU": {
             "Patch": "2.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1587600
+            "Buy": 1587600.0
         }
     },
     {
@@ -40,27 +32,19 @@
         "Size": 2,
         "Cargo": 8,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 60
+            "Buy": 60.0
         },
         "PU": {
             "Patch": "2.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1358280
+            "Buy": 1358280.0
         }
     },
     {
@@ -72,27 +56,19 @@
         "Size": 2,
         "Cargo": 8,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 75
+            "Buy": 75.0
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1852200
+            "Buy": 1852200.0
         }
     },
     {
@@ -104,27 +80,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 85
+            "Buy": 85.0
         },
         "PU": {
             "Patch": "2.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2249100
+            "Buy": 2249100.0
         }
     },
     {
@@ -136,27 +104,22 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 300
+            "IsShipOfTheMonth": true,
+            "ShipOfTheMonth": "June 2024",
+            "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19984-June-2024-Subscriber-Promotions",
+            "Buy": 300.0
         },
         "PU": {
             "Patch": "3.2.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 7938000
+            "Buy": 7938000.0
         }
     },
     {
@@ -168,27 +131,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 90
+            "Buy": 90.0
         },
         "PU": {
             "Patch": "1.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2381400
+            "Buy": 2381400.0
         }
     },
     {
@@ -200,27 +155,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 110
+            "Buy": 110.0
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2910600
+            "Buy": 2910600.0
         }
     },
     {
@@ -232,27 +179,19 @@
         "Size": 5,
         "Cargo": 40,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 725
+            "Buy": 725.0
         },
         "PU": {
             "Patch": "3.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 47958752
+            "Buy": 47958752.0
         }
     },
     {
@@ -269,22 +208,14 @@
             "Date": "2013-06-29",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/13097-Idris-Corvette-Revealed"
         },
-        "ProgressTracker": {
-            "Status": "InProd",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "InProd", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 1800
+            "Buy": 1800.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "AEGS_Idris_M_PU",
@@ -300,16 +231,12 @@
             "Date": "2013-06-29",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/13097-Idris-Corvette-Revealed"
         },
-        "ProgressTracker": {
-            "Status": "InProd",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "InProd", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": "https://robertsspaceindustries.com/pledge/ships/aegis-idris/Idris-M",
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 1000
+            "Buy": 1000.0
         },
         "PU": {
             "HasPerf": true,
@@ -332,22 +259,14 @@
             "Date": "2013-06-29",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/13097-Idris-Corvette-Revealed"
         },
-        "ProgressTracker": {
-            "Status": "InProd",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "InProd", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": "https://robertsspaceindustries.com/pledge/ships/aegis-idris/Idris-P",
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 1500
+            "Buy": 1500.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "AEGS_Javelin",
@@ -363,23 +282,14 @@
             "Date": "2014-11-27",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/14335-Introducing-The-Javelin-Destroyer"
         },
-        "ProgressTracker": {
-            "Status": "InProd",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "InProd", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 3000
+            "Buy": 3000.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "IsAI": true,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "IsAI": true, "Buy": null }
     },
     {
         "ClassName": "AEGS_Nautilus",
@@ -395,22 +305,14 @@
             "Date": "2019-08-24",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/17203-Aegis-Nautilus"
         },
-        "ProgressTracker": {
-            "Status": "Concept",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 725
+            "Buy": 725.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "AEGS_Reclaimer",
@@ -421,21 +323,13 @@
         "Size": 6,
         "Cargo": 420,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 400
+            "Buy": 400.0
         },
         "PU": {
             "Patch": "3.1.0",
@@ -453,27 +347,19 @@
         "Size": 4,
         "Cargo": 2,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 330
+            "Buy": 330.0
         },
         "PU": {
             "Patch": "3.15.1",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 17199000
+            "Buy": 17199000.0
         }
     },
     {
@@ -490,23 +376,19 @@
             "Date": "2014-11-25",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/14324-Flying-Fortress-The-Aegis-Retaliator"
         },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": "https://robertsspaceindustries.com/pledge/ships/aegis-retaliator/Retaliator",
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 175
+            "Buy": 175.0
         },
         "PU": {
             "Patch": "3.23.1",
             "Date": "2024-05-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 7938000
+            "Buy": 7938000.0
         }
     },
     {
@@ -518,27 +400,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 170
+            "Buy": 170.0
         },
         "PU": {
             "Patch": "2.2.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4498200
+            "Buy": 4498200.0
         }
     },
     {
@@ -550,27 +424,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 185
+            "Buy": 185.0
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4895100
+            "Buy": 4895100.0
         }
     },
     {
@@ -582,11 +448,7 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.23.1",
@@ -616,28 +478,15 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": "https://robertsspaceindustries.com/pledge/ships/sabre/Sabre-Raven",
             "IsPromotionOnly": true,
             "IsLimitedSale": false,
             "Buy": null
         },
-        "PU": {
-            "Patch": "3.0.0",
-            "HasPerf": true,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "Patch": "3.0.0", "HasPerf": true, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "AEGS_Vanguard",
@@ -648,27 +497,19 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 260
+            "Buy": 260.0
         },
         "PU": {
             "Patch": "2.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 10319400
+            "Buy": 10319400.0
         }
     },
     {
@@ -680,27 +521,19 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 290
+            "Buy": 290.0
         },
         "PU": {
             "Patch": "3.7.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 11510100
+            "Buy": 11510100.0
         }
     },
     {
@@ -712,27 +545,19 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 240
+            "Buy": 240.0
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 9327150
+            "Buy": 9327150.0
         }
     },
     {
@@ -744,27 +569,19 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 275
+            "Buy": 275.0
         },
         "PU": {
             "Patch": "3.7.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 10914750
+            "Buy": 10914750.0
         }
     },
     {
@@ -781,22 +598,14 @@
             "Date": "2018-02-22",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/16420-Vulcan-Refuel-Repair-Rearm"
         },
-        "ProgressTracker": {
-            "Status": "Concept",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 200
+            "Buy": 200.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "ANVL_Arrow",
@@ -807,16 +616,8 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
@@ -824,13 +625,13 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "February 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19776-February-2024-Subscriber-Promotions",
-            "Buy": 75
+            "Buy": 75.0
         },
         "PU": {
             "Patch": "3.3.5",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1984500
+            "Buy": 1984500.0
         }
     },
     {
@@ -842,27 +643,19 @@
         "Size": 4,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 140
+            "Buy": 140.0
         },
         "PU": {
             "Patch": "3.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1481760
+            "Buy": 1481760.0
         }
     },
     {
@@ -874,28 +667,20 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65
+            "Buy": 65.0
         },
         "PU": {
             "Patch": "3.17.4",
             "Date": "2022-11-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 555660
+            "Buy": 555660.0
         }
     },
     {
@@ -907,27 +692,19 @@
         "Size": 1,
         "Cargo": 4,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 45
+            "Buy": 45.0
         },
         "PU": {
             "Patch": "3.7.2",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 515970
+            "Buy": 515970.0
         }
     },
     {
@@ -939,16 +716,8 @@
         "Size": 1,
         "Cargo": 4,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
@@ -959,7 +728,7 @@
             "Patch": "3.7.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 745290
+            "Buy": 745290.0
         }
     },
     {
@@ -971,27 +740,19 @@
         "Size": 5,
         "Cargo": 456,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 600
+            "Buy": 600.0
         },
         "PU": {
             "Patch": "3.8.2",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 34398000
+            "Buy": 34398000.0
         }
     },
     {
@@ -1003,28 +764,20 @@
         "Size": 4,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 110
+            "Buy": 110.0
         },
         "PU": {
             "Patch": "3.17.2",
             "Date": "2022-07-28",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1164240
+            "Buy": 1164240.0
         }
     },
     {
@@ -1041,22 +794,14 @@
             "Date": "2015-11-19",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/15066-Wandering-Workshop-The-Anvil-Crucible"
         },
-        "ProgressTracker": {
-            "Status": "Concept",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 350
+            "Buy": 350.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "ANVL_Gladiator",
@@ -1067,27 +812,22 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 165
+            "IsShipOfTheMonth": true,
+            "ShipOfTheMonth": "June 2024",
+            "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19984-June-2024-Subscriber-Promotions",
+            "Buy": 165.0
         },
         "PU": {
             "Patch": "1.1.1",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4365900
+            "Buy": 4365900.0
         }
     },
     {
@@ -1099,27 +839,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 100
+            "Buy": 100.0
         },
         "PU": {
             "Patch": "3.4.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2646000
+            "Buy": 2646000.0
         }
     },
     {
@@ -1131,16 +863,8 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": "https://robertsspaceindustries.com/pledge/ships/anvil-hornet/F7A-Hornet-Mk-I",
             "IsPromotionOnly": true,
@@ -1164,16 +888,8 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
@@ -1197,27 +913,19 @@
         "Size": 2,
         "Cargo": 2,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 125
+            "Buy": 125.0
         },
         "PU": {
             "Patch": "0.8.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2910600
+            "Buy": 2910600.0
         }
     },
     {
@@ -1229,27 +937,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 185
+            "Buy": 185.0
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4762800
+            "Buy": 4762800.0
         }
     },
     {
@@ -1261,27 +961,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150
+            "Buy": 150.0
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3210480
+            "Buy": 3210480.0
         }
     },
     {
@@ -1293,27 +985,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 140
+            "Buy": 140.0
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3307500
+            "Buy": 3307500.0
         }
     },
     {
@@ -1325,16 +1009,8 @@
         "Size": 2,
         "Cargo": 2,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
@@ -1358,27 +1034,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 175
+            "Buy": 175.0
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4630500
+            "Buy": 4630500.0
         }
     },
     {
@@ -1390,21 +1058,13 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 300
+            "Buy": 300.0
         },
         "PU": {
             "Patch": "3.20.0",
@@ -1423,27 +1083,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 210
+            "Buy": 210.0
         },
         "PU": {
             "Patch": "3.2.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 5556600
+            "Buy": 5556600.0
         }
     },
     {
@@ -1460,22 +1112,14 @@
             "Date": "2022-11-09",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/18987-Roadmap-Roundup-November-9-2022"
         },
-        "ProgressTracker": {
-            "Status": "InProd",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "InProd", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 120
+            "Buy": 120.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "ANVL_Liberator",
@@ -1491,22 +1135,14 @@
             "Date": "2021-10-09",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/18353-Anvil-Liberator"
         },
-        "ProgressTracker": {
-            "Status": "Concept",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 570
+            "Buy": 570.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "ANVL_Spartan",
@@ -1517,16 +1153,8 @@
         "Size": 4,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
@@ -1534,14 +1162,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "January 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19721-January-2024-Subscriber-Promotions",
-            "Buy": 80
+            "Buy": 80.0
         },
         "PU": {
             "Patch": "3.15.1",
             "Date": "2021-11-18",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 846720
+            "Buy": 846720.0
         }
     },
     {
@@ -1553,27 +1181,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 220
+            "Buy": 220.0
         },
         "PU": {
             "Patch": "3.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 5433120
+            "Buy": 5433120.0
         }
     },
     {
@@ -1585,27 +1205,19 @@
         "Size": 4,
         "Cargo": 30,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 375
+            "Buy": 375.0
         },
         "PU": {
             "Patch": "3.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 19845000
+            "Buy": 19845000.0
         }
     },
     {
@@ -1617,27 +1229,19 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 170
+            "Buy": 170.0
         },
         "PU": {
             "Patch": "2.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 7229250
+            "Buy": 7229250.0
         }
     },
     {
@@ -1649,27 +1253,19 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Gravlev",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 45
+            "Buy": 45.0
         },
         "PU": {
             "Patch": "3.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 722925
+            "Buy": 722925.0
         }
     },
     {
@@ -1681,11 +1277,7 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.22.0",
@@ -1696,7 +1288,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 240
+            "Buy": 240.0
         },
         "PU": {
             "Patch": "3.22.0",
@@ -1704,7 +1296,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 9355500
+            "Buy": 9355500.0
         }
     },
     {
@@ -1716,27 +1308,19 @@
         "Size": 3,
         "Cargo": 96,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 315
+            "Buy": 315.0
         },
         "PU": {
             "Patch": "3.8.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 8930250
+            "Buy": 8930250.0
         }
     },
     {
@@ -1748,27 +1332,19 @@
         "Size": 1,
         "Cargo": 2,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 35
+            "Buy": 35.0
         },
         "PU": {
             "Patch": "2.5.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 330750
+            "Buy": 330750.0
         }
     },
     {
@@ -1780,11 +1356,7 @@
         "Size": 1,
         "Cargo": 16,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.23.1",
@@ -1814,27 +1386,19 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 40
+            "Buy": 40.0
         },
         "PU": {
             "Patch": "2.5.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 378000
+            "Buy": 378000.0
         }
     },
     {
@@ -1846,28 +1410,20 @@
         "Size": 3,
         "Cargo": 96,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 125
+            "Buy": 125.0
         },
         "PU": {
             "Patch": "3.15.1",
             "Date": "2021-11-18",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3543750
+            "Buy": 3543750.0
         }
     },
     {
@@ -1879,11 +1435,7 @@
         "Size": 3,
         "Cargo": 12,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.21.1",
@@ -1894,7 +1446,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 165
+            "Buy": 165.0
         },
         "PU": {
             "Patch": "3.21.1",
@@ -1902,7 +1454,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 3969000
+            "Buy": 3969000.0
         }
     },
     {
@@ -1914,27 +1466,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 220
+            "Buy": 220.0
         },
         "PU": {
             "Patch": "3.7.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 6237000
+            "Buy": 6237000.0
         }
     },
     {
@@ -1960,13 +1504,9 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 650
+            "Buy": 650.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "CNOU_HoverQuad",
@@ -1977,28 +1517,20 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Gravlev",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 30
+            "Buy": 30.0
         },
         "PU": {
             "Patch": "3.16.1",
             "Date": "2022-01-27",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 56700
+            "Buy": 56700.0
         }
     },
     {
@@ -2010,27 +1542,19 @@
         "Size": 2,
         "Cargo": 4,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 30
+            "Buy": 30.0
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 655200
+            "Buy": 655200.0
         }
     },
     {
@@ -2042,27 +1566,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 40
+            "Buy": 40.0
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 642600
+            "Buy": 642600.0
         }
     },
     {
@@ -2074,27 +1590,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 40
+            "Buy": 65.0
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1228500
+            "Buy": 1228500.0
         }
     },
     {
@@ -2106,27 +1614,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 55
+            "Buy": 55.0
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1178100
+            "Buy": 1178100.0
         }
     },
     {
@@ -2138,28 +1638,15 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": "https://robertsspaceindustries.com/pledge/ships/mustang/mustang-omega",
             "IsPromotionOnly": true,
             "IsLimitedSale": false,
             "Buy": null
         },
-        "PU": {
-            "Patch": "1.0.0",
-            "HasPerf": true,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "Patch": "1.0.0", "HasPerf": true, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "CNOU_Nomad",
@@ -2170,28 +1657,20 @@
         "Size": 2,
         "Cargo": 24,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 80
+            "Buy": 80.0
         },
         "PU": {
             "Patch": "3.11.1",
             "Date": "2020-11-19",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1512000
+            "Buy": 1512000.0
         }
     },
     {
@@ -2208,22 +1687,14 @@
             "Date": "2017-10-27",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/16200-Consolidated-Outland-Pioneer"
         },
-        "ProgressTracker": {
-            "Status": "Concept",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 850
+            "Buy": 850.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "CRUS_Genesis_Starliner",
@@ -2239,22 +1710,14 @@
             "Date": "2022-06-22",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/18751-Roadmap-Roundup-June-22-2022"
         },
-        "ProgressTracker": {
-            "Status": "OnHold",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "OnHold", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 400
+            "Buy": 400.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "CRUS_Spirit_A1",
@@ -2265,11 +1728,7 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.21.0",
@@ -2280,7 +1739,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 200
+            "Buy": 200.0
         },
         "PU": {
             "Patch": "3.21.0",
@@ -2288,7 +1747,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 4961250
+            "Buy": 4961250.0
         }
     },
     {
@@ -2300,11 +1759,7 @@
         "Size": 3,
         "Cargo": 64,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.21.1",
@@ -2315,7 +1770,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 125
+            "Buy": 125.0
         },
         "PU": {
             "Patch": "3.21.1",
@@ -2323,7 +1778,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 3118500
+            "Buy": 3118500.0
         }
     },
     {
@@ -2335,11 +1790,7 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "InProd",
             "IsOnPT": true,
@@ -2349,13 +1800,9 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150
+            "Buy": 150.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "CRUS_Starfighter_Inferno",
@@ -2366,16 +1813,8 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
@@ -2383,14 +1822,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "February 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19776-February-2024-Subscriber-Promotions",
-            "Buy": 250
+            "Buy": 250.0
         },
         "PU": {
             "Patch": "3.15.1",
             "Date": "2021-11-18",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4725000
+            "Buy": 4725000.0
         }
     },
     {
@@ -2402,16 +1841,8 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
@@ -2419,14 +1850,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "February 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19776-February-2024-Subscriber-Promotions",
-            "Buy": 250
+            "Buy": 250.0
         },
         "PU": {
             "Patch": "3.15.1",
             "Date": "2021-11-18",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4725000
+            "Buy": 4725000.0
         }
     },
     {
@@ -2438,28 +1869,20 @@
         "Size": 5,
         "Cargo": 216,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 700
+            "Buy": 700.0
         },
         "PU": {
             "Patch": "3.15.0",
             "Date": "2021-11-10",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 44296876
+            "Buy": 44296876.0
         }
     },
     {
@@ -2471,28 +1894,20 @@
         "Size": 5,
         "Cargo": 696,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 400
+            "Buy": 400.0
         },
         "PU": {
             "Patch": "3.13.1",
             "Date": "2021-05-20",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 18900000
+            "Buy": 18900000.0
         }
     },
     {
@@ -2504,28 +1919,20 @@
         "Size": 5,
         "Cargo": 522,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 520
+            "Buy": 520.0
         },
         "PU": {
             "Patch": "3.13.1",
             "Date": "2021-05-20",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 29484000
+            "Buy": 29484000.0
         }
     },
     {
@@ -2537,16 +1944,8 @@
         "Size": 4,
         "Cargo": 114,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
@@ -2554,14 +1953,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "March 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19781-March-2024-Subscriber-Promotions",
-            "Buy": 260
+            "Buy": 260.0
         },
         "PU": {
             "Patch": "3.11.1",
             "Date": "2020-11-19",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 12285000
+            "Buy": 12285000.0
         }
     },
     {
@@ -2573,27 +1972,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 110
+            "Buy": 110.0
         },
         "PU": {
             "Patch": "2.6.2",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1663200
+            "Buy": 1663200.0
         }
     },
     {
@@ -2605,27 +1996,19 @@
         "Size": 5,
         "Cargo": 576,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 330
+            "Buy": 330.0
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 12474000
+            "Buy": 12474000.0
         }
     },
     {
@@ -2637,28 +2020,20 @@
         "Size": 4,
         "Cargo": 72,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 250
+            "Buy": 250.0
         },
         "PU": {
             "Patch": "3.17.4",
             "Date": "2022-11-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 6552000
+            "Buy": 6552000.0
         }
     },
     {
@@ -2670,27 +2045,19 @@
         "Size": 3,
         "Cargo": 46,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 110
+            "Buy": 110.0
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2116800
+            "Buy": 2116800.0
         }
     },
     {
@@ -2702,27 +2069,19 @@
         "Size": 3,
         "Cargo": 12,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 175
+            "Buy": 175.0
         },
         "PU": {
             "Patch": "3.9.1",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3704400
+            "Buy": 3704400.0
         }
     },
     {
@@ -2734,27 +2093,19 @@
         "Size": 3,
         "Cargo": 12,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 135
+            "Buy": 135.0
         },
         "PU": {
             "Patch": "3.8.1",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2857680
+            "Buy": 2857680.0
         }
     },
     {
@@ -2766,28 +2117,20 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 235
+            "Buy": 235.0
         },
         "PU": {
             "Patch": "3.16.0",
             "Date": "2021-12-22",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3997350
+            "Buy": 3997350.0
         }
     },
     {
@@ -2799,28 +2142,20 @@
         "Size": 2,
         "Cargo": 4,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 45
+            "Buy": 45.0
         },
         "PU": {
             "Patch": "3.17.4",
             "Date": "2022-11-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 625040
+            "Buy": 625040.0
         }
     },
     {
@@ -2832,11 +2167,7 @@
         "Size": 2,
         "Cargo": 2,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.22.0",
@@ -2847,7 +2178,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 50
+            "Buy": 50.0
         },
         "PU": {
             "Patch": "3.22.0",
@@ -2855,7 +2186,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 740880
+            "Buy": 740880.0
         }
     },
     {
@@ -2867,11 +2198,7 @@
         "Size": 2,
         "Cargo": 2,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.21.0",
@@ -2890,7 +2217,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 705600
+            "Buy": 705600.0
         }
     },
     {
@@ -2902,27 +2229,19 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Gravlev",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 40
+            "Buy": 40.0
         },
         "PU": {
             "Patch": "3.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 342720
+            "Buy": 342720.0
         }
     },
     {
@@ -2934,16 +2253,8 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Gravlev",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": "https://robertsspaceindustries.com/pledge/ships/drake-dragonfly/Dragonfly-Yellowjacket",
             "IsPromotionOnly": true,
@@ -2955,7 +2266,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 342720
+            "Buy": 342720.0
         }
     },
     {
@@ -2967,28 +2278,66 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 85
+            "Buy": 85.0
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1285200
+            "Buy": 1285200.0
         }
+    },
+    {
+        "ClassName": "DRAK_Ironclad",
+        "Name": "Drake Ironclad",
+        "Manufacturer": "Drake Interplanetary",
+        "Career": "Transporter",
+        "Role": "Armored Cargo",
+        "Size": 5,
+        "Cargo": 1536,
+        "Type": "Ship",
+        "CommLink": {
+            "HasCommLink": true,
+            "Date": "2024-05-25",
+            "Url": "https://robertsspaceindustries.com/comm-link/transmission/19935-Drake-Ironclad"
+        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
+        "Store": {
+            "Url": null,
+            "IsPromotionOnly": false,
+            "IsLimitedSale": false,
+            "Buy": 450.0
+        },
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
+    },
+    {
+        "ClassName": "DRAK_Ironclad_Assault",
+        "Name": "Drake Ironclad Assault",
+        "Manufacturer": "Drake Interplanetary",
+        "Career": "Transporter",
+        "Role": "Heavy Dropship",
+        "Size": 5,
+        "Cargo": 1152,
+        "Type": "Ship",
+        "CommLink": {
+            "HasCommLink": true,
+            "Date": "2024-05-25",
+            "Url": "https://robertsspaceindustries.com/comm-link/transmission/19935-Drake-Ironclad"
+        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
+        "Store": {
+            "Url": null,
+            "IsPromotionOnly": false,
+            "IsLimitedSale": false,
+            "Buy": 535.0
+        },
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "DRAK_Kraken",
@@ -3004,22 +2353,14 @@
             "Date": "2018-10-10",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/16772-Release-The-Kraken"
         },
-        "ProgressTracker": {
-            "Status": "Concept",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 1650
+            "Buy": 1650.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "DRAK_Kraken_Privateer",
@@ -3035,22 +2376,14 @@
             "Date": "2019-11-30",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/16890-Kraken-Privateer"
         },
-        "ProgressTracker": {
-            "Status": "Concept",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 2000
+            "Buy": 2000.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "DRAK_Mule",
@@ -3061,28 +2394,20 @@
         "Size": 1,
         "Cargo": 1,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 45
+            "Buy": 45.0
         },
         "PU": {
             "Patch": "3.17.1",
             "Date": "2022-05-19",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 68040
+            "Buy": 68040.0
         }
     },
     {
@@ -3094,28 +2419,20 @@
         "Size": 2,
         "Cargo": 12,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 175
+            "Buy": 175.0
         },
         "PU": {
             "Patch": "3.18.0",
             "Date": "2023-03-10",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2646000
+            "Buy": 2646000.0
         }
     },
     {
@@ -3127,27 +2444,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 275
+            "Buy": 275.0
         },
         "PU": {
             "Patch": "3.2.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 7796250
+            "Buy": 7796250.0
         }
     },
     {
@@ -3159,28 +2468,15 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 350
+            "Buy": 350.0
         },
-        "PU": {
-            "Patch": "0.8.5",
-            "HasPerf": true,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "Patch": "0.8.5", "HasPerf": true, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "ESPR_Prowler",
@@ -3191,27 +2487,19 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 440
+            "Buy": 440.0
         },
         "PU": {
             "Patch": "3.9.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 18711000
+            "Buy": 18711000.0
         }
     },
     {
@@ -3223,28 +2511,20 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 115
+            "Buy": 115.0
         },
         "PU": {
             "Patch": "3.12.0",
             "Date": "2020-12-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3260250
+            "Buy": 3260250.0
         }
     },
     {
@@ -3256,28 +2536,20 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 115
+            "Buy": 115.0
         },
         "PU": {
             "Patch": "3.12.0",
             "Date": "2020-12-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3260250
+            "Buy": 3260250.0
         }
     },
     {
@@ -3294,22 +2566,14 @@
             "Date": "2021-06-11",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/18188-Gatac-Railen"
         },
-        "ProgressTracker": {
-            "Status": "Concept",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 225
+            "Buy": 225.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "GAMA_Syulen",
@@ -3320,11 +2584,7 @@
         "Size": 3,
         "Cargo": 6,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.21.1",
@@ -3343,7 +2603,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 2778300
+            "Buy": 2778300.0
         }
     },
     {
@@ -3355,27 +2615,19 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 15
+            "Buy": 15.0
         },
         "PU": {
             "Patch": "0.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 29170
+            "Buy": 29170.0
         }
     },
     {
@@ -3387,27 +2639,19 @@
         "Size": 1,
         "Cargo": 0.8,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 55
+            "Buy": 55.0
         },
         "PU": {
             "Patch": "3.10.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 103950
+            "Buy": 103950.0
         }
     },
     {
@@ -3419,28 +2663,20 @@
         "Size": 1,
         "Cargo": 3.5,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 75
+            "Buy": 75.0
         },
         "PU": {
             "Patch": "3.13.0",
             "Date": "2021-04-22",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 141750
+            "Buy": 141750.0
         }
     },
     {
@@ -3452,28 +2688,20 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 40
+            "Buy": 40.0
         },
         "PU": {
             "Patch": "3.17.3",
             "Date": "2022-10-06",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 75600
+            "Buy": 75600.0
         }
     },
     {
@@ -3485,27 +2713,19 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 25
+            "Buy": 25.0
         },
         "PU": {
             "Patch": "1.1.5",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 283500
+            "Buy": 283500.0
         }
     },
     {
@@ -3517,27 +2737,19 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 35
+            "Buy": 35.0
         },
         "PU": {
             "Patch": "3.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 449820
+            "Buy": 449820.0
         }
     },
     {
@@ -3554,22 +2766,14 @@
             "Date": "2015-09-30",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/14972-Research-Unbound-The-MISC-Endeavor"
         },
-        "ProgressTracker": {
-            "Status": "Concept",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 350
+            "Buy": 350.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "MISC_Expanse",
@@ -3585,22 +2789,14 @@
             "Date": "2022-03-31",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/18501-Refine-Your-Prospects-With-The-MISC-Expanse"
         },
-        "ProgressTracker": {
-            "Status": "Concept",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150
+            "Buy": 150.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "MISC_Freelancer",
@@ -3611,27 +2807,19 @@
         "Size": 3,
         "Cargo": 66,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 110
+            "Buy": 110.0
         },
         "PU": {
             "Patch": "2.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3118500
+            "Buy": 3118500.0
         }
     },
     {
@@ -3643,27 +2831,19 @@
         "Size": 3,
         "Cargo": 36,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 135
+            "Buy": 135.0
         },
         "PU": {
             "Patch": "3.4.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3316950
+            "Buy": 3316950.0
         }
     },
     {
@@ -3675,27 +2855,19 @@
         "Size": 3,
         "Cargo": 120,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150
+            "Buy": 150.0
         },
         "PU": {
             "Patch": "3.4.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4252500
+            "Buy": 4252500.0
         }
     },
     {
@@ -3707,27 +2879,19 @@
         "Size": 3,
         "Cargo": 36,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 175
+            "Buy": 175.0
         },
         "PU": {
             "Patch": "3.4.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4961250
+            "Buy": 4961250.0
         }
     },
     {
@@ -3740,21 +2904,13 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 55
+            "Buy": 55.0
         },
         "PU": {
             "Patch": "3.19.0",
@@ -3775,21 +2931,13 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 55
+            "Buy": 55.0
         },
         "PU": {
             "Patch": "3.20.0",
@@ -3810,21 +2958,13 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 55
+            "Buy": 55.0
         },
         "PU": {
             "Patch": "3.19.0",
@@ -3844,16 +2984,8 @@
         "Size": 2,
         "Cargo": 64,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
@@ -3861,14 +2993,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "April 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19853-April-2024-Subscriber-Promotions",
-            "Buy": 90
+            "Buy": 90.0
         },
         "PU": {
             "Patch": "3.17.0",
             "Date": "2022-04-29",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1701000
+            "Buy": 1701000.0
         }
     },
     {
@@ -3885,22 +3017,14 @@
             "Date": "2022-06-22",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/18751-Roadmap-Roundup-June-22-2022"
         },
-        "ProgressTracker": {
-            "Status": "OnHold",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "OnHold", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 140
+            "Buy": 140.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "New Ship": "MISC Hull C",
@@ -3912,16 +3036,8 @@
         "Size": 5,
         "Cargo": 4608,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
@@ -3929,7 +3045,7 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "April 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19853-April-2024-Subscriber-Promotions",
-            "Buy": 500
+            "Buy": 500.0
         },
         "PU": {
             "Patch": "3.20.0",
@@ -3954,22 +3070,14 @@
             "Date": "2022-06-22",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/18751-Roadmap-Roundup-June-22-2022"
         },
-        "ProgressTracker": {
-            "Status": "OnHold",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "OnHold", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 550
+            "Buy": 550.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "MISC_Hull_E",
@@ -3985,22 +3093,14 @@
             "Date": "2022-06-22",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/18751-Roadmap-Roundup-June-22-2022"
         },
-        "ProgressTracker": {
-            "Status": "OnHold",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "OnHold", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 750
+            "Buy": 750.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "MISC_Odyssey",
@@ -4016,22 +3116,14 @@
             "Date": "2021-11-27",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/18438-Introducing-The-MISC-Odyssey"
         },
-        "ProgressTracker": {
-            "Status": "Concept",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 700
+            "Buy": 700.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "MISC_Prospector",
@@ -4042,27 +3134,19 @@
         "Size": 2,
         "Cargo": 32,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 155
+            "Buy": 155.0
         },
         "PU": {
             "Patch": "3.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2929500
+            "Buy": 2929500.0
         }
     },
     {
@@ -4074,27 +3158,19 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 145
+            "Buy": 145.0
         },
         "PU": {
             "Patch": "3.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1863540
+            "Buy": 1863540.0
         }
     },
     {
@@ -4106,27 +3182,19 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 155
+            "Buy": 155.0
         },
         "PU": {
             "Patch": "3.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1757700
+            "Buy": 1757700.0
         }
     },
     {
@@ -4138,27 +3206,19 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150
+            "Buy": 150.0
         },
         "PU": {
             "Patch": "3.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1927800
+            "Buy": 1927800.0
         }
     },
     {
@@ -4170,27 +3230,19 @@
         "Size": 3,
         "Cargo": 6,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65
+            "Buy": 65.0
         },
         "PU": {
             "Patch": "2.5.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1719900
+            "Buy": 1719900.0
         }
     },
     {
@@ -4202,27 +3254,19 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 95
+            "Buy": 95.0
         },
         "PU": {
             "Patch": "3.5.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2513700
+            "Buy": 2513700.0
         }
     },
     {
@@ -4234,27 +3278,19 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 85
+            "Buy": 85.0
         },
         "PU": {
             "Patch": "3.5.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2249100
+            "Buy": 2249100.0
         }
     },
     {
@@ -4266,27 +3302,19 @@
         "Size": 3,
         "Cargo": 1,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 75
+            "Buy": 75.0
         },
         "PU": {
             "Patch": "3.5.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1984500
+            "Buy": 1984500.0
         }
     },
     {
@@ -4298,27 +3326,19 @@
         "Size": 5,
         "Cargo": 291,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 300
+            "Buy": 300.0
         },
         "PU": {
             "Patch": "2.4.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 13230000
+            "Buy": 13230000.0
         }
     },
     {
@@ -4330,27 +3350,19 @@
         "Size": 5,
         "Cargo": 291,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 340
+            "Buy": 340.0
         },
         "PU": {
             "Patch": "2.4.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 14994000
+            "Buy": 14994000.0
         }
     },
     {
@@ -4363,11 +3375,7 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Gravlev",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.23.0",
@@ -4399,11 +3407,7 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Gravlev",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.23.0",
@@ -4434,28 +3438,20 @@
         "Size": 1,
         "Cargo": 2,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 50
+            "Buy": 50.0
         },
         "PU": {
             "Patch": "3.11.0",
             "Date": "2020-10-08",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1146600
+            "Buy": 1146600.0
         }
     },
     {
@@ -4467,28 +3463,20 @@
         "Size": 1,
         "Cargo": 2,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 60
+            "Buy": 60.0
         },
         "PU": {
             "Patch": "3.11.0",
             "Date": "2020-10-08",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1587600
+            "Buy": 1587600.0
         }
     },
     {
@@ -4500,28 +3488,20 @@
         "Size": 1,
         "Cargo": 6,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65
+            "Buy": 65.0
         },
         "PU": {
             "Patch": "3.11.0",
             "Date": "2020-10-08",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1149580
+            "Buy": 1149580.0
         }
     },
     {
@@ -4533,27 +3513,19 @@
         "Size": 2,
         "Cargo": 8,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 60
+            "Buy": 60.0
         },
         "PU": {
             "Patch": "0.8.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1375920
+            "Buy": 1375920.0
         }
     },
     {
@@ -4565,27 +3537,19 @@
         "Size": 2,
         "Cargo": 12,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65
+            "Buy": 65.0
         },
         "PU": {
             "Patch": "0.9.2",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1490580
+            "Buy": 1490580.0
         }
     },
     {
@@ -4597,27 +3561,19 @@
         "Size": 2,
         "Cargo": 4,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 70
+            "Buy": 70.0
         },
         "PU": {
             "Patch": "0.9.1",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1852200
+            "Buy": 1852200.0
         }
     },
     {
@@ -4629,27 +3585,19 @@
         "Size": 2,
         "Cargo": 4,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 125
+            "Buy": 125.0
         },
         "PU": {
             "Patch": "0.9.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3748500
+            "Buy": 3748500.0
         }
     },
     {
@@ -4661,31 +3609,23 @@
         "Size": 4,
         "Cargo": 42,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "IsShipOfTheMonth": true,
+            "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "May 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19931-May-2024-Subscriber-Promotions",
-            "Buy": 250
+            "Buy": 250.0
         },
         "PU": {
             "Patch": "3.15.0",
             "Date": "2021-11-10",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 11466000
+            "Buy": 11466000.0
         }
     },
     {
@@ -4697,27 +3637,19 @@
         "Size": 5,
         "Cargo": 44,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 475
+            "Buy": 475.0
         },
         "PU": {
             "Patch": "3.2.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 27231750
+            "Buy": 27231750.0
         }
     },
     {
@@ -4729,27 +3661,19 @@
         "Size": 5,
         "Cargo": 20,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 435
+            "Buy": 435.0
         },
         "PU": {
             "Patch": "3.4.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 24938550
+            "Buy": 24938550.0
         }
     },
     {
@@ -4761,27 +3685,19 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 50
+            "Buy": 50.0
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 573300
+            "Buy": 573300.0
         }
     },
     {
@@ -4793,27 +3709,19 @@
         "Size": 6,
         "Cargo": 388,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 950
+            "Buy": 950.0
         },
         "PU": {
             "Patch": "3.6.2",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 65356200
+            "Buy": 65356200.0
         }
     },
     {
@@ -4825,11 +3733,7 @@
         "Size": 3,
         "Cargo": 2,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "InProd",
             "IsOnPT": true,
@@ -4839,13 +3743,9 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 60
+            "Buy": 60.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "ORIG_g12a",
@@ -4856,11 +3756,7 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "InProd",
             "IsOnPT": true,
@@ -4870,13 +3766,9 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65
+            "Buy": 65.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "ORIG_g12r",
@@ -4887,11 +3779,7 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "InProd",
             "IsOnPT": true,
@@ -4901,13 +3789,9 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 60
+            "Buy": 60.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "ORIG_m50",
@@ -4918,27 +3802,19 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 100
+            "Buy": 100.0
         },
         "PU": {
             "Patch": "0.9.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1499400
+            "Buy": 1499400.0
         }
     },
     {
@@ -4950,11 +3826,7 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Gravlev",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.22.0",
@@ -4965,10 +3837,10 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "IsShipOfTheMonth": true,
+            "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "May 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19931-May-2024-Subscriber-Promotions",
-            "Buy": 45
+            "Buy": 45.0
         },
         "PU": {
             "Patch": "3.22.0",
@@ -4976,7 +3848,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 105840
+            "Buy": 105840.0
         }
     },
     {
@@ -4988,11 +3860,7 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Gravlev",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.22.0",
@@ -5003,7 +3871,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 55
+            "Buy": 55.0
         },
         "PU": {
             "Patch": "3.22.0",
@@ -5011,7 +3879,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 132300
+            "Buy": 132300.0
         }
     },
     {
@@ -5023,11 +3891,7 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Gravlev",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.22.0",
@@ -5038,7 +3902,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 50
+            "Buy": 50.0
         },
         "PU": {
             "Patch": "3.22.0",
@@ -5046,7 +3910,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 119070
+            "Buy": 119070.0
         }
     },
     {
@@ -5058,11 +3922,7 @@
         "Size": 3,
         "Cargo": 28,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "InProd",
             "IsOnPT": true,
@@ -5072,13 +3932,9 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 275
+            "Buy": 275.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "RSI_Apollo_Triage",
@@ -5089,11 +3945,7 @@
         "Size": 3,
         "Cargo": 28,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "InProd",
             "IsOnPT": true,
@@ -5103,13 +3955,9 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 250
+            "Buy": 250.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "RSI_Arrastra",
@@ -5125,22 +3973,14 @@
             "Date": "2023-11-25",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/19450-Discover-The-RSI-Arrastra"
         },
-        "ProgressTracker": {
-            "Status": "Concept",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 575
+            "Buy": 575.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "RSI_Aurora_CL",
@@ -5151,27 +3991,19 @@
         "Size": 2,
         "Cargo": 6,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 45
+            "Buy": 45.0
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1020600
+            "Buy": 1020600.0
         }
     },
     {
@@ -5183,27 +4015,19 @@
         "Size": 2,
         "Cargo": 3,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 20
+            "Buy": 20.0
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 423360
+            "Buy": 423360.0
         }
     },
     {
@@ -5215,27 +4039,19 @@
         "Size": 2,
         "Cargo": 3,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 35
+            "Buy": 35.0
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 907200
+            "Buy": 907200.0
         }
     },
     {
@@ -5247,27 +4063,19 @@
         "Size": 2,
         "Cargo": 3,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 30
+            "Buy": 30.0
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 687960
+            "Buy": 687960.0
         }
     },
     {
@@ -5279,27 +4087,19 @@
         "Size": 2,
         "Cargo": 3,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 25
+            "Buy": 25.0
         },
         "PU": {
             "Patch": "0.8.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 680400
+            "Buy": 680400.0
         }
     },
     {
@@ -5311,27 +4111,19 @@
         "Size": 4,
         "Cargo": 96,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 240
+            "Buy": 240.0
         },
         "PU": {
             "Patch": "2.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 10160640
+            "Buy": 10160640.0
         }
     },
     {
@@ -5343,27 +4135,19 @@
         "Size": 4,
         "Cargo": 96,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 315
+            "Buy": 315.0
         },
         "PU": {
             "Patch": "3.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 12186720
+            "Buy": 12186720.0
         }
     },
     {
@@ -5375,27 +4159,19 @@
         "Size": 4,
         "Cargo": 96,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 350
+            "Buy": 350.0
         },
         "PU": {
             "Patch": "3.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 14817600
+            "Buy": 14817600.0
         }
     },
     {
@@ -5407,28 +4183,20 @@
         "Size": 4,
         "Cargo": 174,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 200
+            "Buy": 200.0
         },
         "PU": {
             "Patch": "3.14.0",
             "Date": "2021-08-06",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 8043840
+            "Buy": 8043840.0
         }
     },
     {
@@ -5445,22 +4213,14 @@
             "Date": "2022-11-24",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/18836-RSI-Galaxy"
         },
-        "ProgressTracker": {
-            "Status": "Concept",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 380
+            "Buy": 380.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "New Vehicle": "RSI Lynx",
@@ -5472,21 +4232,13 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 60
+            "Buy": 60.0
         },
         "PU": {
             "Patch": "3.19.0",
@@ -5494,7 +4246,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 136080
+            "Buy": 136080.0
         }
     },
     {
@@ -5506,27 +4258,19 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150
+            "Buy": 150.0
         },
         "PU": {
             "Patch": "3.7.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3402000
+            "Buy": 3402000.0
         }
     },
     {
@@ -5543,22 +4287,14 @@
             "Date": "2022-06-22",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/18751-Roadmap-Roundup-June-22-2022"
         },
-        "ProgressTracker": {
-            "Status": "OnHold",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "OnHold", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 650
+            "Buy": 650.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "RSI_Perseus",
@@ -5574,22 +4310,14 @@
             "Date": "2020-11-28",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/17881-RSI-Perseus"
         },
-        "ProgressTracker": {
-            "Status": "Concept",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "Concept", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 675
+            "Buy": 675.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "RSI_Polaris_FW",
@@ -5600,11 +4328,7 @@
         "Size": 6,
         "Cargo": 216,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "InProd",
             "IsOnPT": true,
@@ -5614,7 +4338,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 750
+            "Buy": 750.0
         },
         "PU": {
             "HasPerf": true,
@@ -5632,16 +4356,8 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
@@ -5649,14 +4365,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "December 2023",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19618-December-2023-Subscriber-Promotions",
-            "Buy": 240
+            "Buy": 240.0
         },
         "PU": {
             "Patch": "3.17.1",
             "Date": "2022-05-19",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 5443200
+            "Buy": 5443200.0
         }
     },
     {
@@ -5668,16 +4384,8 @@
         "Size": 2,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
@@ -5685,14 +4393,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "December 2023",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19618-December-2023-Subscriber-Promotions",
-            "Buy": 230
+            "Buy": 230.0
         },
         "PU": {
             "Patch": "3.18.0",
             "Date": "2023-03-10",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 5528517
+            "Buy": 5528517.0
         }
     },
     {
@@ -5704,11 +4412,7 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.23.1",
@@ -5738,27 +4442,19 @@
         "Size": 3,
         "Cargo": 2,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 50
+            "Buy": 50.0
         },
         "PU": {
             "Patch": "3.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 120186
+            "Buy": 120186.0
         }
     },
     {
@@ -5770,27 +4466,15 @@
         "Size": 3,
         "Cargo": 128,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "InProd",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "InProd", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150
+            "Buy": 150.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "RSI_Zeus_ES",
@@ -5816,13 +4500,9 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150
+            "Buy": 150.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "RSI_Zeus_MR",
@@ -5833,27 +4513,15 @@
         "Size": 3,
         "Cargo": 16,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "InProd",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "InProd", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 190
+            "Buy": 190.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "TMBL_Cyclone",
@@ -5864,27 +4532,19 @@
         "Size": 1,
         "Cargo": 1,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 55
+            "Buy": 55.0
         },
         "PU": {
             "Patch": "3.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 110170
+            "Buy": 110170.0
         }
     },
     {
@@ -5896,27 +4556,19 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 80
+            "Buy": 80.0
         },
         "PU": {
             "Patch": "3.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 160247
+            "Buy": 160247.0
         }
     },
     {
@@ -5928,16 +4580,8 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
@@ -5945,14 +4589,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "March 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19781-March-2024-Subscriber-Promotions",
-            "Buy": 75
+            "Buy": 75.0
         },
         "PU": {
             "Patch": "3.13.0",
             "Date": "2021-04-22",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 150232
+            "Buy": 150232.0
         }
     },
     {
@@ -5964,16 +4608,8 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
@@ -5981,13 +4617,13 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "January 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19721-January-2024-Subscriber-Promotions",
-            "Buy": 65
+            "Buy": 65.0
         },
         "PU": {
             "Patch": "3.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 130201
+            "Buy": 130201.0
         }
     },
     {
@@ -5999,27 +4635,19 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65
+            "Buy": 65.0
         },
         "PU": {
             "Patch": "3.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 130201
+            "Buy": 130201.0
         }
     },
     {
@@ -6031,27 +4659,19 @@
         "Size": 1,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65
+            "Buy": 65.0
         },
         "PU": {
             "Patch": "3.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 130201
+            "Buy": 130201.0
         }
     },
     {
@@ -6063,28 +4683,20 @@
         "Size": 4,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 120
+            "Buy": 120.0
         },
         "PU": {
             "Patch": "3.13.1",
             "Date": "2021-05-20",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 961482
+            "Buy": 961482.0
         }
     },
     {
@@ -6101,22 +4713,14 @@
             "Date": "2022-09-14",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/18878-Roadmap-Roundup-September-14-2022"
         },
-        "ProgressTracker": {
-            "Status": "OnHold",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "OnHold", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 35
+            "Buy": 35.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "TMBL_Ranger_RC",
@@ -6132,22 +4736,14 @@
             "Date": "2022-09-14",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/18878-Roadmap-Roundup-September-14-2022"
         },
-        "ProgressTracker": {
-            "Status": "OnHold",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "OnHold", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 35
+            "Buy": 35.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "TMBL_Ranger_TR",
@@ -6163,22 +4759,14 @@
             "Date": "2022-09-14",
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/18878-Roadmap-Roundup-September-14-2022"
         },
-        "ProgressTracker": {
-            "Status": "OnHold",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "ProgressTracker": { "Status": "OnHold", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 40
+            "Buy": 40.0
         },
-        "PU": {
-            "HasPerf": false,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "HasPerf": false, "IsPTUOnly": false, "Buy": null }
     },
     {
         "ClassName": "TMBL_Storm",
@@ -6189,11 +4777,7 @@
         "Size": 4,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.21.1",
@@ -6204,7 +4788,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 90
+            "Buy": 90.0
         },
         "PU": {
             "Patch": "3.21.1",
@@ -6212,7 +4796,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 453600
+            "Buy": 453600.0
         }
     },
     {
@@ -6224,11 +4808,7 @@
         "Size": 4,
         "Cargo": 0,
         "Type": "Vehicle",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
         "ProgressTracker": {
             "Status": "Released",
             "Patch": "3.21.1",
@@ -6247,7 +4827,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 476280
+            "Buy": 476280.0
         }
     },
     {
@@ -6259,27 +4839,14 @@
         "Size": 3,
         "Cargo": 0,
         "Type": "Ship",
-        "CommLink": {
-            "HasCommLink": false,
-            "Date": null,
-            "Url": null
-        },
-        "ProgressTracker": {
-            "Status": "Released",
-            "IsOnPT": false,
-            "ID": null
-        },
+        "CommLink": { "HasCommLink": false, "Date": null, "Url": null },
+        "ProgressTracker": { "Status": "Released", "IsOnPT": false, "ID": null },
         "Store": {
             "Url": "https://robertsspaceindustries.com/pledge/ships/scythe/Scythe",
             "IsPromotionOnly": true,
             "IsLimitedSale": false,
             "Buy": null
         },
-        "PU": {
-            "Patch": "1.1.5",
-            "HasPerf": true,
-            "IsPTUOnly": false,
-            "Buy": null
-        }
+        "PU": { "Patch": "1.1.5", "HasPerf": true, "IsPTUOnly": false, "Buy": null }
     }
 ]
