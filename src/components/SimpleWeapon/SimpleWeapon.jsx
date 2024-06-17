@@ -21,7 +21,7 @@ const signalToColor = {
 
 /* eslint-disable react/prop-types */
 const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
-  if (item.Name == null) return;
+  // if (item.Name == null) return;
 
   let bulletDmgType =
     item.AlphaDmg && Object.keys(item.AlphaDmg)
@@ -32,7 +32,7 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
 
   let trackingSignal = item.TrackingSignal;
 
-  const isGimbalMount = item.Name.includes("Gimbal");
+  const isGimbalMount = item.Name?.includes("Gimbal");
   if (isGimbalMount) {
     if (item.SubWeapons)
       return <SimpleWeapon item={item.SubWeapons.at(0)} num={num} gimballed />;
@@ -58,9 +58,9 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
     subList?.forEach((item) => {
       if (item == null) return;
       if (!_rootCounting[JSON.stringify(item)]) {
-        _rootCounting[JSON.stringify(item)] = 1;
+        _rootCounting[JSON.stringify(item)] = Number(item._Quantity) || 1;
       } else {
-        _rootCounting[JSON.stringify(item)]++;
+        _rootCounting[JSON.stringify(item)] += Number(item._Quantity) || 1;
       }
     });
 
@@ -104,7 +104,7 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
                 .join(" ")
                 .toLowerCase()
             ] ||
-            item.Name}
+            item.Name || "未知"}
         </p>
         <div className="SimpleWeapon-tail-icons">
           {trackingSignal && (
@@ -136,7 +136,7 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
                 verticalAlign: "top",
               }}
             >
-              {icons["s" + item.Size] || item.Size}
+              {icons["s" + item.Size]}
             </span>
             {(num < 10 ? "\u2007" : "") + "×" + num}
           </span>

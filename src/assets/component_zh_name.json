@@ -1,4 +1,12 @@
 {
+    "turret": "炮塔(Turret)",
+    "manned turret": "载人炮塔(Manned Turret)",
+    "manned turrets": "载人炮塔(Manned Turrets)",
+    "mining laser": "采矿激光(Mining Laser)",
+    "tractor beam": "牵引光束(Tractor Beam)",
+    "manned": "载人",
+    "remote": "遥控",
+    "TBD": "待定",
     "weapons": "武器",
     "firing": "开火",
     "idle": "待机",

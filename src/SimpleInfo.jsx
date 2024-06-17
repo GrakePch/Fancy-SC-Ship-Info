@@ -27,10 +27,20 @@ const checkObjNotEmpty = (obj) => {
   return Object.keys(obj).length !== 0;
 };
 
+const RSISizeToNumber = {
+  V: 0,
+  S: 1,
+  M: 2,
+  L: 3,
+  C: 4,
+};
+
 const SimpleInfo = ({
   shipIdx,
   shipObj,
   shipHardpts,
+  shipData,
+  shipDataRSI,
   dictShipZhName,
   dictShipImgIso,
   computedMax,
@@ -102,10 +112,12 @@ const SimpleInfo = ({
         </div>
         <div className="career-and-role font-slim">
           <h4>
-            <I18n text={shipIdx.Career} />
+            <I18n text={shipData?.type || shipIdx.Career} />
           </h4>
           <h4>
-            {component_zh_name[shipIdx.Role?.toLowerCase()] || shipIdx.Role}
+            {shipData?.foci ||
+              component_zh_name[shipIdx.Role?.toLowerCase()] ||
+              shipIdx.Role}
           </h4>
           <h4
             style={{
@@ -142,11 +154,14 @@ const SimpleInfo = ({
         </h3>
         <h3 className="basic-info font-slim">
           尺寸 &nbsp;&nbsp;&nbsp;{" "}
-          {shipObj ? (
+          {shipData?.sizes ? (
             <>
-              <span className="sml">长</span> {shipObj.Dimensions.Length} ×{" "}
-              <span className="sml">宽</span> {shipObj.Dimensions.Width} ×{" "}
-              <span className="sml">高</span> {shipObj.Dimensions.Height} m
+              <span className="sml">长</span>{" "}
+              {shipDataRSI?.length || shipData.sizes.length} ×{" "}
+              <span className="sml">宽</span>{" "}
+              {shipDataRSI?.beam || shipData.sizes.beam} ×{" "}
+              <span className="sml">高</span>{" "}
+              {shipDataRSI?.height || shipData.sizes.height} m
             </>
           ) : (
             "未知"
@@ -154,7 +169,7 @@ const SimpleInfo = ({
         </h3>
         <h3 className="basic-info font-slim">
           质量 &nbsp;&nbsp;&nbsp;{" "}
-          {shipObj ? <>{(shipObj.Mass / 1000).toFixed(3)} t</> : "未知"}
+          {shipData?.mass ? <>{(shipData.mass / 1000).toFixed(3)} t</> : "未知"}
         </h3>
         <div className="SimpleInfo-title-bottom-banner">
           <div className="small-texts">
@@ -377,6 +392,176 @@ const SimpleInfo = ({
               groupName="UtilityTurrets"
               icon="Beams"
               weaponGroupObj={shipHardpts.Hardpoints.Weapons.UtilityTurrets}
+            />
+            <div
+              className="placeholder"
+              style={{
+                backgroundImage: `url(${bg_line})`,
+              }}
+            ></div>
+          </div>
+        </div>
+      ) : shipDataRSI ? (
+        <div className="SimpleInfo-contents">
+          <div className="SimpleGrid">
+            <SimpleComponent
+              type="电源"
+              icon="PowerPlants"
+              itemObj={{
+                InstalledItems:
+                  shipDataRSI.compiled.RSIModular.power_plants.map((item) => ({
+                    Name: item.details,
+                    _Quantity: item.quantity,
+                    Size: RSISizeToNumber[item.size],
+                  })),
+              }}
+            />
+            <SimpleComponent
+              type="护盾"
+              icon={"Shields"}
+              itemObj={{
+                InstalledItems:
+                  shipDataRSI.compiled.RSIModular.shield_generators.map(
+                    (item) => ({
+                      Name: item.details,
+                      _Quantity: item.quantity,
+                      Size: RSISizeToNumber[item.size],
+                    }),
+                  ),
+              }}
+            />
+            <SimpleComponent
+              type="冷却器"
+              icon="Coolers"
+              itemObj={{
+                InstalledItems: shipDataRSI.compiled.RSIModular.coolers.map(
+                  (item) => ({
+                    Name: item.details,
+                    _Quantity: item.quantity,
+                    Size: RSISizeToNumber[item.size],
+                  }),
+                ),
+              }}
+            />
+            <SimpleComponent
+              type="量子引擎"
+              icon="QuantumDrives"
+              itemObj={{
+                InstalledItems:
+                  shipDataRSI.compiled.RSIPropulsion.quantum_drives.map(
+                    (item) => ({
+                      Name: item.details,
+                      _Quantity: item.quantity,
+                      Size: RSISizeToNumber[item.size],
+                    }),
+                  ),
+              }}
+            />
+            <SimpleComponent
+              type="雷达"
+              icon="Radars"
+              itemObj={{
+                InstalledItems: shipDataRSI.compiled.RSIAvionic.radar.map(
+                  (item) => ({
+                    Name: item.details,
+                    _Quantity: item.quantity,
+                    Size: RSISizeToNumber[item.size],
+                  }),
+                ),
+              }}
+            />
+            <SimpleFuelTank
+              fuelH={
+                shipDataRSI.compiled.RSIPropulsion.fuel_tanks.length > 0
+                  ? "未知"
+                  : 0
+              }
+              fuelQT={
+                shipDataRSI.compiled.RSIPropulsion.quantum_fuel_tanks.length > 0
+                  ? "未知"
+                  : 0
+              }
+            />
+          </div>
+          <div className="SimpleInfo-weapons">
+            <SimpleWeaponGroup
+              groupName="PilotWeapons"
+              icon="Weapons"
+              weaponGroupObj={{
+                InstalledItems: shipDataRSI.compiled.RSIWeapon.weapons.map(
+                  (item) => ({
+                    Name: item.name,
+                    Size: item.size,
+                    _Quantity: item.mounts,
+                    SubWeapons: [
+                      {
+                        Name: item.details,
+                        Size: item.component_size,
+                        _Quantity: item.quantity,
+                      },
+                    ],
+                  }),
+                ),
+              }}
+            />
+            <SimpleWeaponGroup
+              groupName="Turrets"
+              icon="Turrets"
+              weaponGroupObj={{
+                InstalledItems: shipDataRSI.compiled.RSIWeapon.turrets.map(
+                  (item) => ({
+                    Name: item.name,
+                    Size: item.size,
+                    _Quantity: item.mounts,
+                    SubWeapons: [
+                      {
+                        Name: item.details,
+                        Size: item.component_size,
+                        _Quantity: item.quantity,
+                      },
+                    ],
+                  }),
+                ),
+              }}
+            />
+            <SimpleWeaponGroup
+              groupName="MissileRacks"
+              icon="Missiles"
+              weaponGroupObj={{
+                InstalledItems: shipDataRSI.compiled.RSIWeapon.missiles.map(
+                  (item) => ({
+                    Name: item.name,
+                    Size: item.size,
+                    _Quantity: item.mounts,
+                    Missiles: [
+                      {
+                        Name: item.details,
+                        Size: item.component_size,
+                        _Quantity: item.quantity,
+                      },
+                    ],
+                  }),
+                ),
+              }}
+            />
+            <SimpleWeaponGroup
+              groupName="Utilities"
+              icon="UtilityItems"
+              weaponGroupObj={{
+                InstalledItems:
+                  shipDataRSI.compiled.RSIWeapon.utility_items.map((item) => ({
+                    Name: item.name,
+                    Size: item.size,
+                    _Quantity: item.mounts,
+                    SubWeapons: [
+                      {
+                        Name: item.details,
+                        Size: item.component_size,
+                        _Quantity: item.quantity,
+                      },
+                    ],
+                  })),
+              }}
             />
             <div
               className="placeholder"

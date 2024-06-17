@@ -6,6 +6,7 @@ import SimpleWeapon from "../SimpleWeapon/SimpleWeapon";
 
 const engNameToZh = {
   PilotWeapons: "主驾机炮",
+  Turrets: "炮塔",
   MannedTurrets: "载人炮塔",
   RemoteTurrets: "遥控炮塔",
   MissileRacks: "导弹",
@@ -19,6 +20,7 @@ const engNameToZh = {
   SalvageHardpoints: "打捞",
   PilotSalvageHardpoints: "主驾打捞",
   CrewSalvageHardpoints: "乘员打捞",
+  Utilities: "其他",
   UtilityHardpoints: "牵引光束",
   UtilityTurrets: "牵引光束炮塔",
 };
@@ -30,9 +32,9 @@ const SimpleWeaponGroup = ({ groupName, icon, weaponGroupObj }) => {
     weaponGroupObj?.InstalledItems?.forEach((item) => {
       if (item == null) return;
       if (!_rootCounting[JSON.stringify(item)]) {
-        _rootCounting[JSON.stringify(item)] = 1;
+        _rootCounting[JSON.stringify(item)] = Number(item._Quantity) || 1;
       } else {
-        _rootCounting[JSON.stringify(item)]++;
+        _rootCounting[JSON.stringify(item)] += Number(item._Quantity) || 1;
       }
     });
 

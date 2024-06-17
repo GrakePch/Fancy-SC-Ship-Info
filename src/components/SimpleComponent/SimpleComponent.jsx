@@ -41,14 +41,16 @@ const SimpleComponent = ({ type, itemObj, icon }) => {
             {obj
               ? component_zh_name[obj.Name] ||
                 component_zh_name[obj.Name?.toLowerCase()] ||
-                obj.Name
+                obj.Name ||
+                "未知"
               : "无"}
           </p>
           <p className="font-slim" style={{ color: classToColor[obj?.Class] }}>
             {obj &&
+              (obj?.Class || obj?.Grade) &&
               I18nPure(classToShort[obj?.Class] || "?", lang) +
                 " - " +
-                String.fromCharCode(64 + obj?.Grade)}
+                (obj?.Grade ? String.fromCharCode(64 + obj?.Grade) : "?")}
           </p>
         </div>
       </div>
