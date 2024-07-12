@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Outlet, RouterProvider, createHashRouter } from "react-router-dom";
+import { Outlet, RouterProvider, createBrowserRouter, createHashRouter } from "react-router-dom";
 
 import MainInfo from "./MainInfo";
 import QT from "./QT";
@@ -9,7 +9,7 @@ import LangContext from "./contexts/LangContext";
 function App() {
   const [lang, setLang] = useState("en");
 
-  const router = createHashRouter([
+  const router = createBrowserRouter([
     {
       path: "/",
       element: (

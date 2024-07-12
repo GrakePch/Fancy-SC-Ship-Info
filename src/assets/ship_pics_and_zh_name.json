@@ -352,11 +352,11 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fc1-spirit__iso_xs_0333c0dd720fcbf1bbb82529bd113d19.png?alt=media"
     },
     {
-      "Crusader Ares Star Fighter Inferno": "十字军 战神 星际战斗机 地狱火",
+      "Crusader Ares Star Fighter Inferno": "十字军 战神 星际战斗机 地狱",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fares-inferno__iso_xs_6a791bd6fb6053f76f703decddd3a17c.png?alt=media"
     },
     {
-      "Crusader Ares Star Fighter Ion": "十字军 战神 星际战斗机 离子光",
+      "Crusader Ares Star Fighter Ion": "十字军 战神 星际战斗机 离子",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fares-ion__iso_xs_770d6f6617836e954d5749e1b01c8bbb.png?alt=media"
     },
     {
@@ -874,6 +874,14 @@
     {
       "RSI Ursa Medivac": "",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fursa-medivac__iso_s_f79f7990742b38beff962e362a3907f1.png?alt=media"
+    },
+    {
+      "Drake Ironclad": "",
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fironclad__iso_l_88b96ce6b191dd7291322479aed80a6e.png?alt=media"
+    },
+    {
+      "Drake Ironclad Assault": "",
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fironclad-assault__iso_l_e7abce27fa0ed0c4369f2c955bc73014.png?alt=media"
     }
   ]
 }

@@ -376,6 +376,8 @@ function MainInfo() {
       shipName = "Pioneer";
     } else if (shipName.startsWith("Spirit_E1")) {
       shipName = "e1_spirit";
+    } else if (shipName.startsWith("Polaris")) {
+      shipName = "Polaris";
     } else if (shipName == "Zeus_ES") {
       shipName = "zeus_mk_ii_es";
     } else if (shipName == "Zeus_CL") {
