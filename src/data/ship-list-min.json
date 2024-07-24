@@ -153,7 +153,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 2610.0,
+            "PilotBurstDPS": 2616.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 8098.0
         },
@@ -318,7 +318,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 2610.0,
+            "PilotBurstDPS": 2616.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 9515.0
         },
@@ -483,7 +483,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 2268.0,
+            "PilotBurstDPS": 2278.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 8141.0
         },
@@ -648,7 +648,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 2610.0,
+            "PilotBurstDPS": 2616.0,
             "TurretsBurstDPS": 0.0,
             "TotalEMPDmg": 2750.0,
             "TotalMissilesDmg": 9558.0
@@ -815,7 +815,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 676.0,
+            "PilotBurstDPS": 675.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 1186861.0
         },
@@ -996,7 +996,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1507.0,
+            "PilotBurstDPS": 1519.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 14568.0
         },
@@ -1177,7 +1177,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1850.0,
+            "PilotBurstDPS": 1856.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 15147.0
         },
@@ -1352,7 +1352,7 @@
             },
             "TotalShieldHP": 200000.0,
             "PilotBurstDPS": 0.0,
-            "TurretsBurstDPS": 18288.0,
+            "TurretsBurstDPS": 18210.0,
             "TotalMissilesDmg": 91933.0
         },
         "Insurance": {
@@ -1469,12 +1469,12 @@
                 "Maneuvering": 1956663800.0
             },
             "AccelerationG": {
-                "IsValidated": false,
-                "Main": 2.62,
-                "Retro": 0.78,
-                "Strafe": 0.0,
-                "Up": 0.0,
-                "Down": 0.0
+                "IsValidated": true,
+                "Main": 2.6,
+                "Retro": 0.7,
+                "Strafe": 0.8,
+                "Up": 1.6,
+                "Down": 2.0
             },
             "MasterModes": {
                 "BaseSpoolTime": 1.0,
@@ -1545,7 +1545,7 @@
             },
             "TotalShieldHP": 1651130.0,
             "PilotBurstDPS": 7208.0,
-            "TurretsBurstDPS": 141218.0,
+            "TurretsBurstDPS": 141212.0,
             "TotalMissilesDmg": 170917.0
         },
         "Insurance": {
@@ -1768,7 +1768,7 @@
             },
             "TotalShieldHP": 300000.0,
             "PilotBurstDPS": 0.0,
-            "TurretsBurstDPS": 8276.0,
+            "TurretsBurstDPS": 8350.0,
             "TotalMissilesDmg": 0.0
         },
         "Insurance": {
@@ -1946,7 +1946,7 @@
             "TurretsWeaponRegenPool": { "RegenFillRate": 12000.0, "AmmoLoad": 80000 },
             "TotalShieldHP": 200000.0,
             "PilotBurstDPS": 542.0,
-            "TurretsBurstDPS": 10932.0,
+            "TurretsBurstDPS": 10966.0,
             "TotalMissilesDmg": 32920.0
         },
         "Insurance": {
@@ -2145,7 +2145,7 @@
             },
             "TotalShieldHP": 36000.0,
             "PilotBurstDPS": 0.0,
-            "TurretsBurstDPS": 5000.0,
+            "TurretsBurstDPS": 5062.0,
             "TotalMissilesDmg": 0.0
         },
         "Insurance": {
@@ -2310,7 +2310,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 2000.0,
+            "PilotBurstDPS": 2025.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 11606.0
         },
@@ -2475,7 +2475,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 2376.0,
+            "PilotBurstDPS": 2377.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 11606.0
         },
@@ -2640,7 +2640,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1014.0,
+            "PilotBurstDPS": 1013.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 78633.0
         },
@@ -2976,7 +2976,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 12000.0,
-            "PilotBurstDPS": 4145.0,
+            "PilotBurstDPS": 4143.0,
             "TurretsBurstDPS": 900.0,
             "TotalMissilesDmg": 29222.0
         },
@@ -3501,7 +3501,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 12000.0,
-            "PilotBurstDPS": 2796.0,
+            "PilotBurstDPS": 2798.0,
             "TurretsBurstDPS": 450.0,
             "TotalEMPDmg": 3300.0,
             "TotalMissilesDmg": 29222.0
@@ -3661,7 +3661,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 1500.0,
-            "PilotBurstDPS": 1426.0,
+            "PilotBurstDPS": 1460.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 14337.0
         },
@@ -3745,7 +3745,7 @@
             },
             "TotalShieldHP": 1500.0,
             "PilotBurstDPS": 0.0,
-            "TurretsBurstDPS": 694.0,
+            "TurretsBurstDPS": 677.0,
             "TotalMissilesDmg": 320185.0
         },
         "Insurance": {
@@ -4428,7 +4428,7 @@
             },
             "TotalShieldHP": 200000.0,
             "PilotBurstDPS": 0.0,
-            "TurretsBurstDPS": 6096.0,
+            "TurretsBurstDPS": 6070.0,
             "TotalMissilesDmg": 0.0
         },
         "Insurance": {
@@ -4511,7 +4511,7 @@
             },
             "TotalShieldHP": 1500.0,
             "PilotBurstDPS": 0.0,
-            "TurretsBurstDPS": 3894.0,
+            "TurretsBurstDPS": 3879.0,
             "TotalMissilesDmg": 0.0
         },
         "Insurance": {
@@ -4703,8 +4703,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1000.0,
-            "TurretsBurstDPS": 1000.0,
+            "PilotBurstDPS": 1012.0,
+            "TurretsBurstDPS": 1012.0,
             "TotalMissilesDmg": 84563.0
         },
         "Insurance": {
@@ -4867,7 +4867,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1652.0,
+            "PilotBurstDPS": 1650.0,
             "TurretsBurstDPS": 0.0,
             "TotalEMPDmg": 2475.0,
             "TotalMissilesDmg": 0.0
@@ -5035,7 +5035,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 4196.0,
+            "PilotBurstDPS": 4220.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 18723.0
         },
@@ -5205,7 +5205,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 5220.0,
+            "PilotBurstDPS": 5232.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 19029.0
         },
@@ -5376,7 +5376,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1000.0,
+            "PilotBurstDPS": 1012.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 14162.0
         },
@@ -5544,7 +5544,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 2140.0,
+            "PilotBurstDPS": 2138.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 9121.0
         },
@@ -5714,7 +5714,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1338.0,
+            "PilotBurstDPS": 1350.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 14162.0
         },
@@ -6055,7 +6055,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 2520.0,
+            "PilotBurstDPS": 2532.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 9121.0
         },
@@ -6226,7 +6226,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 2274.0,
+            "PilotBurstDPS": 2278.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 14162.0
         },
@@ -6394,8 +6394,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 6000.0,
-            "PilotBurstDPS": 1524.0,
-            "TurretsBurstDPS": 2000.0,
+            "PilotBurstDPS": 1518.0,
+            "TurretsBurstDPS": 2025.0,
             "TotalMissilesDmg": 9515.0
         },
         "Insurance": {
@@ -6583,7 +6583,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 12000.0,
-            "PilotBurstDPS": 3364.0,
+            "PilotBurstDPS": 3376.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 19029.0
         },
@@ -6668,7 +6668,7 @@
             },
             "TotalShieldHP": 1500.0,
             "PilotBurstDPS": 0.0,
-            "TurretsBurstDPS": 694.0,
+            "TurretsBurstDPS": 677.0,
             "TotalMissilesDmg": 0.0
         },
         "Insurance": {
@@ -6848,7 +6848,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 812.5, "AmmoLoad": 6500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 12000.0,
-            "PilotBurstDPS": 676.0,
+            "PilotBurstDPS": 675.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 0.0
         },
@@ -7034,8 +7034,8 @@
                 "AmmoLoad": 60000
             },
             "TotalShieldHP": 12000.0,
-            "PilotBurstDPS": 1000.0,
-            "TurretsBurstDPS": 3426.0,
+            "PilotBurstDPS": 1012.0,
+            "TurretsBurstDPS": 3486.0,
             "TotalMissilesDmg": 0.0
         },
         "Insurance": {
@@ -7207,7 +7207,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 12000.0, "AmmoLoad": 80000 },
             "TotalShieldHP": 12000.0,
-            "PilotBurstDPS": 676.0,
+            "PilotBurstDPS": 675.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 0.0
         },
@@ -7881,7 +7881,7 @@
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 12000.0,
             "PilotBurstDPS": 0.0,
-            "TurretsBurstDPS": 1686.0,
+            "TurretsBurstDPS": 1688.0,
             "TotalMissilesDmg": 0.0
         },
         "Insurance": {
@@ -8241,7 +8241,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 6000.0,
-            "PilotBurstDPS": 1416.0,
+            "PilotBurstDPS": 1418.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 9515.0
         },
@@ -8584,7 +8584,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 676.0,
+            "PilotBurstDPS": 675.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 0.0
         },
@@ -8754,7 +8754,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 676.0,
+            "PilotBurstDPS": 675.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 0.0
         },
@@ -8924,7 +8924,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1652.0,
+            "PilotBurstDPS": 1650.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 0.0
         },
@@ -9439,7 +9439,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 4500.0,
-            "PilotBurstDPS": 1500.0,
+            "PilotBurstDPS": 1519.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 16460.0
         },
@@ -9633,8 +9633,8 @@
                 "AmmoLoad": 60000
             },
             "TotalShieldHP": 6000.0,
-            "PilotBurstDPS": 3372.0,
-            "TurretsBurstDPS": 676.0,
+            "PilotBurstDPS": 3376.0,
+            "TurretsBurstDPS": 675.0,
             "TotalMissilesDmg": 477126.0
         },
         "Insurance": {
@@ -9828,7 +9828,7 @@
                 "AmmoLoad": 60000
             },
             "TotalShieldHP": 6000.0,
-            "PilotBurstDPS": 3372.0,
+            "PilotBurstDPS": 3376.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 10106.0
         },
@@ -9998,7 +9998,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 4375.0, "AmmoLoad": 35000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 12000.0,
-            "PilotBurstDPS": 4275.0,
+            "PilotBurstDPS": 4270.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 56072.0
         },
@@ -10352,8 +10352,8 @@
                 "AmmoLoad": 1000000
             },
             "TotalShieldHP": 200000.0,
-            "PilotBurstDPS": 3794.0,
-            "TurretsBurstDPS": 15702.0,
+            "PilotBurstDPS": 3793.0,
+            "TurretsBurstDPS": 15688.0,
             "TotalMissilesDmg": 2273188.0
         },
         "Insurance": {
@@ -10537,8 +10537,8 @@
                 "AmmoLoad": 1000000
             },
             "TotalShieldHP": 200000.0,
-            "PilotBurstDPS": 3794.0,
-            "TurretsBurstDPS": 4058.0,
+            "PilotBurstDPS": 3793.0,
+            "TurretsBurstDPS": 4050.0,
             "TotalMissilesDmg": 0.0
         },
         "Insurance": {
@@ -10725,8 +10725,8 @@
                 "AmmoLoad": 1000000
             },
             "TotalShieldHP": 200000.0,
-            "PilotBurstDPS": 3794.0,
-            "TurretsBurstDPS": 6592.0,
+            "PilotBurstDPS": 3793.0,
+            "TurretsBurstDPS": 6582.0,
             "TotalMissilesDmg": 0.0
         },
         "Insurance": {
@@ -10897,8 +10897,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 4375.0, "AmmoLoad": 35000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 6000.0, "AmmoLoad": 40000 },
             "TotalShieldHP": 12000.0,
-            "PilotBurstDPS": 1000.0,
-            "TurretsBurstDPS": 2000.0,
+            "PilotBurstDPS": 1012.0,
+            "TurretsBurstDPS": 2025.0,
             "TotalMissilesDmg": 11734.0
         },
         "Insurance": {
@@ -11085,7 +11085,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 2686.0,
+            "PilotBurstDPS": 2726.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 8098.0
         },
@@ -11277,8 +11277,8 @@
                 "AmmoLoad": 1000000
             },
             "TotalShieldHP": 200000.0,
-            "PilotBurstDPS": 2686.0,
-            "TurretsBurstDPS": 3048.0,
+            "PilotBurstDPS": 2700.0,
+            "TurretsBurstDPS": 3035.0,
             "TotalMissilesDmg": 0.0
         },
         "Insurance": {
@@ -11485,8 +11485,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 4375.0, "AmmoLoad": 35000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 6000.0, "AmmoLoad": 40000 },
             "TotalShieldHP": 100000.0,
-            "PilotBurstDPS": 10122.0,
-            "TurretsBurstDPS": 2028.0,
+            "PilotBurstDPS": 10119.0,
+            "TurretsBurstDPS": 2025.0,
             "TotalMissilesDmg": 20211.0
         },
         "Insurance": {
@@ -11667,8 +11667,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 6000.0,
-            "PilotBurstDPS": 2014.0,
-            "TurretsBurstDPS": 1000.0,
+            "PilotBurstDPS": 2026.0,
+            "TurretsBurstDPS": 1012.0,
             "TotalMissilesDmg": 33573.0
         },
         "Insurance": {
@@ -11849,8 +11849,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 6000.0,
-            "PilotBurstDPS": 1788.0,
-            "TurretsBurstDPS": 1000.0,
+            "PilotBurstDPS": 1785.0,
+            "TurretsBurstDPS": 1012.0,
             "TotalMissilesDmg": 40086.0
         },
         "Insurance": {
@@ -12029,7 +12029,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 6000.0,
-            "PilotBurstDPS": 2000.0,
+            "PilotBurstDPS": 2025.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 0.0
         },
@@ -12211,8 +12211,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 6000.0,
-            "PilotBurstDPS": 3079.0,
-            "TurretsBurstDPS": 1676.0,
+            "PilotBurstDPS": 3146.0,
+            "TurretsBurstDPS": 1688.0,
             "TotalMissilesDmg": 33573.0
         },
         "Insurance": {
@@ -12381,7 +12381,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 812.5, "AmmoLoad": 6500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 1500.0,
-            "PilotBurstDPS": 676.0,
+            "PilotBurstDPS": 675.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 4304.0
         },
@@ -12551,7 +12551,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 812.5, "AmmoLoad": 6500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 1500.0,
-            "PilotBurstDPS": 676.0,
+            "PilotBurstDPS": 675.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 4304.0
         },
@@ -12722,7 +12722,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 812.5, "AmmoLoad": 6500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 1500.0,
-            "PilotBurstDPS": 676.0,
+            "PilotBurstDPS": 675.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 3340.0
         },
@@ -12886,7 +12886,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 1000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 0.0,
-            "PilotBurstDPS": 752.0,
+            "PilotBurstDPS": 749.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 0.0
         },
@@ -13223,7 +13223,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1183.0,
+            "PilotBurstDPS": 1182.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 9248.0
         },
@@ -13684,8 +13684,8 @@
                 "AmmoLoad": 60000
             },
             "TotalShieldHP": 12000.0,
-            "PilotBurstDPS": 3794.0,
-            "TurretsBurstDPS": 1008.0,
+            "PilotBurstDPS": 3793.0,
+            "TurretsBurstDPS": 1012.0,
             "TotalMissilesDmg": 0.0
         },
         "Insurance": {
@@ -13902,7 +13902,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1516.0,
+            "PilotBurstDPS": 1518.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 6681.0
         },
@@ -14317,7 +14317,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 812.5, "AmmoLoad": 6500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1500.0,
+            "PilotBurstDPS": 1519.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 28544.0
         },
@@ -14853,7 +14853,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 550.0, "AmmoLoad": 4400 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 1500.0,
-            "PilotBurstDPS": 797.0,
+            "PilotBurstDPS": 789.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 0.0
         },
@@ -15180,8 +15180,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 18000.0,
-            "PilotBurstDPS": 3372.0,
-            "TurretsBurstDPS": 676.0,
+            "PilotBurstDPS": 3376.0,
+            "TurretsBurstDPS": 675.0,
             "TotalMissilesDmg": 19620.0
         },
         "Insurance": {
@@ -15349,8 +15349,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 18000.0,
-            "PilotBurstDPS": 3384.0,
-            "TurretsBurstDPS": 676.0,
+            "PilotBurstDPS": 3376.0,
+            "TurretsBurstDPS": 675.0,
             "TotalMissilesDmg": 19707.0
         },
         "Insurance": {
@@ -15520,7 +15520,7 @@
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 18000.0,
             "PilotBurstDPS": 2700.0,
-            "TurretsBurstDPS": 676.0,
+            "TurretsBurstDPS": 675.0,
             "TotalMissilesDmg": 22707.0
         },
         "Insurance": {
@@ -15684,8 +15684,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 18000.0,
-            "PilotBurstDPS": 3372.0,
-            "TurretsBurstDPS": 676.0,
+            "PilotBurstDPS": 3376.0,
+            "TurretsBurstDPS": 675.0,
             "TotalMissilesDmg": 85739.0
         },
         "Insurance": {
@@ -15856,7 +15856,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 550.0, "AmmoLoad": 4400 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 1500.0,
-            "PilotBurstDPS": 1352.0,
+            "PilotBurstDPS": 1350.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 9515.0
         },
@@ -16691,8 +16691,8 @@
                 "AmmoLoad": 1000000
             },
             "TotalShieldHP": 200000.0,
-            "PilotBurstDPS": 1000.0,
-            "TurretsBurstDPS": 2000.0,
+            "PilotBurstDPS": 1012.0,
+            "TurretsBurstDPS": 2025.0,
             "TotalMissilesDmg": 0.0
         },
         "Insurance": {
@@ -17039,7 +17039,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 550.0, "AmmoLoad": 4400 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 1500.0,
-            "PilotBurstDPS": 676.0,
+            "PilotBurstDPS": 675.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 2280.0
         },
@@ -17380,7 +17380,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 550.0, "AmmoLoad": 4400 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 1500.0,
-            "PilotBurstDPS": 676.0,
+            "PilotBurstDPS": 675.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 0.0
         },
@@ -17551,7 +17551,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1352.0,
+            "PilotBurstDPS": 1350.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 9515.0
         },
@@ -17719,7 +17719,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 676.0,
+            "PilotBurstDPS": 675.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 9515.0
         },
@@ -17887,7 +17887,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 676.0,
+            "PilotBurstDPS": 675.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 9515.0
         },
@@ -18055,7 +18055,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1676.0,
+            "PilotBurstDPS": 1688.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 42435.0
         },
@@ -18231,8 +18231,8 @@
                 "AmmoLoad": 1000000
             },
             "TotalShieldHP": 100000.0,
-            "PilotBurstDPS": 5068.0,
-            "TurretsBurstDPS": 3524.0,
+            "PilotBurstDPS": 5064.0,
+            "TurretsBurstDPS": 3542.0,
             "TotalMissilesDmg": 0.0
         },
         "Insurance": {
@@ -18407,8 +18407,8 @@
                 "AmmoLoad": 1000000
             },
             "TotalShieldHP": 100000.0,
-            "PilotBurstDPS": 5068.0,
-            "TurretsBurstDPS": 4276.0,
+            "PilotBurstDPS": 5064.0,
+            "TurretsBurstDPS": 4300.0,
             "TotalMissilesDmg": 22738.0
         },
         "Insurance": {
@@ -18910,7 +18910,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 1500.0,
-            "PilotBurstDPS": 1000.0,
+            "PilotBurstDPS": 1012.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 4115.0
         },
@@ -19070,7 +19070,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 1500.0,
-            "PilotBurstDPS": 1000.0,
+            "PilotBurstDPS": 1012.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 12345.0
         },
@@ -19227,7 +19227,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 1500.0,
-            "PilotBurstDPS": 1000.0,
+            "PilotBurstDPS": 1012.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 4115.0
         },
@@ -19394,7 +19394,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1675.0,
+            "PilotBurstDPS": 1688.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 4115.0
         },
@@ -19561,7 +19561,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1000.0,
+            "PilotBurstDPS": 1012.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 3340.0
         },
@@ -19728,7 +19728,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 2260.0,
+            "PilotBurstDPS": 2278.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 19707.0
         },
@@ -19895,7 +19895,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1675.0,
+            "PilotBurstDPS": 1688.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 4115.0
         },
@@ -20060,8 +20060,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 4375.0, "AmmoLoad": 35000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 6000.0, "AmmoLoad": 40000 },
             "TotalShieldHP": 100000.0,
-            "PilotBurstDPS": 1524.0,
-            "TurretsBurstDPS": 2000.0,
+            "PilotBurstDPS": 1518.0,
+            "TurretsBurstDPS": 2025.0,
             "TotalMissilesDmg": 51163.0
         },
         "Insurance": {
@@ -20230,8 +20230,8 @@
                 "AmmoLoad": 1000000
             },
             "TotalShieldHP": 200000.0,
-            "PilotBurstDPS": 5691.0,
-            "TurretsBurstDPS": 2000.0,
+            "PilotBurstDPS": 5690.0,
+            "TurretsBurstDPS": 2025.0,
             "TotalMissilesDmg": 40423.0
         },
         "Insurance": {
@@ -20397,8 +20397,8 @@
                 "AmmoLoad": 1000000
             },
             "TotalShieldHP": 200000.0,
-            "PilotBurstDPS": 5691.0,
-            "TurretsBurstDPS": 2000.0,
+            "PilotBurstDPS": 5690.0,
+            "TurretsBurstDPS": 2025.0,
             "TotalMissilesDmg": 40423.0
         },
         "Insurance": {
@@ -20751,7 +20751,7 @@
             },
             "TotalShieldHP": 1549041.0,
             "PilotBurstDPS": 0.0,
-            "TurretsBurstDPS": 7068.0,
+            "TurretsBurstDPS": 7089.0,
             "TotalMissilesDmg": 96329.0
         },
         "Insurance": {
@@ -20920,7 +20920,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 550.0, "AmmoLoad": 4400 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 676.0,
+            "PilotBurstDPS": 675.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 2280.0
         },
@@ -22531,8 +22531,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 4375.0, "AmmoLoad": 35000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 6000.0, "AmmoLoad": 40000 },
             "TotalShieldHP": 100000.0,
-            "PilotBurstDPS": 4552.0,
-            "TurretsBurstDPS": 1352.0,
+            "PilotBurstDPS": 4550.0,
+            "TurretsBurstDPS": 1350.0,
             "TotalMissilesDmg": 81305.0
         },
         "Insurance": {
@@ -22761,8 +22761,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 4375.0, "AmmoLoad": 35000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 6000.0, "AmmoLoad": 40000 },
             "TotalShieldHP": 100000.0,
-            "PilotBurstDPS": 7588.0,
-            "TurretsBurstDPS": 676.0,
+            "PilotBurstDPS": 7587.0,
+            "TurretsBurstDPS": 675.0,
             "TotalMissilesDmg": 49381.0
         },
         "Insurance": {
@@ -22990,8 +22990,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 4375.0, "AmmoLoad": 35000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 6000.0, "AmmoLoad": 40000 },
             "TotalShieldHP": 100000.0,
-            "PilotBurstDPS": 6080.0,
-            "TurretsBurstDPS": 1352.0,
+            "PilotBurstDPS": 6076.0,
+            "TurretsBurstDPS": 1350.0,
             "TotalMissilesDmg": 31924.0
         },
         "Insurance": {
@@ -23218,8 +23218,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 4375.0, "AmmoLoad": 35000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 6000.0, "AmmoLoad": 40000 },
             "TotalShieldHP": 100000.0,
-            "PilotBurstDPS": 4552.0,
-            "TurretsBurstDPS": 676.0,
+            "PilotBurstDPS": 4550.0,
+            "TurretsBurstDPS": 675.0,
             "TotalMissilesDmg": 49381.0
         },
         "Insurance": {
@@ -23484,7 +23484,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1875.0, "AmmoLoad": 15000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1008.0,
+            "PilotBurstDPS": 1012.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 9558.0
         },
@@ -23676,7 +23676,7 @@
             },
             "TotalShieldHP": 774521.0,
             "PilotBurstDPS": 0.0,
-            "TurretsBurstDPS": 13088.0,
+            "TurretsBurstDPS": 13161.0,
             "TotalMissilesDmg": 11146338.0
         },
         "Insurance": {
@@ -23854,8 +23854,8 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 6000.0,
-            "PilotBurstDPS": 2000.0,
-            "TurretsBurstDPS": 2000.0,
+            "PilotBurstDPS": 2025.0,
+            "TurretsBurstDPS": 2025.0,
             "TotalMissilesDmg": 26724.0
         },
         "Insurance": {
@@ -24034,7 +24034,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 3000.0, "AmmoLoad": 20000 },
             "TotalShieldHP": 6000.0,
-            "PilotBurstDPS": 2000.0,
+            "PilotBurstDPS": 2025.0,
             "TurretsBurstDPS": 0.0,
             "TotalEMPDmg": 3300.0,
             "TotalMissilesDmg": 26724.0
@@ -24756,7 +24756,7 @@
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 750.0,
             "PilotBurstDPS": 0.0,
-            "TurretsBurstDPS": 213.0,
+            "TurretsBurstDPS": 224.0,
             "TotalMissilesDmg": 0.0
         },
         "Insurance": {
@@ -24872,7 +24872,7 @@
             },
             "TotalShieldHP": 2250.0,
             "PilotBurstDPS": 6400.0,
-            "TurretsBurstDPS": 676.0,
+            "TurretsBurstDPS": 675.0,
             "TotalMissilesDmg": 57088.0
         },
         "Insurance": {
@@ -26096,7 +26096,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 1250.0, "AmmoLoad": 10000 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 3000.0,
-            "PilotBurstDPS": 1524.0,
+            "PilotBurstDPS": 1518.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 0.0
         },
@@ -26274,7 +26274,7 @@
             "PilotWeaponRegenPool": { "RegenFillRate": 2812.5, "AmmoLoad": 22500 },
             "TurretsWeaponRegenPool": { "RegenFillRate": 0.0, "AmmoLoad": 0 },
             "TotalShieldHP": 6000.0,
-            "PilotBurstDPS": 2000.0,
+            "PilotBurstDPS": 2025.0,
             "TurretsBurstDPS": 0.0,
             "TotalMissilesDmg": 13362.0
         },

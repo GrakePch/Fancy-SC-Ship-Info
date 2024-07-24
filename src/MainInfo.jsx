@@ -3,9 +3,6 @@ import { useSearchParams } from "react-router-dom";
 
 import axios from "axios";
 
-import { mdiSync } from "@mdi/js";
-import Icon from "@mdi/react";
-
 import "./App.css";
 import SimpleInfo from "./SimpleInfo";
 import ManufacturerToHue from "./assets/ManufacturerToHue";
@@ -13,7 +10,6 @@ import bg_line from "./assets/lines.png";
 import manufacturers_small from "./assets/manufacturers_small";
 import ship_pics_and_zh_name from "./assets/ship_pics_and_zh_name.json";
 import statusToHue from "./assets/statusToHue";
-import themes from "./assets/themes";
 import CardList from "./components/CardList/CardList";
 import ComponentGroup from "./components/ComponentGroup/ComponentGroup";
 import Components from "./components/Components/Components";
@@ -73,13 +69,11 @@ function MainInfo() {
   const [shipComponentQDrive, setShipComponentQDrive] = useState(null);
 
   useEffect(() => {
-    // if (!searchParams) return;
     setShipId(searchParams.get("s"));
-    setLang(searchParams.get("lang"));
 
     for (let i = 0; i < shipIndex.length; ++i)
       shipIndex[i].NameShort = shipIndex[i].Name.split(" ").slice(1).join(" ");
-  }, [searchParams, setLang]);
+  }, [searchParams]);
 
   useEffect(() => {
     let tempShipIdx = null;
@@ -192,56 +186,6 @@ function MainInfo() {
     }
     setDictShipZhName(dShipZhName);
     setDictShipImgIso(dShipImgIso);
-
-    let theme = searchParams.get("theme") == "light" ? "light" : "dark";
-    document.documentElement.style.setProperty(
-      "--color-bg",
-      themes[theme].colorBg,
-    );
-    document.documentElement.style.setProperty(
-      "--color-bg-a",
-      themes[theme].colorBgA,
-    );
-    document.documentElement.style.setProperty(
-      "--color-bg-light",
-      themes[theme].colorBgLight,
-    );
-    document.documentElement.style.setProperty(
-      "--color-bg-light-a",
-      themes[theme].colorBgLightA,
-    );
-    document.documentElement.style.setProperty(
-      "--color-bg-lighter",
-      themes[theme].colorBgLighter,
-    );
-    document.documentElement.style.setProperty(
-      "--color-bg-lighter-a",
-      themes[theme].colorBgLighterA,
-    );
-    document.documentElement.style.setProperty(
-      "--color-text",
-      themes[theme].colorText,
-    );
-    document.documentElement.style.setProperty(
-      "--color-primary-bg",
-      themes[theme].colorPrimaryBg,
-    );
-    document.documentElement.style.setProperty(
-      "--color-primary-text",
-      themes[theme].colorPrimaryText,
-    );
-    document.documentElement.style.setProperty(
-      "--color-primary-sat",
-      themes[theme].colorPrimarySat,
-    );
-    document.documentElement.style.setProperty(
-      "--color-primary-dim",
-      themes[theme].colorPrimaryDim,
-    );
-    document.documentElement.style.setProperty(
-      "--color-primary-dimmer",
-      themes[theme].colorPrimaryDimmer,
-    );
   }, []);
 
   useEffect(() => {
@@ -398,7 +342,7 @@ function MainInfo() {
       .catch(function (_error) {
         setShipData(null);
       });
-      
+
     console.log(shipName.toLowerCase());
     console.log(shipDataRSIJson[shipName.toLowerCase()]);
     setShipDataRSI(shipDataRSIJson[shipName.toLowerCase()]);
@@ -463,13 +407,6 @@ function MainInfo() {
                           .join(" ") || shipIdx.NameShort
                       : shipIdx.NameShort}
                   </h1>
-                  {/* <h1 className="ship-name">{shipIdx.NameShort}</h1> */}
-                  <button
-                    className="circleIconBtn"
-                    onClick={() => setSearchParams({ s: null, lang: lang })}
-                  >
-                    <Icon path={mdiSync} size={1} />
-                  </button>
                 </div>
                 <div className="career-and-role font-slim">
                   <h4>

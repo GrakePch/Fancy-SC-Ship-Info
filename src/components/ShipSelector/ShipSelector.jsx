@@ -12,6 +12,18 @@ import I18nPure from "../I18nPure";
 import ShipSelectCard from "./ShipSelectCard/ShipSelectCard";
 import "./ShipSelector.css";
 
+const specialFileName = {
+  ANVL_Hornet_F7A_Mk1: "f7a-hornet",
+  ANVL_Hornet_F7A_Mk2: "f7a-mkii",
+  ANVL_Hornet_F7C: "f7c-hornet",
+  ANVL_Hornet_F7C_Mk2: "f7c-mkii",
+  AEGS_Retaliator: "retaliator-bomber",
+  RSI_Zeus_CL: "zeus-mkii-cl",
+  RSI_Zeus_ES: "zeus-mkii-es",
+  RSI_Zeus_MR: "zeus-mkii-mr",
+  RSI_Polaris_FW: "polaris",
+};
+
 /* eslint-disable react/prop-types */
 function ShipSelector({ shipIndex, dictShipZhName, setSearchParams }) {
   const [manufacturerList, setManufacturerList] = useState([]);
@@ -216,11 +228,10 @@ function ShipSelector({ shipIndex, dictShipZhName, setSearchParams }) {
               <div
                 key={item.ClassName + idx}
                 onClick={() => {
-                  setSearchParams((prev) => ({
-                    s: item.ClassName,
-                    lang: lang,
-                    simple: prev.get("simple"),
-                  }));
+                  setSearchParams((prev) => {
+                    prev.set("s", item.ClassName);
+                    return prev;
+                  });
                 }}
               >
                 <ShipSelectCard
@@ -235,9 +246,10 @@ function ShipSelector({ shipIndex, dictShipZhName, setSearchParams }) {
                   manufacturer={item.Manufacturer}
                   isReleased={item.PU.HasPerf}
                   isShip={item.Type == "Ship"}
-                  imgSrc={`https://ships.42kit.com/resized/${item.NameShort?.normalize(
-                    "NFD",
+                  imgSrc={`https://ships.42kit.com/resized/${(
+                    specialFileName[item.ClassName] || item.NameShort
                   )
+                    ?.normalize("NFD")
                     .replace(/[\u0300-\u036f]/g, "")
                     .replace("'", "-")
                     .replace(".", "-")

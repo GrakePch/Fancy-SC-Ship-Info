@@ -840,7 +840,7 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fsan-tok-yai__iso_xs_f42f3b0c5ab77101946ad6e30ec0747b.png?alt=media"
     },
     {
-      "Aegis Sabre Firebird": "",
+      "Aegis Sabre Firebird": "圣盾 军刀-火鸟",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fsabre-firebird__iso_s_8105e86cda70e2f44d23dc1cb1cb26d4.png?alt=media"
     },
     {
@@ -882,6 +882,10 @@
     {
       "Drake Ironclad Assault": "",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fironclad-assault__iso_l_e7abce27fa0ed0c4369f2c955bc73014.png?alt=media"
+    },
+    {
+      "Aegis Idris-M (XenoThreat)": "圣盾 伊德里斯-M（异种威胁）",
+      "vehicleLink": "https://ships.42kit.com/resized/idris-m%20iso.png"
     }
   ]
 }

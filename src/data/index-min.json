@@ -110,7 +110,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "IsShipOfTheMonth": true,
+            "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "June 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19984-June-2024-Subscriber-Promotions",
             "Buy": 300.0
@@ -219,7 +219,7 @@
     },
     {
         "ClassName": "AEGS_Idris_M_PU",
-        "Name": "Aegis Idris-M",
+        "Name": "Aegis Idris-M (XenoThreat)",
         "Manufacturer": "Aegis Dynamics",
         "Career": "Combat",
         "Role": "Frigate",
@@ -818,7 +818,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "IsShipOfTheMonth": true,
+            "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "June 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19984-June-2024-Subscriber-Promotions",
             "Buy": 165.0
@@ -2026,6 +2026,9 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
+            "IsShipOfTheMonth": true,
+            "ShipOfTheMonth": "July 2024",
+            "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/20029-July-2024-Subscriber-Promotions",
             "Buy": 250.0
         },
         "PU": {
@@ -2425,6 +2428,9 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
+            "IsShipOfTheMonth": true,
+            "ShipOfTheMonth": "July 2024",
+            "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/20029-July-2024-Subscriber-Promotions",
             "Buy": 175.0
         },
         "PU": {

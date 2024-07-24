@@ -49,6 +49,13 @@
     vertical-align: top;
 }
 
+.Ship-select-card-special-info {
+    font-size: 1.25rem;
+    line-height: 200%;
+    font-variant-numeric: tabular-nums;
+    color: hsl(20, 70%, 50%);
+}
+
 .Ship-select-card-img {
     width: 50%;
     height: 100%;
@@ -58,5 +65,5 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    filter: drop-shadow(0 .25rem .5rem #00000080)
+    filter: brightness(1.4) drop-shadow(0 .25rem .5rem #00000080)
 }

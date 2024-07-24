@@ -1,8 +1,11 @@
+import { useSearchParams } from "react-router-dom";
+
+import { mdiCheckCircle } from "@mdi/js";
 import Icon from "@mdi/react";
+
 import ManufacturerToHue from "../../../assets/ManufacturerToHue";
 import manufacturers_small from "../../../assets/manufacturers_small";
 import "./ShipSelectCard.css";
-import { mdiCheckCircle } from "@mdi/js";
 
 /* eslint-disable react/prop-types */
 function ShipSelectCard({
@@ -11,26 +14,32 @@ function ShipSelectCard({
   isReleased,
   imgSrc,
   isShip,
+  infoText,
+  bgColorOverride,
+  colorOverride,
 }) {
+  const [searchParams, _setSearchParams] = useSearchParams();
   return (
     <div
       className="Ship-select-card"
       style={{
         backgroundColor:
-          ManufacturerToHue[manufacturer] !== undefined
-            ? `hsl(${ManufacturerToHue[manufacturer]}, 20%, 19%)`
-            : "#282828",
+          bgColorOverride ||
+          (ManufacturerToHue[manufacturer] !== undefined
+            ? `hsl(${ManufacturerToHue[manufacturer]}, ${searchParams.get("theme") == "light" ? "10%, 70%" : "20%, 19%"})`
+            : "#282828"),
         color:
-          ManufacturerToHue[manufacturer] !== undefined
-            ? `hsl(${ManufacturerToHue[manufacturer]}, 100%, 90%)`
-            : "inherit",
+          colorOverride ||
+          (ManufacturerToHue[manufacturer] !== undefined
+            ? `hsl(${ManufacturerToHue[manufacturer]}, 100%, ${searchParams.get("theme") == "light" ? "10%" : "90%"})`
+            : "inherit"),
       }}
     >
       <div className="Ship-select-card-icon-bg">
         {manufacturers_small[manufacturer]}
       </div>
       <div className="Ship-select-card-text">
-        <p>
+        <p style={{fontWeight: searchParams.get("theme") === "light" && 600}}>
           {shipName}
           {isReleased && (
             <>
@@ -39,6 +48,9 @@ function ShipSelectCard({
             </>
           )}
         </p>
+        {infoText && (
+          <p className="Ship-select-card-special-info">${infoText}</p>
+        )}
       </div>
       <div
         className="Ship-select-card-img"
