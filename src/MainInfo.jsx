@@ -444,7 +444,7 @@ function MainInfo() {
                   {shipIdx.Store.IsLimitedSale && " LIMITED SALE"}
                 </h3>
                 <p className="version-and-sources font-slim">
-                  Game Version: 3.23.0 LIVE
+                  Game Version: 3.24.0 LIVE
                   <br />
                   Data Source:{" "}
                   <a href="https://www.spviewer.eu/" target="_blank">

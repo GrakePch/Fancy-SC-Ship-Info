@@ -173,7 +173,7 @@ const SimpleInfo = ({
         </h3>
         <div className="SimpleInfo-title-bottom-banner">
           <div className="small-texts">
-            游戏版本：3.23 &nbsp;&nbsp;|&nbsp;&nbsp; 主要数据来源：Ships
+            游戏版本：3.24 &nbsp;&nbsp;|&nbsp;&nbsp; 主要数据来源：Ships
             Performances Viewer
           </div>
           <div className="small-logo"></div>
