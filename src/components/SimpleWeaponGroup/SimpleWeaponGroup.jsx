@@ -31,10 +31,20 @@ const SimpleWeaponGroup = ({ groupName, icon, weaponGroupObj }) => {
     const _rootCounting = {};
     weaponGroupObj?.InstalledItems?.forEach((item) => {
       if (item == null) return;
-      if (!_rootCounting[JSON.stringify(item)]) {
-        _rootCounting[JSON.stringify(item)] = Number(item._Quantity) || 1;
+
+      /* PortName may differ. e.g. wing_left & wing_right */
+      let itemNoPortName = JSON.parse(JSON.stringify(item));
+      delete itemNoPortName.PortName;
+      delete itemNoPortName.Loadout;
+      delete itemNoPortName.Flags;
+      delete itemNoPortName.BaseLoadout?.ClassName;
+
+      if (!_rootCounting[JSON.stringify(itemNoPortName)]) {
+        _rootCounting[JSON.stringify(itemNoPortName)] =
+          Number(itemNoPortName._Quantity) || 1;
       } else {
-        _rootCounting[JSON.stringify(item)] += Number(item._Quantity) || 1;
+        _rootCounting[JSON.stringify(itemNoPortName)] +=
+          Number(itemNoPortName._Quantity) || 1;
       }
     });
 
@@ -61,7 +71,7 @@ const SimpleWeaponGroup = ({ groupName, icon, weaponGroupObj }) => {
           item && (
             <SimpleWeapon
               item={itemObj}
-              key={itemObj.Name + idx}
+              key={item + idx}
               num={rootCounting[item]}
             />
           )

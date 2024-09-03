@@ -12,7 +12,7 @@ function HardpointSizes({ components }) {
         temp.push(0);
       }
       for (let i = 0; i < components.length; ++i) {
-        temp[components[i].Size] += Number(components[i]._Quantity) || 1;
+        temp[components[i].Size || components[i].MaxSize] += Number(components[i]._Quantity) || 1;
       }
       setNumsOfSizes(temp);
     }

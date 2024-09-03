@@ -343,8 +343,8 @@ function MainInfo() {
         setShipData(null);
       });
 
-    console.log(shipName.toLowerCase());
-    console.log(shipDataRSIJson[shipName.toLowerCase()]);
+    // console.log(shipName.toLowerCase());
+    // console.log(shipDataRSIJson[shipName.toLowerCase()]);
     setShipDataRSI(shipDataRSIJson[shipName.toLowerCase()]);
   }, [shipId, lang]);
 

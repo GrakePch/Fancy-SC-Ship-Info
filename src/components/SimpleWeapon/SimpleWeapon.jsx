@@ -5,6 +5,7 @@ import Icon from "@mdi/react";
 
 import component_zh_name from "../../assets/component_zh_name.json";
 import icons from "../../assets/icons";
+import ship_items from "../../data/ship-items-min.json";
 import I18nPure from "../I18nPure";
 
 const dmgTypeToColor = {
@@ -13,54 +14,80 @@ const dmgTypeToColor = {
   Distortion: "#439193",
 };
 
+const dmgTypeToIcon = {
+  Physical: icons.BulletPhy,
+  Energy: icons.BulletEne,
+  Distortion: icons.BulletDis,
+};
+
 const signalToColor = {
   Electromagnetic: "#435f93",
   Infrared: "#a83434",
   CrossSection: "#c1a03e",
 };
 
+const signalToIcon = {
+  Electromagnetic: icons.IdleEMEmission,
+  Infrared: icons.StartIREmission,
+  CrossSection: icons.CSEmission,
+};
+
+const getItemInfo = (name) => {
+  for (let i = 0; i < ship_items.length; ++i) {
+    if (ship_items[i].stdItem.Name == name) return ship_items[i];
+  }
+  return null;
+};
+
 /* eslint-disable react/prop-types */
 const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
   // if (item.Name == null) return;
 
+  let baseLoadout = item.BaseLoadout;
+
+  if (baseLoadout == null) return;
+
+  let itemInfo = getItemInfo(baseLoadout?.Name);
+
+  let bulletDmgRaw = itemInfo?.stdItem?.Weapon?.Ammunition?.ImpactDamage;
+
+  let bulletDmgTypesRaw = bulletDmgRaw
+    ? bulletDmgRaw && Object.keys(bulletDmgRaw)
+    : [];
+
   let bulletDmgType =
-    item.AlphaDmg && Object.keys(item.AlphaDmg)
-      ? Object.keys(item.AlphaDmg)?.length == 1
-        ? Object.keys(item.AlphaDmg)?.at(0)
+    bulletDmgTypesRaw.length > 0
+      ? bulletDmgTypesRaw.length == 1
+        ? bulletDmgTypesRaw.at(0)
         : "Mixed"
       : "";
 
-  let trackingSignal = item.TrackingSignal;
+  let trackingSignal = itemInfo?.stdItem?.Missile?.TrackingSignal;
 
-  const isGimbalMount = item.Name?.includes("Gimbal");
+  const isGimbalMount = baseLoadout.Name?.includes("Gimbal");
   if (isGimbalMount) {
-    if (item.SubWeapons)
-      return <SimpleWeapon item={item.SubWeapons.at(0)} num={num} gimballed />;
-    else if (item.MiningLaser)
-      return <SimpleWeapon item={item.MiningLaser.at(0)} num={num} gimballed />;
-    else if (item.SalvageHead)
-      return <SimpleWeapon item={item.SalvageHead.at(0)} num={num} gimballed />;
-    else if (item.Utility)
-      return <SimpleWeapon item={item.Utility.at(0)} num={num} gimballed />;
+    if (item.Ports)
+      return <SimpleWeapon item={item.Ports.at(0)} num={num} gimballed />;
   }
 
   const [rootCounting, setRootCounting] = useState({});
   useEffect(() => {
     const _rootCounting = {};
-    const subList =
-      item.SubWeapons ||
-      item.Missiles ||
-      item.Bombs ||
-      item.MiningLaser ||
-      item.SalvageHead ||
-      item.Utility;
+    const subList = item.Ports;
 
     subList?.forEach((item) => {
       if (item == null) return;
-      if (!_rootCounting[JSON.stringify(item)]) {
-        _rootCounting[JSON.stringify(item)] = Number(item._Quantity) || 1;
+
+      /* PortName may differ. e.g. wing_left & wing_right */
+      let itemNoPortName = JSON.parse(JSON.stringify(item));
+      delete itemNoPortName.PortName;
+
+      if (!_rootCounting[JSON.stringify(itemNoPortName)]) {
+        _rootCounting[JSON.stringify(itemNoPortName)] =
+          Number(itemNoPortName._Quantity) || 1;
       } else {
-        _rootCounting[JSON.stringify(item)] += Number(item._Quantity) || 1;
+        _rootCounting[JSON.stringify(itemNoPortName)] +=
+          Number(itemNoPortName._Quantity) || 1;
       }
     });
 
@@ -70,50 +97,55 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
 
   return (
     <div>
-      <div
-        className="SimpleWeapon-container"
-        style={{
-          opacity:
-            item.Missiles ||
-            item.Bombs ||
-            item.MiningLaser ||
-            item.SalvageHead ||
-            item.Utility ||
-            item.SubWeapons
-              ? 0.5
-              : 1,
-        }}
-      >
+      <div className={`SimpleWeapon-container ${item.Ports && "dimmer"}`}>
         <p>
-          {component_zh_name[item.Name] ||
-            component_zh_name[item.Name?.toLowerCase()] ||
+          {component_zh_name[baseLoadout.Name] ||
+            component_zh_name[baseLoadout.Name?.toLowerCase()] ||
             component_zh_name[
-              item.Name?.slice(0, item.Name?.lastIndexOf(" "))
+              baseLoadout?.Name?.slice(0, baseLoadout.Name?.lastIndexOf(" "))
             ] ||
             component_zh_name[
-              item.Name?.slice(0, item.Name?.lastIndexOf(" ")).toLowerCase()
+              baseLoadout.Name?.slice(
+                0,
+                baseLoadout.Name?.lastIndexOf(" "),
+              ).toLowerCase()
             ] ||
             component_zh_name[
-              item.Name?.split(" ")
-                ?.slice(0, item.Name?.split(" ").length - 2)
+              baseLoadout.Name?.split(" ")
+                ?.slice(0, baseLoadout?.Name?.split(" ").length - 2)
                 .join(" ")
             ] ||
             component_zh_name[
-              item.Name?.split(" ")
-                ?.slice(0, item.Name?.split(" ").length - 2)
+              baseLoadout.Name?.split(" ")
+                ?.slice(0, baseLoadout?.Name?.split(" ").length - 2)
                 .join(" ")
                 .toLowerCase()
             ] ||
-            item.Name || "未知"}
+            baseLoadout.Name ||
+            "未知"}
         </p>
         <div className="SimpleWeapon-tail-icons">
           {trackingSignal && (
-            <p style={{ color: signalToColor[trackingSignal] }}>
-              {I18nPure("Short-" + trackingSignal, "zh")}
-            </p>
+            <>
+              <p
+                style={{
+                  color: signalToColor[trackingSignal],
+                  fill: signalToColor[trackingSignal],
+                }}
+              >
+                {signalToIcon[trackingSignal]}
+                {I18nPure("Short-" + trackingSignal, "zh")}
+              </p>
+            </>
           )}
           {bulletDmgType && (
-            <p style={{ color: dmgTypeToColor[bulletDmgType] }}>
+            <p
+              style={{
+                color: dmgTypeToColor[bulletDmgType],
+                fill: dmgTypeToColor[bulletDmgType],
+              }}
+            >
+              {dmgTypeToIcon[bulletDmgType]}
               {I18nPure("Short-" + bulletDmgType, "zh")}
             </p>
           )}
@@ -136,19 +168,19 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
                 verticalAlign: "top",
               }}
             >
-              {icons["s" + item.Size]}
+              {icons["s" + item.MaxSize]}
             </span>
             {(num < 10 ? "\u2007" : "") + "×" + num}
           </span>
         </div>
       </div>
       <div className="SimpleWeapon-subWeapon-container">
-        {Object.keys(rootCounting).map((subItem) => {
+        {Object.keys(rootCounting).map((subItem, idx) => {
           let subItemObj = JSON.parse(subItem);
           return (
             <SimpleWeapon
               item={subItemObj}
-              key={subItemObj.Name}
+              key={subItemObj.BaseLoadout.Name + idx}
               num={rootCounting[subItem]}
             />
           );

@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useContext, useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 
 import { mdiLock } from "@mdi/js";
 import Icon from "@mdi/react";
@@ -17,6 +18,7 @@ import FlightCharacteristics from "./components/FlightCharacteristics/FlightChar
 import I18n from "./components/I18n";
 import I18nPure from "./components/I18nPure";
 import SimpleComponent from "./components/SimpleComponent/SimpleComponent";
+import SimpleComponentEditable from "./components/SimpleComponent/SimpleComponentEditable";
 import SimpleFuelTank from "./components/SimpleFuelTank/SimpleFuelTank";
 import SimpleWeaponGroup from "./components/SimpleWeaponGroup/SimpleWeaponGroup";
 import LangContext from "./contexts/LangContext";
@@ -46,6 +48,7 @@ const SimpleInfo = ({
   computedMax,
 }) => {
   const lang = useContext(LangContext)[0];
+  const searchParams = useSearchParams()[0];
 
   const speedMax = computedMax.speedMax;
   const pitchMax = computedMax.pitchMax;
@@ -87,9 +90,9 @@ const SimpleInfo = ({
   return (
     <>
       <div className="SimpleInfo-container">
-        <div className="manufacturer-bg">
+        {/* <div className="manufacturer-bg">
           {manufacturers_small[shipIdx.Manufacturer]}
-        </div>
+        </div> */}
         <img
           src={dictShipImgIso[shipIdx.Name]}
           alt=""
@@ -115,7 +118,7 @@ const SimpleInfo = ({
             <I18n text={shipData?.type || shipIdx.Career} />
           </h4>
           <h4>
-            {shipData?.foci ||
+            {I18nPure(shipData?.foci[0], lang) ||
               component_zh_name[shipIdx.Role?.toLowerCase()] ||
               shipIdx.Role}
           </h4>
@@ -123,10 +126,10 @@ const SimpleInfo = ({
             style={{
               color: `hsl(${
                 statusToHue[shipIdx.ProgressTracker.Status]
-              }, 100%, 50%)`,
+              }, 100%, ${searchParams.get("theme") == "light" ? 25 : 50}%)`,
               backgroundColor: `hsl(${
                 statusToHue[shipIdx.ProgressTracker.Status]
-              }, 100%, 9%)`,
+              }, 100%, ${searchParams.get("theme") == "light" ? 85 : 9}%)`,
             }}
           >
             {statusEnToZh[shipIdx.ProgressTracker.Status]}{" "}
@@ -179,19 +182,19 @@ const SimpleInfo = ({
           <div className="small-logo"></div>
           <div className="small-texts">
             GrakePCH 设计 &nbsp;&nbsp;|&nbsp;&nbsp; CxJuice 与 XK_14
-            提供技术支持
+            提供技术支持 &nbsp;&nbsp;|&nbsp;&nbsp; Image Source: STARJUMP
           </div>
         </div>
       </div>
       {shipHardpts ? (
         <div className="SimpleInfo-contents">
           <div className="SimpleGrid">
-            <SimpleComponent
+            <SimpleComponentEditable
               type="电源"
               icon="PowerPlants"
               itemObj={shipHardpts.Hardpoints.Components.Propulsion.PowerPlants}
             />
-            <SimpleComponent
+            <SimpleComponentEditable
               type="护盾"
               icon={
                 shipHardpts.Hardpoints.Components.Systems.Shields.FaceType
@@ -201,12 +204,12 @@ const SimpleInfo = ({
               }
               itemObj={shipHardpts.Hardpoints.Components.Systems.Shields}
             />
-            <SimpleComponent
+            <SimpleComponentEditable
               type="冷却器"
               icon="Coolers"
               itemObj={shipHardpts.Hardpoints.Components.Systems.Coolers}
             />
-            <SimpleComponent
+            <SimpleComponentEditable
               type="量子引擎"
               icon="QuantumDrives"
               itemObj={
@@ -490,13 +493,13 @@ const SimpleInfo = ({
               weaponGroupObj={{
                 InstalledItems: shipDataRSI.compiled.RSIWeapon.weapons.map(
                   (item) => ({
-                    Name: item.name,
-                    Size: item.size,
+                    BaseLoadout: { Name: item.name },
+                    MaxSize: item.size,
                     _Quantity: item.mounts,
-                    SubWeapons: [
+                    Ports: [
                       {
-                        Name: item.details,
-                        Size: item.component_size,
+                        BaseLoadout: { Name: item.details },
+                        MaxSize: item.component_size,
                         _Quantity: item.quantity,
                       },
                     ],
@@ -510,13 +513,13 @@ const SimpleInfo = ({
               weaponGroupObj={{
                 InstalledItems: shipDataRSI.compiled.RSIWeapon.turrets.map(
                   (item) => ({
-                    Name: item.name,
-                    Size: item.size,
+                    BaseLoadout: { Name: item.name },
+                    MaxSize: item.size,
                     _Quantity: item.mounts,
-                    SubWeapons: [
+                    Ports: [
                       {
-                        Name: item.details,
-                        Size: item.component_size,
+                        BaseLoadout: { Name: item.details },
+                        MaxSize: item.component_size,
                         _Quantity: item.quantity,
                       },
                     ],
@@ -530,13 +533,13 @@ const SimpleInfo = ({
               weaponGroupObj={{
                 InstalledItems: shipDataRSI.compiled.RSIWeapon.missiles.map(
                   (item) => ({
-                    Name: item.name,
-                    Size: item.size,
+                    BaseLoadout: { Name: item.name },
+                    MaxSize: item.size,
                     _Quantity: item.mounts,
-                    Missiles: [
+                    Ports: [
                       {
-                        Name: item.details,
-                        Size: item.component_size,
+                        BaseLoadout: { Name: item.details },
+                        MaxSize: item.component_size,
                         _Quantity: item.quantity,
                       },
                     ],
@@ -550,13 +553,13 @@ const SimpleInfo = ({
               weaponGroupObj={{
                 InstalledItems:
                   shipDataRSI.compiled.RSIWeapon.utility_items.map((item) => ({
-                    Name: item.name,
-                    Size: item.size,
+                    BaseLoadout: { Name: item.name },
+                    MaxSize: item.size,
                     _Quantity: item.mounts,
-                    SubWeapons: [
+                    Ports: [
                       {
-                        Name: item.details,
-                        Size: item.component_size,
+                        BaseLoadout: { Name: item.details },
+                        MaxSize: item.component_size,
                         _Quantity: item.quantity,
                       },
                     ],
