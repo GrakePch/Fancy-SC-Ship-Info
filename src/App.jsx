@@ -4,6 +4,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainInfo from "./MainInfo";
 import QT from "./QT";
 import Docker from "./components/Docker/Docker";
+import IndexComponents from "./components/IndexComponents/IndexComponents";
 import LangContext from "./contexts/LangContext";
 import Prices from "./pages/Prices/Prices";
 
@@ -23,6 +24,10 @@ function App() {
         {
           path: "/",
           element: <MainInfo />,
+        },
+        {
+          path: "/c",
+          element: <IndexComponents />,
         },
         {
           path: "/QT",

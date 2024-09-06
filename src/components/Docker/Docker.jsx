@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 import { mdiGithub, mdiViewGridOutline } from "@mdi/js";
 import Icon from "@mdi/react";
@@ -13,6 +13,7 @@ import "./Docker.css";
 function Docker() {
   const [lang, setLang] = useContext(LangContext);
   const [searchParams, setSearchParams] = useSearchParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     setLang(searchParams.get("lang"));
@@ -82,12 +83,13 @@ function Docker() {
       <span className="Docker-tooltip">
         <button
           className="Docker-btns"
-          onClick={() =>
+          onClick={() => {
+            navigate("/");
             setSearchParams((prev) => {
               prev.delete("s");
               return prev;
-            })
-          }
+            });
+          }}
         >
           {icons.nav_ships_info}
         </button>
@@ -96,7 +98,12 @@ function Docker() {
         </p>
       </span>
       <span className="Docker-tooltip">
-        <button className="Docker-btns">
+        <button
+          className="Docker-btns"
+          onClick={() => {
+            navigate("/c");
+          }}
+        >
           <Icon path={mdiViewGridOutline} size={1} />
         </button>
         <p>

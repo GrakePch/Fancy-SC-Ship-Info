@@ -1,0 +1,23 @@
+.container-component-info {
+    background-color: var(--color-bg-light);
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+}
+
+.component-header {
+    display: flex;
+    flex-direction: row;
+    gap: .25rem;
+    align-items: center;
+}
+
+.component-class-grade {
+    padding: 0 .5em;
+    border-radius: 10rem;
+    font-weight: 500;
+}
+
+.component-size-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
