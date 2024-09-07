@@ -81,8 +81,8 @@ const IndexComponents = () => {
           .sort(
             (a, b) =>
               a.size - b.size ||
-              (classOrder[a.stdItem.Class] || 999) -
-                (classOrder[b.stdItem.Class] || 999) ||
+              (classOrder[a.stdItem.Class?.trim()] || 999) -
+                (classOrder[b.stdItem.Class?.trim()] || 999) ||
               a.stdItem.Grade - b.stdItem.Grade ||
               a.stdItem.Name.localeCompare(b.stdItem.Name),
           )

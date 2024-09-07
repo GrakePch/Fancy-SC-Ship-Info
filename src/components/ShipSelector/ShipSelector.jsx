@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { mdiFilter, mdiMagnify, mdiVanUtility } from "@mdi/js";
 import Icon from "@mdi/react";
@@ -25,7 +26,7 @@ const specialFileName = {
 };
 
 /* eslint-disable react/prop-types */
-function ShipSelector({ shipIndex, dictShipZhName, setSearchParams }) {
+function ShipSelector({ shipIndex, dictShipZhName }) {
   const [manufacturerList, setManufacturerList] = useState([]);
   const [filterDrawerOn, setFilterDrawerOn] = useState(false);
   const [filterForManu, setFilterForManu] = useState(null);
@@ -37,6 +38,7 @@ function ShipSelector({ shipIndex, dictShipZhName, setSearchParams }) {
   const [filterForReleased, setFilterForReleased] = useState(false);
   const lang = useContext(LangContext)[0];
   const [searchField, setSearchField] = useState("");
+  const navigate = useNavigate();
 
   const isFilterActive =
     filterForManu ||
@@ -227,12 +229,7 @@ function ShipSelector({ shipIndex, dictShipZhName, setSearchParams }) {
             {processedShipIndex.map((item, idx) => (
               <div
                 key={item.ClassName + idx}
-                onClick={() => {
-                  setSearchParams((prev) => {
-                    prev.set("s", item.ClassName);
-                    return prev;
-                  });
-                }}
+                onClick={() => navigate("/" + item.ClassName)}
               >
                 <ShipSelectCard
                   shipName={

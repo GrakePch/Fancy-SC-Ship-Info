@@ -26,6 +26,10 @@ function App() {
           element: <MainInfo />,
         },
         {
+          path: "/:shipId",
+          element: <MainInfo />,
+        },
+        {
           path: "/c",
           element: <IndexComponents />,
         },

@@ -81,16 +81,7 @@ function Docker() {
   return (
     <div className="Docker-container">
       <span className="Docker-tooltip">
-        <button
-          className="Docker-btns"
-          onClick={() => {
-            navigate("/");
-            setSearchParams((prev) => {
-              prev.delete("s");
-              return prev;
-            });
-          }}
-        >
+        <button className="Docker-btns" onClick={() => navigate("/")}>
           {icons.nav_ships_info}
         </button>
         <p>

@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 
 import axios from "axios";
 
@@ -30,7 +30,7 @@ function MainInfo() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [lang, setLang] = useContext(LangContext);
 
-  const [shipId, setShipId] = useState(null);
+  const { shipId } = useParams();
 
   const [shipIdx, setShipIdx] = useState(null);
   const [shipObj, setShipObj] = useState(null);
@@ -69,11 +69,9 @@ function MainInfo() {
   const [shipComponentQDrive, setShipComponentQDrive] = useState(null);
 
   useEffect(() => {
-    setShipId(searchParams.get("s"));
-
     for (let i = 0; i < shipIndex.length; ++i)
       shipIndex[i].NameShort = shipIndex[i].Name.split(" ").slice(1).join(" ");
-  }, [searchParams]);
+  }, [shipId]);
 
   useEffect(() => {
     let tempShipIdx = null;
