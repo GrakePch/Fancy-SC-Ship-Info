@@ -16,7 +16,7 @@ import "./Docker.css";
 
 function Docker() {
   const lang = localStorage.getItem("lang");
-  const theme = localStorage.getItem("theme");
+  const theme = localStorage.getItem("theme") !== "light" ? "dark" : "light";
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
 
