@@ -61,7 +61,7 @@ const ListQuantumDrives = ({
 
   return (
     <div className="QT-drive-range-container">
-      <div className="unit">
+      <div className="unit font-slim">
         <p>
           <I18n text="StandardSpoolTime" />
         </p>

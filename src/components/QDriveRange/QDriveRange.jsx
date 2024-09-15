@@ -49,9 +49,11 @@ const QDriveRange = ({
           String.fromCharCode(64 + QDrive.stdItem.Grade)}
       </p>
       <p className="name">
-        {component_zh_name[QDrive.stdItem.Name] ||
-          component_zh_name[QDrive.stdItem.Name?.toLowerCase()] ||
-          QDrive.stdItem.Name}
+        {lang === "zh"
+          ? component_zh_name[QDrive.stdItem.Name] ||
+            component_zh_name[QDrive.stdItem.Name?.toLowerCase()] ||
+            QDrive.stdItem.Name
+          : QDrive.stdItem.Name}
       </p>
       <p className="value">
         {QDrive.stdItem.QuantumDrive.StandardJump.SpoolUpTime.toFixed(0)} s

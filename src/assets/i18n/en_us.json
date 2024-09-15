@@ -78,6 +78,12 @@
     "QTRangeCRU2HUR": "CRU ↔ HUR: ",
     "QTRangeCRU2MIC": "CRU ↔ MIC: ",
     "QTRangeJPS2M2JPS2T": "JP Stanton-Magnus ↔ JP Stanton-Terra: ",
+        
+    "Long-QTRangeCRU2HUR": "Crusader ↔ Hurston",
+    "Long-QTRangeCRU2MIC": "Crusader ↔ microTech",
+    "Long-QTRangeJPS2M2JPS2T": "Jump Point Stanton-Magnus ↔ Jump Point Stanton-Terra",
+
+    "TimeFromCru2Hur": "Time CRU→HUR",
 
     "SpoolTime":      "Mode Toggling Spool Time",
     "NavMaxSpeed":    "NAV Max Speed",
