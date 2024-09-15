@@ -9,28 +9,13 @@ import manufacturers_small from "./assets/manufacturers_small";
 import ship_pics_and_zh_name from "./assets/ship_pics_and_zh_name.json";
 import themes from "./assets/themes";
 import I18n from "./components/I18n";
-import POIDistance from "./components/QDriveRange/POIDistance";
-import QDriveRange from "./components/QDriveRange/QDriveRange";
+import ListQuantumDrives from "./components/ListQuantumDrives/ListQuantumDrives";
 import ShipSelector from "./components/ShipSelector/ShipSelector";
 import SimpleComponent from "./components/SimpleComponent/SimpleComponent";
 import LangContext from "./contexts/LangContext";
 import shipIndex from "./data/index-min.json";
 import shipHardpoints from "./data/ship-hardpoints-min.json";
 import shipList from "./data/ship-list-min.json";
-import euclideanDistance from "./utils/euclideanDistance";
-import getQDriveAtSize from "./utils/getQDriveAtSize";
-
-const posPLCrusader = [-18962176.0, -2664960.0, 0.0];
-const posPLHurston = [12850457.093, 0.0, 0.0];
-const posPLmicroTech = [22462085.252, 37185744.965, 0.0];
-const posJPStantonToMagnus = [-62284273.861, 23467618.051, 20198396.608];
-const posJPStantonToTerra = [51118221.617, -5269981.303, -4339551.619];
-
-/* Distance Unit: Gm */
-const disCRU_HUR = euclideanDistance(posPLCrusader, posPLHurston) / 1e6;
-const disCRU_MIC = euclideanDistance(posPLCrusader, posPLmicroTech) / 1e6;
-const disJPS2M_JPS2T =
-  euclideanDistance(posJPStantonToMagnus, posJPStantonToTerra) / 1e6;
 
 const QT = ({}) => {
   const [lang, setLang] = useContext(LangContext);
@@ -46,8 +31,6 @@ const QT = ({}) => {
   const [shipHardpts, setShipHardpts] = useState(null);
 
   const [shipQDriveSize, setShipQDriveSize] = useState(-1);
-
-  const [listQDrive, setListQDrive] = useState([]);
 
   useEffect(() => {
     // if (!searchParams) return;
@@ -178,7 +161,7 @@ const QT = ({}) => {
           tempShipQDriveSize =
             tempShipHardpts.Hardpoints?.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
               0,
-            )?.Size;
+            )?.MaxSize;
         }
       }
     }
@@ -187,39 +170,6 @@ const QT = ({}) => {
     setShipObj(tempShipObj);
     setShipHardpts(tempShipHardpts);
     setShipQDriveSize(tempShipQDriveSize);
-
-    let _tempRankQDriveRange = [];
-    getQDriveAtSize(tempShipQDriveSize).forEach((item) => {
-      _tempRankQDriveRange.push({
-        type: "QDrive",
-        range:
-          tempShipObj?.FuelManagement?.QuantumFuelCapacity /
-          item.stdItem.QuantumDrive.FuelRate /
-          1e9,
-        item: item,
-      });
-    });
-    _tempRankQDriveRange.reverse();
-    _tempRankQDriveRange = _tempRankQDriveRange.concat([
-      {
-        type: "distance",
-        range: disCRU_HUR,
-        name: "QTRangeCRU2HUR",
-      },
-      {
-        type: "distance",
-        range: disCRU_MIC,
-        name: "QTRangeCRU2MIC",
-      },
-      {
-        type: "distance",
-        range: disJPS2M_JPS2T,
-        name: "QTRangeJPS2M2JPS2T",
-      },
-    ]);
-
-    _tempRankQDriveRange.sort((a, b) => a.range - b.range);
-    setListQDrive(_tempRankQDriveRange);
   }, [shipId, shipIdx]);
 
   return shipIdx == null ? (
@@ -284,45 +234,16 @@ const QT = ({}) => {
       </div>
       {shipObj ? (
         shipObj?.FuelManagement?.QuantumFuelCapacity ? (
-          <div className="QT-drive-range-container">
-            <div className="unit">
-              <p>
-                <I18n text="StandardSpoolTime" />
-              </p>
-              <p>
-                <I18n text="StandardCooldownTimeMax" />
-              </p>
-              <p>
-                <I18n text="TimeFromCru2Hur" />
-              </p>
-              <p>
-                <I18n text="QTRangeMax" />
-              </p>
-            </div>
-            {listQDrive.map((item) =>
-              item.type == "QDrive" ? (
-                <QDriveRange
-                  QDrive={item.item}
-                  key={item.item.className}
-                  maxRange={listQDrive?.at(listQDrive.length - 1).range}
-                  QTRange={item.range}
-                  isDefault={
-                    item.item.stdItem.Name ==
-                    shipHardpts.Hardpoints.Components.Propulsion.QuantumDrives.InstalledItems.at(
-                      0,
-                    ).Name
-                  }
-                />
-              ) : (
-                <POIDistance
-                  name={item.name}
-                  maxRange={listQDrive?.at(listQDrive.length - 1).range}
-                  range={item.range}
-                  key={item.name}
-                />
-              ),
-            )}
-          </div>
+          <ListQuantumDrives
+            minSize={shipQDriveSize}
+            maxSize={shipQDriveSize}
+            defaultQDClassName={
+              shipHardpts?.Hardpoints?.Components?.Propulsion?.QuantumDrives?.InstalledItems?.at(
+                0,
+              ).BaseLoadout.ClassName
+            }
+            QTFuel={shipObj?.FuelManagement?.QuantumFuelCapacity}
+          />
         ) : (
           <div className="SimpleInfo-nodata" style={{ marginTop: "1rem" }}>
             <img className="bg" src={cross} width="100%" height="100%" />

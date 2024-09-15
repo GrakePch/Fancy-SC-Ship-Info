@@ -6,6 +6,7 @@ import { mdiLock } from "@mdi/js";
 import Icon from "@mdi/react";
 
 import "./SimpleInfo.css";
+import RSISizeToNumber from "./assets/RSISizeToNumber";
 import component_zh_name from "./assets/component_zh_name.json";
 import cross from "./assets/cross.png";
 import icons from "./assets/icons";
@@ -27,14 +28,6 @@ import shipItems from "./data/ship-items-min.json";
 const checkObjNotEmpty = (obj) => {
   if (obj == null) return false;
   return Object.keys(obj).length !== 0;
-};
-
-const RSISizeToNumber = {
-  V: 0,
-  S: 1,
-  M: 2,
-  L: 3,
-  C: 4,
 };
 
 const SimpleInfo = ({

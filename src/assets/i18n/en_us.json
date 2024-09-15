@@ -19,6 +19,14 @@
     "Short-Physical": "PHYSC",
     "Short-Distortion": "DSTRT",
     "Short-Mixed": "MIXED",
+
+    "content-nav-components": "Components",
+    "content-nav-payloads": "Payloads",
+    "content-nav-propulsion": "Propulsion",
+    "content-nav-quantum-travel": "Quantum Travel",
+    "content-nav-weapons": "Weapons",
+    "content-nav-defence-systems": "Defence Systems",
+    "content-nav-others": "Others",
     
     "Basic": "Basic",
     "Payloads": "Payloads",

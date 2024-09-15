@@ -65,35 +65,3 @@
     width: 2rem;
     height: 2rem;
 }
-
-.QT-drive-range-container {
-    margin-top: .5rem;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-
-.QT-drive-range-container>.unit {
-    display: flex;
-    gap: .5rem;
-    justify-content: end;
-    padding: 0 1rem;
-    color: var(--color-text);
-    text-align: right;
-}
-
-.QT-drive-range-container>.unit>p:nth-child(1) {
-    width: 6rem;
-}
-
-.QT-drive-range-container>.unit>p:nth-child(2) {
-    width: 6rem;
-}
-
-.QT-drive-range-container>.unit>p:nth-child(3) {
-    width: 6rem;
-}
-
-.QT-drive-range-container>.unit>p:nth-child(4) {
-    width: 7rem;
-}

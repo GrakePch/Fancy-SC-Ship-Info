@@ -1,23 +1,9 @@
 /* eslint-disable react/prop-types */
+import classToColor from "../../assets/classToColor";
+import classToShort from "../../assets/classToShort";
 import icons from "../../assets/icons";
 import I18nPure from "../I18nPure";
 import "./ComponentGeneral.css";
-
-const classToShort = {
-  Military: "MLT",
-  Stealth: "STL",
-  Civilian: "CVL",
-  Industrial: "IND",
-  Competition: "CPT",
-};
-
-const classToColor = {
-  Military: "#367d39",
-  Stealth: "#439193",
-  Civilian: "#c1af3e",
-  Industrial: "#a86834",
-  Competition: "#a83434",
-};
 
 const ComponentGeneral = ({ item }) => {
   return (

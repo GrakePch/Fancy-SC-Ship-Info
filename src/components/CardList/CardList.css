@@ -1,6 +1,6 @@
 .card-list {
     position: relative;
-    background-color: var(--color-primary-bg);
+    background-color: var(--color-bg-light);
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
     font-weight: 500;
     margin-left: .5rem;
     text-transform: uppercase;
-    color: var(--color-primary-sat)
+    color: var(--color-text)
 }
 
 .card-list-item {
@@ -29,7 +29,7 @@
 .card-list-item>div {
     width: 1.5rem;
     height: 1.5rem;
-    fill: var(--color-primary-text);
+    fill: var(--color-text);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +43,7 @@
 .card-list-item:not(:last-child) {
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: var(--color-primary-dimmer);
+    border-bottom-color: var(--color-bg-lighter);
 }
 
 .card-list-item>p:last-child {

@@ -11,12 +11,13 @@ import manufacturers_small from "./assets/manufacturers_small";
 import ship_pics_and_zh_name from "./assets/ship_pics_and_zh_name.json";
 import statusToHue from "./assets/statusToHue";
 import CardList from "./components/CardList/CardList";
-import ComponentGroup from "./components/ComponentGroup/ComponentGroup";
 import Components from "./components/Components/Components";
 import FlightAccelerations from "./components/FlightAccelerations/FlightAccelerations";
 import FlightCharacteristics from "./components/FlightCharacteristics/FlightCharacteristics";
 import I18n from "./components/I18n";
 import I18nPure from "./components/I18nPure";
+import PanelComponents from "./components/PanelComponents/PanelComponents";
+import PanelQuantumTravel from "./components/PanelQuantumTravel/PanelQuantumTravel";
 import QuantumTravel from "./components/QuantumTravel/QuantumTravel";
 import ShipSelector from "./components/ShipSelector/ShipSelector";
 import LangContext from "./contexts/LangContext";
@@ -25,6 +26,16 @@ import shipHardpoints from "./data/ship-hardpoints-min.json";
 import shipItems from "./data/ship-items-min.json";
 import shipList from "./data/ship-list-min.json";
 import shipDataRSIJson from "./data/ship_data_rsi.json";
+
+const tabs = [
+  "components",
+  "payloads",
+  "propulsion",
+  "quantum-travel",
+  "weapons",
+  "defence-systems",
+  "others",
+];
 
 function MainInfo() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -35,7 +46,7 @@ function MainInfo() {
   const [shipIdx, setShipIdx] = useState(null);
   const [shipObj, setShipObj] = useState(null);
   const [shipHardpts, setShipHardpts] = useState(null);
-  const [shipData, setShipData] = useState(null);
+  const [shipDataWiki, setShipDataWiki] = useState(null);
   const [shipDataRSI, setShipDataRSI] = useState(null);
 
   const [speedMax, setSpeedMax] = useState(0);
@@ -49,24 +60,17 @@ function MainInfo() {
   const [accelUwdMax, setAccelUwdMax] = useState(0);
   const [accelDwdMax, setAccelDwdMax] = useState(0);
 
-  const [showingComponentDetail, setShowingComponentDetail] = useState(null);
-
   const [dictShipZhName, setDictShipZhName] = useState({});
   const [dictShipImgIso, setDictShipImgIso] = useState({});
 
-  const [listPilotWeapons, setListPilotWeapons] = useState([]);
-  const [listTurretGuns, setListTurretGuns] = useState([]);
-  const [listMissileRacks, setListMissileRacks] = useState([]);
-  const [listShields, setListShields] = useState([]);
-  const [listPowerPlants, setListPowerPlants] = useState([]);
-  const [listCoolers, setListCoolers] = useState([]);
-  const [listQuantumDrives, setListQuantumDrives] = useState([]);
   const [totalDecoyAmmo, setTotalDecoyAmmo] = useState(0);
   const [totalNoiseAmmo, setTotalNoiseAmmo] = useState(0);
   const [totalDecoyItemNum, setTotalDecoyItemNum] = useState(0);
   const [totalNoiseItemNum, setTotalNoiseItemNum] = useState(0);
 
   const [shipComponentQDrive, setShipComponentQDrive] = useState(null);
+
+  const [contentNavTab, setContentNavTab] = useState("");
 
   useEffect(() => {
     for (let i = 0; i < shipIndex.length; ++i)
@@ -190,66 +194,11 @@ function MainInfo() {
     if (!shipHardpts) return;
     let temp = [];
 
-    shipHardpts.Hardpoints.Weapons.PilotWeapons?.InstalledItems?.forEach(
-      (item) => {
-        temp.push(item);
-      },
-    );
-    setListPilotWeapons(temp);
-
-    temp = [];
-
-    shipHardpts.Hardpoints.Weapons.MannedTurrets?.InstalledItems?.forEach(
-      (item) => {
-        item?.SubWeapons?.forEach((subItem) => temp.push(subItem));
-      },
-    );
-    shipHardpts.Hardpoints.Weapons.RemoteTurrets?.InstalledItems?.forEach(
-      (item) => {
-        item?.SubWeapons?.forEach((subItem) => temp.push(subItem));
-      },
-    );
-    setListTurretGuns(temp);
-
-    temp = [];
-    shipHardpts.Hardpoints.Weapons.MissileRacks?.InstalledItems?.forEach(
-      (item) => {
-        temp.push(item);
-      },
-    );
-    setListMissileRacks(temp);
-
-    temp = [];
-    shipHardpts.Hardpoints.Components.Systems?.Shields?.InstalledItems?.forEach(
-      (item) => {
-        temp.push(item);
-      },
-    );
-    setListShields(temp);
-
-    temp = [];
-    shipHardpts.Hardpoints.Components.Propulsion?.PowerPlants?.InstalledItems?.forEach(
-      (item) => {
-        temp.push(item);
-      },
-    );
-    setListPowerPlants(temp);
-
-    temp = [];
-    shipHardpts.Hardpoints.Components.Systems?.Coolers?.InstalledItems?.forEach(
-      (item) => {
-        temp.push(item);
-      },
-    );
-    setListCoolers(temp);
-
-    temp = [];
     shipHardpts.Hardpoints.Components.Propulsion?.QuantumDrives?.InstalledItems?.forEach(
       (item) => {
         temp.push(item);
       },
     );
-    setListQuantumDrives(temp);
 
     let QDriveTemp = null;
     if (temp && temp.length > 0) {
@@ -302,7 +251,7 @@ function MainInfo() {
 
   useEffect(() => {
     if (shipId == null) {
-      setShipData(null);
+      setShipDataWiki(null);
       return;
     }
     let shipName = shipId.substring(shipId.indexOf("_") + 1);
@@ -335,14 +284,18 @@ function MainInfo() {
         },
       })
       .then(function (response) {
-        setShipData(response.data.data);
+        setShipDataWiki(response.data.data);
       })
       .catch(function (_error) {
-        setShipData(null);
+        setShipDataWiki(null);
       });
 
     // console.log(shipName.toLowerCase());
     // console.log(shipDataRSIJson[shipName.toLowerCase()]);
+    if (shipName == "Ballista") {
+      shipName = "Ballista_";
+    }
+
     setShipDataRSI(shipDataRSIJson[shipName.toLowerCase()]);
   }, [shipId, lang]);
 
@@ -360,7 +313,7 @@ function MainInfo() {
           shipIdx={shipIdx}
           shipObj={shipObj}
           shipHardpts={shipHardpts}
-          shipData={shipData}
+          shipData={shipDataWiki}
           shipDataRSI={shipDataRSI}
           dictShipZhName={dictShipZhName}
           dictShipImgIso={dictShipImgIso}
@@ -454,182 +407,42 @@ function MainInfo() {
                   </a>
                 </p>
               </div>
+              <div className="container-content-navigation">
+                {tabs.map((tabTitle) =>
+                  shipIdx.Type !== "Ship" &&
+                  tabTitle === "quantum-travel" ? null : (
+                    <div
+                      key={tabTitle}
+                      className={contentNavTab === tabTitle ? "active" : ""}
+                      onClick={() =>
+                        setContentNavTab((prev) =>
+                          prev == tabTitle ? "" : tabTitle,
+                        )
+                      }
+                    >
+                      <I18n text={"content-nav-" + tabTitle} />
+                    </div>
+                  ),
+                )}
+              </div>
+              {contentNavTab === "components" && (
+                <PanelComponents
+                  shipHardpts={shipHardpts}
+                  shipDataRSI={shipDataRSI}
+                  hideQuantumDrives={shipIdx.Type !== "Ship"}
+                />
+              )}
+              {shipIdx.Type === "Ship" &&
+                contentNavTab === "quantum-travel" && (
+                  <PanelQuantumTravel
+                    shipHardpts={shipHardpts}
+                    shipDataRSI={shipDataRSI}
+                  />
+                )}
             </>
           )}
-          {shipIdx && shipHardpts && (
-            <div className="component-sizes-wrapper">
-              <div className="component-sizes-btn-wrapper">
-                <ComponentGroup
-                  title="PilotWeaponHardpoints"
-                  icon="Weapons"
-                  defList={listPilotWeapons}
-                  isSpan2
-                  isActive={showingComponentDetail === "Weapons"}
-                  funcOnClick={() => {
-                    setShowingComponentDetail((s) =>
-                      s === "Weapons" ? null : "Weapons",
-                    );
-                  }}
-                />
-                <ComponentGroup
-                  title="TurretWeaponHardpoints"
-                  icon="Turrets"
-                  defList={listTurretGuns}
-                  isSpan2
-                  isActive={showingComponentDetail === "Turrets"}
-                  funcOnClick={() => {
-                    setShowingComponentDetail((s) =>
-                      s === "Turrets" ? null : "Turrets",
-                    );
-                  }}
-                />
-                <ComponentGroup
-                  title="MissileRacks"
-                  icon="Missiles"
-                  defList={listMissileRacks}
-                  isActive={showingComponentDetail === "Missiles"}
-                  funcOnClick={() => {
-                    setShowingComponentDetail((s) =>
-                      s === "Missiles" ? null : "Missiles",
-                    );
-                  }}
-                />
-                <ComponentGroup
-                  title="Shields"
-                  icon={
-                    shipHardpts.Hardpoints.Components.Systems.Shields.FaceType
-                      ? "ShieldType" +
-                        shipHardpts.Hardpoints.Components.Systems.Shields
-                          .FaceType
-                      : "Shields"
-                  }
-                  defList={listShields}
-                  isActive={showingComponentDetail === "Shields"}
-                  funcOnClick={() => {
-                    setShowingComponentDetail((s) =>
-                      s === "Shields" ? null : "Shields",
-                    );
-                  }}
-                />
-                <ComponentGroup
-                  title="PowerPlants"
-                  icon="PowerPlants"
-                  defList={listPowerPlants}
-                  isActive={showingComponentDetail === "PowerPlants"}
-                  funcOnClick={() => {
-                    setShowingComponentDetail((s) =>
-                      s === "PowerPlants" ? null : "PowerPlants",
-                    );
-                  }}
-                />
-                <ComponentGroup
-                  title="Coolers"
-                  icon="Coolers"
-                  defList={listCoolers}
-                  isActive={showingComponentDetail === "Coolers"}
-                  funcOnClick={() => {
-                    setShowingComponentDetail((s) =>
-                      s === "Coolers" ? null : "Coolers",
-                    );
-                  }}
-                />
-                <ComponentGroup
-                  title="CompTitle-QuantumDrives"
-                  icon="QuantumDrives"
-                  defList={listQuantumDrives}
-                  isActive={showingComponentDetail === "QuantumDrives"}
-                  funcOnClick={() => {
-                    setShowingComponentDetail((s) =>
-                      s === "QuantumDrives" ? null : "QuantumDrives",
-                    );
-                  }}
-                />
-                <div
-                  style={{
-                    borderRadius: "1rem",
-                    backgroundImage: `url(${bg_line})`,
-                    backgroundSize: "1.5rem",
-                    backgroundPosition: "center",
-                    gridColumn: "span 2",
-                    opacity: 0.15,
-                  }}
-                ></div>
-              </div>
-              <div
-                className="component-detail-wrapper-wrapper"
-                style={{
-                  height: showingComponentDetail ? "11.5rem" : 0,
-                }}
-              >
-                <div className="component-detail-wrapper">
-                  {showingComponentDetail === "Turrets" ? (
-                    <Components
-                      title="CompTitle-TurretWeapons"
-                      icon="Turrets"
-                      type="Weapons"
-                      defaultCompGroupObj={{
-                        InstalledItems: listTurretGuns,
-                      }}
-                    />
-                  ) : showingComponentDetail === "Weapons" ? (
-                    <Components
-                      title="CompTitle-PilotWeapons"
-                      icon="Weapons"
-                      type="Weapons"
-                      defaultCompGroupObj={
-                        shipHardpts?.Hardpoints?.Weapons?.PilotWeapons
-                      }
-                    />
-                  ) : showingComponentDetail === "Missiles" ? (
-                    <Components
-                      title="CompTitle-MissileRacks"
-                      icon="Missiles"
-                      type="MissileRacks"
-                      defaultCompGroupObj={
-                        shipHardpts?.Hardpoints?.Weapons?.MissileRacks
-                      }
-                    />
-                  ) : showingComponentDetail === "Shields" ? (
-                    <Components
-                      title="CompTitle-Shields"
-                      icon="Shields"
-                      defaultCompGroupObj={
-                        shipHardpts?.Hardpoints?.Components?.Systems?.Shields
-                      }
-                    />
-                  ) : showingComponentDetail === "QuantumDrives" ? (
-                    <Components
-                      title="CompTitle-QuantumDrives"
-                      icon="QuantumDrives"
-                      col="1"
-                      defaultCompGroupObj={
-                        shipHardpts?.Hardpoints?.Components?.Propulsion
-                          ?.QuantumDrives
-                      }
-                    />
-                  ) : showingComponentDetail === "PowerPlants" ? (
-                    <Components
-                      title="CompTitle-PowerPlants"
-                      icon="PowerPlants"
-                      defaultCompGroupObj={
-                        shipHardpts?.Hardpoints?.Components?.Propulsion
-                          ?.PowerPlants
-                      }
-                    />
-                  ) : showingComponentDetail === "Coolers" ? (
-                    <Components
-                      title="CompTitle-Coolers"
-                      icon="Coolers"
-                      defaultCompGroupObj={
-                        shipHardpts?.Hardpoints?.Components?.Systems?.Coolers
-                      }
-                    />
-                  ) : null}
-                </div>
-              </div>
-            </div>
-          )}
-          {shipObj && (
+
+          {shipObj && contentNavTab === "" && (
             <>
               <div className="grid3">
                 <CardList

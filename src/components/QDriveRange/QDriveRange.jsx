@@ -4,6 +4,7 @@ import classToColor from "../../assets/classToColor";
 import classToShort from "../../assets/classToShort";
 import component_zh_name from "../../assets/component_zh_name.json";
 import icons from "../../assets/icons";
+import sizeToColor from "../../assets/sizeToColor";
 import LangContext from "../../contexts/LangContext";
 import euclideanDistance from "../../utils/euclideanDistance";
 import qtTime from "../../utils/qtTimeCalculator";
@@ -24,14 +25,16 @@ const QDriveRange = ({
   isDefault = false,
 }) => {
   const lang = useContext(LangContext)[0];
-  const rangeColor = "hsla(var(--hue), 90%, 50%, 15%)";
+  const rangeColor = "hsla(210, 90%, 50%, 15%)";
 
   return (
     <div
       className="QDriveRange-container"
       style={{
         background: `linear-gradient(to right, ${rangeColor}, ${rangeColor} ${(QTRange / maxRange) * 100}%, var(--color-bg-light) ${(QTRange / maxRange) * 100}%)`,
-        outline: isDefault ? "2px solid var(--color-primary-sat)" : null,
+        outline: isDefault
+          ? `2px solid ${sizeToColor[QDrive.stdItem.Size]}`
+          : null,
       }}
     >
       {icons["s" + QDrive.stdItem.Size]}

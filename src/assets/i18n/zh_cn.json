@@ -71,6 +71,14 @@
     "Short-Distortion": "畸变",
     "Short-Mixed": "混合",
 
+    "content-nav-components": "组件",
+    "content-nav-payloads": "载荷",
+    "content-nav-propulsion": "推进",
+    "content-nav-quantum-travel": "量子航行",
+    "content-nav-weapons": "武器",
+    "content-nav-defence-systems": "防御系统",
+    "content-nav-others": "其它",
+
     "Basic": "基本",
     "Payloads": "载荷",
     "ComponentSizes": "组件尺寸",

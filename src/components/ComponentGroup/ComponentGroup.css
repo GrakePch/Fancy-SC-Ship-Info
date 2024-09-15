@@ -1,53 +1,76 @@
-.btn-component-group {
+.panel-components-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.panel-components-group-icon-title {
+    align-self: start;
     display: flex;
     flex-direction: column;
-    gap: .25rem;
     align-items: center;
-    height: calc(.875rem * 1.5 + 2rem + 1.5rem + .25rem * 2 + .5rem * 2);
-    background-color: #ffffff10;
-    border-radius: 1rem;
-    padding: .5rem;
-    font-family: var(--font-geom);
-    grid-column: span 2;
-    color: var(--color-text);
-    transition: background-color .15s;
-    cursor: pointer;
-    user-select: none;
+    width: 6rem;
+    text-align: center;
+    gap: .5rem;
+    padding-top: 1rem;
+    line-height: 100%;
 }
 
-.btn-component-group>* {
-    flex-shrink: 0;
-}
-
-.btn-component-group:hover {
-    background-color: #ffffff20;
-}
-
-.btn-component-group:active {
-    background-color: #ffffff30;
-}
-
-.btn-component-group.isActive {
-    background-color: var(--color-text);
-    color: var(--color-bg);
-    font-weight: 600;
-}
-
-.btn-component-group>p:first-child {
-    font-size: .875rem;
-}
-
-.btn-component-group>svg {
-    fill: var(--color-text);
+.panel-components-group-icon-title>svg {
     width: 2rem;
     height: 2rem;
+    fill: var(--color-text);
 }
 
-.btn-component-group.isActive>svg {
-    fill: var(--color-bg);
+.panel-components-group-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    flex-grow: 1;
 }
 
-.hardpoint-sizes {
+.panel-components-group-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--color-bg-lighter);
+    box-shadow:
+        var(--acrylic-edge),
+        var(--shadow-1);
+    overflow: hidden;
+}
+
+.panel-components-group-item>.icon-wrapper {
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 0;
+    padding: calc(.125rem - 2px) calc(.125rem - 2px) .125rem .125rem;
+    border-bottom-left-radius: .75rem;
+}
+
+.panel-components-group-item>.icon-wrapper>svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.panel-components-group-item-name-size {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.panel-components-group-item-name-size>p {
+    font-size: 1.25rem;
+}
+
+
+.panel-components-group-item-grade {
+    align-self: end;
     font-family: var(--font-slim);
-    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+    padding: 0 .5em;
+    border-radius: 10rem;
 }

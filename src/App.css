@@ -11,6 +11,7 @@
 
 .title-card {
   background-color: var(--color-primary-bg);
+  color: var(--color-primary-text);
   padding: 2rem;
   border-radius: 2rem;
   display: flex;
@@ -136,44 +137,38 @@
   line-height: 100%;
 }
 
-.component-sizes-wrapper {}
-
-.component-sizes-btn-wrapper {
-  display: grid;
-  grid-template-columns: repeat(18, 1fr);
-  gap: 1rem;
+.container-content-navigation {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
 }
 
-.component-detail-wrapper-wrapper {
+.container-content-navigation>div {
+  background-color: var(--color-bg-light);
+  color: var(--color-text);
+  padding: .25rem .5rem;
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
   border-radius: 1rem;
-  overflow: hidden;
-  transition: height .15s;
+  box-shadow: var(--acrylic-edge),
+    var(--shadow-1);
+  font-family: var(--font-slim);
+  font-weight: 500;
+  user-select: none;
+  cursor: pointer;
+  transition: all .15s;
 }
 
-.component-detail-wrapper {
-  transform: translateY(1rem);
-  height: 10.5rem;
-  padding: 1rem;
-  border-radius: 1rem;
-  background-color: #ffffff10;
-  overflow: scroll;
+.container-content-navigation>div.active {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  box-shadow: var(--acrylic-edge);
 }
 
-.component-detail-wrapper::-webkit-scrollbar {
-  width: 0;
-  height: 0
-}
-
-@media screen and (min-width: 720px) and (max-width: 1079px) {
-  .component-sizes-btn-wrapper {
-    grid-template-columns: repeat(12, 1fr);
-  }
-}
+@media screen and (min-width: 720px) and (max-width: 1079px) {}
 
 @media screen and (max-width: 719px) {
-  .component-sizes-btn-wrapper {
-    grid-template-columns: repeat(6, 1fr);
-  }
 
   #root {
     padding: 1rem;

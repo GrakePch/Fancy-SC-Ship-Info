@@ -1,27 +1,13 @@
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
 
+import classToColor from "../../assets/classToColor";
+import classToShort from "../../assets/classToShort";
 import component_zh_name from "../../assets/component_zh_name.json";
 import icons from "../../assets/icons";
 import LangContext from "../../contexts/LangContext";
 import HardpointSizes from "../HardpointSizes/HardpointSizes";
 import I18nPure from "../I18nPure";
-
-const classToShort = {
-  Military: "MLT",
-  Stealth: "STL",
-  Civilian: "CVL",
-  Industrial: "IND",
-  Competition: "CPT",
-};
-
-const classToColor = {
-  Military: "#367d39",
-  Stealth: "#439193",
-  Civilian: "#c1af3e",
-  Industrial: "#a86834",
-  Competition: "#a83434",
-};
 
 const SimpleComponentEditable = ({ type, itemObj, icon }) => {
   const lang = useContext(LangContext)[0];
