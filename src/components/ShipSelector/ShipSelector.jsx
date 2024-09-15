@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { mdiFilter, mdiMagnify, mdiVanUtility } from "@mdi/js";
@@ -7,7 +7,6 @@ import Icon from "@mdi/react";
 import ManufacturerToHue from "../../assets/ManufacturerToHue";
 import icons from "../../assets/icons";
 import manufacturers_small from "../../assets/manufacturers_small";
-import LangContext from "../../contexts/LangContext";
 import I18n from "../I18n";
 import I18nPure from "../I18nPure";
 import ShipSelectCard from "./ShipSelectCard/ShipSelectCard";
@@ -36,7 +35,7 @@ function ShipSelector({ shipIndex, dictShipZhName }) {
     true,
   ]); /* 0: Ship, 1: Ground Vehicle, 2: Gravlev */
   const [filterForReleased, setFilterForReleased] = useState(false);
-  const lang = useContext(LangContext)[0];
+  const lang = localStorage.getItem("lang");
   const [searchField, setSearchField] = useState("");
   const navigate = useNavigate();
 
@@ -79,7 +78,7 @@ function ShipSelector({ shipIndex, dictShipZhName }) {
             .includes(searchField.toLowerCase())),
     )
     .sort((a, b) =>
-      lang == "zh"
+      lang == "zh_cn"
         ? (
             dictShipZhName[a.Name]?.split(" ").slice(1).join(" ") || a.NameShort
           )?.localeCompare(
@@ -233,7 +232,7 @@ function ShipSelector({ shipIndex, dictShipZhName }) {
               >
                 <ShipSelectCard
                   shipName={
-                    lang == "zh"
+                    lang == "zh_cn"
                       ? dictShipZhName[item.Name]
                           ?.split(" ")
                           .slice(1)

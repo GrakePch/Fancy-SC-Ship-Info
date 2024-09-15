@@ -1,26 +1,39 @@
-import { useContext, useEffect } from "react";
+import { useEffect } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
-import { mdiGithub, mdiViewGridOutline } from "@mdi/js";
+import {
+  mdiBrightness4,
+  mdiBrightness7,
+  mdiGithub,
+  mdiViewGridOutline,
+} from "@mdi/js";
 import Icon from "@mdi/react";
 
 import icons from "../../assets/icons";
 import themes from "../../assets/themes";
-import LangContext from "../../contexts/LangContext";
 import I18n from "../I18n";
 import "./Docker.css";
 
 function Docker() {
-  const [lang, setLang] = useContext(LangContext);
+  const lang = localStorage.getItem("lang");
+  const theme = localStorage.getItem("theme");
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
 
   useEffect(() => {
-    setLang(searchParams.get("lang"));
-  }, [searchParams, setLang]);
+    let paramLang = searchParams.get("lang");
+    if (paramLang) localStorage.setItem("lang", paramLang);
+    searchParams.delete("lang");
+    setSearchParams(searchParams);
+
+    let paramTheme = searchParams.get("theme");
+    if (paramTheme)
+      localStorage.setItem("theme", paramTheme === "light" ? "light" : "dark");
+    searchParams.delete("theme");
+    setSearchParams(searchParams);
+  }, [searchParams]);
 
   useEffect(() => {
-    let theme = searchParams.get("theme") == "light" ? "light" : "dark";
     document.documentElement.style.setProperty(
       "--color-bg",
       themes[theme].colorBg,
@@ -69,7 +82,7 @@ function Docker() {
       "--color-primary-dimmer",
       themes[theme].colorPrimaryDimmer,
     );
-  });
+  }, [theme]);
 
   if (searchParams.get("hide") == 1) {
     document.body.classList.add("queryHide");
@@ -106,16 +119,43 @@ function Docker() {
         <button
           className="Docker-btns"
           onClick={() => {
-            let newValue = lang == "zh" ? "en" : "zh";
+            let newValue = lang === "zh_cn" ? "en_us" : "zh_cn";
             setSearchParams((prev) => {
               prev.set("lang", newValue);
               return prev;
             });
           }}
         >
-          {lang == "zh" ? "EN" : "中"}
+          {lang == "zh_cn" ? "EN" : "简中"}
         </button>
-        <p>{lang == "zh" ? "Switch to English" : "切换到简体中文"}</p>
+        <p>{lang == "zh_cn" ? "Switch to English" : "切换到简体中文"}</p>
+      </span>
+      <span className="Docker-tooltip">
+        <button
+          className="Docker-btns"
+          onClick={() => {
+            let newValue = theme === "dark" ? "light" : "dark";
+            setSearchParams((prev) => {
+              prev.set("theme", newValue);
+              return prev;
+            });
+          }}
+        >
+          {theme === "dark" ? (
+            <Icon path={mdiBrightness7} size={1} />
+          ) : (
+            <Icon path={mdiBrightness4} size={1} />
+          )}
+        </button>
+        <p>
+          <I18n
+            text={
+              theme === "dark"
+                ? "nav-switch-light-theme"
+                : "nav-switch-dark-theme"
+            }
+          />
+        </p>
       </span>
       <span className="Docker-tooltip">
         <button

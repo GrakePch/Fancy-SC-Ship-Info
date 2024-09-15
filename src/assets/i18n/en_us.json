@@ -2,6 +2,8 @@
     "nav-ship-index": "Ship Index",
     "nav-component-index": "Component Index",
     "nav-about": "About",
+    "nav-switch-light-theme": "Switch to light theme",
+    "nav-switch-dark-theme": "Switch to dark theme",
 
     "ShipSelectorSearch": "Search Vehicles",
     "ShipSelectorTitle": "Select a vehicle",

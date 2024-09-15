@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
 
 import axios from "axios";
@@ -20,7 +20,6 @@ import PanelComponents from "./components/PanelComponents/PanelComponents";
 import PanelQuantumTravel from "./components/PanelQuantumTravel/PanelQuantumTravel";
 import QuantumTravel from "./components/QuantumTravel/QuantumTravel";
 import ShipSelector from "./components/ShipSelector/ShipSelector";
-import LangContext from "./contexts/LangContext";
 import shipIndex from "./data/index-min.json";
 import shipHardpoints from "./data/ship-hardpoints-min.json";
 import shipItems from "./data/ship-items-min.json";
@@ -39,7 +38,7 @@ const tabs = [
 
 function MainInfo() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [lang, setLang] = useContext(LangContext);
+  const lang = localStorage.getItem("lang");
 
   const { shipId } = useParams();
 
@@ -280,7 +279,7 @@ function MainInfo() {
     axios
       .get(`https://api.star-citizen.wiki/api/v2/vehicles/${shipName}`, {
         params: {
-          locale: lang == "zh" ? "zh_CN" : "en_US",
+          locale: lang == "zh_cn" ? "zh_CN" : "en_US",
         },
       })
       .then(function (response) {
@@ -300,7 +299,7 @@ function MainInfo() {
   }, [shipId, lang]);
 
   return (
-    <LangContext.Provider value={[lang, setLang]}>
+    <>
       {shipIdx == null && (
         <ShipSelector
           shipIndex={shipIndex}
@@ -351,7 +350,7 @@ function MainInfo() {
                 </div>
                 <div className="ship-name-wrapper">
                   <h1 className="ship-name">
-                    {lang == "zh"
+                    {lang == "zh_cn"
                       ? dictShipZhName[shipIdx.Name]
                           ?.split(" ")
                           .slice(1)
@@ -1054,7 +1053,7 @@ function MainInfo() {
           )}
         </>
       )}
-    </LangContext.Provider>
+    </>
   );
 }
 

@@ -1,11 +1,8 @@
-import { useContext } from "react";
-
 import classToColor from "../../assets/classToColor";
 import classToShort from "../../assets/classToShort";
 import component_zh_name from "../../assets/component_zh_name.json";
 import icons from "../../assets/icons";
 import sizeToColor from "../../assets/sizeToColor";
-import LangContext from "../../contexts/LangContext";
 import euclideanDistance from "../../utils/euclideanDistance";
 import qtTime from "../../utils/qtTimeCalculator";
 import I18n from "../I18n";
@@ -24,7 +21,7 @@ const QDriveRange = ({
   QTRange = 0,
   isDefault = false,
 }) => {
-  const lang = useContext(LangContext)[0];
+  const lang = localStorage.getItem("lang");
   const rangeColor = "hsla(210, 90%, 50%, 15%)";
 
   return (
@@ -49,7 +46,7 @@ const QDriveRange = ({
           String.fromCharCode(64 + QDrive.stdItem.Grade)}
       </p>
       <p className="name">
-        {lang === "zh"
+        {lang === "zh_cn"
           ? component_zh_name[QDrive.stdItem.Name] ||
             component_zh_name[QDrive.stdItem.Name?.toLowerCase()] ||
             QDrive.stdItem.Name

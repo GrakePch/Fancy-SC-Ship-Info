@@ -2,6 +2,8 @@
     "nav-ship-index": "载具索引",
     "nav-component-index": "组件索引",
     "nav-about": "关于",
+    "nav-switch-light-theme": "切换到亮色模式",
+    "nav-switch-dark-theme": "切换到暗色模式",
 
     "ShipSelectorTitle": "选择载具",
     "ShipFilterReleasedOnly": "仅显示已发布",
