@@ -32,6 +32,7 @@ const getItemInfo = (name) => {
 /* eslint-disable react/prop-types */
 const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
   // if (item.Name == null) return;
+  const lang = localStorage.getItem("lang");
 
   let baseLoadout = item.BaseLoadout;
 
@@ -114,7 +115,7 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
             baseLoadout.Name ||
             "未知"}
         </p>
-        <div className="SimpleWeapon-tail-icons">
+        <div className="SimpleWeapon-tail-icons font-slim">
           {trackingSignal && (
             <>
               <p
@@ -124,7 +125,7 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
                 }}
               >
                 {signalToIcon[trackingSignal]}
-                {I18nPure("Short-" + trackingSignal, "zh")}
+                {I18nPure("Short-" + trackingSignal, lang)}
               </p>
             </>
           )}
@@ -136,7 +137,7 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
               }}
             >
               {dmgTypeToIcon[bulletDmgType]}
-              {I18nPure("Short-" + bulletDmgType, "zh")}
+              {I18nPure("Short-" + bulletDmgType, lang)}
             </p>
           )}
           {gimballed ? (

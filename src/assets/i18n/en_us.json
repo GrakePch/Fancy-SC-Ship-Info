@@ -178,5 +178,9 @@
     "SelfDestruct": "Self Destruct",
     "Countdown": "Countdown",
     "ExplosionDamage": "Explosion Damage",
-    "ExplosionRadius": "Explosion Radius"
+    "ExplosionRadius": "Explosion Radius",
+    
+    "Short-Electromagnetic": "EM",
+    "Short-Infrared": "IR",
+    "Short-CrossSection": "CS"
 }

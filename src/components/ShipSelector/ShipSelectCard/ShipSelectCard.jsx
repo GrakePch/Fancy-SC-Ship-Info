@@ -1,5 +1,3 @@
-import { useSearchParams } from "react-router-dom";
-
 import { mdiCheckCircle } from "@mdi/js";
 import Icon from "@mdi/react";
 
@@ -18,7 +16,7 @@ function ShipSelectCard({
   bgColorOverride,
   colorOverride,
 }) {
-  const [searchParams, _setSearchParams] = useSearchParams();
+  const theme = localStorage.getItem("theme");
   return (
     <div
       className="Ship-select-card"
@@ -26,12 +24,12 @@ function ShipSelectCard({
         backgroundColor:
           bgColorOverride ||
           (ManufacturerToHue[manufacturer] !== undefined
-            ? `hsl(${ManufacturerToHue[manufacturer]}, ${searchParams.get("theme") == "light" ? "10%, 70%" : "20%, 19%"})`
+            ? `hsl(${ManufacturerToHue[manufacturer]}, ${theme == "light" ? "10%, 70%" : "20%, 19%"})`
             : "#282828"),
         color:
           colorOverride ||
           (ManufacturerToHue[manufacturer] !== undefined
-            ? `hsl(${ManufacturerToHue[manufacturer]}, 100%, ${searchParams.get("theme") == "light" ? "10%" : "90%"})`
+            ? `hsl(${ManufacturerToHue[manufacturer]}, 100%, ${theme == "light" ? "10%" : "90%"})`
             : "inherit"),
       }}
     >
@@ -39,7 +37,7 @@ function ShipSelectCard({
         {manufacturers_small[manufacturer]}
       </div>
       <div className="Ship-select-card-text">
-        <p style={{fontWeight: searchParams.get("theme") === "light" && 600}}>
+        <p style={{ fontWeight: theme === "light" && 600 }}>
           {shipName}
           {isReleased && (
             <>
