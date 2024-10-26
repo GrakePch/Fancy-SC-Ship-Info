@@ -3,6 +3,7 @@
     background-color: var(--color-bg-light);
     border-radius: 1rem;
     padding: 2rem;
+    padding-top: 1.5rem;
     overflow: hidden;
     box-shadow:
         var(--acrylic-edge),
@@ -30,8 +31,16 @@
 }
 
 .SimpleInfo-container>.basic-info {
-    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1rem;
+    font-weight: 500;
     font-variant-numeric: tabular-nums;
+}
+
+.SimpleInfo-container>.basic-info>svg {
+    height: 1rem;
 }
 
 .sml {
@@ -100,12 +109,15 @@
     height: min-content;
 }
 
+
+
 .SimpleComponent {
-    padding: 1rem;
+    height: 5.5rem;
+    padding: .5rem;
     border-radius: 1rem;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
     color: var(--color-text);
     fill: var(--color-text);
     background-color: var(--color-bg-light);
@@ -114,56 +126,90 @@
         var(--shadow-1);
 }
 
+.SimpleComponent-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 4rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
 
-.SimpleComponent>.icon {
+.SimpleComponent-type>p {
+    font-size: .8rem;
+}
+
+.SimpleComponent-type-icon {
     width: 2rem;
     height: 2rem;
     flex-shrink: 0;
 }
 
 .SimpleComponent-contents {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    align-self: stretch;
+    padding: .5rem;
     flex-grow: 1;
     flex-shrink: 1;
+    background-color: var(--color-bg);
+    border-radius: .5rem;
+    line-height: 125%;
+    overflow: hidden;
 }
 
-.SimpleComponent-type-sizes {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 600;
-}
-
-.SimpleComponent-name-grade {
-    display: flex;
-    justify-content: space-between;
-    gap: 1ch;
-}
-
-.SimpleComponent-name-grade>p:first-child {
-    opacity: .75;
+.SimpleComponent-contents>p:first-child {
     flex-shrink: 1;
-    word-break: break-word;
+    word-break: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 500;
 }
 
-.SimpleComponent-name-grade>p:last-child {
+.SimpleComponent-contents>p:nth-child(2) {
+    opacity: .5;
+    word-break: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: .8rem;
     font-weight: 500;
+    line-height: 125%;
+}
+
+.SimpleComponent-grade {
+    position: absolute;
+    bottom: .5rem;
+    right: .5rem;
+    border-radius: 100rem;
+    padding: 0 1ch;
+    align-self: end;
+    font-weight: 600;
     flex-shrink: 0;
+    font-size: .8rem;
+    background-color: #80808030;
 }
 
 .SimpleFuelTank-type-capacity {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
 }
 
-.SimpleFuelTank-type-capacity>p:first-child {
+.SimpleFuelTank-type-capacity>svg {
+    width: 1.5rem;
+}
+
+.SimpleFuelTank-type-capacity>p:first-of-type {
     font-weight: 600;
 }
 
 .SimpleFuelTank-type-capacity>p:last-child {
     opacity: .75;
+    font-weight: 500;
     font-family: var(--font-slim);
+    flex-grow: 1;
+    text-align: right;
 }
 
 .SimpleInfo-contents .card-list {
@@ -247,9 +293,15 @@
     box-shadow: none;
 }
 
-/* .SimpleWeapon-container>p {
-    opacity: .75;
-} */
+.SimpleWeapon-name>p {
+    line-height: 100%;
+    font-weight: 500;
+}
+
+.SimpleWeapon-name>p:last-child {
+    font-size: .8rem;
+    opacity: .5;
+}
 
 .SimpleWeapon-tail-icons {
     display: flex;
@@ -261,8 +313,11 @@
     display: flex;
     align-items: center;
     font-size: .75rem;
-    padding: 0 .5ch;
+    padding: 1px .5rem;
+    padding-left: .375rem;
     font-weight: 500;
+    border-radius: 100rem;
+    gap: .25rem;
 }
 
 .SimpleWeapon-tail-icons>p>svg {
@@ -277,6 +332,11 @@
 
 .SimpleWeapon-tail-icons>* {
     flex-shrink: 0;
+}
+
+.SimpleWeapon-type-tag {
+    border-width: 2px;
+    border-style: solid;
 }
 
 .SimpleWeapon-subWeapon-container {

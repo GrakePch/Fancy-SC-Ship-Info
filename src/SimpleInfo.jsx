@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 
 import { mdiLock } from "@mdi/js";
@@ -22,7 +22,6 @@ import SimpleComponent from "./components/SimpleComponent/SimpleComponent";
 import SimpleComponentEditable from "./components/SimpleComponent/SimpleComponentEditable";
 import SimpleFuelTank from "./components/SimpleFuelTank/SimpleFuelTank";
 import SimpleWeaponGroup from "./components/SimpleWeaponGroup/SimpleWeaponGroup";
-import LangContext from "./contexts/LangContext";
 import shipItems from "./data/ship-items-min.json";
 
 const checkObjNotEmpty = (obj) => {
@@ -40,7 +39,7 @@ const SimpleInfo = ({
   dictShipImgIso,
   computedMax,
 }) => {
-  const lang = useContext(LangContext)[0];
+  const lang = localStorage.getItem("lang");
   const searchParams = useSearchParams()[0];
 
   const speedMax = computedMax.speedMax;
@@ -100,7 +99,7 @@ const SimpleInfo = ({
         </div>
         <div className="ship-name-wrapper">
           <h1 className="ship-name">
-            {lang == "zh"
+            {lang == "zh_cn"
               ? dictShipZhName[shipIdx.Name]?.split(" ").slice(1).join(" ") ||
                 shipIdx.NameShort
               : shipIdx.NameShort}
@@ -144,32 +143,40 @@ const SimpleInfo = ({
                   .join(" / ")}
           </span>
         </h3>
-        <h3 className="prices font-slim">
+        <h3 className="prices font-slim" style={{ color: "#ffae00" }}>
           {shipIdx.Store.Buy} USD
           <span>{shipIdx.Store.IsLimitedSale && " 限时购买"}</span>
         </h3>
         <h3 className="basic-info font-slim">
-          尺寸 &nbsp;&nbsp;&nbsp;{" "}
           {shipData?.sizes ? (
             <>
-              <span className="sml">长</span>{" "}
-              {shipDataRSI?.length || shipData.sizes.length} ×{" "}
-              <span className="sml">宽</span>{" "}
-              {shipDataRSI?.beam || shipData.sizes.beam} ×{" "}
-              <span className="sml">高</span>{" "}
-              {shipDataRSI?.height || shipData.sizes.height} m
+              {icons.Length}长 {shipDataRSI?.length || shipData.sizes.length} m
+              &nbsp;&nbsp;&nbsp;
+              {icons.Width}宽 {shipDataRSI?.beam || shipData.sizes.beam} m
+              &nbsp;&nbsp;&nbsp;
+              {icons.Height}高 {shipDataRSI?.height || shipData.sizes.height} m
             </>
           ) : (
-            "未知"
+            "尺寸未知"
           )}
         </h3>
         <h3 className="basic-info font-slim">
+          {icons.Mass}
           质量 &nbsp;&nbsp;&nbsp;{" "}
           {shipData?.mass ? <>{(shipData.mass / 1000).toFixed(3)} t</> : "未知"}
         </h3>
+        <h3 className="basic-info font-slim">
+          {icons.CargoGrid}
+          货物网格 &nbsp;&nbsp;&nbsp;{" "}
+          {shipObj
+            ? shipObj.Cargo.CargoGrid
+            : shipData
+              ? shipData.cargo_capacity
+              : "未知"}
+        </h3>
         <div className="SimpleInfo-title-bottom-banner">
           <div className="small-texts">
-            游戏版本：3.24 &nbsp;&nbsp;|&nbsp;&nbsp; 主要数据来源：Ships
+            游戏版本：3.24.2 &nbsp;&nbsp;|&nbsp;&nbsp; 主要数据来源：Ships
             Performances Viewer
           </div>
           <div className="small-logo"></div>
@@ -209,11 +216,21 @@ const SimpleInfo = ({
                 shipHardpts.Hardpoints.Components.Propulsion.QuantumDrives
               }
             />
-            <SimpleComponent
+            <SimpleComponentEditable
+              type="跳跃引擎"
+              icon="JumpDrives"
+              itemObj={{
+                InstalledItems:
+                  shipHardpts.Hardpoints.Components.Propulsion.QuantumDrives.InstalledItems?.at(
+                    0,
+                  )?.Ports,
+              }}
+            />
+            {/* <SimpleComponent
               type="雷达"
               icon="Radars"
               itemObj={shipHardpts.Hardpoints.Components.Avionics.Radars}
-            />
+            /> */}
             <SimpleFuelTank
               fuelH={shipObj?.FuelManagement?.FuelCapacity || 0}
               fuelQT={shipObj?.FuelManagement?.QuantumFuelCapacity || 0}
@@ -454,27 +471,28 @@ const SimpleInfo = ({
               }}
             />
             <SimpleComponent
-              type="雷达"
-              icon="Radars"
+              type="跳跃引擎"
+              icon="JumpDrives"
               itemObj={{
-                InstalledItems: shipDataRSI.compiled.RSIAvionic.radar.map(
-                  (item) => ({
-                    Name: item.details,
-                    _Quantity: item.quantity,
-                    Size: RSISizeToNumber[item.size],
-                  }),
-                ),
+                InstalledItems:
+                  shipDataRSI.compiled.RSIPropulsion.jump_modules.map(
+                    (item) => ({
+                      Name: item.details,
+                      _Quantity: item.quantity,
+                      Size: RSISizeToNumber[item.size],
+                    }),
+                  ),
               }}
             />
             <SimpleFuelTank
               fuelH={
                 shipDataRSI.compiled.RSIPropulsion.fuel_tanks.length > 0
-                  ? "未知"
+                  ? null
                   : 0
               }
               fuelQT={
                 shipDataRSI.compiled.RSIPropulsion.quantum_fuel_tanks.length > 0
-                  ? "未知"
+                  ? null
                   : 0
               }
             />

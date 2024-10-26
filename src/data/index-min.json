@@ -22,13 +22,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 60.0
+            "Buy": 60
         },
         "PU": {
             "Patch": "2.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1587600.0
+            "Buy": 1587600
         }
     },
     {
@@ -54,13 +54,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 60.0
+            "Buy": 60
         },
         "PU": {
             "Patch": "2.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1358280.0
+            "Buy": 1358280
         }
     },
     {
@@ -86,13 +86,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 75.0
+            "Buy": 75
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1852200.0
+            "Buy": 1852200
         }
     },
     {
@@ -118,13 +118,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 85.0
+            "Buy": 85
         },
         "PU": {
             "Patch": "2.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2249100.0
+            "Buy": 2249100
         }
     },
     {
@@ -153,13 +153,13 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "June 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19984-June-2024-Subscriber-Promotions",
-            "Buy": 300.0
+            "Buy": 300
         },
         "PU": {
             "Patch": "3.2.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 7938000.0
+            "Buy": 7938000
         }
     },
     {
@@ -185,13 +185,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 90.0
+            "Buy": 90
         },
         "PU": {
             "Patch": "1.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2381400.0
+            "Buy": 2381400
         }
     },
     {
@@ -217,13 +217,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 110.0
+            "Buy": 110
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2910600.0
+            "Buy": 2910600
         }
     },
     {
@@ -249,13 +249,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 725.0
+            "Buy": 725
         },
         "PU": {
             "Patch": "3.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 47958752.0
+            "Buy": 47958752
         }
     },
     {
@@ -281,7 +281,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 1800.0
+            "Buy": 1800
         },
         "PU": {
             "HasPerf": false,
@@ -312,7 +312,7 @@
             "Url": "https://robertsspaceindustries.com/pledge/ships/aegis-idris/Idris-M",
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 1000.0
+            "Buy": 1000
         },
         "PU": {
             "HasPerf": true,
@@ -344,7 +344,7 @@
             "Url": "https://robertsspaceindustries.com/pledge/ships/aegis-idris/Idris-P",
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 1500.0
+            "Buy": 1500
         },
         "PU": {
             "HasPerf": false,
@@ -375,7 +375,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 3000.0
+            "Buy": 3000
         },
         "PU": {
             "HasPerf": false,
@@ -407,7 +407,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 725.0
+            "Buy": 725
         },
         "PU": {
             "HasPerf": false,
@@ -438,7 +438,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 400.0
+            "Buy": 400
         },
         "PU": {
             "Patch": "3.1.0",
@@ -470,13 +470,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 330.0
+            "Buy": 330
         },
         "PU": {
             "Patch": "3.15.1",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 17199000.0
+            "Buy": 17199000
         }
     },
     {
@@ -502,14 +502,14 @@
             "Url": "https://robertsspaceindustries.com/pledge/ships/aegis-retaliator/Retaliator",
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 175.0
+            "Buy": 175
         },
         "PU": {
             "Patch": "3.23.1",
             "Date": "2024-05-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 7938000.0
+            "Buy": 7938000
         }
     },
     {
@@ -535,13 +535,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 170.0
+            "Buy": 170
         },
         "PU": {
             "Patch": "2.2.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4498200.0
+            "Buy": 4498200
         }
     },
     {
@@ -567,13 +567,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 185.0
+            "Buy": 185
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4895100.0
+            "Buy": 4895100
         }
     },
     {
@@ -607,7 +607,7 @@
             "Date": "2024-05-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": null
+            "Buy": 5874120
         }
     },
     {
@@ -699,13 +699,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 260.0
+            "Buy": 260
         },
         "PU": {
             "Patch": "2.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 10319400.0
+            "Buy": 10319400
         }
     },
     {
@@ -731,13 +731,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 290.0
+            "Buy": 290
         },
         "PU": {
             "Patch": "3.7.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 11510100.0
+            "Buy": 11510100
         }
     },
     {
@@ -763,13 +763,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 240.0
+            "Buy": 240
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 9327150.0
+            "Buy": 9327150
         }
     },
     {
@@ -795,13 +795,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 275.0
+            "Buy": 275
         },
         "PU": {
             "Patch": "3.7.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 10914750.0
+            "Buy": 10914750
         }
     },
     {
@@ -827,7 +827,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 200.0
+            "Buy": 200
         },
         "PU": {
             "HasPerf": false,
@@ -861,13 +861,13 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "February 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19776-February-2024-Subscriber-Promotions",
-            "Buy": 75.0
+            "Buy": 75
         },
         "PU": {
             "Patch": "3.3.5",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1984500.0
+            "Buy": 1984500
         }
     },
     {
@@ -893,13 +893,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 140.0
+            "Buy": 140
         },
         "PU": {
             "Patch": "3.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1481760.0
+            "Buy": 1481760
         }
     },
     {
@@ -925,14 +925,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65.0
+            "Buy": 65
         },
         "PU": {
             "Patch": "3.17.4",
             "Date": "2022-11-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 555660.0
+            "Buy": 555660
         }
     },
     {
@@ -958,13 +958,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 45.0
+            "Buy": 45
         },
         "PU": {
             "Patch": "3.7.2",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 515970.0
+            "Buy": 515970
         }
     },
     {
@@ -996,7 +996,7 @@
             "Patch": "3.7.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 745290.0
+            "Buy": 745290
         }
     },
     {
@@ -1022,13 +1022,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 600.0
+            "Buy": 600
         },
         "PU": {
             "Patch": "3.8.2",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 34398000.0
+            "Buy": 34398000
         }
     },
     {
@@ -1054,14 +1054,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 110.0
+            "Buy": 110
         },
         "PU": {
             "Patch": "3.17.2",
             "Date": "2022-07-28",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1164240.0
+            "Buy": 1164240
         }
     },
     {
@@ -1087,7 +1087,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 350.0
+            "Buy": 350
         },
         "PU": {
             "HasPerf": false,
@@ -1121,13 +1121,13 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "June 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19984-June-2024-Subscriber-Promotions",
-            "Buy": 165.0
+            "Buy": 165
         },
         "PU": {
             "Patch": "1.1.1",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4365900.0
+            "Buy": 4365900
         }
     },
     {
@@ -1153,13 +1153,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 100.0
+            "Buy": 100
         },
         "PU": {
             "Patch": "3.4.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2646000.0
+            "Buy": 2646000
         }
     },
     {
@@ -1251,13 +1251,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 125.0
+            "Buy": 125
         },
         "PU": {
             "Patch": "0.8.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2910600.0
+            "Buy": 2910600
         }
     },
     {
@@ -1283,13 +1283,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 185.0
+            "Buy": 185
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4762800.0
+            "Buy": 4762800
         }
     },
     {
@@ -1346,13 +1346,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150.0
+            "Buy": 150
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3210480.0
+            "Buy": 3210480
         }
     },
     {
@@ -1409,13 +1409,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 140.0
+            "Buy": 140
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3307500.0
+            "Buy": 3307500
         }
     },
     {
@@ -1479,7 +1479,7 @@
             "Date": "2024-03-15",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": null
+            "Buy": 4895100
         }
     },
     {
@@ -1505,13 +1505,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 175.0
+            "Buy": 175
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4630500.0
+            "Buy": 4630500
         }
     },
     {
@@ -1537,7 +1537,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 300.0
+            "Buy": 300
         },
         "PU": {
             "Patch": "3.20.0",
@@ -1570,13 +1570,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 210.0
+            "Buy": 210
         },
         "PU": {
             "Patch": "3.2.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 5556600.0
+            "Buy": 5556600
         }
     },
     {
@@ -1602,7 +1602,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 120.0
+            "Buy": 120
         },
         "PU": {
             "HasPerf": false,
@@ -1633,7 +1633,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 570.0
+            "Buy": 570
         },
         "PU": {
             "HasPerf": false,
@@ -1667,14 +1667,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "January 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19721-January-2024-Subscriber-Promotions",
-            "Buy": 80.0
+            "Buy": 80
         },
         "PU": {
             "Patch": "3.15.1",
             "Date": "2021-11-18",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 846720.0
+            "Buy": 846720
         }
     },
     {
@@ -1700,13 +1700,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 220.0
+            "Buy": 220
         },
         "PU": {
             "Patch": "3.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 5433120.0
+            "Buy": 5433120
         }
     },
     {
@@ -1732,13 +1732,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 375.0
+            "Buy": 375
         },
         "PU": {
             "Patch": "3.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 19845000.0
+            "Buy": 19845000
         }
     },
     {
@@ -1764,13 +1764,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 170.0
+            "Buy": 170
         },
         "PU": {
             "Patch": "2.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 7229250.0
+            "Buy": 7229250
         }
     },
     {
@@ -1796,13 +1796,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 45.0
+            "Buy": 45
         },
         "PU": {
             "Patch": "3.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 722925.0
+            "Buy": 722925
         }
     },
     {
@@ -1829,7 +1829,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 240.0
+            "Buy": 240
         },
         "PU": {
             "Patch": "3.22.0",
@@ -1837,7 +1837,41 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 9355500.0
+            "Buy": 9355500
+        }
+    },
+    {
+        "ClassName": "ARGO_CSV_Cargo",
+        "Name": "Argo CSV-SM",
+        "Manufacturer": "Argo Astronautics",
+        "Career": "Ground",
+        "Role": "Ground",
+        "Size": 1,
+        "Cargo": 4,
+        "Type": "Vehicle",
+        "CommLink": {
+            "HasCommLink": false,
+            "Date": "2024-10-20",
+            "Url": "https://robertsspaceindustries.com/comm-link/transmission/20165-Argo-CSV-SM"
+        },
+        "ProgressTracker": {
+            "Status": "Released",
+            "Patch": "3.24.2",
+            "IsOnPT": false,
+            "ID": null
+        },
+        "Store": {
+            "Url": null,
+            "IsPromotionOnly": false,
+            "IsLimitedSale": false,
+            "Buy": 45
+        },
+        "PU": {
+            "Patch": "3.24.2",
+            "Date": "2024-10-20",
+            "HasPerf": true,
+            "IsPTUBuyOnly": false,
+            "Buy": null
         }
     },
     {
@@ -1863,13 +1897,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 315.0
+            "Buy": 315
         },
         "PU": {
             "Patch": "3.8.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 8930250.0
+            "Buy": 8930250
         }
     },
     {
@@ -1895,13 +1929,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 35.0
+            "Buy": 35
         },
         "PU": {
             "Patch": "2.5.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 330750.0
+            "Buy": 330750
         }
     },
     {
@@ -1935,7 +1969,7 @@
             "Date": "2024-05-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": null
+            "Buy": 415800
         }
     },
     {
@@ -1961,13 +1995,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 40.0
+            "Buy": 40
         },
         "PU": {
             "Patch": "2.5.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 378000.0
+            "Buy": 378000
         }
     },
     {
@@ -1993,17 +2027,17 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "IsShipOfTheMonth": true,
+            "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "August 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/20078-August-2024-Subscriber-Promotions",
-            "Buy": 125.0
+            "Buy": 125
         },
         "PU": {
             "Patch": "3.15.1",
             "Date": "2021-11-18",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3543750.0
+            "Buy": 3543750
         }
     },
     {
@@ -2030,10 +2064,10 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "IsShipOfTheMonth": true,
+            "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "August 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/20078-August-2024-Subscriber-Promotions",
-            "Buy": 165.0
+            "Buy": 165
         },
         "PU": {
             "Patch": "3.21.1",
@@ -2041,7 +2075,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 3969000.0
+            "Buy": 3969000
         }
     },
     {
@@ -2067,13 +2101,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 220.0
+            "Buy": 220
         },
         "PU": {
             "Patch": "3.7.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 6237000.0
+            "Buy": 6237000
         }
     },
     {
@@ -2099,7 +2133,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 650.0
+            "Buy": 650
         },
         "PU": {
             "HasPerf": false,
@@ -2130,14 +2164,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 30.0
+            "Buy": 30
         },
         "PU": {
             "Patch": "3.16.1",
             "Date": "2022-01-27",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 56700.0
+            "Buy": 56700
         }
     },
     {
@@ -2163,13 +2197,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 30.0
+            "Buy": 30
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 655200.0
+            "Buy": 655200
         }
     },
     {
@@ -2195,13 +2229,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 40.0
+            "Buy": 40
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 642600.0
+            "Buy": 642600
         }
     },
     {
@@ -2227,13 +2261,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65.0
+            "Buy": 65
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1228500.0
+            "Buy": 1228500
         }
     },
     {
@@ -2259,13 +2293,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 55.0
+            "Buy": 55
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1178100.0
+            "Buy": 1178100
         }
     },
     {
@@ -2323,14 +2357,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 80.0
+            "Buy": 80
         },
         "PU": {
             "Patch": "3.11.1",
             "Date": "2020-11-19",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1512000.0
+            "Buy": 1512000
         }
     },
     {
@@ -2356,7 +2390,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 850.0
+            "Buy": 850
         },
         "PU": {
             "HasPerf": false,
@@ -2387,7 +2421,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 400.0
+            "Buy": 400
         },
         "PU": {
             "HasPerf": false,
@@ -2419,7 +2453,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 200.0
+            "Buy": 200
         },
         "PU": {
             "Patch": "3.21.0",
@@ -2427,7 +2461,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 4961250.0
+            "Buy": 4961250
         }
     },
     {
@@ -2454,7 +2488,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 125.0
+            "Buy": 125
         },
         "PU": {
             "Patch": "3.21.1",
@@ -2462,7 +2496,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 3118500.0
+            "Buy": 3118500
         }
     },
     {
@@ -2488,7 +2522,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150.0
+            "Buy": 150
         },
         "PU": {
             "HasPerf": false,
@@ -2522,14 +2556,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "February 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19776-February-2024-Subscriber-Promotions",
-            "Buy": 250.0
+            "Buy": 250
         },
         "PU": {
             "Patch": "3.15.1",
             "Date": "2021-11-18",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4725000.0
+            "Buy": 4725000
         }
     },
     {
@@ -2558,14 +2592,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "February 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19776-February-2024-Subscriber-Promotions",
-            "Buy": 250.0
+            "Buy": 250
         },
         "PU": {
             "Patch": "3.15.1",
             "Date": "2021-11-18",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4725000.0
+            "Buy": 4725000
         }
     },
     {
@@ -2591,14 +2625,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 700.0
+            "Buy": 700
         },
         "PU": {
             "Patch": "3.15.0",
             "Date": "2021-11-10",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 44296876.0
+            "Buy": 44296876
         }
     },
     {
@@ -2624,14 +2658,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 400.0
+            "Buy": 400
         },
         "PU": {
             "Patch": "3.13.1",
             "Date": "2021-05-20",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 18900000.0
+            "Buy": 18900000
         }
     },
     {
@@ -2657,14 +2691,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 520.0
+            "Buy": 520
         },
         "PU": {
             "Patch": "3.13.1",
             "Date": "2021-05-20",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 29484000.0
+            "Buy": 29484000
         }
     },
     {
@@ -2693,14 +2727,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "March 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19781-March-2024-Subscriber-Promotions",
-            "Buy": 260.0
+            "Buy": 260
         },
         "PU": {
             "Patch": "3.11.1",
             "Date": "2020-11-19",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 12285000.0
+            "Buy": 12285000
         }
     },
     {
@@ -2726,13 +2760,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 110.0
+            "Buy": 110
         },
         "PU": {
             "Patch": "2.6.2",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1663200.0
+            "Buy": 1663200
         }
     },
     {
@@ -2758,13 +2792,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 330.0
+            "Buy": 330
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 12474000.0
+            "Buy": 12474000
         }
     },
     {
@@ -2793,14 +2827,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "July 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/20029-July-2024-Subscriber-Promotions",
-            "Buy": 250.0
+            "Buy": 250
         },
         "PU": {
             "Patch": "3.17.4",
             "Date": "2022-11-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 6552000.0
+            "Buy": 6552000
         }
     },
     {
@@ -2826,13 +2860,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 110.0
+            "Buy": 110
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2116800.0
+            "Buy": 2116800
         }
     },
     {
@@ -2858,13 +2892,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 175.0
+            "Buy": 175
         },
         "PU": {
             "Patch": "3.9.1",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3704400.0
+            "Buy": 3704400
         }
     },
     {
@@ -2890,13 +2924,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 135.0
+            "Buy": 135
         },
         "PU": {
             "Patch": "3.8.1",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2857680.0
+            "Buy": 2857680
         }
     },
     {
@@ -2922,14 +2956,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 235.0
+            "Buy": 235
         },
         "PU": {
             "Patch": "3.16.0",
             "Date": "2021-12-22",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3997350.0
+            "Buy": 3997350
         }
     },
     {
@@ -2955,14 +2989,17 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 45.0
+            "IsShipOfTheMonth": true,
+            "ShipOfTheMonth": "October 2024",
+            "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/20126-October-2024-Subscriber-Promotions",
+            "Buy": 45
         },
         "PU": {
             "Patch": "3.17.4",
             "Date": "2022-11-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 625040.0
+            "Buy": 625040
         }
     },
     {
@@ -2989,7 +3026,10 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 50.0
+            "IsShipOfTheMonth": true,
+            "ShipOfTheMonth": "October 2024",
+            "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/20126-October-2024-Subscriber-Promotions",
+            "Buy": 50
         },
         "PU": {
             "Patch": "3.22.0",
@@ -2997,7 +3037,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 740880.0
+            "Buy": 740880
         }
     },
     {
@@ -3024,6 +3064,9 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
+            "IsShipOfTheMonth": true,
+            "ShipOfTheMonth": "October 2024",
+            "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/20126-October-2024-Subscriber-Promotions",
             "Buy": 50
         },
         "PU": {
@@ -3032,7 +3075,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 705600.0
+            "Buy": 705600
         }
     },
     {
@@ -3058,13 +3101,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 40.0
+            "Buy": 40
         },
         "PU": {
             "Patch": "3.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 342720.0
+            "Buy": 342720
         }
     },
     {
@@ -3097,7 +3140,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 342720.0
+            "Buy": 342720
         }
     },
     {
@@ -3123,13 +3166,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 85.0
+            "Buy": 85
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1285200.0
+            "Buy": 1285200
         }
     },
     {
@@ -3155,7 +3198,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 450.0
+            "Buy": 450
         },
         "PU": {
             "HasPerf": false,
@@ -3186,7 +3229,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 535.0
+            "Buy": 535
         },
         "PU": {
             "HasPerf": false,
@@ -3217,7 +3260,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 1650.0
+            "Buy": 1650
         },
         "PU": {
             "HasPerf": false,
@@ -3248,7 +3291,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 2000.0
+            "Buy": 2000
         },
         "PU": {
             "HasPerf": false,
@@ -3279,14 +3322,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 45.0
+            "Buy": 45
         },
         "PU": {
             "Patch": "3.17.1",
             "Date": "2022-05-19",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 68040.0
+            "Buy": 68040
         }
     },
     {
@@ -3315,14 +3358,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "July 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/20029-July-2024-Subscriber-Promotions",
-            "Buy": 175.0
+            "Buy": 175
         },
         "PU": {
             "Patch": "3.18.0",
             "Date": "2023-03-10",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2646000.0
+            "Buy": 2646000
         }
     },
     {
@@ -3348,13 +3391,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 275.0
+            "Buy": 275
         },
         "PU": {
             "Patch": "3.2.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 7796250.0
+            "Buy": 7796250
         }
     },
     {
@@ -3380,7 +3423,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 350.0
+            "Buy": 350
         },
         "PU": {
             "Patch": "0.8.5",
@@ -3412,13 +3455,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 440.0
+            "Buy": 440
         },
         "PU": {
             "Patch": "3.9.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 18711000.0
+            "Buy": 18711000
         }
     },
     {
@@ -3444,14 +3487,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 115.0
+            "Buy": 115
         },
         "PU": {
             "Patch": "3.12.0",
             "Date": "2020-12-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3260250.0
+            "Buy": 3260250
         }
     },
     {
@@ -3477,14 +3520,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 115.0
+            "Buy": 115
         },
         "PU": {
             "Patch": "3.12.0",
             "Date": "2020-12-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3260250.0
+            "Buy": 3260250
         }
     },
     {
@@ -3510,7 +3553,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 225.0
+            "Buy": 225
         },
         "PU": {
             "HasPerf": false,
@@ -3550,7 +3593,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 2778300.0
+            "Buy": 2778300
         }
     },
     {
@@ -3576,13 +3619,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 15.0
+            "Buy": 15
         },
         "PU": {
             "Patch": "0.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 29170.0
+            "Buy": 29170
         }
     },
     {
@@ -3608,13 +3651,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 55.0
+            "Buy": 55
         },
         "PU": {
             "Patch": "3.10.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 103950.0
+            "Buy": 103950
         }
     },
     {
@@ -3640,14 +3683,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 75.0
+            "Buy": 75
         },
         "PU": {
             "Patch": "3.13.0",
             "Date": "2021-04-22",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 141750.0
+            "Buy": 141750
         }
     },
     {
@@ -3673,14 +3716,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 40.0
+            "Buy": 40
         },
         "PU": {
             "Patch": "3.17.3",
             "Date": "2022-10-06",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 75600.0
+            "Buy": 75600
         }
     },
     {
@@ -3706,13 +3749,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 25.0
+            "Buy": 25
         },
         "PU": {
             "Patch": "1.1.5",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 283500.0
+            "Buy": 283500
         }
     },
     {
@@ -3738,13 +3781,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 35.0
+            "Buy": 35
         },
         "PU": {
             "Patch": "3.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 449820.0
+            "Buy": 449820
         }
     },
     {
@@ -3770,7 +3813,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 350.0
+            "Buy": 350
         },
         "PU": {
             "HasPerf": false,
@@ -3801,7 +3844,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150.0
+            "Buy": 150
         },
         "PU": {
             "HasPerf": false,
@@ -3832,13 +3875,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 110.0
+            "Buy": 110
         },
         "PU": {
             "Patch": "2.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3118500.0
+            "Buy": 3118500
         }
     },
     {
@@ -3864,13 +3907,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 135.0
+            "Buy": 135
         },
         "PU": {
             "Patch": "3.4.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3316950.0
+            "Buy": 3316950
         }
     },
     {
@@ -3896,13 +3939,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150.0
+            "Buy": 150
         },
         "PU": {
             "Patch": "3.4.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4252500.0
+            "Buy": 4252500
         }
     },
     {
@@ -3928,13 +3971,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 175.0
+            "Buy": 175
         },
         "PU": {
             "Patch": "3.4.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 4961250.0
+            "Buy": 4961250
         }
     },
     {
@@ -3961,7 +4004,10 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 55.0
+            "IsShipOfTheMonth": false,
+            "ShipOfTheMonth": "September 2024",
+            "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/20084-September-2024-Subscriber-Promotions",
+            "Buy": 55
         },
         "PU": {
             "Patch": "3.19.0",
@@ -3996,7 +4042,10 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 55.0
+            "IsShipOfTheMonth": false,
+            "ShipOfTheMonth": "September 2024",
+            "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/20084-September-2024-Subscriber-Promotions",
+            "Buy": 55
         },
         "PU": {
             "Patch": "3.20.0",
@@ -4031,7 +4080,10 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 55.0
+            "IsShipOfTheMonth": false,
+            "ShipOfTheMonth": "September 2024",
+            "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/20084-September-2024-Subscriber-Promotions",
+            "Buy": 55
         },
         "PU": {
             "Patch": "3.19.0",
@@ -4068,14 +4120,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "April 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19853-April-2024-Subscriber-Promotions",
-            "Buy": 90.0
+            "Buy": 90
         },
         "PU": {
             "Patch": "3.17.0",
             "Date": "2022-04-29",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1701000.0
+            "Buy": 1701000
         }
     },
     {
@@ -4101,7 +4153,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 140.0
+            "Buy": 140
         },
         "PU": {
             "HasPerf": false,
@@ -4136,7 +4188,7 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "April 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19853-April-2024-Subscriber-Promotions",
-            "Buy": 500.0
+            "Buy": 500
         },
         "PU": {
             "Patch": "3.20.0",
@@ -4170,7 +4222,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 550.0
+            "Buy": 550
         },
         "PU": {
             "HasPerf": false,
@@ -4201,7 +4253,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 750.0
+            "Buy": 750
         },
         "PU": {
             "HasPerf": false,
@@ -4232,7 +4284,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 700.0
+            "Buy": 700
         },
         "PU": {
             "HasPerf": false,
@@ -4263,13 +4315,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 155.0
+            "Buy": 155
         },
         "PU": {
             "Patch": "3.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2929500.0
+            "Buy": 2929500
         }
     },
     {
@@ -4295,13 +4347,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 145.0
+            "Buy": 145
         },
         "PU": {
             "Patch": "3.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1863540.0
+            "Buy": 1863540
         }
     },
     {
@@ -4327,13 +4379,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 155.0
+            "Buy": 155
         },
         "PU": {
             "Patch": "3.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1757700.0
+            "Buy": 1757700
         }
     },
     {
@@ -4359,13 +4411,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150.0
+            "Buy": 150
         },
         "PU": {
             "Patch": "3.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1927800.0
+            "Buy": 1927800
         }
     },
     {
@@ -4391,13 +4443,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65.0
+            "Buy": 65
         },
         "PU": {
             "Patch": "2.5.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1719900.0
+            "Buy": 1719900
         }
     },
     {
@@ -4423,13 +4475,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 95.0
+            "Buy": 95
         },
         "PU": {
             "Patch": "3.5.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2513700.0
+            "Buy": 2513700
         }
     },
     {
@@ -4455,13 +4507,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 85.0
+            "Buy": 85
         },
         "PU": {
             "Patch": "3.5.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 2249100.0
+            "Buy": 2249100
         }
     },
     {
@@ -4487,13 +4539,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 75.0
+            "Buy": 75
         },
         "PU": {
             "Patch": "3.5.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1984500.0
+            "Buy": 1984500
         }
     },
     {
@@ -4519,13 +4571,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 300.0
+            "Buy": 300
         },
         "PU": {
             "Patch": "2.4.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 13230000.0
+            "Buy": 13230000
         }
     },
     {
@@ -4551,13 +4603,83 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 340.0
+            "Buy": 340
         },
         "PU": {
             "Patch": "2.4.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 14994000.0
+            "Buy": 14994000
+        }
+    },
+    {
+        "ClassName": "MISC_Starlancer_Max",
+        "Name": "MISC Starlancer Max",
+        "Manufacturer": "Musashi Industrial and Starflight Concern",
+        "Career": "Transporter",
+        "Role": "Heavy Freight",
+        "Size": 4,
+        "Cargo": 224,
+        "Type": "Ship",
+        "CommLink": {
+            "HasCommLink": true,
+            "Date": "2024-10-20",
+            "Url": "https://robertsspaceindustries.com/comm-link/transmission/20214-MISC-Starlancer-MAX"
+        },
+        "ProgressTracker": {
+            "Status": "InProd",
+            "Patch": null,
+            "IsOnPT": false,
+            "ID": null
+        },
+        "Store": {
+            "Url": "https://robertsspaceindustries.com/comm-link/transmission/20214-MISC-Starlancer-MAX",
+            "IsPromotionOnly": false,
+            "IsLimitedSale": false,
+            "Buy": 250
+        },
+        "PU": {
+            "Patch": null,
+            "Date": null,
+            "HasPerf": false,
+            "IsPTUOnly": false,
+            "IsPTUBuyOnly": false,
+            "Buy": null
+        }
+    },
+    {
+        "ClassName": "MISC_Starlancer_Tac",
+        "Name": "MISC Starlancer Tac",
+        "Manufacturer": "Musashi Industrial and Starflight Concern",
+        "Career": "Transporter",
+        "Role": "Tactical",
+        "Size": 4,
+        "Cargo": 96,
+        "Type": "Ship",
+        "CommLink": {
+            "HasCommLink": true,
+            "Date": "2024-10-20",
+            "Url": "https://robertsspaceindustries.com/comm-link/transmission/20213-MISC-Starlancer-TAC"
+        },
+        "ProgressTracker": {
+            "Status": "InProd",
+            "Patch": null,
+            "IsOnPT": false,
+            "ID": null
+        },
+        "Store": {
+            "Url": "https://robertsspaceindustries.com/comm-link/transmission/20213-MISC-Starlancer-TAC",
+            "IsPromotionOnly": false,
+            "IsLimitedSale": false,
+            "Buy": 330
+        },
+        "PU": {
+            "Patch": null,
+            "Date": null,
+            "HasPerf": false,
+            "IsPTUOnly": false,
+            "IsPTUBuyOnly": false,
+            "Buy": null
         }
     },
     {
@@ -4593,7 +4715,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": null
+            "Buy": 185220
         }
     },
     {
@@ -4655,14 +4777,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 50.0
+            "Buy": 50
         },
         "PU": {
             "Patch": "3.11.0",
             "Date": "2020-10-08",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1146600.0
+            "Buy": 1146600
         }
     },
     {
@@ -4688,14 +4810,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 60.0
+            "Buy": 60
         },
         "PU": {
             "Patch": "3.11.0",
             "Date": "2020-10-08",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1587600.0
+            "Buy": 1587600
         }
     },
     {
@@ -4721,14 +4843,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65.0
+            "Buy": 65
         },
         "PU": {
             "Patch": "3.11.0",
             "Date": "2020-10-08",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1149580.0
+            "Buy": 1149580
         }
     },
     {
@@ -4754,13 +4876,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 60.0
+            "Buy": 60
         },
         "PU": {
             "Patch": "0.8.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1375920.0
+            "Buy": 1375920
         }
     },
     {
@@ -4786,13 +4908,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65.0
+            "Buy": 65
         },
         "PU": {
             "Patch": "0.9.2",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1490580.0
+            "Buy": 1490580
         }
     },
     {
@@ -4818,13 +4940,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 70.0
+            "Buy": 70
         },
         "PU": {
             "Patch": "0.9.1",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1852200.0
+            "Buy": 1852200
         }
     },
     {
@@ -4850,13 +4972,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 125.0
+            "Buy": 125
         },
         "PU": {
             "Patch": "0.9.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3748500.0
+            "Buy": 3748500
         }
     },
     {
@@ -4885,14 +5007,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "May 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19931-May-2024-Subscriber-Promotions",
-            "Buy": 250.0
+            "Buy": 250
         },
         "PU": {
             "Patch": "3.15.0",
             "Date": "2021-11-10",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 11466000.0
+            "Buy": 11466000
         }
     },
     {
@@ -4918,13 +5040,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 475.0
+            "Buy": 475
         },
         "PU": {
             "Patch": "3.2.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 27231750.0
+            "Buy": 27231750
         }
     },
     {
@@ -4950,13 +5072,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 435.0
+            "Buy": 435
         },
         "PU": {
             "Patch": "3.4.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 24938550.0
+            "Buy": 24938550
         }
     },
     {
@@ -4982,13 +5104,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 50.0
+            "Buy": 50
         },
         "PU": {
             "Patch": "2.6.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 573300.0
+            "Buy": 573300
         }
     },
     {
@@ -5014,13 +5136,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 950.0
+            "Buy": 950
         },
         "PU": {
             "Patch": "3.6.2",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 65356200.0
+            "Buy": 65356200
         }
     },
     {
@@ -5046,7 +5168,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 60.0
+            "Buy": 60
         },
         "PU": {
             "HasPerf": false,
@@ -5077,7 +5199,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65.0
+            "Buy": 65
         },
         "PU": {
             "HasPerf": false,
@@ -5108,7 +5230,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 60.0
+            "Buy": 60
         },
         "PU": {
             "HasPerf": false,
@@ -5139,13 +5261,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 100.0
+            "Buy": 100
         },
         "PU": {
             "Patch": "0.9.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1499400.0
+            "Buy": 1499400
         }
     },
     {
@@ -5175,7 +5297,7 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "May 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19931-May-2024-Subscriber-Promotions",
-            "Buy": 45.0
+            "Buy": 45
         },
         "PU": {
             "Patch": "3.22.0",
@@ -5183,7 +5305,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 105840.0
+            "Buy": 105840
         }
     },
     {
@@ -5210,7 +5332,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 55.0
+            "Buy": 55
         },
         "PU": {
             "Patch": "3.22.0",
@@ -5218,7 +5340,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 132300.0
+            "Buy": 132300
         }
     },
     {
@@ -5245,7 +5367,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 50.0
+            "Buy": 50
         },
         "PU": {
             "Patch": "3.22.0",
@@ -5253,7 +5375,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 119070.0
+            "Buy": 119070
         }
     },
     {
@@ -5279,7 +5401,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 275.0
+            "Buy": 275
         },
         "PU": {
             "HasPerf": false,
@@ -5310,7 +5432,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 250.0
+            "Buy": 250
         },
         "PU": {
             "HasPerf": false,
@@ -5341,7 +5463,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 575.0
+            "Buy": 575
         },
         "PU": {
             "HasPerf": false,
@@ -5372,13 +5494,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 45.0
+            "Buy": 45
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 1020600.0
+            "Buy": 1020600
         }
     },
     {
@@ -5404,13 +5526,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 20.0
+            "Buy": 20
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 423360.0
+            "Buy": 423360
         }
     },
     {
@@ -5436,13 +5558,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 35.0
+            "Buy": 35
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 907200.0
+            "Buy": 907200
         }
     },
     {
@@ -5468,13 +5590,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 30.0
+            "Buy": 30
         },
         "PU": {
             "Patch": "1.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 687960.0
+            "Buy": 687960
         }
     },
     {
@@ -5500,13 +5622,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 25.0
+            "Buy": 25
         },
         "PU": {
             "Patch": "0.8.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 680400.0
+            "Buy": 680400
         }
     },
     {
@@ -5532,13 +5654,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 240.0
+            "Buy": 240
         },
         "PU": {
             "Patch": "2.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 10160640.0
+            "Buy": 10160640
         }
     },
     {
@@ -5564,13 +5686,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 315.0
+            "Buy": 315
         },
         "PU": {
             "Patch": "3.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 12186720.0
+            "Buy": 12186720
         }
     },
     {
@@ -5596,13 +5718,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": true,
-            "Buy": 350.0
+            "Buy": 350
         },
         "PU": {
             "Patch": "3.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 14817600.0
+            "Buy": 14817600
         }
     },
     {
@@ -5628,14 +5750,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 200.0
+            "Buy": 200
         },
         "PU": {
             "Patch": "3.14.0",
             "Date": "2021-08-06",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 8043840.0
+            "Buy": 8043840
         }
     },
     {
@@ -5661,7 +5783,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 380.0
+            "Buy": 380
         },
         "PU": {
             "HasPerf": false,
@@ -5693,7 +5815,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 60.0
+            "Buy": 60
         },
         "PU": {
             "Patch": "3.19.0",
@@ -5701,7 +5823,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 136080.0
+            "Buy": 136080
         }
     },
     {
@@ -5727,13 +5849,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150.0
+            "Buy": 150
         },
         "PU": {
             "Patch": "3.7.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 3402000.0
+            "Buy": 3402000
         }
     },
     {
@@ -5759,7 +5881,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 650.0
+            "Buy": 650
         },
         "PU": {
             "HasPerf": false,
@@ -5790,7 +5912,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 675.0
+            "Buy": 675
         },
         "PU": {
             "HasPerf": false,
@@ -5814,19 +5936,20 @@
         },
         "ProgressTracker": {
             "Status": "InProd",
-            "IsOnPT": true,
+            "IsOnPT": false,
             "ID": "slwazervdidy3"
         },
         "Store": {
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 750.0
+            "Buy": 750
         },
         "PU": {
-            "HasPerf": true,
+            "HasPerf": false,
             "IsPTUOnly": false,
-            "IsPreview": true,
+            "IsPreview": false,
+            "IsAI": true,
             "Buy": null
         }
     },
@@ -5856,14 +5979,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "December 2023",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19618-December-2023-Subscriber-Promotions",
-            "Buy": 240.0
+            "Buy": 240
         },
         "PU": {
             "Patch": "3.17.1",
             "Date": "2022-05-19",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 5443200.0
+            "Buy": 5443200
         }
     },
     {
@@ -5892,14 +6015,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "December 2023",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19618-December-2023-Subscriber-Promotions",
-            "Buy": 230.0
+            "Buy": 230
         },
         "PU": {
             "Patch": "3.18.0",
             "Date": "2023-03-10",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 5528517.0
+            "Buy": 5528517
         }
     },
     {
@@ -5933,7 +6056,7 @@
             "Date": "2024-05-17",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": null
+            "Buy": 137200
         }
     },
     {
@@ -5959,13 +6082,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 50.0
+            "Buy": 50
         },
         "PU": {
             "Patch": "3.0.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 120186.0
+            "Buy": 120186
         }
     },
     {
@@ -5983,8 +6106,8 @@
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/20074-Roadmap-Roundup-July-24-2024"
         },
         "ProgressTracker": {
-            "Status": "NextPatch",
-            "Patch": "4.0.0",
+            "Status": "Released",
+            "Patch": "3.24.2",
             "IsOnPT": false,
             "ID": null
         },
@@ -5992,10 +6115,12 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150.0
+            "Buy": 175
         },
         "PU": {
-            "HasPerf": false,
+            "Patch": "3.24.2",
+            "Date": "2024-10-18",
+            "HasPerf": true,
             "IsPTUOnly": false,
             "Buy": null
         }
@@ -6004,8 +6129,8 @@
         "ClassName": "RSI_Zeus_ES",
         "Name": "RSI Zeus Mk II ES",
         "Manufacturer": "Roberts Space Industries",
-        "Career": "Explorer",
-        "Role": "Explorer",
+        "Career": "Exploration",
+        "Role": "Expedition",
         "Size": 3,
         "Cargo": 32,
         "Type": "Ship",
@@ -6015,8 +6140,8 @@
             "Url": "https://robertsspaceindustries.com/comm-link/transmission/19975-Roadmap-Roundup-May-15-2024"
         },
         "ProgressTracker": {
-            "Status": "NextPatch",
-            "Patch": "4.0.0",
+            "Status": "Released",
+            "Patch": "3.24.2",
             "IsOnPT": false,
             "ID": null
         },
@@ -6024,10 +6149,12 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 150.0
+            "Buy": 175
         },
         "PU": {
-            "HasPerf": false,
+            "Patch": "3.24.2",
+            "Date": "2024-10-18",
+            "HasPerf": true,
             "IsPTUOnly": false,
             "Buy": null
         }
@@ -6055,7 +6182,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 190.0
+            "Buy": 190
         },
         "PU": {
             "HasPerf": false,
@@ -6086,13 +6213,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 55.0
+            "Buy": 55
         },
         "PU": {
             "Patch": "3.1.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 110170.0
+            "Buy": 110170
         }
     },
     {
@@ -6118,13 +6245,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 80.0
+            "Buy": 80
         },
         "PU": {
             "Patch": "3.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 160247.0
+            "Buy": 160247
         }
     },
     {
@@ -6153,14 +6280,14 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "March 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19781-March-2024-Subscriber-Promotions",
-            "Buy": 75.0
+            "Buy": 75
         },
         "PU": {
             "Patch": "3.13.0",
             "Date": "2021-04-22",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 150232.0
+            "Buy": 150232
         }
     },
     {
@@ -6189,13 +6316,13 @@
             "IsShipOfTheMonth": false,
             "ShipOfTheMonth": "January 2024",
             "ShipOfTheMonthUrl": "https://robertsspaceindustries.com/comm-link/transmission/19721-January-2024-Subscriber-Promotions",
-            "Buy": 65.0
+            "Buy": 65
         },
         "PU": {
             "Patch": "3.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 130201.0
+            "Buy": 130201
         }
     },
     {
@@ -6221,13 +6348,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65.0
+            "Buy": 65
         },
         "PU": {
             "Patch": "3.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 130201.0
+            "Buy": 130201
         }
     },
     {
@@ -6253,13 +6380,13 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 65.0
+            "Buy": 65
         },
         "PU": {
             "Patch": "3.3.0",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 130201.0
+            "Buy": 130201
         }
     },
     {
@@ -6285,14 +6412,14 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 120.0
+            "Buy": 120
         },
         "PU": {
             "Patch": "3.13.1",
             "Date": "2021-05-20",
             "HasPerf": true,
             "IsPTUOnly": false,
-            "Buy": 961482.0
+            "Buy": 961482
         }
     },
     {
@@ -6318,7 +6445,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 35.0
+            "Buy": 35
         },
         "PU": {
             "HasPerf": false,
@@ -6349,7 +6476,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 35.0
+            "Buy": 35
         },
         "PU": {
             "HasPerf": false,
@@ -6380,7 +6507,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 40.0
+            "Buy": 40
         },
         "PU": {
             "HasPerf": false,
@@ -6412,7 +6539,7 @@
             "Url": null,
             "IsPromotionOnly": false,
             "IsLimitedSale": false,
-            "Buy": 90.0
+            "Buy": 90
         },
         "PU": {
             "Patch": "3.21.1",
@@ -6420,7 +6547,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 453600.0
+            "Buy": 453600
         }
     },
     {
@@ -6455,7 +6582,7 @@
             "HasPerf": true,
             "IsPTUOnly": false,
             "IsPTUBuyOnly": false,
-            "Buy": 476280.0
+            "Buy": 476280
         }
     },
     {

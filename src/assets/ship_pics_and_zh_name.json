@@ -88,19 +88,19 @@
     { "Ground": "地面" },
     { "Ground Combat": "地面战斗" },
     {
-      "Aegis Avenger Titan": "圣盾 复仇者-泰坦",
+      "Aegis Avenger Titan": "圣盾 复仇者 泰坦",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Favenger-titan__iso_xs_152ae79748c60108a328e62fcfe9189d.png?alt=media"
     },
     {
-      "Aegis Avenger Stalker": "圣盾 复仇者-追猎者",
+      "Aegis Avenger Stalker": "圣盾 复仇者 追猎者",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Favenger-stalker__iso_xs_152ae79748c60108a328e62fcfe9189d.png?alt=media"
     },
     {
-      "Aegis Avenger Titan Renegade": "圣盾 复仇者-泰坦变节者",
+      "Aegis Avenger Titan Renegade": "圣盾 复仇者 泰坦变节者",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Favenger-titan-renegade__iso_xs_97bf6df3b52dfe3ebace416626bb7ebf.png?alt=media"
     },
     {
-      "Aegis Avenger Warlock": "圣盾 复仇者-术士",
+      "Aegis Avenger Warlock": "圣盾 复仇者 术士",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Favenger-warlock__iso_xs_152ae79748c60108a328e62fcfe9189d.png?alt=media"
     },
     {
@@ -148,15 +148,15 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fredeemer__iso_xs_aa919a44c4f8a13138bd70c0245f9b39.png?alt=media"
     },
     {
-      "Aegis Retaliator Base": "圣盾 报复者-基础",
+      "Aegis Retaliator Base": "圣盾 报复者 基础",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fretaliator-base__iso_xs_f944d2dbf5a7e029552a4d720802ca5a.png?alt=media"
     },
     {
-      "Aegis Retaliator Bomber": "圣盾 报复者-轰炸",
+      "Aegis Retaliator Bomber": "圣盾 报复者 轰炸",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fretaliator-bomber__iso_xs_f944d2dbf5a7e029552a4d720802ca5a.png?alt=media"
     },
     {
-      "Aegis Retaliator": "圣盾 报复者-轰炸",
+      "Aegis Retaliator": "圣盾 报复者 轰炸",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fretaliator-bomber__iso_xs_f944d2dbf5a7e029552a4d720802ca5a.png?alt=media"
     },
     {
@@ -164,15 +164,15 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fsabre__iso_xs_5e5a1a34b33966ac08604930a61ab1d3.png?alt=media"
     },
     {
-      "Aegis Sabre Comet": "圣盾 军刀-彗星",
+      "Aegis Sabre Comet": "圣盾 军刀 彗星",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fsabre-comet__iso_xs_670c626ac3ae41b008a4de62620349f1.png?alt=media"
     },
     {
-      "Aegis Sabre Raven": "圣盾 军刀-渡鸦",
+      "Aegis Sabre Raven": "圣盾 军刀 渡鸦",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fsabre-raven__iso_xs_584aba7e1c48fb54103be537a5bb1690.png?alt=media"
     },
     {
-      "Aegis Vanguard Warden": "圣盾 先锋-典狱长",
+      "Aegis Vanguard Warden": "圣盾 先锋 典狱长",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fvanguard-warden__iso_xs_a8b30178b4b16378ea418141bcb6d6a1.png?alt=media"
     },
     {
@@ -180,15 +180,15 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fvulcan__iso_xs_79bc5160b523de785dec57acc7832314.png?alt=media"
     },
     {
-      "Aegis Vanguard Harbinger": "圣盾 先锋-先驱者",
+      "Aegis Vanguard Harbinger": "圣盾 先锋 先驱者",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fvanguard-harbinger__iso_xs_6fab332bd22a55289a0e4a40ea1d14ca.png?alt=media"
     },
     {
-      "Aegis Vanguard Hoplite": "圣盾 先锋-重装兵",
+      "Aegis Vanguard Hoplite": "圣盾 先锋 重装兵",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fvanguard-hoplite__iso_xs_80ec3c3c3d458d3832d8585bfcf5c178.png?alt=media"
     },
     {
-      "Aegis Vanguard Sentinel": "圣盾 先锋-哨兵",
+      "Aegis Vanguard Sentinel": "圣盾 先锋 哨兵",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fvanguard-sentinel__iso_xs_1fd3eb760768c37db72b93cb4adacfeb.png?alt=media"
     },
     {
@@ -284,11 +284,11 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fmole__iso_xs_ef093d9ef92675c37742123ba273429b.png?alt=media"
     },
     {
-      "Argo MPUV Cargo": "南船 MPUV-货运",
+      "Argo MPUV Cargo": "南船 MPUV 货运",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fmpuv-cargo__iso_xs_b7633991327209a25601fc041bd66a99.png?alt=media"
     },
     {
-      "Argo MPUV Personnel": "南船 MPUV-载人",
+      "Argo MPUV Personnel": "南船 MPUV 载人",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fmpuv-personnel__iso_xs_769eeea89763b90e86e5d844fa15abf7.png?alt=media"
     },
     {
@@ -424,7 +424,7 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fcutter-rambler__iso_xs_25b3964b7aa5f485f4c981b62d31f2a6.png?alt=media"
     },
     {
-      "Drake Cutter Scout": "德雷克 小刀-侦察",
+      "Drake Cutter Scout": "德雷克 小刀 侦察",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fcutter-scout__iso_xs_ab634d0f5293059c5798cee82a6002fd.png?alt=media"
     },
     {
@@ -460,7 +460,7 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Ftalon__iso_xs_24e563f571b672ec5bca1a8239c1a2cd.png?alt=media"
     },
     {
-      "Esperia Talon Shrike": "埃斯佩里亚 利爪-伯劳",
+      "Esperia Talon Shrike": "埃斯佩里亚 利爪 伯劳",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Ftalon-shrike__iso_xs_5d8064dc926bb58eb9dc019e36ee1a7d.png?alt=media"
     },
     {
@@ -508,15 +508,15 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Ffreelancer__iso_xs_331ae05a71030fbfbb5af3e1ddcb8431.png?alt=media"
     },
     {
-      "MISC Freelancer DUR": "武藏 自由枪骑兵-DUR",
+      "MISC Freelancer DUR": "武藏 自由枪骑兵 DUR",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Ffreelancer-dur__iso_xs_24b39eb453aa547c5672c6af32e60111.png?alt=media"
     },
     {
-      "MISC Freelancer MAX": "武藏 自由枪骑兵-MAX",
+      "MISC Freelancer MAX": "武藏 自由枪骑兵 MAX",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Ffreelancer-max__iso_xs_43e078188965f8e28b0707dcea87c629.png?alt=media"
     },
     {
-      "MISC Freelancer MIS": "武藏 自由枪骑兵-MIS",
+      "MISC Freelancer MIS": "武藏 自由枪骑兵 MIS",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Ffreelancer-mis__iso_xs_e8068390fdf73801ec68af00ce4a5cdc.png?alt=media"
     },
     {
@@ -564,27 +564,27 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Frazor__iso_xs_cd67edf791364de26bf894d9d7749ba2.png?alt=media"
     },
     {
-      "Mirai Razor EX": "未来 剃刀-EX",
+      "Mirai Razor EX": "未来 剃刀 EX",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Frazor-ex__iso_xs_18c505e872109425a8a652f71b75c5d8.png?alt=media"
     },
     {
-      "Mirai Razor LX": "未来 剃刀-LX",
+      "Mirai Razor LX": "未来 剃刀 LX",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Frazor-lx__iso_xs_56025f9cb557f8a53b432bfa89e353e5.png?alt=media"
     },
     {
-      "MISC Reliant Kore": "武藏 信赖-基础",
+      "MISC Reliant Kore": "武藏 信赖 基础",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Freliant-kore__iso_xs_70eb33e02f59c9c1220b3f5c12ec1774.png?alt=media"
     },
     {
-      "MISC Reliant Mako": "武藏 信赖-新闻",
+      "MISC Reliant Mako": "武藏 信赖 新闻",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Freliant-mako__iso_xs_c87c715f1337c4ff274c95f5d49fa821.png?alt=media"
     },
     {
-      "MISC Reliant Sen": "武藏 信赖-科考",
+      "MISC Reliant Sen": "武藏 信赖 科考",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Freliant-sen__iso_xs_e34e72c0107fb6d402656f8b5ae8caa9.png?alt=media"
     },
     {
-      "MISC Reliant Tana": "武藏 信赖-武装",
+      "MISC Reliant Tana": "武藏 信赖 武装",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Freliant-tana__iso_xs_2732e2d60e0ae4acbe09a2c05a0ad974.png?alt=media"
     },
     {
@@ -628,11 +628,11 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2F400i__iso_xs_411dd3caa5b0d26275aa7fa68a7ea685.png?alt=media"
     },
     {
-      "Origin 600i": "起源 600i-探索",
+      "Origin 600i": "起源 600i 探索",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2F600i-explorer__iso_xs_1a61d8a1e61471eec33f33ef381ee8e5.png?alt=media"
     },
     {
-      "Origin 600i Touring": "起源 600i-旅行",
+      "Origin 600i Touring": "起源 600i 旅行",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2F600i-touring__iso_xs_1a61d8a1e61471eec33f33ef381ee8e5.png?alt=media"
     },
     {
@@ -680,27 +680,27 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fapollo-triage__iso_xs_e86c00b4736777218a662aef27d481c2.png?alt=media"
     },
     {
-      "RSI Arrastra": "RSI 阿斯特拉",
+      "RSI Arrastra": "RSI 阿拉斯塔",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Farrastra__iso_xs_7477dd6182d30d98fc6a1be7fc2f5b42.png?alt=media"
     },
     {
-      "RSI Aurora CL": "RSI 极光-CL",
+      "RSI Aurora CL": "RSI 极光 CL",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Faurora-cl__iso_xs_df70330b68b8d1fb1ad145af8dc41eda.png?alt=media"
     },
     {
-      "RSI Aurora ES": "RSI 极光-ES",
+      "RSI Aurora ES": "RSI 极光 ES",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Faurora-es__iso_xs_dc3b348f188fd840681bd1867b3492bc.png?alt=media"
     },
     {
-      "RSI Aurora LN": "RSI 极光-LN",
+      "RSI Aurora LN": "RSI 极光 LN",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Faurora-ln__iso_xs_3272af6a28c857444eaadd7be1c5ba80.png?alt=media"
     },
     {
-      "RSI Aurora LX": "RSI 极光-LX",
+      "RSI Aurora LX": "RSI 极光 LX",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Faurora-lx__iso_xs_674e6a92f2baaa135125a1ed7d8cbaed.png?alt=media"
     },
     {
-      "RSI Aurora MR": "RSI 极光-MR",
+      "RSI Aurora MR": "RSI 极光 MR",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Faurora-mr__iso_xs_f51952e7b49d3b37df7f6809bccc9d18.png?alt=media"
     },
     {
@@ -840,7 +840,7 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fsan-tok-yai__iso_xs_f42f3b0c5ab77101946ad6e30ec0747b.png?alt=media"
     },
     {
-      "Aegis Sabre Firebird": "圣盾 军刀-火鸟",
+      "Aegis Sabre Firebird": "圣盾 军刀 火鸟",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fsabre-firebird__iso_s_8105e86cda70e2f44d23dc1cb1cb26d4.png?alt=media"
     },
     {
@@ -876,11 +876,11 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fursa-medivac__iso_s_f79f7990742b38beff962e362a3907f1.png?alt=media"
     },
     {
-      "Drake Ironclad": "",
+      "Drake Ironclad": "德雷克 铁甲",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fironclad__iso_l_88b96ce6b191dd7291322479aed80a6e.png?alt=media"
     },
     {
-      "Drake Ironclad Assault": "",
+      "Drake Ironclad Assault": "德雷克 铁甲 突击",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fironclad-assault__iso_l_e7abce27fa0ed0c4369f2c955bc73014.png?alt=media"
     },
     {
@@ -890,6 +890,14 @@
     {
       "Aegis Sabre Peregrine": "圣盾 军刀 游隼",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fsabre-peregrine__iso_s_266f9058ba5f1c4e23a5d2ad40c8a603.png?alt=media"
+    },
+    {
+      "MISC Starlancer Tac": "武藏 星际枪骑兵 TAC",
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fstarlancer-tac__iso_l_a4328353ab8d50bad317de7cebdcb951.png?alt=media"
+    },
+    {
+      "MISC Starlancer Max": "武藏 星际枪骑兵 MAX",
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fstarlancer-max__iso_l_7d6e77e5a785e30bb628b8fbf8814cc8.png?alt=media"
     }
   ]
 }

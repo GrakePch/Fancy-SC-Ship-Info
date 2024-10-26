@@ -11,9 +11,9 @@ import ship_items from "../../data/ship-items-min.json";
 import I18nPure from "../I18nPure";
 
 const dmgTypeToIcon = {
-  Physical: icons.BulletPhy,
-  Energy: icons.BulletEne,
-  Distortion: icons.BulletDis,
+  Physical: icons.BulletNewPhy,
+  Energy: icons.BulletNewEne,
+  Distortion: icons.BulletNewDis,
 };
 
 const signalToIcon = {
@@ -27,6 +27,32 @@ const getItemInfo = (name) => {
     if (ship_items[i].stdItem.Name == name) return ship_items[i];
   }
   return null;
+};
+
+const getZhName = (name) => {
+  let res =
+    component_zh_name[name] ||
+    component_zh_name[name?.toLowerCase()] ||
+    component_zh_name[name?.slice(0, name?.lastIndexOf(" "))] ||
+    component_zh_name[name?.slice(0, name?.lastIndexOf(" ")).toLowerCase()] ||
+    component_zh_name[
+      name
+        ?.split(" ")
+        ?.slice(0, name?.split(" ").length - 2)
+        .join(" ")
+    ] ||
+    component_zh_name[
+      name
+        ?.split(" ")
+        ?.slice(0, name?.split(" ").length - 2)
+        .join(" ")
+        .toLowerCase()
+    ];
+  if (!res) return false;
+  let idx = res.lastIndexOf("(");
+  if (idx < 0) return res;
+  let pure = res.slice(0, idx);
+  return pure;
 };
 
 /* eslint-disable react/prop-types */
@@ -89,51 +115,33 @@ const SimpleWeapon = ({ item, num = 1, gimballed = false }) => {
   return (
     <div>
       <div className={`SimpleWeapon-container ${item.Ports && "dimmer"}`}>
-        <p>
-          {component_zh_name[baseLoadout.Name] ||
-            component_zh_name[baseLoadout.Name?.toLowerCase()] ||
-            component_zh_name[
-              baseLoadout?.Name?.slice(0, baseLoadout.Name?.lastIndexOf(" "))
-            ] ||
-            component_zh_name[
-              baseLoadout.Name?.slice(
-                0,
-                baseLoadout.Name?.lastIndexOf(" "),
-              ).toLowerCase()
-            ] ||
-            component_zh_name[
-              baseLoadout.Name?.split(" ")
-                ?.slice(0, baseLoadout?.Name?.split(" ").length - 2)
-                .join(" ")
-            ] ||
-            component_zh_name[
-              baseLoadout.Name?.split(" ")
-                ?.slice(0, baseLoadout?.Name?.split(" ").length - 2)
-                .join(" ")
-                .toLowerCase()
-            ] ||
-            baseLoadout.Name ||
-            "未知"}
-        </p>
+        <div className="SimpleWeapon-name">
+          <p>
+            {baseLoadout.Name
+              ? getZhName(baseLoadout.Name) || baseLoadout.Name
+              : "未知"}
+          </p>
+          <p>{baseLoadout.Name || "Unknown"}</p>
+        </div>
         <div className="SimpleWeapon-tail-icons font-slim">
           {trackingSignal && (
-            <>
-              <p
-                style={{
-                  color: signalToColor[trackingSignal],
-                  fill: signalToColor[trackingSignal],
-                }}
-              >
-                {signalToIcon[trackingSignal]}
-                {I18nPure("Short-" + trackingSignal, lang)}
-              </p>
-            </>
+            <p className="SimpleWeapon-type-tag"
+              style={{
+                color: signalToColor[trackingSignal],
+                fill: signalToColor[trackingSignal],
+                borderColor: signalToColor[trackingSignal] + "30",
+              }}
+            >
+              {signalToIcon[trackingSignal]}
+              {I18nPure("Short-" + trackingSignal, lang)}
+            </p>
           )}
           {bulletDmgType && (
-            <p
+            <p className="SimpleWeapon-type-tag"
               style={{
                 color: dmgTypeToColor[bulletDmgType],
                 fill: dmgTypeToColor[bulletDmgType],
+                borderColor: dmgTypeToColor[bulletDmgType] + "30",
               }}
             >
               {dmgTypeToIcon[bulletDmgType]}

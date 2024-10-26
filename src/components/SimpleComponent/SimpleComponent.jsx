@@ -1,9 +1,6 @@
 /* eslint-disable react/prop-types */
-import { useContext } from "react";
-
 import component_zh_name from "../../assets/component_zh_name.json";
 import icons from "../../assets/icons";
-import LangContext from "../../contexts/LangContext";
 import HardpointSizes from "../HardpointSizes/HardpointSizes";
 import I18nPure from "../I18nPure";
 
@@ -23,28 +20,27 @@ const classToColor = {
   Competition: "#a83434",
 };
 
+const getZhName = (name) => {
+  let res = component_zh_name[name] || component_zh_name[name?.toLowerCase()];
+  if (!res) return false;
+  let idx = res.lastIndexOf("(");
+  let pure = res.slice(0, idx);
+  return pure;
+};
 const SimpleComponent = ({ type, itemObj, icon }) => {
-  const lang = useContext(LangContext)[0];
+  const lang = localStorage.getItem("lang");
   const obj = itemObj.InstalledItems?.at(0);
+  const name = obj ? getZhName(obj.Name) || obj.Name || "未知" : "无";
   return (
     <div className="SimpleComponent">
-      <div className="icon">{icons[icon]}</div>
+      <div className="SimpleComponent-type font-slim">
+        <p>{type}</p>
+        <div className="SimpleComponent-type-icon">{icons[icon]}</div>
+        <HardpointSizes components={itemObj.InstalledItems} />
+      </div>
       <div className="SimpleComponent-contents">
-        <div className="SimpleComponent-type-sizes font-slim">
-          <p>{type}</p>
-          <div>
-            <HardpointSizes components={itemObj.InstalledItems} />
-          </div>
-        </div>
         <div className="SimpleComponent-name-grade">
-          <p>
-            {obj
-              ? component_zh_name[obj.Name] ||
-                component_zh_name[obj.Name?.toLowerCase()] ||
-                obj.Name ||
-                "未知"
-              : "无"}
-          </p>
+          <p>{name}</p>
           <p className="font-slim" style={{ color: classToColor[obj?.Class] }}>
             {obj &&
               (obj?.Class || obj?.Grade) &&

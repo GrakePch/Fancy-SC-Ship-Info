@@ -228,7 +228,7 @@ function ShipSelector({ shipIndex, dictShipZhName }) {
             {processedShipIndex.map((item, idx) => (
               <div
                 key={item.ClassName + idx}
-                onClick={() => navigate("/" + item.ClassName)}
+                onClick={() => navigate("/" + item.ClassName + "?simple=1")}
               >
                 <ShipSelectCard
                   shipName={
