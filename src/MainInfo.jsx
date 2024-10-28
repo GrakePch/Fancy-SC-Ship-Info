@@ -6,12 +6,10 @@ import axios from "axios";
 import "./App.css";
 import SimpleInfo from "./SimpleInfo";
 import ManufacturerToHue from "./assets/ManufacturerToHue";
-import bg_line from "./assets/lines.png";
 import manufacturers_small from "./assets/manufacturers_small";
 import ship_pics_and_zh_name from "./assets/ship_pics_and_zh_name.json";
 import statusToHue from "./assets/statusToHue";
 import CardList from "./components/CardList/CardList";
-import Components from "./components/Components/Components";
 import FlightAccelerations from "./components/FlightAccelerations/FlightAccelerations";
 import FlightCharacteristics from "./components/FlightCharacteristics/FlightCharacteristics";
 import I18n from "./components/I18n";
@@ -300,13 +298,6 @@ function MainInfo() {
 
   return (
     <>
-      {shipIdx == null && (
-        <ShipSelector
-          shipIndex={shipIndex}
-          dictShipZhName={dictShipZhName}
-          setSearchParams={setSearchParams}
-        />
-      )}
       {searchParams.get("simple") == 1 ? (
         <SimpleInfo
           shipIdx={shipIdx}

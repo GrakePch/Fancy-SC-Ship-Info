@@ -107,6 +107,12 @@ h1 {
   gap: 1rem;
 }
 
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -125,6 +131,11 @@ h1 {
 
 @media screen and (max-width: 719px) {
   .grid3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .grid2 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;

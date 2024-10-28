@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { mdiFilter, mdiMagnify, mdiVanUtility } from "@mdi/js";
+import { mdiMagnify } from "@mdi/js";
 import Icon from "@mdi/react";
 
 import ManufacturerToHue from "../../assets/ManufacturerToHue";
-import icons from "../../assets/icons";
 import manufacturers_small from "../../assets/manufacturers_small";
+import ship_pics_and_zh_name from "../../assets/ship_pics_and_zh_name.json";
+import shipIndex from "../../data/index-min.json";
+import ship_name_to_series from "../../data/ship_name_to_series.json";
 import I18n from "../I18n";
 import I18nPure from "../I18nPure";
 import ShipSelectCard from "./ShipSelectCard/ShipSelectCard";
@@ -24,10 +26,54 @@ const specialFileName = {
   RSI_Polaris_FW: "polaris",
 };
 
+const formatImgSrc = (name) =>
+  `https://ships.42kit.com/resized/${name
+    ?.normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace("'", "-")
+    .replace(".", "-")
+    .toLowerCase()
+    .trimEnd()
+    .replaceAll(" ", "-")}%20top.png`;
+
+const getManuButtonColors = (manu, isActive) =>
+  isActive
+    ? {
+        backgroundColor:
+          ManufacturerToHue[manu] !== undefined
+            ? `hsl(${ManufacturerToHue[manu]}, 100%, 90%)`
+            : "var(--color-text)",
+        color:
+          ManufacturerToHue[manu] !== undefined
+            ? `hsl(${ManufacturerToHue[manu]}, 20%, 19%)`
+            : "var(--color-bg)",
+        fill:
+          ManufacturerToHue[manu] !== undefined
+            ? `hsl(${ManufacturerToHue[manu]}, 20%, 19%)`
+            : "var(--color-bg)",
+        boxShadow:
+          ManufacturerToHue[manu] !== undefined
+            ? `var(--acrylic-edge), 0 .125rem .875rem .125rem hsla(${ManufacturerToHue[manu]}, 100%, 90%, 60%)`
+            : "var(--acrylic-edge), 0 .125rem .875rem .125rem hsla(0, 0%, 90%, 60%)",
+      }
+    : {
+        backgroundColor:
+          ManufacturerToHue[manu] !== undefined
+            ? `hsl(${ManufacturerToHue[manu]}, 20%, 25%)`
+            : "#303030",
+        color:
+          ManufacturerToHue[manu] !== undefined
+            ? `hsl(${ManufacturerToHue[manu]}, 100%, 90%)`
+            : "inherit",
+        fill:
+          ManufacturerToHue[manu] !== undefined
+            ? `hsl(${ManufacturerToHue[manu]}, 100%, 90%)`
+            : "var(--color-text)",
+      };
+
 /* eslint-disable react/prop-types */
-function ShipSelector({ shipIndex, dictShipZhName }) {
+function ShipSelector() {
   const [manufacturerList, setManufacturerList] = useState([]);
-  const [filterDrawerOn, setFilterDrawerOn] = useState(false);
   const [filterForManu, setFilterForManu] = useState(null);
   const [filterForShipVeh, setFilterForShipVeh] = useState([
     true,
@@ -35,6 +81,9 @@ function ShipSelector({ shipIndex, dictShipZhName }) {
     true,
   ]); /* 0: Ship, 1: Ground Vehicle, 2: Gravlev */
   const [filterForReleased, setFilterForReleased] = useState(false);
+  const [dictShipZhName, setDictShipZhName] = useState({});
+  const [seriesList, setSeriesList] = useState([]);
+
   const lang = localStorage.getItem("lang");
   const [searchField, setSearchField] = useState("");
   const navigate = useNavigate();
@@ -45,6 +94,18 @@ function ShipSelector({ shipIndex, dictShipZhName }) {
     !filterForShipVeh[0] ||
     !filterForShipVeh[1] ||
     !filterForShipVeh[2];
+
+  useEffect(() => {
+    let dShipZhName = {};
+    for (let i = 0; i < ship_pics_and_zh_name.ships.length; ++i) {
+      let firstKey = Object.keys(ship_pics_and_zh_name.ships[i])[0];
+      dShipZhName[firstKey] = ship_pics_and_zh_name.ships[i][firstKey];
+    }
+    setDictShipZhName(dShipZhName);
+
+    for (let i = 0; i < shipIndex.length; ++i)
+      shipIndex[i].NameShort = shipIndex[i].Name.split(" ").slice(1).join(" ");
+  }, []);
 
   useEffect(() => {
     let manuSet = new Set();
@@ -58,36 +119,66 @@ function ShipSelector({ shipIndex, dictShipZhName }) {
     setSearchField(e.target.value);
   };
 
-  const processedShipIndex = shipIndex
-    .filter(
-      (item) =>
-        (filterForManu == null ? true : item.Manufacturer == filterForManu) &&
-        (filterForReleased
-          ? item.ProgressTracker.Status == "Released" ||
-            item.ProgressTracker.Status == "PU"
-          : true) &&
-        ((item.Type == "Ship" && filterForShipVeh[0]) ||
-          (item.Type == "Vehicle" && filterForShipVeh[1]) ||
-          (item.Type == "Gravlev" && filterForShipVeh[2])) &&
-        (item.NameShort?.toLowerCase().includes(searchField.toLowerCase()) ||
-          dictShipZhName[item.Name]
-            ?.split(" ")
-            .slice(1)
-            .join(" ")
-            .toLowerCase()
-            .includes(searchField.toLowerCase())),
-    )
-    .sort((a, b) =>
-      lang == "zh_cn"
-        ? (
-            dictShipZhName[a.Name]?.split(" ").slice(1).join(" ") || a.NameShort
-          )?.localeCompare(
-            dictShipZhName[b.Name]?.split(" ").slice(1).join(" ") ||
-              b.NameShort,
-            "zh",
-          )
-        : a.NameShort?.localeCompare(b.NameShort),
+  useEffect(() => {
+    const processedShipIndex = shipIndex
+      .filter(
+        (item) =>
+          (filterForManu == null ? true : item.Manufacturer == filterForManu) &&
+          (filterForReleased
+            ? item.ProgressTracker.Status == "Released" ||
+              item.ProgressTracker.Status == "PU"
+            : true) &&
+          ((item.Type == "Ship" && filterForShipVeh[0]) ||
+            (item.Type == "Vehicle" && filterForShipVeh[1]) ||
+            (item.Type == "Gravlev" && filterForShipVeh[2])) &&
+          (item.NameShort?.toLowerCase().includes(searchField.toLowerCase()) ||
+            dictShipZhName[item.Name]
+              ?.split(" ")
+              .slice(1)
+              .join(" ")
+              .toLowerCase()
+              .includes(searchField.toLowerCase())),
+      )
+      .sort((a, b) =>
+        lang == "zh_cn"
+          ? (
+              dictShipZhName[a.Name]?.split(" ").slice(1).join(" ") ||
+              a.NameShort
+            )?.localeCompare(
+              dictShipZhName[b.Name]?.split(" ").slice(1).join(" ") ||
+                b.NameShort,
+              "zh",
+            )
+          : a.NameShort?.localeCompare(b.NameShort),
+      );
+    processedShipIndex.sort((a, b) =>
+      a.Store.Buy === null
+        ? 1
+        : b.Store.Buy === null
+          ? -1
+          : a.Store.Buy - b.Store.Buy,
     );
+    let seriesDict = {};
+    let seriesOrder = [];
+    for (const data of processedShipIndex) {
+      let seriesName = ship_name_to_series[data.ClassName];
+      if (!seriesName) seriesName = data.ClassName;
+      if (!seriesDict[seriesName]) {
+        seriesOrder.push(seriesName);
+        seriesDict[seriesName] = {
+          ships: [],
+        };
+      }
+      seriesDict[seriesName].ships.push(data);
+    }
+
+    let series = seriesOrder.map((s) => ({
+      className: s,
+      ships: seriesDict[s].ships,
+    }));
+
+    setSeriesList(series);
+  }, [filterForManu]);
 
   return (
     <div className="Ship-selector-container">
@@ -101,160 +192,118 @@ function ShipSelector({ shipIndex, dictShipZhName }) {
               placeholder={I18nPure("ShipSelectorSearch", lang)}
               onChange={handleSearchChange}
             />
-            <button
-              className={`Ship-selector-filter-toggle ${isFilterActive && "on"}`}
-            >
-              <Icon
-                path={mdiFilter}
-                size={1}
-                onClick={() => setFilterDrawerOn((prev) => !prev)}
-              />
-            </button>
           </div>
-          <div className={`Ship-selector-filter ${filterDrawerOn || "off"}`}>
-            <div className="filter-first-row">
+          <div className="filter-by-manufacturer">
+            {manufacturerList.map((manu) => (
               <button
-                className={`circleIconBtn ${
-                  !filterForShipVeh[0] && "off"
-                } rotate90`}
-                onClick={() => {
-                  setFilterForShipVeh((p) => [!p[0], p[1], p[2]]);
-                }}
-                type="button"
+                key={manu}
+                style={getManuButtonColors(manu, manu === filterForManu)}
+                onClick={() =>
+                  setFilterForManu((current) =>
+                    current != null && current == manu ? null : manu,
+                  )
+                }
               >
-                {icons["ship_top"]}
+                {manufacturers_small[manu] || manu[0]}
+                <I18n text={manu} />
               </button>
-              <button
-                className={`circleIconBtn ${!filterForShipVeh[1] && "off"}`}
-                onClick={() => {
-                  setFilterForShipVeh((p) => [p[0], !p[1], p[2]]);
-                }}
-                type="button"
-              >
-                <Icon path={mdiVanUtility} size={1} />
-              </button>
-              <button
-                className={`circleIconBtn ${!filterForShipVeh[2] && "off"}`}
-                onClick={() => {
-                  setFilterForShipVeh((p) => [p[0], p[1], !p[2]]);
-                }}
-                type="button"
-              >
-                {icons["gravlev"]}
-              </button>
-              <div>
-                <input
-                  className="btnFilterForReleased"
-                  onChange={() => {
-                    setFilterForReleased((p) => !p);
-                  }}
-                  type="checkbox"
-                  id="filterForReleased"
-                  checked={filterForReleased}
-                />
-                <label htmlFor="filterForReleased">
-                  <I18n text="ShipFilterReleasedOnly" />
-                </label>
-              </div>
-            </div>
-
-            <div className="filter-by-manufacturer">
-              {manufacturerList.map((manu) => (
-                <div className="filter-btn-and-tooltip" key={manu}>
-                  <button
-                    style={
-                      manu !== filterForManu
-                        ? {
-                            backgroundColor:
-                              ManufacturerToHue[manu] !== undefined
-                                ? `hsl(${ManufacturerToHue[manu]}, 20%, 25%)`
-                                : "#303030",
-                            color:
-                              ManufacturerToHue[manu] !== undefined
-                                ? `hsl(${ManufacturerToHue[manu]}, 100%, 90%)`
-                                : "inherit",
-                            fill:
-                              ManufacturerToHue[manu] !== undefined
-                                ? `hsl(${ManufacturerToHue[manu]}, 100%, 90%)`
-                                : "var(--color-text)",
-                          }
-                        : {
-                            backgroundColor:
-                              ManufacturerToHue[manu] !== undefined
-                                ? `hsl(${ManufacturerToHue[manu]}, 100%, 90%)`
-                                : "var(--color-text)",
-                            color:
-                              ManufacturerToHue[manu] !== undefined
-                                ? `hsl(${ManufacturerToHue[manu]}, 20%, 19%)`
-                                : "var(--color-bg)",
-                            fill:
-                              ManufacturerToHue[manu] !== undefined
-                                ? `hsl(${ManufacturerToHue[manu]}, 20%, 19%)`
-                                : "var(--color-bg)",
-                            boxShadow:
-                              ManufacturerToHue[manu] !== undefined
-                                ? `var(--acrylic-edge), 0 .125rem .875rem .125rem hsla(${ManufacturerToHue[manu]}, 100%, 90%, 60%)`
-                                : "var(--acrylic-edge), 0 .125rem .875rem .125rem hsla(0, 0%, 90%, 60%)",
-                          }
-                    }
-                    onClick={() =>
-                      setFilterForManu((current) =>
-                        current != null && current == manu ? null : manu,
-                      )
-                    }
-                  >
-                    {manufacturers_small[manu] || manu[0]}
-                  </button>
-                  <div
-                    className="font-slim"
-                    style={{
-                      backgroundColor:
-                        ManufacturerToHue[manu] !== undefined
-                          ? `hsl(${ManufacturerToHue[manu]}, 100%, 90%)`
-                          : "#e3e3e3",
-                    }}
-                  >
-                    <I18n text={manu} />
-                  </div>
-                </div>
-              ))}
-            </div>
+            ))}
           </div>
         </div>
       </div>
-      <div className={`contents ${filterDrawerOn && "filter-drawer-on"}`}>
+      <div className="contents">
         <div className="ship-select-card-list-wrapper">
-          <div className="ship-select-card-list grid3">
-            {processedShipIndex.map((item, idx) => (
-              <div
-                key={item.ClassName + idx}
-                onClick={() => navigate("/" + item.ClassName + "?simple=1")}
-              >
-                <ShipSelectCard
-                  shipName={
-                    lang == "zh_cn"
-                      ? dictShipZhName[item.Name]
-                          ?.split(" ")
-                          .slice(1)
-                          .join(" ") || item.NameShort
-                      : item.NameShort
-                  }
-                  manufacturer={item.Manufacturer}
-                  isReleased={item.PU.HasPerf}
-                  isShip={item.Type == "Ship"}
-                  imgSrc={`https://ships.42kit.com/resized/${(
-                    specialFileName[item.ClassName] || item.NameShort
-                  )
-                    ?.normalize("NFD")
-                    .replace(/[\u0300-\u036f]/g, "")
-                    .replace("'", "-")
-                    .replace(".", "-")
-                    .toLowerCase()
-                    .trimEnd()
-                    .replaceAll(" ", "-")}%20top.png`}
-                />
-              </div>
-            ))}
+          <div className="ship-select-card-list grid2">
+            {seriesList.map((series) => {
+              if (series.ships.length === 1) {
+                const item = series.ships[0];
+                return (
+                  <div
+                    key={item.ClassName}
+                    onClick={() => navigate("/" + item.ClassName + "?simple=1")}
+                  >
+                    <ShipSelectCard
+                      shipName={
+                        lang == "zh_cn"
+                          ? dictShipZhName[item.Name]
+                              ?.split(" ")
+                              .slice(1)
+                              .join(" ") || item.NameShort
+                          : item.NameShort
+                      }
+                      shipNameEng={item.NameShort}
+                      manufacturer={item.Manufacturer}
+                      isReleased={item.PU.HasPerf}
+                      isShip={item.Type == "Ship"}
+                      imgSrc={formatImgSrc(
+                        specialFileName[item.ClassName] || item.NameShort,
+                      )}
+                      rsiPrice={item.Store.Buy}
+                      inGamePrice={item.PU.Buy}
+                      colorOverride="var(--color-text)"
+                      bgColorOverride="var(--color-bg-light)"
+                    />
+                  </div>
+                );
+              } else
+                return (
+                  <div
+                    key={series.className}
+                    style={{
+                      gridColumn: "1/-1",
+                      position: "relative",
+                      width: "calc(100% + 2rem)",
+                      left: "-1rem",
+                      padding: "1rem",
+                      margin: ".5rem 0",
+                      borderRadius: "2rem",
+                      backgroundColor: "#80808020",
+                    }}
+                  >
+                    <p
+                      style={{
+                        lineHeight: 1,
+                        marginLeft: "1rem",
+                        marginBottom: "1rem",
+                      }}
+                    >
+                      <I18n text={series.className} />
+                    </p>
+                    <div className="grid2">
+                      {series.ships.map((item) => (
+                        <div
+                          key={item.ClassName}
+                          onClick={() =>
+                            navigate("/" + item.ClassName + "?simple=1")
+                          }
+                        >
+                          <ShipSelectCard
+                            shipName={
+                              lang == "zh_cn"
+                                ? dictShipZhName[item.Name]
+                                    ?.split(" ")
+                                    .slice(1)
+                                    .join(" ") || item.NameShort
+                                : item.NameShort
+                            }
+                            shipNameEng={item.NameShort}
+                            manufacturer={item.Manufacturer}
+                            isReleased={item.PU.HasPerf}
+                            isShip={item.Type == "Ship"}
+                            imgSrc={formatImgSrc(
+                              specialFileName[item.ClassName] || item.NameShort,
+                            )}
+                            rsiPrice={item.Store.Buy}
+                            inGamePrice={item.PU.Buy}
+                            colorOverride="var(--color-text)"
+                            bgColorOverride="var(--color-bg-light)"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                );
+            })}
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     gap: 1ch;
-    padding: 1rem;
+    padding: .75rem 1rem;
     border-radius: 1rem;
     overflow: hidden;
     line-height: 100%;
@@ -44,16 +44,45 @@
     z-index: 1100;
 }
 
-.Ship-select-card-text p>svg {
+
+
+.Ship-select-card-text .tag {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: .25rem;
+    font-size: .8rem;
+    color: #808080;
+    /* color: hsl(105, 70%, 40%); */
+    border-radius: 100rem;
+}
+
+.Ship-select-card-text .tag>svg {
     display: inline-block;
     vertical-align: top;
 }
 
-.Ship-select-card-special-info {
+.Ship-select-card-subtitle {
+    font-size: .8rem;
+    opacity: .5;
+    font-weight: 500;
+}
+
+.Ship-select-card-prices {
+    margin-top: .5rem;
     font-size: 1.25rem;
-    line-height: 200%;
+}
+
+.rsi-price {
+    font-weight: 500;
     font-variant-numeric: tabular-nums;
     color: hsl(20, 70%, 50%);
+}
+
+.in-game-price {
+    margin-left: 1rem;
+    font-family: var(--font-slim);
+    font-weight: 500;
+    color: #2c799f;
 }
 
 .Ship-select-card-img {

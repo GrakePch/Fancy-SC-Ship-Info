@@ -8,11 +8,13 @@ import "./ShipSelectCard.css";
 /* eslint-disable react/prop-types */
 function ShipSelectCard({
   shipName,
+  shipNameEng,
   manufacturer,
   isReleased,
   imgSrc,
   isShip,
-  infoText,
+  rsiPrice,
+  inGamePrice,
   bgColorOverride,
   colorOverride,
 }) {
@@ -40,15 +42,21 @@ function ShipSelectCard({
         <p style={{ fontWeight: theme === "light" && 600 }}>
           {shipName}
           {isReleased && (
-            <>
-              {" "}
+            <span className="tag">
               <Icon path={mdiCheckCircle} size={0.6667} />
-            </>
+            </span>
           )}
         </p>
-        {infoText && (
-          <p className="Ship-select-card-special-info">${infoText}</p>
-        )}
+        <p className="Ship-select-card-subtitle">{shipNameEng}</p>
+
+        <p className="Ship-select-card-prices">
+          <span className="rsi-price" style={{color: rsiPrice === null && "#808080a0"}}>
+          {rsiPrice !== null ? "$ " + rsiPrice : "无法购买"}
+          </span>
+          <span className="in-game-price">
+            {inGamePrice ? "¤ " + inGamePrice : ""}
+          </span>
+        </p>
       </div>
       <div
         className="Ship-select-card-img"

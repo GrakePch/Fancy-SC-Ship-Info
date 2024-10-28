@@ -7,6 +7,7 @@ import Docker from "./components/Docker/Docker";
 import IndexComponents from "./components/IndexComponents/IndexComponents";
 import LangContext from "./contexts/LangContext";
 import Prices from "./pages/Prices/Prices";
+import ShipSelector from "./components/ShipSelector/ShipSelector";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -23,7 +24,7 @@ function App() {
       children: [
         {
           path: "/",
-          element: <MainInfo />,
+          element: <ShipSelector />,
         },
         {
           path: "/:shipId",
