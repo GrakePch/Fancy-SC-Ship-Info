@@ -24,13 +24,13 @@ function Docker() {
     let paramLang = searchParams.get("lang");
     if (paramLang) localStorage.setItem("lang", paramLang);
     searchParams.delete("lang");
-    setSearchParams(searchParams);
+    setSearchParams(searchParams, { replace: true });
 
     let paramTheme = searchParams.get("theme");
     if (paramTheme)
       localStorage.setItem("theme", paramTheme === "light" ? "light" : "dark");
     searchParams.delete("theme");
-    setSearchParams(searchParams);
+    setSearchParams(searchParams, { replace: true });
   }, [searchParams]);
 
   useEffect(() => {
@@ -120,10 +120,13 @@ function Docker() {
           className="Docker-btns"
           onClick={() => {
             let newValue = lang === "zh_cn" ? "en_us" : "zh_cn";
-            setSearchParams((prev) => {
-              prev.set("lang", newValue);
-              return prev;
-            });
+            setSearchParams(
+              (prev) => {
+                prev.set("lang", newValue);
+                return prev;
+              },
+              { replace: true },
+            );
           }}
         >
           {lang == "zh_cn" ? "EN" : "简中"}
@@ -135,10 +138,13 @@ function Docker() {
           className="Docker-btns"
           onClick={() => {
             let newValue = theme === "dark" ? "light" : "dark";
-            setSearchParams((prev) => {
-              prev.set("theme", newValue);
-              return prev;
-            });
+            setSearchParams(
+              (prev) => {
+                prev.set("theme", newValue);
+                return prev;
+              },
+              { replace: true },
+            );
           }}
         >
           {theme === "dark" ? (
