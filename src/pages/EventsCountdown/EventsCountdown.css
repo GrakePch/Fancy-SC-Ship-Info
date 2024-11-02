@@ -1,0 +1,45 @@
+.event-card {
+    position: relative;
+    padding: 1rem 1rem;
+    background-color: var(--color-bg-lighter);
+    border-radius: 1rem;
+    line-height: 1;
+
+    box-shadow: var(--acrylic-edge), var(--shadow-1);
+}
+
+.event-icon {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    height: calc(100% - 2rem);
+    aspect-ratio: 1/1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.event-title {
+    font-weight: 700;
+}
+
+.event-title-en {
+    opacity: .5;
+    font-family: var(--font-slim);
+    font-weight: 500;
+}
+
+.event-start-end {
+    padding: .5rem 0;
+    font-family: var(--font-slim);
+    font-weight: 500;
+}
+
+.event-status {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.event-status.active {
+    color: #cc0000;
+}

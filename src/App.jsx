@@ -5,9 +5,10 @@ import MainInfo from "./MainInfo";
 import QT from "./QT";
 import Docker from "./components/Docker/Docker";
 import IndexComponents from "./components/IndexComponents/IndexComponents";
-import LangContext from "./contexts/LangContext";
-import Prices from "./pages/Prices/Prices";
 import ShipSelector from "./components/ShipSelector/ShipSelector";
+import LangContext from "./contexts/LangContext";
+import EventsCountdown from "./pages/EventsCountdown/EventsCountdown";
+import Prices from "./pages/Prices/Prices";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -41,6 +42,10 @@ function App() {
         {
           path: "/Prices/:manufacturer",
           element: <Prices />,
+        },
+        {
+          path: "/Events",
+          element: <EventsCountdown />,
         },
       ],
     },

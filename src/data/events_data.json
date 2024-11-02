@@ -1,0 +1,86 @@
+[
+    {
+        "Name": "RedFestival",
+        "Start": "0127",
+        "End": "0215",
+        "Day": 0,
+        "InEvent": false
+    },
+    {
+        "Name": "Coramor",
+        "Start": "0214",
+        "End": "0221",
+        "Day": 0,
+        "InEvent": false
+    },
+    {
+        "Name": "StellaFortuna",
+        "Start": "0314",
+        "End": "0321",
+        "Day": 0,
+        "InEvent": false
+    },
+    {
+        "Name": "ILW",
+        "Start": "0414",
+        "End": "0421",
+        "Day": 0,
+        "InEvent": false
+    },
+    {
+        "Name": "AlienWeek",
+        "Start": "0514",
+        "End": "0521",
+        "Day": 0,
+        "InEvent": false
+    },
+    {
+        "Name": "Foundation",
+        "Start": "0614",
+        "End": "0621",
+        "Day": 0,
+        "InEvent": false
+    },
+    {
+        "Name": "BISVote",
+        "Start": "0714",
+        "End": "0721",
+        "Day": 0,
+        "InEvent": false
+    },
+    {
+        "Name": "Gamescom",
+        "Start": "0814",
+        "End": "0821",
+        "Day": 0,
+        "InEvent": false
+    },
+    {
+        "Name": "PirateWeek",
+        "Start": "0914",
+        "End": "0921",
+        "Day": 0,
+        "InEvent": false
+    },
+    {
+        "Name": "CitizenCon",
+        "Start": "1014",
+        "End": "1021",
+        "Day": 0,
+        "InEvent": false
+    },
+    {
+        "Name": "IAE",
+        "Start": "1121",
+        "End": "1129",
+        "Day": 0,
+        "InEvent": false
+    },
+    {
+        "Name": "Luminalia",
+        "Start": "1214",
+        "End": "1221",
+        "Day": 0,
+        "InEvent": false
+    }
+]

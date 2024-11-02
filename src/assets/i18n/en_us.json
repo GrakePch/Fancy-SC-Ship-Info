@@ -182,5 +182,18 @@
     
     "Short-Electromagnetic": "EM",
     "Short-Infrared": "IR",
-    "Short-CrossSection": "CS"
+    "Short-CrossSection": "CS",
+    
+    "Event-RedFestival": "Red Festival",
+    "Event-Coramor": "Coramor",
+    "Event-StellaFortuna": "Stella Fortuna",
+    "Event-ILW": "Invictus Launch Week",
+    "Event-AlienWeek": "Alien Week",
+    "Event-Foundation": "Foundation",
+    "Event-BISVote": "Ship Showdown",
+    "Event-Gamescom": "Gamescom",
+    "Event-PirateWeek": "Pirate Week",
+    "Event-CitizenCon": "CitizenCon",
+    "Event-IAE": "Intergalactic Aerospace Expo",
+    "Event-Luminalia": "Luminalia"
 }

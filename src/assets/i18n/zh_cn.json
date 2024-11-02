@@ -300,5 +300,18 @@
 
     "Short-Electromagnetic": "电磁",
     "Short-Infrared": "红外",
-    "Short-CrossSection": "截面"
+    "Short-CrossSection": "截面",
+
+    "Event-RedFestival": "火红节",
+    "Event-Coramor": "科拉爱人节",
+    "Event-StellaFortuna": "幸运星节",
+    "Event-ILW": "舰队周",
+    "Event-AlienWeek": "外星周",
+    "Event-Foundation": "奠基节",
+    "Event-BISVote": "BIS投票",
+    "Event-Gamescom": "科隆游戏展",
+    "Event-PirateWeek": "海盗节",
+    "Event-CitizenCon": "公民控",
+    "Event-IAE": "星际航空航天博览会",
+    "Event-Luminalia": "光灯节"
 }
