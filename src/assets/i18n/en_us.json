@@ -216,6 +216,8 @@
     "DamagePerShot": "DMG/Shot",
     "ShotsToKill": "STK",
     "TimeToKill": "TTK",
+    "BasicDPS": "Basic DPS",
+    "BasicTTK": "Basic TTK",
     "FireRate": "Fire Rate",
     "MagSize": "Mag Size",
     "BulletVelocity": "Bullet Velocity",

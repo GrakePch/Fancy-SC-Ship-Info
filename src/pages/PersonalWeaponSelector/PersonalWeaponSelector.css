@@ -38,6 +38,12 @@
     margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 719px) {
+    .Index-Personal-Wpn-container .item-list {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
 .Index-Personal-Wpn-container .item {
     position: relative;
     display: flex;

@@ -1,4 +1,5 @@
 .Personal-Weapon-Info-container {
+    position: relative;
     font-family: var(--font-slim);
 }
 
@@ -8,7 +9,7 @@
 
 .Personal-Weapon-Info-container .spotlight>h2 {
     position: absolute;
-    right: 2rem;
+    right: 0;
     font-family: var(--font-geom);
     opacity: .7;
     color: var(--color-bg);
@@ -128,7 +129,7 @@
 
 .Personal-Weapon-Info-container .important-data-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
     flex-grow: 1;
 }
@@ -229,6 +230,7 @@
 
 .Personal-Weapon-Info-container .damage-drop-chart {
     background-color: var(--color-bg-light);
+    min-height: 16rem;
     border-radius: 1rem;
     padding: 1rem;
 }

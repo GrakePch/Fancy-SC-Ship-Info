@@ -334,6 +334,8 @@
     "DamagePerShot": "单发伤害",
     "ShotsToKill": "击杀子弹数",
     "TimeToKill": "击杀时间",
+    "BasicDPS": "基础 DPS",
+    "BasicTTK": "基础 TTK",
     "FireRate": "射速",
     "MagSize": "弹匣容量",
     "BulletVelocity": "子弹速度",

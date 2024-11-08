@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 import { mdiCube, mdiDatabaseOutline, mdiFlare, mdiMagazineRifle, mdiTarget, mdiWeight } from "@mdi/js";
 import Icon from "@mdi/react";
@@ -42,20 +42,23 @@ const iconNameFiringMode = {
 }
 
 const PersonalWeaponInfo = () => {
+  const navigate = useNavigate();
   const param = useParams();
   const [nameLoc, setNameLoc] = useState("");
   const [manuCode, setManuCode] = useState("");
   const [dataPW, setDataPW] = useState({});
   const [firingModes, setFiringModes] = useState([]);
   const [firingMode, setFiringMode] = useState(0);
+  const [baseTTK, setBaseTTK] = useState(Infinity);
+  const [baseDPS, setBaseDPS] = useState(0);
   const [dictPorts, setDictPorts] = useState({});
-  const [targetArmor, setTargetArmor] = useState(targetArmors[1]);
+  const [targetArmor, setTargetArmor] = useState(targetArmors[6]);
   const [dmgForParts, setDmgForParts] = useState([0, 0, 0, 0]);
   const [stkForParts, setStkForParts] = useState([0, 0, 0, 0]);
   const [ttkForParts, setTtkForParts] = useState([0, 0, 0, 0]);
 
   useEffect(() => {
-    let temp = {};
+    let temp = undefined;
     for (const item of listPersonalWeapon)
       if (item.className === param.className) {
         temp = item.stdItem;
@@ -67,6 +70,10 @@ const PersonalWeaponInfo = () => {
         }
         break;
       }
+    
+    if (!temp) {
+      navigate("/PW", {replace: true});
+    }
 
     setDataPW(temp);
     console.log(temp);
@@ -89,6 +96,12 @@ const PersonalWeaponInfo = () => {
     let newTTK = [0, 0, 0, 0];
 
     let interval = 60 / firingModes[firingMode]?.RoundsPerMinute;
+
+    let tempBaseDPS = (firingModes[firingMode].DamagePerSecond.Physical || 0) + (firingModes[firingMode].DamagePerSecond.Energy || 0);
+    setBaseDPS(Math.round(tempBaseDPS));
+    let tempBaseSTK = Math.ceil(100 / netDMG);
+    let tempBaseTTK = (tempBaseSTK - 1) * interval;
+    setBaseTTK((Math.round(tempBaseTTK * 100) / 100).toFixed(2));
 
     for (let i = 0; i < 4; ++i) {
       newDMG[i] = netDMG * bodyPartMod[i] * targetArmorsMod[targetArmor][i];
@@ -165,12 +178,12 @@ const PersonalWeaponInfo = () => {
           <div className="fire-rate-and-data">
             <div className="important-data-grid">
               <div className="important-data">
-                <p>TTK (s)</p>
-                <p>{isFinite(ttkForParts[1])?ttkForParts[1]:"∞"}</p>
+                <p><I18n text="BasicTTK" /> (s)</p>
+                <p>{isFinite(baseTTK)?baseTTK:"∞"}</p>
               </div>
               <div className="important-data">
-                <p>DPS</p>
-                <p>{dmgForParts[1]}</p>
+                <p><I18n text="BasicDPS" /></p>
+                <p>{baseDPS}</p>
               </div>
               <div className="important-data">
                 <p><I18n text="FireRate" /> (RPM)</p>

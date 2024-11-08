@@ -4,7 +4,6 @@ import icons from "../../assets/icons";
 import listPersonalWeapon from "../../data/fps-weapons.json";
 import "./PersonalWeaponSelector.css";
 import { useNavigate } from "react-router-dom";
-import { temp } from "three/webgpu";
 import I18n from "../../components/I18n";
 import personal_weapons_img from "../../assets/personal_weapons_side/personal_weapons_img";
 
@@ -132,7 +131,7 @@ const PersonalWeaponSelector = () => {
       
       <div className="group-list">
         {gunTypes.map((k) => 
-        <>
+        <div key={k}>
           <p><I18n text={"GunType-" + k} /></p>
           <div className="item-list">
             {
@@ -151,7 +150,7 @@ const PersonalWeaponSelector = () => {
               })
             }
           </div>
-        </>)}
+        </div>)}
         </div>
       {/* <nav>
         {weaponTypes.map((type) => (
