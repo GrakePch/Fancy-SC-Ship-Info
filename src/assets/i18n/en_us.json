@@ -200,7 +200,7 @@
     "barrel_attach": "Barrel",
     "underbarrel_attach": "Underbarrel",
     "FiringMode-Rapid": "Automatic",
-    "FiringMode-Single": "Semi-automatic",
+    "FiringMode-Single": "Single",
     "FiringMode-Burst": "Burst",
     "FiringMode-Burst-3": "Burst (3)",
     "FiringMode-Burst-5": "Burst (5)",

@@ -318,7 +318,7 @@
     "barrel_attach": "枪管",
     "underbarrel_attach": "枪管下挂",
     "FiringMode-Rapid": "全自动",
-    "FiringMode-Single": "半自动",
+    "FiringMode-Single": "单发",
     "FiringMode-Burst": "点放",
     "FiringMode-Burst-3": "三连发",
     "FiringMode-Burst-5": "五连发",
