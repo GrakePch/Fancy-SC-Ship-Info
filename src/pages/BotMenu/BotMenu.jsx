@@ -27,7 +27,7 @@ const BotMenu = () => (
       <p>截图</p>
       <p>怎么玩</p>
       <p>怎么飞</p>
-      <p>赚大钱</p>
+      {/* <p>赚大钱</p> */}
       <p>量子航行</p>
     </div>
 
@@ -66,6 +66,7 @@ const BotMenu = () => (
       <p>船有多大</p>
       <p>动态经济</p>
       <p>动态宇宙</p>
+      <p>wb</p>
     </div>
 
     <h3>飞船厂商</h3>
@@ -84,7 +85,7 @@ const BotMenu = () => (
       <p>武藏株式会社</p>
       <p>德雷克行星际</p>
       <p>盾博尔地面系统</p>
-      <p> 罗伯茨太空工业</p>
+      <p>罗伯茨太空工业</p>
     </div>
 
     <h3>一些好用的小工具</h3>
@@ -96,6 +97,7 @@ const BotMenu = () => (
       <p>东西哪里买</p>
       <p>ID+玩家名字查询玩家信息</p>
       <p>量子+船名查询船只量子航程数据</p>
+      <p>周年庆</p>
     </div>
 
     <div className="SimpleInfo-title-bottom-banner">
