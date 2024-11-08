@@ -11,6 +11,7 @@ import EventsCountdown from "./pages/EventsCountdown/EventsCountdown";
 import PersonalWeaponInfo from "./pages/PersonalWeaponInfo/PersonalWeaponInfo";
 import PersonalWeaponSelector from "./pages/PersonalWeaponSelector/PersonalWeaponSelector";
 import Prices from "./pages/Prices/Prices";
+import BotMenu from "./pages/BotMenu/BotMenu";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -57,6 +58,10 @@ function App() {
           path: "/Events",
           element: <EventsCountdown />,
         },
+        {
+          path: "/BotMenu",
+          element: <BotMenu />
+        }
       ],
     },
   ]);
