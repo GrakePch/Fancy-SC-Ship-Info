@@ -1,0 +1,7 @@
+.CargoGrid3D-container {
+    height: 10rem;
+    background-color: var(--color-bg-light);
+    border-radius: 1rem;
+    box-shadow: var(--acrylic-edge), var(--shadow-1);
+    overflow: hidden;
+}

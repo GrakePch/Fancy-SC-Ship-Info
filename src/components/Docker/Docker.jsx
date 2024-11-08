@@ -5,6 +5,7 @@ import {
   mdiBrightness4,
   mdiBrightness7,
   mdiGithub,
+  mdiPistol,
   mdiViewGridOutline,
 } from "@mdi/js";
 import Icon from "@mdi/react";
@@ -112,6 +113,19 @@ function Docker() {
         </button>
         <p>
           <I18n text="nav-component-index" />
+        </p>
+      </span>
+      <span className="Docker-tooltip">
+        <button
+          className="Docker-btns"
+          onClick={() => {
+            navigate("/PW");
+          }}
+        >
+          <Icon path={mdiPistol} size={1} />
+        </button>
+        <p>
+          <I18n text="nav-personal-weapon-index" />
         </p>
       </span>
       <hr />

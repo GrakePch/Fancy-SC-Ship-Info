@@ -14,6 +14,7 @@ import bg_line from "./assets/lines.png";
 import manufacturers_small from "./assets/manufacturers_small";
 import statusEnToZh from "./assets/statusEnToZh";
 import statusToHue from "./assets/statusToHue";
+import CargoGrid3D from "./components/CargoGrid3D/CargoGrid3D";
 import FlightAccelerations from "./components/FlightAccelerations/FlightAccelerations";
 import FlightCharacteristics from "./components/FlightCharacteristics/FlightCharacteristics";
 import I18n from "./components/I18n";
@@ -283,6 +284,8 @@ const SimpleInfo = ({
               </>
             )}
           </div>
+          <div className="SimpleInfo-column-2">
+          {/* <CargoGrid3D /> */}
           <div className="SimpleInfo-weapons">
             {(checkObjNotEmpty(shipHardpts.Hardpoints.Weapons.PilotWeapons) ||
               checkObjNotEmpty(shipHardpts.Hardpoints.Weapons.MannedTurrets) ||
@@ -412,6 +415,7 @@ const SimpleInfo = ({
                 backgroundImage: `url(${bg_line})`,
               }}
             ></div>
+          </div>
           </div>
         </div>
       ) : shipDataRSI ? (

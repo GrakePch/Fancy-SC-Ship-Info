@@ -8,6 +8,8 @@ import IndexComponents from "./components/IndexComponents/IndexComponents";
 import ShipSelector from "./components/ShipSelector/ShipSelector";
 import LangContext from "./contexts/LangContext";
 import EventsCountdown from "./pages/EventsCountdown/EventsCountdown";
+import PersonalWeaponInfo from "./pages/PersonalWeaponInfo/PersonalWeaponInfo";
+import PersonalWeaponSelector from "./pages/PersonalWeaponSelector/PersonalWeaponSelector";
 import Prices from "./pages/Prices/Prices";
 
 function App() {
@@ -34,6 +36,14 @@ function App() {
         {
           path: "/c",
           element: <IndexComponents />,
+        },
+        {
+          path: "/PW",
+          element: <PersonalWeaponSelector />,
+        },
+        {
+          path: "/PW/:className",
+          element: <PersonalWeaponInfo />,
         },
         {
           path: "/QT",

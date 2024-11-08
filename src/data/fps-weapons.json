@@ -1288,6 +1288,203 @@
         }
     },
     {
+        "className": "behr_rifle_ballistic_02_civilian",
+        "reference": "53042ca6-a9ba-4b0e-8c36-a11a5f47feb9",
+        "itemName": "behr_rifle_ballistic_02_civilian",
+        "type": "WeaponPersonal",
+        "subType": "Medium",
+        "tags": "stocked behr_rifle_ballistic_02_civilian behr_rifle_ballistic_02",
+        "requiredTags": "",
+        "size": 2,
+        "grade": 1,
+        "name": "@item_Namebehr_rifle_ballistic_02_civilian",
+        "manufacturer": "BEH",
+        "classification": "FPS.Weapon.Medium",
+        "stdItem": {
+            "ClassName": "behr_rifle_ballistic_02_civilian",
+            "Size": 2,
+            "Mass": 3.6,
+            "Volume": 13000,
+            "Grade": 1,
+            "Class": "Ballistic",
+            "Type": "WeaponPersonal.Medium",
+            "Classification": "FPS.Weapon.Medium",
+            "Name": "P8-AR Rifle",
+            "Description": "Magazine Size: 15Rate Of Fire: 475 rpmEffective Range: 100 mAttachments: Optics (S2), Barrel (S2), Underbarrel (S2)The direct descendant of the UEE Marines standard issue weapon, Behring has crafted the semi-automatic P8-AR to provide civilians across the empire a straight-forward and dependable weapon to defend themselves against aggressive hostiles.",
+            "Manufacturer": {
+                "Code": "BEH",
+                "Name": "Behring"
+            },
+            "Tags": [
+                "stocked",
+                "behr_rifle_ballistic_02_civilian",
+                "behr_rifle_ballistic_02"
+            ],
+            "Durability": {
+                "Lifetime": 0
+            },
+            "Weapon": {
+                "Ammunition": {
+                    "Speed": 1150,
+                    "LifeTime": 2,
+                    "Range": 2300,
+                    "Size": 1,
+                    "DamageDrop": {
+                        "MinDistance": {
+                            "Physical": 50
+                        },
+                        "DropPerMeter": {
+                            "Physical": 0.1
+                        },
+                        "MinDamage": {
+                            "Physical": 40
+                        }
+                    },
+                    "ImpactDamage": {
+                        "Physical": 51
+                    }
+                },
+                "Firing": [
+                    {
+                        "Name": "Single",
+                        "LocalisedName": "[SEMI]",
+                        "RoundsPerMinute": 235,
+                        "FireType": "single",
+                        "AmmoPerShot": 1,
+                        "PelletsPerShot": 1,
+                        "HeatPerShot": 0,
+                        "WearPerShot": 0.07,
+                        "Spread": {
+                            "Min": 1,
+                            "Max": 7.5,
+                            "FirstAttack": 3,
+                            "PerAttack": 3,
+                            "Decay": 4
+                        },
+                        "AimModifier": {
+                            "SpreadModifier": {
+                                "Min": 0,
+                                "Max": 0,
+                                "FirstAttack": 0,
+                                "PerAttack": 0,
+                                "Decay": 0
+                            }
+                        },
+                        "DamagePerShot": {
+                            "Physical": 51
+                        },
+                        "DamagePerSecond": {
+                            "Physical": 199.75
+                        }
+                    }
+                ],
+                "Repool": {
+                    "AmmoPerSecond": 10,
+                    "UnstowMagDuration": 1,
+                    "MagMergeDuration": 0.01
+                }
+            },
+            "Ports": [
+                {
+                    "PortName": "magazine_attach",
+                    "MinSize": 1,
+                    "MaxSize": 1,
+                    "Loadout": "behr_rifle_ballistic_02_mag_civilian",
+                    "InstalledItem": {
+                        "ClassName": "behr_rifle_ballistic_02_mag_civilian",
+                        "Size": 1,
+                        "Mass": 0.53,
+                        "Grade": 1,
+                        "Class": "",
+                        "Type": "WeaponAttachment.Magazine",
+                        "Name": "P8-AR Rifle Magazine (15 Cap)",
+                        "Description": "This magazine for the Behring P8-AR rifle comes pre-loaded with fifteen rounds.",
+                        "Manufacturer": {
+                            "Code": "BEH",
+                            "Name": "Behring"
+                        },
+                        "Tags": [
+                            "behr_rifle_ballistic_02_civilian"
+                        ],
+                        "Magazine": {
+                            "Capacity": 15,
+                            "AllowRepool": true
+                        }
+                    },
+                    "Types": [
+                        "WeaponAttachment.Magazine"
+                    ],
+                    "Tags": [
+                        "stocked",
+                        "behr_rifle_ballistic_02_civilian",
+                        "behr_rifle_ballistic_02"
+                    ],
+                    "PortTags": [
+                        "behr_rifle_ballistic_02_civilian"
+                    ]
+                },
+                {
+                    "PortName": "optics_attach",
+                    "MinSize": 1,
+                    "MaxSize": 3,
+                    "Types": [
+                        "WeaponAttachment.IronSight"
+                    ],
+                    "Flags": [
+                        "inventory"
+                    ],
+                    "Tags": [
+                        "stocked",
+                        "behr_rifle_ballistic_02_civilian",
+                        "behr_rifle_ballistic_02"
+                    ]
+                },
+                {
+                    "PortName": "barrel_attach",
+                    "MinSize": 2,
+                    "MaxSize": 2,
+                    "Types": [
+                        "WeaponAttachment.Barrel"
+                    ],
+                    "Flags": [
+                        "inventory"
+                    ],
+                    "Tags": [
+                        "stocked",
+                        "behr_rifle_ballistic_02_civilian",
+                        "behr_rifle_ballistic_02"
+                    ]
+                },
+                {
+                    "PortName": "underbarrel_attach",
+                    "MinSize": 1,
+                    "MaxSize": 2,
+                    "Types": [
+                        "WeaponAttachment.BottomAttachment"
+                    ],
+                    "Flags": [
+                        "inventory"
+                    ],
+                    "Tags": [
+                        "stocked",
+                        "behr_rifle_ballistic_02_civilian",
+                        "behr_rifle_ballistic_02"
+                    ]
+                },
+                {
+                    "PortName": "item_grab",
+                    "MinSize": 0,
+                    "MaxSize": 0,
+                    "Tags": [
+                        "stocked",
+                        "behr_rifle_ballistic_02_civilian",
+                        "behr_rifle_ballistic_02"
+                    ]
+                }
+            ]
+        }
+    },
+    {
         "className": "behr_shotgun_ballistic_01",
         "reference": "70fba024-7de1-4b3e-b169-256a77cc080f",
         "itemName": "behr_shotgun_ballistic_01",
@@ -1756,7 +1953,7 @@
                     "Size": 1,
                     "DamageDrop": {
                         "MinDistance": {
-                            "Physical": 200
+                            "Physical": 550
                         },
                         "DropPerMeter": {
                             "Physical": 10
@@ -3462,6 +3659,28 @@
                     "PortName": "magazine_attach",
                     "MinSize": 1,
                     "MaxSize": 1,
+                    "Loadout": "grin_multitool_energy_01_mag",
+                    "InstalledItem": {
+                        "ClassName": "grin_multitool_energy_01_mag",
+                        "Size": 1,
+                        "Mass": 0.32,
+                        "Grade": 1,
+                        "Class": "",
+                        "Type": "WeaponAttachment.Magazine",
+                        "Name": "Pyro RYT Multi-Tool Battery",
+                        "Description": "This battery powers Greycat's Pyro RYT Multi-Tool, so that you can tackle a variety of tasks.",
+                        "Manufacturer": {
+                            "Code": "GRIN",
+                            "Name": "Greycat Industrial"
+                        },
+                        "Tags": [
+                            "grin_multitool_energy_01"
+                        ],
+                        "Magazine": {
+                            "Capacity": 100,
+                            "AllowRepool": false
+                        }
+                    },
                     "Types": [
                         "WeaponAttachment.Magazine"
                     ],
@@ -3581,18 +3800,6 @@
                 },
                 "Firing": [
                     {
-                        "Name": "Detach",
-                        "LocalisedName": "Detaching",
-                        "RoundsPerMinute": 0,
-                        "FireType": "tractorbeam",
-                        "AmmoPerShot": 0,
-                        "PelletsPerShot": 0,
-                        "HeatPerShot": 0,
-                        "WearPerShot": 0,
-                        "DamagePerShot": {},
-                        "DamagePerSecond": {}
-                    },
-                    {
                         "Name": "Traversal",
                         "LocalisedName": "Tractor",
                         "RoundsPerMinute": 0,
@@ -3631,7 +3838,9 @@
                             "Name": "Greycat Industrial"
                         },
                         "Tags": [
-                            "grin_cutter_01"
+                            "grin_cutter_01",
+                            "grin_tractor_01",
+                            "grin_salvage_repair_01"
                         ],
                         "Magazine": {
                             "Capacity": 50,
@@ -3859,6 +4068,135 @@
         }
     },
     {
+        "className": "kegr_fire_extinguisher_01",
+        "reference": "1b6a6b76-f3fc-402c-a24a-204f2eeae6f7",
+        "itemName": "kegr_fire_extinguisher_01",
+        "type": "WeaponPersonal",
+        "subType": "Medium",
+        "tags": "stocked kegr_fire_extinguisher_01",
+        "requiredTags": "",
+        "size": 2,
+        "grade": 1,
+        "name": "@item_Namekegr_fire_extinguisher_01",
+        "classification": "FPS.Weapon.Medium",
+        "stdItem": {
+            "ClassName": "kegr_fire_extinguisher_01",
+            "Size": 2,
+            "Mass": 3.2,
+            "Volume": 13000,
+            "Grade": 1,
+            "Class": "Gadget",
+            "Type": "WeaponPersonal.Medium",
+            "Classification": "FPS.Weapon.Medium",
+            "Name": "APX Fire Extinguisher",
+            "Description": "Magazine Size: Gas CanisterRate of Fire: ConstantEffective Range: 3-4 mThe KE Group's APX Fire Extinguisher has been rated a best-in-class consumer grade safety equipment for well-over a decade making it the industry standard in fire prevention. Filled with a patented gaseous cooling compound, the extinguisher can rapidly smother any fire in sight. The digital screen on the device allows you to monitor the local temperature to help you contain and eliminate fire hazards.",
+            "Tags": [
+                "stocked",
+                "kegr_fire_extinguisher_01"
+            ],
+            "Durability": {
+                "Lifetime": 0
+            },
+            "Weapon": {
+                "Ammunition": {
+                    "Speed": 600,
+                    "LifeTime": 2,
+                    "Range": 1200,
+                    "Size": 1,
+                    "DamageDrop": {
+                        "MinDistance": {},
+                        "DropPerMeter": {},
+                        "MinDamage": {}
+                    },
+                    "ImpactDamage": {
+                        "Thermal": 18
+                    }
+                },
+                "Firing": [],
+                "Repool": {
+                    "AmmoPerSecond": 30,
+                    "UnstowMagDuration": 3,
+                    "MagMergeDuration": 0.01
+                },
+                "Consumption": {
+                    "RequestedRegenPerSec": 0,
+                    "Cooldown": 3,
+                    "CostPerBullet": 1,
+                    "RequestedAmmoLoad": 100,
+                    "MaxAmmo": 75,
+                    "MaxRegenPerSec": 15
+                }
+            },
+            "TractorBeam": {
+                "Tractor": [],
+                "Towing": []
+            },
+            "Ports": [
+                {
+                    "PortName": "magazine_attach",
+                    "MinSize": 1,
+                    "MaxSize": 1,
+                    "Loadout": "kegr_fire_extinguisher_01_mag",
+                    "InstalledItem": {
+                        "ClassName": "kegr_fire_extinguisher_01_mag",
+                        "Size": 1,
+                        "Mass": 10,
+                        "Grade": 1,
+                        "Class": "",
+                        "Type": "WeaponAttachment.Magazine",
+                        "Name": "APX Fire Extinguisher Canister ",
+                        "Description": "This canister refills the APX Fire Extinguisher with a full tank of the KE Group's patented cooling compound.",
+                        "Manufacturer": {
+                            "Code": "GRIN",
+                            "Name": "Greycat Industrial"
+                        },
+                        "Tags": [
+                            "kegr_fire_extinguisher_01"
+                        ],
+                        "Magazine": {
+                            "Capacity": 2000,
+                            "AllowRepool": true
+                        }
+                    },
+                    "Types": [
+                        "WeaponAttachment.Magazine"
+                    ],
+                    "Tags": [
+                        "stocked",
+                        "kegr_fire_extinguisher_01"
+                    ],
+                    "PortTags": [
+                        "kegr_fire_extinguisher_01"
+                    ]
+                },
+                {
+                    "PortName": "item_grab",
+                    "MinSize": 0,
+                    "MaxSize": 0,
+                    "Tags": [
+                        "stocked",
+                        "kegr_fire_extinguisher_01"
+                    ]
+                },
+                {
+                    "PortName": "root",
+                    "MinSize": 1,
+                    "MaxSize": 1,
+                    "Types": [
+                        "WeaponAttachment.Magazine"
+                    ],
+                    "Tags": [
+                        "stocked",
+                        "kegr_fire_extinguisher_01"
+                    ],
+                    "PortTags": [
+                        "kegr_fire_extinguisher_01"
+                    ]
+                }
+            ]
+        }
+    },
+    {
         "className": "klwe_lmg_energy_01",
         "reference": "b13a3815-92e7-4e09-962f-b24bcdaf3a42",
         "itemName": "klwe_lmg_energy_01",
@@ -3894,18 +4232,6 @@
             "Durability": {
                 "Lifetime": 0
             },
-            "HeatConnection": {
-                "StartCoolingTemperature": 300,
-                "StartIRTemperature": 250,
-                "TemperatureToIR": 6,
-                "ThermalEnergyBase": 10,
-                "ThermalEnergyDraw": 20,
-                "CoolingRate": 1,
-                "StartIREmission": 300,
-                "OverheatTemperature": 350,
-                "MaxTemperature": 450,
-                "RecoveryTemperature": 350
-            },
             "Weapon": {
                 "Ammunition": {
                     "Speed": 600,
@@ -3931,7 +4257,7 @@
                         "FireType": "rapid",
                         "AmmoPerShot": 1,
                         "PelletsPerShot": 1,
-                        "HeatPerShot": 0,
+                        "HeatPerShot": 1,
                         "WearPerShot": 0.02,
                         "Spread": {
                             "Min": 0.2,
@@ -4123,7 +4449,7 @@
                         "ShotPerAction": 3,
                         "AmmoPerShot": 1,
                         "PelletsPerShot": 1,
-                        "HeatPerShot": 0,
+                        "HeatPerShot": 4,
                         "WearPerShot": 0.07,
                         "Spread": {
                             "Min": 0.08,
@@ -4155,7 +4481,7 @@
                         "FireType": "single",
                         "AmmoPerShot": 1,
                         "PelletsPerShot": 1,
-                        "HeatPerShot": 0,
+                        "HeatPerShot": 3,
                         "WearPerShot": 0,
                         "Spread": {
                             "Min": 0.08,
@@ -4312,18 +4638,6 @@
             "Durability": {
                 "Lifetime": 0
             },
-            "HeatConnection": {
-                "StartCoolingTemperature": 300,
-                "StartIRTemperature": 250,
-                "TemperatureToIR": 6,
-                "ThermalEnergyBase": 10,
-                "ThermalEnergyDraw": 20,
-                "CoolingRate": 1,
-                "StartIREmission": 300,
-                "OverheatTemperature": 350,
-                "MaxTemperature": 450,
-                "RecoveryTemperature": 350
-            },
             "Weapon": {
                 "Ammunition": {
                     "Speed": 1200,
@@ -4348,7 +4662,7 @@
                         "ShotPerAction": 3,
                         "AmmoPerShot": 1,
                         "PelletsPerShot": 1,
-                        "HeatPerShot": 0,
+                        "HeatPerShot": 2.8,
                         "WearPerShot": 0.04,
                         "Spread": {
                             "Min": 0.05,
@@ -4381,7 +4695,7 @@
                         "ShotPerAction": 5,
                         "AmmoPerShot": 1,
                         "PelletsPerShot": 1,
-                        "HeatPerShot": 0,
+                        "HeatPerShot": 4,
                         "WearPerShot": 0.04,
                         "Spread": {
                             "Min": 0.05,
@@ -4551,18 +4865,6 @@
             "Durability": {
                 "Lifetime": 0
             },
-            "HeatConnection": {
-                "StartCoolingTemperature": 300,
-                "StartIRTemperature": 250,
-                "TemperatureToIR": 6,
-                "ThermalEnergyBase": 10,
-                "ThermalEnergyDraw": 20,
-                "CoolingRate": 1,
-                "StartIREmission": 300,
-                "OverheatTemperature": 350,
-                "MaxTemperature": 450,
-                "RecoveryTemperature": 350
-            },
             "Weapon": {
                 "Ammunition": {
                     "Speed": 600,
@@ -4587,7 +4889,7 @@
                         "ShotPerAction": 3,
                         "AmmoPerShot": 1,
                         "PelletsPerShot": 1,
-                        "HeatPerShot": 0,
+                        "HeatPerShot": 3,
                         "WearPerShot": 0,
                         "Spread": {
                             "Min": 0.06,
@@ -4757,18 +5059,6 @@
             "Durability": {
                 "Lifetime": 0
             },
-            "HeatConnection": {
-                "StartCoolingTemperature": 300,
-                "StartIRTemperature": 250,
-                "TemperatureToIR": 6,
-                "ThermalEnergyBase": 10,
-                "ThermalEnergyDraw": 20,
-                "CoolingRate": 1,
-                "StartIREmission": 300,
-                "OverheatTemperature": 350,
-                "MaxTemperature": 450,
-                "RecoveryTemperature": 350
-            },
             "Weapon": {
                 "Ammunition": {
                     "Speed": 1000,
@@ -4794,7 +5084,7 @@
                         "FireType": "charged",
                         "AmmoPerShot": 1,
                         "PelletsPerShot": 1,
-                        "HeatPerShot": 0,
+                        "HeatPerShot": 15,
                         "WearPerShot": 0.13,
                         "Spread": {
                             "Min": 5,
@@ -5186,7 +5476,7 @@
         "stdItem": {
             "ClassName": "ksar_rifle_energy_01",
             "Size": 3,
-            "Mass": 6.9,
+            "Mass": 4.2,
             "Volume": 13000,
             "Grade": 1,
             "Class": "Energy (Plasma)",
@@ -5206,18 +5496,6 @@
             "Durability": {
                 "Lifetime": 0
             },
-            "HeatConnection": {
-                "StartCoolingTemperature": 300,
-                "StartIRTemperature": 250,
-                "TemperatureToIR": 6,
-                "ThermalEnergyBase": 10,
-                "ThermalEnergyDraw": 20,
-                "CoolingRate": 1,
-                "StartIREmission": 300,
-                "OverheatTemperature": 350,
-                "MaxTemperature": 450,
-                "RecoveryTemperature": 350
-            },
             "Weapon": {
                 "Ammunition": {
                     "Speed": 600,
@@ -5236,7 +5514,7 @@
                         }
                     },
                     "ImpactDamage": {
-                        "Energy": 16
+                        "Energy": 17.5
                     }
                 },
                 "Firing": [
@@ -5249,7 +5527,7 @@
                         "FireType": "rapid",
                         "AmmoPerShot": 1,
                         "PelletsPerShot": 1,
-                        "HeatPerShot": 0,
+                        "HeatPerShot": 8,
                         "WearPerShot": 0,
                         "Spread": {
                             "Min": 0.1,
@@ -5268,22 +5546,22 @@
                             }
                         },
                         "DamagePerShot": {
-                            "Energy": 16
+                            "Energy": 17.5
                         },
                         "DamagePerSecond": {
-                            "Energy": 160
+                            "Energy": 175
                         }
                     },
                     {
                         "Name": "Charge",
                         "LocalisedName": "[CHARGE]",
-                        "RoundsPerMinute": 20,
+                        "RoundsPerMinute": 27.6,
                         "AmmoSpeed": 1500,
                         "AmmoRange": 3000,
                         "FireType": "charged",
                         "AmmoPerShot": 1,
                         "PelletsPerShot": 1,
-                        "HeatPerShot": 0,
+                        "HeatPerShot": 9,
                         "WearPerShot": 0,
                         "Spread": {
                             "Min": 0,
@@ -5316,10 +5594,10 @@
                             }
                         },
                         "DamagePerShot": {
-                            "Energy": 96
+                            "Energy": 105
                         },
                         "DamagePerSecond": {
-                            "Energy": 32
+                            "Energy": 48.3
                         }
                     }
                 ],
@@ -5338,7 +5616,7 @@
                     "InstalledItem": {
                         "ClassName": "ksar_rifle_energy_01_mag",
                         "Size": 1,
-                        "Mass": 1.62,
+                        "Mass": 0.6,
                         "Volume": 480,
                         "Grade": 1,
                         "Class": "",
@@ -5874,18 +6152,6 @@
             "Durability": {
                 "Lifetime": 0
             },
-            "HeatConnection": {
-                "StartCoolingTemperature": 300,
-                "StartIRTemperature": 250,
-                "TemperatureToIR": 6,
-                "ThermalEnergyBase": 10,
-                "ThermalEnergyDraw": 20,
-                "CoolingRate": 1,
-                "StartIREmission": 300,
-                "OverheatTemperature": 350,
-                "MaxTemperature": 450,
-                "RecoveryTemperature": 350
-            },
             "Weapon": {
                 "Ammunition": {
                     "Speed": 600,
@@ -5898,7 +6164,7 @@
                         "MinDamage": {}
                     },
                     "ImpactDamage": {
-                        "Energy": 11
+                        "Energy": 11.1
                     }
                 },
                 "Firing": [
@@ -5911,7 +6177,7 @@
                         "FireType": "rapid",
                         "AmmoPerShot": 1,
                         "PelletsPerShot": 1,
-                        "HeatPerShot": 0,
+                        "HeatPerShot": 4,
                         "WearPerShot": 0,
                         "Spread": {
                             "Min": 2,
@@ -5930,10 +6196,10 @@
                             }
                         },
                         "DamagePerShot": {
-                            "Energy": 11
+                            "Energy": 11.1
                         },
                         "DamagePerSecond": {
-                            "Energy": 146.67
+                            "Energy": 148
                         }
                     },
                     {
@@ -5943,7 +6209,7 @@
                         "FireType": "charged",
                         "AmmoPerShot": 1,
                         "PelletsPerShot": 1,
-                        "HeatPerShot": 0,
+                        "HeatPerShot": 4.5,
                         "WearPerShot": 0.03,
                         "Spread": {
                             "Min": 0,
@@ -5976,10 +6242,10 @@
                             }
                         },
                         "DamagePerShot": {
-                            "Energy": 13.2
+                            "Energy": 13.32
                         },
                         "DamagePerSecond": {
-                            "Energy": 3.48
+                            "Energy": 3.51
                         }
                     }
                 ],
@@ -6134,7 +6400,7 @@
                     "Size": 1,
                     "DamageDrop": {
                         "MinDistance": {
-                            "Physical": 150
+                            "Physical": 335
                         },
                         "DropPerMeter": {},
                         "MinDamage": {
@@ -6377,18 +6643,6 @@
             "Durability": {
                 "Lifetime": 0
             },
-            "HeatConnection": {
-                "StartCoolingTemperature": 300,
-                "StartIRTemperature": 250,
-                "TemperatureToIR": 6,
-                "ThermalEnergyBase": 10,
-                "ThermalEnergyDraw": 20,
-                "CoolingRate": 1,
-                "StartIREmission": 300,
-                "OverheatTemperature": 350,
-                "MaxTemperature": 450,
-                "RecoveryTemperature": 350
-            },
             "Weapon": {
                 "Ammunition": {
                     "Speed": 500,
@@ -6426,7 +6680,7 @@
                         "FireType": "single",
                         "AmmoPerShot": 1,
                         "PelletsPerShot": 1,
-                        "HeatPerShot": 0,
+                        "HeatPerShot": 25,
                         "WearPerShot": 0.2,
                         "Spread": {
                             "Min": 0,
@@ -9229,7 +9483,7 @@
                     "Max": 0.885,
                     "FirstAttack": 0.885,
                     "PerAttack": 0.885,
-                    "Decay": 0.885
+                    "Decay": 1
                 },
                 "AimModifier": {
                     "ZoomScale": 1,
@@ -9644,7 +9898,7 @@
                 },
                 "AimModifier": {
                     "ZoomScale": 2,
-                    "SecondZoomScale": 3,
+                    "SecondZoomScale": 1,
                     "ZoomTimeScale": 1.15
                 },
                 "BarrelEffectsStrength": 1,
@@ -9762,7 +10016,7 @@
                 },
                 "AimModifier": {
                     "ZoomScale": 3,
-                    "SecondZoomScale": 3,
+                    "SecondZoomScale": 1,
                     "ZoomTimeScale": 1.15
                 },
                 "BarrelEffectsStrength": 1,
@@ -9939,7 +10193,7 @@
                 },
                 "AimModifier": {
                     "ZoomScale": 4,
-                    "SecondZoomScale": 1,
+                    "SecondZoomScale": 6,
                     "ZoomTimeScale": 1.25
                 },
                 "BarrelEffectsStrength": 1,
@@ -9998,7 +10252,7 @@
                 },
                 "AimModifier": {
                     "ZoomScale": 4,
-                    "SecondZoomScale": 1,
+                    "SecondZoomScale": 6,
                     "ZoomTimeScale": 1.25
                 },
                 "BarrelEffectsStrength": 1,
@@ -10116,7 +10370,7 @@
                 },
                 "AimModifier": {
                     "ZoomScale": 6,
-                    "SecondZoomScale": 10,
+                    "SecondZoomScale": 1,
                     "ZoomTimeScale": 1
                 },
                 "BarrelEffectsStrength": 1,
@@ -10575,7 +10829,7 @@
                     "Max": 0.885,
                     "FirstAttack": 0.885,
                     "PerAttack": 0.885,
-                    "Decay": 0.885
+                    "Decay": 1
                 },
                 "AimModifier": {
                     "ZoomScale": 1,
