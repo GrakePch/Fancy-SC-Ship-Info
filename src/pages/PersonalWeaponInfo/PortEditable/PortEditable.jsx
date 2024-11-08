@@ -7,7 +7,7 @@ const PortEditable = ({ data, name, icon }) => {
       <div className="port">
         {data.InstalledItem ? (
           <div className="item">
-            <p className="item-name"><I18n text={"item_Name" + data.InstalledItem.ClassName} hanhua/></p>
+            <p className="item-name"><I18n text={("item_Name" + data.InstalledItem.ClassName).toLowerCase()} hanhua/></p>
           </div>
         ) : (
           <p>EMPTY</p>

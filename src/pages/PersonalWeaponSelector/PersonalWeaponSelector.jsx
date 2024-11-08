@@ -142,9 +142,9 @@ const PersonalWeaponSelector = () => {
                 return <div key={item.className} className="item" onClick={() => navigate("/PW/" + item.className)}>
                   {icons["s" + item.stdItem.Size]}
                   <div className="contents">
-                    <p className="name"><I18n text={item.name.slice(1)} hanhua /></p>
+                    <p className="name"><I18n text={item.name.slice(1).toLowerCase()} hanhua /></p>
                     <p className="name-small">{item.stdItem.Name}</p>
-                    <p className="manufacturer"><I18n text={"manufacturer_Name" + manuCode} hanhua fail={manuCode} /></p>
+                    <p className="manufacturer"><I18n text={"manufacturer_name" + manuCode.toLowerCase()} hanhua fail={manuCode} /></p>
                   </div>
                   <div className="thumbnail" style={{backgroundImage: `url(${personal_weapons_img[item.className]})`}}></div>
                 </div>

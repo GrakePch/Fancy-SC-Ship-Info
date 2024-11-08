@@ -28,7 +28,7 @@ import s71 from "./S71.png";
 import salvo_frag from "./Salvo_Frag.png";
 import scalpel from "./Scalpel.png";
 import scourge from "./Scourge.png";
-import wowblast from "./Wowblast_Desperado_Blue.png";
+import wowblast from "./Wowblast_Desperado_Red.png";
 import yubarev from "./Yubarev.png";
 
 const personal_weapons_img = {

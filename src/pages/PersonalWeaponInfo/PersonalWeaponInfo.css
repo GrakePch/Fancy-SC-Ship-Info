@@ -66,7 +66,6 @@
     border-radius: 1rem;
     line-height: 1;
     background-color: hsla(200, 50%, 50%, .05);
-    font-family: var(--font-slim-2);
     font-variant-numeric: tabular-nums;
     transform: perspective(20rem) rotateY(-7.5deg);
 }
@@ -130,6 +129,7 @@
     font-size: 2.5rem;
     font-weight: 600;
     align-items: center;
+    font-family: var(--font-slim-2);
     filter: 
         drop-shadow(.0625rem .0625rem 0 hsla(166, 50%, 60%, .3))
         drop-shadow(.125rem .125rem 0 hsla(166, 50%, 60%, .2))

@@ -7,7 +7,7 @@ with open("final.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
 filtered_data = {
-    item["key"]: {
+    item["key"].lower(): {
         "key": item["key"],
         "original": item["original"],
         "translation": item["translation"]

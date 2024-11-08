@@ -135,8 +135,8 @@ const PersonalWeaponInfo = () => {
   return (
     <div className="Personal-Weapon-Info-container">
       <div className="spotlight">
-          <h2><I18n text={"manufacturer_Name" + manuCode} hanhua fail={manuCode}/></h2>
-          <h1><I18n text={nameLoc} hanhua /></h1>
+          <h2><I18n text={"manufacturer_name" + manuCode.toLowerCase()} hanhua fail={manuCode}/></h2>
+          <h1><I18n text={nameLoc.toLowerCase()} hanhua /></h1>
           <h3>{dataPW.Name}</h3>
         <div className="main-card">
           <div>
@@ -166,7 +166,7 @@ const PersonalWeaponInfo = () => {
             <div className="important-data-grid">
               <div className="important-data">
                 <p>TTK (s)</p>
-                <p>{ttkForParts[1]}</p>
+                <p>{isFinite(ttkForParts[1])?ttkForParts[1]:"∞"}</p>
               </div>
               <div className="important-data">
                 <p>DPS</p>
@@ -241,21 +241,21 @@ const PersonalWeaponInfo = () => {
                     <div>
                       <p><I18n text="ShotsToKill" /></p>
                       <div className="human">
-                        <div className="head" style={{backgroundColor: stkForParts[0] < 10 && `hsla(${(stkForParts[0] - 1) / 8 * 240},50%,50%,.3)`}}>{stkForParts[0]}</div>
-                        <div className="torso" style={{backgroundColor: stkForParts[1] < 10 && `hsla(${(stkForParts[1] - 1) / 8 * 240},50%,50%,.3)`}}>{stkForParts[1]}</div>
-                        <div className="arm" style={{backgroundColor: stkForParts[2] < 10 && `hsla(${(stkForParts[2] - 1) / 8 * 240},50%,50%,.3)`}}>{stkForParts[2]}</div>
+                        <div className="head" style={{backgroundColor: stkForParts[0] < 10 && `hsla(${(stkForParts[0] - 1) / 8 * 240},50%,50%,.3)`}}>{isFinite(stkForParts[0])?stkForParts[0]: "∞"}</div>
+                        <div className="torso" style={{backgroundColor: stkForParts[1] < 10 && `hsla(${(stkForParts[1] - 1) / 8 * 240},50%,50%,.3)`}}>{isFinite(stkForParts[1])?stkForParts[1]: "∞"}</div>
+                        <div className="arm" style={{backgroundColor: stkForParts[2] < 10 && `hsla(${(stkForParts[2] - 1) / 8 * 240},50%,50%,.3)`}}>{isFinite(stkForParts[2])?stkForParts[2]: "∞"}</div>
                         <div className="arm2" style={{backgroundColor: stkForParts[2] < 10 && `hsla(${(stkForParts[2] - 1) / 8 * 240},50%,50%,.3)`}}></div>
-                        <div className="leg" style={{backgroundColor: stkForParts[3] < 10 && `hsla(${(stkForParts[3] - 1) / 8 * 240},50%,50%,.3)`}}>{stkForParts[3]}</div>
+                        <div className="leg" style={{backgroundColor: stkForParts[3] < 10 && `hsla(${(stkForParts[3] - 1) / 8 * 240},50%,50%,.3)`}}>{isFinite(stkForParts[3])?stkForParts[3]: "∞"}</div>
                       </div>
                     </div>
                     <div>
                       <p><I18n text="TimeToKill" /></p>
                       <div className="human">
-                        <div className="head" style={{backgroundColor: stkForParts[0] < 10 && `hsla(${(stkForParts[0] - 1) / 8 * 240},50%,50%,.3)`}}>{ttkForParts[0]}</div>
-                        <div className="torso" style={{backgroundColor: stkForParts[1] < 10 && `hsla(${(stkForParts[1] - 1) / 8 * 240},50%,50%,.3)`}}>{ttkForParts[1]}</div>
-                        <div className="arm" style={{backgroundColor: stkForParts[2] < 10 && `hsla(${(stkForParts[2] - 1) / 8 * 240},50%,50%,.3)`}}>{ttkForParts[2]}</div>
+                        <div className="head" style={{backgroundColor: stkForParts[0] < 10 && `hsla(${(stkForParts[0] - 1) / 8 * 240},50%,50%,.3)`}}>{isFinite(stkForParts[0])?ttkForParts[0]: "∞"}</div>
+                        <div className="torso" style={{backgroundColor: stkForParts[1] < 10 && `hsla(${(stkForParts[1] - 1) / 8 * 240},50%,50%,.3)`}}>{isFinite(stkForParts[1])?ttkForParts[1]: "∞"}</div>
+                        <div className="arm" style={{backgroundColor: stkForParts[2] < 10 && `hsla(${(stkForParts[2] - 1) / 8 * 240},50%,50%,.3)`}}>{isFinite(stkForParts[2])?ttkForParts[2]: "∞"}</div>
                         <div className="arm2" style={{backgroundColor: stkForParts[2] < 10 && `hsla(${(stkForParts[2] - 1) / 8 * 240},50%,50%,.3)`}}></div>
-                        <div className="leg" style={{backgroundColor: stkForParts[3] < 10 && `hsla(${(stkForParts[3] - 1) / 8 * 240},50%,50%,.3)`}}>{ttkForParts[3]}</div>
+                        <div className="leg" style={{backgroundColor: stkForParts[3] < 10 && `hsla(${(stkForParts[3] - 1) / 8 * 240},50%,50%,.3)`}}>{isFinite(stkForParts[3])?ttkForParts[3]: "∞"}</div>
                       </div>
                     </div>
                   </div>
