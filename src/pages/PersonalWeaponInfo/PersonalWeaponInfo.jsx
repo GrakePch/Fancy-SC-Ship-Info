@@ -75,12 +75,13 @@ const PersonalWeaponInfo = () => {
       navigate("/PW", {replace: true});
     }
 
-    if (temp.Weapon)
+    if (temp.Weapon?.Ammunition.DamageDrop)
       temp.Weapon.Ammunition.DamageDrop.DropEnd = {};
       for (const t of Object.keys(temp.Weapon.Ammunition.ImpactDamage)){
-        temp.Weapon.Ammunition.DamageDrop.DropEnd[t] = temp.Weapon.Ammunition.DamageDrop.MinDistance[t] + 
-        (temp.Weapon.Ammunition.ImpactDamage[t] -
-          temp.Weapon.Ammunition.DamageDrop.MinDamage[t]) / temp.Weapon.Ammunition.DamageDrop.DropPerMeter[t];
+        temp.Weapon.Ammunition.DamageDrop.DropEnd[t] = 
+          Math.round(temp.Weapon.Ammunition.DamageDrop.MinDistance[t] + 
+          (temp.Weapon.Ammunition.ImpactDamage[t] - temp.Weapon.Ammunition.DamageDrop.MinDamage[t]) 
+          / temp.Weapon.Ammunition.DamageDrop.DropPerMeter[t]);
       }
 
     setDataPW(temp);
