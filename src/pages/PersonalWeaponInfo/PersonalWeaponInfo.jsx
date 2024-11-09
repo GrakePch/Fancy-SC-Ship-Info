@@ -9,7 +9,7 @@ import I18n from "../../components/I18n";
 import listPersonalWeapon from "../../data/fps-weapons.json";
 import "./PersonalWeaponInfo.css";
 import PortEditable from "./PortEditable/PortEditable";
-import { CartesianGrid, Legend, ResponsiveContainer, XAxis, YAxis, Tooltip, ScatterChart, Scatter, Dot } from "recharts";
+import { CartesianGrid, Legend, ResponsiveContainer, XAxis, YAxis, Tooltip, ScatterChart, Scatter, Dot, ReferenceLine, Label } from "recharts";
 import icons from "../../assets/icons";
 import personal_weapons_img from "../../assets/personal_weapons_side/personal_weapons_img";
 
@@ -74,6 +74,14 @@ const PersonalWeaponInfo = () => {
     if (!temp) {
       navigate("/PW", {replace: true});
     }
+
+    if (temp.Weapon)
+      temp.Weapon.Ammunition.DamageDrop.DropEnd = {};
+      for (const t of Object.keys(temp.Weapon.Ammunition.ImpactDamage)){
+        temp.Weapon.Ammunition.DamageDrop.DropEnd[t] = temp.Weapon.Ammunition.DamageDrop.MinDistance[t] + 
+        (temp.Weapon.Ammunition.ImpactDamage[t] -
+          temp.Weapon.Ammunition.DamageDrop.MinDamage[t]) / temp.Weapon.Ammunition.DamageDrop.DropPerMeter[t];
+      }
 
     setDataPW(temp);
     console.log(temp);
@@ -141,7 +149,7 @@ const PersonalWeaponInfo = () => {
         point.y = Math.round(dmg * 100) / 100;
         data[t].push(point);
       }
-    ;}
+    }
     setLineData(data);
   },[dataPW]);
 
@@ -227,14 +235,56 @@ const PersonalWeaponInfo = () => {
         <div className="charts">
               <div className="damage-drop-chart">
                 <ResponsiveContainer width="100%" height="100%">
-                  <ScatterChart data={lineData}>
+                  <ScatterChart data={lineData} margin={{ top: 10, right: 40, left: -16, bottom: 0 }}>
                     <CartesianGrid />
-                    <XAxis dataKey="x" type="number" domain={[0, 500]} ticks={[0, 100, 200, 300, 400, 500]}/>
-                    <YAxis dataKey="y" type="number" />
+                    <XAxis dataKey="x" type="number" domain={[0, 500]} ticks={[0, 500]}/>
+                    <YAxis dataKey="y" type="number" domain={[0, dataMax => (dataMax * 1.2)]} ticks={[0]}/>
                     <Tooltip cursor={{ strokeDasharray: '3 3' }} />
                     <Legend />
-                    {dataPW.Weapon?.Ammunition.ImpactDamage && Object.keys(dataPW.Weapon.Ammunition.ImpactDamage).map((dmgType) => 
-                      <Scatter key={dmgType} data={lineData[dmgType]} name={<I18n text={dmgType} />} fill={dmgTypeToColor[dmgType]} shape={<Dot r={2} />} isAnimationActive={false} />)
+                    {dataPW.Weapon?.Ammunition.ImpactDamage && Object.keys(dataPW.Weapon.Ammunition.ImpactDamage).map((dmgType) =><>
+                      <ReferenceLine 
+                        key={dmgType + "_y0"} 
+                        y={dataPW.Weapon?.Ammunition.ImpactDamage[dmgType]} 
+                        label={<Label value={dataPW.Weapon?.Ammunition.ImpactDamage[dmgType]} 
+                        position="left"
+                        offset={8}
+                        style={{fill: dmgTypeToColor[dmgType], fontWeight: 600}}/>} 
+                        strokeWidth={0} />
+                      <ReferenceLine 
+                        key={dmgType + "_y1"} 
+                        y={dataPW.Weapon?.Ammunition.DamageDrop.MinDamage[dmgType]} 
+                        label={<Label value={dataPW.Weapon?.Ammunition.DamageDrop.MinDamage[dmgType]} 
+                        position="right"
+                        offset={8}
+                        style={{fill: dmgTypeToColor[dmgType], fontWeight: 600}}/>} 
+                        strokeWidth={0} />
+                      <ReferenceLine 
+                        key={dmgType + "_x0"} 
+                        x={dataPW.Weapon?.Ammunition.DamageDrop.MinDistance[dmgType]} 
+                        label={<Label value={dataPW.Weapon?.Ammunition.DamageDrop.MinDistance[dmgType]} 
+                        position="bottom"
+                        offset={8}
+                        style={{fill: dmgTypeToColor[dmgType], fontWeight: 600}}/>} 
+                        strokeDasharray='3 3'
+                        stroke={dmgTypeToColor[dmgType]} />
+                      <ReferenceLine 
+                        key={dmgType + "_x1"} 
+                        x={dataPW.Weapon?.Ammunition.DamageDrop.DropEnd[dmgType]} 
+                        label={<Label value={dataPW.Weapon?.Ammunition.DamageDrop.DropEnd[dmgType]} 
+                        position="bottom" 
+                        offset={8}
+                        style={{fill: dmgTypeToColor[dmgType], fontWeight: 600}}/>} 
+                        strokeDasharray='3 3'
+                        stroke={dmgTypeToColor[dmgType]} />
+                      <Scatter 
+                        key={dmgType} 
+                        data={lineData[dmgType]} 
+                        name={<I18n text={dmgType} />} 
+                        fill={dmgTypeToColor[dmgType]} 
+                        shape={<Dot r={2} />} 
+                        isAnimationActive={false} />
+                      </>
+                      )
                     }
                   </ScatterChart>
                 </ResponsiveContainer>

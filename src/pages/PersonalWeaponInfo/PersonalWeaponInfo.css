@@ -232,7 +232,7 @@
     background-color: var(--color-bg-light);
     min-height: 16rem;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .Personal-Weapon-Info-container .human-status {
