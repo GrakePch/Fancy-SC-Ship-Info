@@ -186,6 +186,8 @@
     "Short-CrossSection": "CS",
 
     
+    "FPSSort-Type": "Weapon Type",
+    "FPSSort-MaxDPS": "Max DPS",
     "GunType-HG": "Hand Gun",
     "GunType-SMG": "SMG",
     "GunType-AR": "Rifle",

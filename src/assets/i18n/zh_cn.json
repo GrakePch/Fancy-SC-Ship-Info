@@ -303,7 +303,9 @@
     "Short-Infrared": "红外",
     "Short-CrossSection": "截面",
 
-    
+
+    "FPSSort-Type": "武器类型",
+    "FPSSort-MaxDPS": "最大 DPS",
     "GunType-HG": "手枪",
     "GunType-SMG": "冲锋枪",
     "GunType-AR": "步枪",

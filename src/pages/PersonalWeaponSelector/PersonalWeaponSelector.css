@@ -25,6 +25,35 @@
     color: var(--color-bg-light);
 }
 
+.Index-Personal-Wpn-container .sort-selector {
+    display: flex;
+    gap: .5rem;
+    align-self: center;
+    padding: .5rem;
+    background-color: #00000020;
+    box-shadow:
+        inset 0rem .25rem .25rem 0 #00000030;
+    border-radius: 1rem;
+}
+
+.Index-Personal-Wpn-container .sort-selector>button {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1rem;
+    font-family: var(--font-slim);
+    padding: .5rem .5rem;
+    border-radius: .5rem;
+    transition: all .2s;
+}
+
+.Index-Personal-Wpn-container .sort-selector>button.active {
+    padding: .5rem 1rem;
+    color: var(--color-bg);
+    background-color: var(--color-text);
+    font-weight: 600;
+}
+
 .Index-Personal-Wpn-container .group-list {
     display: flex;
     flex-direction: column;
@@ -56,6 +85,7 @@
     cursor: pointer;
     box-shadow: var(--acrylic-edge), var(--shadow-1);
     transition: background-color .2s, box-shadow .2s;
+    overflow: hidden;
 }
 
 .Index-Personal-Wpn-container .item:hover {
@@ -71,10 +101,12 @@
 }
 
 .Index-Personal-Wpn-container .contents {
+    display: flex;
+    flex-direction: column;
 }
 
 .Index-Personal-Wpn-container .item .name {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     font-weight: 600;
 }
 
@@ -83,6 +115,7 @@
     font-weight: 500;
     opacity: .5;
     margin-top: .25rem;
+    flex-grow: 1;
 }
 
 .Index-Personal-Wpn-container .manufacturer {
@@ -97,14 +130,33 @@
     opacity: .7;
 }
 
+.Index-Personal-Wpn-container .item .value {
+    font-family: var(--font-slim);
+    font-size: .8rem;
+}
+.Index-Personal-Wpn-container .item .value>span {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: hsl(166, 50%, 60%);
+}
+
 .Index-Personal-Wpn-container .thumbnail {
     position: absolute;
     top: .25rem;
     right: .5rem;
     height: calc(100% - .5rem);
-    width: 100%;
+    width: 70%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
     filter: brightness(1.4) drop-shadow(0 .25rem .5rem #00000080);
+}
+
+.Index-Personal-Wpn-container .value-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: hsl(166, 50%, 60%);
+    border-top-right-radius: 4px;
 }

@@ -3,11 +3,14 @@ import { useEffect, useState } from "react";
 import icons from "../../assets/icons";
 import listPersonalWeapon from "../../data/fps-weapons.json";
 import "./PersonalWeaponSelector.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import I18n from "../../components/I18n";
 import personal_weapons_img from "../../assets/personal_weapons_side/personal_weapons_img";
+import Icon from "@mdi/react";
+import { mdiSortAscending, mdiSortDescending } from "@mdi/js";
 
 const PersonalWeaponSelector = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
   const [showType, setShowType] = useState("");
   const weaponTypes = [
@@ -55,6 +58,9 @@ const PersonalWeaponSelector = () => {
     Heavy: [],
     Other: []
   })
+  const [listAllWeapon, setListAllWeapon] = useState([]);
+  const [listSortValueMax, setListSortValueMax] = useState({});
+  const [sortMode, setSortMode] = useState(["type", 1]);
 
   useEffect(() => {
     const tempListWeapon = {
@@ -84,6 +90,7 @@ const PersonalWeaponSelector = () => {
       Heavy: [],
       Other: []
     }
+    const tempListAllWeapon = [];
 
     for (const item of listPersonalWeapon) {
       if (item.type === "WeaponPersonal") {
@@ -118,7 +125,33 @@ const PersonalWeaponSelector = () => {
     setListAttachment(tempListAttach);
     setDictGun(tempDictGun);
     console.log(tempDictGun);
+
+    for (const t of gunTypes) {
+      for (const item of tempDictGun[t])
+        tempListAllWeapon.push(item);
+    }
+
+    let tempListSortValueMax = { maxDPS: 0 };
+    for (const item of tempListAllWeapon) {
+      item.sort = {};
+      let dpsForFiringModes = item.stdItem.Weapon.Firing.map(fm => fm.DamagePerSecond.Physical || fm.DamagePerSecond.Energy || 0);
+      let maxDPS = Math.max(...dpsForFiringModes);
+      item.sort.maxDPS = maxDPS;
+      tempListSortValueMax.maxDPS = Math.max(tempListSortValueMax.maxDPS, maxDPS);
+    }
+    setListAllWeapon(tempListAllWeapon);
+    setListSortValueMax(tempListSortValueMax);
   }, []);
+
+  useEffect(() => {
+    let s_sortMode = searchParams.get("sort");
+    if (s_sortMode === "maxDPS-")
+      setSortMode(["dps", -1]);
+    else if (s_sortMode === "maxDPS")
+      setSortMode(["dps", 1]);
+    else
+      setSortMode(["type", 1]);
+  }, [searchParams])
 
   const handleTypeSelectClick = (superType, type) => {
     let composition = superType + "." + type;
@@ -128,30 +161,66 @@ const PersonalWeaponSelector = () => {
 
   return (
     <div className="Index-Personal-Wpn-container">
-      
-      <div className="group-list">
-        {gunTypes.map((k) => 
-        <div key={k}>
-          <p><I18n text={"GunType-" + k} /></p>
-          <div className="item-list">
+      <div className="sort-selector">
+        <button 
+          onClick={() => {searchParams.delete("sort"); setSearchParams(searchParams, {replace: true})}} 
+          className={sortMode[0] === "type" ? "active" : ""}
+        ><I18n text="FPSSort-Type" /></button>
+        <button 
+          onClick={() => {
+            if (sortMode[0] != "dps") 
+              searchParams.set("sort", "maxDPS-");
+            else 
+              searchParams.set("sort", (sortMode[1] > 0) ? "maxDPS-" : "maxDPS");
+            setSearchParams(searchParams, {replace: true});
+        }} 
+          className={sortMode[0] === "dps" ? "active" : ""}
+        ><I18n text="FPSSort-MaxDPS" />
+        {sortMode[0] === "dps" && sortMode[1] > 0 
+          ? <Icon path={mdiSortAscending} size={1}/>
+          : <Icon path={mdiSortDescending} size={1} vertical/>}
+        </button>
+      </div>
+      {<div className="group-list">
+        { sortMode[0] === "dps"
+          ? <div className="item-list">
             {
-              dictGun[k].sort((a, b) => a.stdItem.Name.localeCompare(b.stdItem.Name)).map((item) => {
-                let first_ = item.className.indexOf("_");
-                let manuCode = item.className.slice(0, first_).toUpperCase();
-                return <div key={item.className} className="item" onClick={() => navigate("/PW/" + item.className)}>
+              listAllWeapon.sort((a, b) => sortMode[1] * (a.sort.maxDPS - b.sort.maxDPS)).map((item) => 
+                <div key={item.className} className="item" onClick={() => navigate("/PW/" + item.className)}>
                   {icons["s" + item.stdItem.Size]}
                   <div className="contents">
                     <p className="name"><I18n text={item.name.slice(1).toLowerCase()} hanhua /></p>
                     <p className="name-small">{item.stdItem.Name}</p>
-                    <p className="manufacturer"><I18n text={"manufacturer_name" + manuCode.toLowerCase()} hanhua fail={manuCode} /></p>
+                    <p className="value"><span>{item.sort?.maxDPS}</span> <I18n text="FPSSort-MaxDPS" /></p>
                   </div>
                   <div className="thumbnail" style={{backgroundImage: `url(${personal_weapons_img[item.className]})`}}></div>
+                  <div className="value-bar" style={{width: `${(item.sort?.maxDPS / 1000) * 100}%`}}></div>
                 </div>
-              })
+              )
             }
           </div>
-        </div>)}
-        </div>
+        : gunTypes.map((k) => 
+        <div key={k}>
+          <p><I18n text={"GunType-" + k} /></p>
+          <div className="item-list">
+            {
+              dictGun[k].sort((a, b) => a.stdItem.Name.localeCompare(b.stdItem.Name)).map((item) => 
+                <div key={item.className} className="item" onClick={() => navigate("/PW/" + item.className)}>
+                  {icons["s" + item.stdItem.Size]}
+                  <div className="contents">
+                    <p className="name"><I18n text={item.name.slice(1).toLowerCase()} hanhua /></p>
+                    <p className="name-small">{item.stdItem.Name}</p>
+                    <p className="value"><span>{item.sort?.maxDPS}</span> <I18n text="FPSSort-MaxDPS" /></p>
+                  </div>
+                  <div className="thumbnail" style={{backgroundImage: `url(${personal_weapons_img[item.className]})`}}></div>
+                  <div className="value-bar" style={{width: `${(item.sort?.maxDPS / 1000) * 100}%`}}></div>
+                </div>
+              )
+            }
+          </div>
+        </div>)
+        }
+      </div>}
       {/* <nav>
         {weaponTypes.map((type) => (
           <button
