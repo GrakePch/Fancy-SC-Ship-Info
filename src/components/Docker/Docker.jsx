@@ -102,7 +102,7 @@ function Docker() {
           <I18n text="nav-ship-index" />
         </p>
       </span>
-      <span className="Docker-tooltip">
+      {/* <span className="Docker-tooltip">
         <button
           className="Docker-btns"
           onClick={() => {
@@ -114,7 +114,7 @@ function Docker() {
         <p>
           <I18n text="nav-component-index" />
         </p>
-      </span>
+      </span> */}
       <span className="Docker-tooltip">
         <button
           className="Docker-btns"
