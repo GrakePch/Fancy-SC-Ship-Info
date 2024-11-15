@@ -5,7 +5,7 @@ import listPersonalWeapon from "../../data/fps-weapons.json";
 import "./PersonalWeaponSelector.css";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import I18n from "../../components/I18n";
-import personal_weapons_img from "../../assets/personal_weapons_side/personal_weapons_img";
+import personal_weapons_img from "../../assets/personal_weapons_side/144p/personal_weapons_img";
 import Icon from "@mdi/react";
 import { mdiSortAscending, mdiSortDescending } from "@mdi/js";
 

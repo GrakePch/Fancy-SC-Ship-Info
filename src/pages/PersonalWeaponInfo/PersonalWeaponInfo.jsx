@@ -11,7 +11,7 @@ import "./PersonalWeaponInfo.css";
 import PortEditable from "./PortEditable/PortEditable";
 import { CartesianGrid, Legend, ResponsiveContainer, XAxis, YAxis, Tooltip, ScatterChart, Scatter, Dot, ReferenceLine, Label } from "recharts";
 import icons from "../../assets/icons";
-import personal_weapons_img from "../../assets/personal_weapons_side/personal_weapons_img";
+import personal_weapons_img from "../../assets/personal_weapons_side/1080p/personal_weapons_img";
 
 const targetArmors = [
   "naked",
