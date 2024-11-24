@@ -741,7 +741,7 @@
     },
     {
       "RSI Polaris": "RSI 北极星",
-      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fpolaris__iso_xs_d7aec60b80c42172bf9c11c7e378a05e.png?alt=media"
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fpolaris__iso_s_94515f6278727284aa26f6dfc706be97.png?alt=media"
     },
     {
       "RSI Scorpius": "RSI 天蝎座",
@@ -898,6 +898,10 @@
     {
       "MISC Starlancer Max": "武藏 星际枪骑兵 MAX",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fstarlancer-max__iso_l_7d6e77e5a785e30bb628b8fbf8814cc8.png?alt=media"
+    },
+    {
+      "Crusader Intrepid": "十字军 无畏",
+      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fintrepid__iso_s_901c912652f2635df4f81a081cc10188.png?alt=media"
     }
   ]
 }
