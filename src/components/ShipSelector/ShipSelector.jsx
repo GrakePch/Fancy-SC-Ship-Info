@@ -7,7 +7,7 @@ import Icon from "@mdi/react";
 import ManufacturerToHue from "../../assets/ManufacturerToHue";
 import manufacturers_small from "../../assets/manufacturers_small";
 import ship_pics_and_zh_name from "../../assets/ship_pics_and_zh_name.json";
-import shipIndex from "../../data/index-min.json";
+import shipIndex from "../../data/index.js";
 import ship_name_to_series from "../../data/ship_name_to_series.json";
 import I18n from "../I18n";
 import I18nPure from "../I18nPure";

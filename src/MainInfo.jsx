@@ -18,10 +18,10 @@ import PanelComponents from "./components/PanelComponents/PanelComponents";
 import PanelQuantumTravel from "./components/PanelQuantumTravel/PanelQuantumTravel";
 import QuantumTravel from "./components/QuantumTravel/QuantumTravel";
 import ShipSelector from "./components/ShipSelector/ShipSelector";
-import shipIndex from "./data/index-min.json";
-import shipHardpoints from "./data/ship-hardpoints-min.json";
+import shipIndex from "./data/index.js";
+import shipHardpoints from "./data/ship-hardpoints.js";
 import shipItems from "./data/ship-items-min.json";
-import shipList from "./data/ship-list-min.json";
+import shipList from "./data/ship-list.js";
 import shipDataRSIJson from "./data/ship_data_rsi.json";
 
 const tabs = [
@@ -385,7 +385,7 @@ function MainInfo() {
                   {shipIdx.Store.IsLimitedSale && " LIMITED SALE"}
                 </h3>
                 <p className="version-and-sources font-slim">
-                  Game Version: 3.24.0 LIVE
+                  Game Version: 3.24.3 LIVE
                   <br />
                   Data Source:{" "}
                   <a href="https://www.spviewer.eu/" target="_blank">

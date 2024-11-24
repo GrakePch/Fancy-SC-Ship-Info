@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import shipItems from "../../data/ship-items-min.json";
+import shipItems from "../../data/ship-items.js";
 import ComponentGeneral from "../ComponentGeneral/ComponentGeneral";
 import "./IndexComponents.css";
 

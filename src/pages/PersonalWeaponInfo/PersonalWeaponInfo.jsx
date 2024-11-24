@@ -6,7 +6,7 @@ import Icon from "@mdi/react";
 
 import dmgTypeToColor from "../../assets/damageTypeToColor";
 import I18n from "../../components/I18n";
-import listPersonalWeapon from "../../data/fps-weapons.json";
+import listPersonalWeapon from "../../data/fps-weapons.js";
 import "./PersonalWeaponInfo.css";
 import PortEditable from "./PortEditable/PortEditable";
 import { CartesianGrid, Legend, ResponsiveContainer, XAxis, YAxis, Tooltip, ScatterChart, Scatter, Dot, ReferenceLine, Label } from "recharts";

@@ -23,7 +23,7 @@ import SimpleComponent from "./components/SimpleComponent/SimpleComponent";
 import SimpleComponentEditable from "./components/SimpleComponent/SimpleComponentEditable";
 import SimpleFuelTank from "./components/SimpleFuelTank/SimpleFuelTank";
 import SimpleWeaponGroup from "./components/SimpleWeaponGroup/SimpleWeaponGroup";
-import shipItems from "./data/ship-items-min.json";
+import shipItems from "./data/ship-items.js";
 
 const checkObjNotEmpty = (obj) => {
   if (obj == null) return false;
@@ -177,7 +177,7 @@ const SimpleInfo = ({
         </h3>
         <div className="SimpleInfo-title-bottom-banner">
           <div className="small-texts">
-            游戏版本：3.24.2 &nbsp;&nbsp;|&nbsp;&nbsp; 主要数据来源：Ships
+            游戏版本：3.24.3 &nbsp;&nbsp;|&nbsp;&nbsp; 主要数据来源：Ships
             Performances Viewer
           </div>
           <div className="small-logo"></div>

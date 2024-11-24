@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import icons from "../../assets/icons";
-import listPersonalWeapon from "../../data/fps-weapons.json";
+import listPersonalWeapon from "../../data/fps-weapons.js";
 import "./PersonalWeaponSelector.css";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import I18n from "../../components/I18n";
