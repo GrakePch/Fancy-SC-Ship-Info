@@ -9,7 +9,7 @@ import ship_pics_and_zh_name from "../../assets/ship_pics_and_zh_name.json";
 import I18n from "../../components/I18n";
 import I18nPure from "../../components/I18nPure";
 import ShipSelectCard from "../../components/ShipSelector/ShipSelectCard/ShipSelectCard";
-import dataShipIndex from "../../data/index-min.json";
+import dataShipIndex from "../../data/index.js";
 import ship_name_to_series from "../../data/ship_name_to_series.json";
 import "./Prices.css";
 
@@ -23,7 +23,7 @@ const specialFileName = {
   RSI_Zeus_ES: "zeus-mkii-es",
   RSI_Zeus_MR: "zeus-mkii-mr",
   RSI_Polaris_FW: "polaris",
-  AEGS_Idris_M_PU: "idris-m",
+  CNOU_Pionneer: "pioneer",
 };
 
 const formatImgSrc = (name) =>

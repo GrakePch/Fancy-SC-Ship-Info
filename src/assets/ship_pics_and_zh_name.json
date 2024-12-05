@@ -337,11 +337,11 @@
     },
     {
       "C.O. Pionneer": "联合外域 开拓者",
-      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fpioneer__iso_xs_54af558c50e6d80a819a5ee0751440c5.png?alt=media"
+      "vehicleLink": "https://ships.42kit.com/resized/pioneer%20iso.png"
     },
     {
       "C.O. Pioneer": "联合外域 开拓者",
-      "vehicleLink": "https://fleetviewer.link/fleetpics%2Fpioneer__iso_xs_54af558c50e6d80a819a5ee0751440c5.png?alt=media"
+      "vehicleLink": "https://ships.42kit.com/resized/pioneer%20iso.png"
     },
     {
       "Crusader A1 Spirit": "十字军 A1 星灵",
@@ -672,11 +672,11 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fx1-velocity__iso_xs_f3aff1981ba131a0cf1a6179795dea60.png?alt=media"
     },
     {
-      "RSI Apollo Medivac": "RSI 阿波罗 医务室",
+      "RSI Apollo Medivac": "RSI 阿波罗 医疗",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fapollo-medivac__iso_xs_a8004972cfabd0658fe222f75e8f0ec5.png?alt=media"
     },
     {
-      "RSI Apollo Triage": "RSI 阿波罗 分诊台",
+      "RSI Apollo Triage": "RSI 阿波罗 分诊",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fapollo-triage__iso_xs_e86c00b4736777218a662aef27d481c2.png?alt=media"
     },
     {
@@ -844,27 +844,39 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fsabre-firebird__iso_s_8105e86cda70e2f44d23dc1cb1cb26d4.png?alt=media"
     },
     {
-      "Anvil F7A Hornet Mk II": "",
+      "Anvil F7A Hornet Mk I": "铁砧 F7A 大黄蜂 Mk I"
+    },
+    {
+      "Anvil F7A Hornet Mk II": "铁砧 F7A 大黄蜂 Mk II",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Ff7a-mkii__iso_s_96b3f65bc3dec260fe65a1ef047a6356.png?alt=media"
     },
     {
-      "Anvil F7C Hornet Mk II": "",
+      "Anvil F7C Hornet Mk II": "铁砧 F7C 大黄蜂 Mk II",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Ff7c-mkii__iso_s_0b3c7a03b90fd74adceb1ee6f04b232e.png?alt=media"
     },
     {
-      "Argo MPUV Tractor": "",
+      "Anvil F7C-R Hornet Tracker Mk II": "铁砧 F7C-R 大黄蜂 追踪者 Mk II"
+    },
+    {
+      "Anvil F7C-S Hornet Ghost Mk II": "铁砧 F7C-S 大黄蜂 幽灵 Mk II"
+    },
+    {
+      "Anvil F7C-M Super Hornet Mk II": "铁砧 F7C-M 超级大黄蜂 Mk II"
+    },
+    {
+      "Argo MPUV Tractor": "南船 MPUV 牵引",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fmpuv-tractor__iso_s_d7c70fc2f31e08c5d6af88688169041d.png?alt=media"
     },
     {
-      "Drake Dragonfly Yellowjacket": "",
+      "Drake Dragonfly Yellowjacket": "德雷克 蜻蜓 黄胡蜂",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fdragonfly-yellowjacket__iso_s_5182b75749e816d74626e9c4423b7500.png?alt=media"
     },
     {
-      "Mirai Pulse": "",
+      "Mirai Pulse": "未来 脉冲",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fpulse__iso_s_c121b2302520c7f57d76661e34dc9a78.png?alt=media"
     },
     {
-      "Mirai Pulse LX": "",
+      "Mirai Pulse LX": "未来 脉冲 LX",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fpulse-lx__iso_s_123a7fa514085e6cb1ad71f697097252.png?alt=media"
     },
     {
@@ -872,7 +884,7 @@
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fpolaris__iso_s_94515f6278727284aa26f6dfc706be97.png?alt=media"
     },
     {
-      "RSI Ursa Medivac": "",
+      "RSI Ursa Medivac": "RSI 大熊座 医疗",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fursa-medivac__iso_s_f79f7990742b38beff962e362a3907f1.png?alt=media"
     },
     {
@@ -902,6 +914,18 @@
     {
       "Crusader Intrepid": "十字军 无畏",
       "vehicleLink": "https://fleetviewer.link/fleetpics%2Fintrepid__iso_s_901c912652f2635df4f81a081cc10188.png?alt=media"
+    },
+    {
+      "Anvil Terrapin Medic": "铁砧 水龟 医疗",
+      "vehicleLink": "https://ships.42kit.com/resized/terrapin-medic%20iso.png"
+    },
+    {
+      "Anvil Paladin": "铁砧 圣骑士",
+      "vehicleLink": "https://ships.42kit.com/resized/paladin%20iso.png"
+    },
+    {
+      "Argo CSV-SM": "南船 CSV-SM",
+      "vehicleLink": "https://ships.42kit.com/resized/csv-sm%20iso.png"
     }
   ]
 }

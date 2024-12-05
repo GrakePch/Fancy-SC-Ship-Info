@@ -1,11 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import icons from "../../../assets/icons";
 import I18n from "../../../components/I18n";
 import Icon from "@mdi/react";
 import { mdiClose } from "@mdi/js";
+import listFpsWeapon from "../../../data/fps-weapons";
 
 const PortEditable = ({ data, name, icon }) => {
   const [windowActive, setWindowActive] = useState(false);
+  const [listAttachments, setListAttachment] = useState([]);
+
+  useEffect(() => {
+    if (data == null) return;
+    let type = data.Types[0];
+    let templistAttachments = [];
+
+    templistAttachments = listFpsWeapon.filter((item) => item.stdItem.Type === type && item.size >= data.MinSize && item.size <= data.MaxSize);
+
+    setListAttachment(templistAttachments);
+  }, [data]);
 
   return data ? (
     <>
@@ -46,6 +58,12 @@ const PortEditable = ({ data, name, icon }) => {
           ) 
         }
         </div>
+        <p><I18n text="Available" /></p>
+        <div className="list">
+          {
+            listAttachments.map((item, idx) => <div>{item.stdItem.Name}</div>)
+          }
+          </div>
       </div>
     </div>
     </>

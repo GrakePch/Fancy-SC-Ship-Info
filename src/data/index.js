@@ -1,4 +1,4 @@
-const shipIndex =  [{
+const shipIndex = [{
     ClassName: "AEGS_Avenger_Stalker",
     Name: "Aegis Avenger Stalker",
     Manufacturer: "Aegis Dynamics",
@@ -518,7 +518,7 @@ const shipIndex =  [{
         Url: null,
         IsPromotionOnly: !1,
         IsLimitedSale: !1,
-        Buy: 170
+        Buy: 175
     },
     PU: {
         Patch: "2.2.0",
@@ -1336,7 +1336,7 @@ const shipIndex =  [{
         Url: null,
         IsPromotionOnly: !1,
         IsLimitedSale: !1,
-        Buy: null
+        Buy: 185
     },
     PU: {
         Patch: "3.24.3",
@@ -1400,7 +1400,7 @@ const shipIndex =  [{
         Url: null,
         IsPromotionOnly: !1,
         IsLimitedSale: !1,
-        Buy: null
+        Buy: 185
     },
     PU: {
         Patch: "3.24.3",
@@ -1596,6 +1596,40 @@ const shipIndex =  [{
         Buy: null
     }
 }, {
+    ClassName: "ANVL_Paladin",
+    Name: "Anvil Paladin",
+    Manufacturer: "Anvil Aerospace",
+    Career: "Combat",
+    Role: "Gunship",
+    Size: 4,
+    Cargo: 0,
+    Type: "Ship",
+    CommLink: {
+        HasCommLink: !0,
+        Date: "2024-11-30",
+        Url: "https://robertsspaceindustries.com/comm-link/transmission/20292-Anvil-Paladin"
+    },
+    ProgressTracker: {
+        Status: "Concept",
+        Patch: null,
+        IsOnPT: !1,
+        ID: null
+    },
+    Store: {
+        Url: "https://robertsspaceindustries.com/comm-link/transmission/20292-Anvil-Paladin#skus",
+        IsPromotionOnly: !1,
+        IsLimitedSale: !1,
+        Buy: 300
+    },
+    PU: {
+        Patch: null,
+        Date: null,
+        HasPerf: !1,
+        IsPTUOnly: !1,
+        IsPTUBuyOnly: !1,
+        Buy: null
+    }
+}, {
     ClassName: "ANVL_Spartan",
     Name: "Anvil Spartan",
     Manufacturer: "Anvil Aerospace",
@@ -1685,7 +1719,7 @@ const shipIndex =  [{
         Url: null,
         IsPromotionOnly: !1,
         IsLimitedSale: !1,
-        Buy: null
+        Buy: 220
     },
     PU: {
         Patch: "3.24.3",
@@ -1748,7 +1782,7 @@ const shipIndex =  [{
         Url: null,
         IsPromotionOnly: !1,
         IsLimitedSale: !1,
-        Buy: 170
+        Buy: 175
     },
     PU: {
         Patch: "2.3.0",
@@ -2355,7 +2389,7 @@ const shipIndex =  [{
         Url: null,
         IsPromotionOnly: !1,
         IsLimitedSale: !0,
-        Buy: 850
+        Buy: 925
     },
     PU: {
         HasPerf: !1,
@@ -4596,8 +4630,8 @@ const shipIndex =  [{
         Url: "https://robertsspaceindustries.com/comm-link/transmission/20213-MISC-Starlancer-TAC"
     },
     ProgressTracker: {
-        Status: "InProd",
-        Patch: null,
+        Status: "NextPatch",
+        Patch: "4.0.0",
         IsOnPT: !1,
         ID: null
     },
@@ -4610,8 +4644,8 @@ const shipIndex =  [{
     PU: {
         Patch: null,
         Date: null,
-        HasPerf: !1,
-        IsPTUOnly: !1,
+        HasPerf: !0,
+        IsPTUOnly: !0,
         IsPTUBuyOnly: !1,
         Buy: null
     }
@@ -5839,7 +5873,7 @@ const shipIndex =  [{
         Url: null,
         IsPromotionOnly: !1,
         IsLimitedSale: !1,
-        Buy: 750
+        Buy: 975
     },
     PU: {
         Patch: "3.24.3",

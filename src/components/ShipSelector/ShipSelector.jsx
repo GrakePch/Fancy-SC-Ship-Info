@@ -24,6 +24,7 @@ const specialFileName = {
   RSI_Zeus_ES: "zeus-mkii-es",
   RSI_Zeus_MR: "zeus-mkii-mr",
   RSI_Polaris_FW: "polaris",
+  CNOU_Pionneer: "pioneer",
 };
 
 const formatImgSrc = (name) =>
