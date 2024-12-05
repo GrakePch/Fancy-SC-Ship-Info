@@ -76,11 +76,6 @@ const getManuButtonColors = (manu, isActive) =>
 function ShipSelector() {
   const [manufacturerList, setManufacturerList] = useState([]);
   const [filterForManu, setFilterForManu] = useState(null);
-  const [filterForShipVeh, setFilterForShipVeh] = useState([
-    true,
-    true,
-    true,
-  ]); /* 0: Ship, 1: Ground Vehicle, 2: Gravlev */
   const [filterForReleased, setFilterForReleased] = useState(false);
   const [dictShipZhName, setDictShipZhName] = useState({});
   const [seriesList, setSeriesList] = useState([]);
@@ -88,13 +83,6 @@ function ShipSelector() {
   const lang = localStorage.getItem("lang");
   const [searchField, setSearchField] = useState("");
   const navigate = useNavigate();
-
-  const isFilterActive =
-    filterForManu ||
-    filterForReleased ||
-    !filterForShipVeh[0] ||
-    !filterForShipVeh[1] ||
-    !filterForShipVeh[2];
 
   useEffect(() => {
     let dShipZhName = {};
@@ -129,9 +117,6 @@ function ShipSelector() {
             ? item.ProgressTracker.Status == "Released" ||
               item.ProgressTracker.Status == "PU"
             : true) &&
-          ((item.Type == "Ship" && filterForShipVeh[0]) ||
-            (item.Type == "Vehicle" && filterForShipVeh[1]) ||
-            (item.Type == "Gravlev" && filterForShipVeh[2])) &&
           (item.NameShort?.toLowerCase().includes(searchField.toLowerCase()) ||
             dictShipZhName[item.Name]
               ?.split(" ")
@@ -186,14 +171,6 @@ function ShipSelector() {
       <div className="title-bar-wrapper">
         <div className="title-bar-bg-blur"></div>
         <div className="title-bar">
-          <div className="Ship-selector-search-bar">
-            <Icon path={mdiMagnify} size={1} />
-            <input
-              type="search"
-              placeholder={I18nPure("ShipSelectorSearch", lang)}
-              onChange={handleSearchChange}
-            />
-          </div>
           <div className="filter-by-manufacturer">
             {manufacturerList.map((manu) => (
               <button
@@ -209,6 +186,14 @@ function ShipSelector() {
                 <I18n text={manu} />
               </button>
             ))}
+          </div>
+          <div className="Ship-selector-search-bar">
+            <Icon path={mdiMagnify} size={1} />
+            <input
+              type="search"
+              placeholder={I18nPure("ShipSelectorSearch", lang)}
+              onChange={handleSearchChange}
+            />
           </div>
         </div>
       </div>
@@ -256,9 +241,10 @@ function ShipSelector() {
                       width: "calc(100% + 2rem)",
                       left: "-1rem",
                       padding: "1rem",
-                      margin: ".5rem 0",
+                      // margin: ".5rem 0",
                       borderRadius: "2rem",
-                      backgroundColor: "#80808020",
+                      // backgroundColor: "#80808020",
+                      outline: "#80808080 2px solid"
                     }}
                   >
                     <p
