@@ -179,7 +179,7 @@ function ShipSelector() {
     }));
 
     setSeriesList(series);
-  }, [filterForManu]);
+  }, [filterForManu, searchField]);
 
   return (
     <div className="Ship-selector-container">
