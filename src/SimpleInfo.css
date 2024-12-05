@@ -20,6 +20,21 @@
     position: absolute;
 }
 
+@media screen and (max-width: 719px) {
+    .SimpleInfo-container {
+        padding: 1rem;
+        padding-top: 14rem;
+        padding-bottom: 2rem;
+    }
+    .SimpleInfo-container>.ship-img-iso {
+        top: 1rem;
+        height: 12rem;
+        right: 50%;
+        transform: translateX(50%)
+    }
+}
+
+
 .SimpleInfo-container>.prices {
     font-weight: 600;
     font-variant-numeric: tabular-nums;
@@ -103,11 +118,24 @@
     font-variant-numeric: tabular-nums;
 }
 
+@media screen and (max-width: 719px) {
+    .SimpleInfo-contents {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
 .SimpleGrid {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 1rem;
     height: min-content;
+}
+
+@media screen and (max-width: 1000px) {
+    .SimpleGrid {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
@@ -305,17 +333,25 @@
     box-shadow: none;
 }
 
+.SimpleWeapon-name {
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
 .SimpleWeapon-name>p {
     line-height: 100%;
     font-weight: 500;
+    word-break: break-word;
 }
 
 .SimpleWeapon-name>p:last-child {
     font-size: .8rem;
     opacity: .5;
+    word-break: break-word;
 }
 
 .SimpleWeapon-tail-icons {
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     gap: .25rem;
