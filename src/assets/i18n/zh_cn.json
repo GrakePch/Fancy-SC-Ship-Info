@@ -43,6 +43,15 @@
     "Greycat Industrial":"灰猫",
     "Tumbril Land Systems":"盾博尔",
 
+    "combat":"战斗",
+    "transport":"运输",
+    "industrial":"工业",
+    "exploration":"探索",
+    "support":"支援",
+    "competition":"竞速",
+    "multi":"多功能",
+    "ground":"地面",
+
     "Combat":"战斗",
     "Transporter":"运输",
     "Industrial":"工业",

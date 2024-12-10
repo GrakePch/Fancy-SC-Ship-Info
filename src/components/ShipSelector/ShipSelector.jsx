@@ -7,7 +7,9 @@ import Icon from "@mdi/react";
 import ManufacturerToHue from "../../assets/ManufacturerToHue";
 import manufacturers_small from "../../assets/manufacturers_small";
 import ship_pics_and_zh_name from "../../assets/ship_pics_and_zh_name.json";
+import vehTypeToIcon from "../../assets/vehTypeToIcon.jsx";
 import shipIndex from "../../data/index.js";
+import rsi_index from "../../data/rsi_index_processed.json";
 import ship_name_to_series from "../../data/ship_name_to_series.json";
 import I18n from "../I18n";
 import I18nPure from "../I18nPure";
@@ -76,6 +78,7 @@ const getManuButtonColors = (manu, isActive) =>
 function ShipSelector() {
   const [manufacturerList, setManufacturerList] = useState([]);
   const [filterForManu, setFilterForManu] = useState(null);
+  const [filterForType, setFilterForType] = useState(null);
   const [filterForReleased, setFilterForReleased] = useState(false);
   const [dictShipZhName, setDictShipZhName] = useState({});
   const [seriesList, setSeriesList] = useState([]);
@@ -113,6 +116,9 @@ function ShipSelector() {
       .filter(
         (item) =>
           (filterForManu == null ? true : item.Manufacturer == filterForManu) &&
+          (filterForType == null
+            ? true
+            : rsi_index[item.ClassName].type == filterForType) &&
           (filterForReleased
             ? item.ProgressTracker.Status == "Released" ||
               item.ProgressTracker.Status == "PU"
@@ -164,7 +170,7 @@ function ShipSelector() {
     }));
 
     setSeriesList(series);
-  }, [filterForManu, searchField]);
+  }, [filterForManu, filterForType, searchField]);
 
   return (
     <div className="Ship-selector-container">
@@ -184,6 +190,22 @@ function ShipSelector() {
               >
                 {manufacturers_small[manu] || manu[0]}
                 <I18n text={manu} />
+              </button>
+            ))}
+          </div>
+          <div className="filter-by-type">
+            {Object.keys(vehTypeToIcon).map((type) => (
+              <button
+                key={type}
+                className={type === filterForType ? "active" : ""}
+                onClick={() =>
+                  setFilterForType((c) =>
+                    c != null && c == type ? null : type,
+                  )
+                }
+              >
+                <Icon path={vehTypeToIcon[type]} size="1.5rem" />
+                <I18n text={type} />
               </button>
             ))}
           </div>
@@ -219,6 +241,7 @@ function ShipSelector() {
                       }
                       shipNameEng={item.NameShort}
                       manufacturer={item.Manufacturer}
+                      type={rsi_index[item.ClassName].type}
                       isReleased={item.PU.HasPerf}
                       isShip={item.Type == "Ship"}
                       imgSrc={formatImgSrc(
@@ -244,7 +267,7 @@ function ShipSelector() {
                       // margin: ".5rem 0",
                       borderRadius: "2rem",
                       // backgroundColor: "#80808020",
-                      outline: "#80808080 2px solid"
+                      outline: "#80808080 2px solid",
                     }}
                   >
                     <p
@@ -275,6 +298,7 @@ function ShipSelector() {
                             }
                             shipNameEng={item.NameShort}
                             manufacturer={item.Manufacturer}
+                            type={rsi_index[item.ClassName].type}
                             isReleased={item.PU.HasPerf}
                             isShip={item.Type == "Ship"}
                             imgSrc={formatImgSrc(
