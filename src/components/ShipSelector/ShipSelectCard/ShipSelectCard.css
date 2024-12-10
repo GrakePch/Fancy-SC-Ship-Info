@@ -62,6 +62,7 @@
 }
 
 .Ship-select-card-text .type {
+    flex-shrink: 0;
     display: inline-block;
     margin-left: .25rem;
     padding: 0 .25rem;
