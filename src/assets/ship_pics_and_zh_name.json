@@ -938,6 +938,10 @@
     {
       "MISC Fortune": "武藏 财运",
       "vehicleLink": "https://ships.42kit.com/resized/fortune%20iso.png"
+    },
+    {
+      "Drake Golem": "德雷克 魔像",
+      "vehicleLink": "https://ships.42kit.com/resized/golem%20iso.png"
     }
   ]
 }
