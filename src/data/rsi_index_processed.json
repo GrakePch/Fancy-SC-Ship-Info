@@ -1330,6 +1330,17 @@
         "minCrew": 1,
         "maxCrew": 1
     },
+    "MISC_Fortune": {
+        "className": "MISC_Fortune",
+        "name": "MISC Fortune",
+        "nameShort": "Fortune",
+        "nameRSI": "Fortune",
+        "type": "industrial",
+        "focus": "Salvage",
+        "msrp": 17500,
+        "minCrew": 1,
+        "maxCrew": 1
+    },
     "MISC_Freelancer": {
         "className": "MISC_Freelancer",
         "name": "MISC Freelancer",

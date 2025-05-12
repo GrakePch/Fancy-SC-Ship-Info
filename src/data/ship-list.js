@@ -1,3 +1,5 @@
+import FlightCharacteristics from "../components/FlightCharacteristics/FlightCharacteristics";
+
 const shipList = [{
     ClassName: "AEGS_Avenger_Stalker",
     Name: "Aegis Avenger Stalker",
@@ -19703,6 +19705,106 @@ const shipList = [{
     Buy: {
         "Astro Armada, Area 18": 449820
     }
+}, {
+    ClassName: "MISC_Fortune",
+    Name: "MISC Fortune",
+    Career: "Industrial",
+    Role: "Light Salvage",
+    Size: 1,
+    Cargo: {
+        CargoGrid: 16,
+    },
+    Mass: 160000,
+    IsSpaceship: true,
+    FlightCharacteristics: {
+        ScmSpeed: 143,
+        MaxSpeed: 975,
+        Pitch: 32,
+        Yaw: 32,
+        Roll: 75,
+        IsVtolAssisted: !1,
+        UseDirectionModifiers: !0,
+        ThrustCapacity: {
+            Main: 76e5,
+            Retro: 53e5,
+            Vtol: 0,
+            Maneuvering: 1854e4
+        },
+        AccelerationG: {
+            IsValidated: !0,
+            Main: 4.5,
+            Retro: 3.4,
+            Strafe: 2.6,
+            Up: 3.3,
+            Down: 3.3
+        },
+        MasterModes: {
+            BaseSpoolTime: 1,
+            QuantumDriveSpoolTime: 4,
+            ScmMode: {
+                BoostSpeedForward: 350,
+                BoostSpeedBackward: 160
+            }
+        },
+        Boost: {
+            PreDelay: 0,
+            RampUp: 2.1,
+            RampDown: .7,
+            AccelerationMultiplier: {
+                PositiveAxis: {
+                    X: 1.3,
+                    Y: 1.4,
+                    Z: 1.4
+                },
+                NegativeAxis: {
+                    X: 1.3,
+                    Y: 1.4,
+                    Z: 1.3
+                }
+            },
+            AngularAccelerationMultiplier: {
+                Pitch: 1.2,
+                Yaw: 1.2,
+                Roll: 1.2
+            },
+            AngularVelocityMultiplier: {
+                Pitch: 1.2,
+                Yaw: 1.2,
+                Roll: 1.2
+            }
+        },
+        Capacitors: {
+            ThrusterCapacitorSize: 20,
+            CapacitorRegenPerSec: .75,
+            CapacitorIdleCost: 1,
+            CapacitorLinearCost: 0,
+            CapacitorUsageModifier: 1,
+            CapacitorRegenDelay: 1.1,
+            RegenerationTime: 26.7,
+            X_AccelMultiplicator: 2,
+            Y_AccelMultiplicator: 2,
+            Z_AccelMultiplicator: 2
+        }
+    },
+    FuelManagement: {
+        FuelCapacity: 21e6,
+        FuelIntakeRate: 13,
+        QuantumFuelCapacity: 18e5,
+        FuelBurnRatePer10KNewton: {
+            Main: 3.75,
+            Retro: 3.75,
+            Vtol: 0,
+            Maneuvering: 15
+        },
+        FuelUsagePerSecond: {
+            Main: 950,
+            Retro: 662.5,
+            Vtol: 0,
+            Maneuvering: 2317.5
+        },
+        IntakeToMainFuelRatio: 1.37,
+        TimeForIntakesToFillTank: 161538462e-2
+    },
 }, {
     ClassName: "MISC_Freelancer",
     Name: "MISC Freelancer",

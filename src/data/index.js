@@ -3849,6 +3849,35 @@ const shipIndex = [{
         Buy: null
     }
 }, {
+    ClassName: "MISC_Fortune",
+    Name: "MISC Fortune",
+    Manufacturer: "Musashi Industrial and Starflight Concern",
+    Career: "Industrial",
+    Role: "Light Salvage",
+    Size: 1,
+    Cargo: 16,
+    Type: "Ship",
+    CommLink: {
+        HasCommLink: !1,
+        Date: null,
+        Url: null
+    },
+    ProgressTracker: {
+        Status: "Released",
+        IsOnPT: !1,
+        ID: null
+    },
+    Store: {
+        Url: null,
+        IsPromotionOnly: !1,
+        IsLimitedSale: !1,
+        Buy: 175
+    },
+    PU: {
+        HasPerf: !0,
+        IsPTUOnly: !1,
+    }
+},{
     ClassName: "MISC_Freelancer",
     Name: "MISC Freelancer",
     Manufacturer: "Musashi Industrial and Starflight Concern",

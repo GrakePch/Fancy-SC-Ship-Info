@@ -125497,6 +125497,272 @@ const shipHardpoints = [{
         }
     }
 }, {
+    ClassName: "MISC_Fortune",
+    Hardpoints: {
+        Weapons: {
+            PilotWeapons: {
+                InstalledItems: [{
+                    PortName: "hardpoint_weapon_left",
+                    MinSize: 1,
+                    MaxSize: 1,
+                    Loadout: "80ae6d83-7d8a-4357-b109-a0154418bae5",
+                    BaseLoadout: {
+                        ClassName: "Mount_Gimbal_S1",
+                        Name: "VariPuck S1 Gimbal Mount",
+                        Type: "Turret.GunTurret",
+                        Grade: 1,
+                        Class: ""
+                    },
+                    Types: ["Turret.GunTurret", "WeaponGun.Gun"],
+                    Gimballed: !0,
+                    Uneditable: !1,
+                    Ports: [{
+                        PortName: "hardpoint_class_2",
+                        MinSize: 1,
+                        MaxSize: 1,
+                        Loadout: "c9c2bb19-3298-448e-a117-043e082a1c74",
+                        BaseLoadout: {
+                            ClassName: "KLWE_LaserRepeater_S1",
+                            Name: "CF-117 Bulldog Repeater",
+                            Type: "WeaponGun.Gun",
+                            Grade: 1,
+                            Class: ""
+                        },
+                        Types: ["WeaponGun.Gun"],
+                        Tags: ["gimbalMount", "flightReady"],
+                        Uneditable: !1
+                    }]
+                }, {
+                    PortName: "hardpoint_weapon_right",
+                    MinSize: 1,
+                    MaxSize: 1,
+                    Loadout: "80ae6d83-7d8a-4357-b109-a0154418bae5",
+                    BaseLoadout: {
+                        ClassName: "Mount_Gimbal_S1",
+                        Name: "VariPuck S1 Gimbal Mount",
+                        Type: "Turret.GunTurret",
+                        Grade: 1,
+                        Class: ""
+                    },
+                    Types: ["Turret.GunTurret", "WeaponGun.Gun"],
+                    Gimballed: !0,
+                    Uneditable: !1,
+                    Ports: [{
+                        PortName: "hardpoint_class_2",
+                        MinSize: 1,
+                        MaxSize: 1,
+                        Loadout: "c9c2bb19-3298-448e-a117-043e082a1c74",
+                        BaseLoadout: {
+                            ClassName: "KLWE_LaserRepeater_S1",
+                            Name: "CF-117 Bulldog Repeater",
+                            Type: "WeaponGun.Gun",
+                            Grade: 1,
+                            Class: ""
+                        },
+                        Types: ["WeaponGun.Gun"],
+                        Tags: ["gimbalMount", "flightReady"],
+                        Uneditable: !1
+                    }]
+                }],
+                Hardpoints: 4
+            },
+            SalvageHardpoints: {
+                PilotControlled: {
+                InstalledItems: [{
+                    MinSize: 1,
+                    MaxSize: 1,
+                    BaseLoadout: {
+                        Name: "Salvage Arm"
+                    },
+                    Uneditable: true,
+                    Gimballed: true,
+                    Ports: [{
+                        PortName: "hardpoint_weapon_salvage",
+                        MinSize: 1,
+                        MaxSize: 2,
+                        Loadout: "Salvage_Head_standard",
+                        BaseLoadout: {
+                            ClassName: "Salvage_Head_standard",
+                            Name: "Baler Salvage Head",
+                            Type: "SalvageHead.UNDEFINED",
+                            Grade: 1,
+                            Class: ""
+                        },
+                        Types: ["SalvageHead"],
+                        Tags: ["flightReady"],
+                        PortTags: ["$salvageMount"],
+                        Uneditable: true,
+                        Ports: [{
+                            PortName: "hardpoint_salvage_subItem01",
+                            MinSize: 1,
+                            MaxSize: 1,
+                            Loadout: "Salvage_Modifier_Tractor_Small",
+                            BaseLoadout: {
+                                ClassName: "Salvage_Modifier_Tractor_Small",
+                                Name: "ReadyGrip Tractor Module",
+                                Type: "SalvageModifier.SalvageModifier_TractorBeam",
+                                Grade: 1,
+                                Class: ""
+                            },
+                            Types: ["SalvageModifier"],
+                            Tags: ["flightReady", "salvageMount"],
+                            PortTags: ["salvageMount"],
+                            Uneditable: !1
+                        }, {
+                            PortName: "hardpoint_salvage_subItem02",
+                            MinSize: 1,
+                            MaxSize: 1,
+                            Loadout: "Salvage_Modifier_Scraper_Large",
+                            BaseLoadout: {
+                                ClassName: "Salvage_Modifier_Scraper_Large",
+                                Name: "Trawler Scraper Module",
+                                Type: "SalvageModifier.UNDEFINED",
+                                Grade: 1,
+                                Class: ""
+                            },
+                            Types: ["SalvageModifier"],
+                            Tags: ["flightReady", "salvageMount"],
+                            PortTags: ["salvageMount"],
+                            Uneditable: !1
+                        }]
+                    }]
+                }]
+            }
+            },
+        },
+        Components: {
+            Propulsion: {
+                PowerPlants: {
+                    InstalledItems: [{
+                        PortName: "hardpoint_power_plant",
+                        MinSize: 2,
+                        MaxSize: 2,
+                        Loadout: "POWR_JUST_S02_Trommel_SCItem",
+                        BaseLoadout: {
+                            ClassName: "POWR_JUST_S02_Trommel_SCItem",
+                            Name: "Trommel",
+                            Type: "PowerPlant.Power",
+                            Grade: 4,
+                            Class: "Industrial"
+                        },
+                        Types: ["PowerPlant"],
+                        Flags: ["invisible"],
+                        Uneditable: !1
+                    }],
+                    Hardpoints: 1
+                },
+                QuantumDrives: {
+                    InstalledItems: [{
+                        PortName: "hardpoint_quantum_drive",
+                        MinSize: 1,
+                        MaxSize: 1,
+                        Loadout: "QDRV_JUST_S01_Goliath_SCItem",
+                        BaseLoadout: {
+                            ClassName: "QDRV_JUST_S01_Goliath_SCItem",
+                            Name: "Goliath",
+                            Type: "QuantumDrive.UNDEFINED",
+                            Grade: 3,
+                            Class: "Industrial"
+                        },
+                        Types: ["QuantumDrive.QDrive"],
+                        Flags: ["invisible"],
+                        Uneditable: !1,
+                        Ports: [{
+                            PortName: "hardpoint_Jump_Drive",
+                            MinSize: 1,
+                            MaxSize: 1,
+                            Loadout: "JDRV_TARS_S01_Explorer_SCItem",
+                            BaseLoadout: {
+                                ClassName: "JDRV_TARS_S01_Explorer_SCItem",
+                                Name: "Explorer",
+                                Type: "JumpDrive.UNDEFINED",
+                                Grade: 1,
+                                Class: "Civilian"
+                            },
+                            Types: ["JumpDrive.JumpDrive"],
+                            Flags: ["dont_hide_entity"],
+                            Uneditable: !1
+                        }]
+                    }],
+                    Hardpoints: 1
+                },
+            },
+            Systems: {
+                Shields: {
+                    InstalledItems: [{
+                        PortName: "hardpoint_shield_generator",
+                        MinSize: 1,
+                        MaxSize: 1,
+                        Loadout: "SHLD_BASL_S01_Bulwark_SCItem",
+                        BaseLoadout: {
+                            ClassName: "SHLD_BASL_S01_Bulwark_SCItem",
+                            Name: "Bulwark",
+                            Type: "Shield.UNDEFINED",
+                            Grade: 3,
+                            Class: "Industrial"
+                        },
+                        Types: ["Shield"],
+                        Flags: ["invisible"],
+                        Uneditable: !1
+                    }, {
+                        PortName: "hardpoint_shield_generator_B",
+                        MinSize: 1,
+                        MaxSize: 1,
+                        Loadout: "SHLD_BASL_S01_Bulwark_SCItem",
+                        BaseLoadout: {
+                            ClassName: "SHLD_BASL_S01_Bulwark_SCItem",
+                            Name: "Bulwark",
+                            Type: "Shield.UNDEFINED",
+                            Grade: 3,
+                            Class: "Industrial"
+                        },
+                        Types: ["Shield.UNDEFINED"],
+                        Tags: ["MISC_Prospector", "Ship_Dock_Refuel"],
+                        Flags: ["Invisible"],
+                        Uneditable: !1
+                    }, {
+                        PortName: "hardpoint_shield_generator_C",
+                        MinSize: 1,
+                        MaxSize: 1,
+                        Loadout: "SHLD_BASL_S01_Bulwark_SCItem",
+                        BaseLoadout: {
+                            ClassName: "SHLD_BASL_S01_Bulwark_SCItem",
+                            Name: "Bulwark",
+                            Type: "Shield.UNDEFINED",
+                            Grade: 3,
+                            Class: "Industrial"
+                        },
+                        Types: ["Shield.UNDEFINED"],
+                        Tags: ["MISC_Prospector", "Ship_Dock_Refuel"],
+                        Flags: ["Invisible"],
+                        Uneditable: !1
+                    }],
+                    Hardpoints: 3,
+                    FaceType: "Bubble"
+                },
+                Coolers: {
+                    InstalledItems: [{
+                        PortName: "hardpoint_cooler",
+                        MinSize: 2,
+                        MaxSize: 2,
+                        Loadout: "COOL_JUST_S02_Snowfall_SCItem",
+                        BaseLoadout: {
+                            ClassName: "COOL_JUST_S02_Snowfall_SCItem",
+                            Name: "Snowfall",
+                            Type: "Cooler.UNDEFINED",
+                            Grade: 2,
+                            Class: "Industrial"
+                        },
+                        Types: ["Cooler"],
+                        Flags: ["invisible", "left"],
+                        Uneditable: !1
+                    }],
+                    Hardpoints: 1
+                },
+            }
+        }
+    }
+}, {
     ClassName: "MISC_Freelancer",
     Name: "MISC Freelancer",
     IsSpaceship: !0,

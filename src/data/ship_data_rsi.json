@@ -54935,5 +54935,251 @@
                 "utility_items": []
             }
         }
+    },
+    "fortune": {
+        "id": 288,
+        "afterburner_speed": null,
+        "beam": 16,
+        "cargocapacity": 12,
+        "chassis_id": 121,
+        "height": 7,
+        "length": 26,
+        "manufacturer_id": 4,
+        "mass": 116477,
+        "max_crew": 1,
+        "min_crew": 1,
+        "pitch_max": null,
+        "production_note": null,
+        "production_status": "flight-ready",
+        "roll_max": null,
+        "scm_speed": 143,
+        "size": "small",
+        "time_modified": "1 month ago",
+        "type": "industrial",
+        "xaxis_acceleration": null,
+        "yaw_max": null,
+        "yaxis_acceleration": null,
+        "zaxis_acceleration": null,
+        "description": "Get the job done quickly with MISC\u2019s most efficient salvager yet. It\u2019s not a simple job, but the Fortune makes it easier.",
+        "focus": "Salvage",
+        "name": "Fortune",
+        "url": "/pledge/ships/fortune/Fortune",
+        "manufacturer": {
+            "id": 4,
+            "code": "MISC",
+            "description": "MISC mass produces very efficient, modular ships, mostly armored freighters of different sizes that make them the preferred brand for traders and larger corporations.",
+            "known_for": "the Freelancer series",
+            "name": "MISC"
+        },
+        "time_modified.unfiltered": "2025-01-29 01:15:08",
+        "compiled": {
+            "RSIAvionic": {
+                "radar": [
+                    {
+                        "type": "radar",
+                        "name": "Radar",
+                        "mounts": "1",
+                        "component_size": "S",
+                        "size": "S",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": "TBD",
+                        "component_class": "RSIAvionic"
+                    }
+                ],
+                "computers": [
+                    {
+                        "type": "computers",
+                        "name": "Computer",
+                        "mounts": "1",
+                        "component_size": "S",
+                        "size": "S",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": "TBD",
+                        "component_class": "RSIAvionic"
+                    }
+                ]
+            },
+            "RSIPropulsion": {
+                "fuel_intakes": [
+                    {
+                        "type": "fuel_intakes",
+                        "name": "Jump Module",
+                        "mounts": "1",
+                        "component_size": "S",
+                        "size": "S",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": "TBD",
+                        "component_class": "RSIPropulsion"
+                    },
+                    {
+                        "type": "fuel_intakes",
+                        "name": "Fuel Intake",
+                        "mounts": "1",
+                        "component_size": "M",
+                        "size": "M",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": "TBD",
+                        "component_class": "RSIPropulsion"
+                    }
+                ],
+                "fuel_tanks": [
+                    {
+                        "type": "fuel_tanks",
+                        "name": "Fuel Tank",
+                        "mounts": "1",
+                        "component_size": "M",
+                        "size": "M",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": null,
+                        "component_class": "RSIPropulsion"
+                    }
+                ],
+                "quantum_drives": [
+                    {
+                        "type": "quantum_drives",
+                        "name": "Quantum Drive",
+                        "mounts": "1",
+                        "component_size": "S",
+                        "size": "S",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": "TBD",
+                        "component_class": "RSIPropulsion"
+                    }
+                ],
+                "jump_modules": [],
+                "quantum_fuel_tanks": [
+                    {
+                        "type": "quantum_fuel_tanks",
+                        "name": "Quantum Fuel Tank",
+                        "mounts": "1",
+                        "component_size": "S",
+                        "size": "S",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": null,
+                        "component_class": "RSIPropulsion"
+                    }
+                ]
+            },
+            "RSIThruster": {
+                "main_thrusters": [
+                    {
+                        "type": "main_thrusters",
+                        "name": "Retro Thruster",
+                        "mounts": "5",
+                        "component_size": "-",
+                        "category": "R",
+                        "size": "-",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": null,
+                        "component_class": "RSIThruster"
+                    },
+                    {
+                        "type": "main_thrusters",
+                        "name": "Main Thruster",
+                        "mounts": "5",
+                        "component_size": "-",
+                        "category": "M",
+                        "size": "-",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": null,
+                        "component_class": "RSIThruster"
+                    }
+                ],
+                "maneuvering_thrusters": [
+                    {
+                        "type": "maneuvering_thrusters",
+                        "name": "Fixed Maneuvering Thruster",
+                        "mounts": "12",
+                        "component_size": "-",
+                        "category": "F",
+                        "size": "-",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": null,
+                        "component_class": "RSIThruster"
+                    }
+                ]
+            },
+            "RSIModular": {
+                "power_plants": [
+                    {
+                        "type": "power_plants",
+                        "name": "Power Plant",
+                        "mounts": "1",
+                        "component_size": "M",
+                        "size": "M",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": "TBD",
+                        "component_class": "RSIModular"
+                    }
+                ],
+                "coolers": [
+                    {
+                        "type": "coolers",
+                        "name": "Cooler",
+                        "mounts": "1",
+                        "component_size": "M",
+                        "size": "M",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": "TBD",
+                        "component_class": "RSIModular"
+                    }
+                ],
+                "shield_generators": [
+                    {
+                        "type": "shield_generators",
+                        "name": "Shield Generator",
+                        "mounts": "3",
+                        "component_size": "S",
+                        "size": "S",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": "TBD",
+                        "component_class": "RSIModular"
+                    }
+                ]
+            },
+            "RSIWeapon": {
+                "weapons": [
+                    {
+                        "type": "weapons",
+                        "name": "S1 Weapon",
+                        "mounts": "2",
+                        "component_size": "-",
+                        "size": "1",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": null,
+                        "component_class": "RSIWeapon"
+                    }
+                ],
+                "turrets": [],
+                "missiles": [],
+                "utility_items": [
+                    {
+                        "type": "utility_items",
+                        "name": "Salvage Arm",
+                        "mounts": "1",
+                        "component_size": "1",
+                        "size": "1",
+                        "details": "",
+                        "quantity": "1",
+                        "manufacturer": null,
+                        "component_class": "RSIWeapon"
+                    }
+                ]
+            }
+        }
     }
 }
