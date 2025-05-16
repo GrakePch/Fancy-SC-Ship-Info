@@ -290,13 +290,13 @@ const shipIndex = [
     }
   },
   {
-    "ClassName": "AEGS_Idris_M_PU",
-    "Name": "Aegis Idris-M (XenoThreat)",
+    "ClassName": "AEGS_Idris_M",
+    "Name": "Aegis Idris-M",
     "Manufacturer": "Aegis Dynamics",
     "Career": "Combat",
     "Role": "Frigate",
     "Size": 6,
-    "Cargo": 0,
+    "Cargo": 1326,
     "Type": "Ship",
     "CommLink": {
       "HasCommLink": true,
@@ -304,31 +304,32 @@ const shipIndex = [
       "Url": "https://robertsspaceindustries.com/comm-link/transmission/13097-Idris-Corvette-Revealed"
     },
     "ProgressTracker": {
-      "Status": "InProd",
+      "Status": "Released",
       "IsOnPT": false,
       "ID": null
     },
     "Store": {
       "Url": "https://robertsspaceindustries.com/pledge/ships/aegis-idris/Idris-M",
-      "IsPromotionOnly": false,
-      "IsLimitedSale": true,
+      "IsPromotionOnly": true,
+      "IsLimitedSale": false,
       "Buy": 1000.0
     },
     "PU": {
+      "Patch": "4.1.1",
+      "Date": "2025-05-14",
       "HasPerf": true,
       "IsPTUOnly": false,
-      "IsPreview": true,
       "Buy": null
     }
   },
   {
     "ClassName": "AEGS_Idris_P",
-    "Name": "Aegis Idris-P (Fleet Week)",
+    "Name": "Aegis Idris-P",
     "Manufacturer": "Aegis Dynamics",
     "Career": "Combat",
     "Role": "Frigate",
     "Size": 6,
-    "Cargo": 1072,
+    "Cargo": 1374,
     "Type": "Ship",
     "CommLink": {
       "HasCommLink": true,
@@ -336,7 +337,7 @@ const shipIndex = [
       "Url": "https://robertsspaceindustries.com/comm-link/transmission/13097-Idris-Corvette-Revealed"
     },
     "ProgressTracker": {
-      "Status": "InProd",
+      "Status": "Released",
       "IsOnPT": false,
       "ID": null
     },
@@ -344,12 +345,13 @@ const shipIndex = [
       "Url": "https://robertsspaceindustries.com/pledge/ships/aegis-idris/Idris-P",
       "IsPromotionOnly": false,
       "IsLimitedSale": true,
-      "Buy": 1500.0
+      "Buy": 1900.0
     },
     "PU": {
+      "Patch": "4.1.1",
+      "Date": "2025-05-14",
       "HasPerf": true,
       "IsPTUOnly": false,
-      "IsPreview": true,
       "Buy": null
     }
   },
@@ -886,7 +888,7 @@ const shipIndex = [
       "Url": null
     },
     "ProgressTracker": {
-      "Status": "NextPatch",
+      "Status": "Released",
       "Patch": "4.1.1",
       "IsOnPT": false,
       "ID": null
@@ -898,9 +900,10 @@ const shipIndex = [
       "Buy": null
     },
     "PU": {
-      "Patch": null,
+      "Patch": "4.1.1",
+      "Date": "2025-05-14",
       "HasPerf": true,
-      "IsPTUOnly": true,
+      "IsPTUOnly": false,
       "Buy": null
     }
   },
@@ -3909,7 +3912,7 @@ const shipIndex = [
       "Url": null
     },
     "ProgressTracker": {
-      "Status": "NextPatch",
+      "Status": "Released",
       "Patch": "4.1.1",
       "IsOnPT": false,
       "ID": null
@@ -3918,13 +3921,13 @@ const shipIndex = [
       "Url": null,
       "IsPromotionOnly": false,
       "IsLimitedSale": false,
-      "Buy": null
+      "Buy": 50
     },
     "PU": {
-      "Patch": null,
-      "Date": null,
+      "Patch": "4.1.1",
+      "Date": "2025-05-14",
       "HasPerf": true,
-      "IsPTUOnly": true,
+      "IsPTUOnly": false,
       "Buy": null
     }
   },
@@ -5032,7 +5035,7 @@ const shipIndex = [
       "Url": "https://robertsspaceindustries.com/comm-link/transmission/20213-MISC-Starlancer-TAC"
     },
     "ProgressTracker": {
-      "Status": "NextPatch",
+      "Status": "Released",
       "Patch": "4.1.1",
       "IsOnPT": false,
       "ID": null
@@ -5044,11 +5047,10 @@ const shipIndex = [
       "Buy": 330
     },
     "PU": {
-      "Patch": null,
-      "Date": null,
+      "Patch": "4.1.1",
+      "Date": "2025-05-14",
       "HasPerf": true,
-      "IsPTUOnly": true,
-      "IsPTUBuyOnly": false,
+      "IsPTUOnly": false,
       "Buy": null
     }
   },
@@ -5102,7 +5104,7 @@ const shipIndex = [
       "Url": null
     },
     "ProgressTracker": {
-      "Status": "NextPatch",
+      "Status": "Released",
       "Patch": "4.1.1",
       "IsOnPT": false,
       "ID": null
@@ -5114,11 +5116,10 @@ const shipIndex = [
       "Buy": null
     },
     "PU": {
-      "Patch": null,
-      "Date": null,
+      "Patch": "4.1.1",
+      "Date": "2025-05-14",
       "HasPerf": true,
-      "IsPTUOnly": true,
-      "IsPTUBuyOnly": false,
+      "IsPTUOnly": false,
       "Buy": null
     }
   },

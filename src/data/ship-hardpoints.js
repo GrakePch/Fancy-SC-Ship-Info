@@ -287,7 +287,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -346,7 +347,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -1121,18 +1123,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Avenger_Stalker",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Avenger_Stalker",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$AEGS_Avenger_Stalker_Blade"
+                ],
+                "PortTags": [
+                  "AEGS_Avenger_Stalker_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -1553,7 +1562,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -1612,7 +1622,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -2387,18 +2398,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Avenger_Titan",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Avenger_Titan",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$AEGS_Avenger_Titan_Blade"
+                ],
+                "PortTags": [
+                  "AEGS_Avenger_Titan_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -2859,7 +2877,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -2918,7 +2937,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -3693,18 +3713,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Avenger_Titan",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Avenger_Titan",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$AEGS_Avenger_Titan_Blade"
+                ],
+                "PortTags": [
+                  "AEGS_Avenger_Titan_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -4165,7 +4192,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -4224,7 +4252,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -5024,18 +5053,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Avenger_Warlock",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Avenger_Warlock",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$AEGS_Avenger_Warlock_Blade"
+                ],
+                "PortTags": [
+                  "AEGS_Avenger_Warlock_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -6240,7 +6276,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Eclipse",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Eclipse",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -6791,7 +6827,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -6850,7 +6887,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -6889,7 +6927,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -6928,7 +6967,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -7701,18 +7741,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Gladius",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Gladius",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$AEGS_Gladius_Blade"
+                ],
+                "PortTags": [
+                  "AEGS_Gladius_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -7910,6 +7957,10 @@ const shipHardpoints = [
               "MaxSize": 1,
               "Types": [
                 "Flair_Cockpit.Flair_Static"
+              ],
+              "Tags": [
+                "AEGS_Gladius",
+                "Ship_Dock_Refuel"
               ],
               "Uneditable": false
             }
@@ -8282,7 +8333,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -8381,7 +8433,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -8420,7 +8473,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -8459,7 +8513,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -9272,18 +9327,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Gladius",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Gladius",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$AEGS_Gladius_Blade"
+                ],
+                "PortTags": [
+                  "AEGS_Gladius_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -9482,6 +9544,10 @@ const shipHardpoints = [
               "MaxSize": 1,
               "Types": [
                 "Flair_Cockpit.Flair_Static"
+              ],
+              "Tags": [
+                "AEGS_Gladius_Valiant",
+                "Ship_Dock_Refuel"
               ],
               "Uneditable": false
             }
@@ -12341,7 +12407,7 @@ const shipHardpoints = [
               "PoolSize": 10.0,
               "Modifiers": {
                 "PowerRatioMultiplier": 2.9,
-                "MaxAmmoLoadMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 4.0,
                 "MaxRegenPerSecMultiplier": 1.0
               }
             },
@@ -12586,18 +12652,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Hammerhead",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Hammerhead",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$AEGS_Hammerhead_Blade"
+                ],
+                "PortTags": [
+                  "AEGS_Hammerhead_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -12828,8 +12901,8 @@ const shipHardpoints = [
     }
   },
   {
-    "ClassName": "AEGS_Idris_M_PU",
-    "Name": "Aegis Idris",
+    "ClassName": "AEGS_Idris_M",
+    "Name": "Aegis Idris-M",
     "IsSpaceship": true,
     "PortTags": [
       "Idris_Base"
@@ -12838,7 +12911,7 @@ const shipHardpoints = [
       "Structure": [
         {
           "Name": "Body",
-          "MaximumDamage": 6100000.0,
+          "MaximumDamage": 3600000.0,
           "Parts": [
             {
               "Name": "airlock_section",
@@ -13035,7 +13108,7 @@ const shipHardpoints = [
               "DetachRatio": 0.0
             }
           ],
-          "ShipDestructionDamage": 6100000.0,
+          "ShipDestructionDamage": 3600000.0,
           "DetachRatio": 0.0
         }
       ]
@@ -13045,158 +13118,6 @@ const shipHardpoints = [
         "PilotWeapons": {
           "InstalledItems": [
             {
-              "PortName": "hardpoint_front_left_turret",
-              "MinSize": 5,
-              "MaxSize": 5,
-              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Top_Left",
-              "BaseLoadout": {
-                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Top_Left",
-                "Name": "Remote Turret",
-                "Type": "Turret.GunTurret",
-                "Grade": 1,
-                "Class": ""
-              },
-              "Types": [
-                "Turret.GunTurret"
-              ],
-              "Flags": [
-                "$uneditable",
-                "lower"
-              ],
-              "Gimballed": true,
-              "Uneditable": true,
-              "RemoteController": {
-                "Slaved": false,
-                "Seats": [
-                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Left"
-                ]
-              },
-              "Ports": [
-                {
-                  "PortName": "turret_left",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                },
-                {
-                  "PortName": "turret_right",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                }
-              ]
-            },
-            {
-              "PortName": "hardpoint_front_right_turret",
-              "MinSize": 5,
-              "MaxSize": 5,
-              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Top_Right",
-              "BaseLoadout": {
-                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Top_Right",
-                "Name": "Remote Turret",
-                "Type": "Turret.GunTurret",
-                "Grade": 1,
-                "Class": ""
-              },
-              "Types": [
-                "Turret.GunTurret"
-              ],
-              "Flags": [
-                "$uneditable",
-                "lower"
-              ],
-              "Gimballed": true,
-              "Uneditable": true,
-              "RemoteController": {
-                "Slaved": false,
-                "Seats": [
-                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Right"
-                ]
-              },
-              "Ports": [
-                {
-                  "PortName": "turret_left",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                },
-                {
-                  "PortName": "turret_right",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                }
-              ]
-            },
-            {
               "PortName": "hardpoint_nose_railgun",
               "MinSize": 10,
               "MaxSize": 10,
@@ -13205,10 +13126,18 @@ const shipHardpoints = [
                 "ClassName": "KLWE_MassDriver_S10",
                 "Name": "Destroyer Mass Driver Cannon",
                 "Type": "WeaponGun.Gun",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
-                "WeaponGun.Gun"
+                "WeaponGun.Gun",
+                "MissileLauncher.MissileRack"
+              ],
+              "RequiredTags": [
+                "$AEGS_Idris_Nose"
+              ],
+              "PortTags": [
+                "AEGS_Idris_Nose"
               ],
               "Fixed": true,
               "Uneditable": false,
@@ -13218,161 +13147,9 @@ const shipHardpoints = [
                   "AEGS_Idris_SCItem_Seat_Pilot"
                 ]
               }
-            },
-            {
-              "PortName": "hardpoint_rear_tail_turret_left",
-              "MinSize": 5,
-              "MaxSize": 5,
-              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Bottom_Left",
-              "BaseLoadout": {
-                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Bottom_Left",
-                "Name": "Remote Turret",
-                "Type": "Turret.GunTurret",
-                "Grade": 1,
-                "Class": ""
-              },
-              "Types": [
-                "Turret.GunTurret"
-              ],
-              "Flags": [
-                "$uneditable",
-                "lower"
-              ],
-              "Gimballed": true,
-              "Uneditable": true,
-              "RemoteController": {
-                "Slaved": false,
-                "Seats": [
-                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Left_Back"
-                ]
-              },
-              "Ports": [
-                {
-                  "PortName": "turret_left",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                },
-                {
-                  "PortName": "turret_right",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                }
-              ]
-            },
-            {
-              "PortName": "hardpoint_rear_tail_turret_right",
-              "MinSize": 5,
-              "MaxSize": 5,
-              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Bottom_Right",
-              "BaseLoadout": {
-                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Bottom_Right",
-                "Name": "Remote Turret",
-                "Type": "Turret.GunTurret",
-                "Grade": 1,
-                "Class": ""
-              },
-              "Types": [
-                "Turret.GunTurret"
-              ],
-              "Flags": [
-                "$uneditable",
-                "lower"
-              ],
-              "Gimballed": true,
-              "Uneditable": true,
-              "RemoteController": {
-                "Slaved": false,
-                "Seats": [
-                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Right_Back"
-                ]
-              },
-              "Ports": [
-                {
-                  "PortName": "turret_left",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                },
-                {
-                  "PortName": "turret_right",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                }
-              ]
             }
           ],
-          "Hardpoints": 13
+          "Hardpoints": 1
         },
         "MannedTurrets": {
           "InstalledItems": [
@@ -13507,18 +13284,25 @@ const shipHardpoints = [
               "Loadout": "88a05104-18bc-4e2d-80ee-796691162c7c",
               "BaseLoadout": {
                 "ClassName": "AEGS_Idris_SCItem_Turret_Large",
-                "Name": "Manned Turret",
+                "Name": "IFR-A77 Turret",
                 "Type": "TurretBase.MannedTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.MannedTurret"
               ],
               "Flags": [
-                "$uneditable"
+                "swaponly"
+              ],
+              "RequiredTags": [
+                "$AEGS_Idris_Front_Turret"
+              ],
+              "PortTags": [
+                "AEGS_Idris_Front_Turret"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_weapon_left",
@@ -13536,7 +13320,8 @@ const shipHardpoints = [
                     "WeaponGun.Gun"
                   ],
                   "Tags": [
-                    "flightReady"
+                    "flightReady",
+                    "$AEGS_Idris_Front_Turret"
                   ],
                   "Uneditable": false
                 },
@@ -13556,7 +13341,8 @@ const shipHardpoints = [
                     "WeaponGun.Gun"
                   ],
                   "Tags": [
-                    "flightReady"
+                    "flightReady",
+                    "$AEGS_Idris_Front_Turret"
                   ],
                   "Uneditable": false
                 }
@@ -13809,62 +13595,19 @@ const shipHardpoints = [
                   "Uneditable": false
                 }
               ]
-            },
-            {
-              "PortName": "CargoGrid_Hangar_Left",
-              "MinSize": 0,
-              "MaxSize": 1,
-              "Types": [
-                "TurretBase.MannedTurret"
-              ],
-              "Flags": [
-                "selfphys",
-                "uneditable"
-              ],
-              "Tags": [
-                "AEGS_Idris",
-                "Station_Dock_Large",
-                "Ship_Dock_Refuel"
-              ],
-              "Uneditable": true
-            },
-            {
-              "PortName": "hardpoint_rear_turret_tail_cap",
-              "MinSize": 5,
-              "MaxSize": 5,
-              "Loadout": "Door_Ship_Exterior_Idris_Turret_Cover",
-              "BaseLoadout": {
-                "ClassName": "Door_Ship_Exterior_Idris_Turret_Cover",
-                "Name": "Door Control",
-                "Type": "TurretBase.MannedTurret",
-                "Grade": 1
-              },
-              "Types": [
-                "TurretBase.MannedTurret"
-              ],
-              "Flags": [
-                "uneditable"
-              ],
-              "Tags": [
-                "AEGS_Idris",
-                "Station_Dock_Large",
-                "Ship_Dock_Refuel"
-              ],
-              "Turret": true,
-              "Uneditable": true
             }
           ],
-          "Hardpoints": 262
+          "Hardpoints": 211
         },
         "RemoteTurrets": {
           "InstalledItems": [
             {
-              "PortName": "hardpoint_camera_turret_lower",
-              "MinSize": 4,
-              "MaxSize": 4,
-              "Loadout": "AEGS_Idris_Remote_Camera_Turret_Lower",
+              "PortName": "hardpoint_front_left_turret",
+              "MinSize": 5,
+              "MaxSize": 5,
+              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Top_Left",
               "BaseLoadout": {
-                "ClassName": "AEGS_Idris_Remote_Camera_Turret_Lower",
+                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Top_Left",
                 "Name": "Remote Turret",
                 "Type": "Turret.GunTurret",
                 "Grade": 1,
@@ -13874,30 +13617,67 @@ const shipHardpoints = [
                 "Turret.GunTurret"
               ],
               "Flags": [
-                "$uneditable"
-              ],
-              "RequiredTags": [
-                "Idris_Base"
-              ],
-              "PortTags": [
-                "Idris_Base"
+                "$uneditable",
+                "lower"
               ],
               "Gimballed": true,
               "Uneditable": true,
               "RemoteController": {
                 "Slaved": false,
                 "Seats": [
-                  "AEGS_Idris_SCItem_Seat_Tactical"
+                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Left"
                 ]
-              }
+              },
+              "Ports": [
+                {
+                  "PortName": "turret_left",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "turret_right",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
             },
             {
-              "PortName": "hardpoint_camera_turret_upper",
-              "MinSize": 4,
-              "MaxSize": 4,
-              "Loadout": "AEGS_Idris_Remote_Camera_Turret_Upper",
+              "PortName": "hardpoint_front_right_turret",
+              "MinSize": 5,
+              "MaxSize": 5,
+              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Top_Right",
               "BaseLoadout": {
-                "ClassName": "AEGS_Idris_Remote_Camera_Turret_Upper",
+                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Top_Right",
                 "Name": "Remote Turret",
                 "Type": "Turret.GunTurret",
                 "Grade": 1,
@@ -13907,25 +13687,202 @@ const shipHardpoints = [
                 "Turret.GunTurret"
               ],
               "Flags": [
-                "$uneditable"
-              ],
-              "RequiredTags": [
-                "Idris_Base"
-              ],
-              "PortTags": [
-                "Idris_Base"
+                "$uneditable",
+                "lower"
               ],
               "Gimballed": true,
               "Uneditable": true,
               "RemoteController": {
                 "Slaved": false,
                 "Seats": [
-                  "AEGS_Idris_SCItem_Seat_Tactical"
+                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Right"
                 ]
-              }
+              },
+              "Ports": [
+                {
+                  "PortName": "turret_left",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "turret_right",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_rear_tail_turret_left",
+              "MinSize": 5,
+              "MaxSize": 5,
+              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Bottom_Left",
+              "BaseLoadout": {
+                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Bottom_Left",
+                "Name": "Remote Turret",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.GunTurret"
+              ],
+              "Flags": [
+                "$uneditable",
+                "lower"
+              ],
+              "Gimballed": true,
+              "Uneditable": true,
+              "RemoteController": {
+                "Slaved": false,
+                "Seats": [
+                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Left_Back"
+                ]
+              },
+              "Ports": [
+                {
+                  "PortName": "turret_left",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "turret_right",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_rear_tail_turret_right",
+              "MinSize": 5,
+              "MaxSize": 5,
+              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Bottom_Right",
+              "BaseLoadout": {
+                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Bottom_Right",
+                "Name": "Remote Turret",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.GunTurret"
+              ],
+              "Flags": [
+                "$uneditable",
+                "lower"
+              ],
+              "Gimballed": true,
+              "Uneditable": true,
+              "RemoteController": {
+                "Slaved": false,
+                "Seats": [
+                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Right_Back"
+                ]
+              },
+              "Ports": [
+                {
+                  "PortName": "turret_left",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "turret_right",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
             }
           ],
-          "Hardpoints": 2
+          "Hardpoints": 4
         },
         "PDCTurrets": {
           "InstalledItems": [
@@ -13936,29 +13893,27 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
               ],
-              "Flags": [
-                "uneditable"
-              ],
               "Tags": [
                 "AEGS_Idris",
-                "Station_Dock_Large",
-                "Ship_Dock_Refuel"
+                "Ship_Dock_Refuel",
+                "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -13967,9 +13922,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -13992,29 +13948,27 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
               ],
-              "Flags": [
-                "uneditable"
-              ],
               "Tags": [
                 "AEGS_Idris",
-                "Station_Dock_Large",
-                "Ship_Dock_Refuel"
+                "Ship_Dock_Refuel",
+                "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -14023,9 +13977,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -14048,29 +14003,27 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
               ],
-              "Flags": [
-                "uneditable"
-              ],
               "Tags": [
                 "AEGS_Idris",
-                "Station_Dock_Large",
-                "Ship_Dock_Refuel"
+                "Ship_Dock_Refuel",
+                "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -14079,9 +14032,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -14104,29 +14058,27 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
               ],
-              "Flags": [
-                "uneditable"
-              ],
               "Tags": [
                 "AEGS_Idris",
-                "Station_Dock_Large",
-                "Ship_Dock_Refuel"
+                "Ship_Dock_Refuel",
+                "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -14135,9 +14087,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -14160,29 +14113,27 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
               ],
-              "Flags": [
-                "uneditable"
-              ],
               "Tags": [
                 "AEGS_Idris",
-                "Station_Dock_Large",
-                "Ship_Dock_Refuel"
+                "Ship_Dock_Refuel",
+                "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -14191,9 +14142,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -14216,29 +14168,27 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
               ],
-              "Flags": [
-                "uneditable"
-              ],
               "Tags": [
                 "AEGS_Idris",
-                "Station_Dock_Large",
-                "Ship_Dock_Refuel"
+                "Ship_Dock_Refuel",
+                "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -14247,9 +14197,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -14272,29 +14223,27 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
               ],
-              "Flags": [
-                "uneditable"
-              ],
               "Tags": [
                 "AEGS_Idris",
-                "Station_Dock_Large",
-                "Ship_Dock_Refuel"
+                "Ship_Dock_Refuel",
+                "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -14303,9 +14252,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -14328,29 +14278,27 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
               ],
-              "Flags": [
-                "uneditable"
-              ],
               "Tags": [
                 "AEGS_Idris",
-                "Station_Dock_Large",
-                "Ship_Dock_Refuel"
+                "Ship_Dock_Refuel",
+                "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -14359,9 +14307,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -14384,29 +14333,27 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
               ],
-              "Flags": [
-                "uneditable"
-              ],
               "Tags": [
                 "AEGS_Idris",
-                "Station_Dock_Large",
-                "Ship_Dock_Refuel"
+                "Ship_Dock_Refuel",
+                "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -14415,9 +14362,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -14440,29 +14388,27 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
               ],
-              "Flags": [
-                "uneditable"
-              ],
               "Tags": [
                 "AEGS_Idris",
-                "Station_Dock_Large",
-                "Ship_Dock_Refuel"
+                "Ship_Dock_Refuel",
+                "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -14471,9 +14417,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -14496,29 +14443,27 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
               ],
-              "Flags": [
-                "uneditable"
-              ],
               "Tags": [
                 "AEGS_Idris",
-                "Station_Dock_Large",
-                "Ship_Dock_Refuel"
+                "Ship_Dock_Refuel",
+                "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -14527,9 +14472,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -14557,15 +14503,19 @@ const shipHardpoints = [
               "Loadout": "d5a0f8c8-a60b-43ac-8d2a-e71ce1ad47fa",
               "BaseLoadout": {
                 "ClassName": "MRCK_S08_AEGS_Idris",
-                "Name": "MRCK_S08_AEGS_Idris",
+                "Name": "IFR-810 Missile Rack",
                 "Type": "MissileLauncher.MissileRack",
                 "Grade": 1,
-                "Class": "@LOC_PLACEHOLDER"
+                "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "Misc"
               ],
-              "Uneditable": false,
+              "Flags": [
+                "$uneditable"
+              ],
+              "Uneditable": true,
               "Ports": [
                 {
                   "PortName": "missile_attach_01",
@@ -14771,6 +14721,8 @@ const shipHardpoints = [
               "RemoteController": {
                 "Slaved": false,
                 "Seats": [
+                  "AEGS_Idris_SCItem_Seat_CoPilot",
+                  "AEGS_Idris_SCItem_Seat_Pilot",
                   "AEGS_Idris_SCItem_Seat_Tactical"
                 ]
               }
@@ -14839,17 +14791,19 @@ const shipHardpoints = [
                 "Loadout": "QDRV_WETK_S04_Idris_TEMP",
                 "BaseLoadout": {
                   "ClassName": "QDRV_WETK_S04_Idris_TEMP",
-                  "Name": "QDRV_WETK_S04_Idris_TEMP",
+                  "Name": "Frontline",
                   "Type": "QuantumDrive.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "QuantumDrive.QDrive"
                 ],
                 "Flags": [
-                  "invisible"
+                  "invisible",
+                  "uneditable"
                 ],
-                "Uneditable": false,
+                "Uneditable": true,
                 "Ports": [
                   {
                     "PortName": "hardpoint_Jump_Drive",
@@ -14858,17 +14812,19 @@ const shipHardpoints = [
                     "Loadout": "JDRV_WETK_S04_Idris_SCItem",
                     "BaseLoadout": {
                       "ClassName": "JDRV_WETK_S04_Idris_SCItem",
-                      "Name": "JDRV_WETK_S04_Idris_SCItem",
+                      "Name": "Exfiltrate",
                       "Type": "JumpDrive.UNDEFINED",
-                      "Grade": 1
+                      "Grade": 1,
+                      "Class": ""
                     },
                     "Types": [
                       "JumpDrive.JumpDrive"
                     ],
                     "Flags": [
-                      "dont_hide_entity"
+                      "dont_hide_entity",
+                      "uneditable"
                     ],
-                    "Uneditable": false
+                    "Uneditable": true
                   }
                 ]
               }
@@ -14883,9 +14839,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 157353000.0,
+                  "ThrustCapacity": 95000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 19669.125,
+                  "FuelUsagePerSecond": 11875.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -14909,9 +14865,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 157353000.0,
+                  "ThrustCapacity": 95000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 19669.125,
+                  "FuelUsagePerSecond": 11875.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -14935,9 +14891,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 178412400.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 22301.55,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 100000.0
@@ -14961,9 +14917,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150447900.0,
+                  "ThrustCapacity": 94000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18805.9875,
+                  "FuelUsagePerSecond": 11750.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -14987,9 +14943,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150447900.0,
+                  "ThrustCapacity": 94000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18805.9875,
+                  "FuelUsagePerSecond": 11750.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -15013,9 +14969,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 178412400.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 22301.55,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 100000.0
@@ -15044,9 +15000,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 144677500.0,
+                  "ThrustCapacity": 283000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18084.6875,
+                  "FuelUsagePerSecond": 35375.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 80000.0
@@ -15070,9 +15026,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 144677500.0,
+                  "ThrustCapacity": 283000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18084.6875,
+                  "FuelUsagePerSecond": 35375.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 80000.0
@@ -15104,9 +15060,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -15130,9 +15086,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -15156,9 +15112,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -15182,9 +15138,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -15208,9 +15164,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -15234,9 +15190,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -15260,9 +15216,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -15286,9 +15242,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -15312,9 +15268,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -15338,9 +15294,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -15364,9 +15320,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -15390,9 +15346,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -15416,9 +15372,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -15462,36 +15418,12 @@ const shipHardpoints = [
                 "Size": 1,
                 "Mass": 0.0,
                 "Grade": 1,
-                "Capacity": 1599.75,
-                "Uneditable": true
-              },
-              {
-                "Name": "hardpoint_fuel_tank_left_002",
-                "Size": 1,
-                "Mass": 0.0,
-                "Grade": 1,
-                "Capacity": 1599.75,
-                "Uneditable": true
-              },
-              {
-                "Name": "hardpoint_fuel_tank_right_002",
-                "Size": 1,
-                "Mass": 0.0,
-                "Grade": 1,
-                "Capacity": 1599.75,
-                "Uneditable": true
-              },
-              {
-                "Name": "hardpoint_fuel_tank_right_001",
-                "Size": 1,
-                "Mass": 0.0,
-                "Grade": 1,
-                "Capacity": 1599.75,
+                "Capacity": 6400.0,
                 "Uneditable": true
               }
             ],
-            "ItemsQuantity": 4,
-            "TotalFuelCapacity": 6399.0
+            "ItemsQuantity": 1,
+            "TotalFuelCapacity": 6400.0
           }
         },
         "Systems": {
@@ -15588,9 +15520,10 @@ const shipHardpoints = [
                 "Loadout": "SHLD_GODI_S04_Idris_SCItem",
                 "BaseLoadout": {
                   "ClassName": "SHLD_GODI_S04_Idris_SCItem",
-                  "Name": "SHLD_GODI_S04_Idris_SCItem",
+                  "Name": "Holdstrong",
                   "Type": "Shield.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "Shield"
@@ -15607,9 +15540,10 @@ const shipHardpoints = [
                 "Loadout": "SHLD_GODI_S04_Idris_SCItem",
                 "BaseLoadout": {
                   "ClassName": "SHLD_GODI_S04_Idris_SCItem",
-                  "Name": "SHLD_GODI_S04_Idris_SCItem",
+                  "Name": "Holdstrong",
                   "Type": "Shield.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "Shield"
@@ -15634,7 +15568,8 @@ const shipHardpoints = [
                   "ClassName": "COOL_AEGS_S04_Idris_SCItem",
                   "Name": "COOL_AEGS_S04_Idris_SCItem",
                   "Type": "Cooler.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "Cooler"
@@ -15653,7 +15588,8 @@ const shipHardpoints = [
                   "ClassName": "COOL_AEGS_S04_Idris_SCItem",
                   "Name": "COOL_AEGS_S04_Idris_SCItem",
                   "Type": "Cooler.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "Cooler"
@@ -15666,7 +15602,35 @@ const shipHardpoints = [
             ],
             "Hardpoints": 2
           },
-          "LifeSupport": {},
+          "LifeSupport": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_lifesupport",
+                "MinSize": 4,
+                "MaxSize": 4,
+                "Loadout": "8f35858a-1403-42b0-aaee-36e7a9dcf8c0",
+                "BaseLoadout": {
+                  "ClassName": "LFSP_S04_AEGS_Idris",
+                  "Name": "LFSP_S04_AEGS_Idris",
+                  "Type": "LifeSupportGenerator.UNDEFINED",
+                  "Grade": 3
+                },
+                "Types": [
+                  "LifeSupportGenerator"
+                ],
+                "Tags": [
+                  "AEGS_Idris",
+                  "Ship_Dock_Refuel",
+                  "Station_Dock_Large"
+                ],
+                "Flags": [
+                  "invisible",
+                  "uneditable"
+                ],
+                "Uneditable": true
+              }
+            ]
+          },
           "FuelIntakes": {
             "InstalledItems": [
               {
@@ -15782,7 +15746,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Idris",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Idris",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -16440,14 +16404,14 @@ const shipHardpoints = [
               }
             },
             {
-              "Name": "AEGS_Idris_CargoGrid_MissileRoom_Front",
+              "Name": "AEGS_Idris_CargoGrid",
               "Mass": 0.0,
               "Size": 1,
               "Grade": 1,
-              "Capacity": 112.0,
+              "Capacity": 64.0,
               "GridProperties": {
-                "Width": 14.0,
-                "Height": 2.0,
+                "Width": 4.0,
+                "Height": 4.0,
                 "Depth": 4.0,
                 "MinContainerSize": {
                   "Capacity": 1.0,
@@ -16478,15 +16442,129 @@ const shipHardpoints = [
               }
             },
             {
-              "Name": "AEGS_Idris_CargoGrid_MissileRoom_Back",
+              "Name": "AEGS_Idris_CargoGrid_CargoRoom_Medium",
               "Mass": 0.0,
               "Size": 1,
               "Grade": 1,
-              "Capacity": 96.0,
+              "Capacity": 10.0,
               "GridProperties": {
-                "Width": 16.0,
+                "Width": 1.0,
                 "Height": 2.0,
-                "Depth": 3.0,
+                "Depth": 5.0,
+                "MinContainerSize": {
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                },
+                "MaxContainerSize": {
+                  "Capacity": 2.0,
+                  "Width": 2.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                }
+              },
+              "Uneditable": true,
+              "Power": {
+                "PowerBase": 0.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 0.0,
+                "ActivePowerEmission": 1.85
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 300.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            },
+            {
+              "Name": "AEGS_Idris_CargoGrid_CargoRoom_Small",
+              "Mass": 0.0,
+              "Size": 1,
+              "Grade": 1,
+              "Capacity": 4.0,
+              "GridProperties": {
+                "Width": 1.0,
+                "Height": 2.0,
+                "Depth": 2.0,
+                "MinContainerSize": {
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                },
+                "MaxContainerSize": {
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                }
+              },
+              "Uneditable": true,
+              "Power": {
+                "PowerBase": 0.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 0.0,
+                "ActivePowerEmission": 1.85
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 300.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            },
+            {
+              "Name": "AEGS_Idris_CargoGrid_CargoRoom_Small",
+              "Mass": 0.0,
+              "Size": 1,
+              "Grade": 1,
+              "Capacity": 4.0,
+              "GridProperties": {
+                "Width": 1.0,
+                "Height": 2.0,
+                "Depth": 2.0,
+                "MinContainerSize": {
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                },
+                "MaxContainerSize": {
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                }
+              },
+              "Uneditable": true,
+              "Power": {
+                "PowerBase": 0.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 0.0,
+                "ActivePowerEmission": 1.85
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 300.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            },
+            {
+              "Name": "AEGS_Idris_CargoGrid_CargoRoom_Front",
+              "Mass": 0.0,
+              "Size": 1,
+              "Grade": 1,
+              "Capacity": 140.0,
+              "GridProperties": {
+                "Width": 14.0,
+                "Height": 2.0,
+                "Depth": 5.0,
                 "MinContainerSize": {
                   "Capacity": 1.0,
                   "Width": 1.0,
@@ -16516,15 +16594,15 @@ const shipHardpoints = [
               }
             },
             {
-              "Name": "AEGS_Idris_CargoGrid_AdditionalStorage",
+              "Name": "AEGS_Idris_CargoGrid_CargoRoom_Back",
               "Mass": 0.0,
               "Size": 1,
               "Grade": 1,
-              "Capacity": 12.0,
+              "Capacity": 144.0,
               "GridProperties": {
-                "Width": 3.0,
+                "Width": 18.0,
                 "Height": 2.0,
-                "Depth": 2.0,
+                "Depth": 4.0,
                 "MinContainerSize": {
                   "Capacity": 1.0,
                   "Width": 1.0,
@@ -16532,124 +16610,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 2.0,
+                  "Capacity": 16.0,
                   "Width": 2.0,
-                  "Height": 1.0,
-                  "Depth": 1.0
-                }
-              },
-              "Uneditable": true,
-              "Power": {
-                "PowerBase": 0.0,
-                "PowerDraw": 1.0,
-                "IdlePowerEmission": 0.0,
-                "ActivePowerEmission": 1.85
-              },
-              "Heat": {
-                "StartComponentTemperature": 300.0,
-                "StartIRTemperature": 250.0,
-                "StartIREmission": 300.0,
-                "ThermalEnergyBase": 10.0,
-                "ThermalEnergyDraw": 20.0
-              }
-            },
-            {
-              "Name": "AEGS_Idris_CargoGrid_AdditionalStorage",
-              "Mass": 0.0,
-              "Size": 1,
-              "Grade": 1,
-              "Capacity": 12.0,
-              "GridProperties": {
-                "Width": 3.0,
-                "Height": 2.0,
-                "Depth": 2.0,
-                "MinContainerSize": {
-                  "Capacity": 1.0,
-                  "Width": 1.0,
-                  "Height": 1.0,
-                  "Depth": 1.0
-                },
-                "MaxContainerSize": {
-                  "Capacity": 2.0,
-                  "Width": 2.0,
-                  "Height": 1.0,
-                  "Depth": 1.0
-                }
-              },
-              "Uneditable": true,
-              "Power": {
-                "PowerBase": 0.0,
-                "PowerDraw": 1.0,
-                "IdlePowerEmission": 0.0,
-                "ActivePowerEmission": 1.85
-              },
-              "Heat": {
-                "StartComponentTemperature": 300.0,
-                "StartIRTemperature": 250.0,
-                "StartIREmission": 300.0,
-                "ThermalEnergyBase": 10.0,
-                "ThermalEnergyDraw": 20.0
-              }
-            },
-            {
-              "Name": "AEGS_Idris_CargoGrid_AdditionalStorage",
-              "Mass": 0.0,
-              "Size": 1,
-              "Grade": 1,
-              "Capacity": 12.0,
-              "GridProperties": {
-                "Width": 3.0,
-                "Height": 2.0,
-                "Depth": 2.0,
-                "MinContainerSize": {
-                  "Capacity": 1.0,
-                  "Width": 1.0,
-                  "Height": 1.0,
-                  "Depth": 1.0
-                },
-                "MaxContainerSize": {
-                  "Capacity": 2.0,
-                  "Width": 2.0,
-                  "Height": 1.0,
-                  "Depth": 1.0
-                }
-              },
-              "Uneditable": true,
-              "Power": {
-                "PowerBase": 0.0,
-                "PowerDraw": 1.0,
-                "IdlePowerEmission": 0.0,
-                "ActivePowerEmission": 1.85
-              },
-              "Heat": {
-                "StartComponentTemperature": 300.0,
-                "StartIRTemperature": 250.0,
-                "StartIREmission": 300.0,
-                "ThermalEnergyBase": 10.0,
-                "ThermalEnergyDraw": 20.0
-              }
-            },
-            {
-              "Name": "AEGS_Idris_CargoGrid_AdditionalStorage",
-              "Mass": 0.0,
-              "Size": 1,
-              "Grade": 1,
-              "Capacity": 12.0,
-              "GridProperties": {
-                "Width": 3.0,
-                "Height": 2.0,
-                "Depth": 2.0,
-                "MinContainerSize": {
-                  "Capacity": 1.0,
-                  "Width": 1.0,
-                  "Height": 1.0,
-                  "Depth": 1.0
-                },
-                "MaxContainerSize": {
-                  "Capacity": 2.0,
-                  "Width": 2.0,
-                  "Height": 1.0,
-                  "Depth": 1.0
+                  "Height": 2.0,
+                  "Depth": 4.0
                 }
               },
               "Uneditable": true,
@@ -16959,7 +16923,7 @@ const shipHardpoints = [
   },
   {
     "ClassName": "AEGS_Idris_P",
-    "Name": "Aegis Idris",
+    "Name": "Aegis Idris-P",
     "IsSpaceship": true,
     "PortTags": [
       "Idris_Base"
@@ -16968,7 +16932,7 @@ const shipHardpoints = [
       "Structure": [
         {
           "Name": "Body",
-          "MaximumDamage": 6100000.0,
+          "MaximumDamage": 3600000.0,
           "Parts": [
             {
               "Name": "airlock_section",
@@ -17165,7 +17129,7 @@ const shipHardpoints = [
               "DetachRatio": 0.0
             }
           ],
-          "ShipDestructionDamage": 6100000.0,
+          "ShipDestructionDamage": 3600000.0,
           "DetachRatio": 0.0
         }
       ]
@@ -17175,163 +17139,18 @@ const shipHardpoints = [
         "PilotWeapons": {
           "InstalledItems": [
             {
-              "PortName": "hardpoint_front_left_turret",
-              "MinSize": 5,
-              "MaxSize": 5,
-              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Top_Left",
-              "BaseLoadout": {
-                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Top_Left",
-                "Name": "Remote Turret",
-                "Type": "Turret.GunTurret",
-                "Grade": 1,
-                "Class": ""
-              },
-              "Types": [
-                "Turret.GunTurret"
-              ],
-              "Flags": [
-                "$uneditable",
-                "lower"
-              ],
-              "Gimballed": true,
-              "Uneditable": true,
-              "RemoteController": {
-                "Slaved": false,
-                "Seats": [
-                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Left"
-                ]
-              },
-              "Ports": [
-                {
-                  "PortName": "turret_left",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                },
-                {
-                  "PortName": "turret_right",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                }
-              ]
-            },
-            {
-              "PortName": "hardpoint_front_right_turret",
-              "MinSize": 5,
-              "MaxSize": 5,
-              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Top_Right",
-              "BaseLoadout": {
-                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Top_Right",
-                "Name": "Remote Turret",
-                "Type": "Turret.GunTurret",
-                "Grade": 1,
-                "Class": ""
-              },
-              "Types": [
-                "Turret.GunTurret"
-              ],
-              "Flags": [
-                "$uneditable",
-                "lower"
-              ],
-              "Gimballed": true,
-              "Uneditable": true,
-              "RemoteController": {
-                "Slaved": false,
-                "Seats": [
-                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Right"
-                ]
-              },
-              "Ports": [
-                {
-                  "PortName": "turret_left",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                },
-                {
-                  "PortName": "turret_right",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                }
-              ]
-            },
-            {
               "PortName": "hardpoint_nose_railgun",
               "MinSize": 10,
               "MaxSize": 10,
               "Types": [
-                "WeaponGun.Gun"
+                "WeaponGun.Gun",
+                "MissileLauncher.MissileRack"
+              ],
+              "RequiredTags": [
+                "$AEGS_Idris_Nose"
+              ],
+              "PortTags": [
+                "AEGS_Idris_Nose"
               ],
               "Uneditable": false,
               "RemoteController": {
@@ -17340,161 +17159,9 @@ const shipHardpoints = [
                   "AEGS_Idris_SCItem_Seat_Pilot"
                 ]
               }
-            },
-            {
-              "PortName": "hardpoint_rear_tail_turret_left",
-              "MinSize": 5,
-              "MaxSize": 5,
-              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Bottom_Left",
-              "BaseLoadout": {
-                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Bottom_Left",
-                "Name": "Remote Turret",
-                "Type": "Turret.GunTurret",
-                "Grade": 1,
-                "Class": ""
-              },
-              "Types": [
-                "Turret.GunTurret"
-              ],
-              "Flags": [
-                "$uneditable",
-                "lower"
-              ],
-              "Gimballed": true,
-              "Uneditable": true,
-              "RemoteController": {
-                "Slaved": false,
-                "Seats": [
-                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Left_Back"
-                ]
-              },
-              "Ports": [
-                {
-                  "PortName": "turret_left",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                },
-                {
-                  "PortName": "turret_right",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                }
-              ]
-            },
-            {
-              "PortName": "hardpoint_rear_tail_turret_right",
-              "MinSize": 5,
-              "MaxSize": 5,
-              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Bottom_Right",
-              "BaseLoadout": {
-                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Bottom_Right",
-                "Name": "Remote Turret",
-                "Type": "Turret.GunTurret",
-                "Grade": 1,
-                "Class": ""
-              },
-              "Types": [
-                "Turret.GunTurret"
-              ],
-              "Flags": [
-                "$uneditable",
-                "lower"
-              ],
-              "Gimballed": true,
-              "Uneditable": true,
-              "RemoteController": {
-                "Slaved": false,
-                "Seats": [
-                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Right_Back"
-                ]
-              },
-              "Ports": [
-                {
-                  "PortName": "turret_left",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                },
-                {
-                  "PortName": "turret_right",
-                  "MinSize": 4,
-                  "MaxSize": 4,
-                  "Loadout": "APAR_BallisticGatling_S4",
-                  "BaseLoadout": {
-                    "ClassName": "APAR_BallisticGatling_S4",
-                    "Name": "Revenant Gatling",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady"
-                  ],
-                  "Uneditable": true
-                }
-              ]
             }
           ],
-          "Hardpoints": 13
+          "Hardpoints": 1
         },
         "MannedTurrets": {
           "InstalledItems": [
@@ -17626,30 +17293,37 @@ const shipHardpoints = [
               "PortName": "hardpoint_front_turret",
               "MinSize": 7,
               "MaxSize": 7,
-              "Loadout": "88a05104-18bc-4e2d-80ee-796691162c7c",
+              "Loadout": "a1a6eaa7-b0d6-4afe-9b99-07a9d57d0e52",
               "BaseLoadout": {
-                "ClassName": "AEGS_Idris_SCItem_Turret_Large",
-                "Name": "Manned Turret",
+                "ClassName": "AEGS_Idris_SCItem_Turret_Large_P",
+                "Name": "IFR-W57 Turret",
                 "Type": "TurretBase.MannedTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.MannedTurret"
               ],
               "Flags": [
-                "$uneditable"
+                "swaponly"
+              ],
+              "RequiredTags": [
+                "$AEGS_Idris_Front_Turret"
+              ],
+              "PortTags": [
+                "AEGS_Idris_Front_Turret"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_weapon_left",
-                  "MinSize": 7,
-                  "MaxSize": 7,
-                  "Loadout": "af019617-94ee-4a91-b62b-124c93f2a45e",
+                  "MinSize": 5,
+                  "MaxSize": 5,
+                  "Loadout": "b94c54b2-a70e-4f41-bc02-ed76be87e493",
                   "BaseLoadout": {
-                    "ClassName": "BEHR_LaserCannon_S7",
-                    "Name": "M9A Cannon",
+                    "ClassName": "BEHR_LaserCannon_S5",
+                    "Name": "M7A Cannon",
                     "Type": "WeaponGun.Gun",
                     "Grade": 1,
                     "Class": ""
@@ -17658,18 +17332,19 @@ const shipHardpoints = [
                     "WeaponGun.Gun"
                   ],
                   "Tags": [
-                    "flightReady"
+                    "flightReady",
+                    "$AEGS_Idris_Front_Turret"
                   ],
                   "Uneditable": false
                 },
                 {
                   "PortName": "hardpoint_weapon_right",
-                  "MinSize": 7,
-                  "MaxSize": 7,
-                  "Loadout": "af019617-94ee-4a91-b62b-124c93f2a45e",
+                  "MinSize": 5,
+                  "MaxSize": 5,
+                  "Loadout": "b94c54b2-a70e-4f41-bc02-ed76be87e493",
                   "BaseLoadout": {
-                    "ClassName": "BEHR_LaserCannon_S7",
-                    "Name": "M9A Cannon",
+                    "ClassName": "BEHR_LaserCannon_S5",
+                    "Name": "M7A Cannon",
                     "Type": "WeaponGun.Gun",
                     "Grade": 1,
                     "Class": ""
@@ -17678,7 +17353,8 @@ const shipHardpoints = [
                     "WeaponGun.Gun"
                   ],
                   "Tags": [
-                    "flightReady"
+                    "flightReady",
+                    "$AEGS_Idris_Front_Turret"
                   ],
                   "Uneditable": false
                 }
@@ -18000,12 +17676,12 @@ const shipHardpoints = [
         "RemoteTurrets": {
           "InstalledItems": [
             {
-              "PortName": "hardpoint_camera_turret_lower",
-              "MinSize": 4,
-              "MaxSize": 4,
-              "Loadout": "AEGS_Idris_Remote_Camera_Turret_Lower",
+              "PortName": "hardpoint_front_left_turret",
+              "MinSize": 5,
+              "MaxSize": 5,
+              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Top_Left",
               "BaseLoadout": {
-                "ClassName": "AEGS_Idris_Remote_Camera_Turret_Lower",
+                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Top_Left",
                 "Name": "Remote Turret",
                 "Type": "Turret.GunTurret",
                 "Grade": 1,
@@ -18015,30 +17691,67 @@ const shipHardpoints = [
                 "Turret.GunTurret"
               ],
               "Flags": [
-                "$uneditable"
-              ],
-              "RequiredTags": [
-                "Idris_Base"
-              ],
-              "PortTags": [
-                "Idris_Base"
+                "$uneditable",
+                "lower"
               ],
               "Gimballed": true,
               "Uneditable": true,
               "RemoteController": {
                 "Slaved": false,
                 "Seats": [
-                  "AEGS_Idris_SCItem_Seat_Tactical"
+                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Left"
                 ]
-              }
+              },
+              "Ports": [
+                {
+                  "PortName": "turret_left",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "turret_right",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
             },
             {
-              "PortName": "hardpoint_camera_turret_upper",
-              "MinSize": 4,
-              "MaxSize": 4,
-              "Loadout": "AEGS_Idris_Remote_Camera_Turret_Upper",
+              "PortName": "hardpoint_front_right_turret",
+              "MinSize": 5,
+              "MaxSize": 5,
+              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Top_Right",
               "BaseLoadout": {
-                "ClassName": "AEGS_Idris_Remote_Camera_Turret_Upper",
+                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Top_Right",
                 "Name": "Remote Turret",
                 "Type": "Turret.GunTurret",
                 "Grade": 1,
@@ -18048,25 +17761,202 @@ const shipHardpoints = [
                 "Turret.GunTurret"
               ],
               "Flags": [
-                "$uneditable"
-              ],
-              "RequiredTags": [
-                "Idris_Base"
-              ],
-              "PortTags": [
-                "Idris_Base"
+                "$uneditable",
+                "lower"
               ],
               "Gimballed": true,
               "Uneditable": true,
               "RemoteController": {
                 "Slaved": false,
                 "Seats": [
-                  "AEGS_Idris_SCItem_Seat_Tactical"
+                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Right"
                 ]
-              }
+              },
+              "Ports": [
+                {
+                  "PortName": "turret_left",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "turret_right",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_rear_tail_turret_left",
+              "MinSize": 5,
+              "MaxSize": 5,
+              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Bottom_Left",
+              "BaseLoadout": {
+                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Bottom_Left",
+                "Name": "Remote Turret",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.GunTurret"
+              ],
+              "Flags": [
+                "$uneditable",
+                "lower"
+              ],
+              "Gimballed": true,
+              "Uneditable": true,
+              "RemoteController": {
+                "Slaved": false,
+                "Seats": [
+                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Left_Back"
+                ]
+              },
+              "Ports": [
+                {
+                  "PortName": "turret_left",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "turret_right",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_rear_tail_turret_right",
+              "MinSize": 5,
+              "MaxSize": 5,
+              "Loadout": "AEGS_Idris_SCItem_AI_Turret_Bottom_Right",
+              "BaseLoadout": {
+                "ClassName": "AEGS_Idris_SCItem_AI_Turret_Bottom_Right",
+                "Name": "Remote Turret",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.GunTurret"
+              ],
+              "Flags": [
+                "$uneditable",
+                "lower"
+              ],
+              "Gimballed": true,
+              "Uneditable": true,
+              "RemoteController": {
+                "Slaved": false,
+                "Seats": [
+                  "AEGS_Idris_SCItem_Seat_Bridge_Rear_Right_Back"
+                ]
+              },
+              "Ports": [
+                {
+                  "PortName": "turret_left",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "turret_right",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "APAR_BallisticGatling_S4",
+                  "BaseLoadout": {
+                    "ClassName": "APAR_BallisticGatling_S4",
+                    "Name": "Revenant Gatling",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
             }
           ],
-          "Hardpoints": 2
+          "Hardpoints": 4
         },
         "PDCTurrets": {
           "InstalledItems": [
@@ -18074,18 +17964,8 @@ const shipHardpoints = [
               "PortName": "hardpoint_pdc_01",
               "MinSize": 2,
               "MaxSize": 2,
-              "Loadout": "Turret_PDC_BEHR_A",
-              "BaseLoadout": {
-                "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
-                "Type": "Turret.PDCTurret",
-                "Grade": 1
-              },
               "Types": [
-                "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
+                "Turret"
               ],
               "Tags": [
                 "AEGS_Idris",
@@ -18093,38 +17973,12 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
-              "Turret": true,
-              "Uneditable": true,
-              "Ports": [
-                {
-                  "PortName": "hardpoint_turret_weapon",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "BEHR_LaserRepeater_PDC_S1",
-                  "BaseLoadout": {
-                    "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady",
-                    "PDC"
-                  ],
-                  "Uneditable": true
-                }
-              ]
+              "Uneditable": false
             },
             {
               "PortName": "hardpoint_pdc_02",
@@ -18133,15 +17987,13 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "AEGS_Idris",
@@ -18149,13 +18001,13 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -18164,9 +18016,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -18189,15 +18042,13 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "AEGS_Idris",
@@ -18205,13 +18056,13 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -18220,9 +18071,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -18242,18 +18094,8 @@ const shipHardpoints = [
               "PortName": "hardpoint_pdc_04",
               "MinSize": 2,
               "MaxSize": 2,
-              "Loadout": "Turret_PDC_BEHR_A",
-              "BaseLoadout": {
-                "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
-                "Type": "Turret.PDCTurret",
-                "Grade": 1
-              },
               "Types": [
-                "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
+                "Turret"
               ],
               "Tags": [
                 "AEGS_Idris",
@@ -18261,55 +18103,19 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
-              "Turret": true,
-              "Uneditable": true,
-              "Ports": [
-                {
-                  "PortName": "hardpoint_turret_weapon",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "BEHR_LaserRepeater_PDC_S1",
-                  "BaseLoadout": {
-                    "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady",
-                    "PDC"
-                  ],
-                  "Uneditable": true
-                }
-              ]
+              "Uneditable": false
             },
             {
               "PortName": "hardpoint_pdc_05",
               "MinSize": 2,
               "MaxSize": 2,
-              "Loadout": "Turret_PDC_BEHR_A",
-              "BaseLoadout": {
-                "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
-                "Type": "Turret.PDCTurret",
-                "Grade": 1
-              },
               "Types": [
-                "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
+                "Turret"
               ],
               "Tags": [
                 "AEGS_Idris",
@@ -18317,55 +18123,19 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
-              "Turret": true,
-              "Uneditable": true,
-              "Ports": [
-                {
-                  "PortName": "hardpoint_turret_weapon",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "BEHR_LaserRepeater_PDC_S1",
-                  "BaseLoadout": {
-                    "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady",
-                    "PDC"
-                  ],
-                  "Uneditable": true
-                }
-              ]
+              "Uneditable": false
             },
             {
               "PortName": "hardpoint_pdc_06",
               "MinSize": 2,
               "MaxSize": 2,
-              "Loadout": "Turret_PDC_BEHR_A",
-              "BaseLoadout": {
-                "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
-                "Type": "Turret.PDCTurret",
-                "Grade": 1
-              },
               "Types": [
-                "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
+                "Turret"
               ],
               "Tags": [
                 "AEGS_Idris",
@@ -18373,55 +18143,19 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
-              "Turret": true,
-              "Uneditable": true,
-              "Ports": [
-                {
-                  "PortName": "hardpoint_turret_weapon",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "BEHR_LaserRepeater_PDC_S1",
-                  "BaseLoadout": {
-                    "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady",
-                    "PDC"
-                  ],
-                  "Uneditable": true
-                }
-              ]
+              "Uneditable": false
             },
             {
               "PortName": "hardpoint_pdc_07",
               "MinSize": 2,
               "MaxSize": 2,
-              "Loadout": "Turret_PDC_BEHR_A",
-              "BaseLoadout": {
-                "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
-                "Type": "Turret.PDCTurret",
-                "Grade": 1
-              },
               "Types": [
-                "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
+                "Turret"
               ],
               "Tags": [
                 "AEGS_Idris",
@@ -18429,38 +18163,12 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
-              "Turret": true,
-              "Uneditable": true,
-              "Ports": [
-                {
-                  "PortName": "hardpoint_turret_weapon",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "BEHR_LaserRepeater_PDC_S1",
-                  "BaseLoadout": {
-                    "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
-                    "Type": "WeaponGun.Gun",
-                    "Grade": 1
-                  },
-                  "Types": [
-                    "WeaponGun.Gun"
-                  ],
-                  "Flags": [
-                    "$uneditable"
-                  ],
-                  "Tags": [
-                    "flightReady",
-                    "PDC"
-                  ],
-                  "Uneditable": true
-                }
-              ]
+              "Uneditable": false
             },
             {
               "PortName": "hardpoint_pdc_08",
@@ -18469,15 +18177,13 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "AEGS_Idris",
@@ -18485,13 +18191,13 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -18500,9 +18206,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -18525,15 +18232,13 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "AEGS_Idris",
@@ -18541,13 +18246,13 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -18556,9 +18261,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -18581,15 +18287,13 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "AEGS_Idris",
@@ -18597,13 +18301,13 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -18612,9 +18316,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -18637,15 +18342,13 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "AEGS_Idris",
@@ -18653,13 +18356,13 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -18668,9 +18371,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -18751,17 +18455,19 @@ const shipHardpoints = [
                 "Loadout": "QDRV_WETK_S04_Idris_TEMP",
                 "BaseLoadout": {
                   "ClassName": "QDRV_WETK_S04_Idris_TEMP",
-                  "Name": "QDRV_WETK_S04_Idris_TEMP",
+                  "Name": "Frontline",
                   "Type": "QuantumDrive.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "QuantumDrive.QDrive"
                 ],
                 "Flags": [
-                  "invisible"
+                  "invisible",
+                  "uneditable"
                 ],
-                "Uneditable": false,
+                "Uneditable": true,
                 "Ports": [
                   {
                     "PortName": "hardpoint_Jump_Drive",
@@ -18770,17 +18476,19 @@ const shipHardpoints = [
                     "Loadout": "JDRV_WETK_S04_Idris_SCItem",
                     "BaseLoadout": {
                       "ClassName": "JDRV_WETK_S04_Idris_SCItem",
-                      "Name": "JDRV_WETK_S04_Idris_SCItem",
+                      "Name": "Exfiltrate",
                       "Type": "JumpDrive.UNDEFINED",
-                      "Grade": 1
+                      "Grade": 1,
+                      "Class": ""
                     },
                     "Types": [
                       "JumpDrive.JumpDrive"
                     ],
                     "Flags": [
-                      "dont_hide_entity"
+                      "dont_hide_entity",
+                      "uneditable"
                     ],
-                    "Uneditable": false
+                    "Uneditable": true
                   }
                 ]
               }
@@ -18795,9 +18503,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 157353000.0,
+                  "ThrustCapacity": 95000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 19669.125,
+                  "FuelUsagePerSecond": 11875.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -18821,9 +18529,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 157353000.0,
+                  "ThrustCapacity": 95000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 19669.125,
+                  "FuelUsagePerSecond": 11875.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -18847,9 +18555,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 178412400.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 22301.55,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 100000.0
@@ -18873,9 +18581,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150447900.0,
+                  "ThrustCapacity": 94000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18805.9875,
+                  "FuelUsagePerSecond": 11750.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -18899,9 +18607,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150447900.0,
+                  "ThrustCapacity": 94000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18805.9875,
+                  "FuelUsagePerSecond": 11750.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -18925,9 +18633,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 178412400.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 22301.55,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 100000.0
@@ -18956,9 +18664,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 144677500.0,
+                  "ThrustCapacity": 283000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18084.6875,
+                  "FuelUsagePerSecond": 35375.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 80000.0
@@ -18982,9 +18690,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 144677500.0,
+                  "ThrustCapacity": 283000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18084.6875,
+                  "FuelUsagePerSecond": 35375.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 80000.0
@@ -19016,9 +18724,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -19042,9 +18750,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -19068,9 +18776,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -19094,9 +18802,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -19120,9 +18828,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -19146,9 +18854,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -19172,9 +18880,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -19198,9 +18906,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -19224,9 +18932,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -19250,9 +18958,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -19276,9 +18984,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -19302,9 +19010,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -19328,9 +19036,9 @@ const shipHardpoints = [
                   "Size": 5,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 150512600.0,
+                  "ThrustCapacity": 188000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 18814.075,
+                  "FuelUsagePerSecond": 23500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 500000.0
@@ -19374,36 +19082,12 @@ const shipHardpoints = [
                 "Size": 1,
                 "Mass": 0.0,
                 "Grade": 1,
-                "Capacity": 1599.75,
-                "Uneditable": true
-              },
-              {
-                "Name": "hardpoint_fuel_tank_left_002",
-                "Size": 1,
-                "Mass": 0.0,
-                "Grade": 1,
-                "Capacity": 1599.75,
-                "Uneditable": true
-              },
-              {
-                "Name": "hardpoint_fuel_tank_right_002",
-                "Size": 1,
-                "Mass": 0.0,
-                "Grade": 1,
-                "Capacity": 1599.75,
-                "Uneditable": true
-              },
-              {
-                "Name": "hardpoint_fuel_tank_right_001",
-                "Size": 1,
-                "Mass": 0.0,
-                "Grade": 1,
-                "Capacity": 1599.75,
+                "Capacity": 6400.0,
                 "Uneditable": true
               }
             ],
-            "ItemsQuantity": 4,
-            "TotalFuelCapacity": 6399.0
+            "ItemsQuantity": 1,
+            "TotalFuelCapacity": 6400.0
           }
         },
         "Systems": {
@@ -19500,9 +19184,10 @@ const shipHardpoints = [
                 "Loadout": "SHLD_GODI_S04_Idris_SCItem",
                 "BaseLoadout": {
                   "ClassName": "SHLD_GODI_S04_Idris_SCItem",
-                  "Name": "SHLD_GODI_S04_Idris_SCItem",
+                  "Name": "Holdstrong",
                   "Type": "Shield.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "Shield"
@@ -19519,9 +19204,10 @@ const shipHardpoints = [
                 "Loadout": "SHLD_GODI_S04_Idris_SCItem",
                 "BaseLoadout": {
                   "ClassName": "SHLD_GODI_S04_Idris_SCItem",
-                  "Name": "SHLD_GODI_S04_Idris_SCItem",
+                  "Name": "Holdstrong",
                   "Type": "Shield.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "Shield"
@@ -19546,7 +19232,8 @@ const shipHardpoints = [
                   "ClassName": "COOL_AEGS_S04_Idris_SCItem",
                   "Name": "COOL_AEGS_S04_Idris_SCItem",
                   "Type": "Cooler.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "Cooler"
@@ -19565,7 +19252,8 @@ const shipHardpoints = [
                   "ClassName": "COOL_AEGS_S04_Idris_SCItem",
                   "Name": "COOL_AEGS_S04_Idris_SCItem",
                   "Type": "Cooler.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "Cooler"
@@ -19578,7 +19266,35 @@ const shipHardpoints = [
             ],
             "Hardpoints": 2
           },
-          "LifeSupport": {},
+          "LifeSupport": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_lifesupport",
+                "MinSize": 4,
+                "MaxSize": 4,
+                "Loadout": "8f35858a-1403-42b0-aaee-36e7a9dcf8c0",
+                "BaseLoadout": {
+                  "ClassName": "LFSP_S04_AEGS_Idris",
+                  "Name": "LFSP_S04_AEGS_Idris",
+                  "Type": "LifeSupportGenerator.UNDEFINED",
+                  "Grade": 3
+                },
+                "Types": [
+                  "LifeSupportGenerator"
+                ],
+                "Tags": [
+                  "AEGS_Idris",
+                  "Ship_Dock_Refuel",
+                  "Station_Dock_Large"
+                ],
+                "Flags": [
+                  "invisible",
+                  "uneditable"
+                ],
+                "Uneditable": true
+              }
+            ]
+          },
           "FuelIntakes": {
             "InstalledItems": [
               {
@@ -19694,7 +19410,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Idris",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Idris",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -20390,15 +20106,129 @@ const shipHardpoints = [
               }
             },
             {
-              "Name": "AEGS_Idris_CargoGrid_MissileRoom_Front",
+              "Name": "AEGS_Idris_CargoGrid_CargoRoom_Medium",
               "Mass": 0.0,
               "Size": 1,
               "Grade": 1,
-              "Capacity": 112.0,
+              "Capacity": 10.0,
+              "GridProperties": {
+                "Width": 1.0,
+                "Height": 2.0,
+                "Depth": 5.0,
+                "MinContainerSize": {
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                },
+                "MaxContainerSize": {
+                  "Capacity": 2.0,
+                  "Width": 2.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                }
+              },
+              "Uneditable": true,
+              "Power": {
+                "PowerBase": 0.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 0.0,
+                "ActivePowerEmission": 1.85
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 300.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            },
+            {
+              "Name": "AEGS_Idris_CargoGrid_CargoRoom_Small",
+              "Mass": 0.0,
+              "Size": 1,
+              "Grade": 1,
+              "Capacity": 4.0,
+              "GridProperties": {
+                "Width": 1.0,
+                "Height": 2.0,
+                "Depth": 2.0,
+                "MinContainerSize": {
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                },
+                "MaxContainerSize": {
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                }
+              },
+              "Uneditable": true,
+              "Power": {
+                "PowerBase": 0.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 0.0,
+                "ActivePowerEmission": 1.85
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 300.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            },
+            {
+              "Name": "AEGS_Idris_CargoGrid_CargoRoom_Small",
+              "Mass": 0.0,
+              "Size": 1,
+              "Grade": 1,
+              "Capacity": 4.0,
+              "GridProperties": {
+                "Width": 1.0,
+                "Height": 2.0,
+                "Depth": 2.0,
+                "MinContainerSize": {
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                },
+                "MaxContainerSize": {
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                }
+              },
+              "Uneditable": true,
+              "Power": {
+                "PowerBase": 0.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 0.0,
+                "ActivePowerEmission": 1.85
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 300.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            },
+            {
+              "Name": "AEGS_Idris_CargoGrid_CargoRoom_Front",
+              "Mass": 0.0,
+              "Size": 1,
+              "Grade": 1,
+              "Capacity": 140.0,
               "GridProperties": {
                 "Width": 14.0,
                 "Height": 2.0,
-                "Depth": 4.0,
+                "Depth": 5.0,
                 "MinContainerSize": {
                   "Capacity": 1.0,
                   "Width": 1.0,
@@ -20428,15 +20258,15 @@ const shipHardpoints = [
               }
             },
             {
-              "Name": "AEGS_Idris_CargoGrid_MissileRoom_Back",
+              "Name": "AEGS_Idris_CargoGrid_CargoRoom_Back",
               "Mass": 0.0,
               "Size": 1,
               "Grade": 1,
-              "Capacity": 96.0,
+              "Capacity": 144.0,
               "GridProperties": {
-                "Width": 16.0,
+                "Width": 18.0,
                 "Height": 2.0,
-                "Depth": 3.0,
+                "Depth": 4.0,
                 "MinContainerSize": {
                   "Capacity": 1.0,
                   "Width": 1.0,
@@ -20618,7 +20448,7 @@ const shipHardpoints = [
               }
             }
           ],
-          "ItemsQuantity": 22
+          "ItemsQuantity": 25
         },
         "CargoContainers": {
           "ItemsQuantity": 0
@@ -23391,7 +23221,7 @@ const shipHardpoints = [
               "PoolSize": 10.0,
               "Modifiers": {
                 "PowerRatioMultiplier": 1.18,
-                "MaxAmmoLoadMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 2.5,
                 "MaxRegenPerSecMultiplier": 1.0
               }
             },
@@ -23615,7 +23445,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Reclaimer",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Reclaimer",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -25535,10 +25365,9 @@ const shipHardpoints = [
                   "PowerPlant"
                 ],
                 "Flags": [
-                  "invisible",
-                  "uneditable"
+                  "invisible"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ],
             "Hardpoints": 2
@@ -26234,7 +26063,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 8.0
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.5,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -26378,7 +26212,7 @@ const shipHardpoints = [
               }
             ],
             "Hardpoints": 6,
-            "FaceType": "FrontBack"
+            "FaceType": "Bubble"
           },
           "Coolers": {
             "InstalledItems": [
@@ -26501,18 +26335,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Redeemer",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Redeemer",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$AEGS_Redeemer_Blade"
+                ],
+                "PortTags": [
+                  "AEGS_Redeemer_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -28531,7 +28372,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 8.0
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 5.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -28880,7 +28726,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Retaliator",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Retaliator",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -30661,7 +30507,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Sabre",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Sabre",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -32074,7 +31920,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Sabre",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Sabre",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -33784,7 +33630,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Sabre_Firebird",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Sabre_Firebird",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -34902,7 +34748,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Sabre_Peregrine",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Sabre_Peregrine",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -36092,7 +35938,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Sabre_Raven",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Sabre_Raven",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -37915,7 +37761,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Vanguard",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Vanguard",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -39775,7 +39621,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Vanguard_Harbinger",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Vanguard_Harbinger",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -41477,7 +41323,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Vanguard_Hoplite",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Vanguard_Hoplite",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -43316,7 +43162,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_AEGS_Vanguard_Sentinel",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_AEGS_Vanguard_Sentinel",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -43836,7 +43682,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -43934,7 +43781,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -44683,18 +44531,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Arrow",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Arrow",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$ANVL_Arrow_Blade"
+                ],
+                "PortTags": [
+                  "ANVL_Arrow_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -44859,6 +44714,2372 @@ const shipHardpoints = [
             }
           ],
           "Hardpoints": 1
+        }
+      }
+    }
+  },
+  {
+    "ClassName": "ANVL_Asgard",
+    "Name": "Anvil Asgard",
+    "IsSpaceship": true,
+    "PortTags": [],
+    "Hull": {
+      "Structure": [
+        {
+          "Name": "Nose",
+          "MaximumDamage": 20000.0,
+          "Parts": [
+            {
+              "Name": "Engine_FL",
+              "Parts": [
+                {
+                  "Name": "Engine_FL_Split",
+                  "MaximumDamage": 2500.0,
+                  "Parts": [
+                    {
+                      "Name": "hardpoint_thruster_main_front_left"
+                    }
+                  ],
+                  "DetachRatio": 1.0
+                }
+              ]
+            },
+            {
+              "Name": "Engine_FR",
+              "Parts": [
+                {
+                  "Name": "Engine_FR_Split",
+                  "MaximumDamage": 2500.0,
+                  "Parts": [
+                    {
+                      "Name": "hardpoint_thruster_main_front_right"
+                    }
+                  ],
+                  "DetachRatio": 1.0
+                }
+              ]
+            },
+            {
+              "Name": "hardpoint_thruster_bottom_front_left"
+            },
+            {
+              "Name": "hardpoint_thruster_bottom_front_right"
+            },
+            {
+              "Name": "hardpoint_thruster_retro_left"
+            },
+            {
+              "Name": "hardpoint_thruster_retro_right"
+            },
+            {
+              "Name": "hardpoint_thruster_side_front_left"
+            },
+            {
+              "Name": "hardpoint_thruster_side_front_right"
+            },
+            {
+              "Name": "hardpoint_thruster_top_front_left"
+            },
+            {
+              "Name": "hardpoint_thruster_top_front_right"
+            },
+            {
+              "Name": "Tail",
+              "MaximumDamage": 20000.0,
+              "Parts": [
+                {
+                  "Name": "hardpoint_thruster_bottom_rear_left"
+                },
+                {
+                  "Name": "hardpoint_thruster_bottom_rear_right"
+                },
+                {
+                  "Name": "hardpoint_thruster_side_rear_left"
+                },
+                {
+                  "Name": "hardpoint_thruster_side_rear_right"
+                },
+                {
+                  "Name": "hardpoint_thruster_top_rear_left"
+                },
+                {
+                  "Name": "hardpoint_thruster_top_rear_right"
+                },
+                {
+                  "Name": "hardpoint_thruster_aux_left"
+                },
+                {
+                  "Name": "hardpoint_thruster_aux_right"
+                },
+                {
+                  "Name": "tail_top",
+                  "MaximumDamage": 200.0,
+                  "DetachRatio": 0.0
+                },
+                {
+                  "Name": "mesh_tail_body",
+                  "MaximumDamage": 200.0,
+                  "DetachRatio": 0.0
+                },
+                {
+                  "Name": "wing_rl",
+                  "MaximumDamage": 3500.0,
+                  "DetachRatio": 1.0
+                },
+                {
+                  "Name": "wing_rr",
+                  "MaximumDamage": 3500.0,
+                  "DetachRatio": 1.0
+                },
+                {
+                  "Name": "mesh_roof_body",
+                  "MaximumDamage": 200.0,
+                  "DetachRatio": 0.0
+                },
+                {
+                  "Name": "wing_upper_left",
+                  "MaximumDamage": 5000.0,
+                  "Parts": [
+                    {
+                      "Name": "mesh_wing_upper_left_flap",
+                      "MaximumDamage": 100.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "Engine_RL",
+                      "Parts": [
+                        {
+                          "Name": "Engine_RL_Split",
+                          "MaximumDamage": 2500.0,
+                          "Parts": [
+                            {
+                              "Name": "hardpoint_thruster_main_rear_left"
+                            }
+                          ],
+                          "DetachRatio": 1.0
+                        }
+                      ]
+                    }
+                  ],
+                  "DetachRatio": 1.0
+                },
+                {
+                  "Name": "wing_upper_right",
+                  "MaximumDamage": 5000.0,
+                  "Parts": [
+                    {
+                      "Name": "mesh_wing_upper_right_flap",
+                      "MaximumDamage": 100.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "Engine_RR",
+                      "Parts": [
+                        {
+                          "Name": "Engine_RR_Split",
+                          "MaximumDamage": 2500.0,
+                          "Parts": [
+                            {
+                              "Name": "hardpoint_thruster_main_rear_right"
+                            }
+                          ],
+                          "DetachRatio": 1.0
+                        }
+                      ]
+                    }
+                  ],
+                  "DetachRatio": 1.0
+                }
+              ],
+              "ShipDestructionDamage": 20000.0,
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "wing_right",
+              "MaximumDamage": 4500.0,
+              "Parts": [
+                {
+                  "Name": "mesh_wing_right_flap",
+                  "MaximumDamage": 100.0,
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "wing_left",
+              "MaximumDamage": 4500.0,
+              "Parts": [
+                {
+                  "Name": "mesh_wing_left_flap",
+                  "MaximumDamage": 100.0,
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            }
+          ],
+          "ShipDestructionDamage": 20000.0,
+          "DetachRatio": 1.0
+        }
+      ]
+    },
+    "Hardpoints": {
+      "Weapons": {
+        "PilotWeapons": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_turret_pilot",
+              "MinSize": 1,
+              "MaxSize": 4,
+              "Loadout": "500a82b0-3c76-443d-b302-1b0ccf15071f",
+              "BaseLoadout": {
+                "ClassName": "ANVL_Asgard_Nose_Turret_S4",
+                "Name": "PC2 Dual S3 Mount",
+                "Type": "Turret.GunTurret",
+                "Grade": 1
+              },
+              "Types": [
+                "Turret.Gun",
+                "Turret.GunTurret",
+                "WeaponGun.Gun"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "RequiredTags": [
+                "$anvl_asgard"
+              ],
+              "PortTags": [
+                "anvl_asgard"
+              ],
+              "Gimballed": true,
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "hardpoint_left",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "8197c45b-eaf4-4836-a8f0-837d1875cd9c",
+                  "BaseLoadout": {
+                    "ClassName": "Mount_Gimbal_S3",
+                    "Name": "VariPuck S3 Gimbal Mount",
+                    "Type": "Turret.GunTurret",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Turret.GunTurret"
+                  ],
+                  "Flags": [
+                    "$uneditable"
+                  ],
+                  "Tags": [
+                    "$anvl_asgard"
+                  ],
+                  "Gimballed": true,
+                  "Uneditable": true,
+                  "Ports": [
+                    {
+                      "PortName": "hardpoint_class_2",
+                      "MinSize": 2,
+                      "MaxSize": 3,
+                      "Loadout": "bd13235d-1261-4b71-b32f-aed1a8beb526",
+                      "BaseLoadout": {
+                        "ClassName": "KLWE_LaserRepeater_S3",
+                        "Name": "CF-337 Panther Repeater",
+                        "Type": "WeaponGun.Gun",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "WeaponGun.Gun"
+                      ],
+                      "Tags": [
+                        "gimbalMount",
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    }
+                  ]
+                },
+                {
+                  "PortName": "hardpoint_right",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "8197c45b-eaf4-4836-a8f0-837d1875cd9c",
+                  "BaseLoadout": {
+                    "ClassName": "Mount_Gimbal_S3",
+                    "Name": "VariPuck S3 Gimbal Mount",
+                    "Type": "Turret.GunTurret",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Turret.GunTurret"
+                  ],
+                  "Flags": [
+                    "$uneditable"
+                  ],
+                  "Tags": [
+                    "$anvl_asgard"
+                  ],
+                  "Gimballed": true,
+                  "Uneditable": true,
+                  "Ports": [
+                    {
+                      "PortName": "hardpoint_class_2",
+                      "MinSize": 2,
+                      "MaxSize": 3,
+                      "Loadout": "bd13235d-1261-4b71-b32f-aed1a8beb526",
+                      "BaseLoadout": {
+                        "ClassName": "KLWE_LaserRepeater_S3",
+                        "Name": "CF-337 Panther Repeater",
+                        "Type": "WeaponGun.Gun",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "WeaponGun.Gun"
+                      ],
+                      "Tags": [
+                        "gimbalMount",
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_weapon_top_left_1",
+              "MinSize": 3,
+              "MaxSize": 3,
+              "Loadout": "8197c45b-eaf4-4836-a8f0-837d1875cd9c",
+              "BaseLoadout": {
+                "ClassName": "Mount_Gimbal_S3",
+                "Name": "VariPuck S3 Gimbal Mount",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.Gun",
+                "Turret.GunTurret",
+                "WeaponGun.Gun"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Gimballed": true,
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "hardpoint_class_2",
+                  "MinSize": 2,
+                  "MaxSize": 3,
+                  "Loadout": "bd13235d-1261-4b71-b32f-aed1a8beb526",
+                  "BaseLoadout": {
+                    "ClassName": "KLWE_LaserRepeater_S3",
+                    "Name": "CF-337 Panther Repeater",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "gimbalMount",
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_weapon_top_left_2",
+              "MinSize": 3,
+              "MaxSize": 3,
+              "Loadout": "8197c45b-eaf4-4836-a8f0-837d1875cd9c",
+              "BaseLoadout": {
+                "ClassName": "Mount_Gimbal_S3",
+                "Name": "VariPuck S3 Gimbal Mount",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.Gun",
+                "Turret.GunTurret",
+                "WeaponGun.Gun"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Gimballed": true,
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "hardpoint_class_2",
+                  "MinSize": 2,
+                  "MaxSize": 3,
+                  "Loadout": "bd13235d-1261-4b71-b32f-aed1a8beb526",
+                  "BaseLoadout": {
+                    "ClassName": "KLWE_LaserRepeater_S3",
+                    "Name": "CF-337 Panther Repeater",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "gimbalMount",
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_weapon_top_right_1",
+              "MinSize": 3,
+              "MaxSize": 3,
+              "Loadout": "8197c45b-eaf4-4836-a8f0-837d1875cd9c",
+              "BaseLoadout": {
+                "ClassName": "Mount_Gimbal_S3",
+                "Name": "VariPuck S3 Gimbal Mount",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.Gun",
+                "Turret.GunTurret",
+                "WeaponGun.Gun"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Gimballed": true,
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "hardpoint_class_2",
+                  "MinSize": 2,
+                  "MaxSize": 3,
+                  "Loadout": "bd13235d-1261-4b71-b32f-aed1a8beb526",
+                  "BaseLoadout": {
+                    "ClassName": "KLWE_LaserRepeater_S3",
+                    "Name": "CF-337 Panther Repeater",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "gimbalMount",
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_weapon_top_right_2",
+              "MinSize": 3,
+              "MaxSize": 3,
+              "Loadout": "8197c45b-eaf4-4836-a8f0-837d1875cd9c",
+              "BaseLoadout": {
+                "ClassName": "Mount_Gimbal_S3",
+                "Name": "VariPuck S3 Gimbal Mount",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.Gun",
+                "Turret.GunTurret",
+                "WeaponGun.Gun"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Gimballed": true,
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "hardpoint_class_2",
+                  "MinSize": 2,
+                  "MaxSize": 3,
+                  "Loadout": "bd13235d-1261-4b71-b32f-aed1a8beb526",
+                  "BaseLoadout": {
+                    "ClassName": "KLWE_LaserRepeater_S3",
+                    "Name": "CF-337 Panther Repeater",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "gimbalMount",
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            }
+          ],
+          "Hardpoints": 13
+        },
+        "MannedTurrets": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_turret_bottom",
+              "MinSize": 4,
+              "MaxSize": 4,
+              "Loadout": "982679e6-e701-4006-9cb2-4785acdc940f",
+              "BaseLoadout": {
+                "ClassName": "ANVL_Asgard_Turret_Bubble",
+                "Name": "Manned Turret",
+                "Type": "TurretBase.MannedTurret",
+                "Grade": 1
+              },
+              "Types": [
+                "TurretBase.MannedTurret"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "RequiredTags": [
+                "$anvl_asgard"
+              ],
+              "PortTags": [
+                "anvl_asgard"
+              ],
+              "Turret": true,
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "hardpoint_weapon_left",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "ea49d194-0c0b-43e1-82fb-d72f35c1af05",
+                  "BaseLoadout": {
+                    "ClassName": "Mount_Gimbal_S4",
+                    "Name": "VariPuck S4 Gimbal Mount",
+                    "Type": "Turret.GunTurret",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun",
+                    "Turret.GunTurret"
+                  ],
+                  "Tags": [
+                    "$anvl_asgard"
+                  ],
+                  "Gimballed": true,
+                  "Uneditable": false,
+                  "Ports": [
+                    {
+                      "PortName": "hardpoint_class_2",
+                      "MinSize": 3,
+                      "MaxSize": 4,
+                      "Loadout": "ecac1df2-4f6f-49df-9cce-f188d118a789",
+                      "BaseLoadout": {
+                        "ClassName": "KLWE_LaserRepeater_S4",
+                        "Name": "CF-447 Rhino Repeater",
+                        "Type": "WeaponGun.Gun",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "WeaponGun.Gun"
+                      ],
+                      "Tags": [
+                        "gimbalMount",
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    }
+                  ]
+                },
+                {
+                  "PortName": "hardpoint_weapon_right",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "ea49d194-0c0b-43e1-82fb-d72f35c1af05",
+                  "BaseLoadout": {
+                    "ClassName": "Mount_Gimbal_S4",
+                    "Name": "VariPuck S4 Gimbal Mount",
+                    "Type": "Turret.GunTurret",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun",
+                    "Turret.GunTurret"
+                  ],
+                  "Tags": [
+                    "$anvl_asgard"
+                  ],
+                  "Gimballed": true,
+                  "Uneditable": false,
+                  "Ports": [
+                    {
+                      "PortName": "hardpoint_class_2",
+                      "MinSize": 3,
+                      "MaxSize": 4,
+                      "Loadout": "ecac1df2-4f6f-49df-9cce-f188d118a789",
+                      "BaseLoadout": {
+                        "ClassName": "KLWE_LaserRepeater_S4",
+                        "Name": "CF-447 Rhino Repeater",
+                        "Type": "WeaponGun.Gun",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "WeaponGun.Gun"
+                      ],
+                      "Tags": [
+                        "gimbalMount",
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "PortName": "weapon",
+              "MinSize": 1,
+              "MaxSize": 1,
+              "Loadout": "GATS_BallisticGatling_Mounted_S1_DRAK_Cutlass_Steel",
+              "BaseLoadout": {
+                "ClassName": "GATS_BallisticGatling_Mounted_S1_DRAK_Cutlass_Steel",
+                "Name": "YellowJacket GT-210 Gatling",
+                "Type": "WeaponGun.Gun",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "WeaponGun.Gun",
+                "MissileLauncher"
+              ],
+              "Flags": [
+                "uneditable"
+              ],
+              "Tags": [
+                "$anvl_asgard"
+              ],
+              "Fixed": true,
+              "Uneditable": true
+            },
+            {
+              "PortName": "weapon",
+              "MinSize": 1,
+              "MaxSize": 1,
+              "Loadout": "GATS_BallisticGatling_Mounted_S1_DRAK_Cutlass_Steel",
+              "BaseLoadout": {
+                "ClassName": "GATS_BallisticGatling_Mounted_S1_DRAK_Cutlass_Steel",
+                "Name": "YellowJacket GT-210 Gatling",
+                "Type": "WeaponGun.Gun",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "WeaponGun.Gun",
+                "MissileLauncher"
+              ],
+              "Flags": [
+                "uneditable"
+              ],
+              "Tags": [
+                "$anvl_asgard"
+              ],
+              "Fixed": true,
+              "Uneditable": true
+            }
+          ],
+          "Hardpoints": 35
+        },
+        "RemoteTurrets": {},
+        "PDCTurrets": {},
+        "MissileRacks": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_turret_top",
+              "MinSize": 7,
+              "MaxSize": 7,
+              "Loadout": "f30b001c-5c77-4db4-a707-37df25e63aca",
+              "BaseLoadout": {
+                "ClassName": "MRCK_S07_ANVL_Asgard_16_S03",
+                "Name": "MSD-683 Missile Rack",
+                "Type": "MissileLauncher.MissileRack",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "MissileLauncher.MissileRack"
+              ],
+              "RequiredTags": [
+                "$ANVL_Asgard"
+              ],
+              "PortTags": [
+                "ANVL_Asgard"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "missile_01_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_02_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_03_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_04_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_05_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_06_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_07_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_08_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_09_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_10_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_11_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_12_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_13_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_14_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_15_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_16_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "dee6efca-71ef-438c-b762-624f9ce649f3",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_CS_FSKI_Arrester",
+                    "Name": "Arrester III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$ANVL_Asgard"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            }
+          ],
+          "Hardpoints": 1
+        },
+        "BombRacks": {},
+        "InterdictionHardpoints": {},
+        "MiningHardpoints": {},
+        "SalvageHardpoints": {},
+        "UtilityHardpoints": {},
+        "UtilityTurrets": {}
+      },
+      "Components": {
+        "Propulsion": {
+          "PowerPlants": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_powerplant_left",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "POWR_AEGS_S02_Maelstrom_SCItem",
+                "BaseLoadout": {
+                  "ClassName": "POWR_AEGS_S02_Maelstrom_SCItem",
+                  "Name": "Maelstrom",
+                  "Type": "PowerPlant.Power",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "PowerPlant"
+                ],
+                "Uneditable": false
+              },
+              {
+                "PortName": "hardpoint_powerplant_right",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "POWR_AEGS_S02_Maelstrom_SCItem",
+                "BaseLoadout": {
+                  "ClassName": "POWR_AEGS_S02_Maelstrom_SCItem",
+                  "Name": "Maelstrom",
+                  "Type": "PowerPlant.Power",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "PowerPlant"
+                ],
+                "Uneditable": false
+              }
+            ],
+            "Hardpoints": 2
+          },
+          "QuantumDrives": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_quantum_drive",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "QDRV_TARS_S02_Odyssey_SCItem",
+                "BaseLoadout": {
+                  "ClassName": "QDRV_TARS_S02_Odyssey_SCItem",
+                  "Name": "Odyssey",
+                  "Type": "QuantumDrive.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Civilian"
+                },
+                "Types": [
+                  "QuantumDrive.QDrive"
+                ],
+                "Uneditable": false,
+                "Ports": [
+                  {
+                    "PortName": "hardpoint_Jump_Drive",
+                    "MinSize": 2,
+                    "MaxSize": 2,
+                    "Loadout": "14cbe476-4050-4af5-8635-178519722f4b",
+                    "BaseLoadout": {
+                      "ClassName": "JDRV_TARS_S02_Excelsior_SCItem",
+                      "Name": "Excelsior",
+                      "Type": "JumpDrive.UNDEFINED",
+                      "Grade": 3,
+                      "Class": "Civilian"
+                    },
+                    "Types": [
+                      "JumpDrive.JumpDrive"
+                    ],
+                    "Flags": [
+                      "dont_hide_entity"
+                    ],
+                    "Uneditable": false
+                  }
+                ]
+              }
+            ],
+            "Hardpoints": 1
+          },
+          "Thrusters": {
+            "MainThrusters": {
+              "InstalledItems": [
+                {
+                  "Name": "hardpoint_thruster_main_front_left",
+                  "Size": 3,
+                  "Mass": 3000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 2450000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 306.25,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 17600.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 1000.0,
+                    "ActivePowerEmission": 1200.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 187.5,
+                    "StartIREmission": 1237.5,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_main_front_right",
+                  "Size": 3,
+                  "Mass": 3000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 2450000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 306.25,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 17600.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 1000.0,
+                    "ActivePowerEmission": 1200.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 187.5,
+                    "StartIREmission": 1237.5,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_aux_left",
+                  "Size": 3,
+                  "Mass": 3000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 9800000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 1225.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 17600.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 1000.0,
+                    "ActivePowerEmission": 1200.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 187.5,
+                    "StartIREmission": 1237.5,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_aux_right",
+                  "Size": 3,
+                  "Mass": 3000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 9800000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 1225.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 17600.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 1000.0,
+                    "ActivePowerEmission": 1200.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 187.5,
+                    "StartIREmission": 1237.5,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_main_rear_left",
+                  "Size": 3,
+                  "Mass": 3000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 2450000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 306.25,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 17600.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 1000.0,
+                    "ActivePowerEmission": 1200.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 187.5,
+                    "StartIREmission": 1237.5,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_main_rear_right",
+                  "Size": 3,
+                  "Mass": 3000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 2450000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 306.25,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 17600.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 1000.0,
+                    "ActivePowerEmission": 1200.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 187.5,
+                    "StartIREmission": 1237.5,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                }
+              ],
+              "ItemsQuantity": 6
+            },
+            "RetroThrusters": {
+              "InstalledItems": [
+                {
+                  "Name": "hardpoint_thruster_retro_left",
+                  "Size": 3,
+                  "Mass": 500.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 8200000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 1025.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 16800.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 500.0,
+                    "ActivePowerEmission": 600.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 15.5,
+                    "StartIREmission": 451.93,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_retro_right",
+                  "Size": 3,
+                  "Mass": 500.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 8200000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 1025.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 16800.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 500.0,
+                    "ActivePowerEmission": 600.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 15.5,
+                    "StartIREmission": 451.93,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                }
+              ],
+              "ItemsQuantity": 2
+            },
+            "VtolThrusters": {
+              "ItemsQuantity": 0
+            },
+            "ManeuveringThrusters": {
+              "InstalledItems": [
+                {
+                  "Name": "hardpoint_thruster_bottom_front_left",
+                  "Size": 3,
+                  "Mass": 400.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 6150000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 768.75,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 16250.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 100.0,
+                    "ActivePowerEmission": 120.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 100.0,
+                    "StartIREmission": 120.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_bottom_front_right",
+                  "Size": 3,
+                  "Mass": 400.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 6150000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 768.75,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 16250.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 100.0,
+                    "ActivePowerEmission": 120.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 100.0,
+                    "StartIREmission": 120.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_side_front_left",
+                  "Size": 3,
+                  "Mass": 400.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 11450000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 1431.25,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 16250.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 100.0,
+                    "ActivePowerEmission": 120.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 100.0,
+                    "StartIREmission": 120.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_side_front_right",
+                  "Size": 3,
+                  "Mass": 400.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 11450000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 1431.25,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 16250.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 100.0,
+                    "ActivePowerEmission": 120.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 100.0,
+                    "StartIREmission": 120.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_top_front_left",
+                  "Size": 3,
+                  "Mass": 400.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 6150000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 768.75,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 16250.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 100.0,
+                    "ActivePowerEmission": 120.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 100.0,
+                    "StartIREmission": 120.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_top_front_right",
+                  "Size": 3,
+                  "Mass": 400.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 6150000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 768.75,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 16250.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 100.0,
+                    "ActivePowerEmission": 120.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 100.0,
+                    "StartIREmission": 120.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_bottom_rear_left",
+                  "Size": 3,
+                  "Mass": 400.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 6150000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 768.75,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 16250.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 100.0,
+                    "ActivePowerEmission": 120.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 100.0,
+                    "StartIREmission": 120.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_bottom_rear_right",
+                  "Size": 3,
+                  "Mass": 400.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 6150000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 768.75,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 16250.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 100.0,
+                    "ActivePowerEmission": 120.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 100.0,
+                    "StartIREmission": 120.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_side_rear_left",
+                  "Size": 3,
+                  "Mass": 400.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 11450000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 1431.25,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 16250.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 100.0,
+                    "ActivePowerEmission": 120.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 100.0,
+                    "StartIREmission": 120.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_side_rear_right",
+                  "Size": 3,
+                  "Mass": 400.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 11450000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 1431.25,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 16250.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 100.0,
+                    "ActivePowerEmission": 120.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 100.0,
+                    "StartIREmission": 120.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_top_rear_left",
+                  "Size": 3,
+                  "Mass": 400.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 6150000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 768.75,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 16250.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 100.0,
+                    "ActivePowerEmission": 120.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 100.0,
+                    "StartIREmission": 120.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_top_rear_right",
+                  "Size": 3,
+                  "Mass": 400.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 6150000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 768.75,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 16250.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 100.0,
+                    "ActivePowerEmission": 120.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 100.0,
+                    "StartIREmission": 120.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                }
+              ],
+              "ItemsQuantity": 12
+            }
+          },
+          "QuantumFuelTanks": {
+            "InstalledItems": [
+              {
+                "Name": "Internal Tank",
+                "Size": 1,
+                "Mass": 0.0,
+                "Grade": 1,
+                "Capacity": 1.85,
+                "Uneditable": true
+              }
+            ],
+            "ItemsQuantity": 1,
+            "TotalQuantumFuelCapacity": 1.85
+          },
+          "HydrogenFuelTanks": {
+            "InstalledItems": [
+              {
+                "Name": "hardpoint_fueltank1",
+                "Size": 1,
+                "Mass": 0.0,
+                "Grade": 1,
+                "Capacity": 97.5,
+                "Uneditable": true
+              }
+            ],
+            "ItemsQuantity": 1,
+            "TotalFuelCapacity": 97.5
+          }
+        },
+        "Systems": {
+          "Controllers": {
+            "CapacitorAssignment": {
+              "AfterBurner": {
+                "Regen": "f381647d-1e21-4dd2-b63b-567f012deeda",
+                "RegenNavMode": "f381647d-1e21-4dd2-b63b-567f012deeda",
+                "Usage": "822703ac-f458-433e-af38-352232852175",
+                "AngVelocity": [
+                  {
+                    "x": -0.4583936,
+                    "y": -0.1252766
+                  },
+                  {
+                    "x": 0.0,
+                    "y": 0.0
+                  },
+                  {
+                    "x": 0.4583936,
+                    "y": 0.1252766
+                  },
+                  {
+                    "x": 0.3870683,
+                    "y": 0.9817872
+                  },
+                  {
+                    "x": 1.0,
+                    "y": 1.0
+                  },
+                  {
+                    "x": 1.612932,
+                    "y": 1.018213
+                  }
+                ]
+              },
+              "ShieldEmitter": {
+                "Regen": "f381647d-1e21-4dd2-b63b-567f012deeda",
+                "RegenNavMode": "5c844120-12c9-49eb-b7dd-93db1fc43d00",
+                "Resistance": "cbc03b47-3bee-4529-9fd1-f256dc7efb09"
+              },
+              "PilotWeapon": {},
+              "TurretsWeapon": {}
+            },
+            "Ifcs": {
+              "InstalledItems": [
+                {
+                  "ClassName": "Controller_Flight_ANVL_Asgard",
+                  "ResourceNetwork": [
+                    {
+                      "Consumption": [
+                        {
+                          "Resource": "Power",
+                          "MinConsumptionFraction": 0.1666667,
+                          "Segment": 6.0
+                        }
+                      ],
+                      "Signatures": {
+                        "Electromagnetic": {
+                          "Nominal": 0.0,
+                          "DecayRate": 0.15
+                        },
+                        "Infrared": {
+                          "Nominal": 0.0,
+                          "DecayRate": 0.15
+                        }
+                      },
+                      "State": "Online"
+                    }
+                  ]
+                }
+              ]
+            },
+            "Missiles": {
+              "MaxArmed": 4.0,
+              "Cooldown": 4.0
+            },
+            "Weapons": {
+              "PoolSize": 4.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
+            },
+            "Wheeled": {}
+          },
+          "Shields": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_shield_generator_left",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "SHLD_GODI_S02_FullStop_SCItem",
+                "BaseLoadout": {
+                  "ClassName": "SHLD_GODI_S02_FullStop_SCItem",
+                  "Name": "FullStop",
+                  "Type": "Shield.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "Shield"
+                ],
+                "Uneditable": false
+              },
+              {
+                "PortName": "hardpoint_shield_generator_right",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "SHLD_GODI_S02_FullStop_SCItem",
+                "BaseLoadout": {
+                  "ClassName": "SHLD_GODI_S02_FullStop_SCItem",
+                  "Name": "FullStop",
+                  "Type": "Shield.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "Shield"
+                ],
+                "Uneditable": false
+              },
+              {
+                "PortName": "hardpoint_shield_generator_rear_left",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "SHLD_GODI_S02_FullStop_SCItem",
+                "BaseLoadout": {
+                  "ClassName": "SHLD_GODI_S02_FullStop_SCItem",
+                  "Name": "FullStop",
+                  "Type": "Shield.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "Shield"
+                ],
+                "Uneditable": false
+              },
+              {
+                "PortName": "hardpoint_shield_generator_rear_right",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "SHLD_GODI_S02_FullStop_SCItem",
+                "BaseLoadout": {
+                  "ClassName": "SHLD_GODI_S02_FullStop_SCItem",
+                  "Name": "FullStop",
+                  "Type": "Shield.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "Shield"
+                ],
+                "Uneditable": false
+              }
+            ],
+            "Hardpoints": 4,
+            "FaceType": "Bubble"
+          },
+          "Coolers": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_cooler_left",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "e41f4682-381a-453e-802b-521ce84a26b6",
+                "BaseLoadout": {
+                  "ClassName": "COOL_AEGS_S02_Arctic_SCItem",
+                  "Name": "Arctic",
+                  "Type": "Cooler.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "Cooler"
+                ],
+                "Uneditable": false
+              },
+              {
+                "PortName": "hardpoint_cooler_right",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "e41f4682-381a-453e-802b-521ce84a26b6",
+                "BaseLoadout": {
+                  "ClassName": "COOL_AEGS_S02_Arctic_SCItem",
+                  "Name": "Arctic",
+                  "Type": "Cooler.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "Cooler"
+                ],
+                "Uneditable": false
+              },
+              {
+                "PortName": "hardpoint_cooler_rear",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "e41f4682-381a-453e-802b-521ce84a26b6",
+                "BaseLoadout": {
+                  "ClassName": "COOL_AEGS_S02_Arctic_SCItem",
+                  "Name": "Arctic",
+                  "Type": "Cooler.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "Cooler"
+                ],
+                "Uneditable": false
+              }
+            ],
+            "Hardpoints": 3
+          },
+          "LifeSupport": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_lifesupport",
+                "MinSize": 1,
+                "MaxSize": 1,
+                "Loadout": "LFSP_TYDT_S01_ComfortAir",
+                "BaseLoadout": {
+                  "ClassName": "LFSP_TYDT_S01_ComfortAir",
+                  "Name": "LFSP_TYDT_S01_ComfortAir",
+                  "Type": "LifeSupportGenerator.UNDEFINED",
+                  "Grade": 3
+                },
+                "Types": [
+                  "LifeSupportGenerator"
+                ],
+                "Uneditable": false
+              }
+            ]
+          },
+          "FuelIntakes": {
+            "InstalledItems": [
+              {
+                "Name": "hardpoint_fuel_intake_left",
+                "Size": 1,
+                "Mass": 10.0,
+                "Grade": 1,
+                "FuelIntakeRate": 0.0,
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 0.5,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 25.0,
+                  "ActivePowerEmission": 50.0
+                },
+                "Heat": {
+                  "StartComponentTemperature": 300.0,
+                  "StartIRTemperature": 250.0,
+                  "StartIREmission": 25.0,
+                  "ThermalEnergyBase": 10.0,
+                  "ThermalEnergyDraw": 20.0
+                }
+              },
+              {
+                "Name": "hardpoint_fuel_intake_right",
+                "Size": 1,
+                "Mass": 10.0,
+                "Grade": 1,
+                "FuelIntakeRate": 0.0,
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 0.5,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 25.0,
+                  "ActivePowerEmission": 50.0
+                },
+                "Heat": {
+                  "StartComponentTemperature": 300.0,
+                  "StartIRTemperature": 250.0,
+                  "StartIREmission": 25.0,
+                  "ThermalEnergyBase": 10.0,
+                  "ThermalEnergyDraw": 20.0
+                }
+              }
+            ],
+            "ItemsQuantity": 2,
+            "TotalFuelIntakeRate": 0.0
+          },
+          "Countermeasures": {
+            "InstalledItems": [
+              {
+                "Name": "Aegis Gladius - Decoy Launcher",
+                "Size": 1,
+                "Mass": 150.0,
+                "Grade": 1,
+                "Ammunition": 48.0,
+                "Speed": 65.0,
+                "Range": 520.0,
+                "Type": "Decoy",
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 1.0,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 50.0,
+                  "ActivePowerEmission": 50.0
+                }
+              },
+              {
+                "Name": "Aegis Gladius - Noise Launcher",
+                "Size": 1,
+                "Mass": 150.0,
+                "Grade": 1,
+                "Ammunition": 5.0,
+                "Speed": 180.0,
+                "Range": 144.0,
+                "Type": "Noise",
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 1.0,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 50.0,
+                  "ActivePowerEmission": 50.0
+                }
+              },
+              {
+                "Name": "Aegis Gladius - Decoy Launcher",
+                "Size": 1,
+                "Mass": 150.0,
+                "Grade": 1,
+                "Ammunition": 48.0,
+                "Speed": 65.0,
+                "Range": 520.0,
+                "Type": "Decoy",
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 1.0,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 50.0,
+                  "ActivePowerEmission": 50.0
+                }
+              },
+              {
+                "Name": "Aegis Gladius - Noise Launcher",
+                "Size": 1,
+                "Mass": 150.0,
+                "Grade": 1,
+                "Ammunition": 5.0,
+                "Speed": 180.0,
+                "Range": 144.0,
+                "Type": "Noise",
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 1.0,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 50.0,
+                  "ActivePowerEmission": 50.0
+                }
+              },
+              {
+                "Name": "Aegis Gladius - Decoy Launcher",
+                "Size": 1,
+                "Mass": 150.0,
+                "Grade": 1,
+                "Ammunition": 48.0,
+                "Speed": 65.0,
+                "Range": 520.0,
+                "Type": "Decoy",
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 1.0,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 50.0,
+                  "ActivePowerEmission": 50.0
+                }
+              },
+              {
+                "Name": "Aegis Gladius - Noise Launcher",
+                "Size": 1,
+                "Mass": 150.0,
+                "Grade": 1,
+                "Ammunition": 5.0,
+                "Speed": 180.0,
+                "Range": 144.0,
+                "Type": "Noise",
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 1.0,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 50.0,
+                  "ActivePowerEmission": 50.0
+                }
+              },
+              {
+                "Name": "Aegis Gladius - Decoy Launcher",
+                "Size": 1,
+                "Mass": 150.0,
+                "Grade": 1,
+                "Ammunition": 48.0,
+                "Speed": 65.0,
+                "Range": 520.0,
+                "Type": "Decoy",
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 1.0,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 50.0,
+                  "ActivePowerEmission": 50.0
+                }
+              },
+              {
+                "Name": "Aegis Gladius - Noise Launcher",
+                "Size": 1,
+                "Mass": 150.0,
+                "Grade": 1,
+                "Ammunition": 5.0,
+                "Speed": 180.0,
+                "Range": 144.0,
+                "Type": "Noise",
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 1.0,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 50.0,
+                  "ActivePowerEmission": 50.0
+                }
+              }
+            ],
+            "ItemsQuantity": 8
+          }
+        },
+        "Avionics": {
+          "FlightBlade": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_controller_flight",
+                "MinSize": 1,
+                "MaxSize": 1,
+                "Loadout": "Controller_Flight_ANVL_Asgard",
+                "BaseLoadout": {
+                  "ClassName": "Controller_Flight_ANVL_Asgard",
+                  "Name": "Flight Blade",
+                  "Type": "FlightController.UNDEFINED",
+                  "Grade": 1
+                },
+                "Types": [
+                  "FlightController"
+                ],
+                "Flags": [
+                  "invisible",
+                  "uneditable"
+                ],
+                "Uneditable": true
+              }
+            ]
+          },
+          "Radars": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_radar",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "RADR_CHCO_S02_Surveyor",
+                "BaseLoadout": {
+                  "ClassName": "RADR_CHCO_S02_Surveyor",
+                  "Name": "Surveyor",
+                  "Type": "Radar.MidRangeRadar",
+                  "Grade": 1,
+                  "Class": "Industrial"
+                },
+                "Types": [
+                  "Radar.ShortRangeRadar",
+                  "Radar.MidRangeRadar"
+                ],
+                "Flags": [
+                  "uneditable"
+                ],
+                "Uneditable": true
+              }
+            ],
+            "DetectionCapability": [
+              {
+                "Name": "Surveyor",
+                "PortName": "hardpoint_radar",
+                "Size": 2,
+                "Sensitivity": {
+                  "IRSensitivity": 0.9,
+                  "EMSensitivity": 0.9,
+                  "CSSensitivity": 0.9,
+                  "RSSensitivity": 0.85
+                },
+                "GroundSensitivity": {
+                  "IRSensitivity": 0.25,
+                  "EMSensitivity": 0.25,
+                  "CSSensitivity": 0.25,
+                  "RSSensitivity": 0.25
+                },
+                "Piercing": {
+                  "IRPiercing": 0.25,
+                  "EMPiercing": 0.25,
+                  "CSPiercing": 0.25,
+                  "RSPiercing": 1.0
+                }
+              }
+            ],
+            "ItemsQuantity": 1
+          },
+          "SelfDestruct": {
+            "InstalledItems": [
+              {
+                "Name": "RSI Self Destruct Long",
+                "Size": 1,
+                "Mass": 0.0,
+                "Grade": 1,
+                "Uneditable": true,
+                "Countdown": 30.0,
+                "Damage": 5000.0,
+                "MinRadius": 5.0,
+                "MaxRadius": 50.0
+              }
+            ],
+            "ItemsQuantity": 1
+          }
+        },
+        "Modules": {},
+        "CargoGrids": {
+          "InstalledItems": [
+            {
+              "Name": "ANVL_Asgard_CargoGrid",
+              "Mass": 0.0,
+              "Size": 1,
+              "Grade": 1,
+              "Capacity": 180.0,
+              "GridProperties": {
+                "Width": 5.0,
+                "Height": 4.0,
+                "Depth": 9.0,
+                "MinContainerSize": {
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                },
+                "MaxContainerSize": {
+                  "Capacity": 32.0,
+                  "Width": 2.0,
+                  "Height": 8.0,
+                  "Depth": 2.0
+                }
+              },
+              "Uneditable": true,
+              "Power": {
+                "PowerBase": 0.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 0.0,
+                "ActivePowerEmission": 2.64
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 132.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            }
+          ],
+          "ItemsQuantity": 1
+        },
+        "CargoContainers": {
+          "ItemsQuantity": 0
+        },
+        "Storage": {
+          "ItemsQuantity": 0
+        },
+        "WeaponsRacks": {
+          "ItemsQuantity": 0
+        },
+        "Usables": {
+          "InstalledItems": [
+            {
+              "Name": "hardpoint_dashboard_pilot",
+              "Size": 1,
+              "Mass": 0.0,
+              "Power": {
+                "PowerBase": 1.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 1.0,
+                "ActivePowerEmission": 1.0
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 5.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            }
+          ],
+          "ItemsQuantity": 1
+        },
+        "Paints": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_paint",
+              "MinSize": 1,
+              "MaxSize": 1,
+              "Types": [
+                "Paints"
+              ],
+              "RequiredTags": [
+                "Paint_Asgard"
+              ],
+              "PortTags": [
+                "Paint_Asgard"
+              ],
+              "Uneditable": false
+            }
+          ],
+          "Hardpoints": 1
+        },
+        "Flairs": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_cockpit_flair",
+              "MinSize": 1,
+              "MaxSize": 1,
+              "Types": [
+                "Flair_Cockpit.Flair_Static"
+              ],
+              "Uneditable": false
+            },
+            {
+              "PortName": "hardpoint_cockpit_flair_hang",
+              "MinSize": 1,
+              "MaxSize": 1,
+              "Types": [
+                "Flair_Cockpit.Flair_Hanging"
+              ],
+              "Uneditable": false
+            }
+          ],
+          "Hardpoints": 2
         }
       }
     }
@@ -46797,18 +49018,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Pisces_C8R",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Pisces_C8R",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "ANVL_Pisces_C8R_Blade"
+                ],
+                "PortTags": [
+                  "ANVL_Pisces_C8R_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -48167,18 +50395,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Pisces_C8X",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Pisces_C8X",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "ANVL_Pisces_C8X_Blade"
+                ],
+                "PortTags": [
+                  "ANVL_Pisces_C8X_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -49566,18 +51801,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Pisces",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Pisces",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$ANVL_Pisces_Base_Blade"
+                ],
+                "PortTags": [
+                  "ANVL_Pisces_Base_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -51266,7 +53508,12 @@ const shipHardpoints = [
               "Cooldown": 0.0
             },
             "Weapons": {
-              "PoolSize": 8.0
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -51471,7 +53718,7 @@ const shipHardpoints = [
                 "Loadout": "6897d4f9-86f2-4789-841a-155ba2884df6",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Carrack",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -53054,17 +55301,17 @@ const shipHardpoints = [
           "Parts": [
             {
               "Name": "shield_generator_cover",
-              "MaximumDamage": 40.0,
+              "MaximumDamage": 400.0,
               "DetachRatio": 1.0
             },
             {
               "Name": "cockpitbay_outerdoor_left",
-              "MaximumDamage": 100.0,
+              "MaximumDamage": 500.0,
               "DetachRatio": 1.0
             },
             {
               "Name": "cockpitbay_outerdoor_right",
-              "MaximumDamage": 100.0,
+              "MaximumDamage": 500.0,
               "DetachRatio": 1.0
             },
             {
@@ -53088,27 +55335,27 @@ const shipHardpoints = [
           "Parts": [
             {
               "Name": "amunition_hatch_right",
-              "MaximumDamage": 40.0,
+              "MaximumDamage": 400.0,
               "DetachRatio": 1.0
             },
             {
               "Name": "amunition_hatch_left",
-              "MaximumDamage": 40.0,
+              "MaximumDamage": 400.0,
               "DetachRatio": 1.0
             },
             {
               "Name": "engine_cover_left",
-              "MaximumDamage": 40.0,
+              "MaximumDamage": 400.0,
               "DetachRatio": 1.0
             },
             {
               "Name": "engine_cover_right",
-              "MaximumDamage": 40.0,
+              "MaximumDamage": 400.0,
               "DetachRatio": 1.0
             },
             {
               "Name": "sidefin_left",
-              "MaximumDamage": 40.0,
+              "MaximumDamage": 400.0,
               "DetachRatio": 1.0
             },
             {
@@ -53119,8 +55366,13 @@ const shipHardpoints = [
                   "Name": "tailfin_left_rudder_control",
                   "Parts": [
                     {
+                      "Name": "geo_tailfin_left_rudder",
+                      "MaximumDamage": 200.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
                       "Name": "tailfin_left_rudder",
-                      "MaximumDamage": 40.0,
+                      "MaximumDamage": 400.0,
                       "DetachRatio": 1.0
                     }
                   ]
@@ -53130,7 +55382,7 @@ const shipHardpoints = [
             },
             {
               "Name": "sidefin_right",
-              "MaximumDamage": 40.0,
+              "MaximumDamage": 400.0,
               "DetachRatio": 1.0
             },
             {
@@ -53141,8 +55393,8 @@ const shipHardpoints = [
                   "Name": "tailfin_right_rudder_control",
                   "Parts": [
                     {
-                      "Name": "tailfin_right_rudder",
-                      "MaximumDamage": 40.0,
+                      "Name": "geo_tailfin_right_rudder",
+                      "MaximumDamage": 200.0,
                       "DetachRatio": 1.0
                     }
                   ]
@@ -53152,7 +55404,7 @@ const shipHardpoints = [
             },
             {
               "Name": "tail",
-              "MaximumDamage": 200.0,
+              "MaximumDamage": 2250.0,
               "DetachRatio": 0.0
             },
             {
@@ -53161,17 +55413,17 @@ const shipHardpoints = [
               "Parts": [
                 {
                   "Name": "wing_right_tip",
-                  "MaximumDamage": 300.0,
+                  "MaximumDamage": 400.0,
                   "Parts": [
                     {
                       "Name": "wing_flap_side_right",
-                      "MaximumDamage": 160.0,
+                      "MaximumDamage": 200.0,
                       "DetachRatio": 1.0
                     },
                     {
                       "Name": "wing_flap_main_right",
-                      "MaximumDamage": 160.0,
-                      "DetachRatio": 0.0
+                      "MaximumDamage": 200.0,
+                      "DetachRatio": 1.0
                     }
                   ],
                   "DetachRatio": 1.0
@@ -53181,22 +55433,22 @@ const shipHardpoints = [
             },
             {
               "Name": "cockpitbay_gunnerdoor",
-              "MaximumDamage": 40.0,
+              "MaximumDamage": 400.0,
               "DetachRatio": 1.0
             },
             {
               "Name": "hull_avionicsaccess_panel",
-              "MaximumDamage": 40.0,
+              "MaximumDamage": 400.0,
               "DetachRatio": 1.0
             },
             {
               "Name": "hull_fuelaccess_panel_left",
-              "MaximumDamage": 40.0,
+              "MaximumDamage": 400.0,
               "DetachRatio": 1.0
             },
             {
               "Name": "hull_fuelaccess_panel_right",
-              "MaximumDamage": 40.0,
+              "MaximumDamage": 400.0,
               "DetachRatio": 1.0
             },
             {
@@ -53206,40 +55458,32 @@ const shipHardpoints = [
               "Name": "hardpoint_engine_right"
             },
             {
-              "Name": "hardpoint_thruster_top_front_left",
-              "MaximumDamage": 50.0
+              "Name": "hardpoint_thruster_top_front_left"
             },
             {
-              "Name": "hardpoint_thruster_top_front_right",
-              "MaximumDamage": 50.0
+              "Name": "hardpoint_thruster_top_front_right"
             },
             {
-              "Name": "hardpoint_thruster_top_back_right",
-              "MaximumDamage": 50.0
+              "Name": "hardpoint_thruster_top_back_right"
             },
             {
-              "Name": "hardpoint_thruster_top_back_left",
-              "MaximumDamage": 50.0
+              "Name": "hardpoint_thruster_top_back_left"
             },
             {
-              "Name": "hardpoint_thruster_bottom_back_left",
-              "MaximumDamage": 50.0
+              "Name": "hardpoint_thruster_bottom_back_left"
             },
             {
-              "Name": "hardpoint_thruster_bottom_front_left",
-              "MaximumDamage": 50.0
+              "Name": "hardpoint_thruster_bottom_front_left"
             },
             {
-              "Name": "hardpoint_thruster_bottom_back_right",
-              "MaximumDamage": 50.0
+              "Name": "hardpoint_thruster_bottom_back_right"
             },
             {
-              "Name": "hardpoint_thruster_bottom_front_right",
-              "MaximumDamage": 50.0
+              "Name": "hardpoint_thruster_bottom_front_right"
             },
             {
               "Name": "bombbay_outerdoor_left",
-              "MaximumDamage": 60.0,
+              "MaximumDamage": 600.0,
               "DetachRatio": 1.0
             },
             {
@@ -53249,11 +55493,11 @@ const shipHardpoints = [
             },
             {
               "Name": "core_bottomshield",
-              "MaximumDamage": 400.0,
+              "MaximumDamage": 800.0,
               "Parts": [
                 {
                   "Name": "core_topshield",
-                  "MaximumDamage": 200.0,
+                  "MaximumDamage": 800.0,
                   "DetachRatio": 1.0
                 }
               ],
@@ -53265,17 +55509,17 @@ const shipHardpoints = [
               "Parts": [
                 {
                   "Name": "wing_left_tip",
-                  "MaximumDamage": 300.0,
+                  "MaximumDamage": 400.0,
                   "Parts": [
                     {
                       "Name": "wing_flap_side_left",
-                      "MaximumDamage": 160.0,
+                      "MaximumDamage": 200.0,
                       "DetachRatio": 1.0
                     },
                     {
                       "Name": "wing_flap_main_left",
-                      "MaximumDamage": 160.0,
-                      "DetachRatio": 0.0
+                      "MaximumDamage": 200.0,
+                      "DetachRatio": 1.0
                     }
                   ],
                   "DetachRatio": 1.0
@@ -53285,7 +55529,7 @@ const shipHardpoints = [
             }
           ],
           "ShipDestructionDamage": 5500.0,
-          "DetachRatio": 1.0
+          "DetachRatio": 0.0
         }
       ]
     },
@@ -54423,7 +56667,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 4.0
+              "PoolSize": 4.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 2.5,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -54642,7 +56891,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Gladiator",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Gladiator",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -56017,7 +58266,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Hawk",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hawk",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -56605,7 +58854,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -56664,7 +58914,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -56763,7 +59014,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -56822,7 +59074,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -57613,7 +59866,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Hornet_F7A_Mk1",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hornet_F7A_Mk1",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -58037,7 +60290,8 @@ const shipHardpoints = [
               },
               "Types": [
                 "Turret.BallTurret",
-                "Module"
+                "Module",
+                "QuantumInterdictionGenerator"
               ],
               "Flags": [
                 "center"
@@ -59199,7 +61453,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Hornet_F7A_Mk2",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hornet_F7A_Mk2",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -59688,7 +61942,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -59806,7 +62061,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -60582,7 +62838,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Hornet_F7C",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hornet_F7C",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -62077,7 +64333,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Hornet_F7CM",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hornet_F7CM",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -64216,7 +66472,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Hornet_F7CM",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hornet_F7CM",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -66033,7 +68289,7 @@ const shipHardpoints = [
                 "Loadout": "12d6241a-7151-4c05-ad82-316b32b0aa3c",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hornet_F7CM_Mk2",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -67727,7 +69983,7 @@ const shipHardpoints = [
                 "Loadout": "12d6241a-7151-4c05-ad82-316b32b0aa3c",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hornet_F7CM_Mk2",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -68253,7 +70509,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -68371,7 +70628,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -69147,7 +71405,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Hornet_F7CR",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hornet_F7CR",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -69570,7 +71828,8 @@ const shipHardpoints = [
               },
               "Types": [
                 "Turret.BallTurret",
-                "Module"
+                "Module",
+                "QuantumInterdictionGenerator"
               ],
               "Flags": [
                 "center"
@@ -70636,7 +72895,7 @@ const shipHardpoints = [
                 "Loadout": "a5e39736-be94-4214-8063-c8fa9aabe24d",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hornet_F7CR_Mk2",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -71133,7 +73392,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -71251,7 +73511,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -72027,7 +74288,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Hornet_F7CS",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hornet_F7CS",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -72451,7 +74712,8 @@ const shipHardpoints = [
               },
               "Types": [
                 "Turret.BallTurret",
-                "Module"
+                "Module",
+                "QuantumInterdictionGenerator"
               ],
               "Flags": [
                 "center"
@@ -73517,7 +75779,7 @@ const shipHardpoints = [
                 "Loadout": "dc5cb70d-3200-4d86-b5cf-358af1b425e5",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hornet_F7CS_Mk2",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -73931,7 +76193,8 @@ const shipHardpoints = [
               },
               "Types": [
                 "Turret.BallTurret",
-                "Module"
+                "Module",
+                "QuantumInterdictionGenerator"
               ],
               "Flags": [
                 "center"
@@ -74997,7 +77260,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Hornet_F7C_Mk2",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hornet_F7C_Mk2",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -75100,10 +77363,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
                 }
               },
               "Uneditable": true,
@@ -75559,7 +77822,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -75677,7 +77941,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -76453,7 +78718,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Hornet_F7C",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hornet_F7C",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -77832,7 +80097,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 6.0
+              "PoolSize": 6.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 2.5,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -78034,7 +80304,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Hurricane",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Hurricane",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -79881,7 +82151,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Lightning_F8C",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Lightning_F8C",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -81820,7 +84090,7 @@ const shipHardpoints = [
                 "Loadout": "db89de23-e7d8-4ec9-b532-6ac9af8f14b6",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Terrapin",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -83099,7 +85369,7 @@ const shipHardpoints = [
                 "Loadout": "da03cfe3-3bba-4707-bb81-a2895f00aeff",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Terrapin_Medic",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -83275,7 +85545,7 @@ const shipHardpoints = [
       "Structure": [
         {
           "Name": "Nose",
-          "MaximumDamage": 10000.0,
+          "MaximumDamage": 25000.0,
           "Parts": [
             {
               "Name": "hardpoint_thruster_retro_left"
@@ -83327,7 +85597,7 @@ const shipHardpoints = [
             },
             {
               "Name": "Tail",
-              "MaximumDamage": 10000.0,
+              "MaximumDamage": 25000.0,
               "Parts": [
                 {
                   "Name": "hardpoint_thruster_bottom_rear_left"
@@ -83363,7 +85633,7 @@ const shipHardpoints = [
                   "Parts": [
                     {
                       "Name": "Engine_RR_Split",
-                      "MaximumDamage": 2500.0,
+                      "MaximumDamage": 6500.0,
                       "Parts": [
                         {
                           "Name": "hardpoint_thruster_main_rear_right"
@@ -83385,7 +85655,7 @@ const shipHardpoints = [
                   "Parts": [
                     {
                       "Name": "Engine_RL_Split",
-                      "MaximumDamage": 2500.0,
+                      "MaximumDamage": 6500.0,
                       "Parts": [
                         {
                           "Name": "hardpoint_thruster_main_rear_left"
@@ -83408,7 +85678,7 @@ const shipHardpoints = [
                   "Name": "hardpoint_thruster_aux_right"
                 }
               ],
-              "ShipDestructionDamage": 10000.0,
+              "ShipDestructionDamage": 25000.0,
               "DetachRatio": 1.0
             },
             {
@@ -83417,7 +85687,7 @@ const shipHardpoints = [
               "Parts": [
                 {
                   "Name": "Engine_FL_Split",
-                  "MaximumDamage": 2500.0,
+                  "MaximumDamage": 6500.0,
                   "Parts": [
                     {
                       "Name": "hardpoint_thruster_main_front_left"
@@ -83434,7 +85704,7 @@ const shipHardpoints = [
               "Parts": [
                 {
                   "Name": "Engine_FR_Split",
-                  "MaximumDamage": 2500.0,
+                  "MaximumDamage": 6500.0,
                   "Parts": [
                     {
                       "Name": "hardpoint_thruster_main_front_right"
@@ -83456,7 +85726,7 @@ const shipHardpoints = [
               "DetachRatio": 0.0
             }
           ],
-          "ShipDestructionDamage": 10000.0,
+          "ShipDestructionDamage": 25000.0,
           "DetachRatio": 1.0
         }
       ]
@@ -83762,13 +86032,6 @@ const shipHardpoints = [
               "PortName": "hardpoint_turret_door_right",
               "MinSize": 3,
               "MaxSize": 3,
-              "Loadout": "8bb0e200-c486-44df-b944-84bf2fc755d3",
-              "BaseLoadout": {
-                "ClassName": "ANVL_Valkyrie_Turret_Door_Right",
-                "Name": "Turret",
-                "Type": "TurretBase.MannedTurret",
-                "Grade": 1
-              },
               "Types": [
                 "TurretBase.MannedTurret"
               ],
@@ -83778,67 +86041,12 @@ const shipHardpoints = [
               "RequiredTags": [
                 "$ANVL_Valkyrie"
               ],
-              "Turret": true,
-              "Uneditable": true,
-              "Ports": [
-                {
-                  "PortName": "hardpoint_turret_weapon",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "80ae6d83-7d8a-4357-b109-a0154418bae5",
-                  "BaseLoadout": {
-                    "ClassName": "Mount_Gimbal_S1",
-                    "Name": "VariPuck S1 Gimbal Mount",
-                    "Type": "Turret.GunTurret",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun",
-                    "Turret.GunTurret"
-                  ],
-                  "Tags": [
-                    "$ANVL_Valkyrie"
-                  ],
-                  "Gimballed": true,
-                  "Uneditable": false,
-                  "Ports": [
-                    {
-                      "PortName": "hardpoint_class_2",
-                      "MinSize": 1,
-                      "MaxSize": 1,
-                      "Loadout": "81645f3b-2c01-4fc4-aa9f-ed860b976058",
-                      "BaseLoadout": {
-                        "ClassName": "GATS_BallisticGatling_S1",
-                        "Name": "YellowJacket GT-210 Gatling",
-                        "Type": "WeaponGun.Gun",
-                        "Grade": 1,
-                        "Class": ""
-                      },
-                      "Types": [
-                        "WeaponGun.Gun"
-                      ],
-                      "Tags": [
-                        "gimbalMount",
-                        "flightReady"
-                      ],
-                      "Uneditable": false
-                    }
-                  ]
-                }
-              ]
+              "Uneditable": true
             },
             {
               "PortName": "hardpoint_turret_door_left",
               "MinSize": 3,
               "MaxSize": 3,
-              "Loadout": "4e806301-380d-41c1-8147-27ec38f460b3",
-              "BaseLoadout": {
-                "ClassName": "ANVL_Valkyrie_Turret_Door_Left",
-                "Name": "Turret",
-                "Type": "TurretBase.MannedTurret",
-                "Grade": 1
-              },
               "Types": [
                 "TurretBase.MannedTurret"
               ],
@@ -83848,55 +86056,7 @@ const shipHardpoints = [
               "RequiredTags": [
                 "$ANVL_Valkyrie"
               ],
-              "Turret": true,
-              "Uneditable": true,
-              "Ports": [
-                {
-                  "PortName": "hardpoint_turret_weapon",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "80ae6d83-7d8a-4357-b109-a0154418bae5",
-                  "BaseLoadout": {
-                    "ClassName": "Mount_Gimbal_S1",
-                    "Name": "VariPuck S1 Gimbal Mount",
-                    "Type": "Turret.GunTurret",
-                    "Grade": 1,
-                    "Class": ""
-                  },
-                  "Types": [
-                    "WeaponGun.Gun",
-                    "Turret.GunTurret"
-                  ],
-                  "Tags": [
-                    "$ANVL_Valkyrie"
-                  ],
-                  "Gimballed": true,
-                  "Uneditable": false,
-                  "Ports": [
-                    {
-                      "PortName": "hardpoint_class_2",
-                      "MinSize": 1,
-                      "MaxSize": 1,
-                      "Loadout": "81645f3b-2c01-4fc4-aa9f-ed860b976058",
-                      "BaseLoadout": {
-                        "ClassName": "GATS_BallisticGatling_S1",
-                        "Name": "YellowJacket GT-210 Gatling",
-                        "Type": "WeaponGun.Gun",
-                        "Grade": 1,
-                        "Class": ""
-                      },
-                      "Types": [
-                        "WeaponGun.Gun"
-                      ],
-                      "Tags": [
-                        "gimbalMount",
-                        "flightReady"
-                      ],
-                      "Uneditable": false
-                    }
-                  ]
-                }
-              ]
+              "Uneditable": true
             }
           ],
           "Hardpoints": 96
@@ -84172,9 +86332,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 3000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 1873051.0,
+                  "ThrustCapacity": 2375000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 234.1314,
+                  "FuelUsagePerSecond": 296.875,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17600.0
@@ -84198,9 +86358,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 3000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 1873051.0,
+                  "ThrustCapacity": 2375000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 234.1314,
+                  "FuelUsagePerSecond": 296.875,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17600.0
@@ -84224,9 +86384,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 3000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 10395400.0,
+                  "ThrustCapacity": 12650000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 1299.425,
+                  "FuelUsagePerSecond": 1581.25,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17600.0
@@ -84250,9 +86410,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 3000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 10395400.0,
+                  "ThrustCapacity": 12650000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 1299.425,
+                  "FuelUsagePerSecond": 1581.25,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17600.0
@@ -84276,9 +86436,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 3000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 1912392.0,
+                  "ThrustCapacity": 2375000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 239.049,
+                  "FuelUsagePerSecond": 296.875,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17600.0
@@ -84302,9 +86462,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 3000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 1912392.0,
+                  "ThrustCapacity": 2375000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 239.049,
+                  "FuelUsagePerSecond": 296.875,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17600.0
@@ -84333,9 +86493,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 500.0,
                   "Grade": 1,
-                  "ThrustCapacity": 5432978.0,
+                  "ThrustCapacity": 7900000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 679.1222,
+                  "FuelUsagePerSecond": 987.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 16800.0
@@ -84359,9 +86519,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 500.0,
                   "Grade": 1,
-                  "ThrustCapacity": 5432978.0,
+                  "ThrustCapacity": 7900000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 679.1222,
+                  "FuelUsagePerSecond": 987.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 16800.0
@@ -84393,9 +86553,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3423210.0,
+                  "ThrustCapacity": 6720000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 427.9012,
+                  "FuelUsagePerSecond": 840.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 16250.0
@@ -84419,9 +86579,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3423210.0,
+                  "ThrustCapacity": 6720000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 427.9012,
+                  "FuelUsagePerSecond": 840.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 16250.0
@@ -84445,9 +86605,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 12493930.0,
+                  "ThrustCapacity": 12700000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 1561.7412,
+                  "FuelUsagePerSecond": 1587.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 16250.0
@@ -84471,9 +86631,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 12493930.0,
+                  "ThrustCapacity": 12700000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 1561.7412,
+                  "FuelUsagePerSecond": 1587.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 16250.0
@@ -84497,9 +86657,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3423210.0,
+                  "ThrustCapacity": 6720000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 427.9012,
+                  "FuelUsagePerSecond": 840.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 16250.0
@@ -84523,9 +86683,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3423210.0,
+                  "ThrustCapacity": 6720000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 427.9012,
+                  "FuelUsagePerSecond": 840.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 16250.0
@@ -84549,9 +86709,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3423210.0,
+                  "ThrustCapacity": 6720000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 427.9012,
+                  "FuelUsagePerSecond": 840.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 16250.0
@@ -84575,9 +86735,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3423210.0,
+                  "ThrustCapacity": 6720000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 427.9012,
+                  "FuelUsagePerSecond": 840.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 16250.0
@@ -84601,9 +86761,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 12493930.0,
+                  "ThrustCapacity": 12700000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 1561.7412,
+                  "FuelUsagePerSecond": 1587.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 16250.0
@@ -84627,9 +86787,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 12493930.0,
+                  "ThrustCapacity": 12700000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 1561.7412,
+                  "FuelUsagePerSecond": 1587.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 16250.0
@@ -84653,9 +86813,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3423210.0,
+                  "ThrustCapacity": 6720000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 427.9012,
+                  "FuelUsagePerSecond": 840.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 16250.0
@@ -84679,9 +86839,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3423210.0,
+                  "ThrustCapacity": 6720000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 427.9012,
+                  "FuelUsagePerSecond": 840.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 16250.0
@@ -84721,39 +86881,15 @@ const shipHardpoints = [
           "HydrogenFuelTanks": {
             "InstalledItems": [
               {
-                "Name": "hardpoint_fueltank3",
-                "Size": 1,
-                "Mass": 0.0,
-                "Grade": 1,
-                "Capacity": 23.625,
-                "Uneditable": true
-              },
-              {
                 "Name": "hardpoint_fueltank1",
                 "Size": 1,
                 "Mass": 0.0,
                 "Grade": 1,
-                "Capacity": 23.625,
-                "Uneditable": true
-              },
-              {
-                "Name": "hardpoint_fueltank2",
-                "Size": 1,
-                "Mass": 0.0,
-                "Grade": 1,
-                "Capacity": 23.625,
-                "Uneditable": true
-              },
-              {
-                "Name": "hardpoint_fueltank4",
-                "Size": 1,
-                "Mass": 0.0,
-                "Grade": 1,
-                "Capacity": 23.625,
+                "Capacity": 94.5,
                 "Uneditable": true
               }
             ],
-            "ItemsQuantity": 4,
+            "ItemsQuantity": 1,
             "TotalFuelCapacity": 94.5
           }
         },
@@ -84833,7 +86969,12 @@ const shipHardpoints = [
               "Cooldown": 0.0
             },
             "Weapons": {
-              "PoolSize": 8.0
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -85101,7 +87242,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ANVL_Valkyrie",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ANVL_Valkyrie",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -87326,7 +89467,7 @@ const shipHardpoints = [
               }
             ],
             "Hardpoints": 1,
-            "FaceType": "Bubble"
+            "FaceType": "Quadrant"
           },
           "Coolers": {
             "InstalledItems": [
@@ -87479,7 +89620,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ARGO_MOLE",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ARGO_MOLE",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -88866,18 +91007,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ARGO_MPUV",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ARGO_MPUV",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$ARGO_MPUV_Base_Blade"
+                ],
+                "PortTags": [
+                  "ARGO_MPUV_Base_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -90090,18 +92238,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ARGO_MPUV_1T",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ARGO_MPUV_1T",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$ARGO_MPUV_1T_Blade"
+                ],
+                "PortTags": [
+                  "ARGO_MPUV_1T_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -91224,18 +93379,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ARGO_MPUV_Transport",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ARGO_MPUV_Transport",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$ARGO_MPUV_Transport_Blade"
+                ],
+                "PortTags": [
+                  "ARGO_MPUV_Transport_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -91464,6 +93626,26 @@ const shipHardpoints = [
               "DetachRatio": 0.0
             },
             {
+              "Name": "ARGO_RAFT_FR_VTOL_Mesh",
+              "MaximumDamage": 250.0,
+              "Parts": [
+                {
+                  "Name": "hardpoint_thruster_VTOL_front_right"
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "ARGO_RAFT_FL_VTOL_Mesh",
+              "MaximumDamage": 250.0,
+              "Parts": [
+                {
+                  "Name": "hardpoint_thruster_VTOL_front_left"
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
               "Name": "Rear_Left",
               "MaximumDamage": 7500.0,
               "Parts": [
@@ -91499,26 +93681,6 @@ const shipHardpoints = [
                 }
               ],
               "DetachRatio": 0.0
-            },
-            {
-              "Name": "ARGO_RAFT_FR_VTOL_Mesh",
-              "MaximumDamage": 250.0,
-              "Parts": [
-                {
-                  "Name": "hardpoint_thruster_VTOL_front_right"
-                }
-              ],
-              "DetachRatio": 1.0
-            },
-            {
-              "Name": "ARGO_RAFT_FL_VTOL_Mesh",
-              "MaximumDamage": 250.0,
-              "Parts": [
-                {
-                  "Name": "hardpoint_thruster_VTOL_front_left"
-                }
-              ],
-              "DetachRatio": 1.0
             }
           ],
           "ShipDestructionDamage": 40717.7,
@@ -91720,7 +93882,69 @@ const shipHardpoints = [
         "InterdictionHardpoints": {},
         "MiningHardpoints": {},
         "SalvageHardpoints": {},
-        "UtilityHardpoints": {},
+        "UtilityHardpoints": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_remote_tractor_turret",
+              "MinSize": 4,
+              "MaxSize": 4,
+              "Loadout": "2b66c594-b102-4941-b93b-6c7501bf53ae",
+              "BaseLoadout": {
+                "ClassName": "ARGO_RAFT_SCItem_Remote_Turret_Tractor",
+                "Name": "Remote Turret",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.GunTurret"
+              ],
+              "RequiredTags": [
+                "$ARGO_RAFT_Tractor_Turret"
+              ],
+              "PortTags": [
+                "ARGO_RAFT_Tractor_Turret"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "turret_left",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "8c16ee3d-78fb-4fef-a369-b3d42952ec33",
+                  "BaseLoadout": {
+                    "ClassName": "GRIN_TractorBeam_S2",
+                    "Name": "SureGrip S2 Tractor Beam",
+                    "Type": "TractorBeam.UNDEFINED",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "TractorBeam"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "ARGO_RAFT_Tractor_Turret"
+                  ],
+                  "Flags": [
+                    "uneditable"
+                  ],
+                  "Uneditable": true
+                }
+              ],
+              "RemoteController": {
+                "Slaved": false,
+                "Seats": [
+                  "ARGO_RAFT_SCItem_Seat_Cargo"
+                ]
+              }
+            }
+          ],
+          "Hardpoints": 1
+        },
         "UtilityTurrets": {}
       },
       "Components": {
@@ -91816,9 +94040,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 3000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3000000.0,
+                  "ThrustCapacity": 5000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 375.0,
+                  "FuelUsagePerSecond": 625.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 4500.0
@@ -91842,9 +94066,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 3000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3000000.0,
+                  "ThrustCapacity": 5000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 375.0,
+                  "FuelUsagePerSecond": 625.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 4500.0
@@ -91868,9 +94092,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 3000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3000000.0,
+                  "ThrustCapacity": 5000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 375.0,
+                  "FuelUsagePerSecond": 625.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 4500.0
@@ -91894,9 +94118,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 3000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3000000.0,
+                  "ThrustCapacity": 5000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 375.0,
+                  "FuelUsagePerSecond": 625.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 4500.0
@@ -91925,9 +94149,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 500.0,
                   "Grade": 1,
-                  "ThrustCapacity": 4980000.0,
+                  "ThrustCapacity": 7000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 622.5,
+                  "FuelUsagePerSecond": 875.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 4500.0
@@ -91951,9 +94175,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 500.0,
                   "Grade": 1,
-                  "ThrustCapacity": 4980000.0,
+                  "ThrustCapacity": 7000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 622.5,
+                  "FuelUsagePerSecond": 875.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 4500.0
@@ -91979,32 +94203,6 @@ const shipHardpoints = [
               "InstalledItems": [
                 {
                   "Name": "hardpoint_thruster_VTOL_rear_right",
-                  "Size": 1,
-                  "Mass": 400.0,
-                  "Grade": 1,
-                  "ThrustCapacity": 1490000.0,
-                  "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 186.25,
-                  "Uneditable": true,
-                  "Durability": {
-                    "Health": 4500.0
-                  },
-                  "Power": {
-                    "PowerBase": 20.0,
-                    "PowerDraw": 24.0,
-                    "IdlePowerEmission": 0.0,
-                    "ActivePowerEmission": 0.0
-                  },
-                  "Heat": {
-                    "StartComponentTemperature": 300.0,
-                    "StartIRTemperature": 250.0,
-                    "StartIREmission": 300.0,
-                    "ThermalEnergyBase": 500.0,
-                    "ThermalEnergyDraw": 1250.0
-                  }
-                },
-                {
-                  "Name": "hardpoint_thruster_VTOL_rear_left",
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
@@ -92080,6 +94278,32 @@ const shipHardpoints = [
                     "ThermalEnergyBase": 500.0,
                     "ThermalEnergyDraw": 1250.0
                   }
+                },
+                {
+                  "Name": "hardpoint_thruster_VTOL_rear_left",
+                  "Size": 1,
+                  "Mass": 400.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1490000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 186.25,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 4500.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
                 }
               ],
               "ItemsQuantity": 4
@@ -92091,9 +94315,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3360000.0,
+                  "ThrustCapacity": 5000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 420.0,
+                  "FuelUsagePerSecond": 625.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 4500.0
@@ -92117,9 +94341,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3360000.0,
+                  "ThrustCapacity": 5000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 420.0,
+                  "FuelUsagePerSecond": 625.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 4500.0
@@ -92169,9 +94393,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3700000.0,
+                  "ThrustCapacity": 7550000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 462.5,
+                  "FuelUsagePerSecond": 943.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 4500.0
@@ -92195,9 +94419,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3700000.0,
+                  "ThrustCapacity": 7550000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 462.5,
+                  "FuelUsagePerSecond": 943.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 4500.0
@@ -92247,9 +94471,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3700000.0,
+                  "ThrustCapacity": 7550000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 462.5,
+                  "FuelUsagePerSecond": 943.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 4500.0
@@ -92273,9 +94497,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3360000.0,
+                  "ThrustCapacity": 5000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 420.0,
+                  "FuelUsagePerSecond": 625.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 4500.0
@@ -92325,9 +94549,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3700000.0,
+                  "ThrustCapacity": 7550000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 462.5,
+                  "FuelUsagePerSecond": 943.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 4500.0
@@ -92377,9 +94601,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3360000.0,
+                  "ThrustCapacity": 5000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 420.0,
+                  "FuelUsagePerSecond": 625.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 4500.0
@@ -92741,7 +94965,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ARGO_RAFT",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ARGO_RAFT",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -92829,96 +95053,20 @@ const shipHardpoints = [
         "CargoGrids": {
           "InstalledItems": [
             {
-              "Name": "ARGO_RAFT_CargoGrid_Main",
+              "Name": "ARGO_RAFT_CargoGrid_192",
               "Mass": 0.0,
               "Size": 1,
               "Grade": 1,
-              "Capacity": 32.0,
+              "Capacity": 192.0,
               "GridProperties": {
-                "Width": 2.0,
+                "Width": 8.0,
                 "Height": 2.0,
-                "Depth": 8.0,
+                "Depth": 12.0,
                 "MinContainerSize": {
-                  "Capacity": 32.0,
-                  "Width": 2.0,
-                  "Height": 2.0,
-                  "Depth": 8.0
-                },
-                "MaxContainerSize": {
-                  "Capacity": 32.0,
-                  "Width": 2.0,
-                  "Height": 2.0,
-                  "Depth": 8.0
-                }
-              },
-              "Uneditable": true,
-              "Power": {
-                "PowerBase": 0.0,
-                "PowerDraw": 1.0,
-                "IdlePowerEmission": 0.0,
-                "ActivePowerEmission": 2.18
-              },
-              "Heat": {
-                "StartComponentTemperature": 300.0,
-                "StartIRTemperature": 250.0,
-                "StartIREmission": 168.0,
-                "ThermalEnergyBase": 10.0,
-                "ThermalEnergyDraw": 20.0
-              }
-            },
-            {
-              "Name": "ARGO_RAFT_CargoGrid_Main",
-              "Mass": 0.0,
-              "Size": 1,
-              "Grade": 1,
-              "Capacity": 32.0,
-              "GridProperties": {
-                "Width": 2.0,
-                "Height": 2.0,
-                "Depth": 8.0,
-                "MinContainerSize": {
-                  "Capacity": 32.0,
-                  "Width": 2.0,
-                  "Height": 2.0,
-                  "Depth": 8.0
-                },
-                "MaxContainerSize": {
-                  "Capacity": 32.0,
-                  "Width": 2.0,
-                  "Height": 2.0,
-                  "Depth": 8.0
-                }
-              },
-              "Uneditable": true,
-              "Power": {
-                "PowerBase": 0.0,
-                "PowerDraw": 1.0,
-                "IdlePowerEmission": 0.0,
-                "ActivePowerEmission": 2.18
-              },
-              "Heat": {
-                "StartComponentTemperature": 300.0,
-                "StartIRTemperature": 250.0,
-                "StartIREmission": 168.0,
-                "ThermalEnergyBase": 10.0,
-                "ThermalEnergyDraw": 20.0
-              }
-            },
-            {
-              "Name": "ARGO_RAFT_CargoGrid_Main",
-              "Mass": 0.0,
-              "Size": 1,
-              "Grade": 1,
-              "Capacity": 32.0,
-              "GridProperties": {
-                "Width": 2.0,
-                "Height": 2.0,
-                "Depth": 8.0,
-                "MinContainerSize": {
-                  "Capacity": 32.0,
-                  "Width": 2.0,
-                  "Height": 2.0,
-                  "Depth": 8.0
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
                 },
                 "MaxContainerSize": {
                   "Capacity": 32.0,
@@ -92943,7 +95091,7 @@ const shipHardpoints = [
               }
             }
           ],
-          "ItemsQuantity": 3
+          "ItemsQuantity": 1
         },
         "CargoContainers": {
           "ItemsQuantity": 0
@@ -94365,7 +96513,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ARGO_SRV",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ARGO_SRV",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -95934,7 +98082,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_BANU_Defender",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_BANU_Defender",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -97118,7 +99266,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_CNOU_HoverQuad",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CNOU_HoverQuad",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -98379,7 +100527,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_CNOU_Mustang_Alpha",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CNOU_Mustang_Alpha",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -99694,7 +101842,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_CNOU_Mustang_Beta",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CNOU_Mustang_Beta",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -101075,7 +103223,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_CNOU_Mustang_Delta",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CNOU_Mustang_Delta",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -102399,7 +104547,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_CNOU_Mustang_Gamma",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CNOU_Mustang_Gamma",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -103723,7 +105871,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_CNOU_Mustang_Omega",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CNOU_Mustang_Omega",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -105297,7 +107445,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_CNOU_Nomad",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CNOU_Nomad",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -106732,7 +108880,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_CRUS_Intrepid",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CRUS_Intrepid",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -106835,10 +108983,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
                 }
               },
               "Power": {
@@ -106872,10 +109020,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
                 }
               },
               "Power": {
@@ -107646,12 +109794,12 @@ const shipHardpoints = [
                   "BaseLoadout": {
                     "ClassName": "BOMB_S05_FSKI",
                     "Name": "Stormburst Bomb",
-                    "Type": "Bomb.UNDEFINED",
+                    "Type": "Bomb.Utility",
                     "Grade": 1,
                     "Class": ""
                   },
                   "Types": [
-                    "Bomb.UNDEFINED"
+                    "Bomb.Utility"
                   ],
                   "Tags": [
                     "flightReady",
@@ -107667,12 +109815,12 @@ const shipHardpoints = [
                   "BaseLoadout": {
                     "ClassName": "BOMB_S05_FSKI",
                     "Name": "Stormburst Bomb",
-                    "Type": "Bomb.UNDEFINED",
+                    "Type": "Bomb.Utility",
                     "Grade": 1,
                     "Class": ""
                   },
                   "Types": [
-                    "Bomb.UNDEFINED"
+                    "Bomb.Utility"
                   ],
                   "Tags": [
                     "flightReady",
@@ -107688,12 +109836,12 @@ const shipHardpoints = [
                   "BaseLoadout": {
                     "ClassName": "BOMB_S05_FSKI",
                     "Name": "Stormburst Bomb",
-                    "Type": "Bomb.UNDEFINED",
+                    "Type": "Bomb.Utility",
                     "Grade": 1,
                     "Class": ""
                   },
                   "Types": [
-                    "Bomb.UNDEFINED"
+                    "Bomb.Utility"
                   ],
                   "Tags": [
                     "flightReady",
@@ -107709,12 +109857,12 @@ const shipHardpoints = [
                   "BaseLoadout": {
                     "ClassName": "BOMB_S05_FSKI",
                     "Name": "Stormburst Bomb",
-                    "Type": "Bomb.UNDEFINED",
+                    "Type": "Bomb.Utility",
                     "Grade": 1,
                     "Class": ""
                   },
                   "Types": [
-                    "Bomb.UNDEFINED"
+                    "Bomb.Utility"
                   ],
                   "Tags": [
                     "flightReady",
@@ -107730,12 +109878,12 @@ const shipHardpoints = [
                   "BaseLoadout": {
                     "ClassName": "BOMB_S05_FSKI",
                     "Name": "Stormburst Bomb",
-                    "Type": "Bomb.UNDEFINED",
+                    "Type": "Bomb.Utility",
                     "Grade": 1,
                     "Class": ""
                   },
                   "Types": [
-                    "Bomb.UNDEFINED"
+                    "Bomb.Utility"
                   ],
                   "Tags": [
                     "flightReady",
@@ -107751,12 +109899,12 @@ const shipHardpoints = [
                   "BaseLoadout": {
                     "ClassName": "BOMB_S05_FSKI",
                     "Name": "Stormburst Bomb",
-                    "Type": "Bomb.UNDEFINED",
+                    "Type": "Bomb.Utility",
                     "Grade": 1,
                     "Class": ""
                   },
                   "Types": [
-                    "Bomb.UNDEFINED"
+                    "Bomb.Utility"
                   ],
                   "Tags": [
                     "flightReady",
@@ -107772,12 +109920,12 @@ const shipHardpoints = [
                   "BaseLoadout": {
                     "ClassName": "BOMB_S05_FSKI",
                     "Name": "Stormburst Bomb",
-                    "Type": "Bomb.UNDEFINED",
+                    "Type": "Bomb.Utility",
                     "Grade": 1,
                     "Class": ""
                   },
                   "Types": [
-                    "Bomb.UNDEFINED"
+                    "Bomb.Utility"
                   ],
                   "Tags": [
                     "flightReady",
@@ -107793,12 +109941,12 @@ const shipHardpoints = [
                   "BaseLoadout": {
                     "ClassName": "BOMB_S05_FSKI",
                     "Name": "Stormburst Bomb",
-                    "Type": "Bomb.UNDEFINED",
+                    "Type": "Bomb.Utility",
                     "Grade": 1,
                     "Class": ""
                   },
                   "Types": [
-                    "Bomb.UNDEFINED"
+                    "Bomb.Utility"
                   ],
                   "Tags": [
                     "flightReady",
@@ -107814,12 +109962,12 @@ const shipHardpoints = [
                   "BaseLoadout": {
                     "ClassName": "BOMB_S05_FSKI",
                     "Name": "Stormburst Bomb",
-                    "Type": "Bomb.UNDEFINED",
+                    "Type": "Bomb.Utility",
                     "Grade": 1,
                     "Class": ""
                   },
                   "Types": [
-                    "Bomb.UNDEFINED"
+                    "Bomb.Utility"
                   ],
                   "Tags": [
                     "flightReady",
@@ -107835,12 +109983,12 @@ const shipHardpoints = [
                   "BaseLoadout": {
                     "ClassName": "BOMB_S05_FSKI",
                     "Name": "Stormburst Bomb",
-                    "Type": "Bomb.UNDEFINED",
+                    "Type": "Bomb.Utility",
                     "Grade": 1,
                     "Class": ""
                   },
                   "Types": [
-                    "Bomb.UNDEFINED"
+                    "Bomb.Utility"
                   ],
                   "Tags": [
                     "flightReady",
@@ -109009,7 +111157,7 @@ const shipHardpoints = [
                 "Loadout": "62ee1944-9df6-4e60-a912-2fff1d3abaa1",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CRUS_Spirit_A1",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -110927,7 +113075,7 @@ const shipHardpoints = [
                 "Loadout": "d3b17f27-d877-4a72-9fb9-7ec7755c4de0",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CRUS_Spirit_C1",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -111346,7 +113494,8 @@ const shipHardpoints = [
               ],
               "Flags": [
                 "CRUS_Starfighter",
-                "Right"
+                "Right",
+                "swaponly"
               ],
               "Uneditable": false,
               "Ports": [
@@ -111449,7 +113598,8 @@ const shipHardpoints = [
               ],
               "Flags": [
                 "CRUS_Starfighter",
-                "Left"
+                "Left",
+                "swaponly"
               ],
               "Uneditable": false,
               "Ports": [
@@ -112664,7 +114814,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_CRUS_Starfighter",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CRUS_Starfighter",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -113045,7 +115195,8 @@ const shipHardpoints = [
               ],
               "Flags": [
                 "CRUS_Starfighter",
-                "Right"
+                "Right",
+                "swaponly"
               ],
               "Uneditable": false,
               "Ports": [
@@ -113148,7 +115299,8 @@ const shipHardpoints = [
               ],
               "Flags": [
                 "CRUS_Starfighter",
-                "Left"
+                "Left",
+                "swaponly"
               ],
               "Uneditable": false,
               "Ports": [
@@ -114363,7 +116515,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_CRUS_Starfighter",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CRUS_Starfighter",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -115632,12 +117784,12 @@ const shipHardpoints = [
                   "BaseLoadout": {
                     "ClassName": "BOMB_S10_FSKI_Colossus",
                     "Name": "Colossus Bomb",
-                    "Type": "Bomb.UNDEFINED",
+                    "Type": "Bomb.Utility",
                     "Grade": 1,
                     "Class": ""
                   },
                   "Types": [
-                    "Bomb.UNDEFINED"
+                    "Bomb.Utility"
                   ],
                   "Tags": [
                     "flightReady",
@@ -115653,12 +117805,12 @@ const shipHardpoints = [
                   "BaseLoadout": {
                     "ClassName": "BOMB_S10_FSKI_Colossus",
                     "Name": "Colossus Bomb",
-                    "Type": "Bomb.UNDEFINED",
+                    "Type": "Bomb.Utility",
                     "Grade": 1,
                     "Class": ""
                   },
                   "Types": [
-                    "Bomb.UNDEFINED"
+                    "Bomb.Utility"
                   ],
                   "Tags": [
                     "flightReady",
@@ -115697,12 +117849,12 @@ const shipHardpoints = [
                   "BaseLoadout": {
                     "ClassName": "BOMB_S10_FSKI_Colossus",
                     "Name": "Colossus Bomb",
-                    "Type": "Bomb.UNDEFINED",
+                    "Type": "Bomb.Utility",
                     "Grade": 1,
                     "Class": ""
                   },
                   "Types": [
-                    "Bomb.UNDEFINED"
+                    "Bomb.Utility"
                   ],
                   "Tags": [
                     "flightReady",
@@ -115718,12 +117870,12 @@ const shipHardpoints = [
                   "BaseLoadout": {
                     "ClassName": "BOMB_S10_FSKI_Colossus",
                     "Name": "Colossus Bomb",
-                    "Type": "Bomb.UNDEFINED",
+                    "Type": "Bomb.Utility",
                     "Grade": 1,
                     "Class": ""
                   },
                   "Types": [
-                    "Bomb.UNDEFINED"
+                    "Bomb.Utility"
                   ],
                   "Tags": [
                     "flightReady",
@@ -116692,8 +118844,8 @@ const shipHardpoints = [
             "Weapons": {
               "PoolSize": 10.0,
               "Modifiers": {
-                "PowerRatioMultiplier": 2.0,
-                "MaxAmmoLoadMultiplier": 1.0,
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
                 "MaxRegenPerSecMultiplier": 1.0
               }
             },
@@ -116954,7 +119106,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_CRUS_Starlifter_A2",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CRUS_Starlifter_A2",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -119129,7 +121281,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 8.0
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -119368,7 +121525,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_CRUS_Starlifter",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CRUS_Starlifter",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -121627,7 +123784,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 8.0
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -121866,7 +124028,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_CRUS_Starlifter_M2",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CRUS_Starlifter_M2",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -123053,7 +125215,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -123092,7 +125255,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -123151,7 +125315,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -123190,7 +125355,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -123926,7 +126092,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 6.0
+              "PoolSize": 6.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 2.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -124117,7 +126288,7 @@ const shipHardpoints = [
                 "Loadout": "5c453707-7c9d-44e9-a0d4-61fbeb7dc323",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_CRUS_Star_Runner",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -124905,7 +127076,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -124964,7 +127136,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -126155,7 +128328,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_DRAK_Buccaneer",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Buccaneer",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -128238,7 +130411,12 @@ const shipHardpoints = [
               "Cooldown": 0.0
             },
             "Weapons": {
-              "PoolSize": 8.0
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -128481,7 +130659,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_DRAK_Caterpillar",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Caterpillar",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -131654,7 +133832,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 10.0
+              "PoolSize": 10.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 2.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -131851,7 +134034,7 @@ const shipHardpoints = [
                 "Loadout": "e9186bee-0812-4576-8878-4766bb3a31c9",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Corsair",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -134183,7 +136366,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 6.0
+              "PoolSize": 6.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 2.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -134384,7 +136572,7 @@ const shipHardpoints = [
                 "Loadout": "8b00b27b-32e2-446f-b6b4-4436f266bab5",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Cutlass_Black",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -136688,7 +138876,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 6.0
+              "PoolSize": 6.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 2.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -136889,7 +139082,7 @@ const shipHardpoints = [
                 "Loadout": "01755e4b-1371-468b-9e02-773f29ebcc5e",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Cutlass_Blue",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -138484,7 +140677,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 6.0
+              "PoolSize": 6.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 2.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -138685,7 +140883,7 @@ const shipHardpoints = [
                 "Loadout": "36fbe53c-f7ba-4032-a38d-98188a03c5a4",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Cutlass_Red",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -141091,7 +143289,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 6.0
+              "PoolSize": 6.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -141316,7 +143519,7 @@ const shipHardpoints = [
                 "Loadout": "4738245a-d3c7-4143-bcf7-00c06a0a8fb0",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Cutlass_Steel",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -142697,7 +144900,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_DRAK_Cutter",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Cutter",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -144192,7 +146395,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_DRAK_Cutter_Expo",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Cutter_Expo",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -145692,7 +147895,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_DRAK_Cutter_Scout",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Cutter_Scout",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -146877,7 +149080,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_DRAK_Dragonfly",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Dragonfly",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -148002,7 +150205,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_DRAK_Dragonfly",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Dragonfly",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -149537,7 +151740,7 @@ const shipHardpoints = [
                 "Loadout": "5aa2173c-b2a9-4d4f-aa22-809e864984de",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Golem",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -150052,18 +152255,24 @@ const shipHardpoints = [
           "InstalledItems": [
             {
               "PortName": "hardpoint_pylon_left",
-              "MinSize": 3,
-              "MaxSize": 3,
-              "Loadout": "MRCK_S03_BEHR_Quad_S01",
+              "MinSize": 5,
+              "MaxSize": 5,
+              "Loadout": "31a7dd73-e9e4-419b-85ab-43a489d0e02b",
               "BaseLoadout": {
-                "ClassName": "MRCK_S03_BEHR_Quad_S01",
-                "Name": "MSD-341 Missile Rack",
+                "ClassName": "MRCK_S05_DRAK_Herald_Nine_S02",
+                "Name": "MSD-582 Missile Rack",
                 "Type": "MissileLauncher.MissileRack",
                 "Grade": 1,
                 "Class": ""
               },
               "Types": [
                 "MissileLauncher.MissileRack"
+              ],
+              "RequiredTags": [
+                "$DRAK_Herald_MRCK"
+              ],
+              "PortTags": [
+                "DRAK_Herald_MRCK"
               ],
               "Flags": [
                 "$uneditable",
@@ -150073,12 +152282,12 @@ const shipHardpoints = [
               "Ports": [
                 {
                   "PortName": "missile_01_attach",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "MISL_S01_EM_THCN_TaskForce",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
                   "BaseLoadout": {
-                    "ClassName": "MISL_S01_EM_THCN_TaskForce",
-                    "Name": "TaskForce I Missile",
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
                     "Type": "Missile.Missile",
                     "Grade": 1,
                     "Class": ""
@@ -150087,18 +152296,19 @@ const shipHardpoints = [
                     "Missile.Missile"
                   ],
                   "Tags": [
-                    "flightReady"
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
                   ],
                   "Uneditable": false
                 },
                 {
                   "PortName": "missile_02_attach",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "MISL_S01_EM_THCN_TaskForce",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
                   "BaseLoadout": {
-                    "ClassName": "MISL_S01_EM_THCN_TaskForce",
-                    "Name": "TaskForce I Missile",
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
                     "Type": "Missile.Missile",
                     "Grade": 1,
                     "Class": ""
@@ -150107,18 +152317,19 @@ const shipHardpoints = [
                     "Missile.Missile"
                   ],
                   "Tags": [
-                    "flightReady"
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
                   ],
                   "Uneditable": false
                 },
                 {
                   "PortName": "missile_03_attach",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "MISL_S01_EM_THCN_TaskForce",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
                   "BaseLoadout": {
-                    "ClassName": "MISL_S01_EM_THCN_TaskForce",
-                    "Name": "TaskForce I Missile",
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
                     "Type": "Missile.Missile",
                     "Grade": 1,
                     "Class": ""
@@ -150127,18 +152338,19 @@ const shipHardpoints = [
                     "Missile.Missile"
                   ],
                   "Tags": [
-                    "flightReady"
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
                   ],
                   "Uneditable": false
                 },
                 {
                   "PortName": "missile_04_attach",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "MISL_S01_EM_THCN_TaskForce",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
                   "BaseLoadout": {
-                    "ClassName": "MISL_S01_EM_THCN_TaskForce",
-                    "Name": "TaskForce I Missile",
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
                     "Type": "Missile.Missile",
                     "Grade": 1,
                     "Class": ""
@@ -150147,7 +152359,113 @@ const shipHardpoints = [
                     "Missile.Missile"
                   ],
                   "Tags": [
-                    "flightReady"
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_05_attach",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_06_attach",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_07_attach",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_08_attach",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_09_attach",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
                   ],
                   "Uneditable": false
                 }
@@ -150155,18 +152473,24 @@ const shipHardpoints = [
             },
             {
               "PortName": "hardpoint_pylon_right",
-              "MinSize": 3,
-              "MaxSize": 3,
-              "Loadout": "MRCK_S03_BEHR_Quad_S01",
+              "MinSize": 5,
+              "MaxSize": 5,
+              "Loadout": "31a7dd73-e9e4-419b-85ab-43a489d0e02b",
               "BaseLoadout": {
-                "ClassName": "MRCK_S03_BEHR_Quad_S01",
-                "Name": "MSD-341 Missile Rack",
+                "ClassName": "MRCK_S05_DRAK_Herald_Nine_S02",
+                "Name": "MSD-582 Missile Rack",
                 "Type": "MissileLauncher.MissileRack",
                 "Grade": 1,
                 "Class": ""
               },
               "Types": [
                 "MissileLauncher.MissileRack"
+              ],
+              "RequiredTags": [
+                "$DRAK_Herald_MRCK"
+              ],
+              "PortTags": [
+                "DRAK_Herald_MRCK"
               ],
               "Flags": [
                 "$uneditable",
@@ -150176,12 +152500,12 @@ const shipHardpoints = [
               "Ports": [
                 {
                   "PortName": "missile_01_attach",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "MISL_S01_EM_THCN_TaskForce",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
                   "BaseLoadout": {
-                    "ClassName": "MISL_S01_EM_THCN_TaskForce",
-                    "Name": "TaskForce I Missile",
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
                     "Type": "Missile.Missile",
                     "Grade": 1,
                     "Class": ""
@@ -150190,18 +152514,19 @@ const shipHardpoints = [
                     "Missile.Missile"
                   ],
                   "Tags": [
-                    "flightReady"
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
                   ],
                   "Uneditable": false
                 },
                 {
                   "PortName": "missile_02_attach",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "MISL_S01_EM_THCN_TaskForce",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
                   "BaseLoadout": {
-                    "ClassName": "MISL_S01_EM_THCN_TaskForce",
-                    "Name": "TaskForce I Missile",
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
                     "Type": "Missile.Missile",
                     "Grade": 1,
                     "Class": ""
@@ -150210,18 +152535,19 @@ const shipHardpoints = [
                     "Missile.Missile"
                   ],
                   "Tags": [
-                    "flightReady"
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
                   ],
                   "Uneditable": false
                 },
                 {
                   "PortName": "missile_03_attach",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "MISL_S01_EM_THCN_TaskForce",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
                   "BaseLoadout": {
-                    "ClassName": "MISL_S01_EM_THCN_TaskForce",
-                    "Name": "TaskForce I Missile",
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
                     "Type": "Missile.Missile",
                     "Grade": 1,
                     "Class": ""
@@ -150230,18 +152556,19 @@ const shipHardpoints = [
                     "Missile.Missile"
                   ],
                   "Tags": [
-                    "flightReady"
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
                   ],
                   "Uneditable": false
                 },
                 {
                   "PortName": "missile_04_attach",
-                  "MinSize": 1,
-                  "MaxSize": 1,
-                  "Loadout": "MISL_S01_EM_THCN_TaskForce",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
                   "BaseLoadout": {
-                    "ClassName": "MISL_S01_EM_THCN_TaskForce",
-                    "Name": "TaskForce I Missile",
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
                     "Type": "Missile.Missile",
                     "Grade": 1,
                     "Class": ""
@@ -150250,7 +152577,113 @@ const shipHardpoints = [
                     "Missile.Missile"
                   ],
                   "Tags": [
-                    "flightReady"
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_05_attach",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_06_attach",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_07_attach",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_08_attach",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_09_attach",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "67d6efbd-6b65-49d9-b319-041dc6a2675a",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_EM_TALN_Dominator",
+                    "Name": "Dominator II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "DRAK_Herald_MRCK"
                   ],
                   "Uneditable": false
                 }
@@ -151161,7 +153594,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_DRAK_Herald",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Herald",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -153294,7 +155727,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_DRAK_Vulture",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_DRAK_Vulture",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -153861,7 +156294,8 @@ const shipHardpoints = [
               "RemoteController": {
                 "Slaved": true,
                 "Seats": [
-                  "ESPR_Prowler_Seat_CoPilot"
+                  "ESPR_Prowler_Seat_CoPilot",
+                  "ESPR_Prowler_Seat_Pilot"
                 ]
               },
               "Ports": [
@@ -154051,9 +156485,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 3000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 6270901.0,
+                  "ThrustCapacity": 1900000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 783.8626,
+                  "FuelUsagePerSecond": 237.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 19500.0
@@ -154077,9 +156511,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 3000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 6270901.0,
+                  "ThrustCapacity": 1900000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 783.8626,
+                  "FuelUsagePerSecond": 237.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 19500.0
@@ -154108,9 +156542,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 500.0,
                   "Grade": 1,
-                  "ThrustCapacity": 834064.2,
+                  "ThrustCapacity": 1910000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 104.258,
+                  "FuelUsagePerSecond": 238.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 18000.0
@@ -154134,9 +156568,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 500.0,
                   "Grade": 1,
-                  "ThrustCapacity": 834064.2,
+                  "ThrustCapacity": 1910000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 104.258,
+                  "FuelUsagePerSecond": 238.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 18000.0
@@ -154160,9 +156594,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 500.0,
                   "Grade": 1,
-                  "ThrustCapacity": 1311844.0,
+                  "ThrustCapacity": 950000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 163.9805,
+                  "FuelUsagePerSecond": 118.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 18000.0
@@ -154186,9 +156620,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 500.0,
                   "Grade": 1,
-                  "ThrustCapacity": 1311844.0,
+                  "ThrustCapacity": 950000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 163.9805,
+                  "FuelUsagePerSecond": 118.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 18000.0
@@ -154220,9 +156654,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 2136843.0,
+                  "ThrustCapacity": 2380000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 267.1054,
+                  "FuelUsagePerSecond": 297.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154246,9 +156680,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 1923771.0,
+                  "ThrustCapacity": 2380000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 240.4714,
+                  "FuelUsagePerSecond": 297.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154272,9 +156706,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 2136843.0,
+                  "ThrustCapacity": 2380000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 267.1054,
+                  "FuelUsagePerSecond": 297.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154298,9 +156732,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 1923771.0,
+                  "ThrustCapacity": 2380000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 240.4714,
+                  "FuelUsagePerSecond": 297.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154350,9 +156784,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 2280000.0,
+                  "ThrustCapacity": 2550000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 285.0,
+                  "FuelUsagePerSecond": 318.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154376,9 +156810,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 2280789.0,
+                  "ThrustCapacity": 2550000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 285.0986,
+                  "FuelUsagePerSecond": 318.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154480,9 +156914,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 2280000.0,
+                  "ThrustCapacity": 2550000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 285.0,
+                  "FuelUsagePerSecond": 318.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154506,9 +156940,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 1923771.0,
+                  "ThrustCapacity": 2380000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 240.4714,
+                  "FuelUsagePerSecond": 297.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154532,9 +156966,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 2136843.0,
+                  "ThrustCapacity": 2380000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 267.1054,
+                  "FuelUsagePerSecond": 297.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154558,9 +156992,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 2136843.0,
+                  "ThrustCapacity": 2380000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 267.1054,
+                  "FuelUsagePerSecond": 297.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154584,9 +157018,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 2280789.0,
+                  "ThrustCapacity": 2550000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 285.0986,
+                  "FuelUsagePerSecond": 318.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154610,9 +157044,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 1923771.0,
+                  "ThrustCapacity": 2380000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 240.4714,
+                  "FuelUsagePerSecond": 297.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154740,9 +157174,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 1500000.0,
+                  "ThrustCapacity": 6696773.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 187.5,
+                  "FuelUsagePerSecond": 837.0966,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154766,9 +157200,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 1500000.0,
+                  "ThrustCapacity": 6696773.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 187.5,
+                  "FuelUsagePerSecond": 837.0966,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154792,9 +157226,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 2280000.0,
+                  "ThrustCapacity": 2550000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 285.0,
+                  "FuelUsagePerSecond": 318.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -154818,9 +157252,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 400.0,
                   "Grade": 1,
-                  "ThrustCapacity": 2280789.0,
+                  "ThrustCapacity": 2550000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 285.0986,
+                  "FuelUsagePerSecond": 318.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 17000.0
@@ -155164,7 +157598,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ESPR_Prowler",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ESPR_Prowler",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -156032,7 +158466,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -156143,7 +158578,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -157118,7 +159554,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ESPR_Talon",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ESPR_Talon",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -159286,7 +161722,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ESPR_Talon",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ESPR_Talon",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -161432,7 +163868,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_GAMA_Syulen",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_GAMA_Syulen",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -161812,6 +164248,531 @@ const shipHardpoints = [
               ],
               "PortTags": [
                 "Paint_Syulen"
+              ],
+              "Uneditable": false
+            }
+          ],
+          "Hardpoints": 1
+        },
+        "Flairs": {}
+      }
+    }
+  },
+  {
+    "ClassName": "GRIN_MTC",
+    "Name": "Greycat MTC",
+    "IsSpaceship": false,
+    "IsVehicle": true,
+    "PortTags": [],
+    "Hull": {
+      "Structure": [
+        {
+          "Name": "body",
+          "MaximumDamage": 14500.0,
+          "Parts": [
+            {
+              "Name": "bar_front_right",
+              "MaximumDamage": 200.0,
+              "Parts": [
+                {
+                  "Name": "bar_front_right_cover",
+                  "MaximumDamage": 100.0,
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "front_roof",
+              "MaximumDamage": 400.0,
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "fender_right",
+              "MaximumDamage": 300.0,
+              "Parts": [
+                {
+                  "Name": "fender_right_light",
+                  "MaximumDamage": 100.0,
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "rear_light_sheild_left",
+              "MaximumDamage": 200.0,
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "bar_front",
+              "MaximumDamage": 250.0,
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "fender_left",
+              "MaximumDamage": 300.0,
+              "Parts": [
+                {
+                  "Name": "fender_left_light",
+                  "MaximumDamage": 100.0,
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "bar_front_left",
+              "MaximumDamage": 200.0,
+              "Parts": [
+                {
+                  "Name": "bar_front_left_cover",
+                  "MaximumDamage": 100.0,
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "rear_light_sheild_right",
+              "MaximumDamage": 80.0,
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "AAsus_wheel_FL",
+              "MaximumDamage": 1500.0,
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "AAsus_wheel_FR",
+              "MaximumDamage": 1500.0,
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "AAsus_wheel_RL",
+              "MaximumDamage": 1500.0,
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "AAsus_wheel_RR",
+              "MaximumDamage": 1500.0,
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "head_light_sheild_right",
+              "MaximumDamage": 80.0,
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "head_light_sheild_left",
+              "MaximumDamage": 80.0,
+              "DetachRatio": 1.0
+            }
+          ],
+          "ShipDestructionDamage": 14500.0,
+          "DetachRatio": 0.0
+        }
+      ]
+    },
+    "Hardpoints": {
+      "Weapons": {
+        "PilotWeapons": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_GRIN_MTC_Turret",
+              "MinSize": 1,
+              "MaxSize": 2,
+              "Loadout": "Grin_MXC_Turret",
+              "BaseLoadout": {
+                "ClassName": "Grin_MXC_Turret",
+                "Name": "Turret",
+                "Type": "Turret.BallTurret",
+                "Grade": 1
+              },
+              "Types": [
+                "Turret.BallTurret"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Turret": true,
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "hardpoint_class_1_left",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "5453a817-dfd4-4143-aa11-840ca428540c",
+                  "BaseLoadout": {
+                    "ClassName": "KLWE_LaserRepeater_S2",
+                    "Name": "CF-227 Badger Repeater",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Flags": [
+                    "left"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_class_1_right",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "5453a817-dfd4-4143-aa11-840ca428540c",
+                  "BaseLoadout": {
+                    "ClassName": "KLWE_LaserRepeater_S2",
+                    "Name": "CF-227 Badger Repeater",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Flags": [
+                    "right"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            }
+          ],
+          "Hardpoints": 3
+        },
+        "MannedTurrets": {},
+        "RemoteTurrets": {},
+        "PDCTurrets": {},
+        "MissileRacks": {},
+        "BombRacks": {},
+        "InterdictionHardpoints": {},
+        "MiningHardpoints": {},
+        "SalvageHardpoints": {},
+        "UtilityHardpoints": {},
+        "UtilityTurrets": {}
+      },
+      "Components": {
+        "Propulsion": {
+          "PowerPlants": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_power_plant",
+                "MinSize": 0,
+                "MaxSize": 0,
+                "Loadout": "ad59f651-83d0-42f3-839a-8f055243ba6b",
+                "BaseLoadout": {
+                  "ClassName": "POWR_JUST_S00_Defiant_SCItem",
+                  "Name": "Defiant",
+                  "Type": "PowerPlant.Power",
+                  "Grade": 2,
+                  "Class": "Industrial"
+                },
+                "Types": [
+                  "PowerPlant"
+                ],
+                "Uneditable": false
+              }
+            ],
+            "Hardpoints": 1
+          },
+          "QuantumDrives": {},
+          "Thrusters": {
+            "MainThrusters": {
+              "ItemsQuantity": 0
+            },
+            "RetroThrusters": {
+              "ItemsQuantity": 0
+            },
+            "VtolThrusters": {
+              "ItemsQuantity": 0
+            },
+            "ManeuveringThrusters": {
+              "ItemsQuantity": 0
+            }
+          },
+          "QuantumFuelTanks": {
+            "ItemsQuantity": 0,
+            "TotalQuantumFuelCapacity": 0.0
+          },
+          "HydrogenFuelTanks": {
+            "InstalledItems": [
+              {
+                "Name": "hardpoint_fuel_tank_hydrogen",
+                "Size": 1,
+                "Mass": 0.0,
+                "Grade": 1,
+                "Capacity": 23.625,
+                "Uneditable": true
+              }
+            ],
+            "ItemsQuantity": 1,
+            "TotalFuelCapacity": 23.625
+          }
+        },
+        "Systems": {
+          "Controllers": {
+            "CapacitorAssignment": {
+              "AfterBurner": {},
+              "ShieldEmitter": {
+                "Regen": "f381647d-1e21-4dd2-b63b-567f012deeda",
+                "RegenNavMode": "5c844120-12c9-49eb-b7dd-93db1fc43d00",
+                "Resistance": "cbc03b47-3bee-4529-9fd1-f256dc7efb09"
+              },
+              "PilotWeapon": {},
+              "TurretsWeapon": {}
+            },
+            "Ifcs": {},
+            "Missiles": {
+              "MaxArmed": 0.0,
+              "Cooldown": 0.0
+            },
+            "Weapons": {
+              "PoolSize": 2.0
+            },
+            "Wheeled": {
+              "InstalledItems": [
+                {
+                  "PortName": "hardpoint_controller_wheel",
+                  "MinSize": 1,
+                  "MaxSize": 1,
+                  "Loadout": "394a67c7-db2c-4b8a-80ef-769212a708a3",
+                  "BaseLoadout": {
+                    "ClassName": "Controller_Wheel_ARGO_CSV",
+                    "Name": "Drivetrain",
+                    "Type": "WheeledController.UNDEFINED",
+                    "Grade": 1
+                  },
+                  "Types": [
+                    "WheeledController"
+                  ],
+                  "Flags": [
+                    "invisible",
+                    "uneditable"
+                  ],
+                  "Uneditable": true
+                }
+              ],
+              "Hardpoints": 1
+            }
+          },
+          "Shields": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_shield_generator",
+                "MinSize": 0,
+                "MaxSize": 0,
+                "Loadout": "ffede9a8-3c50-4b9e-be0f-9d93e5a26f29",
+                "BaseLoadout": {
+                  "ClassName": "SHLD_SECO_S00_PIN_SCItem",
+                  "Name": "PIN",
+                  "Type": "Shield.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Civilian"
+                },
+                "Types": [
+                  "Shield"
+                ],
+                "Uneditable": false
+              }
+            ],
+            "Hardpoints": 1,
+            "FaceType": "Bubble"
+          },
+          "Coolers": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_cooler",
+                "MinSize": 0,
+                "MaxSize": 0,
+                "Loadout": "7db13b34-c8b1-4e1a-9aba-3dcd7087e995",
+                "BaseLoadout": {
+                  "ClassName": "COOL_JSPN_S00_CryoStarSL_SCItem",
+                  "Name": "Cryo-Star SL",
+                  "Type": "Cooler.UNDEFINED",
+                  "Grade": 2,
+                  "Class": "Civilian"
+                },
+                "Types": [
+                  "Cooler"
+                ],
+                "Uneditable": false
+              }
+            ],
+            "Hardpoints": 1
+          },
+          "LifeSupport": {},
+          "FuelIntakes": {
+            "ItemsQuantity": 0,
+            "TotalFuelIntakeRate": 0.0
+          },
+          "Countermeasures": {
+            "ItemsQuantity": 0
+          }
+        },
+        "Avionics": {
+          "FlightBlade": {},
+          "Radars": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_comp_radar",
+                "MinSize": 0,
+                "MaxSize": 1,
+                "Loadout": "28e81323-a16a-4995-9da5-1aca23b4044c",
+                "BaseLoadout": {
+                  "ClassName": "RADR_WLOP_S00_Denning",
+                  "Name": "Denning",
+                  "Type": "Radar.MidRangeRadar",
+                  "Grade": 1,
+                  "Class": "Civilian"
+                },
+                "Types": [
+                  "Radar.ShortRangeRadar",
+                  "Radar.MidRangeRadar"
+                ],
+                "Flags": [
+                  "$uneditable"
+                ],
+                "Uneditable": true
+              }
+            ],
+            "DetectionCapability": [
+              {
+                "Name": "Denning",
+                "PortName": "hardpoint_comp_radar",
+                "Size": 0,
+                "Sensitivity": {
+                  "IRSensitivity": 0.75,
+                  "EMSensitivity": 0.75,
+                  "CSSensitivity": 0.5,
+                  "RSSensitivity": 1.0
+                },
+                "GroundSensitivity": {
+                  "IRSensitivity": 0.25,
+                  "EMSensitivity": 0.25,
+                  "CSSensitivity": 0.25,
+                  "RSSensitivity": 0.25
+                },
+                "Piercing": {
+                  "IRPiercing": 0.25,
+                  "EMPiercing": 0.25,
+                  "CSPiercing": 0.25,
+                  "RSPiercing": 1.0
+                }
+              }
+            ],
+            "ItemsQuantity": 1
+          },
+          "SelfDestruct": {
+            "InstalledItems": [
+              {
+                "Name": "RSI Self Destruct",
+                "Size": 1,
+                "Mass": 0.0,
+                "Grade": 1,
+                "Uneditable": true,
+                "Countdown": 20.0,
+                "Damage": 2500.0,
+                "MinRadius": 10.0,
+                "MaxRadius": 30.0
+              }
+            ],
+            "ItemsQuantity": 1
+          }
+        },
+        "Modules": {},
+        "CargoGrids": {
+          "ItemsQuantity": 0
+        },
+        "CargoContainers": {
+          "ItemsQuantity": 0
+        },
+        "Storage": {
+          "InstalledItems": [
+            {
+              "Name": "Personal Storage",
+              "Mass": 0.0,
+              "Size": 1,
+              "Grade": 1,
+              "Capacity": 0.75,
+              "Uneditable": true,
+              "Power": {
+                "PowerBase": 0.0,
+                "PowerDraw": 0.0,
+                "IdlePowerEmission": 0.0,
+                "ActivePowerEmission": 0.0
+              },
+              "Heat": {
+                "StartComponentTemperature": 0.0,
+                "StartIRTemperature": 0.0,
+                "StartIREmission": 0.0,
+                "ThermalEnergyBase": 0.0,
+                "ThermalEnergyDraw": 0.0
+              }
+            }
+          ],
+          "ItemsQuantity": 1
+        },
+        "WeaponsRacks": {
+          "ItemsQuantity": 0
+        },
+        "Usables": {
+          "InstalledItems": [
+            {
+              "Name": "hardpoint_MTC_jumpseat",
+              "Size": 1,
+              "Mass": 0.0,
+              "Power": {
+                "PowerBase": 1.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 1.0,
+                "ActivePowerEmission": 1.0
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 5.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            },
+            {
+              "Name": "hardpoint_seat_driver",
+              "Size": 1,
+              "Mass": 0.0,
+              "Power": {
+                "PowerBase": 1.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 750.0,
+                "ActivePowerEmission": 750.0
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 10.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            }
+          ],
+          "ItemsQuantity": 2
+        },
+        "Paints": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_paint",
+              "MinSize": 1,
+              "MaxSize": 1,
+              "Types": [
+                "Paints"
+              ],
+              "RequiredTags": [
+                "Paint_MTC"
+              ],
+              "PortTags": [
+                "Paint_MTC"
               ],
               "Uneditable": false
             }
@@ -164736,7 +167697,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_KRIG_P52_Merlin",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_KRIG_P52_Merlin",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -166029,7 +168990,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_KRIG_P72_Archimedes",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_KRIG_P72_Archimedes",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -167460,7 +170421,34 @@ const shipHardpoints = [
             ],
             "Hardpoints": 1
           },
-          "LifeSupport": {},
+          "LifeSupport": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_life_support",
+                "MinSize": 1,
+                "MaxSize": 1,
+                "Loadout": "e947b002-e65e-4637-90b7-c894925d6625",
+                "BaseLoadout": {
+                  "ClassName": "LFSP_TYDT_S01_ComfortAir",
+                  "Name": "LFSP_TYDT_S01_ComfortAir",
+                  "Type": "LifeSupportGenerator.UNDEFINED",
+                  "Grade": 3
+                },
+                "Types": [
+                  "LifeSupportGenerator"
+                ],
+                "Tags": [
+                  "MISC_Fortune",
+                  "Ship_Dock_Refuel"
+                ],
+                "Flags": [
+                  "invisible",
+                  "uneditable"
+                ],
+                "Uneditable": true
+              }
+            ]
+          },
           "FuelIntakes": {
             "InstalledItems": [
               {
@@ -167538,7 +170526,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Fortune",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Fortune",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -167641,10 +170629,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
                 }
               },
               "Power": {
@@ -167678,10 +170666,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
                 }
               },
               "Power": {
@@ -167715,10 +170703,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
                 }
               },
               "Power": {
@@ -169347,7 +172335,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Freelancer",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Freelancer",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -171293,7 +174281,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Freelancer_DUR",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Freelancer_DUR",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -173299,7 +176287,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Freelancer_MAX",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Freelancer_MAX",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -175487,7 +178475,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Freelancer_MIS",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Freelancer_MIS",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -177156,7 +180144,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Fury",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Fury",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -178285,7 +181273,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Fury_LX",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Fury_LX",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -180118,7 +183106,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Fury_MX",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Fury_MX",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -181639,7 +184627,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Hull_A",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Hull_A",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -184255,7 +187243,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Hull_C",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Hull_C",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -186382,7 +189370,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Prospector",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Prospector",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -187756,7 +190744,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Razor",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Razor",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -189058,7 +192046,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Razor_EX",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Razor_EX",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -190278,7 +193266,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Razor_LX",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Razor_LX",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -190800,7 +193788,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -190882,7 +193871,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -191885,7 +194875,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Reliant_Kore",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Reliant_Kore",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -192469,7 +195459,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -192551,7 +195542,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -193496,7 +196488,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Reliant_Mako",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Reliant_Mako",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -194056,7 +197048,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -194138,7 +197131,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -195083,7 +198077,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Reliant_Sen",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Reliant_Sen",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -195843,7 +198837,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -196087,7 +199082,8 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "MissileLauncher.MissileRack"
+                "MissileLauncher.MissileRack",
+                "BombLauncher.BombRack"
               ],
               "Uneditable": false,
               "Ports": [
@@ -197032,7 +200028,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Reliant_Tana",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Reliant_Tana",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -198705,7 +201701,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 10.0
+              "PoolSize": 10.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -199004,7 +202005,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Starfarer",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Starfarer",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -199108,10 +202109,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 16.0,
+                  "Width": 2.0,
+                  "Height": 4.0,
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -199146,10 +202147,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 32.0,
+                  "Width": 2.0,
+                  "Height": 4.0,
+                  "Depth": 4.0
                 }
               },
               "Uneditable": true,
@@ -199184,10 +202185,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 32.0,
+                  "Width": 2.0,
+                  "Height": 4.0,
+                  "Depth": 4.0
                 }
               },
               "Uneditable": true,
@@ -199222,10 +202223,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 8.0,
+                  "Width": 2.0,
+                  "Height": 2.0,
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -199260,10 +202261,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 8.0,
+                  "Width": 2.0,
+                  "Height": 2.0,
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -201075,7 +204076,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 10.0
+              "PoolSize": 10.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -201354,7 +204360,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Starfarer_Gemini",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Starfarer_Gemini",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -201458,10 +204464,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 16.0,
+                  "Width": 2.0,
+                  "Height": 4.0,
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -201496,10 +204502,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 32.0,
+                  "Width": 2.0,
+                  "Height": 4.0,
+                  "Depth": 4.0
                 }
               },
               "Uneditable": true,
@@ -201534,10 +204540,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 32.0,
+                  "Width": 2.0,
+                  "Height": 4.0,
+                  "Depth": 4.0
                 }
               },
               "Uneditable": true,
@@ -201572,10 +204578,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 8.0,
+                  "Width": 2.0,
+                  "Height": 2.0,
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -201610,10 +204616,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 8.0,
+                  "Width": 2.0,
+                  "Height": 2.0,
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -202418,7 +205424,7 @@ const shipHardpoints = [
               "Loadout": "MRCK_S04_MISC_Starlancer",
               "BaseLoadout": {
                 "ClassName": "MRCK_S04_MISC_Starlancer",
-                "Name": "Mirai Fury 1xS2 Missile Rack",
+                "Name": "MSD-543 Missile Rack",
                 "Type": "MissileLauncher.MissileRack",
                 "Grade": 1,
                 "Class": ""
@@ -202542,7 +205548,7 @@ const shipHardpoints = [
               "Loadout": "MRCK_S04_MISC_Starlancer",
               "BaseLoadout": {
                 "ClassName": "MRCK_S04_MISC_Starlancer",
-                "Name": "Mirai Fury 1xS2 Missile Rack",
+                "Name": "MSD-543 Missile Rack",
                 "Type": "MissileLauncher.MissileRack",
                 "Grade": 1,
                 "Class": ""
@@ -202666,7 +205672,7 @@ const shipHardpoints = [
               "Loadout": "MRCK_S04_MISC_Starlancer",
               "BaseLoadout": {
                 "ClassName": "MRCK_S04_MISC_Starlancer",
-                "Name": "Mirai Fury 1xS2 Missile Rack",
+                "Name": "MSD-543 Missile Rack",
                 "Type": "MissileLauncher.MissileRack",
                 "Grade": 1,
                 "Class": ""
@@ -202790,7 +205796,7 @@ const shipHardpoints = [
               "Loadout": "MRCK_S04_MISC_Starlancer",
               "BaseLoadout": {
                 "ClassName": "MRCK_S04_MISC_Starlancer",
-                "Name": "Mirai Fury 1xS2 Missile Rack",
+                "Name": "MSD-543 Missile Rack",
                 "Type": "MissileLauncher.MissileRack",
                 "Grade": 1,
                 "Class": ""
@@ -203935,7 +206941,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 8.0
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -203960,7 +206971,7 @@ const shipHardpoints = [
               }
             ],
             "Hardpoints": 1,
-            "FaceType": "Bubble"
+            "FaceType": "Quadrant"
           },
           "Coolers": {
             "InstalledItems": [
@@ -204019,8 +207030,7 @@ const shipHardpoints = [
                 ],
                 "Tags": [
                   "MISC_Starlancer_MAX",
-                  "Ship_Dock_Refuel",
-                  "expoship"
+                  "Ship_Dock_Refuel"
                 ],
                 "Flags": [
                   "uneditable"
@@ -204127,7 +207137,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MISC_Starlancer",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MISC_Starlancer",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -204306,10 +207316,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 32.0,
+                  "Width": 2.0,
+                  "Height": 8.0,
+                  "Depth": 2.0
                 }
               },
               "Power": {
@@ -204343,10 +207353,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 32.0,
+                  "Width": 2.0,
+                  "Height": 8.0,
+                  "Depth": 2.0
                 }
               },
               "Power": {
@@ -204582,8 +207592,7 @@ const shipHardpoints = [
               ],
               "Tags": [
                 "MISC_Starlancer_MAX",
-                "Ship_Dock_Refuel",
-                "expoship"
+                "Ship_Dock_Refuel"
               ],
               "Uneditable": false
             },
@@ -204596,8 +207605,3292 @@ const shipHardpoints = [
               ],
               "Tags": [
                 "MISC_Starlancer_MAX",
-                "Ship_Dock_Refuel",
-                "expoship"
+                "Ship_Dock_Refuel"
+              ],
+              "Uneditable": false
+            }
+          ],
+          "Hardpoints": 2
+        }
+      }
+    }
+  },
+  {
+    "ClassName": "MISC_Starlancer_TAC",
+    "Name": "MISC Starlancer TAC",
+    "IsSpaceship": true,
+    "PortTags": [],
+    "Hull": {
+      "Structure": [
+        {
+          "Name": "body",
+          "MaximumDamage": 38000.0,
+          "Parts": [
+            {
+              "Name": "nacelle_left",
+              "MaximumDamage": 8000.0,
+              "Parts": [
+                {
+                  "Name": "nacelle_left_rear",
+                  "MaximumDamage": 2000.0,
+                  "Parts": [
+                    {
+                      "Name": "hardpoint_thruster_main_left"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_main_left_aux_bottom"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_main_left_aux_top"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_mav_RSL"
+                    },
+                    {
+                      "Name": "geo_nacelle_fin_04",
+                      "MaximumDamage": 500.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "geo_nacelle_fin_05",
+                      "MaximumDamage": 500.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "geo_nacelle_fin_03",
+                      "MaximumDamage": 500.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "geo_nacelle_fin_02",
+                      "MaximumDamage": 500.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "geo_nacelle_fin_01",
+                      "MaximumDamage": 500.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "geo_nacelle_fin_06",
+                      "MaximumDamage": 500.0,
+                      "DetachRatio": 1.0
+                    }
+                  ],
+                  "DetachRatio": 0.0
+                },
+                {
+                  "Name": "hardpoint_thruster_retro_left"
+                },
+                {
+                  "Name": "nacelle_air_brake_left",
+                  "MaximumDamage": 600.0,
+                  "DetachRatio": 1.0
+                },
+                {
+                  "Name": "wing_plate_left",
+                  "MaximumDamage": 6000.0,
+                  "Parts": [
+                    {
+                      "Name": "wing_left",
+                      "MaximumDamage": 3000.0,
+                      "Parts": [
+                        {
+                          "Name": "wing_left_rear",
+                          "MaximumDamage": 1500.0,
+                          "Parts": [
+                            {
+                              "Name": "wing_aileron_left",
+                              "MaximumDamage": 500.0,
+                              "DetachRatio": 1.0
+                            }
+                          ],
+                          "DetachRatio": 1.0
+                        }
+                      ],
+                      "DetachRatio": 1.0
+                    }
+                  ],
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "hardpoint_thruster_main_centre"
+            },
+            {
+              "Name": "hardpoint_thruster_mav_RTL"
+            },
+            {
+              "Name": "hardpoint_thruster_mav_RTR"
+            },
+            {
+              "Name": "hardpoint_thruster_mav_MBR"
+            },
+            {
+              "Name": "hardpoint_thruster_mav_MBL"
+            },
+            {
+              "Name": "hardpoint_thruster_mav_RBR"
+            },
+            {
+              "Name": "hardpoint_thruster_mav_RBL"
+            },
+            {
+              "Name": "hardpoint_thruster_vtol_RR"
+            },
+            {
+              "Name": "hardpoint_thruster_vtol_RL"
+            },
+            {
+              "Name": "hardpoint_thruster_vtol_SL"
+            },
+            {
+              "Name": "hardpoint_thruster_vtol_SR"
+            },
+            {
+              "Name": "hardpoint_thruster_mav_FBL"
+            },
+            {
+              "Name": "hardpoint_thruster_mav_FBR"
+            },
+            {
+              "Name": "hardpoint_thruster_mav_MTL"
+            },
+            {
+              "Name": "hardpoint_thruster_mav_MTR"
+            },
+            {
+              "Name": "spoiler_connection_left",
+              "MaximumDamage": 500.0,
+              "Parts": [
+                {
+                  "Name": "rear_spoiler_left",
+                  "MaximumDamage": 500.0,
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "spoiler_connection_right",
+              "MaximumDamage": 500.0,
+              "Parts": [
+                {
+                  "Name": "rear_spoiler_right",
+                  "MaximumDamage": 500.0,
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "top_spoiler_left",
+              "MaximumDamage": 1200.0,
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "top_spoiler_right",
+              "MaximumDamage": 1200.0,
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "nose",
+              "MaximumDamage": 25000.0,
+              "Parts": [
+                {
+                  "Name": "hardpoint_thruster_mav_FSL"
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_FSR"
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_FTL"
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_FTR"
+                },
+                {
+                  "Name": "hardpoint_thruster_vtol_FL"
+                },
+                {
+                  "Name": "hardpoint_thruster_vtol_FR"
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "nacelle_right",
+              "MaximumDamage": 8000.0,
+              "Parts": [
+                {
+                  "Name": "hardpoint_thruster_retro_right"
+                },
+                {
+                  "Name": "nacelle_air_brake_right",
+                  "MaximumDamage": 600.0,
+                  "DetachRatio": 1.0
+                },
+                {
+                  "Name": "nacelle_right_rear",
+                  "MaximumDamage": 2000.0,
+                  "Parts": [
+                    {
+                      "Name": "hardpoint_thruster_main_right"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_main_right_aux_bottom"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_main_right_aux_top"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_mav_RSR"
+                    },
+                    {
+                      "Name": "geo_nacelle_fin_007",
+                      "MaximumDamage": 500.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "geo_nacelle_fin_008",
+                      "MaximumDamage": 500.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "geo_nacelle_fin_009",
+                      "MaximumDamage": 500.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "geo_nacelle_fin_010",
+                      "MaximumDamage": 500.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "geo_nacelle_fin_011",
+                      "MaximumDamage": 500.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "geo_nacelle_fin_012",
+                      "MaximumDamage": 500.0,
+                      "DetachRatio": 1.0
+                    }
+                  ],
+                  "DetachRatio": 0.0
+                },
+                {
+                  "Name": "wing_plate_right",
+                  "MaximumDamage": 6000.0,
+                  "Parts": [
+                    {
+                      "Name": "wing_right",
+                      "MaximumDamage": 3000.0,
+                      "Parts": [
+                        {
+                          "Name": "wing_right_rear",
+                          "MaximumDamage": 1500.0,
+                          "Parts": [
+                            {
+                              "Name": "wing_aileron_right",
+                              "MaximumDamage": 500.0,
+                              "DetachRatio": 1.0
+                            }
+                          ],
+                          "DetachRatio": 1.0
+                        }
+                      ],
+                      "DetachRatio": 1.0
+                    }
+                  ],
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            }
+          ],
+          "ShipDestructionDamage": 38000.0,
+          "DetachRatio": 1.0
+        }
+      ]
+    },
+    "Hardpoints": {
+      "Weapons": {
+        "PilotWeapons": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_weapon_left",
+              "MinSize": 6,
+              "MaxSize": 6,
+              "Loadout": "MISC_Starlancer_Dual_Gimbal",
+              "BaseLoadout": {
+                "ClassName": "MISC_Starlancer_Dual_Gimbal",
+                "Name": "PC2 Dual S4 Mount",
+                "Type": "Turret.NoseMounted",
+                "Grade": 1
+              },
+              "Types": [
+                "Turret.NoseMounted"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Turret": true,
+              "Uneditable": true,
+              "RemoteController": {
+                "Slaved": false,
+                "Seats": [
+                  "MISC_Starlancer_Pilot_Seat"
+                ]
+              },
+              "Ports": [
+                {
+                  "PortName": "hardpoint_weapon_01",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "BEHR_LaserCannon_S4",
+                  "BaseLoadout": {
+                    "ClassName": "BEHR_LaserCannon_S4",
+                    "Name": "M6A Cannon",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "gimbalMount",
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_weapon_02",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "BEHR_LaserCannon_S4",
+                  "BaseLoadout": {
+                    "ClassName": "BEHR_LaserCannon_S4",
+                    "Name": "M6A Cannon",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "gimbalMount",
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_weapon_right",
+              "MinSize": 6,
+              "MaxSize": 6,
+              "Loadout": "MISC_Starlancer_Dual_Gimbal",
+              "BaseLoadout": {
+                "ClassName": "MISC_Starlancer_Dual_Gimbal",
+                "Name": "PC2 Dual S4 Mount",
+                "Type": "Turret.NoseMounted",
+                "Grade": 1
+              },
+              "Types": [
+                "Turret.NoseMounted"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Turret": true,
+              "Uneditable": true,
+              "RemoteController": {
+                "Slaved": false,
+                "Seats": [
+                  "MISC_Starlancer_Pilot_Seat"
+                ]
+              },
+              "Ports": [
+                {
+                  "PortName": "hardpoint_weapon_01",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "BEHR_LaserCannon_S4",
+                  "BaseLoadout": {
+                    "ClassName": "BEHR_LaserCannon_S4",
+                    "Name": "M6A Cannon",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "gimbalMount",
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_weapon_02",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "BEHR_LaserCannon_S4",
+                  "BaseLoadout": {
+                    "ClassName": "BEHR_LaserCannon_S4",
+                    "Name": "M6A Cannon",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "gimbalMount",
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_missile_turret_left",
+              "MinSize": 4,
+              "MaxSize": 4,
+              "Loadout": "MISC_Starlancer_TAC_Missile_Gimbal",
+              "BaseLoadout": {
+                "ClassName": "MISC_Starlancer_TAC_Missile_Gimbal",
+                "Name": "PC2 Dual S4 Mount",
+                "Type": "Turret.GunTurret",
+                "Grade": 1
+              },
+              "Types": [
+                "Turret.GunTurret"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Gimballed": true,
+              "Uneditable": true,
+              "RemoteController": {
+                "Slaved": true,
+                "Seats": [
+                  "MISC_Starlancer_Copilot_Seat_TAC"
+                ]
+              },
+              "Ports": [
+                {
+                  "PortName": "turret_missile_rack",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "MRCK_S04_MISC_Starlancer_TAC_Turret",
+                  "BaseLoadout": {
+                    "ClassName": "MRCK_S04_MISC_Starlancer_TAC_Turret",
+                    "Name": "MSD-616 Missile Rack",
+                    "Type": "MissileLauncher.MissileRack",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "MissileLauncher.MissileRack"
+                  ],
+                  "Flags": [
+                    "$uneditable"
+                  ],
+                  "Tags": [
+                    "gimbalMount",
+                    "flightReady"
+                  ],
+                  "Uneditable": true,
+                  "Ports": [
+                    {
+                      "PortName": "missile_01_attach",
+                      "MinSize": 2,
+                      "MaxSize": 2,
+                      "Loadout": "MISL_S02_IR_FSKI_Ignite",
+                      "BaseLoadout": {
+                        "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                        "Name": "Ignite II Missile",
+                        "Type": "Missile.Missile",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "Missile.Missile"
+                      ],
+                      "Tags": [
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    },
+                    {
+                      "PortName": "missile_02_attach",
+                      "MinSize": 2,
+                      "MaxSize": 2,
+                      "Loadout": "MISL_S02_IR_FSKI_Ignite",
+                      "BaseLoadout": {
+                        "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                        "Name": "Ignite II Missile",
+                        "Type": "Missile.Missile",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "Missile.Missile"
+                      ],
+                      "Tags": [
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    },
+                    {
+                      "PortName": "missile_03_attach",
+                      "MinSize": 2,
+                      "MaxSize": 2,
+                      "Loadout": "MISL_S02_IR_FSKI_Ignite",
+                      "BaseLoadout": {
+                        "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                        "Name": "Ignite II Missile",
+                        "Type": "Missile.Missile",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "Missile.Missile"
+                      ],
+                      "Tags": [
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    },
+                    {
+                      "PortName": "missile_04_attach",
+                      "MinSize": 2,
+                      "MaxSize": 2,
+                      "Loadout": "MISL_S02_IR_FSKI_Ignite",
+                      "BaseLoadout": {
+                        "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                        "Name": "Ignite II Missile",
+                        "Type": "Missile.Missile",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "Missile.Missile"
+                      ],
+                      "Tags": [
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    },
+                    {
+                      "PortName": "missile_05_attach",
+                      "MinSize": 2,
+                      "MaxSize": 2,
+                      "Loadout": "MISL_S02_IR_FSKI_Ignite",
+                      "BaseLoadout": {
+                        "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                        "Name": "Ignite II Missile",
+                        "Type": "Missile.Missile",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "Missile.Missile"
+                      ],
+                      "Tags": [
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    },
+                    {
+                      "PortName": "missile_06_attach",
+                      "MinSize": 2,
+                      "MaxSize": 2,
+                      "Loadout": "MISL_S02_IR_FSKI_Ignite",
+                      "BaseLoadout": {
+                        "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                        "Name": "Ignite II Missile",
+                        "Type": "Missile.Missile",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "Missile.Missile"
+                      ],
+                      "Tags": [
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_missile_turret_right",
+              "MinSize": 4,
+              "MaxSize": 4,
+              "Loadout": "MISC_Starlancer_TAC_Missile_Gimbal_R",
+              "BaseLoadout": {
+                "ClassName": "MISC_Starlancer_TAC_Missile_Gimbal_R",
+                "Name": "PC2 Dual S4 Mount",
+                "Type": "Turret.GunTurret",
+                "Grade": 1
+              },
+              "Types": [
+                "Turret.GunTurret"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Gimballed": true,
+              "Uneditable": true,
+              "RemoteController": {
+                "Slaved": true,
+                "Seats": [
+                  "MISC_Starlancer_Copilot_Seat_TAC"
+                ]
+              },
+              "Ports": [
+                {
+                  "PortName": "turret_missile_rack",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "MRCK_S04_MISC_Starlancer_TAC_Turret",
+                  "BaseLoadout": {
+                    "ClassName": "MRCK_S04_MISC_Starlancer_TAC_Turret",
+                    "Name": "MSD-616 Missile Rack",
+                    "Type": "MissileLauncher.MissileRack",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "MissileLauncher.MissileRack"
+                  ],
+                  "Flags": [
+                    "$uneditable"
+                  ],
+                  "Tags": [
+                    "gimbalMount",
+                    "flightReady"
+                  ],
+                  "Uneditable": true,
+                  "Ports": [
+                    {
+                      "PortName": "missile_01_attach",
+                      "MinSize": 2,
+                      "MaxSize": 2,
+                      "Loadout": "MISL_S02_IR_FSKI_Ignite",
+                      "BaseLoadout": {
+                        "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                        "Name": "Ignite II Missile",
+                        "Type": "Missile.Missile",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "Missile.Missile"
+                      ],
+                      "Tags": [
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    },
+                    {
+                      "PortName": "missile_02_attach",
+                      "MinSize": 2,
+                      "MaxSize": 2,
+                      "Loadout": "MISL_S02_IR_FSKI_Ignite",
+                      "BaseLoadout": {
+                        "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                        "Name": "Ignite II Missile",
+                        "Type": "Missile.Missile",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "Missile.Missile"
+                      ],
+                      "Tags": [
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    },
+                    {
+                      "PortName": "missile_03_attach",
+                      "MinSize": 2,
+                      "MaxSize": 2,
+                      "Loadout": "MISL_S02_IR_FSKI_Ignite",
+                      "BaseLoadout": {
+                        "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                        "Name": "Ignite II Missile",
+                        "Type": "Missile.Missile",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "Missile.Missile"
+                      ],
+                      "Tags": [
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    },
+                    {
+                      "PortName": "missile_04_attach",
+                      "MinSize": 2,
+                      "MaxSize": 2,
+                      "Loadout": "MISL_S02_IR_FSKI_Ignite",
+                      "BaseLoadout": {
+                        "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                        "Name": "Ignite II Missile",
+                        "Type": "Missile.Missile",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "Missile.Missile"
+                      ],
+                      "Tags": [
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    },
+                    {
+                      "PortName": "missile_05_attach",
+                      "MinSize": 2,
+                      "MaxSize": 2,
+                      "Loadout": "MISL_S02_IR_FSKI_Ignite",
+                      "BaseLoadout": {
+                        "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                        "Name": "Ignite II Missile",
+                        "Type": "Missile.Missile",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "Missile.Missile"
+                      ],
+                      "Tags": [
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    },
+                    {
+                      "PortName": "missile_06_attach",
+                      "MinSize": 2,
+                      "MaxSize": 2,
+                      "Loadout": "MISL_S02_IR_FSKI_Ignite",
+                      "BaseLoadout": {
+                        "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                        "Name": "Ignite II Missile",
+                        "Type": "Missile.Missile",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "Missile.Missile"
+                      ],
+                      "Tags": [
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Hardpoints": 8
+        },
+        "MannedTurrets": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_turret_left",
+              "MinSize": 5,
+              "MaxSize": 5,
+              "Loadout": "MISC_Starlancer_TAC_Side_Turret_Left",
+              "BaseLoadout": {
+                "ClassName": "MISC_Starlancer_TAC_Side_Turret_Left",
+                "Name": "Manned Turret",
+                "Type": "TurretBase.MannedTurret",
+                "Grade": 1
+              },
+              "Types": [
+                "TurretBase.MannedTurret"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Turret": true,
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "hardpoint_weapon_left",
+                  "MinSize": 5,
+                  "MaxSize": 5,
+                  "Loadout": "Mount_Gimbal_S5",
+                  "BaseLoadout": {
+                    "ClassName": "Mount_Gimbal_S5",
+                    "Name": "VariPuck S5 Gimbal Mount",
+                    "Type": "Turret.GunTurret",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun",
+                    "Turret.GunTurret"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Gimballed": true,
+                  "Uneditable": false,
+                  "Ports": [
+                    {
+                      "PortName": "hardpoint_class_2",
+                      "MinSize": 4,
+                      "MaxSize": 5,
+                      "Loadout": "KLWE_LaserRepeater_S5",
+                      "BaseLoadout": {
+                        "ClassName": "KLWE_LaserRepeater_S5",
+                        "Name": "CF-557 Galdereen Repeater",
+                        "Type": "WeaponGun.Gun",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "WeaponGun.Gun"
+                      ],
+                      "Tags": [
+                        "gimbalMount",
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    }
+                  ]
+                },
+                {
+                  "PortName": "hardpoint_weapon_right",
+                  "MinSize": 5,
+                  "MaxSize": 5,
+                  "Loadout": "Mount_Gimbal_S5",
+                  "BaseLoadout": {
+                    "ClassName": "Mount_Gimbal_S5",
+                    "Name": "VariPuck S5 Gimbal Mount",
+                    "Type": "Turret.GunTurret",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun",
+                    "Turret.GunTurret"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Gimballed": true,
+                  "Uneditable": false,
+                  "Ports": [
+                    {
+                      "PortName": "hardpoint_class_2",
+                      "MinSize": 4,
+                      "MaxSize": 5,
+                      "Loadout": "KLWE_LaserRepeater_S5",
+                      "BaseLoadout": {
+                        "ClassName": "KLWE_LaserRepeater_S5",
+                        "Name": "CF-557 Galdereen Repeater",
+                        "Type": "WeaponGun.Gun",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "WeaponGun.Gun"
+                      ],
+                      "Tags": [
+                        "gimbalMount",
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_turret_right",
+              "MinSize": 5,
+              "MaxSize": 5,
+              "Loadout": "MISC_Starlancer_TAC_Side_Turret",
+              "BaseLoadout": {
+                "ClassName": "MISC_Starlancer_TAC_Side_Turret",
+                "Name": "Manned Turret",
+                "Type": "TurretBase.MannedTurret",
+                "Grade": 1
+              },
+              "Types": [
+                "TurretBase.MannedTurret"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Turret": true,
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "hardpoint_weapon_left",
+                  "MinSize": 5,
+                  "MaxSize": 5,
+                  "Loadout": "Mount_Gimbal_S5",
+                  "BaseLoadout": {
+                    "ClassName": "Mount_Gimbal_S5",
+                    "Name": "VariPuck S5 Gimbal Mount",
+                    "Type": "Turret.GunTurret",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun",
+                    "Turret.GunTurret"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Gimballed": true,
+                  "Uneditable": false,
+                  "Ports": [
+                    {
+                      "PortName": "hardpoint_class_2",
+                      "MinSize": 4,
+                      "MaxSize": 5,
+                      "Loadout": "KLWE_LaserRepeater_S5",
+                      "BaseLoadout": {
+                        "ClassName": "KLWE_LaserRepeater_S5",
+                        "Name": "CF-557 Galdereen Repeater",
+                        "Type": "WeaponGun.Gun",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "WeaponGun.Gun"
+                      ],
+                      "Tags": [
+                        "gimbalMount",
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    }
+                  ]
+                },
+                {
+                  "PortName": "hardpoint_weapon_right",
+                  "MinSize": 5,
+                  "MaxSize": 5,
+                  "Loadout": "Mount_Gimbal_S5",
+                  "BaseLoadout": {
+                    "ClassName": "Mount_Gimbal_S5",
+                    "Name": "VariPuck S5 Gimbal Mount",
+                    "Type": "Turret.GunTurret",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun",
+                    "Turret.GunTurret"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Gimballed": true,
+                  "Uneditable": false,
+                  "Ports": [
+                    {
+                      "PortName": "hardpoint_class_2",
+                      "MinSize": 4,
+                      "MaxSize": 5,
+                      "Loadout": "KLWE_LaserRepeater_S5",
+                      "BaseLoadout": {
+                        "ClassName": "KLWE_LaserRepeater_S5",
+                        "Name": "CF-557 Galdereen Repeater",
+                        "Type": "WeaponGun.Gun",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "WeaponGun.Gun"
+                      ],
+                      "Tags": [
+                        "gimbalMount",
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "PortName": "weapon",
+              "MinSize": 1,
+              "MaxSize": 1,
+              "Loadout": "GATS_BallisticGatling_Mounted_S1_DRAK_Cutlass_Steel",
+              "BaseLoadout": {
+                "ClassName": "GATS_BallisticGatling_Mounted_S1_DRAK_Cutlass_Steel",
+                "Name": "YellowJacket GT-210 Gatling",
+                "Type": "WeaponGun.Gun",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "WeaponGun.Gun",
+                "MissileLauncher"
+              ],
+              "Flags": [
+                "uneditable"
+              ],
+              "Tags": [
+                "MISC_Starlancer_TAC"
+              ],
+              "Fixed": true,
+              "Uneditable": true
+            },
+            {
+              "PortName": "weapon",
+              "MinSize": 1,
+              "MaxSize": 1,
+              "Loadout": "GATS_BallisticGatling_Mounted_S1_DRAK_Cutlass_Steel",
+              "BaseLoadout": {
+                "ClassName": "GATS_BallisticGatling_Mounted_S1_DRAK_Cutlass_Steel",
+                "Name": "YellowJacket GT-210 Gatling",
+                "Type": "WeaponGun.Gun",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "WeaponGun.Gun",
+                "MissileLauncher"
+              ],
+              "Flags": [
+                "uneditable"
+              ],
+              "Tags": [
+                "MISC_Starlancer_TAC"
+              ],
+              "Fixed": true,
+              "Uneditable": true
+            }
+          ],
+          "Hardpoints": 55
+        },
+        "RemoteTurrets": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_turret_rear",
+              "MinSize": 1,
+              "MaxSize": 10,
+              "Loadout": "MISC_Starlancer_Remote_Turret_Rear",
+              "BaseLoadout": {
+                "ClassName": "MISC_Starlancer_Remote_Turret_Rear",
+                "Name": "Remote Turret",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.GunTurret"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Gimballed": true,
+              "Uneditable": true,
+              "RemoteController": {
+                "Slaved": false,
+                "Seats": [
+                  "MISC_Starlancer_Support_Seat"
+                ]
+              },
+              "Ports": [
+                {
+                  "PortName": "turret_left",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "Mount_Gimbal_S4",
+                  "BaseLoadout": {
+                    "ClassName": "Mount_Gimbal_S4",
+                    "Name": "VariPuck S4 Gimbal Mount",
+                    "Type": "Turret.GunTurret",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Turret.GunTurret"
+                  ],
+                  "Flags": [
+                    "$uneditable"
+                  ],
+                  "Tags": [
+                    "$MISC_Starlancer"
+                  ],
+                  "Gimballed": true,
+                  "Uneditable": true,
+                  "Ports": [
+                    {
+                      "PortName": "hardpoint_class_2",
+                      "MinSize": 3,
+                      "MaxSize": 4,
+                      "Loadout": "KLWE_LaserRepeater_S4",
+                      "BaseLoadout": {
+                        "ClassName": "KLWE_LaserRepeater_S4",
+                        "Name": "CF-447 Rhino Repeater",
+                        "Type": "WeaponGun.Gun",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "WeaponGun.Gun"
+                      ],
+                      "Tags": [
+                        "gimbalMount",
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    }
+                  ]
+                },
+                {
+                  "PortName": "turret_right",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "Mount_Gimbal_S4",
+                  "BaseLoadout": {
+                    "ClassName": "Mount_Gimbal_S4",
+                    "Name": "VariPuck S4 Gimbal Mount",
+                    "Type": "Turret.GunTurret",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Turret.GunTurret"
+                  ],
+                  "Flags": [
+                    "$uneditable"
+                  ],
+                  "Tags": [
+                    "$MISC_Starlancer"
+                  ],
+                  "Gimballed": true,
+                  "Uneditable": true,
+                  "Ports": [
+                    {
+                      "PortName": "hardpoint_class_2",
+                      "MinSize": 3,
+                      "MaxSize": 4,
+                      "Loadout": "KLWE_LaserRepeater_S4",
+                      "BaseLoadout": {
+                        "ClassName": "KLWE_LaserRepeater_S4",
+                        "Name": "CF-447 Rhino Repeater",
+                        "Type": "WeaponGun.Gun",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "WeaponGun.Gun"
+                      ],
+                      "Tags": [
+                        "gimbalMount",
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_turret_front",
+              "MinSize": 4,
+              "MaxSize": 4,
+              "Loadout": "MISC_Starlancer_Remote_Turret",
+              "BaseLoadout": {
+                "ClassName": "MISC_Starlancer_Remote_Turret",
+                "Name": "Remote Turret",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.GunTurret"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Gimballed": true,
+              "Uneditable": true,
+              "RemoteController": {
+                "Slaved": false,
+                "Seats": [
+                  "MISC_Starlancer_Support_Seat"
+                ]
+              },
+              "Ports": [
+                {
+                  "PortName": "turret_left",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "Mount_Gimbal_S4",
+                  "BaseLoadout": {
+                    "ClassName": "Mount_Gimbal_S4",
+                    "Name": "VariPuck S4 Gimbal Mount",
+                    "Type": "Turret.GunTurret",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Turret.GunTurret"
+                  ],
+                  "Flags": [
+                    "$uneditable"
+                  ],
+                  "Tags": [
+                    "$MISC_Starlancer"
+                  ],
+                  "Gimballed": true,
+                  "Uneditable": true,
+                  "Ports": [
+                    {
+                      "PortName": "hardpoint_class_2",
+                      "MinSize": 3,
+                      "MaxSize": 4,
+                      "Loadout": "KLWE_LaserRepeater_S4",
+                      "BaseLoadout": {
+                        "ClassName": "KLWE_LaserRepeater_S4",
+                        "Name": "CF-447 Rhino Repeater",
+                        "Type": "WeaponGun.Gun",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "WeaponGun.Gun"
+                      ],
+                      "Tags": [
+                        "gimbalMount",
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    }
+                  ]
+                },
+                {
+                  "PortName": "turret_right",
+                  "MinSize": 4,
+                  "MaxSize": 4,
+                  "Loadout": "Mount_Gimbal_S4",
+                  "BaseLoadout": {
+                    "ClassName": "Mount_Gimbal_S4",
+                    "Name": "VariPuck S4 Gimbal Mount",
+                    "Type": "Turret.GunTurret",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Turret.GunTurret"
+                  ],
+                  "Flags": [
+                    "$uneditable"
+                  ],
+                  "Tags": [
+                    "$MISC_Starlancer"
+                  ],
+                  "Gimballed": true,
+                  "Uneditable": true,
+                  "Ports": [
+                    {
+                      "PortName": "hardpoint_class_2",
+                      "MinSize": 3,
+                      "MaxSize": 4,
+                      "Loadout": "KLWE_LaserRepeater_S4",
+                      "BaseLoadout": {
+                        "ClassName": "KLWE_LaserRepeater_S4",
+                        "Name": "CF-447 Rhino Repeater",
+                        "Type": "WeaponGun.Gun",
+                        "Grade": 1,
+                        "Class": ""
+                      },
+                      "Types": [
+                        "WeaponGun.Gun"
+                      ],
+                      "Tags": [
+                        "gimbalMount",
+                        "flightReady"
+                      ],
+                      "Uneditable": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "Hardpoints": 2
+        },
+        "PDCTurrets": {},
+        "MissileRacks": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_missile_rack_left",
+              "MinSize": 4,
+              "MaxSize": 4,
+              "Loadout": "MRCK_S04_MISC_Starlancer",
+              "BaseLoadout": {
+                "ClassName": "MRCK_S04_MISC_Starlancer",
+                "Name": "MSD-543 Missile Rack",
+                "Type": "MissileLauncher.MissileRack",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "MissileLauncher.MissileRack"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "missile_01_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_02_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Flags": [
+                    "left",
+                    "top"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_03_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Flags": [
+                    "right",
+                    "bottom"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_04_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Flags": [
+                    "left",
+                    "top"
+                  ],
+                  "Uneditable": false
+                }
+              ],
+              "RemoteController": {
+                "Slaved": false,
+                "Seats": [
+                  "MISC_Starlancer_Pilot_Seat"
+                ]
+              }
+            },
+            {
+              "PortName": "hardpoint_missile_rack_neck",
+              "MinSize": 4,
+              "MaxSize": 4,
+              "Loadout": "MRCK_S04_MISC_Starlancer",
+              "BaseLoadout": {
+                "ClassName": "MRCK_S04_MISC_Starlancer",
+                "Name": "MSD-543 Missile Rack",
+                "Type": "MissileLauncher.MissileRack",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "MissileLauncher.MissileRack"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "missile_01_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_02_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Flags": [
+                    "left",
+                    "top"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_03_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Flags": [
+                    "right",
+                    "bottom"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_04_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Flags": [
+                    "left",
+                    "top"
+                  ],
+                  "Uneditable": false
+                }
+              ],
+              "RemoteController": {
+                "Slaved": false,
+                "Seats": [
+                  "MISC_Starlancer_Pilot_Seat"
+                ]
+              }
+            },
+            {
+              "PortName": "hardpoint_missile_rack_nose",
+              "MinSize": 4,
+              "MaxSize": 4,
+              "Loadout": "MRCK_S04_MISC_Starlancer",
+              "BaseLoadout": {
+                "ClassName": "MRCK_S04_MISC_Starlancer",
+                "Name": "MSD-543 Missile Rack",
+                "Type": "MissileLauncher.MissileRack",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "MissileLauncher.MissileRack"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "missile_01_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_02_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Flags": [
+                    "left",
+                    "top"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_03_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Flags": [
+                    "right",
+                    "bottom"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_04_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Flags": [
+                    "left",
+                    "top"
+                  ],
+                  "Uneditable": false
+                }
+              ],
+              "RemoteController": {
+                "Slaved": false,
+                "Seats": [
+                  "MISC_Starlancer_Pilot_Seat"
+                ]
+              }
+            },
+            {
+              "PortName": "hardpoint_missile_rack_right",
+              "MinSize": 4,
+              "MaxSize": 4,
+              "Loadout": "MRCK_S04_MISC_Starlancer",
+              "BaseLoadout": {
+                "ClassName": "MRCK_S04_MISC_Starlancer",
+                "Name": "MSD-543 Missile Rack",
+                "Type": "MissileLauncher.MissileRack",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "MissileLauncher.MissileRack"
+              ],
+              "Flags": [
+                "$uneditable"
+              ],
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "missile_01_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_02_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Flags": [
+                    "left",
+                    "top"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_03_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Flags": [
+                    "right",
+                    "bottom"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "missile_04_attach",
+                  "MinSize": 3,
+                  "MaxSize": 3,
+                  "Loadout": "MISL_S03_EM_FSKI_Thunderbolt",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S03_EM_FSKI_Thunderbolt",
+                    "Name": "Thunderbolt III Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady",
+                    "$MISC_Starlancer"
+                  ],
+                  "Flags": [
+                    "left",
+                    "top"
+                  ],
+                  "Uneditable": false
+                }
+              ],
+              "RemoteController": {
+                "Slaved": false,
+                "Seats": [
+                  "MISC_Starlancer_Pilot_Seat"
+                ]
+              }
+            }
+          ],
+          "Hardpoints": 4
+        },
+        "BombRacks": {},
+        "InterdictionHardpoints": {},
+        "MiningHardpoints": {},
+        "SalvageHardpoints": {},
+        "UtilityHardpoints": {},
+        "UtilityTurrets": {}
+      },
+      "Components": {
+        "Propulsion": {
+          "PowerPlants": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_power_plant",
+                "MinSize": 3,
+                "MaxSize": 3,
+                "Loadout": "POWR_AEGS_S03_Centurion_SCItem",
+                "BaseLoadout": {
+                  "ClassName": "POWR_AEGS_S03_Centurion_SCItem",
+                  "Name": "Centurion",
+                  "Type": "PowerPlant.Power",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "PowerPlant"
+                ],
+                "Uneditable": false
+              }
+            ],
+            "Hardpoints": 1
+          },
+          "QuantumDrives": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_quantum_drive",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "QDRV_ACAS_S02_SparkFire_SCItem",
+                "BaseLoadout": {
+                  "ClassName": "QDRV_ACAS_S02_SparkFire_SCItem",
+                  "Name": "SparkFire",
+                  "Type": "QuantumDrive.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Competition"
+                },
+                "Types": [
+                  "QuantumDrive.QDrive"
+                ],
+                "Uneditable": false,
+                "Ports": [
+                  {
+                    "PortName": "hardpoint_Jump_Drive",
+                    "MinSize": 2,
+                    "MaxSize": 2,
+                    "Loadout": "JDRV_TARS_S02_Excelsior_SCItem",
+                    "BaseLoadout": {
+                      "ClassName": "JDRV_TARS_S02_Excelsior_SCItem",
+                      "Name": "Excelsior",
+                      "Type": "JumpDrive.UNDEFINED",
+                      "Grade": 3,
+                      "Class": "Civilian"
+                    },
+                    "Types": [
+                      "JumpDrive.JumpDrive"
+                    ],
+                    "Flags": [
+                      "dont_hide_entity"
+                    ],
+                    "Uneditable": false
+                  }
+                ]
+              }
+            ],
+            "Hardpoints": 1
+          },
+          "Thrusters": {
+            "MainThrusters": {
+              "InstalledItems": [
+                {
+                  "Name": "hardpoint_thruster_main_left",
+                  "Size": 6,
+                  "Mass": 15000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 5000000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 625.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 7000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_main_left_aux_bottom",
+                  "Size": 6,
+                  "Mass": 15000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1000000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 125.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 3500.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_main_left_aux_top",
+                  "Size": 6,
+                  "Mass": 15000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1000000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 125.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 3500.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_main_centre",
+                  "Size": 6,
+                  "Mass": 15000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 12500000.0,
+                  "FuelBurnRatePerMN": 130.0,
+                  "FuelUsagePerSecond": 1625.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 17000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_main_right",
+                  "Size": 6,
+                  "Mass": 15000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 5000000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 625.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 7000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_main_right_aux_bottom",
+                  "Size": 6,
+                  "Mass": 15000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1000000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 125.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 3500.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_main_right_aux_top",
+                  "Size": 6,
+                  "Mass": 15000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1000000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 125.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 3500.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                }
+              ],
+              "ItemsQuantity": 7
+            },
+            "RetroThrusters": {
+              "InstalledItems": [
+                {
+                  "Name": "hardpoint_thruster_retro_left",
+                  "Size": 1,
+                  "Mass": 6000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 7500000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 937.5,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 5500.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_retro_right",
+                  "Size": 1,
+                  "Mass": 6000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 7500000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 937.5,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 5500.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                }
+              ],
+              "ItemsQuantity": 2
+            },
+            "VtolThrusters": {
+              "InstalledItems": [
+                {
+                  "Name": "hardpoint_thruster_vtol_RR",
+                  "Size": 1,
+                  "Mass": 1800.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1500000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 187.5,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_vtol_RL",
+                  "Size": 1,
+                  "Mass": 1800.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1500000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 187.5,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_vtol_FL",
+                  "Size": 1,
+                  "Mass": 1800.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1500000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 187.5,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_vtol_FR",
+                  "Size": 1,
+                  "Mass": 1800.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1500000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 187.5,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                }
+              ],
+              "ItemsQuantity": 4
+            },
+            "ManeuveringThrusters": {
+              "InstalledItems": [
+                {
+                  "Name": "hardpoint_thruster_mav_RSL",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 10500000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 1312.5,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_RTL",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1000000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 125.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_RTR",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1000000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 125.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_MBR",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 4000000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 500.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_MBL",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 4000000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 500.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_RBR",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 4000000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 500.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_RBL",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 4000000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 500.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_FBL",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1800000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 225.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_FBR",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1800000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 225.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_MTL",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1000000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 125.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_MTR",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1000000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 125.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_FSL",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 6500000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 812.5,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_FSR",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 6500000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 812.5,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_FTL",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 7800000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 975.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_FTR",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 7800000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 975.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_mav_RSR",
+                  "Size": 1,
+                  "Mass": 2000.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 10500000.0,
+                  "FuelBurnRatePerMN": 125.0,
+                  "FuelUsagePerSecond": 1312.5,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                }
+              ],
+              "ItemsQuantity": 16
+            }
+          },
+          "QuantumFuelTanks": {
+            "InstalledItems": [
+              {
+                "Name": "Internal Tank",
+                "Size": 3,
+                "Mass": 0.0,
+                "Grade": 1,
+                "Capacity": 3.6,
+                "Uneditable": true
+              }
+            ],
+            "ItemsQuantity": 1,
+            "TotalQuantumFuelCapacity": 3.6
+          },
+          "HydrogenFuelTanks": {
+            "InstalledItems": [
+              {
+                "Name": "hardpoint_fuel_1",
+                "Size": 1,
+                "Mass": 0.0,
+                "Grade": 1,
+                "Capacity": 50.0,
+                "Uneditable": true
+              }
+            ],
+            "ItemsQuantity": 1,
+            "TotalFuelCapacity": 50.0
+          }
+        },
+        "Systems": {
+          "Controllers": {
+            "CapacitorAssignment": {
+              "AfterBurner": {
+                "Regen": "f381647d-1e21-4dd2-b63b-567f012deeda",
+                "RegenNavMode": "f381647d-1e21-4dd2-b63b-567f012deeda",
+                "Usage": "822703ac-f458-433e-af38-352232852175",
+                "AngVelocity": [
+                  {
+                    "x": -0.4583936,
+                    "y": -0.1252766
+                  },
+                  {
+                    "x": 0.0,
+                    "y": 0.0
+                  },
+                  {
+                    "x": 0.4583936,
+                    "y": 0.1252766
+                  },
+                  {
+                    "x": 0.3870683,
+                    "y": 0.9817872
+                  },
+                  {
+                    "x": 1.0,
+                    "y": 1.0
+                  },
+                  {
+                    "x": 1.612932,
+                    "y": 1.018213
+                  }
+                ]
+              },
+              "ShieldEmitter": {
+                "Regen": "f381647d-1e21-4dd2-b63b-567f012deeda",
+                "RegenNavMode": "5c844120-12c9-49eb-b7dd-93db1fc43d00",
+                "Resistance": "cbc03b47-3bee-4529-9fd1-f256dc7efb09"
+              },
+              "PilotWeapon": {},
+              "TurretsWeapon": {}
+            },
+            "Ifcs": {
+              "InstalledItems": [
+                {
+                  "ClassName": "Controller_Flight_MISC_Starlancer_TAC",
+                  "ResourceNetwork": [
+                    {
+                      "Consumption": [
+                        {
+                          "Resource": "Power",
+                          "MinConsumptionFraction": 0.1666667,
+                          "Segment": 6.0
+                        }
+                      ],
+                      "Signatures": {
+                        "Electromagnetic": {
+                          "Nominal": 0.0,
+                          "DecayRate": 0.15
+                        },
+                        "Infrared": {
+                          "Nominal": 0.0,
+                          "DecayRate": 0.15
+                        }
+                      },
+                      "State": "Online"
+                    }
+                  ]
+                }
+              ]
+            },
+            "Missiles": {
+              "MaxArmed": 4.0,
+              "Cooldown": 4.0
+            },
+            "Weapons": {
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
+            },
+            "Wheeled": {}
+          },
+          "Shields": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_shield_generator_left",
+                "MinSize": 3,
+                "MaxSize": 3,
+                "Loadout": "SHLD_BASL_S03_Stronghold_SCItem",
+                "BaseLoadout": {
+                  "ClassName": "SHLD_BASL_S03_Stronghold_SCItem",
+                  "Name": "Stronghold",
+                  "Type": "Shield.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Industrial"
+                },
+                "Types": [
+                  "Shield"
+                ],
+                "Uneditable": false
+              },
+              {
+                "PortName": "hardpoint_shield_generator_right",
+                "MinSize": 3,
+                "MaxSize": 3,
+                "Loadout": "SHLD_BASL_S03_Stronghold_SCItem",
+                "BaseLoadout": {
+                  "ClassName": "SHLD_BASL_S03_Stronghold_SCItem",
+                  "Name": "Stronghold",
+                  "Type": "Shield.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Industrial"
+                },
+                "Types": [
+                  "Shield"
+                ],
+                "Uneditable": false
+              }
+            ],
+            "Hardpoints": 2,
+            "FaceType": "Quadrant"
+          },
+          "Coolers": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_cooler",
+                "MinSize": 3,
+                "MaxSize": 3,
+                "Loadout": "COOL_AEGS_S03_Blizzard_SCItem",
+                "BaseLoadout": {
+                  "ClassName": "COOL_AEGS_S03_Blizzard_SCItem",
+                  "Name": "Blizzard",
+                  "Type": "Cooler.UNDEFINED",
+                  "Grade": 1,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "Cooler"
+                ],
+                "Uneditable": false
+              }
+            ],
+            "Hardpoints": 1
+          },
+          "LifeSupport": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_lifesupport",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "LFSP_TYDT_S02_ComfortAirPlus",
+                "BaseLoadout": {
+                  "ClassName": "LFSP_TYDT_S02_ComfortAirPlus",
+                  "Name": "LFSP_TYDT_S02_ComfortAirPlus",
+                  "Type": "LifeSupportGenerator.UNDEFINED",
+                  "Grade": 3
+                },
+                "Types": [
+                  "LifeSupportGenerator"
+                ],
+                "Tags": [
+                  "MISC_Starlancer_TAC",
+                  "Ship_Dock_Refuel"
+                ],
+                "Flags": [
+                  "uneditable"
+                ],
+                "Uneditable": true
+              }
+            ]
+          },
+          "FuelIntakes": {
+            "InstalledItems": [
+              {
+                "Name": "hardpoint_fuel_intake_left",
+                "Size": 1,
+                "Mass": 10.0,
+                "Grade": 1,
+                "FuelIntakeRate": 25.0,
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 0.5,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 25.0,
+                  "ActivePowerEmission": 50.0
+                },
+                "Heat": {
+                  "StartComponentTemperature": 300.0,
+                  "StartIRTemperature": 250.0,
+                  "StartIREmission": 25.0,
+                  "ThermalEnergyBase": 10.0,
+                  "ThermalEnergyDraw": 20.0
+                }
+              },
+              {
+                "Name": "hardpoint_fuel_intake_right",
+                "Size": 1,
+                "Mass": 10.0,
+                "Grade": 1,
+                "FuelIntakeRate": 25.0,
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 0.5,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 25.0,
+                  "ActivePowerEmission": 50.0
+                },
+                "Heat": {
+                  "StartComponentTemperature": 300.0,
+                  "StartIRTemperature": 250.0,
+                  "StartIREmission": 25.0,
+                  "ThermalEnergyBase": 10.0,
+                  "ThermalEnergyDraw": 20.0
+                }
+              }
+            ],
+            "ItemsQuantity": 2,
+            "TotalFuelIntakeRate": 50.0
+          },
+          "Countermeasures": {
+            "InstalledItems": [
+              {
+                "Name": "Joker Defcon Flares Ammo",
+                "Size": 1,
+                "Mass": 150.0,
+                "Grade": 1,
+                "Ammunition": 100.0,
+                "Speed": 90.0,
+                "Range": 1080.0,
+                "Type": "Decoy",
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 1.0,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 50.0,
+                  "ActivePowerEmission": 50.0
+                }
+              },
+              {
+                "Name": "Joker Defcon - Noise Launcher",
+                "Size": 1,
+                "Mass": 150.0,
+                "Grade": 1,
+                "Ammunition": 60.0,
+                "Speed": 180.0,
+                "Range": 144.0,
+                "Type": "Noise",
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 1.0,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 50.0,
+                  "ActivePowerEmission": 50.0
+                }
+              }
+            ],
+            "ItemsQuantity": 2
+          }
+        },
+        "Avionics": {
+          "FlightBlade": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_controller_flight",
+                "MinSize": 1,
+                "MaxSize": 1,
+                "Loadout": "Controller_Flight_MISC_Starlancer_TAC",
+                "BaseLoadout": {
+                  "ClassName": "Controller_Flight_MISC_Starlancer_TAC",
+                  "Name": "Flight Blade",
+                  "Type": "FlightController.UNDEFINED",
+                  "Grade": 1
+                },
+                "Types": [
+                  "FlightController"
+                ],
+                "Flags": [
+                  "invisible",
+                  "uneditable"
+                ],
+                "Uneditable": true
+              }
+            ]
+          },
+          "Radars": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_radar",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "RADR_CHCO_S02_Surveyor",
+                "BaseLoadout": {
+                  "ClassName": "RADR_CHCO_S02_Surveyor",
+                  "Name": "Surveyor",
+                  "Type": "Radar.MidRangeRadar",
+                  "Grade": 1,
+                  "Class": "Industrial"
+                },
+                "Types": [
+                  "Radar.ShortRangeRadar",
+                  "Radar.MidRangeRadar"
+                ],
+                "Flags": [
+                  "uneditable"
+                ],
+                "Uneditable": true
+              }
+            ],
+            "DetectionCapability": [
+              {
+                "Name": "Surveyor",
+                "PortName": "hardpoint_radar",
+                "Size": 2,
+                "Sensitivity": {
+                  "IRSensitivity": 0.9,
+                  "EMSensitivity": 0.9,
+                  "CSSensitivity": 0.9,
+                  "RSSensitivity": 0.85
+                },
+                "GroundSensitivity": {
+                  "IRSensitivity": 0.25,
+                  "EMSensitivity": 0.25,
+                  "CSSensitivity": 0.25,
+                  "RSSensitivity": 0.25
+                },
+                "Piercing": {
+                  "IRPiercing": 0.25,
+                  "EMPiercing": 0.25,
+                  "CSPiercing": 0.25,
+                  "RSPiercing": 1.0
+                }
+              }
+            ],
+            "ItemsQuantity": 1
+          },
+          "SelfDestruct": {
+            "InstalledItems": [
+              {
+                "Name": "MISC Self Destruct",
+                "Size": 1,
+                "Mass": 0.0,
+                "Grade": 1,
+                "Uneditable": true,
+                "Countdown": 45.0,
+                "Damage": 15000.0,
+                "MinRadius": 30.0,
+                "MaxRadius": 80.0
+              }
+            ],
+            "ItemsQuantity": 1
+          }
+        },
+        "Modules": {},
+        "CargoGrids": {
+          "InstalledItems": [
+            {
+              "Name": "MISC_Starlancer_CargoGrid",
+              "Mass": 0.0,
+              "Size": 1,
+              "Grade": 1,
+              "Capacity": 48.0,
+              "GridProperties": {
+                "Width": 2.0,
+                "Height": 3.0,
+                "Depth": 8.0,
+                "MinContainerSize": {
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                },
+                "MaxContainerSize": {
+                  "Capacity": 32.0,
+                  "Width": 2.0,
+                  "Height": 2.0,
+                  "Depth": 8.0
+                }
+              },
+              "Uneditable": true,
+              "Power": {
+                "PowerBase": 0.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 0.0,
+                "ActivePowerEmission": 2.64
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 132.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            },
+            {
+              "Name": "MISC_Starlancer_CargoGrid",
+              "Mass": 0.0,
+              "Size": 1,
+              "Grade": 1,
+              "Capacity": 48.0,
+              "GridProperties": {
+                "Width": 2.0,
+                "Height": 3.0,
+                "Depth": 8.0,
+                "MinContainerSize": {
+                  "Capacity": 1.0,
+                  "Width": 1.0,
+                  "Height": 1.0,
+                  "Depth": 1.0
+                },
+                "MaxContainerSize": {
+                  "Capacity": 32.0,
+                  "Width": 2.0,
+                  "Height": 2.0,
+                  "Depth": 8.0
+                }
+              },
+              "Uneditable": true,
+              "Power": {
+                "PowerBase": 0.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 0.0,
+                "ActivePowerEmission": 2.64
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 132.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            }
+          ],
+          "ItemsQuantity": 2
+        },
+        "CargoContainers": {
+          "ItemsQuantity": 0
+        },
+        "Storage": {
+          "ItemsQuantity": 0
+        },
+        "WeaponsRacks": {
+          "ItemsQuantity": 0
+        },
+        "Usables": {
+          "InstalledItems": [
+            {
+              "Name": "hardpoint_seat_copilot_dashboard",
+              "Size": 1,
+              "Mass": 0.0,
+              "Power": {
+                "PowerBase": 1.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 1.0,
+                "ActivePowerEmission": 1.0
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 5.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            },
+            {
+              "Name": "hardpoint_seat_pilot_dashboard",
+              "Size": 1,
+              "Mass": 0.0,
+              "Power": {
+                "PowerBase": 1.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 1.0,
+                "ActivePowerEmission": 1.0
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 5.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            },
+            {
+              "Name": "hardpoint_seat_support_left_dashboard",
+              "Size": 1,
+              "Mass": 0.0,
+              "Power": {
+                "PowerBase": 1.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 1.0,
+                "ActivePowerEmission": 1.0
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 5.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            },
+            {
+              "Name": "hardpoint_seat_support_right_dashboard",
+              "Size": 1,
+              "Mass": 0.0,
+              "Power": {
+                "PowerBase": 1.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 1.0,
+                "ActivePowerEmission": 1.0
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 5.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            }
+          ],
+          "ItemsQuantity": 4
+        },
+        "Paints": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_paint",
+              "MinSize": 1,
+              "MaxSize": 1,
+              "Types": [
+                "Paints"
+              ],
+              "RequiredTags": [
+                "Paint_Starlancer"
+              ],
+              "PortTags": [
+                "Paint_Starlancer"
+              ],
+              "Uneditable": false
+            }
+          ],
+          "Hardpoints": 1
+        },
+        "Flairs": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_cockpit_flair",
+              "MinSize": 1,
+              "MaxSize": 1,
+              "Types": [
+                "Flair_Cockpit.Flair_Static"
+              ],
+              "Tags": [
+                "MISC_Starlancer_TAC",
+                "Ship_Dock_Refuel"
+              ],
+              "Uneditable": false
+            },
+            {
+              "PortName": "hardpoint_cockpit_flair_hang",
+              "MinSize": 0,
+              "MaxSize": 0,
+              "Types": [
+                "Flair_Cockpit.Flair_Hanging"
+              ],
+              "Tags": [
+                "MISC_Starlancer_TAC",
+                "Ship_Dock_Refuel"
               ],
               "Uneditable": false
             }
@@ -206342,7 +212635,7 @@ const shipHardpoints = [
                 "Loadout": "d95ba0cf-e1c8-441e-a459-5d6a0fc0518d",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MRAI_Guardian",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -206423,9 +212716,20 @@ const shipHardpoints = [
                 "Damage": 5000.0,
                 "MinRadius": 5.0,
                 "MaxRadius": 50.0
+              },
+              {
+                "Name": "RSI Self Destruct Long",
+                "Size": 1,
+                "Mass": 0.0,
+                "Grade": 1,
+                "Uneditable": true,
+                "Countdown": 30.0,
+                "Damage": 5000.0,
+                "MinRadius": 5.0,
+                "MaxRadius": 50.0
               }
             ],
-            "ItemsQuantity": 1
+            "ItemsQuantity": 2
           }
         },
         "Modules": {},
@@ -206515,6 +212819,2105 @@ const shipHardpoints = [
             }
           ],
           "ItemsQuantity": 1
+        },
+        "Usables": {
+          "InstalledItems": [
+            {
+              "Name": "hardpoint_seat_pilot",
+              "Size": 1,
+              "Mass": 0.0,
+              "Power": {
+                "PowerBase": 1.0,
+                "PowerDraw": 1.0,
+                "IdlePowerEmission": 1.0,
+                "ActivePowerEmission": 1.0
+              },
+              "Heat": {
+                "StartComponentTemperature": 300.0,
+                "StartIRTemperature": 250.0,
+                "StartIREmission": 5.0,
+                "ThermalEnergyBase": 10.0,
+                "ThermalEnergyDraw": 20.0
+              }
+            }
+          ],
+          "ItemsQuantity": 1
+        },
+        "Paints": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_paint",
+              "MinSize": 1,
+              "MaxSize": 1,
+              "Types": [
+                "Paints"
+              ],
+              "RequiredTags": [
+                "Paint_Guardian"
+              ],
+              "PortTags": [
+                "Paint_Guardian"
+              ],
+              "Uneditable": false
+            }
+          ],
+          "Hardpoints": 1
+        },
+        "Flairs": {}
+      }
+    }
+  },
+  {
+    "ClassName": "MRAI_Guardian_MX",
+    "Name": "Mirai Guardian MX",
+    "IsSpaceship": true,
+    "PortTags": [],
+    "Hull": {
+      "Structure": [
+        {
+          "Name": "geo_body",
+          "MaximumDamage": 8100.0,
+          "Parts": [
+            {
+              "Name": "nose",
+              "MaximumDamage": 5600.0,
+              "Parts": [
+                {
+                  "Name": "geo_nose_cap",
+                  "MaximumDamage": 1200.0,
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 0.0
+            },
+            {
+              "Name": "geo_body_shell_back",
+              "MaximumDamage": 1200.0,
+              "DetachRatio": 0.0
+            },
+            {
+              "Name": "geo_body_top",
+              "MaximumDamage": 1900.0,
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "geo_wing_arm_rear_bottom_left",
+              "MaximumDamage": 5000.0,
+              "Parts": [
+                {
+                  "Name": "geo_guardian_mx_wing_bottom_left",
+                  "MaximumDamage": 5000.0,
+                  "Parts": [
+                    {
+                      "Name": "hardpoint_thruster_wing_bot_left_mid"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_wing_bot_left_front_lateral"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_wing_bot_left_front"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_retro_bottom_left"
+                    },
+                    {
+                      "Name": "geo_wing_hinge_attach_left",
+                      "MaximumDamage": 1000.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "geo_flap_01_wing_bottom_left",
+                      "MaximumDamage": 1200.0,
+                      "Parts": [
+                        {
+                          "Name": "hardpoint_thruster_wing_bot_left_rear"
+                        }
+                      ],
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "geo_flap_02_wing_bottom_left",
+                      "MaximumDamage": 700.0,
+                      "DetachRatio": 1.0
+                    }
+                  ],
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "geo_wing_arm_rear_top_a_left",
+              "MaximumDamage": 5000.0,
+              "Parts": [
+                {
+                  "Name": "geo_guardian_mx_wing_top_left",
+                  "MaximumDamage": 5000.0,
+                  "Parts": [
+                    {
+                      "Name": "hardpoint_thruster_wing_top_left_mid"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_wing_top_left_front_lateral"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_wing_top_left_front"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_retro_top_left"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_wing_top_left_rear"
+                    },
+                    {
+                      "Name": "geo_flap_02_wing_top_left",
+                      "MaximumDamage": 700.0,
+                      "DetachRatio": 1.0
+                    }
+                  ],
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "geo_wing_arm_rear_top_a_right",
+              "MaximumDamage": 5000.0,
+              "Parts": [
+                {
+                  "Name": "geo_guardian_mx_wing_top_right",
+                  "MaximumDamage": 5000.0,
+                  "Parts": [
+                    {
+                      "Name": "hardpoint_thruster_wing_top_right_mid"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_wing_top_right_front_lateral"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_wing_top_right_front"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_retro_top_right"
+                    },
+                    {
+                      "Name": "geo_flap_02_wing_top_right",
+                      "MaximumDamage": 700.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "hardpoint_thruster_wing_top_right_rear"
+                    }
+                  ],
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "geo_wing_arm_rear_bottom_right",
+              "MaximumDamage": 5000.0,
+              "Parts": [
+                {
+                  "Name": "geo_guardian_mx_wing_bottom_right",
+                  "MaximumDamage": 5000.0,
+                  "Parts": [
+                    {
+                      "Name": "hardpoint_thruster_wing_bot_right_mid"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_wing_bot_right_front_lateral"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_wing_bot_right_front"
+                    },
+                    {
+                      "Name": "hardpoint_thruster_retro_bottom_right"
+                    },
+                    {
+                      "Name": "geo_wing_hinge_attach_right",
+                      "MaximumDamage": 1000.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "geo_flap_02_wing_bottom_right",
+                      "MaximumDamage": 700.0,
+                      "DetachRatio": 1.0
+                    },
+                    {
+                      "Name": "geo_flap_01_wing_bottom_right",
+                      "MaximumDamage": 1200.0,
+                      "Parts": [
+                        {
+                          "Name": "hardpoint_thruster_wing_bot_right_rear"
+                        }
+                      ],
+                      "DetachRatio": 1.0
+                    }
+                  ],
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "geo_thruster_arm_b_left",
+              "MaximumDamage": 6000.0,
+              "Parts": [
+                {
+                  "Name": "geo_thruster_arm_c_left",
+                  "MaximumDamage": 6000.0,
+                  "Parts": [
+                    {
+                      "Name": "hardpoint_thruster_main_left"
+                    }
+                  ],
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            },
+            {
+              "Name": "geo_thruster_arm_b_right",
+              "MaximumDamage": 6000.0,
+              "Parts": [
+                {
+                  "Name": "geo_thruster_arm_c_right",
+                  "MaximumDamage": 6000.0,
+                  "Parts": [
+                    {
+                      "Name": "hardpoint_thruster_main_right"
+                    }
+                  ],
+                  "DetachRatio": 1.0
+                }
+              ],
+              "DetachRatio": 1.0
+            }
+          ],
+          "ShipDestructionDamage": 8100.0,
+          "DetachRatio": 0.0
+        }
+      ]
+    },
+    "Hardpoints": {
+      "Weapons": {
+        "PilotWeapons": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_weapon_wing_bottom_left",
+              "MinSize": 4,
+              "MaxSize": 4,
+              "Loadout": "ea49d194-0c0b-43e1-82fb-d72f35c1af05",
+              "BaseLoadout": {
+                "ClassName": "Mount_Gimbal_S4",
+                "Name": "VariPuck S4 Gimbal Mount",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.GunTurret",
+                "WeaponGun.Gun"
+              ],
+              "Gimballed": true,
+              "Uneditable": false,
+              "RemoteController": {
+                "Slaved": true,
+                "Seats": [
+                  "MRAI_Guardian_MX_SeatDashboard"
+                ]
+              },
+              "Ports": [
+                {
+                  "PortName": "hardpoint_class_2",
+                  "MinSize": 3,
+                  "MaxSize": 4,
+                  "Loadout": "ecac1df2-4f6f-49df-9cce-f188d118a789",
+                  "BaseLoadout": {
+                    "ClassName": "KLWE_LaserRepeater_S4",
+                    "Name": "CF-447 Rhino Repeater",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "gimbalMount",
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_weapon_wing_top_left",
+              "MinSize": 4,
+              "MaxSize": 4,
+              "Loadout": "ea49d194-0c0b-43e1-82fb-d72f35c1af05",
+              "BaseLoadout": {
+                "ClassName": "Mount_Gimbal_S4",
+                "Name": "VariPuck S4 Gimbal Mount",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.GunTurret",
+                "WeaponGun.Gun"
+              ],
+              "Gimballed": true,
+              "Uneditable": false,
+              "RemoteController": {
+                "Slaved": true,
+                "Seats": [
+                  "MRAI_Guardian_MX_SeatDashboard"
+                ]
+              },
+              "Ports": [
+                {
+                  "PortName": "hardpoint_class_2",
+                  "MinSize": 3,
+                  "MaxSize": 4,
+                  "Loadout": "ecac1df2-4f6f-49df-9cce-f188d118a789",
+                  "BaseLoadout": {
+                    "ClassName": "KLWE_LaserRepeater_S4",
+                    "Name": "CF-447 Rhino Repeater",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "gimbalMount",
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_weapon_wing_top_right",
+              "MinSize": 4,
+              "MaxSize": 4,
+              "Loadout": "ea49d194-0c0b-43e1-82fb-d72f35c1af05",
+              "BaseLoadout": {
+                "ClassName": "Mount_Gimbal_S4",
+                "Name": "VariPuck S4 Gimbal Mount",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.GunTurret",
+                "WeaponGun.Gun"
+              ],
+              "Gimballed": true,
+              "Uneditable": false,
+              "RemoteController": {
+                "Slaved": true,
+                "Seats": [
+                  "MRAI_Guardian_MX_SeatDashboard"
+                ]
+              },
+              "Ports": [
+                {
+                  "PortName": "hardpoint_class_2",
+                  "MinSize": 3,
+                  "MaxSize": 4,
+                  "Loadout": "ecac1df2-4f6f-49df-9cce-f188d118a789",
+                  "BaseLoadout": {
+                    "ClassName": "KLWE_LaserRepeater_S4",
+                    "Name": "CF-447 Rhino Repeater",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "gimbalMount",
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_weapon_wing_bottom_right",
+              "MinSize": 4,
+              "MaxSize": 4,
+              "Loadout": "ea49d194-0c0b-43e1-82fb-d72f35c1af05",
+              "BaseLoadout": {
+                "ClassName": "Mount_Gimbal_S4",
+                "Name": "VariPuck S4 Gimbal Mount",
+                "Type": "Turret.GunTurret",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "Turret.GunTurret",
+                "WeaponGun.Gun"
+              ],
+              "Gimballed": true,
+              "Uneditable": false,
+              "RemoteController": {
+                "Slaved": true,
+                "Seats": [
+                  "MRAI_Guardian_MX_SeatDashboard"
+                ]
+              },
+              "Ports": [
+                {
+                  "PortName": "hardpoint_class_2",
+                  "MinSize": 3,
+                  "MaxSize": 4,
+                  "Loadout": "ecac1df2-4f6f-49df-9cce-f188d118a789",
+                  "BaseLoadout": {
+                    "ClassName": "KLWE_LaserRepeater_S4",
+                    "Name": "CF-447 Rhino Repeater",
+                    "Type": "WeaponGun.Gun",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "WeaponGun.Gun"
+                  ],
+                  "Tags": [
+                    "gimbalMount",
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            }
+          ],
+          "Hardpoints": 8
+        },
+        "MannedTurrets": {},
+        "RemoteTurrets": {},
+        "PDCTurrets": {},
+        "MissileRacks": {
+          "InstalledItems": [
+            {
+              "PortName": "hardpoint_missile_top_left",
+              "MinSize": 2,
+              "MaxSize": 2,
+              "Loadout": "4dabd575-d029-c1dc-b7bf-f308bf5e8bb3",
+              "BaseLoadout": {
+                "ClassName": "MRCK_S02_MRAI_Guardian_MX_Custom",
+                "Name": "Guardian MX Missile Rack ",
+                "Type": "MissileLauncher.MissileRack",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "MissileLauncher.MissileRack"
+              ],
+              "Flags": [
+                "$uneditable",
+                "Left"
+              ],
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "hardpoint_s2_missile_001",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_002",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_003",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_004",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_005",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_006",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_007",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_008",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_009",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_010",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_011",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_012",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            },
+            {
+              "PortName": "hardpoint_missile_top_right",
+              "MinSize": 2,
+              "MaxSize": 2,
+              "Loadout": "4dabd575-d029-c1dc-b7bf-f308bf5e8bb3",
+              "BaseLoadout": {
+                "ClassName": "MRCK_S02_MRAI_Guardian_MX_Custom",
+                "Name": "Guardian MX Missile Rack ",
+                "Type": "MissileLauncher.MissileRack",
+                "Grade": 1,
+                "Class": ""
+              },
+              "Types": [
+                "MissileLauncher.MissileRack"
+              ],
+              "Flags": [
+                "$uneditable",
+                "Right"
+              ],
+              "Uneditable": true,
+              "Ports": [
+                {
+                  "PortName": "hardpoint_s2_missile_001",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_002",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_003",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_004",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_005",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_006",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_007",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_008",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_009",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_010",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_011",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                },
+                {
+                  "PortName": "hardpoint_s2_missile_012",
+                  "MinSize": 2,
+                  "MaxSize": 2,
+                  "Loadout": "d358cf84-9c78-4929-a2ad-b9caade81962",
+                  "BaseLoadout": {
+                    "ClassName": "MISL_S02_IR_FSKI_Ignite",
+                    "Name": "Ignite II Missile",
+                    "Type": "Missile.Missile",
+                    "Grade": 1,
+                    "Class": ""
+                  },
+                  "Types": [
+                    "Missile.Missile"
+                  ],
+                  "Tags": [
+                    "flightReady"
+                  ],
+                  "Uneditable": false
+                }
+              ]
+            }
+          ],
+          "Hardpoints": 2
+        },
+        "BombRacks": {},
+        "InterdictionHardpoints": {},
+        "MiningHardpoints": {},
+        "SalvageHardpoints": {},
+        "UtilityHardpoints": {},
+        "UtilityTurrets": {}
+      },
+      "Components": {
+        "Propulsion": {
+          "PowerPlants": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_power_plant_s2",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "662e4a88-d893-46fd-9fcc-e33e4b783fae",
+                "BaseLoadout": {
+                  "ClassName": "POWR_AEGS_S02_Maelstrom_SCItem",
+                  "Name": "Maelstrom",
+                  "Type": "PowerPlant.Power",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "PowerPlant"
+                ],
+                "Uneditable": false
+              }
+            ],
+            "Hardpoints": 1
+          },
+          "QuantumDrives": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_quantum_drive",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "9e3a3bcb-d90a-46c5-912b-079fd15157cc",
+                "BaseLoadout": {
+                  "ClassName": "QDRV_WETK_S02_Crossfield_SCItem",
+                  "Name": "Crossfield",
+                  "Type": "QuantumDrive.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "QuantumDrive.QDrive"
+                ],
+                "Uneditable": false,
+                "Ports": [
+                  {
+                    "PortName": "hardpoint_Jump_Drive",
+                    "MinSize": 2,
+                    "MaxSize": 2,
+                    "Loadout": "JDRV_TARS_S02_Excelsior_SCItem",
+                    "BaseLoadout": {
+                      "ClassName": "JDRV_TARS_S02_Excelsior_SCItem",
+                      "Name": "Excelsior",
+                      "Type": "JumpDrive.UNDEFINED",
+                      "Grade": 3,
+                      "Class": "Civilian"
+                    },
+                    "Types": [
+                      "JumpDrive.JumpDrive"
+                    ],
+                    "Flags": [
+                      "dont_hide_entity"
+                    ],
+                    "Uneditable": false
+                  }
+                ]
+              }
+            ],
+            "Hardpoints": 1
+          },
+          "Thrusters": {
+            "MainThrusters": {
+              "InstalledItems": [
+                {
+                  "Name": "hardpoint_thruster_main_left",
+                  "Size": 1,
+                  "Mass": 1300.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 5000000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 635.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 5000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_main_right",
+                  "Size": 1,
+                  "Mass": 1300.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 5000000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 635.0,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 5000.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                }
+              ],
+              "ItemsQuantity": 2
+            },
+            "RetroThrusters": {
+              "InstalledItems": [
+                {
+                  "Name": "hardpoint_thruster_retro_bottom_left",
+                  "Size": 1,
+                  "Mass": 250.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1190000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 151.13,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_retro_top_left",
+                  "Size": 1,
+                  "Mass": 250.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1190000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 151.13,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_retro_top_right",
+                  "Size": 1,
+                  "Mass": 250.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1190000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 151.13,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_retro_bottom_right",
+                  "Size": 1,
+                  "Mass": 250.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 1190000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 151.13,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                }
+              ],
+              "ItemsQuantity": 4
+            },
+            "VtolThrusters": {
+              "ItemsQuantity": 0
+            },
+            "ManeuveringThrusters": {
+              "InstalledItems": [
+                {
+                  "Name": "hardpoint_thruster_wing_bot_left_mid",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 280000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 35.56,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_bot_left_front_lateral",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 2710000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 344.17,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_bot_left_front",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 280000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 35.56,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_bot_left_rear",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 280000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 35.56,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_top_left_mid",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 280000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 35.56,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_top_left_front_lateral",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 2710000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 344.17,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_top_left_front",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 280000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 35.56,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_top_left_rear",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 280000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 35.56,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_top_right_mid",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 280000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 35.56,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_top_right_front_lateral",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 2710000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 344.17,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_top_right_front",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 280000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 35.56,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_top_right_rear",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 280000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 35.56,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_bot_right_mid",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 280000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 35.56,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_bot_right_front_lateral",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 2710000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 344.17,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_bot_right_front",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 280000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 35.56,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                },
+                {
+                  "Name": "hardpoint_thruster_wing_bot_right_rear",
+                  "Size": 1,
+                  "Mass": 50.0,
+                  "Grade": 1,
+                  "ThrustCapacity": 280000.0,
+                  "FuelBurnRatePerMN": 127.0,
+                  "FuelUsagePerSecond": 35.56,
+                  "Uneditable": true,
+                  "Durability": {
+                    "Health": 2200.0
+                  },
+                  "Power": {
+                    "PowerBase": 20.0,
+                    "PowerDraw": 24.0,
+                    "IdlePowerEmission": 0.0,
+                    "ActivePowerEmission": 0.0
+                  },
+                  "Heat": {
+                    "StartComponentTemperature": 300.0,
+                    "StartIRTemperature": 250.0,
+                    "StartIREmission": 300.0,
+                    "ThermalEnergyBase": 500.0,
+                    "ThermalEnergyDraw": 1250.0
+                  }
+                }
+              ],
+              "ItemsQuantity": 16
+            }
+          },
+          "QuantumFuelTanks": {
+            "InstalledItems": [
+              {
+                "Name": "Internal Tank",
+                "Size": 2,
+                "Mass": 0.0,
+                "Grade": 1,
+                "Capacity": 1.8,
+                "Uneditable": true
+              }
+            ],
+            "ItemsQuantity": 1,
+            "TotalQuantumFuelCapacity": 1.8
+          },
+          "HydrogenFuelTanks": {
+            "InstalledItems": [
+              {
+                "Name": "hardpoint_fuel_tank",
+                "Size": 2,
+                "Mass": 0.0,
+                "Grade": 1,
+                "Capacity": 9.0,
+                "Uneditable": true
+              }
+            ],
+            "ItemsQuantity": 1,
+            "TotalFuelCapacity": 9.0
+          }
+        },
+        "Systems": {
+          "Controllers": {
+            "CapacitorAssignment": {
+              "AfterBurner": {
+                "Regen": "f381647d-1e21-4dd2-b63b-567f012deeda",
+                "RegenNavMode": "f381647d-1e21-4dd2-b63b-567f012deeda",
+                "Usage": "822703ac-f458-433e-af38-352232852175",
+                "AngVelocity": [
+                  {
+                    "x": -0.4583936,
+                    "y": -0.1252766
+                  },
+                  {
+                    "x": 0.0,
+                    "y": 0.0
+                  },
+                  {
+                    "x": 0.4583936,
+                    "y": 0.1252766
+                  },
+                  {
+                    "x": 0.3870683,
+                    "y": 0.9817872
+                  },
+                  {
+                    "x": 1.0,
+                    "y": 1.0
+                  },
+                  {
+                    "x": 1.612932,
+                    "y": 1.018213
+                  }
+                ]
+              },
+              "ShieldEmitter": {
+                "Regen": "f381647d-1e21-4dd2-b63b-567f012deeda",
+                "RegenNavMode": "5c844120-12c9-49eb-b7dd-93db1fc43d00",
+                "Resistance": "cbc03b47-3bee-4529-9fd1-f256dc7efb09"
+              },
+              "PilotWeapon": {},
+              "TurretsWeapon": {}
+            },
+            "Ifcs": {
+              "InstalledItems": [
+                {
+                  "ClassName": "Controller_Flight_MRAI_Guardian_MX",
+                  "ResourceNetwork": [
+                    {
+                      "Consumption": [
+                        {
+                          "Resource": "Power",
+                          "MinConsumptionFraction": 0.1,
+                          "Segment": 10.0
+                        }
+                      ],
+                      "Signatures": {
+                        "Electromagnetic": {
+                          "Nominal": 0.0,
+                          "DecayRate": 0.15
+                        },
+                        "Infrared": {
+                          "Nominal": 0.0,
+                          "DecayRate": 0.15
+                        }
+                      },
+                      "State": "Online"
+                    }
+                  ]
+                }
+              ]
+            },
+            "Missiles": {
+              "MaxArmed": 4.0,
+              "Cooldown": 4.0
+            },
+            "Weapons": {
+              "PoolSize": 4.0
+            },
+            "Wheeled": {}
+          },
+          "Shields": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_shield_generator_01",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "924e275a-d449-44f5-a8a8-6e0e93a9661e",
+                "BaseLoadout": {
+                  "ClassName": "SHLD_GODI_S02_FullStop_SCItem",
+                  "Name": "FullStop",
+                  "Type": "Shield.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "Shield"
+                ],
+                "Uneditable": false
+              },
+              {
+                "PortName": "hardpoint_shield_generator_02",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "924e275a-d449-44f5-a8a8-6e0e93a9661e",
+                "BaseLoadout": {
+                  "ClassName": "SHLD_GODI_S02_FullStop_SCItem",
+                  "Name": "FullStop",
+                  "Type": "Shield.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "Shield"
+                ],
+                "Uneditable": false
+              }
+            ],
+            "Hardpoints": 2,
+            "FaceType": "Bubble"
+          },
+          "Coolers": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_cooler_s1",
+                "MinSize": 1,
+                "MaxSize": 1,
+                "Loadout": "4ec3037b-4b6f-4837-b00d-cd9b4836a82a",
+                "BaseLoadout": {
+                  "ClassName": "COOL_AEGS_S01_Bracer_SCItem",
+                  "Name": "Bracer",
+                  "Type": "Cooler.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "Cooler"
+                ],
+                "Uneditable": false
+              },
+              {
+                "PortName": "hardpoint_cooler_s2",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "e41f4682-381a-453e-802b-521ce84a26b6",
+                "BaseLoadout": {
+                  "ClassName": "COOL_AEGS_S02_Arctic_SCItem",
+                  "Name": "Arctic",
+                  "Type": "Cooler.UNDEFINED",
+                  "Grade": 3,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "Cooler"
+                ],
+                "Uneditable": false
+              }
+            ],
+            "Hardpoints": 2
+          },
+          "LifeSupport": {},
+          "FuelIntakes": {
+            "InstalledItems": [
+              {
+                "Name": "hardpoint_fuel_intake_right",
+                "Size": 1,
+                "Mass": 10.0,
+                "Grade": 1,
+                "FuelIntakeRate": 15.0,
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 0.0,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 0.0,
+                  "ActivePowerEmission": 0.0
+                },
+                "Heat": {
+                  "StartComponentTemperature": 300.0,
+                  "StartIRTemperature": 250.0,
+                  "StartIREmission": 300.0,
+                  "ThermalEnergyBase": 10.0,
+                  "ThermalEnergyDraw": 20.0
+                }
+              },
+              {
+                "Name": "hardpoint_fuel_intake_left",
+                "Size": 1,
+                "Mass": 10.0,
+                "Grade": 1,
+                "FuelIntakeRate": 15.0,
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 0.0,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 0.0,
+                  "ActivePowerEmission": 0.0
+                },
+                "Heat": {
+                  "StartComponentTemperature": 300.0,
+                  "StartIRTemperature": 250.0,
+                  "StartIREmission": 300.0,
+                  "ThermalEnergyBase": 10.0,
+                  "ThermalEnergyDraw": 20.0
+                }
+              }
+            ],
+            "ItemsQuantity": 2,
+            "TotalFuelIntakeRate": 30.0
+          },
+          "Countermeasures": {
+            "InstalledItems": [
+              {
+                "Name": "Joker Defcon - Noise Launcher",
+                "Size": 1,
+                "Mass": 150.0,
+                "Grade": 1,
+                "Ammunition": 5.0,
+                "Speed": 180.0,
+                "Range": 144.0,
+                "Type": "Noise",
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 0.0,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 0.0,
+                  "ActivePowerEmission": 0.0
+                }
+              },
+              {
+                "Name": "Aegis Gladius - Decoy Launcher",
+                "Size": 1,
+                "Mass": 150.0,
+                "Grade": 1,
+                "Ammunition": 48.0,
+                "Speed": 65.0,
+                "Range": 520.0,
+                "Type": "Decoy",
+                "Uneditable": true,
+                "Power": {
+                  "PowerBase": 0.0,
+                  "PowerDraw": 1.0,
+                  "IdlePowerEmission": 0.0,
+                  "ActivePowerEmission": 0.0
+                }
+              }
+            ],
+            "ItemsQuantity": 2
+          }
+        },
+        "Avionics": {
+          "FlightBlade": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_controller_flight",
+                "MinSize": 1,
+                "MaxSize": 1,
+                "Loadout": "4ae9dbea-3fae-2843-9758-38f2e4d81984",
+                "BaseLoadout": {
+                  "ClassName": "Controller_Flight_MRAI_Guardian_MX",
+                  "Name": "Flight Blade",
+                  "Type": "FlightController.UNDEFINED",
+                  "Grade": 1
+                },
+                "Types": [
+                  "FlightController"
+                ],
+                "Flags": [
+                  "invisible",
+                  "uneditable"
+                ],
+                "Uneditable": true
+              }
+            ]
+          },
+          "Radars": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_radar",
+                "MinSize": 2,
+                "MaxSize": 2,
+                "Loadout": "c00521d8-7551-4c26-889f-30bf09d9a821",
+                "BaseLoadout": {
+                  "ClassName": "RADR_GRNP_S02_Epier",
+                  "Name": "Epier",
+                  "Type": "Radar.MidRangeRadar",
+                  "Grade": 1,
+                  "Class": "Military"
+                },
+                "Types": [
+                  "Radar.ShortRangeRadar",
+                  "Radar.MidRangeRadar"
+                ],
+                "Uneditable": false,
+                "RemoteController": {
+                  "Slaved": true,
+                  "Seats": [
+                    "MRAI_Guardian_MX_SeatDashboard"
+                  ]
+                }
+              }
+            ],
+            "DetectionCapability": [
+              {
+                "Name": "Epier",
+                "PortName": "hardpoint_radar",
+                "Size": 2,
+                "Sensitivity": {
+                  "IRSensitivity": 0.9,
+                  "EMSensitivity": 0.9,
+                  "CSSensitivity": 0.9,
+                  "RSSensitivity": 0.5
+                },
+                "GroundSensitivity": {
+                  "IRSensitivity": 0.25,
+                  "EMSensitivity": 0.25,
+                  "CSSensitivity": 0.25,
+                  "RSSensitivity": 0.25
+                },
+                "Piercing": {
+                  "IRPiercing": 0.25,
+                  "EMPiercing": 0.25,
+                  "CSPiercing": 0.25,
+                  "RSPiercing": 1.0
+                }
+              }
+            ],
+            "ItemsQuantity": 1
+          },
+          "SelfDestruct": {
+            "InstalledItems": [
+              {
+                "Name": "RSI Self Destruct Long",
+                "Size": 1,
+                "Mass": 0.0,
+                "Grade": 1,
+                "Uneditable": true,
+                "Countdown": 30.0,
+                "Damage": 5000.0,
+                "MinRadius": 5.0,
+                "MaxRadius": 50.0
+              },
+              {
+                "Name": "RSI Self Destruct Long",
+                "Size": 1,
+                "Mass": 0.0,
+                "Grade": 1,
+                "Uneditable": true,
+                "Countdown": 30.0,
+                "Damage": 5000.0,
+                "MinRadius": 5.0,
+                "MaxRadius": 50.0
+              }
+            ],
+            "ItemsQuantity": 2
+          }
+        },
+        "Modules": {},
+        "CargoGrids": {
+          "ItemsQuantity": 0
+        },
+        "CargoContainers": {
+          "ItemsQuantity": 0
+        },
+        "Storage": {
+          "InstalledItems": [
+            {
+              "Name": "Personal Storage",
+              "Mass": 0.0,
+              "Size": 1,
+              "Grade": 1,
+              "Capacity": 0.45,
+              "Power": {
+                "PowerBase": 0.0,
+                "PowerDraw": 0.0,
+                "IdlePowerEmission": 0.0,
+                "ActivePowerEmission": 0.0
+              },
+              "Heat": {
+                "StartComponentTemperature": 0.0,
+                "StartIRTemperature": 0.0,
+                "StartIREmission": 0.0,
+                "ThermalEnergyBase": 0.0,
+                "ThermalEnergyDraw": 0.0
+              }
+            }
+          ],
+          "ItemsQuantity": 1
+        },
+        "WeaponsRacks": {
+          "ItemsQuantity": 0
         },
         "Usables": {
           "InstalledItems": [
@@ -208139,7 +216542,7 @@ const shipHardpoints = [
                 "Loadout": "66b1ff14-95d2-4f29-a3c4-13e21599a835",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MRAI_Guardian_QI",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -208220,9 +216623,20 @@ const shipHardpoints = [
                 "Damage": 5000.0,
                 "MinRadius": 5.0,
                 "MaxRadius": 50.0
+              },
+              {
+                "Name": "RSI Self Destruct Long",
+                "Size": 1,
+                "Mass": 0.0,
+                "Grade": 1,
+                "Uneditable": true,
+                "Countdown": 30.0,
+                "Damage": 5000.0,
+                "MinRadius": 5.0,
+                "MaxRadius": 50.0
               }
             ],
-            "ItemsQuantity": 1
+            "ItemsQuantity": 2
           }
         },
         "Modules": {},
@@ -209271,7 +217685,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MRAI_Pulse",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MRAI_Pulse",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -210337,7 +218751,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_MRAI_Pulse_LX",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_MRAI_Pulse_LX",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -211565,7 +219979,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_100i",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_100i",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -212933,7 +221347,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_125a",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_125a",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -214195,7 +222609,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_135c",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_135c",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -215605,7 +224019,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_300i",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_300i",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -217120,7 +225534,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_315p",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_315p",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -217262,10 +225676,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 2.0,
+                  "Capacity": 4.0,
                   "Width": 2.0,
                   "Height": 1.0,
-                  "Depth": 1.0
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -218794,7 +227208,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_325a",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_325a",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -218898,10 +227312,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 2.0,
+                  "Capacity": 4.0,
                   "Width": 2.0,
                   "Height": 1.0,
-                  "Depth": 1.0
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -220308,7 +228722,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_350r",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_350r",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -220412,10 +228826,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 2.0,
+                  "Capacity": 4.0,
                   "Width": 2.0,
                   "Height": 1.0,
-                  "Depth": 1.0
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -222425,7 +230839,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 6.0
+              "PoolSize": 6.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -222596,7 +231015,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_400i",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_400i",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -224768,7 +233187,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 8.0
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -225006,7 +233430,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_600i",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_600i",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -225110,10 +233534,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 1.0,
-                  "Width": 1.0,
+                  "Capacity": 4.0,
+                  "Width": 2.0,
                   "Height": 1.0,
-                  "Depth": 1.0
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -225148,10 +233572,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 1.0,
-                  "Width": 1.0,
+                  "Capacity": 4.0,
+                  "Width": 2.0,
                   "Height": 1.0,
-                  "Depth": 1.0
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -227501,7 +235925,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 8.0
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 3.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -227739,7 +236168,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_600i",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_600i",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -227843,10 +236272,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 1.0,
-                  "Width": 1.0,
+                  "Capacity": 4.0,
+                  "Width": 2.0,
                   "Height": 1.0,
-                  "Depth": 1.0
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -227881,10 +236310,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 1.0,
-                  "Width": 1.0,
+                  "Capacity": 4.0,
+                  "Width": 2.0,
                   "Height": 1.0,
-                  "Depth": 1.0
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -229509,7 +237938,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_85X",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_85X",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -231322,15 +239751,13 @@ const shipHardpoints = [
               "Loadout": "a113eb5a-2759-4a55-ac48-7170c7d17f50",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "ORIG_890Jump",
@@ -231338,13 +239765,13 @@ const shipHardpoints = [
                 "Ship_Dock_Refuel"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -231353,9 +239780,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -231378,15 +239806,13 @@ const shipHardpoints = [
               "Loadout": "a113eb5a-2759-4a55-ac48-7170c7d17f50",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "ORIG_890Jump",
@@ -231394,13 +239820,13 @@ const shipHardpoints = [
                 "Ship_Dock_Refuel"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -231409,9 +239835,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -231434,15 +239861,13 @@ const shipHardpoints = [
               "Loadout": "a113eb5a-2759-4a55-ac48-7170c7d17f50",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "ORIG_890Jump",
@@ -231450,13 +239875,13 @@ const shipHardpoints = [
                 "Ship_Dock_Refuel"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -231465,9 +239890,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -231490,15 +239916,13 @@ const shipHardpoints = [
               "Loadout": "a113eb5a-2759-4a55-ac48-7170c7d17f50",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "ORIG_890Jump",
@@ -231506,13 +239930,13 @@ const shipHardpoints = [
                 "Ship_Dock_Refuel"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -231521,9 +239945,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -231546,15 +239971,13 @@ const shipHardpoints = [
               "Loadout": "a113eb5a-2759-4a55-ac48-7170c7d17f50",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "ORIG_890Jump",
@@ -231562,13 +239985,13 @@ const shipHardpoints = [
                 "Ship_Dock_Refuel"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -231577,9 +240000,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -231602,15 +240026,13 @@ const shipHardpoints = [
               "Loadout": "a113eb5a-2759-4a55-ac48-7170c7d17f50",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "ORIG_890Jump",
@@ -231618,13 +240040,13 @@ const shipHardpoints = [
                 "Ship_Dock_Refuel"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -231633,9 +240055,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -231658,15 +240081,13 @@ const shipHardpoints = [
               "Loadout": "a113eb5a-2759-4a55-ac48-7170c7d17f50",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "ORIG_890Jump",
@@ -231674,13 +240095,13 @@ const shipHardpoints = [
                 "Ship_Dock_Refuel"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -231689,9 +240110,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -232023,9 +240445,9 @@ const shipHardpoints = [
                   "Size": 2,
                   "Mass": 50000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 355000000.0,
+                  "ThrustCapacity": 273000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 44375.0,
+                  "FuelUsagePerSecond": 34125.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 45000.0
@@ -232049,9 +240471,9 @@ const shipHardpoints = [
                   "Size": 2,
                   "Mass": 50000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 355000000.0,
+                  "ThrustCapacity": 273000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 44375.0,
+                  "FuelUsagePerSecond": 34125.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 45000.0
@@ -232075,9 +240497,9 @@ const shipHardpoints = [
                   "Size": 2,
                   "Mass": 50000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 355000000.0,
+                  "ThrustCapacity": 273000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 44375.0,
+                  "FuelUsagePerSecond": 34125.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 45000.0
@@ -232101,9 +240523,9 @@ const shipHardpoints = [
                   "Size": 2,
                   "Mass": 50000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 355000000.0,
+                  "ThrustCapacity": 273000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 44375.0,
+                  "FuelUsagePerSecond": 34125.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 45000.0
@@ -232792,7 +241214,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 10.0
+              "PoolSize": 10.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 4.0,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -233036,7 +241463,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_890J",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_890J",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -235162,7 +243589,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_m50",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_m50",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -236550,7 +244977,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_X1",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_X1",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -237966,7 +246393,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_X1",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_X1",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -239316,7 +247743,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_ORIG_X1_Velocity",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_ORIG_X1_Velocity",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -239878,9 +248305,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 1200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 2933877.0,
+                  "ThrustCapacity": 2750000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 366.7346,
+                  "FuelUsagePerSecond": 343.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8750.0
@@ -239909,9 +248336,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 466842.8,
+                  "ThrustCapacity": 522000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 58.3554,
+                  "FuelUsagePerSecond": 65.25,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8000.0
@@ -239935,9 +248362,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 466842.8,
+                  "ThrustCapacity": 522000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 58.3554,
+                  "FuelUsagePerSecond": 65.25,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8000.0
@@ -239969,9 +248396,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222181.9,
+                  "ThrustCapacity": 266000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.7727,
+                  "FuelUsagePerSecond": 33.25,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -239995,9 +248422,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222181.9,
+                  "ThrustCapacity": 266000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.7727,
+                  "FuelUsagePerSecond": 33.25,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -240021,9 +248448,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222181.9,
+                  "ThrustCapacity": 266000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.7727,
+                  "FuelUsagePerSecond": 33.25,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -240047,9 +248474,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222181.9,
+                  "ThrustCapacity": 266000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.7727,
+                  "FuelUsagePerSecond": 33.25,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -240073,9 +248500,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222181.9,
+                  "ThrustCapacity": 266000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.7727,
+                  "FuelUsagePerSecond": 33.25,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -240099,9 +248526,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222181.9,
+                  "ThrustCapacity": 266000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.7727,
+                  "FuelUsagePerSecond": 33.25,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -240125,9 +248552,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222181.9,
+                  "ThrustCapacity": 266000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.7727,
+                  "FuelUsagePerSecond": 33.25,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -240151,9 +248578,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222181.9,
+                  "ThrustCapacity": 266000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.7727,
+                  "FuelUsagePerSecond": 33.25,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -240506,7 +248933,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_RSI_Aurora_CL",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Aurora_CL",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -241086,9 +249513,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 1200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 2938602.0,
+                  "ThrustCapacity": 2974000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 367.3252,
+                  "FuelUsagePerSecond": 371.75,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8750.0
@@ -241117,9 +249544,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 468230.7,
+                  "ThrustCapacity": 523000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 58.5288,
+                  "FuelUsagePerSecond": 65.375,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8000.0
@@ -241143,9 +249570,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 468230.7,
+                  "ThrustCapacity": 523000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 58.5288,
+                  "FuelUsagePerSecond": 65.375,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8000.0
@@ -241177,9 +249604,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222570.2,
+                  "ThrustCapacity": 308000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.8213,
+                  "FuelUsagePerSecond": 38.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -241203,9 +249630,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222570.2,
+                  "ThrustCapacity": 308000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.8213,
+                  "FuelUsagePerSecond": 38.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -241229,9 +249656,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222570.2,
+                  "ThrustCapacity": 308000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.8213,
+                  "FuelUsagePerSecond": 38.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -241255,9 +249682,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222570.2,
+                  "ThrustCapacity": 308000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.8213,
+                  "FuelUsagePerSecond": 38.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -241281,9 +249708,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222570.2,
+                  "ThrustCapacity": 308000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.8213,
+                  "FuelUsagePerSecond": 38.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -241307,9 +249734,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222570.2,
+                  "ThrustCapacity": 308000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.8213,
+                  "FuelUsagePerSecond": 38.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -241333,9 +249760,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222570.2,
+                  "ThrustCapacity": 308000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.8213,
+                  "FuelUsagePerSecond": 38.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -241359,9 +249786,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 222570.2,
+                  "ThrustCapacity": 308000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 27.8213,
+                  "FuelUsagePerSecond": 38.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -241714,7 +250141,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_RSI_Aurora_ES",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Aurora_ES",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -242380,9 +250807,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 1200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3269697.0,
+                  "ThrustCapacity": 3500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 408.7121,
+                  "FuelUsagePerSecond": 437.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8750.0
@@ -242411,9 +250838,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 520142.9,
+                  "ThrustCapacity": 585000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 65.0179,
+                  "FuelUsagePerSecond": 73.125,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8000.0
@@ -242437,9 +250864,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 520142.9,
+                  "ThrustCapacity": 585000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 65.0179,
+                  "FuelUsagePerSecond": 73.125,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8000.0
@@ -242471,9 +250898,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 247655.9,
+                  "ThrustCapacity": 355000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 30.957,
+                  "FuelUsagePerSecond": 44.375,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -242497,9 +250924,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 247655.9,
+                  "ThrustCapacity": 355000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 30.957,
+                  "FuelUsagePerSecond": 44.375,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -242523,9 +250950,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 247655.9,
+                  "ThrustCapacity": 355000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 30.957,
+                  "FuelUsagePerSecond": 44.375,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -242549,9 +250976,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 247655.9,
+                  "ThrustCapacity": 355000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 30.957,
+                  "FuelUsagePerSecond": 44.375,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -242575,9 +251002,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 247655.9,
+                  "ThrustCapacity": 355000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 30.957,
+                  "FuelUsagePerSecond": 44.375,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -242601,9 +251028,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 247655.9,
+                  "ThrustCapacity": 355000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 30.957,
+                  "FuelUsagePerSecond": 44.375,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -242627,9 +251054,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 247655.9,
+                  "ThrustCapacity": 355000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 30.957,
+                  "FuelUsagePerSecond": 44.375,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -242653,9 +251080,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 247655.9,
+                  "ThrustCapacity": 355000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 30.957,
+                  "FuelUsagePerSecond": 44.375,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -243008,7 +251435,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_RSI_Aurora_LN",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Aurora_LN",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -243610,9 +252037,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 1200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3517894.0,
+                  "ThrustCapacity": 3121000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 439.7368,
+                  "FuelUsagePerSecond": 390.125,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8750.0
@@ -243641,9 +252068,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 609323.3,
+                  "ThrustCapacity": 536000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 76.1654,
+                  "FuelUsagePerSecond": 67.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8000.0
@@ -243667,9 +252094,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 609323.3,
+                  "ThrustCapacity": 536000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 76.1654,
+                  "FuelUsagePerSecond": 67.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8000.0
@@ -243701,9 +252128,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 165320.2,
+                  "ThrustCapacity": 279000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 20.665,
+                  "FuelUsagePerSecond": 34.875,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -243727,9 +252154,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 165320.2,
+                  "ThrustCapacity": 279000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 20.665,
+                  "FuelUsagePerSecond": 34.875,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -243753,9 +252180,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 165320.2,
+                  "ThrustCapacity": 279000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 20.665,
+                  "FuelUsagePerSecond": 34.875,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -243779,9 +252206,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 165320.2,
+                  "ThrustCapacity": 279000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 20.665,
+                  "FuelUsagePerSecond": 34.875,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -243805,9 +252232,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 165320.2,
+                  "ThrustCapacity": 279000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 20.665,
+                  "FuelUsagePerSecond": 34.875,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -243831,9 +252258,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 165320.2,
+                  "ThrustCapacity": 279000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 20.665,
+                  "FuelUsagePerSecond": 34.875,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -243857,9 +252284,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 165320.2,
+                  "ThrustCapacity": 279000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 20.665,
+                  "FuelUsagePerSecond": 34.875,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -243883,9 +252310,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 165320.2,
+                  "ThrustCapacity": 279000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 20.665,
+                  "FuelUsagePerSecond": 34.875,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -244238,7 +252665,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_RSI_Aurora_LX",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Aurora_LX",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -244818,9 +253245,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 1200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 3098507.0,
+                  "ThrustCapacity": 3480000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 387.3134,
+                  "FuelUsagePerSecond": 435.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8750.0
@@ -244849,9 +253276,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 493420.4,
+                  "ThrustCapacity": 557000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 61.6776,
+                  "FuelUsagePerSecond": 69.625,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8000.0
@@ -244875,9 +253302,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 200.0,
                   "Grade": 1,
-                  "ThrustCapacity": 493420.4,
+                  "ThrustCapacity": 557000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 61.6776,
+                  "FuelUsagePerSecond": 69.625,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 8000.0
@@ -244909,9 +253336,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 234886.8,
+                  "ThrustCapacity": 280000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 29.3608,
+                  "FuelUsagePerSecond": 35.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -244935,9 +253362,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 234886.8,
+                  "ThrustCapacity": 280000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 29.3608,
+                  "FuelUsagePerSecond": 35.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -244961,9 +253388,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 234886.8,
+                  "ThrustCapacity": 280000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 29.3608,
+                  "FuelUsagePerSecond": 35.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -244987,9 +253414,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 234886.8,
+                  "ThrustCapacity": 280000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 29.3608,
+                  "FuelUsagePerSecond": 35.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -245013,9 +253440,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 234886.8,
+                  "ThrustCapacity": 280000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 29.3608,
+                  "FuelUsagePerSecond": 35.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -245039,9 +253466,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 234886.8,
+                  "ThrustCapacity": 280000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 29.3608,
+                  "FuelUsagePerSecond": 35.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -245065,9 +253492,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 234886.8,
+                  "ThrustCapacity": 280000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 29.3608,
+                  "FuelUsagePerSecond": 35.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -245091,9 +253518,9 @@ const shipHardpoints = [
                   "Size": 1,
                   "Mass": 50.0,
                   "Grade": 1,
-                  "ThrustCapacity": 234886.8,
+                  "ThrustCapacity": 280000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 29.3608,
+                  "FuelUsagePerSecond": 35.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 7150.0
@@ -245446,7 +253873,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_RSI_Aurora_MR",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Aurora_MR",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -248650,7 +257077,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 8.0
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 1.75,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -248918,7 +257350,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_RSI_Constellation_Andromeda",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Constellation_Andromeda",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -251624,7 +260056,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 8.0
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 1.75,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -251892,7 +260329,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_RSI_Constellation_Aquila",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Constellation_Aquila",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -253152,28 +261589,26 @@ const shipHardpoints = [
               "Loadout": "a113eb5a-2759-4a55-ac48-7170c7d17f50",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "RSI_Constellation_Phoenix",
                 "Ship_Dock_Refuel"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -253182,9 +261617,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -254824,7 +263260,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 8.0
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 1.75,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -255092,7 +263533,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_RSI_Constellation_Phoenix",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Constellation_Phoenix",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -257852,7 +266293,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 8.0
+              "PoolSize": 8.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 1.75,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -258096,7 +266542,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_RSI_Constellation_Taurus",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Constellation_Taurus",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -258238,10 +266684,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 1.0,
-                  "Width": 1.0,
+                  "Capacity": 4.0,
+                  "Width": 2.0,
                   "Height": 1.0,
-                  "Depth": 1.0
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -260282,7 +268728,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_RSI_Mantis",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Mantis",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -262008,12 +270454,16 @@ const shipHardpoints = [
                       "Loadout": "RSI_Bespoke_BallisticCannon_A",
                       "BaseLoadout": {
                         "ClassName": "RSI_Bespoke_BallisticCannon_A",
-                        "Name": "RSI_Bespoke_BallisticCannon_A",
+                        "Name": "Maris Cannon",
                         "Type": "WeaponGun.Gun",
-                        "Grade": 1
+                        "Grade": 1,
+                        "Class": ""
                       },
                       "Types": [
                         "WeaponGun.Gun"
+                      ],
+                      "Flags": [
+                        "uneditable"
                       ],
                       "Tags": [
                         "gimbalMount",
@@ -262023,7 +270473,7 @@ const shipHardpoints = [
                       "PortTags": [
                         "RSI_Polaris_Bespoke"
                       ],
-                      "Uneditable": false
+                      "Uneditable": true
                     }
                   ]
                 },
@@ -262062,12 +270512,16 @@ const shipHardpoints = [
                       "Loadout": "RSI_Bespoke_BallisticCannon_A",
                       "BaseLoadout": {
                         "ClassName": "RSI_Bespoke_BallisticCannon_A",
-                        "Name": "RSI_Bespoke_BallisticCannon_A",
+                        "Name": "Maris Cannon",
                         "Type": "WeaponGun.Gun",
-                        "Grade": 1
+                        "Grade": 1,
+                        "Class": ""
                       },
                       "Types": [
                         "WeaponGun.Gun"
+                      ],
+                      "Flags": [
+                        "uneditable"
                       ],
                       "Tags": [
                         "gimbalMount",
@@ -262077,7 +270531,7 @@ const shipHardpoints = [
                       "PortTags": [
                         "RSI_Polaris_Bespoke"
                       ],
-                      "Uneditable": false
+                      "Uneditable": true
                     }
                   ]
                 }
@@ -262702,15 +271156,13 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "RSI_Polaris",
@@ -262718,13 +271170,13 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -262733,9 +271185,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -262758,15 +271211,13 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "RSI_Polaris",
@@ -262774,13 +271225,13 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -262789,9 +271240,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -262814,15 +271266,13 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "RSI_Polaris",
@@ -262830,13 +271280,13 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -262845,9 +271295,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -262870,26 +271321,27 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "RSI_Polaris",
                 "Ship_Dock_Refuel",
                 "Station_Dock_Large"
               ],
+              "RequiredTags": [
+                "$PDC"
+              ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -262898,9 +271350,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -262923,15 +271376,13 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "RSI_Polaris",
@@ -262939,13 +271390,13 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -262954,9 +271405,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -262979,15 +271431,13 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "RSI_Polaris",
@@ -262995,13 +271445,13 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -263010,9 +271460,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -263035,15 +271486,13 @@ const shipHardpoints = [
               "Loadout": "Turret_PDC_BEHR_A",
               "BaseLoadout": {
                 "ClassName": "Turret_PDC_BEHR_A",
-                "Name": "Turret_PDC_BEHR_A",
+                "Name": "M2C \"Swarm\"",
                 "Type": "Turret.PDCTurret",
-                "Grade": 1
+                "Grade": 1,
+                "Class": ""
               },
               "Types": [
                 "TurretBase.PDC"
-              ],
-              "Flags": [
-                "uneditable"
               ],
               "Tags": [
                 "RSI_Polaris",
@@ -263051,13 +271500,13 @@ const shipHardpoints = [
                 "Station_Dock_Large"
               ],
               "RequiredTags": [
-                "PDC"
+                "$PDC"
               ],
               "PortTags": [
                 "PDC"
               ],
               "Turret": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "Ports": [
                 {
                   "PortName": "hardpoint_turret_weapon",
@@ -263066,9 +271515,10 @@ const shipHardpoints = [
                   "Loadout": "BEHR_LaserRepeater_PDC_S1",
                   "BaseLoadout": {
                     "ClassName": "BEHR_LaserRepeater_PDC_S1",
-                    "Name": "BEHR_LaserRepeater_PDC_S1",
+                    "Name": "M2C \"Swarm\"",
                     "Type": "WeaponGun.Gun",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "WeaponGun.Gun"
@@ -263122,9 +271572,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263141,9 +271592,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263160,9 +271612,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263179,9 +271632,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263198,9 +271652,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263217,9 +271672,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263236,9 +271692,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263308,9 +271765,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263327,9 +271785,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263346,9 +271805,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263365,9 +271825,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263384,9 +271845,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263403,9 +271865,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263422,9 +271885,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263494,9 +271958,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263513,9 +271978,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263532,9 +271998,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263551,9 +272018,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263570,9 +272038,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263589,9 +272058,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263608,9 +272078,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263680,9 +272151,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263699,9 +272171,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263718,9 +272191,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263737,9 +272211,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263756,9 +272231,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263775,9 +272251,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -263794,9 +272271,10 @@ const shipHardpoints = [
                   "Loadout": "MISL_S10_IR_BEHR_Torpedo",
                   "BaseLoadout": {
                     "ClassName": "MISL_S10_IR_BEHR_Torpedo",
-                    "Name": "MISL_S10_IR_BEHR_Torpedo",
+                    "Name": "VT-T10 \"Veritas\" Torpedo",
                     "Type": "Missile.Torpedo",
-                    "Grade": 1
+                    "Grade": 1,
+                    "Class": ""
                   },
                   "Types": [
                     "Missile.Torpedo"
@@ -264376,9 +272854,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 50000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 56613960.0,
+                  "ThrustCapacity": 25800000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 7076.745,
+                  "FuelUsagePerSecond": 3225.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 10000.0
@@ -264402,9 +272880,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 50000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 56613960.0,
+                  "ThrustCapacity": 25800000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 7076.745,
+                  "FuelUsagePerSecond": 3225.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 10000.0
@@ -264428,9 +272906,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 50000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 56613960.0,
+                  "ThrustCapacity": 25800000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 7076.745,
+                  "FuelUsagePerSecond": 3225.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 10000.0
@@ -264454,9 +272932,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 50000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 56613960.0,
+                  "ThrustCapacity": 25800000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 7076.745,
+                  "FuelUsagePerSecond": 3225.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 10000.0
@@ -264480,9 +272958,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 50000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 51000000.0,
+                  "ThrustCapacity": 100000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 6375.0,
+                  "FuelUsagePerSecond": 12500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 25000.0
@@ -264506,9 +272984,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 50000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 51000000.0,
+                  "ThrustCapacity": 100000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 6375.0,
+                  "FuelUsagePerSecond": 12500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 25000.0
@@ -264537,9 +273015,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 15000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 20000000.0,
+                  "ThrustCapacity": 29985550.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2500.0,
+                  "FuelUsagePerSecond": 3748.1938,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 25000.0
@@ -264563,9 +273041,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 15000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 20000000.0,
+                  "ThrustCapacity": 29985550.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2500.0,
+                  "FuelUsagePerSecond": 3748.1938,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 25000.0
@@ -264615,9 +273093,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 15000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 60000000.0,
+                  "ThrustCapacity": 19000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 7500.0,
+                  "FuelUsagePerSecond": 2375.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 15000.0
@@ -264641,9 +273119,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 15000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 7946222.0,
+                  "ThrustCapacity": 12000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 993.2778,
+                  "FuelUsagePerSecond": 1500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 35000.0
@@ -264667,9 +273145,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 15000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 7946222.0,
+                  "ThrustCapacity": 12000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 993.2778,
+                  "FuelUsagePerSecond": 1500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 35000.0
@@ -264693,9 +273171,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 15000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 7946222.0,
+                  "ThrustCapacity": 12000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 993.2778,
+                  "FuelUsagePerSecond": 1500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 35000.0
@@ -264719,9 +273197,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 15000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 7946222.0,
+                  "ThrustCapacity": 12000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 993.2778,
+                  "FuelUsagePerSecond": 1500.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 35000.0
@@ -264745,9 +273223,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 15000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 6976433.0,
+                  "ThrustCapacity": 10000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 872.0541,
+                  "FuelUsagePerSecond": 1250.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 25000.0
@@ -264771,9 +273249,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 15000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 6976433.0,
+                  "ThrustCapacity": 10000000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 872.0541,
+                  "FuelUsagePerSecond": 1250.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 25000.0
@@ -264802,9 +273280,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 5000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 9000000.0,
+                  "ThrustCapacity": 18200000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 1125.0,
+                  "FuelUsagePerSecond": 2275.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -264828,9 +273306,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 5000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 9000000.0,
+                  "ThrustCapacity": 18200000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 1125.0,
+                  "FuelUsagePerSecond": 2275.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -264854,9 +273332,9 @@ const shipHardpoints = [
                   "Size": 4,
                   "Mass": 5000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 9000000.0,
+                  "ThrustCapacity": 18200000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 1125.0,
+                  "FuelUsagePerSecond": 2275.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -264885,9 +273363,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -264911,9 +273389,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -264937,9 +273415,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -264963,9 +273441,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -264989,9 +273467,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -265015,9 +273493,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -265041,9 +273519,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -265067,9 +273545,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -265093,9 +273571,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -265119,9 +273597,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -265145,9 +273623,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -265171,9 +273649,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -265197,9 +273675,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -265223,9 +273701,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -265249,9 +273727,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -265275,9 +273753,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -265301,9 +273779,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -265327,9 +273805,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 6000.0,
                   "Grade": 1,
-                  "ThrustCapacity": 18672560.0,
+                  "ThrustCapacity": 18500000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 2334.07,
+                  "FuelUsagePerSecond": 2312.5,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 3000.0
@@ -265460,7 +273938,7 @@ const shipHardpoints = [
               "PoolSize": 10.0,
               "Modifiers": {
                 "PowerRatioMultiplier": 2.3,
-                "MaxAmmoLoadMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 4.0,
                 "MaxRegenPerSecMultiplier": 1.0
               }
             },
@@ -265686,7 +274164,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_RSI_Polaris",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Polaris",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -265790,10 +274268,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 32.0,
+                  "Width": 2.0,
+                  "Height": 8.0,
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -265828,10 +274306,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 32.0,
+                  "Width": 2.0,
+                  "Height": 8.0,
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -266481,19 +274959,20 @@ const shipHardpoints = [
                 "Class": ""
               },
               "Types": [
-                "Turret.GunTurret"
+                "Turret.GunTurret",
+                "Turret.MissileTurret"
               ],
               "Flags": [
-                "$uneditable"
+                "swaponly"
               ],
               "RequiredTags": [
                 "$RSI_Scorpius_Turret"
               ],
               "PortTags": [
-                "$RSI_Scorpius_Turret"
+                "RSI_Scorpius_Turret"
               ],
               "Gimballed": true,
-              "Uneditable": true,
+              "Uneditable": false,
               "RemoteController": {
                 "Slaved": false,
                 "Seats": [
@@ -267725,7 +276204,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 6.0
+              "PoolSize": 6.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 2.5,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -267912,18 +276396,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_RSI_Scorpius",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Scorpius",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$RSI_Scorpius_Base_Blade"
+                ],
+                "PortTags": [
+                  "RSI_Scorpius_Base_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -269676,7 +278167,12 @@ const shipHardpoints = [
               "Cooldown": 4.0
             },
             "Weapons": {
-              "PoolSize": 6.0
+              "PoolSize": 6.0,
+              "Modifiers": {
+                "PowerRatioMultiplier": 1.0,
+                "MaxAmmoLoadMultiplier": 2.5,
+                "MaxRegenPerSecMultiplier": 1.0
+              }
             },
             "Wheeled": {}
           },
@@ -269863,18 +278359,25 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_RSI_Scorpius_Antares",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Scorpius_Antares",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
-                  "Grade": 1
+                  "Grade": 1,
+                  "Class": ""
                 },
                 "Types": [
                   "FlightController"
                 ],
+                "RequiredTags": [
+                  "$RSI_Scorpius_Antares_Blade"
+                ],
+                "PortTags": [
+                  "RSI_Scorpius_Antares_Blade"
+                ],
                 "Flags": [
                   "invisible",
-                  "uneditable"
+                  "swaponly"
                 ],
-                "Uneditable": true
+                "Uneditable": false
               }
             ]
           },
@@ -270272,7 +278775,7 @@ const shipHardpoints = [
               ]
             }
           ],
-          "Hardpoints": 4
+          "Hardpoints": 3
         },
         "MannedTurrets": {},
         "RemoteTurrets": {},
@@ -272761,7 +281264,7 @@ const shipHardpoints = [
                 "Loadout": "9c1395b5-a1c8-4365-ba1a-0d9246382384",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Zeus_CL",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -272864,10 +281367,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 32.0,
+                  "Width": 2.0,
+                  "Height": 8.0,
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -272902,10 +281405,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 4.0,
+                  "Width": 2.0,
+                  "Height": 1.0,
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -272940,10 +281443,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 0.0,
-                  "Width": 0.0,
-                  "Height": 0.0,
-                  "Depth": 0.0
+                  "Capacity": 4.0,
+                  "Width": 2.0,
+                  "Height": 1.0,
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -274756,7 +283259,7 @@ const shipHardpoints = [
                 "Loadout": "91dd0aa2-fe69-4721-a55c-bdc54367a50e",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_RSI_Zeus_ES",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -274859,10 +283362,10 @@ const shipHardpoints = [
                   "Depth": 1.0
                 },
                 "MaxContainerSize": {
-                  "Capacity": 1.0,
-                  "Width": 1.0,
-                  "Height": 1.0,
-                  "Depth": 1.0
+                  "Capacity": 16.0,
+                  "Width": 2.0,
+                  "Height": 4.0,
+                  "Depth": 2.0
                 }
               },
               "Uneditable": true,
@@ -278713,7 +287216,7 @@ const shipHardpoints = [
                     "WeaponGun.Gun"
                   ],
                   "Flags": [
-                    "uneditable"
+                    "swaponly"
                   ],
                   "Tags": [
                     "$TMBL_Nova"
@@ -278721,7 +287224,7 @@ const shipHardpoints = [
                   "PortTags": [
                     "TMBL_Nova"
                   ],
-                  "Uneditable": true
+                  "Uneditable": false
                 },
                 {
                   "PortName": "hardpoint_missile_launcher",
@@ -284820,7 +293323,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_VNCL_Blade",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_VNCL_Blade",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -286558,7 +295061,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_VNCL_Glaive",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_VNCL_Glaive",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -288181,7 +296684,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_VNCL_Scythe",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_VNCL_Scythe",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -288607,9 +297110,9 @@ const shipHardpoints = [
                   "Size": 3,
                   "Mass": 5.0,
                   "Grade": 1,
-                  "ThrustCapacity": 139000.0,
+                  "ThrustCapacity": 152000.0,
                   "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 17.375,
+                  "FuelUsagePerSecond": 19.0,
                   "Uneditable": true,
                   "Durability": {
                     "Health": 2750.0
@@ -288902,84 +297405,6 @@ const shipHardpoints = [
                   }
                 },
                 {
-                  "Name": "hardpoint_gravplate_center_right",
-                  "Size": 1,
-                  "Mass": 5.0,
-                  "Grade": 1,
-                  "ThrustCapacity": 3302.658,
-                  "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 0.4128,
-                  "Uneditable": true,
-                  "Durability": {
-                    "Health": 2750.0
-                  },
-                  "Power": {
-                    "PowerBase": 3.0,
-                    "PowerDraw": 5.0,
-                    "IdlePowerEmission": 0.0,
-                    "ActivePowerEmission": 0.0
-                  },
-                  "Heat": {
-                    "StartComponentTemperature": 300.0,
-                    "StartIRTemperature": 250.0,
-                    "StartIREmission": 5.0,
-                    "ThermalEnergyBase": 500.0,
-                    "ThermalEnergyDraw": 1250.0
-                  }
-                },
-                {
-                  "Name": "hardpoint_gravplate_front_left",
-                  "Size": 1,
-                  "Mass": 5.0,
-                  "Grade": 1,
-                  "ThrustCapacity": 3302.658,
-                  "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 0.4128,
-                  "Uneditable": true,
-                  "Durability": {
-                    "Health": 2750.0
-                  },
-                  "Power": {
-                    "PowerBase": 3.0,
-                    "PowerDraw": 5.0,
-                    "IdlePowerEmission": 0.0,
-                    "ActivePowerEmission": 0.0
-                  },
-                  "Heat": {
-                    "StartComponentTemperature": 300.0,
-                    "StartIRTemperature": 250.0,
-                    "StartIREmission": 5.0,
-                    "ThermalEnergyBase": 500.0,
-                    "ThermalEnergyDraw": 1250.0
-                  }
-                },
-                {
-                  "Name": "hardpoint_gravplate_front_right",
-                  "Size": 1,
-                  "Mass": 5.0,
-                  "Grade": 1,
-                  "ThrustCapacity": 3302.658,
-                  "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 0.4128,
-                  "Uneditable": true,
-                  "Durability": {
-                    "Health": 2750.0
-                  },
-                  "Power": {
-                    "PowerBase": 3.0,
-                    "PowerDraw": 5.0,
-                    "IdlePowerEmission": 0.0,
-                    "ActivePowerEmission": 0.0
-                  },
-                  "Heat": {
-                    "StartComponentTemperature": 300.0,
-                    "StartIRTemperature": 250.0,
-                    "StartIREmission": 5.0,
-                    "ThermalEnergyBase": 500.0,
-                    "ThermalEnergyDraw": 1250.0
-                  }
-                },
-                {
                   "Name": "hardpoint_thruster_front_bottom_left",
                   "Size": 1,
                   "Mass": 5.0,
@@ -289186,35 +297611,9 @@ const shipHardpoints = [
                     "ThermalEnergyBase": 500.0,
                     "ThermalEnergyDraw": 1250.0
                   }
-                },
-                {
-                  "Name": "hardpoint_gravplate_center_left",
-                  "Size": 1,
-                  "Mass": 5.0,
-                  "Grade": 1,
-                  "ThrustCapacity": 3302.658,
-                  "FuelBurnRatePerMN": 125.0,
-                  "FuelUsagePerSecond": 0.4128,
-                  "Uneditable": true,
-                  "Durability": {
-                    "Health": 2750.0
-                  },
-                  "Power": {
-                    "PowerBase": 3.0,
-                    "PowerDraw": 5.0,
-                    "IdlePowerEmission": 0.0,
-                    "ActivePowerEmission": 0.0
-                  },
-                  "Heat": {
-                    "StartComponentTemperature": 300.0,
-                    "StartIRTemperature": 250.0,
-                    "StartIREmission": 5.0,
-                    "ThermalEnergyBase": 500.0,
-                    "ThermalEnergyDraw": 1250.0
-                  }
                 }
               ],
-              "ItemsQuantity": 20
+              "ItemsQuantity": 16
             }
           },
           "QuantumFuelTanks": {
@@ -289445,7 +297844,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_XIAN_Nox",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_XIAN_Nox",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -290660,7 +299059,7 @@ const shipHardpoints = [
                 "Loadout": "Controller_Flight_XIAN_Scout",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_XIAN_Scout",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },
@@ -292272,7 +300671,30 @@ const shipHardpoints = [
             ],
             "Hardpoints": 2
           },
-          "LifeSupport": {},
+          "LifeSupport": {
+            "InstalledItems": [
+              {
+                "PortName": "hardpoint_life_support",
+                "MinSize": 1,
+                "MaxSize": 1,
+                "Loadout": "e947b002-e65e-4637-90b7-c894925d6625",
+                "BaseLoadout": {
+                  "ClassName": "LFSP_TYDT_S01_ComfortAir",
+                  "Name": "LFSP_TYDT_S01_ComfortAir",
+                  "Type": "LifeSupportGenerator.UNDEFINED",
+                  "Grade": 3
+                },
+                "Types": [
+                  "LifeSupportGenerator"
+                ],
+                "Flags": [
+                  "invisible",
+                  "uneditable"
+                ],
+                "Uneditable": true
+              }
+            ]
+          },
           "FuelIntakes": {
             "InstalledItems": [
               {
@@ -292371,7 +300793,7 @@ const shipHardpoints = [
                 "Loadout": "28ec05bc-52c1-445e-91a3-c4025be63ad1",
                 "BaseLoadout": {
                   "ClassName": "Controller_Flight_XNAA_SanTokYai",
-                  "Name": "SELF STATUS",
+                  "Name": "Flight Blade",
                   "Type": "FlightController.UNDEFINED",
                   "Grade": 1
                 },

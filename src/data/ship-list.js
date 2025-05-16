@@ -1,5 +1,3 @@
-import FlightCharacteristics from "../components/FlightCharacteristics/FlightCharacteristics";
-
 const shipList = [
   {
     "ClassName": "AEGS_Avenger_Stalker",
@@ -168,9 +166,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 4908.0,
+        "SCMIdle": 4906.0,
         "SCMActive": 5849.0,
-        "NAV": 12441.0
+        "NAV": 12439.0
       },
       "Infrared": {
         "Start": 5748.0
@@ -195,7 +193,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 2360.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 8098.0
@@ -376,9 +374,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 4908.0,
+        "SCMIdle": 4906.0,
         "SCMActive": 5849.0,
-        "NAV": 12441.0
+        "NAV": 12439.0
       },
       "Infrared": {
         "Start": 5832.0
@@ -403,7 +401,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 3700.0,
+      "TotalShieldHP": 4200.0,
       "PilotBurstDPS": 2360.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 9515.0
@@ -584,9 +582,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 4908.0,
+        "SCMIdle": 4906.0,
         "SCMActive": 5849.0,
-        "NAV": 12441.0
+        "NAV": 12439.0
       },
       "Infrared": {
         "Start": 5832.0
@@ -611,7 +609,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 3700.0,
+      "TotalShieldHP": 4200.0,
       "PilotBurstDPS": 1549.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 9515.0
@@ -792,9 +790,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 6225.0,
+        "SCMIdle": 6223.0,
         "SCMActive": 7825.0,
-        "NAV": 13758.0
+        "NAV": 13756.0
       },
       "Infrared": {
         "Start": 6048.0
@@ -819,7 +817,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 2360.0,
       "TurretsBurstDPS": 0.0,
       "TotalEMPDmg": 2750.0,
@@ -1003,9 +1001,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 3514.0,
+        "SCMIdle": 3513.0,
         "SCMActive": 4201.0,
-        "NAV": 8034.0
+        "NAV": 8033.0
       },
       "Infrared": {
         "Start": 4026.0
@@ -1030,7 +1028,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 656.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 1186861.0
@@ -1225,9 +1223,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 4838.0,
+        "SCMIdle": 4835.0,
         "SCMActive": 5733.0,
-        "NAV": 13351.0
+        "NAV": 13348.0
       },
       "Infrared": {
         "Start": 9324.0
@@ -1447,9 +1445,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 4838.0,
+        "SCMIdle": 4835.0,
         "SCMActive": 5733.0,
-        "NAV": 13351.0
+        "NAV": 13348.0
       },
       "Infrared": {
         "Start": 9324.0
@@ -1659,9 +1657,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 13312.0,
+        "SCMIdle": 13307.0,
         "SCMActive": 15463.0,
-        "NAV": 28759.0
+        "NAV": 28754.0
       },
       "Infrared": {
         "Start": 19612.0
@@ -1678,7 +1676,7 @@ const shipList = [
       },
       "Modifiers": {
         "PowerRatioMultiplier": 2.9,
-        "MaxAmmoLoadMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 4.0,
         "MaxRegenPerSecMultiplier": 1.0
       }
     },
@@ -1691,7 +1689,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 112200.0,
+      "TotalShieldHP": 126800.0,
       "PilotBurstDPS": 0.0,
       "TurretsBurstDPS": 19629.0,
       "TotalMissilesDmg": 91933.0
@@ -1706,14 +1704,14 @@ const shipList = [
     }
   },
   {
-    "ClassName": "AEGS_Idris_M_PU",
-    "Name": "Aegis Idris M (XenoThreat)",
-    "Description": "A mark two 'peacekeeper' variant developed for the UEE patrol services, the Idris-P strips the standard ship's ship-to-ship gun and spinal mount in favor of additional cargo capacity and superior speed.",
-    "Career": "Capital Ship",
+    "ClassName": "AEGS_Idris_M",
+    "Name": "Aegis Idris M",
+    "Description": "Larger than a bomber but smaller than a ship-of-the-line, frigates occupy an interesting space in the pantheon of Naval warships. While they lack the heavy armor and the capital weaponry of a cruiser, the UEE Navy prizes its frigates as they are maneuverable and can be adapted for use in a wide-range of combat scenarios.",
+    "Career": "Frigate",
     "Role": "Frigate",
     "Size": 6,
     "Cargo": {
-      "CargoGrid": 1216.0,
+      "CargoGrid": 1326.0,
       "CargoContainers": 0.0,
       "ExternalStorage": 0.0,
       "PersonalInventory": 32.0
@@ -1724,9 +1722,9 @@ const shipList = [
     "Mass": 37854373.0,
     "ComponentsMass": 354585.0,
     "Dimensions": {
-      "Length": 243.0,
-      "Width": 127.0,
-      "Height": 57.5
+      "Length": 240.0,
+      "Width": 125.0,
+      "Height": 45.0
     },
     "IsSpaceship": true,
     "Armor": {
@@ -1744,7 +1742,7 @@ const shipList = [
     "Hull": {
       "StructureHealthPoints": {
         "VitalParts": {
-          "Body": 6100000.0
+          "Body": 3600000.0
         },
         "Parts": {
           "airlock_section": 375000.0,
@@ -1799,21 +1797,21 @@ const shipList = [
       }
     },
     "FlightCharacteristics": {
-      "ScmSpeed": 45.0,
-      "MaxSpeed": 800.0,
-      "Pitch": 12.0,
-      "Yaw": 10.0,
-      "Roll": 22.0,
+      "ScmSpeed": 110.0,
+      "MaxSpeed": 850.0,
+      "Pitch": 7.0,
+      "Yaw": 7.0,
+      "Roll": 12.0,
       "IsVtolAssisted": false,
       "UseDirectionModifiers": true,
       "ThrustCapacity": {
-        "Main": 972426600.0,
-        "Retro": 289355000.0,
+        "Main": 754000000.0,
+        "Retro": 566000000.0,
         "Vtol": 0.0,
-        "Maneuvering": 1956663800.0
+        "Maneuvering": 2444000000.0
       },
       "AccelerationG": {
-        "IsValidated": true,
+        "IsValidated": false,
         "Main": 2.6,
         "Retro": 0.7,
         "Strafe": 0.8,
@@ -1824,8 +1822,8 @@ const shipList = [
         "BaseSpoolTime": 1.0,
         "QuantumDriveSpoolTime": 9.0,
         "ScmMode": {
-          "BoostSpeedForward": 290.0,
-          "BoostSpeedBackward": 230.0
+          "BoostSpeedForward": 220.0,
+          "BoostSpeedBackward": 125.0
         }
       },
       "Boost": {
@@ -1834,20 +1832,20 @@ const shipList = [
         "RampDown": 0.2,
         "AccelerationMultiplier": {
           "PositiveAxis": {
-            "X": 2.0,
-            "Y": 2.0,
-            "Z": 2.0
+            "X": 1.35,
+            "Y": 1.5,
+            "Z": 1.3
           },
           "NegativeAxis": {
-            "X": 2.0,
-            "Y": 2.0,
-            "Z": 2.0
+            "X": 1.35,
+            "Y": 1.2,
+            "Z": 1.2
           }
         },
         "AngularAccelerationMultiplier": {
-          "Pitch": 3.0,
-          "Yaw": 3.0,
-          "Roll": 3.0
+          "Pitch": 1.5,
+          "Yaw": 1.5,
+          "Roll": 1.5
         },
         "AngularVelocityMultiplier": {
           "Pitch": 1.2,
@@ -1869,7 +1867,7 @@ const shipList = [
       }
     },
     "FuelManagement": {
-      "FuelCapacity": 6399000000.0,
+      "FuelCapacity": 6400000000.0,
       "FuelIntakeRate": 0.0,
       "QuantumFuelCapacity": 120000000.0,
       "FuelBurnRatePer10KNewton": {
@@ -1879,22 +1877,22 @@ const shipList = [
         "Maneuvering": 16.25
       },
       "FuelUsagePerSecond": {
-        "Main": 121553.325,
-        "Retro": 36169.375,
+        "Main": 94250.0,
+        "Retro": 70750.0,
         "Vtol": 0.0,
-        "Maneuvering": 244582.975
+        "Maneuvering": 305500.0
       },
       "IntakeToMainFuelRatio": 0.0,
       "TimeForIntakesToFillTank": "Infinity"
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 28815.0,
-        "SCMActive": 51002.0,
-        "NAV": 28820.0
+        "SCMIdle": 28809.0,
+        "SCMActive": 51000.0,
+        "NAV": 28814.0
       },
       "Infrared": {
-        "Start": 25020.0
+        "Start": 24120.0
       },
       "CrossSection": {
         "Front": 10000.0,
@@ -1922,38 +1920,38 @@ const shipList = [
         "AmmoLoad": 0
       },
       "TotalShieldHP": 2340000.0,
-      "PilotBurstDPS": 17336.0,
-      "TurretsBurstDPS": 25314.0,
+      "PilotBurstDPS": 9611.0,
+      "TurretsBurstDPS": 35442.0,
       "TotalMissilesDmg": 170917.0
     },
     "Insurance": {
-      "StandardClaimTime": 112.5,
-      "ExpeditedClaimTime": 37.5,
-      "ExpeditedCost": 56250.0
+      "StandardClaimTime": 253.0,
+      "ExpeditedClaimTime": 63.25,
+      "ExpeditedCost": 150990.0
     }
   },
   {
     "ClassName": "AEGS_Idris_P",
-    "Name": "Aegis Idris",
+    "Name": "Aegis Idris P",
     "Description": "A mark two 'peacekeeper' variant developed for the UEE patrol services, the Idris-P strips the standard ship's ship-to-ship gun and spinal mount in favor of additional cargo capacity and superior speed.",
     "Career": "Frigate",
     "Role": "Frigate",
     "Size": 6,
     "Cargo": {
-      "CargoGrid": 1280.0,
+      "CargoGrid": 1374.0,
       "CargoContainers": 0.0,
       "ExternalStorage": 0.0,
       "PersonalInventory": 32.0
     },
     "Crew": 1,
-    "WeaponCrew": 10,
+    "WeaponCrew": 12,
     "OperationsCrew": 0,
     "Mass": 37854373.0,
-    "ComponentsMass": 351515.0,
+    "ComponentsMass": 351355.0,
     "Dimensions": {
-      "Length": 243.0,
-      "Width": 127.0,
-      "Height": 57.5
+      "Length": 240.0,
+      "Width": 125.0,
+      "Height": 45.0
     },
     "IsSpaceship": true,
     "Armor": {
@@ -1971,7 +1969,7 @@ const shipList = [
     "Hull": {
       "StructureHealthPoints": {
         "VitalParts": {
-          "Body": 6100000.0
+          "Body": 3600000.0
         },
         "Parts": {
           "airlock_section": 375000.0,
@@ -2026,33 +2024,33 @@ const shipList = [
       }
     },
     "FlightCharacteristics": {
-      "ScmSpeed": 45.0,
-      "MaxSpeed": 800.0,
-      "Pitch": 12.0,
-      "Yaw": 10.0,
-      "Roll": 22.0,
+      "ScmSpeed": 110.0,
+      "MaxSpeed": 850.0,
+      "Pitch": 7.0,
+      "Yaw": 7.0,
+      "Roll": 12.0,
       "IsVtolAssisted": false,
       "UseDirectionModifiers": true,
       "ThrustCapacity": {
-        "Main": 972426600.0,
-        "Retro": 289355000.0,
+        "Main": 754000000.0,
+        "Retro": 566000000.0,
         "Vtol": 0.0,
-        "Maneuvering": 1956663800.0
+        "Maneuvering": 2444000000.0
       },
       "AccelerationG": {
         "IsValidated": false,
         "Main": 2.62,
-        "Retro": 0.78,
-        "Strafe": 0.0,
-        "Up": 0.0,
-        "Down": 0.0
+        "Retro": 1.47,
+        "Strafe": 0,
+        "Up": 0,
+        "Down": 0
       },
       "MasterModes": {
         "BaseSpoolTime": 1.0,
         "QuantumDriveSpoolTime": 9.0,
         "ScmMode": {
-          "BoostSpeedForward": 290.0,
-          "BoostSpeedBackward": 230.0
+          "BoostSpeedForward": 220.0,
+          "BoostSpeedBackward": 125.0
         }
       },
       "Boost": {
@@ -2061,20 +2059,20 @@ const shipList = [
         "RampDown": 0.2,
         "AccelerationMultiplier": {
           "PositiveAxis": {
-            "X": 2.0,
-            "Y": 2.0,
-            "Z": 2.0
+            "X": 1.35,
+            "Y": 1.5,
+            "Z": 1.3
           },
           "NegativeAxis": {
-            "X": 2.0,
-            "Y": 2.0,
-            "Z": 2.0
+            "X": 1.35,
+            "Y": 1.2,
+            "Z": 1.2
           }
         },
         "AngularAccelerationMultiplier": {
-          "Pitch": 3.0,
-          "Yaw": 3.0,
-          "Roll": 3.0
+          "Pitch": 1.5,
+          "Yaw": 1.5,
+          "Roll": 1.5
         },
         "AngularVelocityMultiplier": {
           "Pitch": 1.2,
@@ -2096,7 +2094,7 @@ const shipList = [
       }
     },
     "FuelManagement": {
-      "FuelCapacity": 6399000000.0,
+      "FuelCapacity": 6400000000.0,
       "FuelIntakeRate": 0.0,
       "QuantumFuelCapacity": 120000000.0,
       "FuelBurnRatePer10KNewton": {
@@ -2106,22 +2104,22 @@ const shipList = [
         "Maneuvering": 16.25
       },
       "FuelUsagePerSecond": {
-        "Main": 121553.325,
-        "Retro": 36169.375,
+        "Main": 94250.0,
+        "Retro": 70750.0,
         "Vtol": 0.0,
-        "Maneuvering": 244582.975
+        "Maneuvering": 305500.0
       },
       "IntakeToMainFuelRatio": 0.0,
       "TimeForIntakesToFillTank": "Infinity"
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 28742.0,
+        "SCMIdle": 28735.0,
         "SCMActive": 50927.0,
-        "NAV": 28747.0
+        "NAV": 28740.0
       },
       "Infrared": {
-        "Start": 25245.0
+        "Start": 24045.0
       },
       "CrossSection": {
         "Front": 10000.0,
@@ -2149,14 +2147,14 @@ const shipList = [
         "AmmoLoad": 0
       },
       "TotalShieldHP": 2340000.0,
-      "PilotBurstDPS": 10128.0,
-      "TurretsBurstDPS": 27769.0,
+      "PilotBurstDPS": 0.0,
+      "TurretsBurstDPS": 32384.0,
       "TotalMissilesDmg": 0.0
     },
     "Insurance": {
-      "StandardClaimTime": 112.5,
-      "ExpeditedClaimTime": 37.5,
-      "ExpeditedCost": 56250.0
+      "StandardClaimTime": 199.0,
+      "ExpeditedClaimTime": 49.75,
+      "ExpeditedCost": 118580.0
     }
   },
   {
@@ -2289,10 +2287,10 @@ const shipList = [
     },
     "FlightCharacteristics": {
       "ScmSpeed": 110.0,
-      "MaxSpeed": 890.0,
-      "Pitch": 15.0,
-      "Yaw": 15.0,
-      "Roll": 30.0,
+      "MaxSpeed": 870.0,
+      "Pitch": 11.0,
+      "Yaw": 11.0,
+      "Roll": 14.0,
       "IsVtolAssisted": false,
       "UseDirectionModifiers": true,
       "ThrustCapacity": {
@@ -2307,14 +2305,15 @@ const shipList = [
         "Retro": 1.5,
         "Strafe": 1.0,
         "Up": 2.0,
-        "Down": 2.0
+        "Down": 2.0,
+        "CheckDate": "2025-04-25"
       },
       "MasterModes": {
         "BaseSpoolTime": 1.0,
         "QuantumDriveSpoolTime": 7.0,
         "ScmMode": {
           "BoostSpeedForward": 290.0,
-          "BoostSpeedBackward": 100.0
+          "BoostSpeedBackward": 115.0
         }
       },
       "Boost": {
@@ -2378,9 +2377,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 13487.0,
+        "SCMIdle": 13484.0,
         "SCMActive": 15733.0,
-        "NAV": 28934.0
+        "NAV": 28931.0
       },
       "Infrared": {
         "Start": 23145.0
@@ -2397,7 +2396,7 @@ const shipList = [
       },
       "Modifiers": {
         "PowerRatioMultiplier": 1.18,
-        "MaxAmmoLoadMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 2.5,
         "MaxRegenPerSecMultiplier": 1.0
       }
     },
@@ -2410,7 +2409,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 165000.0,
+      "TotalShieldHP": 187000.0,
       "PilotBurstDPS": 0.0,
       "TurretsBurstDPS": 9002.0,
       "TotalMissilesDmg": 0.0
@@ -2601,9 +2600,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 22774.0,
+        "SCMIdle": 22773.0,
         "SCMActive": 30335.0,
-        "NAV": 37856.0
+        "NAV": 37855.0
       },
       "Infrared": {
         "Start": 16018.0
@@ -2617,6 +2616,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.5,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -2840,9 +2844,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 22732.0,
+        "SCMIdle": 22724.0,
         "SCMActive": 30665.0,
-        "NAV": 38212.0
+        "NAV": 38205.0
       },
       "Infrared": {
         "Start": 14080.0
@@ -2856,6 +2860,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 5.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -3054,9 +3063,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 2967.0,
+        "SCMIdle": 2966.0,
         "SCMActive": 3534.0,
-        "NAV": 7487.0
+        "NAV": 7486.0
       },
       "Infrared": {
         "Start": 4519.0
@@ -3081,7 +3090,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 2182.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 11606.0
@@ -3263,9 +3272,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 2967.0,
+        "SCMIdle": 2966.0,
         "SCMActive": 3534.0,
-        "NAV": 7487.0
+        "NAV": 7486.0
       },
       "Infrared": {
         "Start": 4519.0
@@ -3290,7 +3299,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 2018.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 11606.0
@@ -3470,9 +3479,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 3046.0,
+        "SCMIdle": 3044.0,
         "SCMActive": 3638.0,
-        "NAV": 7566.0
+        "NAV": 7564.0
       },
       "Infrared": {
         "Start": 3728.0
@@ -3497,7 +3506,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 1013.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 78633.0
@@ -3686,9 +3695,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5229.0,
+        "SCMIdle": 5226.0,
         "SCMActive": 6265.0,
-        "NAV": 13146.0
+        "NAV": 13143.0
       },
       "Infrared": {
         "Start": 5821.0
@@ -3713,7 +3722,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 0.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -3887,9 +3896,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 3787.0,
+        "SCMIdle": 3785.0,
         "SCMActive": 5959.0,
-        "NAV": 8307.0
+        "NAV": 8305.0
       },
       "Infrared": {
         "Start": 4043.0
@@ -3914,7 +3923,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 1094.0,
       "TurretsBurstDPS": 0.0,
       "TotalEMPDmg": 5500.0,
@@ -4102,9 +4111,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 17725.0,
+        "SCMIdle": 17719.0,
         "SCMActive": 22606.0,
-        "NAV": 38375.0
+        "NAV": 38370.0
       },
       "Infrared": {
         "Start": 15386.0
@@ -4319,9 +4328,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 19834.0,
+        "SCMIdle": 19830.0,
         "SCMActive": 29062.0,
-        "NAV": 39989.0
+        "NAV": 39984.0
       },
       "Infrared": {
         "Start": 14010.0
@@ -4536,9 +4545,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 14904.0,
+        "SCMIdle": 14900.0,
         "SCMActive": 19056.0,
-        "NAV": 32458.0
+        "NAV": 32454.0
       },
       "Infrared": {
         "Start": 12286.0
@@ -4753,9 +4762,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 15327.0,
+        "SCMIdle": 15323.0,
         "SCMActive": 22046.0,
-        "NAV": 30807.0
+        "NAV": 30803.0
       },
       "Infrared": {
         "Start": 11834.0
@@ -4780,7 +4789,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 7020.0,
+      "TotalShieldHP": 5780.0,
       "PilotBurstDPS": 2865.0,
       "TurretsBurstDPS": 405.0,
       "TotalEMPDmg": 3300.0,
@@ -4956,9 +4965,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 4318.0,
+        "SCMIdle": 4315.0,
         "SCMActive": 5077.0,
-        "NAV": 11851.0
+        "NAV": 11849.0
       },
       "Infrared": {
         "Start": 5838.0
@@ -4995,6 +5004,231 @@ const shipList = [
     },
     "Buy": {
       "Astro Armada, Area 18": 1984500.0
+    }
+  },
+  {
+    "ClassName": "ANVL_Asgard",
+    "Name": "Anvil Asgard",
+    "Description": "As the battles of today continue to grow in scale and complexity, Anvil Aerospace understands the impact a single vehicle can have on the outcome. Enter the Asgard. The next generation in ground vehicle transport, the Anvil Asgard features a quick-load ramp, a sizeable hold to securely store your assault vehicle of choice, and hefty array of armaments to ensure access to even the most combat-heavy of drop sites.",
+    "Career": "Combat",
+    "Role": "Drop Ship",
+    "Size": 4,
+    "Cargo": {
+      "CargoGrid": 180.0,
+      "CargoContainers": 0.0,
+      "ExternalStorage": 0.0,
+      "PersonalInventory": 8.0
+    },
+    "Crew": 1,
+    "WeaponCrew": 3,
+    "OperationsCrew": 0,
+    "Mass": 610246.06,
+    "ComponentsMass": 38814.0,
+    "Dimensions": {
+      "Length": 48.0,
+      "Width": 38.0,
+      "Height": 12.0
+    },
+    "IsSpaceship": true,
+    "Armor": {
+      "DamageMultipliers": {
+        "Physical": 0.42,
+        "Energy": 1.0,
+        "Distortion": 1.0
+      },
+      "SignalMultipliers": {
+        "Electromagnetic": 1.09,
+        "Infrared": 1.09,
+        "CrossSection": 1.09
+      }
+    },
+    "Hull": {
+      "StructureHealthPoints": {
+        "VitalParts": {
+          "Nose": 20000.0,
+          "Tail": 20000.0
+        },
+        "Parts": {
+          "Engine_FL_Split": 2500.0,
+          "Engine_FR_Split": 2500.0,
+          "tail_top": 200.0,
+          "mesh_tail_body": 200.0,
+          "wing_rl": 3500.0,
+          "wing_rr": 3500.0,
+          "mesh_roof_body": 200.0,
+          "wing_upper_left": 5000.0,
+          "mesh_wing_upper_left_flap": 100.0,
+          "Engine_RL_Split": 2500.0,
+          "wing_upper_right": 5000.0,
+          "mesh_wing_upper_right_flap": 100.0,
+          "Engine_RR_Split": 2500.0,
+          "wing_right": 4500.0,
+          "mesh_wing_right_flap": 100.0,
+          "wing_left": 4500.0,
+          "mesh_wing_left_flap": 100.0
+        }
+      },
+      "ThrustersHealthPoints": {
+        "Main": {
+          "thruster_main_front_left": 17600.0,
+          "thruster_main_front_right": 17600.0,
+          "thruster_aux_left": 17600.0,
+          "thruster_aux_right": 17600.0,
+          "thruster_main_rear_left": 17600.0,
+          "thruster_main_rear_right": 17600.0
+        },
+        "Retro": {
+          "thruster_retro_left": 16800.0,
+          "thruster_retro_right": 16800.0
+        },
+        "Maneuvering": {
+          "thruster_bottom_front_left": 16250.0,
+          "thruster_bottom_front_right": 16250.0,
+          "thruster_side_front_left": 16250.0,
+          "thruster_side_front_right": 16250.0,
+          "thruster_top_front_left": 16250.0,
+          "thruster_top_front_right": 16250.0,
+          "thruster_bottom_rear_left": 16250.0,
+          "thruster_bottom_rear_right": 16250.0,
+          "thruster_side_rear_left": 16250.0,
+          "thruster_side_rear_right": 16250.0,
+          "thruster_top_rear_left": 16250.0,
+          "thruster_top_rear_right": 16250.0
+        }
+      }
+    },
+    "FlightCharacteristics": {
+      "ScmSpeed": 203.0,
+      "MaxSpeed": 1075.0,
+      "Pitch": 32.5,
+      "Yaw": 27.5,
+      "Roll": 95.0,
+      "IsVtolAssisted": false,
+      "UseDirectionModifiers": true,
+      "ThrustCapacity": {
+        "Main": 29400000.0,
+        "Retro": 16400000.0,
+        "Vtol": 0.0,
+        "Maneuvering": 95000000.0
+      },
+      "AccelerationG": {
+        "IsValidated": false,
+        "Main": 4.91,
+        "Retro": 2.74,
+        "Strafe": 0.0,
+        "Up": 0.0,
+        "Down": 0.0
+      },
+      "MasterModes": {
+        "BaseSpoolTime": 1.0,
+        "QuantumDriveSpoolTime": 6.0,
+        "ScmMode": {
+          "BoostSpeedForward": 425.0,
+          "BoostSpeedBackward": 240.0
+        }
+      },
+      "Boost": {
+        "PreDelay": 0.0,
+        "RampUp": 1.2,
+        "RampDown": 0.2,
+        "AccelerationMultiplier": {
+          "PositiveAxis": {
+            "X": 1.2,
+            "Y": 1.5,
+            "Z": 1.3
+          },
+          "NegativeAxis": {
+            "X": 1.2,
+            "Y": 1.4,
+            "Z": 1.4
+          }
+        },
+        "AngularAccelerationMultiplier": {
+          "Pitch": 1.2,
+          "Yaw": 1.2,
+          "Roll": 1.2
+        },
+        "AngularVelocityMultiplier": {
+          "Pitch": 1.2,
+          "Yaw": 1.2,
+          "Roll": 1.2
+        }
+      },
+      "Capacitors": {
+        "ThrusterCapacitorSize": 20.0,
+        "CapacitorRegenPerSec": 0.75,
+        "CapacitorIdleCost": 1.0,
+        "CapacitorLinearCost": 0.0,
+        "CapacitorUsageModifier": 1.0,
+        "CapacitorRegenDelay": 0.9,
+        "RegenerationTime": 26.7,
+        "X_AccelMultiplicator": 1.8,
+        "Y_AccelMultiplicator": 1.8,
+        "Z_AccelMultiplicator": 1.8
+      }
+    },
+    "FuelManagement": {
+      "FuelCapacity": 97500000.0,
+      "FuelIntakeRate": 0.0,
+      "QuantumFuelCapacity": 1850000.0,
+      "FuelBurnRatePer10KNewton": {
+        "Main": 7.5,
+        "Retro": 2.5,
+        "Vtol": 0.0,
+        "Maneuvering": 15.0
+      },
+      "FuelUsagePerSecond": {
+        "Main": 3675.0,
+        "Retro": 2050.0,
+        "Vtol": 0.0,
+        "Maneuvering": 11875.0
+      },
+      "IntakeToMainFuelRatio": 0.0,
+      "TimeForIntakesToFillTank": "Infinity"
+    },
+    "Emissions": {
+      "Electromagnetic": {
+        "SCMIdle": 23996.0,
+        "SCMActive": 31139.0,
+        "NAV": 40869.0
+      },
+      "Infrared": {
+        "Start": 18482.0
+      },
+      "CrossSection": {
+        "Front": 9810.0,
+        "Side": 31000.0,
+        "Top": 39240.0
+      }
+    },
+    "ResourceNetwork": {
+      "ItemPools": {
+        "WeaponPoolSize": 4.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
+        "MaxRegenPerSecMultiplier": 1.0
+      }
+    },
+    "Weapons": {
+      "PilotWeaponRegenPool": {
+        "RegenFillRate": 0.0,
+        "AmmoLoad": 0
+      },
+      "TurretsWeaponRegenPool": {
+        "RegenFillRate": 0.0,
+        "AmmoLoad": 0
+      },
+      "TotalShieldHP": 18960.0,
+      "PilotBurstDPS": 3274.0,
+      "TurretsBurstDPS": 1636.0,
+      "TotalMissilesDmg": 40423.0
+    },
+    "Insurance": {
+      "StandardClaimTime": 17.0,
+      "ExpeditedClaimTime": 4.25,
+      "ExpeditedCost": 9430.0
     }
   },
   {
@@ -5277,9 +5511,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 4517.0,
+        "SCMIdle": 4514.0,
         "SCMActive": 5370.0,
-        "NAV": 12050.0
+        "NAV": 12048.0
       },
       "Infrared": {
         "Start": 5232.0
@@ -5304,7 +5538,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 1280.0,
+      "TotalShieldHP": 1050.0,
       "PilotBurstDPS": 438.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 2280.0
@@ -5485,9 +5719,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 4530.0,
+        "SCMIdle": 4527.0,
         "SCMActive": 5382.0,
-        "NAV": 12063.0
+        "NAV": 12060.0
       },
       "Infrared": {
         "Start": 5578.0
@@ -5512,7 +5746,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 1280.0,
+      "TotalShieldHP": 1050.0,
       "PilotBurstDPS": 848.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 2280.0
@@ -5693,9 +5927,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 4517.0,
+        "SCMIdle": 4514.0,
         "SCMActive": 5370.0,
-        "NAV": 12050.0
+        "NAV": 12048.0
       },
       "Infrared": {
         "Start": 5568.0
@@ -5720,7 +5954,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 1280.0,
+      "TotalShieldHP": 1050.0,
       "PilotBurstDPS": 438.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 2280.0
@@ -5906,9 +6140,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 18784.0,
+        "SCMIdle": 18780.0,
         "SCMActive": 22162.0,
-        "NAV": 34231.0
+        "NAV": 34226.0
       },
       "Infrared": {
         "Start": 19557.0
@@ -5922,6 +6156,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -5933,7 +6172,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 112200.0,
+      "TotalShieldHP": 126800.0,
       "PilotBurstDPS": 0.0,
       "TurretsBurstDPS": 6543.0,
       "TotalMissilesDmg": 0.0
@@ -5957,7 +6196,7 @@ const shipList = [
     "Cargo": {
       "CargoGrid": 0.0,
       "CargoContainers": 0.0,
-      "ExternalStorage": 0.0,
+      "ExternalStorage": 1.05,
       "PersonalInventory": 2.11
     },
     "Crew": 2,
@@ -6012,7 +6251,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 80.0,
+        "SCMIdle": 79.0,
         "SCMActive": 367.0,
         "NAV": 0.0
       },
@@ -6039,7 +6278,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 1348.0,
+      "TotalShieldHP": 1524.0,
       "PilotBurstDPS": 0.0,
       "TurretsBurstDPS": 4058.0,
       "TotalMissilesDmg": 0.0
@@ -6103,38 +6342,39 @@ const shipList = [
         },
         "Parts": {
           "nose": 5500.0,
-          "shield_generator_cover": 40.0,
-          "cockpitbay_outerdoor_left": 100.0,
-          "cockpitbay_outerdoor_right": 100.0,
+          "shield_generator_cover": 400.0,
+          "cockpitbay_outerdoor_left": 500.0,
+          "cockpitbay_outerdoor_right": 500.0,
           "canopy": 7500.0,
           "canopy_glass": 250.0,
-          "amunition_hatch_right": 40.0,
-          "amunition_hatch_left": 40.0,
-          "engine_cover_left": 40.0,
-          "engine_cover_right": 40.0,
-          "sidefin_left": 40.0,
+          "amunition_hatch_right": 400.0,
+          "amunition_hatch_left": 400.0,
+          "engine_cover_left": 400.0,
+          "engine_cover_right": 400.0,
+          "sidefin_left": 400.0,
           "tailfin_left": 800.0,
-          "tailfin_left_rudder": 40.0,
-          "sidefin_right": 40.0,
+          "geo_tailfin_left_rudder": 200.0,
+          "tailfin_left_rudder": 400.0,
+          "sidefin_right": 400.0,
           "tailfin_right": 800.0,
-          "tailfin_right_rudder": 40.0,
-          "tail": 200.0,
+          "geo_tailfin_right_rudder": 200.0,
+          "tail": 2250.0,
           "wing_right": 800.0,
-          "wing_right_tip": 300.0,
-          "wing_flap_side_right": 160.0,
-          "wing_flap_main_right": 160.0,
-          "cockpitbay_gunnerdoor": 40.0,
-          "hull_avionicsaccess_panel": 40.0,
-          "hull_fuelaccess_panel_left": 40.0,
-          "hull_fuelaccess_panel_right": 40.0,
-          "bombbay_outerdoor_left": 60.0,
+          "wing_right_tip": 400.0,
+          "wing_flap_side_right": 200.0,
+          "wing_flap_main_right": 200.0,
+          "cockpitbay_gunnerdoor": 400.0,
+          "hull_avionicsaccess_panel": 400.0,
+          "hull_fuelaccess_panel_left": 400.0,
+          "hull_fuelaccess_panel_right": 400.0,
+          "bombbay_outerdoor_left": 600.0,
           "bombbay_outerdoor_right": 600.0,
-          "core_bottomshield": 400.0,
-          "core_topshield": 200.0,
+          "core_bottomshield": 800.0,
+          "core_topshield": 800.0,
           "wing_left": 800.0,
-          "wing_left_tip": 300.0,
-          "wing_flap_side_left": 160.0,
-          "wing_flap_main_left": 160.0
+          "wing_left_tip": 400.0,
+          "wing_flap_side_left": 200.0,
+          "wing_flap_main_left": 200.0
         }
       },
       "ThrustersHealthPoints": {
@@ -6247,9 +6487,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 7653.0,
+        "SCMIdle": 7650.0,
         "SCMActive": 9606.0,
-        "NAV": 15178.0
+        "NAV": 15174.0
       },
       "Infrared": {
         "Start": 7945.0
@@ -6263,6 +6503,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 4.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 2.5,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -6455,9 +6700,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 6684.0,
+        "SCMIdle": 6682.0,
         "SCMActive": 9190.0,
-        "NAV": 14217.0
+        "NAV": 14215.0
       },
       "Infrared": {
         "Start": 7865.0
@@ -6669,9 +6914,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5490.0,
+        "SCMIdle": 5487.0,
         "SCMActive": 6491.0,
-        "NAV": 13993.0
+        "NAV": 13990.0
       },
       "Infrared": {
         "Start": 6901.0
@@ -6882,9 +7127,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5607.0,
+        "SCMIdle": 5606.0,
         "SCMActive": 6705.0,
-        "NAV": 14110.0
+        "NAV": 14109.0
       },
       "Infrared": {
         "Start": 7319.0
@@ -7097,9 +7342,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5417.0,
+        "SCMIdle": 5414.0,
         "SCMActive": 6430.0,
-        "NAV": 13930.0
+        "NAV": 13927.0
       },
       "Infrared": {
         "Start": 6036.0
@@ -7308,9 +7553,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5300.0,
+        "SCMIdle": 5296.0,
         "SCMActive": 6311.0,
-        "NAV": 13813.0
+        "NAV": 13809.0
       },
       "Infrared": {
         "Start": 6659.0
@@ -7519,9 +7764,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5290.0,
+        "SCMIdle": 5286.0,
         "SCMActive": 6301.0,
-        "NAV": 13803.0
+        "NAV": 13799.0
       },
       "Infrared": {
         "Start": 6568.0
@@ -7733,9 +7978,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 6494.0,
+        "SCMIdle": 6491.0,
         "SCMActive": 7789.0,
-        "NAV": 14997.0
+        "NAV": 14994.0
       },
       "Infrared": {
         "Start": 7427.0
@@ -7952,9 +8197,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 6432.0,
+        "SCMIdle": 6429.0,
         "SCMActive": 7728.0,
-        "NAV": 14935.0
+        "NAV": 14933.0
       },
       "Infrared": {
         "Start": 8048.0
@@ -8166,9 +8411,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5418.0,
+        "SCMIdle": 5415.0,
         "SCMActive": 6430.0,
-        "NAV": 13930.0
+        "NAV": 13928.0
       },
       "Infrared": {
         "Start": 6280.0
@@ -8193,7 +8438,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 4480.0,
+      "TotalShieldHP": 2940.0,
       "PilotBurstDPS": 1091.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 14162.0
@@ -8381,9 +8626,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5655.0,
+        "SCMIdle": 5653.0,
         "SCMActive": 6720.0,
-        "NAV": 14167.0
+        "NAV": 14166.0
       },
       "Infrared": {
         "Start": 7151.0
@@ -8596,9 +8841,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 4075.0,
+        "SCMIdle": 4073.0,
         "SCMActive": 4837.0,
-        "NAV": 10479.0
+        "NAV": 10476.0
       },
       "Infrared": {
         "Start": 4724.0
@@ -8623,7 +8868,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 1094.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 14075.0
@@ -8811,9 +9056,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 3603.0,
+        "SCMIdle": 3602.0,
         "SCMActive": 4282.0,
-        "NAV": 9027.0
+        "NAV": 9026.0
       },
       "Infrared": {
         "Start": 4499.0
@@ -8838,7 +9083,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 2532.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 9121.0
@@ -9030,9 +9275,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5655.0,
+        "SCMIdle": 5653.0,
         "SCMActive": 6720.0,
-        "NAV": 14167.0
+        "NAV": 14166.0
       },
       "Infrared": {
         "Start": 6907.0
@@ -9248,9 +9493,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5418.0,
+        "SCMIdle": 5415.0,
         "SCMActive": 6430.0,
-        "NAV": 13930.0
+        "NAV": 13928.0
       },
       "Infrared": {
         "Start": 6280.0
@@ -9461,9 +9706,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 7763.0,
+        "SCMIdle": 7758.0,
         "SCMActive": 9796.0,
-        "NAV": 15296.0
+        "NAV": 15291.0
       },
       "Infrared": {
         "Start": 8736.0
@@ -9477,6 +9722,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 6.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 2.5,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -9691,9 +9941,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 6848.0,
+        "SCMIdle": 6846.0,
         "SCMActive": 9316.0,
-        "NAV": 14373.0
+        "NAV": 14371.0
       },
       "Infrared": {
         "Start": 9296.0
@@ -9718,7 +9968,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 7020.0,
+      "TotalShieldHP": 5780.0,
       "PilotBurstDPS": 3266.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 19029.0
@@ -9823,7 +10073,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 1348.0,
+      "TotalShieldHP": 1524.0,
       "PilotBurstDPS": 0.0,
       "TurretsBurstDPS": 677.0,
       "TotalMissilesDmg": 0.0
@@ -9854,7 +10104,7 @@ const shipList = [
     "Cargo": {
       "CargoGrid": 0.0,
       "CargoContainers": 0.0,
-      "ExternalStorage": 0.0,
+      "ExternalStorage": 1.0,
       "PersonalInventory": 1.85
     },
     "Crew": 1,
@@ -10027,9 +10277,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 7842.0,
+        "SCMIdle": 7839.0,
         "SCMActive": 10546.0,
-        "NAV": 15367.0
+        "NAV": 15364.0
       },
       "Infrared": {
         "Start": 5635.0
@@ -10078,7 +10328,7 @@ const shipList = [
     "Cargo": {
       "CargoGrid": 0.0,
       "CargoContainers": 0.0,
-      "ExternalStorage": 0.0,
+      "ExternalStorage": 1.0,
       "PersonalInventory": 1.85
     },
     "Crew": 1,
@@ -10251,9 +10501,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 7842.0,
+        "SCMIdle": 7839.0,
         "SCMActive": 10546.0,
-        "NAV": 15366.0
+        "NAV": 15364.0
       },
       "Infrared": {
         "Start": 5840.0
@@ -10315,7 +10565,7 @@ const shipList = [
     "WeaponCrew": 6,
     "OperationsCrew": 0,
     "Mass": 597246.06,
-    "ComponentsMass": 35320.0,
+    "ComponentsMass": 35220.0,
     "Dimensions": {
       "Length": 48.0,
       "Width": 38.0,
@@ -10337,8 +10587,8 @@ const shipList = [
     "Hull": {
       "StructureHealthPoints": {
         "VitalParts": {
-          "Nose": 10000.0,
-          "Tail": 10000.0
+          "Nose": 25000.0,
+          "Tail": 25000.0
         },
         "Parts": {
           "Wing_Left": 4500.0,
@@ -10348,15 +10598,15 @@ const shipList = [
           "Wing_RR": 2000.0,
           "Wing_RL": 2000.0,
           "Engine_RR": 150.0,
-          "Engine_RR_Split": 2500.0,
+          "Engine_RR_Split": 6500.0,
           "Lights_Engine_RR_Split": 1.0,
           "Engine_RL": 150.0,
-          "Engine_RL_Split": 2500.0,
+          "Engine_RL_Split": 6500.0,
           "Tail_Shell": 1.0,
           "Engine_FL": 150.0,
-          "Engine_FL_Split": 2500.0,
+          "Engine_FL_Split": 6500.0,
           "Engine_FR": 150.0,
-          "Engine_FR_Split": 2500.0,
+          "Engine_FR_Split": 6500.0,
           "Lights_Nose": 1.0,
           "Nose_Shell": 50.0
         }
@@ -10399,18 +10649,19 @@ const shipList = [
       "IsVtolAssisted": false,
       "UseDirectionModifiers": true,
       "ThrustCapacity": {
-        "Main": 28361686.0,
-        "Retro": 10865956.0,
+        "Main": 34800000.0,
+        "Retro": 15800000.0,
         "Vtol": 0.0,
-        "Maneuvering": 77361400.0
+        "Maneuvering": 104560000.0
       },
       "AccelerationG": {
         "IsValidated": true,
-        "Main": 4.5,
-        "Retro": 1.7,
-        "Strafe": 3.9,
-        "Up": 2.1,
-        "Down": 2.1
+        "Main": 5.6,
+        "Retro": 2.5,
+        "Strafe": 4.1,
+        "Up": 4.3,
+        "Down": 4.3,
+        "CheckDate": "2025-04-16"
       },
       "MasterModes": {
         "BaseSpoolTime": 1.0,
@@ -10471,22 +10722,22 @@ const shipList = [
         "Maneuvering": 15.0
       },
       "FuelUsagePerSecond": {
-        "Main": 3545.211,
-        "Retro": 1358.244,
+        "Main": 4350.0,
+        "Retro": 1975.0,
         "Vtol": 0.0,
-        "Maneuvering": 9670.174
+        "Maneuvering": 13070.0
       },
       "IntakeToMainFuelRatio": 0.0,
       "TimeForIntakesToFillTank": "Infinity"
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 22901.0,
-        "SCMActive": 29911.0,
-        "NAV": 39464.0
+        "SCMIdle": 22879.0,
+        "SCMActive": 29894.0,
+        "NAV": 39443.0
       },
       "Infrared": {
-        "Start": 18287.0
+        "Start": 17635.0
       },
       "CrossSection": {
         "Front": 6349.0,
@@ -10497,6 +10748,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -10810,9 +11066,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 10821.0,
+        "SCMIdle": 10819.0,
         "SCMActive": 13048.0,
-        "NAV": 25903.0
+        "NAV": 25901.0
       },
       "Infrared": {
         "Start": 12399.0
@@ -11042,7 +11298,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 1850.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 0.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -11252,7 +11508,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 1850.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 0.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -11458,7 +11714,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 1850.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 0.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -11480,7 +11736,7 @@ const shipList = [
     "Role": "Light Freight",
     "Size": 3,
     "Cargo": {
-      "CargoGrid": 96.0,
+      "CargoGrid": 192.0,
       "CargoContainers": 0.0,
       "ExternalStorage": 2.4,
       "PersonalInventory": 2.46
@@ -11519,11 +11775,11 @@ const shipList = [
           "Rear_Right": 7500.0,
           "ARGO_RAFT_RR_LG_MainShaft_Mesh": 250.0,
           "ARGO_RAFT_RR_VTOL_Mesh": 1.0,
+          "ARGO_RAFT_FR_VTOL_Mesh": 250.0,
+          "ARGO_RAFT_FL_VTOL_Mesh": 250.0,
           "Rear_Left": 7500.0,
           "ARGO_RAFT_RL_LG_MainShaft_Mesh": 250.0,
-          "ARGO_RAFT_RL_VTOL_Mesh": 250.0,
-          "ARGO_RAFT_FR_VTOL_Mesh": 250.0,
-          "ARGO_RAFT_FL_VTOL_Mesh": 250.0
+          "ARGO_RAFT_RL_VTOL_Mesh": 250.0
         }
       },
       "ThrustersHealthPoints": {
@@ -11539,9 +11795,9 @@ const shipList = [
         },
         "Vtol": {
           "thruster_VTOL_rear_right": 4500.0,
-          "thruster_VTOL_rear_left": 4500.0,
           "thruster_VTOL_front_right": 4500.0,
-          "thruster_VTOL_front_left": 4500.0
+          "thruster_VTOL_front_left": 4500.0,
+          "thruster_VTOL_rear_left": 4500.0
         },
         "Maneuvering": {
           "thruster_bottom_front_right": 4500.0,
@@ -11568,18 +11824,19 @@ const shipList = [
       "IsVtolAssisted": true,
       "UseDirectionModifiers": true,
       "ThrustCapacity": {
-        "Main": 17960000.0,
-        "Retro": 9960000.0,
+        "Main": 25960000.0,
+        "Retro": 14000000.0,
         "Vtol": 5960000.0,
-        "Maneuvering": 42960000.0
+        "Maneuvering": 64920000.0
       },
       "AccelerationG": {
         "IsValidated": true,
-        "Main": 2.7,
-        "Retro": 1.5,
-        "Strafe": 1.1,
-        "Up": 2.0,
-        "Down": 1.9
+        "Main": 3.9,
+        "Retro": 2.1,
+        "Strafe": 2.2,
+        "Up": 3.0,
+        "Down": 2.0,
+        "CheckDate": "2025-05-01"
       },
       "MasterModes": {
         "BaseSpoolTime": 1.0,
@@ -11640,22 +11897,22 @@ const shipList = [
         "Maneuvering": 15.0
       },
       "FuelUsagePerSecond": {
-        "Main": 2745.0,
-        "Retro": 1245.0,
+        "Main": 4250.0,
+        "Retro": 1750.0,
         "Vtol": 745.0,
-        "Maneuvering": 5370.0
+        "Maneuvering": 8115.0
       },
       "IntakeToMainFuelRatio": 0.0,
       "TimeForIntakesToFillTank": "Infinity"
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 23724.0,
-        "SCMActive": 30897.0,
-        "NAV": 46944.0
+        "SCMIdle": 23720.0,
+        "SCMActive": 30900.0,
+        "NAV": 46940.0
       },
       "Infrared": {
-        "Start": 19868.0
+        "Start": 19814.0
       },
       "CrossSection": {
         "Front": 9588.0,
@@ -11677,7 +11934,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 15300.0,
+      "TotalShieldHP": 17280.0,
       "PilotBurstDPS": 0.0,
       "TurretsBurstDPS": 1367.0,
       "TotalMissilesDmg": 0.0
@@ -11881,9 +12138,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 3754.0,
+        "SCMIdle": 3752.0,
         "SCMActive": 4909.0,
-        "NAV": 19234.0
+        "NAV": 19233.0
       },
       "Infrared": {
         "Start": 9602.0
@@ -12089,9 +12346,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 8060.0,
+        "SCMIdle": 8055.0,
         "SCMActive": 10182.0,
-        "NAV": 15593.0
+        "NAV": 15588.0
       },
       "Infrared": {
         "Start": 8271.0
@@ -12304,7 +12561,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 233.0,
+        "SCMIdle": 232.0,
         "SCMActive": 244.0,
         "NAV": 0.0
       },
@@ -12519,9 +12776,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 8093.0,
+        "SCMIdle": 8090.0,
         "SCMActive": 9697.0,
-        "NAV": 17887.0
+        "NAV": 17883.0
       },
       "Infrared": {
         "Start": 9250.0
@@ -12733,9 +12990,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 8093.0,
+        "SCMIdle": 8090.0,
         "SCMActive": 9697.0,
-        "NAV": 17887.0
+        "NAV": 17883.0
       },
       "Infrared": {
         "Start": 8860.0
@@ -12947,9 +13204,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 8977.0,
+        "SCMIdle": 8974.0,
         "SCMActive": 14111.0,
-        "NAV": 16887.0
+        "NAV": 16884.0
       },
       "Infrared": {
         "Start": 7828.0
@@ -13162,9 +13419,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 10134.0,
+        "SCMIdle": 10130.0,
         "SCMActive": 12145.0,
-        "NAV": 20680.0
+        "NAV": 20677.0
       },
       "Infrared": {
         "Start": 10868.0
@@ -13189,7 +13446,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 4200.0,
+      "TotalShieldHP": 2740.0,
       "PilotBurstDPS": 438.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -13377,9 +13634,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 10134.0,
+        "SCMIdle": 10130.0,
         "SCMActive": 12145.0,
-        "NAV": 20680.0
+        "NAV": 20677.0
       },
       "Infrared": {
         "Start": 10868.0
@@ -13404,7 +13661,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 4200.0,
+      "TotalShieldHP": 2740.0,
       "PilotBurstDPS": 438.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -13425,7 +13682,7 @@ const shipList = [
     "Cargo": {
       "CargoGrid": 24.0,
       "CargoContainers": 0.0,
-      "ExternalStorage": 0.0,
+      "ExternalStorage": 1.2,
       "PersonalInventory": 1.23
     },
     "Crew": 1,
@@ -13585,9 +13842,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5615.0,
+        "SCMIdle": 5612.0,
         "SCMActive": 6732.0,
-        "NAV": 13148.0
+        "NAV": 13146.0
       },
       "Infrared": {
         "Start": 7026.0
@@ -13816,9 +14073,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 1419.0,
+        "SCMIdle": 1418.0,
         "SCMActive": 1623.0,
-        "NAV": 8953.0
+        "NAV": 8951.0
       },
       "Infrared": {
         "Start": 9991.0
@@ -14049,9 +14306,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5266.0,
+        "SCMIdle": 5263.0,
         "SCMActive": 6803.0,
-        "NAV": 25390.0
+        "NAV": 25387.0
       },
       "Infrared": {
         "Start": 18311.0
@@ -14280,9 +14537,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5211.0,
+        "SCMIdle": 5209.0,
         "SCMActive": 6763.0,
-        "NAV": 25336.0
+        "NAV": 25333.0
       },
       "Infrared": {
         "Start": 17921.0
@@ -14491,9 +14748,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 10666.0,
+        "SCMIdle": 10663.0,
         "SCMActive": 13766.0,
-        "NAV": 26146.0
+        "NAV": 26143.0
       },
       "Infrared": {
         "Start": 8770.0
@@ -14701,9 +14958,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 10666.0,
+        "SCMIdle": 10663.0,
         "SCMActive": 13766.0,
-        "NAV": 26146.0
+        "NAV": 26143.0
       },
       "Infrared": {
         "Start": 8770.0
@@ -14923,9 +15180,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 27781.0,
+        "SCMIdle": 27780.0,
         "SCMActive": 33136.0,
-        "NAV": 43228.0
+        "NAV": 43226.0
       },
       "Infrared": {
         "Start": 23979.0
@@ -14941,8 +15198,8 @@ const shipList = [
         "WeaponPoolSize": 10.0
       },
       "Modifiers": {
-        "PowerRatioMultiplier": 2.0,
-        "MaxAmmoLoadMultiplier": 1.0,
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
         "MaxRegenPerSecMultiplier": 1.0
       }
     },
@@ -15150,9 +15407,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 17996.0,
+        "SCMIdle": 17995.0,
         "SCMActive": 21202.0,
-        "NAV": 33443.0
+        "NAV": 33442.0
       },
       "Infrared": {
         "Start": 14049.0
@@ -15166,6 +15423,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -15177,7 +15439,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 112200.0,
+      "TotalShieldHP": 126800.0,
       "PilotBurstDPS": 3073.0,
       "TurretsBurstDPS": 3687.0,
       "TotalMissilesDmg": 0.0
@@ -15373,9 +15635,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 23403.0,
+        "SCMIdle": 23402.0,
         "SCMActive": 27689.0,
-        "NAV": 38850.0
+        "NAV": 38849.0
       },
       "Infrared": {
         "Start": 20679.0
@@ -15389,6 +15651,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -15425,7 +15692,7 @@ const shipList = [
     "Cargo": {
       "CargoGrid": 114.0,
       "CargoContainers": 0.0,
-      "ExternalStorage": 0.0,
+      "ExternalStorage": 7.2,
       "PersonalInventory": 5.93
     },
     "Crew": 1,
@@ -15583,9 +15850,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 12091.0,
+        "SCMIdle": 12083.0,
         "SCMActive": 14493.0,
-        "NAV": 27571.0
+        "NAV": 27563.0
       },
       "Infrared": {
         "Start": 14399.0
@@ -15599,6 +15866,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 6.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 2.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -15610,7 +15882,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 56100.0,
+      "TotalShieldHP": 63400.0,
       "PilotBurstDPS": 1091.0,
       "TurretsBurstDPS": 2182.0,
       "TotalMissilesDmg": 11734.0
@@ -15815,9 +16087,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 7010.0,
+        "SCMIdle": 7007.0,
         "SCMActive": 8332.0,
-        "NAV": 14543.0
+        "NAV": 14540.0
       },
       "Infrared": {
         "Start": 8915.0
@@ -15866,7 +16138,7 @@ const shipList = [
     "Cargo": {
       "CargoGrid": 576.0,
       "CargoContainers": 0.0,
-      "ExternalStorage": 0.0,
+      "ExternalStorage": 3.0,
       "PersonalInventory": 12.99
     },
     "Crew": 1,
@@ -16044,9 +16316,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 26726.0,
+        "SCMIdle": 26724.0,
         "SCMActive": 31926.0,
-        "NAV": 42173.0
+        "NAV": 42171.0
       },
       "Infrared": {
         "Start": 22585.0
@@ -16060,6 +16332,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -16071,7 +16348,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 168300.0,
+      "TotalShieldHP": 190200.0,
       "PilotBurstDPS": 2458.0,
       "TurretsBurstDPS": 3272.0,
       "TotalMissilesDmg": 0.0
@@ -16095,7 +16372,7 @@ const shipList = [
     "Cargo": {
       "CargoGrid": 72.0,
       "CargoContainers": 0.0,
-      "ExternalStorage": 0.0,
+      "ExternalStorage": 2.0,
       "PersonalInventory": 5.6
     },
     "Crew": 4,
@@ -16292,9 +16569,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 18451.0,
+        "SCMIdle": 18444.0,
         "SCMActive": 22163.0,
-        "NAV": 33931.0
+        "NAV": 33924.0
       },
       "Infrared": {
         "Start": 21722.0
@@ -16308,6 +16585,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 10.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 2.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -16523,9 +16805,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 8156.0,
+        "SCMIdle": 8154.0,
         "SCMActive": 10143.0,
-        "NAV": 23636.0
+        "NAV": 23634.0
       },
       "Infrared": {
         "Start": 10279.0
@@ -16539,6 +16821,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 6.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 2.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -16749,9 +17036,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 10930.0,
+        "SCMIdle": 10928.0,
         "SCMActive": 16246.0,
-        "NAV": 26410.0
+        "NAV": 26408.0
       },
       "Infrared": {
         "Start": 10094.0
@@ -16765,6 +17052,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 6.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 2.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -16776,7 +17068,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 5100.0,
+      "TotalShieldHP": 5760.0,
       "PilotBurstDPS": 1785.0,
       "TurretsBurstDPS": 1091.0,
       "TotalMissilesDmg": 40086.0
@@ -16973,9 +17265,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 7719.0,
+        "SCMIdle": 7717.0,
         "SCMActive": 9713.0,
-        "NAV": 23199.0
+        "NAV": 23198.0
       },
       "Infrared": {
         "Start": 9079.0
@@ -16989,6 +17281,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 6.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 2.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -17000,7 +17297,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 5100.0,
+      "TotalShieldHP": 5760.0,
       "PilotBurstDPS": 2105.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -17024,14 +17321,14 @@ const shipList = [
     "Cargo": {
       "CargoGrid": 0.0,
       "CargoContainers": 0.0,
-      "ExternalStorage": 0.0,
+      "ExternalStorage": 3.0,
       "PersonalInventory": 2.78
     },
     "Crew": 3,
     "WeaponCrew": 7,
     "OperationsCrew": 0,
     "Mass": 242177.0,
-    "ComponentsMass": 25930.0,
+    "ComponentsMass": 26505.0,
     "Dimensions": {
       "Length": 36.0,
       "Width": 26.5,
@@ -17199,9 +17496,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 8174.0,
+        "SCMIdle": 8172.0,
         "SCMActive": 10169.0,
-        "NAV": 23654.0
+        "NAV": 23652.0
       },
       "Infrared": {
         "Start": 10399.0
@@ -17215,6 +17512,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 6.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -17412,9 +17714,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 1468.0,
+        "SCMIdle": 1466.0,
         "SCMActive": 1661.0,
-        "NAV": 9002.0
+        "NAV": 9000.0
       },
       "Infrared": {
         "Start": 8491.0
@@ -17625,9 +17927,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 1468.0,
+        "SCMIdle": 1466.0,
         "SCMActive": 1661.0,
-        "NAV": 9002.0
+        "NAV": 9000.0
       },
       "Infrared": {
         "Start": 8491.0
@@ -17839,9 +18141,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 1560.0,
+        "SCMIdle": 1557.0,
         "SCMActive": 1745.0,
-        "NAV": 9085.0
+        "NAV": 9082.0
       },
       "Infrared": {
         "Start": 8930.0
@@ -18483,9 +18785,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 1539.0,
+        "SCMIdle": 1537.0,
         "SCMActive": 1716.0,
-        "NAV": 9825.0
+        "NAV": 9824.0
       },
       "Infrared": {
         "Start": 9021.0
@@ -18510,7 +18812,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 1850.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 438.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 2152.0
@@ -18536,14 +18838,14 @@ const shipList = [
     "Cargo": {
       "CargoGrid": 0.0,
       "CargoContainers": 0.0,
-      "ExternalStorage": 0.0,
+      "ExternalStorage": 0.9,
       "PersonalInventory": 0.84
     },
     "Crew": 1,
     "WeaponCrew": 0,
     "OperationsCrew": 0,
     "Mass": 62205.0,
-    "ComponentsMass": 5492.0,
+    "ComponentsMass": 7740.0,
     "Dimensions": {
       "Length": 23.5,
       "Width": 12.5,
@@ -18700,12 +19002,12 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5588.0,
-        "SCMActive": 6665.0,
-        "NAV": 13122.0
+        "SCMIdle": 5623.0,
+        "SCMActive": 6705.0,
+        "NAV": 13157.0
       },
       "Infrared": {
-        "Start": 7701.0
+        "Start": 7801.0
       },
       "CrossSection": {
         "Front": 3859.0,
@@ -18727,10 +19029,10 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 1163.0,
       "TurretsBurstDPS": 0.0,
-      "TotalMissilesDmg": 9248.0
+      "TotalMissilesDmg": 43208.0
     },
     "Insurance": {
       "StandardClaimTime": 2.025,
@@ -19037,9 +19339,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 7402.0,
+        "SCMIdle": 7399.0,
         "SCMActive": 8859.0,
-        "NAV": 14935.0
+        "NAV": 14932.0
       },
       "Infrared": {
         "Start": 9241.0
@@ -19064,7 +19366,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 5550.0,
+      "TotalShieldHP": 6300.0,
       "PilotBurstDPS": 438.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -19109,9 +19411,9 @@ const shipList = [
         "Distortion": 1.0
       },
       "SignalMultipliers": {
-        "Electromagnetic": 0.4,
-        "Infrared": 0.42,
-        "CrossSection": 0.6
+        "Electromagnetic": 0.35,
+        "Infrared": 0.37,
+        "CrossSection": 0.55
       }
     },
     "Hull": {
@@ -19173,26 +19475,27 @@ const shipList = [
       }
     },
     "FlightCharacteristics": {
-      "ScmSpeed": 200.0,
-      "MaxSpeed": 1100.0,
-      "Pitch": 35.0,
-      "Yaw": 30.0,
-      "Roll": 100.0,
+      "ScmSpeed": 205.0,
+      "MaxSpeed": 1150.0,
+      "Pitch": 38.0,
+      "Yaw": 32.0,
+      "Roll": 110.0,
       "IsVtolAssisted": false,
       "UseDirectionModifiers": true,
       "ThrustCapacity": {
-        "Main": 12541802.0,
-        "Retro": 4291816.4,
+        "Main": 3800000.0,
+        "Retro": 5720000.0,
         "Vtol": 0.0,
-        "Maneuvering": 32924823.0
+        "Maneuvering": 47733546.0
       },
       "AccelerationG": {
         "IsValidated": true,
-        "Main": 9.0,
-        "Retro": 2.5,
-        "Strafe": 3.9,
-        "Up": 4.4,
-        "Down": 4.9
+        "Main": 9.2,
+        "Retro": 3.0,
+        "Strafe": 4.1,
+        "Up": 5.1,
+        "Down": 5.1,
+        "CheckDate": "2025-04-26"
       },
       "MasterModes": {
         "BaseSpoolTime": 1.0,
@@ -19253,27 +19556,27 @@ const shipList = [
         "Maneuvering": 30.0
       },
       "FuelUsagePerSecond": {
-        "Main": 1567.725,
-        "Retro": 536.477,
+        "Main": 475.0,
+        "Retro": 715.0,
         "Vtol": 0.0,
-        "Maneuvering": 4115.603
+        "Maneuvering": 5966.693
       },
       "IntakeToMainFuelRatio": 0.0,
       "TimeForIntakesToFillTank": "Infinity"
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 8316.0,
-        "SCMActive": 10403.0,
-        "NAV": 14508.0
+        "SCMIdle": 7275.0,
+        "SCMActive": 9102.0,
+        "NAV": 12693.0
       },
       "Infrared": {
-        "Start": 8437.0
+        "Start": 7433.0
       },
       "CrossSection": {
-        "Front": 4423.0,
-        "Side": 9459.0,
-        "Top": 10072.0
+        "Front": 4055.0,
+        "Side": 8671.0,
+        "Top": 9233.0
       }
     },
     "ResourceNetwork": {
@@ -19290,7 +19593,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 7020.0,
+      "TotalShieldHP": 5780.0,
       "PilotBurstDPS": 3414.0,
       "TurretsBurstDPS": 923.0,
       "TotalMissilesDmg": 0.0
@@ -19524,9 +19827,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 3790.0,
+        "SCMIdle": 3788.0,
         "SCMActive": 4506.0,
-        "NAV": 8310.0
+        "NAV": 8308.0
       },
       "Infrared": {
         "Start": 6315.0
@@ -19551,7 +19854,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 1385.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 6681.0
@@ -19785,9 +20088,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 3792.0,
+        "SCMIdle": 3791.0,
         "SCMActive": 4508.0,
-        "NAV": 8312.0
+        "NAV": 8311.0
       },
       "Infrared": {
         "Start": 6345.0
@@ -19812,7 +20115,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 617.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 60634.0
@@ -20022,9 +20325,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 2417.0,
+        "SCMIdle": 2416.0,
         "SCMActive": 2854.0,
-        "NAV": 9950.0
+        "NAV": 9949.0
       },
       "Infrared": {
         "Start": 13362.0
@@ -20067,6 +20370,118 @@ const shipList = [
     },
     "Buy": {
       "Astro Armada, Area 18": 2778300.0
+    }
+  },
+  {
+    "ClassName": "GRIN_MTC",
+    "Name": "Greycat MTC",
+    "Description": "As an expert in industrial operations, Greycat understands that jobsite security is a vital part of any successful business venture. Not only that, but to be fully effective, you need to be able to get your security personnel and their equipment to wherever they’re needed most. That’s why the MTC Mobile Tactical Center is such an important addition to your next venture. Nimble enough to access the difficult terrain encountered at remote operations and equipped with enough suit lockers, weapon racks, and storage to tackle a wide host of issues, the Greycat MTC could make all the difference when it comes to turning a potential problem into potential profit.",
+    "Career": "Ground",
+    "Role": "Ground",
+    "Size": 1,
+    "Cargo": {
+      "CargoGrid": 0.0,
+      "CargoContainers": 0.0,
+      "ExternalStorage": 0.75,
+      "PersonalInventory": 0.0
+    },
+    "Crew": 1,
+    "WeaponCrew": 0,
+    "OperationsCrew": 0,
+    "Mass": 15700.0,
+    "ComponentsMass": 539.2,
+    "Dimensions": {
+      "Length": 7.0,
+      "Width": 5.5,
+      "Height": 2.0
+    },
+    "IsSpaceship": false,
+    "IsVehicle": true,
+    "Armor": {
+      "DamageMultipliers": {
+        "Physical": 1.0,
+        "Energy": 1.0,
+        "Distortion": 1.0
+      },
+      "SignalMultipliers": {
+        "Electromagnetic": 1.0,
+        "Infrared": 1.0,
+        "CrossSection": 1.0
+      }
+    },
+    "Hull": {
+      "StructureHealthPoints": {
+        "VitalParts": {
+          "body": 14500.0
+        },
+        "Parts": {
+          "bar_front_right": 200.0,
+          "bar_front_right_cover": 100.0,
+          "front_roof": 400.0,
+          "fender_right": 300.0,
+          "fender_right_light": 100.0,
+          "rear_light_sheild_left": 200.0,
+          "bar_front": 250.0,
+          "fender_left": 300.0,
+          "fender_left_light": 100.0,
+          "bar_front_left": 200.0,
+          "bar_front_left_cover": 100.0,
+          "rear_light_sheild_right": 80.0,
+          "AAsus_wheel_FL": 1500.0,
+          "AAsus_wheel_FR": 1500.0,
+          "AAsus_wheel_RL": 1500.0,
+          "AAsus_wheel_RR": 1500.0,
+          "head_light_sheild_right": 80.0,
+          "head_light_sheild_left": 80.0
+        }
+      }
+    },
+    "SteerCharacteristics": {
+      "V0SteerSpeed": 120.0,
+      "VMaxSteerSpeed": 15.0,
+      "V0SteerMaxAngle": 37.0,
+      "SteerSubtractV": 43.0,
+      "SteerSubtractAngle": 0.0,
+      "SteerRelaxationSpeed": 130.0
+    },
+    "Emissions": {
+      "Electromagnetic": {
+        "SCMIdle": 767.0,
+        "SCMActive": 1217.0,
+        "NAV": 0.0
+      },
+      "Infrared": {
+        "Start": 1150.0
+      },
+      "CrossSection": {
+        "Front": 0.0,
+        "Side": 0.0,
+        "Top": 0.0
+      }
+    },
+    "ResourceNetwork": {
+      "ItemPools": {
+        "WeaponPoolSize": 2.0
+      }
+    },
+    "Weapons": {
+      "PilotWeaponRegenPool": {
+        "RegenFillRate": 0.0,
+        "AmmoLoad": 0
+      },
+      "TurretsWeaponRegenPool": {
+        "RegenFillRate": 0.0,
+        "AmmoLoad": 0
+      },
+      "TotalShieldHP": 545.0,
+      "PilotBurstDPS": 656.0,
+      "TurretsBurstDPS": 0.0,
+      "TotalMissilesDmg": 0.0
+    },
+    "Insurance": {
+      "StandardClaimTime": 2.17,
+      "ExpeditedClaimTime": 0.54,
+      "ExpeditedCost": 540.0
     }
   },
   {
@@ -20704,7 +21119,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 3516.0,
+        "SCMIdle": 3515.0,
         "SCMActive": 4187.0,
         "NAV": 0.0
       },
@@ -20909,7 +21324,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5986.0,
+        "SCMIdle": 5985.0,
         "SCMActive": 7149.0,
         "NAV": 0.0
       },
@@ -20936,7 +21351,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2240.0,
+      "TotalShieldHP": 1470.0,
       "PilotBurstDPS": 875.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -21127,9 +21542,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 17215.0,
+        "SCMIdle": 17212.0,
         "SCMActive": 20691.0,
-        "NAV": 28503.0
+        "NAV": 28499.0
       },
       "Infrared": {
         "Start": 19808.0
@@ -21154,7 +21569,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 5550.0,
+      "TotalShieldHP": 6300.0,
       "PilotBurstDPS": 438.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -21334,9 +21749,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 12567.0,
+        "SCMIdle": 12559.0,
         "SCMActive": 16685.0,
-        "NAV": 28047.0
+        "NAV": 28040.0
       },
       "Infrared": {
         "Start": 9419.0
@@ -21547,9 +21962,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 13567.0,
+        "SCMIdle": 13559.0,
         "SCMActive": 17885.0,
-        "NAV": 29047.0
+        "NAV": 29040.0
       },
       "Infrared": {
         "Start": 10606.0
@@ -21759,9 +22174,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 15600.0,
+        "SCMIdle": 15592.0,
         "SCMActive": 20324.0,
-        "NAV": 31080.0
+        "NAV": 31073.0
       },
       "Infrared": {
         "Start": 12364.0
@@ -21969,9 +22384,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 12679.0,
+        "SCMIdle": 12671.0,
         "SCMActive": 16799.0,
-        "NAV": 28159.0
+        "NAV": 28152.0
       },
       "Infrared": {
         "Start": 9594.0
@@ -22181,7 +22596,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 2134.0,
+        "SCMIdle": 2132.0,
         "SCMActive": 2441.0,
         "NAV": 0.0
       },
@@ -22208,7 +22623,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 1190.0,
+      "TotalShieldHP": 977.0,
       "PilotBurstDPS": 1312.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 9515.0
@@ -22396,7 +22811,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 1949.0,
+        "SCMIdle": 1947.0,
         "SCMActive": 2292.0,
         "NAV": 0.0
       },
@@ -22423,7 +22838,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2100.0,
+      "TotalShieldHP": 1370.0,
       "PilotBurstDPS": 0.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -22614,7 +23029,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 2801.0,
+        "SCMIdle": 2799.0,
         "SCMActive": 3107.0,
         "NAV": 0.0
       },
@@ -22641,7 +23056,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 1190.0,
+      "TotalShieldHP": 977.0,
       "PilotBurstDPS": 0.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 37665.0
@@ -22877,9 +23292,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 10969.0,
+        "SCMIdle": 10966.0,
         "SCMActive": 13645.0,
-        "NAV": 18502.0
+        "NAV": 18500.0
       },
       "Infrared": {
         "Start": 11166.0
@@ -22904,7 +23319,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 4740.0,
+      "TotalShieldHP": 5360.0,
       "PilotBurstDPS": 438.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -23133,9 +23548,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 31605.0,
+        "SCMIdle": 31604.0,
         "SCMActive": 37970.0,
-        "NAV": 47052.0
+        "NAV": 47051.0
       },
       "Infrared": {
         "Start": 23532.0
@@ -23160,7 +23575,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 224400.0,
+      "TotalShieldHP": 253600.0,
       "PilotBurstDPS": 1091.0,
       "TurretsBurstDPS": 2182.0,
       "TotalMissilesDmg": 0.0
@@ -23354,9 +23769,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 12649.0,
+        "SCMIdle": 12646.0,
         "SCMActive": 15203.0,
-        "NAV": 23937.0
+        "NAV": 23933.0
       },
       "Infrared": {
         "Start": 13084.0
@@ -23381,7 +23796,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 5550.0,
+      "TotalShieldHP": 6300.0,
       "PilotBurstDPS": 438.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -23567,9 +23982,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 1424.0,
+        "SCMIdle": 1422.0,
         "SCMActive": 1636.0,
-        "NAV": 8957.0
+        "NAV": 8955.0
       },
       "Infrared": {
         "Start": 7146.0
@@ -23594,7 +24009,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2240.0,
+      "TotalShieldHP": 1470.0,
       "PilotBurstDPS": 656.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 2280.0
@@ -23780,9 +24195,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 2894.0,
+        "SCMIdle": 2893.0,
         "SCMActive": 3430.0,
-        "NAV": 7414.0
+        "NAV": 7413.0
       },
       "Infrared": {
         "Start": 5163.0
@@ -23807,7 +24222,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 1280.0,
+      "TotalShieldHP": 1050.0,
       "PilotBurstDPS": 1120.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 2152.0
@@ -23994,9 +24409,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 4698.0,
+        "SCMIdle": 4696.0,
         "SCMActive": 5591.0,
-        "NAV": 12231.0
+        "NAV": 12230.0
       },
       "Infrared": {
         "Start": 8555.0
@@ -24021,7 +24436,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2240.0,
+      "TotalShieldHP": 1470.0,
       "PilotBurstDPS": 656.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -24207,9 +24622,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 2594.0,
+        "SCMIdle": 2591.0,
         "SCMActive": 3082.0,
-        "NAV": 10128.0
+        "NAV": 10124.0
       },
       "Infrared": {
         "Start": 8406.0
@@ -24419,9 +24834,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 2591.0,
+        "SCMIdle": 2584.0,
         "SCMActive": 3064.0,
-        "NAV": 10124.0
+        "NAV": 10117.0
       },
       "Infrared": {
         "Start": 9121.0
@@ -24446,7 +24861,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 656.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 9515.0
@@ -24631,9 +25046,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 2587.0,
+        "SCMIdle": 2584.0,
         "SCMActive": 3064.0,
-        "NAV": 10121.0
+        "NAV": 10117.0
       },
       "Infrared": {
         "Start": 9121.0
@@ -24658,7 +25073,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 3700.0,
+      "TotalShieldHP": 4200.0,
       "PilotBurstDPS": 656.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 9515.0
@@ -24843,9 +25258,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 2780.0,
+        "SCMIdle": 2777.0,
         "SCMActive": 3257.0,
-        "NAV": 10313.0
+        "NAV": 10310.0
       },
       "Infrared": {
         "Start": 9144.0
@@ -25057,9 +25472,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 31625.0,
+        "SCMIdle": 31621.0,
         "SCMActive": 37694.0,
-        "NAV": 53250.0
+        "NAV": 53247.0
       },
       "Infrared": {
         "Start": 21443.0
@@ -25073,6 +25488,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 10.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -25084,7 +25504,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 168300.0,
+      "TotalShieldHP": 190200.0,
       "PilotBurstDPS": 4102.0,
       "TurretsBurstDPS": 3818.0,
       "TotalMissilesDmg": 0.0
@@ -25271,9 +25691,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 26132.0,
+        "SCMIdle": 26128.0,
         "SCMActive": 31081.0,
-        "NAV": 47757.0
+        "NAV": 47753.0
       },
       "Infrared": {
         "Start": 17150.0
@@ -25287,6 +25707,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 10.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -25298,7 +25723,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 168300.0,
+      "TotalShieldHP": 190200.0,
       "PilotBurstDPS": 4102.0,
       "TurretsBurstDPS": 4637.0,
       "TotalMissilesDmg": 22738.0
@@ -25509,9 +25934,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 6502.0,
+        "SCMIdle": 6497.0,
         "SCMActive": 7750.0,
-        "NAV": 21982.0
+        "NAV": 21977.0
       },
       "Infrared": {
         "Start": 15623.0
@@ -25525,6 +25950,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -25536,21 +25966,273 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 56100.0,
+      "TotalShieldHP": 63400.0,
       "PilotBurstDPS": 4102.0,
       "TurretsBurstDPS": 3272.0,
       "TotalMissilesDmg": 52422.0
     },
     "Insurance": {
-      "StandardClaimTime": 40.0,
-      "ExpeditedClaimTime": 15.0,
-      "ExpeditedCost": 15000.0
+      "StandardClaimTime": 12.33,
+      "ExpeditedClaimTime": 3.08,
+      "ExpeditedCost": 5190.0
     },
     "New Ship": "MISC Starlancer MAX",
     "Buy": {
       "Astro Armada - Area 18": 8820000.0,
       "New Deal - Teasa Spaceport - Lorville": 8820000.0
     }
+  },
+  {
+    "ClassName": "MISC_Starlancer_TAC",
+    "Name": "MISC Starlancer TAC",
+    "Description": "For those looking to for a versatile ship that can stand on its own in a fight, the engineers have upgraded the Starlancer TAC with an aggressive offensive package ready to face down the fiercest of foes. When you take on a high risk, high reward job, the Starlancer TAC is there to make sure you and your crew are able to see it through to the very end.",
+    "Career": "Combat",
+    "Role": "Combat",
+    "Size": 5,
+    "Cargo": {
+      "CargoGrid": 96.0,
+      "CargoContainers": 0.0,
+      "ExternalStorage": 0.0,
+      "PersonalInventory": 8.0
+    },
+    "Crew": 1,
+    "WeaponCrew": 6,
+    "OperationsCrew": 0,
+    "Mass": 738070.5,
+    "ComponentsMass": 175260.0,
+    "Dimensions": {
+      "Length": 83.0,
+      "Width": 52.0,
+      "Height": 16.0
+    },
+    "IsSpaceship": true,
+    "Armor": {
+      "DamageMultipliers": {
+        "Physical": 0.44,
+        "Energy": 1.0,
+        "Distortion": 1.0
+      },
+      "SignalMultipliers": {
+        "Electromagnetic": 1.0,
+        "Infrared": 1.0,
+        "CrossSection": 1.0
+      }
+    },
+    "Hull": {
+      "StructureHealthPoints": {
+        "VitalParts": {
+          "body": 38000.0
+        },
+        "Parts": {
+          "nacelle_left": 8000.0,
+          "nacelle_left_rear": 2000.0,
+          "geo_nacelle_fin_04": 500.0,
+          "geo_nacelle_fin_05": 500.0,
+          "geo_nacelle_fin_03": 500.0,
+          "geo_nacelle_fin_02": 500.0,
+          "geo_nacelle_fin_01": 500.0,
+          "geo_nacelle_fin_06": 500.0,
+          "nacelle_air_brake_left": 600.0,
+          "wing_plate_left": 6000.0,
+          "wing_left": 3000.0,
+          "wing_left_rear": 1500.0,
+          "wing_aileron_left": 500.0,
+          "spoiler_connection_left": 500.0,
+          "rear_spoiler_left": 500.0,
+          "spoiler_connection_right": 500.0,
+          "rear_spoiler_right": 500.0,
+          "top_spoiler_left": 1200.0,
+          "top_spoiler_right": 1200.0,
+          "nose": 25000.0,
+          "nacelle_right": 8000.0,
+          "nacelle_air_brake_right": 600.0,
+          "nacelle_right_rear": 2000.0,
+          "geo_nacelle_fin_007": 500.0,
+          "geo_nacelle_fin_008": 500.0,
+          "geo_nacelle_fin_009": 500.0,
+          "geo_nacelle_fin_010": 500.0,
+          "geo_nacelle_fin_011": 500.0,
+          "geo_nacelle_fin_012": 500.0,
+          "wing_plate_right": 6000.0,
+          "wing_right": 3000.0,
+          "wing_right_rear": 1500.0,
+          "wing_aileron_right": 500.0
+        }
+      },
+      "ThrustersHealthPoints": {
+        "Main": {
+          "thruster_main_left": 7000.0,
+          "thruster_main_left_aux_bottom": 3500.0,
+          "thruster_main_left_aux_top": 3500.0,
+          "thruster_main_centre": 17000.0,
+          "thruster_main_right": 7000.0,
+          "thruster_main_right_aux_bottom": 3500.0,
+          "thruster_main_right_aux_top": 3500.0
+        },
+        "Retro": {
+          "thruster_retro_left": 5500.0,
+          "thruster_retro_right": 5500.0
+        },
+        "Vtol": {
+          "thruster_vtol_RR": 2000.0,
+          "thruster_vtol_RL": 2000.0,
+          "thruster_vtol_FL": 2000.0,
+          "thruster_vtol_FR": 2000.0
+        },
+        "Maneuvering": {
+          "thruster_mav_RSL": 2000.0,
+          "thruster_mav_RTL": 2000.0,
+          "thruster_mav_RTR": 2000.0,
+          "thruster_mav_MBR": 2000.0,
+          "thruster_mav_MBL": 2000.0,
+          "thruster_mav_RBR": 2000.0,
+          "thruster_mav_RBL": 2000.0,
+          "thruster_mav_FBL": 2000.0,
+          "thruster_mav_FBR": 2000.0,
+          "thruster_mav_MTL": 2000.0,
+          "thruster_mav_MTR": 2000.0,
+          "thruster_mav_FSL": 2000.0,
+          "thruster_mav_FSR": 2000.0,
+          "thruster_mav_FTL": 2000.0,
+          "thruster_mav_FTR": 2000.0,
+          "thruster_mav_RSR": 2000.0
+        }
+      }
+    },
+    "FlightCharacteristics": {
+      "ScmSpeed": 110.0,
+      "MaxSpeed": 915.0,
+      "Pitch": 27.0,
+      "Yaw": 27.0,
+      "Roll": 60.0,
+      "IsVtolAssisted": true,
+      "UseDirectionModifiers": true,
+      "ThrustCapacity": {
+        "Main": 32500000.0,
+        "Retro": 15000000.0,
+        "Vtol": 6000000.0,
+        "Maneuvering": 73200000.0
+      },
+      "AccelerationG": {
+        "IsValidated": false,
+        "Main": 4.49,
+        "Retro": 2.07,
+        "Strafe": 0.0,
+        "Up": 0.0,
+        "Down": 0.0
+      },
+      "MasterModes": {
+        "BaseSpoolTime": 1.0,
+        "QuantumDriveSpoolTime": 6.0,
+        "ScmMode": {
+          "BoostSpeedForward": 305.0,
+          "BoostSpeedBackward": 140.0
+        }
+      },
+      "Boost": {
+        "PreDelay": 0.0,
+        "RampUp": 2.0,
+        "RampDown": 0.2,
+        "AccelerationMultiplier": {
+          "PositiveAxis": {
+            "X": 1.3,
+            "Y": 1.35,
+            "Z": 1.4
+          },
+          "NegativeAxis": {
+            "X": 1.3,
+            "Y": 1.4,
+            "Z": 1.3
+          }
+        },
+        "AngularAccelerationMultiplier": {
+          "Pitch": 1.2,
+          "Yaw": 1.2,
+          "Roll": 1.2
+        },
+        "AngularVelocityMultiplier": {
+          "Pitch": 1.2,
+          "Yaw": 1.2,
+          "Roll": 1.2
+        }
+      },
+      "Capacitors": {
+        "ThrusterCapacitorSize": 20.0,
+        "CapacitorRegenPerSec": 0.75,
+        "CapacitorIdleCost": 1.0,
+        "CapacitorLinearCost": 0.0,
+        "CapacitorUsageModifier": 1.0,
+        "CapacitorRegenDelay": 3.0,
+        "RegenerationTime": 26.7,
+        "X_AccelMultiplicator": 1.8,
+        "Y_AccelMultiplicator": 1.8,
+        "Z_AccelMultiplicator": 1.8
+      }
+    },
+    "FuelManagement": {
+      "FuelCapacity": 50000000.0,
+      "FuelIntakeRate": 50.0,
+      "QuantumFuelCapacity": 3600000.0,
+      "FuelBurnRatePer10KNewton": {
+        "Main": 8.8,
+        "Retro": 2.5,
+        "Vtol": 5.0,
+        "Maneuvering": 20.0
+      },
+      "FuelUsagePerSecond": {
+        "Main": 5250.0,
+        "Retro": 1875.0,
+        "Vtol": 750.0,
+        "Maneuvering": 9150.0
+      },
+      "IntakeToMainFuelRatio": 0.95,
+      "TimeForIntakesToFillTank": 1000000.0
+    },
+    "Emissions": {
+      "Electromagnetic": {
+        "SCMIdle": 9759.0,
+        "SCMActive": 11910.0,
+        "NAV": 24841.0
+      },
+      "Infrared": {
+        "Start": 15959.0
+      },
+      "CrossSection": {
+        "Front": 0.0,
+        "Side": 0.0,
+        "Top": 0.0
+      }
+    },
+    "ResourceNetwork": {
+      "ItemPools": {
+        "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
+        "MaxRegenPerSecMultiplier": 1.0
+      }
+    },
+    "Weapons": {
+      "PilotWeaponRegenPool": {
+        "RegenFillRate": 0.0,
+        "AmmoLoad": 0
+      },
+      "TurretsWeaponRegenPool": {
+        "RegenFillRate": 0.0,
+        "AmmoLoad": 0
+      },
+      "TotalShieldHP": 126800.0,
+      "PilotBurstDPS": 4102.0,
+      "TurretsBurstDPS": 8181.0,
+      "TotalMissilesDmg": 80966.0
+    },
+    "Insurance": {
+      "StandardClaimTime": 13.33,
+      "ExpeditedClaimTime": 3.33,
+      "ExpeditedCost": 7190.0
+    },
+    "New Ship": "MISC Starlancer TAC"
   },
   {
     "ClassName": "MRAI_Guardian",
@@ -25739,9 +26421,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5316.0,
+        "SCMIdle": 5314.0,
         "SCMActive": 6999.0,
-        "NAV": 25548.0
+        "NAV": 25547.0
       },
       "Infrared": {
         "Start": 12845.0
@@ -25777,6 +26459,235 @@ const shipList = [
       "ExpeditedCost": 5710.0
     },
     "New Ship": "Mirai Guardian"
+  },
+  {
+    "ClassName": "MRAI_Guardian_MX",
+    "Name": "Mirai Guardian MX",
+    "Description": "Taking the framework of the Guardian fighter and adding even more offensive options, the Mirai Guardian MX packs additional firepower and armor ideal for overwhelming opponents. While not as nimble as the base Guardian, this heavy fighter is still more agile than many other ships in its class.",
+    "Career": "Combat",
+    "Role": "Heavy Fighter",
+    "Size": 2,
+    "Cargo": {
+      "CargoGrid": 0.0,
+      "CargoContainers": 0.0,
+      "ExternalStorage": 0.45,
+      "PersonalInventory": 0.65
+    },
+    "Crew": 1,
+    "WeaponCrew": 0,
+    "OperationsCrew": 0,
+    "Mass": 123500.0,
+    "ComponentsMass": 12692.0,
+    "Dimensions": {
+      "Length": 25.0,
+      "Width": 16.5,
+      "Height": 9.0
+    },
+    "IsSpaceship": true,
+    "Armor": {
+      "DamageMultipliers": {
+        "Physical": 0.57,
+        "Energy": 1.1,
+        "Distortion": 1.1
+      },
+      "SignalMultipliers": {
+        "Electromagnetic": 1.3,
+        "Infrared": 1.3,
+        "CrossSection": 1.0
+      }
+    },
+    "Hull": {
+      "StructureHealthPoints": {
+        "VitalParts": {
+          "geo_body": 8100.0
+        },
+        "Parts": {
+          "nose": 5600.0,
+          "geo_nose_cap": 1200.0,
+          "geo_body_shell_back": 1200.0,
+          "geo_body_top": 1900.0,
+          "geo_wing_arm_rear_bottom_left": 5000.0,
+          "geo_guardian_mx_wing_bottom_left": 5000.0,
+          "geo_wing_hinge_attach_left": 1000.0,
+          "geo_flap_01_wing_bottom_left": 1200.0,
+          "geo_flap_02_wing_bottom_left": 700.0,
+          "geo_wing_arm_rear_top_a_left": 5000.0,
+          "geo_guardian_mx_wing_top_left": 5000.0,
+          "geo_flap_02_wing_top_left": 700.0,
+          "geo_wing_arm_rear_top_a_right": 5000.0,
+          "geo_guardian_mx_wing_top_right": 5000.0,
+          "geo_flap_02_wing_top_right": 700.0,
+          "geo_wing_arm_rear_bottom_right": 5000.0,
+          "geo_guardian_mx_wing_bottom_right": 5000.0,
+          "geo_wing_hinge_attach_right": 1000.0,
+          "geo_flap_02_wing_bottom_right": 700.0,
+          "geo_flap_01_wing_bottom_right": 1200.0,
+          "geo_thruster_arm_b_left": 6000.0,
+          "geo_thruster_arm_c_left": 6000.0,
+          "geo_thruster_arm_b_right": 6000.0,
+          "geo_thruster_arm_c_right": 6000.0
+        }
+      },
+      "ThrustersHealthPoints": {
+        "Main": {
+          "thruster_main_left": 5000.0,
+          "thruster_main_right": 5000.0
+        },
+        "Retro": {
+          "thruster_retro_bottom_left": 2200.0,
+          "thruster_retro_top_left": 2200.0,
+          "thruster_retro_top_right": 2200.0,
+          "thruster_retro_bottom_right": 2200.0
+        },
+        "Maneuvering": {
+          "thruster_wing_bot_left_mid": 2200.0,
+          "thruster_wing_bot_left_front_lateral": 2200.0,
+          "thruster_wing_bot_left_front": 2200.0,
+          "thruster_wing_bot_left_rear": 2200.0,
+          "thruster_wing_top_left_mid": 2200.0,
+          "thruster_wing_top_left_front_lateral": 2200.0,
+          "thruster_wing_top_left_front": 2200.0,
+          "thruster_wing_top_left_rear": 2200.0,
+          "thruster_wing_top_right_mid": 2200.0,
+          "thruster_wing_top_right_front_lateral": 2200.0,
+          "thruster_wing_top_right_front": 2200.0,
+          "thruster_wing_top_right_rear": 2200.0,
+          "thruster_wing_bot_right_mid": 2200.0,
+          "thruster_wing_bot_right_front_lateral": 2200.0,
+          "thruster_wing_bot_right_front": 2200.0,
+          "thruster_wing_bot_right_rear": 2200.0
+        }
+      }
+    },
+    "FlightCharacteristics": {
+      "ScmSpeed": 208.0,
+      "MaxSpeed": 1100.0,
+      "Pitch": 35.0,
+      "Yaw": 35.0,
+      "Roll": 120.0,
+      "IsVtolAssisted": false,
+      "UseDirectionModifiers": true,
+      "ThrustCapacity": {
+        "Main": 10000000.0,
+        "Retro": 4760000.0,
+        "Vtol": 0.0,
+        "Maneuvering": 14200000.0
+      },
+      "AccelerationG": {
+        "IsValidated": true,
+        "Main": 9.1,
+        "Retro": 3.5,
+        "Strafe": 6.8,
+        "Up": 6.8,
+        "Down": 6.8,
+        "CheckDate": "2025-05-15"
+      },
+      "MasterModes": {
+        "BaseSpoolTime": 1.0,
+        "QuantumDriveSpoolTime": 6.0,
+        "ScmMode": {
+          "BoostSpeedForward": 455.0,
+          "BoostSpeedBackward": 221.0
+        }
+      },
+      "Boost": {
+        "PreDelay": 0.0,
+        "RampUp": 0.6,
+        "RampDown": 0.3,
+        "AccelerationMultiplier": {
+          "PositiveAxis": {
+            "X": 1.35,
+            "Y": 1.5,
+            "Z": 1.3
+          },
+          "NegativeAxis": {
+            "X": 1.35,
+            "Y": 1.4,
+            "Z": 1.4
+          }
+        },
+        "AngularAccelerationMultiplier": {
+          "Pitch": 1.2,
+          "Yaw": 1.2,
+          "Roll": 1.2
+        },
+        "AngularVelocityMultiplier": {
+          "Pitch": 1.2,
+          "Yaw": 1.2,
+          "Roll": 1.2
+        }
+      },
+      "Capacitors": {
+        "ThrusterCapacitorSize": 20.0,
+        "CapacitorRegenPerSec": 0.75,
+        "CapacitorIdleCost": 1.0,
+        "CapacitorLinearCost": 0.0,
+        "CapacitorUsageModifier": 1.0,
+        "CapacitorRegenDelay": 0.7,
+        "RegenerationTime": 26.7,
+        "X_AccelMultiplicator": 2.0,
+        "Y_AccelMultiplicator": 2.0,
+        "Z_AccelMultiplicator": 2.0
+      }
+    },
+    "FuelManagement": {
+      "FuelCapacity": 9000000.0,
+      "FuelIntakeRate": 30.0,
+      "QuantumFuelCapacity": 1800000.0,
+      "FuelBurnRatePer10KNewton": {
+        "Main": 2.54,
+        "Retro": 5.08,
+        "Vtol": 0.0,
+        "Maneuvering": 20.32
+      },
+      "FuelUsagePerSecond": {
+        "Main": 1270.0,
+        "Retro": 604.52,
+        "Vtol": 0.0,
+        "Maneuvering": 1803.4
+      },
+      "IntakeToMainFuelRatio": 2.36,
+      "TimeForIntakesToFillTank": 300000.0
+    },
+    "Emissions": {
+      "Electromagnetic": {
+        "SCMIdle": 9043.0,
+        "SCMActive": 12263.0,
+        "NAV": 29167.0
+      },
+      "Infrared": {
+        "Start": 13697.0
+      },
+      "CrossSection": {
+        "Front": 3333.0,
+        "Side": 6000.0,
+        "Top": 9000.0
+      }
+    },
+    "ResourceNetwork": {
+      "ItemPools": {
+        "WeaponPoolSize": 4.0
+      }
+    },
+    "Weapons": {
+      "PilotWeaponRegenPool": {
+        "RegenFillRate": 0.0,
+        "AmmoLoad": 0
+      },
+      "TurretsWeaponRegenPool": {
+        "RegenFillRate": 0.0,
+        "AmmoLoad": 0
+      },
+      "TotalShieldHP": 9480.0,
+      "PilotBurstDPS": 3272.0,
+      "TurretsBurstDPS": 0.0,
+      "TotalMissilesDmg": 57088.0
+    },
+    "Insurance": {
+      "StandardClaimTime": 8.33,
+      "ExpeditedClaimTime": 2.08,
+      "ExpeditedCost": 4200.0
+    }
   },
   {
     "ClassName": "MRAI_Guardian_QI",
@@ -25965,9 +26876,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 8978.0,
+        "SCMIdle": 8976.0,
         "SCMActive": 15055.0,
-        "NAV": 29210.0
+        "NAV": 29209.0
       },
       "Infrared": {
         "Start": 12995.0
@@ -26600,9 +27511,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5567.0,
+        "SCMIdle": 5565.0,
         "SCMActive": 6620.0,
-        "NAV": 13100.0
+        "NAV": 13098.0
       },
       "Infrared": {
         "Start": 7272.0
@@ -26805,9 +27716,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5630.0,
+        "SCMIdle": 5627.0,
         "SCMActive": 6683.0,
-        "NAV": 13163.0
+        "NAV": 13161.0
       },
       "Infrared": {
         "Start": 7337.0
@@ -27009,9 +27920,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5567.0,
+        "SCMIdle": 5565.0,
         "SCMActive": 6620.0,
-        "NAV": 13100.0
+        "NAV": 13098.0
       },
       "Infrared": {
         "Start": 7404.0
@@ -27036,7 +27947,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 1850.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 1091.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 4115.0
@@ -27060,7 +27971,7 @@ const shipList = [
     "Cargo": {
       "CargoGrid": 8.0,
       "CargoContainers": 0.0,
-      "ExternalStorage": 0.0,
+      "ExternalStorage": 1.05,
       "PersonalInventory": 1.01
     },
     "Crew": 1,
@@ -27220,9 +28131,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5355.0,
+        "SCMIdle": 5352.0,
         "SCMActive": 6386.0,
-        "NAV": 12888.0
+        "NAV": 12885.0
       },
       "Infrared": {
         "Start": 6620.0
@@ -27271,7 +28182,7 @@ const shipList = [
     "Cargo": {
       "CargoGrid": 12.0,
       "CargoContainers": 0.0,
-      "ExternalStorage": 0.0,
+      "ExternalStorage": 1.05,
       "PersonalInventory": 0.93
     },
     "Crew": 1,
@@ -27431,9 +28342,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5347.0,
+        "SCMIdle": 5343.0,
         "SCMActive": 6379.0,
-        "NAV": 12880.0
+        "NAV": 12877.0
       },
       "Infrared": {
         "Start": 6713.0
@@ -27458,7 +28369,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2560.0,
+      "TotalShieldHP": 2100.0,
       "PilotBurstDPS": 1091.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 3340.0
@@ -27482,7 +28393,7 @@ const shipList = [
     "Cargo": {
       "CargoGrid": 4.0,
       "CargoContainers": 0.0,
-      "ExternalStorage": 0.0,
+      "ExternalStorage": 1.05,
       "PersonalInventory": 0.71
     },
     "Crew": 1,
@@ -27642,9 +28553,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5442.0,
+        "SCMIdle": 5439.0,
         "SCMActive": 6473.0,
-        "NAV": 12975.0
+        "NAV": 12972.0
       },
       "Infrared": {
         "Start": 6775.0
@@ -27693,7 +28604,7 @@ const shipList = [
     "Cargo": {
       "CargoGrid": 4.0,
       "CargoContainers": 0.0,
-      "ExternalStorage": 0.0,
+      "ExternalStorage": 0.75,
       "PersonalInventory": 0.71
     },
     "Crew": 1,
@@ -27853,9 +28764,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5354.0,
+        "SCMIdle": 5351.0,
         "SCMActive": 6386.0,
-        "NAV": 12887.0
+        "NAV": 12884.0
       },
       "Infrared": {
         "Start": 6320.0
@@ -27880,7 +28791,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 4480.0,
+      "TotalShieldHP": 2940.0,
       "PilotBurstDPS": 1766.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 4115.0
@@ -28063,9 +28974,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 10178.0,
+        "SCMIdle": 10175.0,
         "SCMActive": 12250.0,
-        "NAV": 25658.0
+        "NAV": 25655.0
       },
       "Infrared": {
         "Start": 9326.0
@@ -28079,6 +28990,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 6.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -28274,9 +29190,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 16541.0,
+        "SCMIdle": 16540.0,
         "SCMActive": 19991.0,
-        "NAV": 31623.0
+        "NAV": 31622.0
       },
       "Infrared": {
         "Start": 14147.0
@@ -28290,6 +29206,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -28301,7 +29222,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 112200.0,
+      "TotalShieldHP": 126800.0,
       "PilotBurstDPS": 4609.0,
       "TurretsBurstDPS": 2182.0,
       "TotalMissilesDmg": 40423.0
@@ -28484,9 +29405,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 16540.0,
+        "SCMIdle": 16539.0,
         "SCMActive": 19990.0,
-        "NAV": 31622.0
+        "NAV": 31621.0
       },
       "Infrared": {
         "Start": 13890.0
@@ -28500,6 +29421,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 3.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -28511,7 +29437,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 112200.0,
+      "TotalShieldHP": 126800.0,
       "PilotBurstDPS": 4609.0,
       "TurretsBurstDPS": 2182.0,
       "TotalMissilesDmg": 40423.0
@@ -28687,9 +29613,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5125.0,
+        "SCMIdle": 5123.0,
         "SCMActive": 6098.0,
-        "NAV": 12658.0
+        "NAV": 12657.0
       },
       "Infrared": {
         "Start": 8150.0
@@ -28714,7 +29640,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2240.0,
+      "TotalShieldHP": 1470.0,
       "PilotBurstDPS": 1094.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 0.0
@@ -28830,33 +29756,34 @@ const shipList = [
       }
     },
     "FlightCharacteristics": {
-      "ScmSpeed": 125.0,
+      "ScmSpeed": 110.0,
       "MaxSpeed": 915.0,
-      "Pitch": 16.0,
-      "Yaw": 16.0,
-      "Roll": 30.0,
+      "Pitch": 10.0,
+      "Yaw": 10.0,
+      "Roll": 15.0,
       "IsVtolAssisted": false,
       "UseDirectionModifiers": true,
       "ThrustCapacity": {
-        "Main": 1420000000.0,
+        "Main": 1092000000.0,
         "Retro": 655000000.0,
         "Vtol": 375000000.0,
         "Maneuvering": 2031000000.0
       },
       "AccelerationG": {
         "IsValidated": true,
-        "Main": 3.2,
+        "Main": 2.5,
         "Retro": 1.5,
         "Strafe": 1.0,
         "Up": 2.0,
-        "Down": 1.5
+        "Down": 1.5,
+        "CheckDate": "2025-04-25"
       },
       "MasterModes": {
         "BaseSpoolTime": 1.0,
         "QuantumDriveSpoolTime": 9.0,
         "ScmMode": {
-          "BoostSpeedForward": 300.0,
-          "BoostSpeedBackward": 105.0
+          "BoostSpeedForward": 280.0,
+          "BoostSpeedBackward": 115.0
         }
       },
       "Boost": {
@@ -28910,19 +29837,19 @@ const shipList = [
         "Maneuvering": 20.0
       },
       "FuelUsagePerSecond": {
-        "Main": 177500.0,
+        "Main": 136500.0,
         "Retro": 81875.0,
         "Vtol": 46875.0,
         "Maneuvering": 253875.0
       },
-      "IntakeToMainFuelRatio": 0.34,
+      "IntakeToMainFuelRatio": 0.44,
       "TimeForIntakesToFillTank": 2000000.0
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 22389.0,
+        "SCMIdle": 22386.0,
         "SCMActive": 33518.0,
-        "NAV": 54625.0
+        "NAV": 54623.0
       },
       "Infrared": {
         "Start": 21592.0
@@ -28936,6 +29863,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 10.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 4.0,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -28947,7 +29879,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 908000.0,
+      "TotalShieldHP": 1026000.0,
       "PilotBurstDPS": 0.0,
       "TurretsBurstDPS": 8617.0,
       "TotalMissilesDmg": 96329.0
@@ -29131,9 +30063,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 1799.0,
+        "SCMIdle": 1796.0,
         "SCMActive": 2086.0,
-        "NAV": 9332.0
+        "NAV": 9330.0
       },
       "Infrared": {
         "Start": 5826.0
@@ -29158,7 +30090,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 2240.0,
+      "TotalShieldHP": 1470.0,
       "PilotBurstDPS": 656.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 2280.0
@@ -29370,7 +30302,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 362.0,
+        "SCMIdle": 361.0,
         "SCMActive": 381.0,
         "NAV": 0.0
       },
@@ -29610,7 +30542,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 364.0,
+        "SCMIdle": 363.0,
         "SCMActive": 1733.0,
         "NAV": 0.0
       },
@@ -29849,7 +30781,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 361.0,
+        "SCMIdle": 360.0,
         "SCMActive": 379.0,
         "NAV": 0.0
       },
@@ -29962,33 +30894,34 @@ const shipList = [
       }
     },
     "FlightCharacteristics": {
-      "ScmSpeed": 225.0,
-      "MaxSpeed": 1200.0,
-      "Pitch": 46.0,
-      "Yaw": 46.0,
-      "Roll": 140.0,
+      "ScmSpeed": 220.0,
+      "MaxSpeed": 1150.0,
+      "Pitch": 58.0,
+      "Yaw": 53.0,
+      "Roll": 135.0,
       "IsVtolAssisted": false,
       "UseDirectionModifiers": true,
       "ThrustCapacity": {
-        "Main": 2933877.0,
-        "Retro": 933685.6,
+        "Main": 2750000.0,
+        "Retro": 1044000.0,
         "Vtol": 0.0,
-        "Maneuvering": 1777455.2
+        "Maneuvering": 2128000.0
       },
       "AccelerationG": {
         "IsValidated": true,
-        "Main": 10.9,
-        "Retro": 3.4,
-        "Strafe": 4.9,
+        "Main": 10.2,
+        "Retro": 3.9,
+        "Strafe": 5.9,
         "Up": 5.9,
-        "Down": 4.9
+        "Down": 4.6,
+        "CheckDate": "2025-04-16"
       },
       "MasterModes": {
         "BaseSpoolTime": 1.0,
         "QuantumDriveSpoolTime": 4.0,
         "ScmMode": {
-          "BoostSpeedForward": 450.0,
-          "BoostSpeedBackward": 260.0
+          "BoostSpeedForward": 440.0,
+          "BoostSpeedBackward": 240.0
         }
       },
       "Boost": {
@@ -30042,19 +30975,19 @@ const shipList = [
         "Maneuvering": 10.0
       },
       "FuelUsagePerSecond": {
-        "Main": 366.735,
-        "Retro": 116.711,
+        "Main": 343.75,
+        "Retro": 130.5,
         "Vtol": 0.0,
-        "Maneuvering": 222.182
+        "Maneuvering": 266.0
       },
-      "IntakeToMainFuelRatio": 1.36,
+      "IntakeToMainFuelRatio": 1.45,
       "TimeForIntakesToFillTank": 900000.0
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 3831.0,
+        "SCMIdle": 3829.0,
         "SCMActive": 4579.0,
-        "NAV": 11365.0
+        "NAV": 11362.0
       },
       "Infrared": {
         "Start": 4631.0
@@ -30079,7 +31012,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 3700.0,
+      "TotalShieldHP": 4200.0,
       "PilotBurstDPS": 438.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 2312.0
@@ -30163,33 +31096,34 @@ const shipList = [
       }
     },
     "FlightCharacteristics": {
-      "ScmSpeed": 225.0,
-      "MaxSpeed": 1200.0,
-      "Pitch": 46.0,
-      "Yaw": 46.0,
+      "ScmSpeed": 222.0,
+      "MaxSpeed": 1180.0,
+      "Pitch": 62.0,
+      "Yaw": 57.0,
       "Roll": 140.0,
       "IsVtolAssisted": false,
       "UseDirectionModifiers": true,
       "ThrustCapacity": {
-        "Main": 2938602.0,
-        "Retro": 936461.4,
+        "Main": 2974000.0,
+        "Retro": 1046000.0,
         "Vtol": 0.0,
-        "Maneuvering": 1780561.6
+        "Maneuvering": 2464000.0
       },
       "AccelerationG": {
         "IsValidated": true,
-        "Main": 10.9,
-        "Retro": 3.4,
-        "Strafe": 4.9,
-        "Up": 5.9,
-        "Down": 4.9
+        "Main": 11.0,
+        "Retro": 3.8,
+        "Strafe": 6.8,
+        "Up": 6.8,
+        "Down": 5.1,
+        "CheckDate": "2025-04-16"
       },
       "MasterModes": {
         "BaseSpoolTime": 1.0,
         "QuantumDriveSpoolTime": 4.0,
         "ScmMode": {
-          "BoostSpeedForward": 450.0,
-          "BoostSpeedBackward": 260.0
+          "BoostSpeedForward": 440.0,
+          "BoostSpeedBackward": 240.0
         }
       },
       "Boost": {
@@ -30243,19 +31177,19 @@ const shipList = [
         "Maneuvering": 10.0
       },
       "FuelUsagePerSecond": {
-        "Main": 367.325,
-        "Retro": 117.058,
+        "Main": 371.75,
+        "Retro": 130.75,
         "Vtol": 0.0,
-        "Maneuvering": 222.57
+        "Maneuvering": 308.0
       },
-      "IntakeToMainFuelRatio": 1.36,
+      "IntakeToMainFuelRatio": 1.34,
       "TimeForIntakesToFillTank": 900000.0
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 3831.0,
+        "SCMIdle": 3829.0,
         "SCMActive": 4579.0,
-        "NAV": 11365.0
+        "NAV": 11362.0
       },
       "Infrared": {
         "Start": 4631.0
@@ -30366,31 +31300,32 @@ const shipList = [
     "FlightCharacteristics": {
       "ScmSpeed": 225.0,
       "MaxSpeed": 1200.0,
-      "Pitch": 46.0,
-      "Yaw": 46.0,
-      "Roll": 140.0,
+      "Pitch": 65.0,
+      "Yaw": 59.0,
+      "Roll": 146.0,
       "IsVtolAssisted": false,
       "UseDirectionModifiers": true,
       "ThrustCapacity": {
-        "Main": 3269697.0,
-        "Retro": 1040285.8,
+        "Main": 3500000.0,
+        "Retro": 1170000.0,
         "Vtol": 0.0,
-        "Maneuvering": 1981247.2
+        "Maneuvering": 2840000.0
       },
       "AccelerationG": {
         "IsValidated": true,
-        "Main": 11.2,
-        "Retro": 3.5,
-        "Strafe": 5.0,
-        "Up": 6.1,
-        "Down": 5.0
+        "Main": 11.7,
+        "Retro": 3.9,
+        "Strafe": 7.1,
+        "Up": 7.1,
+        "Down": 5.6,
+        "CheckDate": "2025-04-16"
       },
       "MasterModes": {
         "BaseSpoolTime": 1.0,
         "QuantumDriveSpoolTime": 4.0,
         "ScmMode": {
           "BoostSpeedForward": 450.0,
-          "BoostSpeedBackward": 260.0
+          "BoostSpeedBackward": 240.0
         }
       },
       "Boost": {
@@ -30444,19 +31379,19 @@ const shipList = [
         "Maneuvering": 10.0
       },
       "FuelUsagePerSecond": {
-        "Main": 408.712,
-        "Retro": 130.036,
+        "Main": 437.5,
+        "Retro": 146.25,
         "Vtol": 0.0,
-        "Maneuvering": 247.656
+        "Maneuvering": 355.0
       },
       "IntakeToMainFuelRatio": 0.0,
       "TimeForIntakesToFillTank": "Infinity"
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 3341.0,
+        "SCMIdle": 3339.0,
         "SCMActive": 3989.0,
-        "NAV": 10875.0
+        "NAV": 10872.0
       },
       "Infrared": {
         "Start": 3871.0
@@ -30565,33 +31500,34 @@ const shipList = [
       }
     },
     "FlightCharacteristics": {
-      "ScmSpeed": 225.0,
-      "MaxSpeed": 1200.0,
-      "Pitch": 46.0,
-      "Yaw": 46.0,
-      "Roll": 140.0,
+      "ScmSpeed": 222.0,
+      "MaxSpeed": 1250.0,
+      "Pitch": 58.0,
+      "Yaw": 53.0,
+      "Roll": 135.0,
       "IsVtolAssisted": false,
       "UseDirectionModifiers": true,
       "ThrustCapacity": {
-        "Main": 3517894.0,
-        "Retro": 1218646.6,
+        "Main": 3121000.0,
+        "Retro": 1072000.0,
         "Vtol": 0.0,
-        "Maneuvering": 1322561.6
+        "Maneuvering": 2232000.0
       },
       "AccelerationG": {
         "IsValidated": true,
-        "Main": 12.9,
-        "Retro": 4.4,
-        "Strafe": 3.6,
-        "Up": 3.6,
-        "Down": 1.8
+        "Main": 11.4,
+        "Retro": 3.9,
+        "Strafe": 6.1,
+        "Up": 6.1,
+        "Down": 5.1,
+        "CheckDate": "2025-04-16"
       },
       "MasterModes": {
         "BaseSpoolTime": 1.0,
         "QuantumDriveSpoolTime": 4.0,
         "ScmMode": {
-          "BoostSpeedForward": 450.0,
-          "BoostSpeedBackward": 260.0
+          "BoostSpeedForward": 440.0,
+          "BoostSpeedBackward": 240.0
         }
       },
       "Boost": {
@@ -30645,19 +31581,19 @@ const shipList = [
         "Maneuvering": 10.0
       },
       "FuelUsagePerSecond": {
-        "Main": 439.737,
-        "Retro": 152.331,
+        "Main": 390.125,
+        "Retro": 134.0,
         "Vtol": 0.0,
-        "Maneuvering": 165.32
+        "Maneuvering": 279.0
       },
-      "IntakeToMainFuelRatio": 1.14,
+      "IntakeToMainFuelRatio": 1.28,
       "TimeForIntakesToFillTank": 900000.0
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 3838.0,
+        "SCMIdle": 3835.0,
         "SCMActive": 4579.0,
-        "NAV": 11371.0
+        "NAV": 11368.0
       },
       "Infrared": {
         "Start": 4631.0
@@ -30682,7 +31618,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 4480.0,
+      "TotalShieldHP": 2940.0,
       "PilotBurstDPS": 438.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 4115.0
@@ -30766,33 +31702,34 @@ const shipList = [
       }
     },
     "FlightCharacteristics": {
-      "ScmSpeed": 225.0,
-      "MaxSpeed": 1200.0,
-      "Pitch": 46.0,
-      "Yaw": 46.0,
-      "Roll": 140.0,
+      "ScmSpeed": 227.0,
+      "MaxSpeed": 1230.0,
+      "Pitch": 59.0,
+      "Yaw": 51.0,
+      "Roll": 137.0,
       "IsVtolAssisted": false,
       "UseDirectionModifiers": true,
       "ThrustCapacity": {
-        "Main": 3098507.0,
-        "Retro": 986840.8,
+        "Main": 3480000.0,
+        "Retro": 1114000.0,
         "Vtol": 0.0,
-        "Maneuvering": 1879094.4
+        "Maneuvering": 2240000.0
       },
       "AccelerationG": {
         "IsValidated": true,
-        "Main": 11.0,
-        "Retro": 3.5,
-        "Strafe": 5.0,
-        "Up": 6.0,
-        "Down": 5.0
+        "Main": 12.3,
+        "Retro": 3.9,
+        "Strafe": 5.9,
+        "Up": 5.9,
+        "Down": 4.7,
+        "CheckDate": "2025-04-16"
       },
       "MasterModes": {
         "BaseSpoolTime": 1.0,
         "QuantumDriveSpoolTime": 4.0,
         "ScmMode": {
-          "BoostSpeedForward": 450.0,
-          "BoostSpeedBackward": 260.0
+          "BoostSpeedForward": 470.0,
+          "BoostSpeedBackward": 240.0
         }
       },
       "Boost": {
@@ -30846,19 +31783,19 @@ const shipList = [
         "Maneuvering": 10.0
       },
       "FuelUsagePerSecond": {
-        "Main": 387.313,
-        "Retro": 123.355,
+        "Main": 435.0,
+        "Retro": 139.25,
         "Vtol": 0.0,
-        "Maneuvering": 234.886
+        "Maneuvering": 280.0
       },
       "IntakeToMainFuelRatio": 0.0,
       "TimeForIntakesToFillTank": "Infinity"
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 3831.0,
+        "SCMIdle": 3829.0,
         "SCMActive": 4579.0,
-        "NAV": 11365.0
+        "NAV": 11362.0
       },
       "Infrared": {
         "Start": 4631.0
@@ -30883,7 +31820,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 3700.0,
+      "TotalShieldHP": 4200.0,
       "PilotBurstDPS": 438.0,
       "TurretsBurstDPS": 0.0,
       "TotalMissilesDmg": 2280.0
@@ -31124,9 +32061,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 6824.0,
+        "SCMIdle": 6819.0,
         "SCMActive": 8036.0,
-        "NAV": 22304.0
+        "NAV": 22299.0
       },
       "Infrared": {
         "Start": 17457.0
@@ -31140,6 +32077,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 1.75,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -31392,9 +32334,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 6524.0,
+        "SCMIdle": 6518.0,
         "SCMActive": 7736.0,
-        "NAV": 22005.0
+        "NAV": 21998.0
       },
       "Infrared": {
         "Start": 16657.0
@@ -31408,6 +32350,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 1.75,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -31659,9 +32606,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 6501.0,
+        "SCMIdle": 6495.0,
         "SCMActive": 7713.0,
-        "NAV": 21981.0
+        "NAV": 21976.0
       },
       "Infrared": {
         "Start": 17457.0
@@ -31675,6 +32622,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 1.75,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -31925,9 +32877,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 17724.0,
+        "SCMIdle": 17718.0,
         "SCMActive": 21176.0,
-        "NAV": 33204.0
+        "NAV": 33198.0
       },
       "Infrared": {
         "Start": 22737.0
@@ -31941,6 +32893,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 8.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 1.75,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -31952,7 +32909,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 56100.0,
+      "TotalShieldHP": 63400.0,
       "PilotBurstDPS": 4910.0,
       "TurretsBurstDPS": 1091.0,
       "TotalMissilesDmg": 49381.0
@@ -32034,7 +32991,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 1517.0,
+        "SCMIdle": 1516.0,
         "SCMActive": 1966.0,
         "NAV": 0.0
       },
@@ -32092,7 +33049,7 @@ const shipList = [
     "Cargo": {
       "CargoGrid": 0.0,
       "CargoContainers": 0.0,
-      "ExternalStorage": 0.0,
+      "ExternalStorage": 0.75,
       "PersonalInventory": 0.71
     },
     "Crew": 1,
@@ -32256,9 +33213,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 8723.0,
+        "SCMIdle": 8720.0,
         "SCMActive": 13246.0,
-        "NAV": 16256.0
+        "NAV": 16253.0
       },
       "Infrared": {
         "Start": 7175.0
@@ -32462,24 +33419,25 @@ const shipList = [
     "FlightCharacteristics": {
       "ScmSpeed": 145.0,
       "MaxSpeed": 940.0,
-      "Pitch": 15.0,
-      "Yaw": 15.0,
-      "Roll": 25.0,
+      "Pitch": 10.0,
+      "Yaw": 8.0,
+      "Roll": 14.0,
       "IsVtolAssisted": false,
       "UseDirectionModifiers": true,
       "ThrustCapacity": {
-        "Main": 328455840.0,
-        "Retro": 164737754.0,
-        "Vtol": 27000000.0,
-        "Maneuvering": 336106080.0
+        "Main": 303200000.0,
+        "Retro": 165971100.0,
+        "Vtol": 54600000.0,
+        "Maneuvering": 333000000.0
       },
       "AccelerationG": {
         "IsValidated": true,
-        "Main": 3.0,
+        "Main": 2.7,
         "Retro": 1.5,
         "Strafe": 1.5,
-        "Up": 2.2,
-        "Down": 1.7
+        "Up": 2.0,
+        "Down": 2.0,
+        "CheckDate": "2025-04-24"
       },
       "MasterModes": {
         "BaseSpoolTime": 1.0,
@@ -32495,25 +33453,25 @@ const shipList = [
         "RampDown": 0.2,
         "AccelerationMultiplier": {
           "PositiveAxis": {
-            "X": 1.2,
-            "Y": 1.6,
-            "Z": 1.4
+            "X": 1.35,
+            "Y": 1.5,
+            "Z": 1.3
           },
           "NegativeAxis": {
-            "X": 1.2,
+            "X": 1.35,
             "Y": 1.2,
-            "Z": 1.4
+            "Z": 1.2
           }
         },
         "AngularAccelerationMultiplier": {
-          "Pitch": 1.3,
-          "Yaw": 1.2,
-          "Roll": 1.2
+          "Pitch": 1.5,
+          "Yaw": 1.5,
+          "Roll": 2.0
         },
         "AngularVelocityMultiplier": {
-          "Pitch": 1.3,
-          "Yaw": 1.2,
-          "Roll": 1.4
+          "Pitch": 1.5,
+          "Yaw": 1.5,
+          "Roll": 2.0
         }
       },
       "Capacitors": {
@@ -32540,19 +33498,19 @@ const shipList = [
         "Maneuvering": 22.5
       },
       "FuelUsagePerSecond": {
-        "Main": 41056.98,
-        "Retro": 20592.219,
-        "Vtol": 3375.0,
-        "Maneuvering": 42013.26
+        "Main": 37900.0,
+        "Retro": 20746.388,
+        "Vtol": 6825.0,
+        "Maneuvering": 41625.0
       },
       "IntakeToMainFuelRatio": 0.04,
       "TimeForIntakesToFillTank": 73333333.33
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 7579.0,
+        "SCMIdle": 7576.0,
         "SCMActive": 11513.0,
-        "NAV": 19940.0
+        "NAV": 19938.0
       },
       "Infrared": {
         "Start": 21871.0
@@ -32569,7 +33527,7 @@ const shipList = [
       },
       "Modifiers": {
         "PowerRatioMultiplier": 2.3,
-        "MaxAmmoLoadMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 4.0,
         "MaxRegenPerSecMultiplier": 1.0
       }
     },
@@ -32582,9 +33540,9 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 908000.0,
+      "TotalShieldHP": 1026000.0,
       "PilotBurstDPS": 0.0,
-      "TurretsBurstDPS": 19438.0,
+      "TurretsBurstDPS": 21105.0,
       "TotalMissilesDmg": 21068967.0
     },
     "Insurance": {
@@ -32778,9 +33736,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5837.0,
+        "SCMIdle": 5835.0,
         "SCMActive": 7478.0,
-        "NAV": 13370.0
+        "NAV": 13368.0
       },
       "Infrared": {
         "Start": 8166.0
@@ -32794,6 +33752,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 6.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 2.5,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -33003,9 +33966,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 9933.0,
+        "SCMIdle": 9931.0,
         "SCMActive": 15613.0,
-        "NAV": 17466.0
+        "NAV": 17464.0
       },
       "Infrared": {
         "Start": 7881.0
@@ -33019,6 +33982,11 @@ const shipList = [
     "ResourceNetwork": {
       "ItemPools": {
         "WeaponPoolSize": 6.0
+      },
+      "Modifiers": {
+        "PowerRatioMultiplier": 1.0,
+        "MaxAmmoLoadMultiplier": 2.5,
+        "MaxRegenPerSecMultiplier": 1.0
       }
     },
     "Weapons": {
@@ -33120,7 +34088,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 17.0,
+        "SCMIdle": 16.0,
         "SCMActive": 466.0,
         "NAV": 0.0
       },
@@ -33238,7 +34206,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 17.0,
+        "SCMIdle": 16.0,
         "SCMActive": 466.0,
         "NAV": 0.0
       },
@@ -33459,9 +34427,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 10190.0,
+        "SCMIdle": 10187.0,
         "SCMActive": 13845.0,
-        "NAV": 25670.0
+        "NAV": 25667.0
       },
       "Infrared": {
         "Start": 13386.0
@@ -33486,7 +34454,7 @@ const shipList = [
         "RegenFillRate": 0.0,
         "AmmoLoad": 0
       },
-      "TotalShieldHP": 15300.0,
+      "TotalShieldHP": 17280.0,
       "PilotBurstDPS": 1639.0,
       "TurretsBurstDPS": 1091.0,
       "TotalMissilesDmg": 19204.0
@@ -33680,9 +34648,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 14563.0,
+        "SCMIdle": 14559.0,
         "SCMActive": 19924.0,
-        "NAV": 31610.0
+        "NAV": 31607.0
       },
       "Infrared": {
         "Start": 15094.0
@@ -33794,7 +34762,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 1517.0,
+        "SCMIdle": 1516.0,
         "SCMActive": 1966.0,
         "NAV": 0.0
       },
@@ -33908,7 +34876,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 3055.0,
+        "SCMIdle": 3054.0,
         "SCMActive": 4537.0,
         "NAV": 0.0
       },
@@ -34023,7 +34991,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 1823.0,
+        "SCMIdle": 1822.0,
         "SCMActive": 2272.0,
         "NAV": 0.0
       },
@@ -34137,7 +35105,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 1517.0,
+        "SCMIdle": 1516.0,
         "SCMActive": 1966.0,
         "NAV": 0.0
       },
@@ -34251,7 +35219,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 1517.0,
+        "SCMIdle": 1516.0,
         "SCMActive": 1966.0,
         "NAV": 0.0
       },
@@ -34365,7 +35333,7 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 1517.0,
+        "SCMIdle": 1516.0,
         "SCMActive": 1966.0,
         "NAV": 0.0
       },
@@ -34547,7 +35515,7 @@ const shipList = [
   {
     "ClassName": "TMBL_Storm",
     "Name": "Tumbril Storm",
-    "Description": "Manufacturer: Tumbril Land SystemsFocus: Combat Originally introduced in 2606 during the Second Tevarin War, the Tumbril Storm single-operator mini-tank was built to blitz battlefields and take out enemy artillery. Reimagined from the ground up to be faster, stronger, and more impactful than ever, the latest Storm is a true force of nature, well-suited to the frenetic landscape of modern warfare.",
+    "Description": "Originally introduced in 2606 during the Second Tevarin War, the Tumbril Storm single-operator mini-tank was built to blitz battlefields and take out enemy artillery. Reimagined from the ground up to be faster, stronger, and more impactful than ever, the latest Storm is a true force of nature, well-suited to the frenetic landscape of modern warfare.",
     "Career": "Ground Combat",
     "Role": "Light Tank",
     "Size": 4,
@@ -35073,9 +36041,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5638.0,
+        "SCMIdle": 5635.0,
         "SCMActive": 6732.0,
-        "NAV": 13171.0
+        "NAV": 13168.0
       },
       "Infrared": {
         "Start": 9591.0
@@ -35103,7 +36071,7 @@ const shipList = [
       "TotalShieldHP": 3460.0,
       "PilotBurstDPS": 2794.0,
       "TurretsBurstDPS": 0.0,
-      "TotalMissilesDmg": 18662.0
+      "TotalMissilesDmg": 9862.0
     },
     "Insurance": {
       "StandardClaimTime": 10.33,
@@ -35326,9 +36294,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5221.0,
+        "SCMIdle": 5218.0,
         "SCMActive": 6215.0,
-        "NAV": 12754.0
+        "NAV": 12752.0
       },
       "Infrared": {
         "Start": 8880.0
@@ -35553,9 +36521,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 5201.0,
+        "SCMIdle": 5198.0,
         "SCMActive": 6195.0,
-        "NAV": 12734.0
+        "NAV": 12732.0
       },
       "Infrared": {
         "Start": 8830.0
@@ -35583,7 +36551,7 @@ const shipList = [
       "TotalShieldHP": 3460.0,
       "PilotBurstDPS": 3550.0,
       "TurretsBurstDPS": 0.0,
-      "TotalMissilesDmg": 18662.0
+      "TotalMissilesDmg": 9862.0
     },
     "Insurance": {
       "StandardClaimTime": 5.90625,
@@ -35608,7 +36576,7 @@ const shipList = [
     "WeaponCrew": 0,
     "OperationsCrew": 0,
     "Mass": 4230.0,
-    "ComponentsMass": 893.0,
+    "ComponentsMass": 873.0,
     "Dimensions": {
       "Length": 5.5,
       "Width": 1.5,
@@ -35658,9 +36626,6 @@ const shipList = [
           "thruster_rear_bottom_right": 2150.0,
           "thruster_rear_top_right": 2150.0,
           "gravplate_rear_right": 2750.0,
-          "gravplate_center_right": 2750.0,
-          "gravplate_front_left": 2750.0,
-          "gravplate_front_right": 2750.0,
           "thruster_front_bottom_left": 2150.0,
           "thruster_front_bottom_right": 2150.0,
           "thruster_front_left_A": 2150.0,
@@ -35668,8 +36633,7 @@ const shipList = [
           "thruster_front_right_A": 2150.0,
           "thruster_front_right_B": 2150.0,
           "thruster_front_top_left": 2150.0,
-          "thruster_front_top_right": 2150.0,
-          "gravplate_center_left": 2750.0
+          "thruster_front_top_right": 2150.0
         }
       }
     },
@@ -35683,10 +36647,10 @@ const shipList = [
       "IsVtolAssisted": false,
       "UseDirectionModifiers": true,
       "ThrustCapacity": {
-        "Main": 139000.0,
+        "Main": 152000.0,
         "Retro": 134200.0,
         "Vtol": 0.0,
-        "Maneuvering": 358615.9
+        "Maneuvering": 345405.3
       },
       "AccelerationG": {
         "IsValidated": true,
@@ -35694,7 +36658,8 @@ const shipList = [
         "Retro": 2.8,
         "Strafe": 1.4,
         "Up": 2.5,
-        "Down": 2.3
+        "Down": 2.3,
+        "CheckDate": "2025-04-16"
       },
       "MasterModes": {
         "BaseSpoolTime": 1.0,
@@ -35751,25 +36716,25 @@ const shipList = [
         "Main": 1.25,
         "Retro": 2.5,
         "Vtol": 0.0,
-        "Maneuvering": 25.0
+        "Maneuvering": 20.0
       },
       "FuelUsagePerSecond": {
-        "Main": 17.375,
+        "Main": 19.0,
         "Retro": 16.775,
         "Vtol": 0.0,
-        "Maneuvering": 44.827
+        "Maneuvering": 43.176
       },
-      "IntakeToMainFuelRatio": 5.76,
+      "IntakeToMainFuelRatio": 5.26,
       "TimeForIntakesToFillTank": 1500000.0
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 506.0,
-        "SCMActive": 782.0,
+        "SCMIdle": 504.0,
+        "SCMActive": 780.0,
         "NAV": 0.0
       },
       "Infrared": {
-        "Start": 593.0
+        "Start": 586.0
       },
       "CrossSection": {
         "Front": 333.0,
@@ -35980,9 +36945,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 7187.0,
+        "SCMIdle": 7184.0,
         "SCMActive": 8609.0,
-        "NAV": 16227.0
+        "NAV": 16224.0
       },
       "Infrared": {
         "Start": 11576.0
@@ -36198,9 +37163,9 @@ const shipList = [
     },
     "Emissions": {
       "Electromagnetic": {
-        "SCMIdle": 9638.0,
+        "SCMIdle": 9636.0,
         "SCMActive": 12152.0,
-        "NAV": 18678.0
+        "NAV": 18676.0
       },
       "Infrared": {
         "Start": 15896.0
